@@ -1,0 +1,30 @@
+{
+  "name": "@fundraising/package-ledger",
+  "version": "0.0.0",
+  "private": true,
+
+  "type": "module",
+
+  "exports": {
+    ".": "./src/index.ts"
+  },
+
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc"
+  },
+
+  "dependencies": {
+    "ai": "7.0.173",
+    "pg": "8.23.1",
+    "zod": "4.6.7"
+  },
+
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5",
+    "@types/node": "^24",
+    "@types/pg": "^8",
+    "typescript": "^5",
+    "vitest": "^5"
+  }
+}

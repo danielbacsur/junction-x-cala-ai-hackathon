@@ -15,6 +15,7 @@
   },
 
   "dependencies": {
+    "@fundraising/package-ledger": "0.0.0",
     "@vercel/connect": "2.7.0",
     "ai": "7.0.173",
     "eve": "1.0.0-rc.17",

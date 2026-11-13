@@ -35,6 +35,10 @@
       "persistent": true
     },
 
+    "test": {
+      "dependsOn": ["^build"]
+    },
+
     "typecheck": {
       "dependsOn": ["^typecheck"]
     }
