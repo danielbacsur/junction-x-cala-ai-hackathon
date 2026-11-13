@@ -1,0 +1,24 @@
+{
+  "name": "@fundraising/package-vercel",
+  "version": "0.0.0",
+  "private": true,
+
+  "type": "module",
+
+  "exports": {
+    ".": "./index.ts"
+  },
+
+  "scripts": {
+    "typecheck": "tsc"
+  },
+
+  "dependencies": {
+    "eve": "1.0.0-rc.17"
+  },
+
+  "devDependencies": {
+    "@types/node": "^24",
+    "typescript": "^5"
+  }
+}
