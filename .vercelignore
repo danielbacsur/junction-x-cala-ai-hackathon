@@ -1,0 +1,8 @@
+.env*
+.eve
+.handoff
+.next
+.output
+.turbo
+.vercel
+node_modules
