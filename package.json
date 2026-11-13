@@ -13,6 +13,10 @@
     "typecheck": "turbo run typecheck"
   },
 
+  "dependencies": {
+    "@fundraising/package-vercel": "0.0.0"
+  },
+
   "devDependencies": {
     "@types/node": "^24",
     "turbo": "^2",
