@@ -25,7 +25,8 @@
   },
 
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "agents/*"
   ],
 
   "overrides": {
@@ -33,6 +34,10 @@
 
     "@typescript-eslint/typescript-estree": {
       "minimatch": "^11.0.8"
+    },
+
+    "@vercel/cli-config": {
+      "zod": "^4.6.6"
     }
   }
 }
