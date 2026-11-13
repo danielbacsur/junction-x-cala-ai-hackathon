@@ -8,9 +8,9 @@
   "scripts": {
     "build": "eve build",
     "deploy": "eve deploy",
-    "dev": "eve dev",
+    "dev": "eve dev --port 3001",
     "eval": "eve eval",
-    "start": "eve start",
+    "start": "eve start --port 3001",
     "typecheck": "tsc"
   },
 

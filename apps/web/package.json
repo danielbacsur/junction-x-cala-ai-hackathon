@@ -5,8 +5,10 @@
 
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
-    "lint": "eslint"
+    "dev": "next dev --port 3000",
+    "lint": "eslint",
+    "start": "next start --port 3000",
+    "typecheck": "next typegen && tsc"
   },
 
   "dependencies": {
