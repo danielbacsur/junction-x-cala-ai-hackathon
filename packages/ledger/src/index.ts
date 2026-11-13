@@ -1,8 +1,11 @@
 import type { Ledger } from "./contract";
 
-export { type CalaClientOptions, createCalaClient } from "./cala/client";
+export { type CalaClientEvent, type CalaClientOptions, createCalaClient } from "./cala/client";
 export * from "./cala/contract";
+export { CalaKeyError, CalaRateLimitError, CalaRequestError, CalaTimeoutError } from "./cala/errors";
+export { checkAgreements, createAgreementExtractor } from "./cala/extract";
 export { requestId } from "./cala/id";
+export { createMemoryStore, type MemoryStore } from "./cala/memory";
 export * from "./contract";
 export { connect, type Db, migrate } from "./db";
 export * from "./guest";

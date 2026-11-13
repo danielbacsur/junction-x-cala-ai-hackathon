@@ -1,0 +1,614 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/knowledge/search",
+  "body": {
+   "input": "Which government or defence contracts and public funding agreements has ICEYE signed since 2025? List the counterparty, date and value of each."
+  }
+ },
+ "_fetched_at": "2026-11-14T12:21:53+0200",
+ "_seconds": 60.35,
+ "response": {
+  "content": "## ICEYE \u2013 Government, Defence & Public Funding Agreements Since 2025\n\nBelow is a summary of the key contracts, procurement agreements, and public funding deals ICEYE has signed since the start of 2025, based on available reporting.\n\n| # | Counterparty | Date | Type | Value |\n|---|---|---|---|---|\n| 1 | **Polish Armed Forces** (Ministry of National Defence) | May 2025 | Procurement of 3 SAR satellites under the MicroSAR programme | ~\u20ac200 million |\n| 2 | **IHI Corporation (Japan)** | 22 May 2025 | MoU to develop a SAR constellation of up to 24 satellites (signed at DSEI Japan) | Not disclosed |\n| 3 | **Finnish Defence Forces** | 8 September 2025 | Procurement of sovereign SAR satellite system (satellites, ground systems, options for expansion) | ~\u20ac158 million |\n| 4 | **IHI Corporation (Japan)** | 16 October 2025 | Procurement contract for an initial 4 satellites (option for 20 more), building on the May MoU; completion targeted by FY2029 | Not disclosed |\n| 5 | **Portugal, the Netherlands & NATO** | Late 2025 (within a two-week period) | Three separate defence agreements for SAR data / ISR capabilities | Not disclosed |\n| 6 | **Finnish Ministry of Defence / Netherlands / Poland** | December 2025 | Letter of intent on trilateral SAR satellite cooperation | Not disclosed |\n| 7 | **German Armed Forces (BAAINBw)** via **Rheinmetall ICEYE Space Solutions** JV | 18 December 2025 | \"SPOCK 1\" \u2013 space-based SAR reconnaissance constellation; contract runs end-2025 to end-2030 with extension options | ~\u20ac1.7 billion |\n| 8 | **Swedish Defence Materiel Administration (FMV)** | 12 January 2026 | Multi-year sovereign SAR satellite system for the Swedish Armed Forces (satellites, data, software, ground systems) | Multi-million euro (exact figure not disclosed) |\n| 9 | **Bank Gospodarstwa Krajowego (BGK), Poland** (via Vinci fund) | 2026 | Investment / loan to support ICEYE's R&D and production facilities in Poland | PLN 40 million (~$11 million) |\n| 10 | **Hellenic Innovation & Infrastructure Fund (HIIF), Greece** | 2025\u20132026 | Strategic investment in ICEYE (first HIIF investment); linked to planned satellite manufacturing plant in Attica | \u20ac35 million |\n| 11 | **EU SAFE mechanism (Greece component)** | Pending (earmarked) | Joint procurement of SAR satellites with Poland under the EU SAFE defence-funding programme | \u20ac80 million earmarked |\n| 12 | **Business Finland** | 2026 | Continuation R&D grant (final tranche of a previously announced investment decision) | \u20ac28.3 million |\n| 13 | **ESA / CBK PAN (Civil Security Hub Poland)** | 12 November 2026 | Subscription contract for flood, wildfire and river-ice monitoring under ESA's European Resilience from Space initiative | Not disclosed |\n| 14 | **Ukraine \u2013 Letter of Intent** | 2026 | LoI with ICEYE and Nokia for sovereign satellite communications (signed by Ukraine's Ministry of Defence) | Not disclosed |\n\n### Notes\n- Several of these agreements (e.g. the IHI MoU, the trilateral LoI, the Ukraine LoI) are framework or pre-contractual instruments rather than binding procurement contracts.\n- The SPOCK 1 contract (\u20ac1.7 billion) is by far the largest single award; it was placed with the Rheinmetall ICEYE Space Solutions joint venture rather than with ICEYE directly.\n- ICEYE also participated in major NATO exercises (ORION 2026, Cold Response 2026) and is expanding U.S. operations through its subsidiary ICEYE US, including a partnership with PAR Government on a $900 million U.S. Space Force PLEO contract vehicle, though the timing and specific ICEYE share of that vehicle are not fully detailed in public sources.\n",
+  "explainability": [
+   {
+    "content": "ICEYE signed a procurement contract with the Polish Armed Forces in May 2025 for three SAR satellites valued at approximately \u20ac200\u202fmillion.",
+    "references": [
+     "7ad371c1-5d4a-4d7c-bf85-adce702546f3"
+    ]
+   },
+   {
+    "content": "ICEYE signed a procurement contract with the Finnish Defence Forces on 8\u202fSeptember\u202f2025 for a sovereign SAR satellite system worth about \u20ac158\u202fmillion, including options for extension.",
+    "references": [
+     "7ad371c1-5d4a-4d7c-bf85-adce702546f3",
+     "1b7bf754-48f2-4aa5-9a7e-b55db8c2366c"
+    ]
+   },
+   {
+    "content": "ICEYE and Japan\u2019s IHI Corporation signed a memorandum of understanding on 22\u202fMay\u202f2025 to develop a SAR constellation of up to 24 satellites.",
+    "references": [
+     "960054ed-e6f3-498d-ad9c-096f11e25c10"
+    ]
+   },
+   {
+    "content": "Following the May MOU, ICEYE and IHI signed a procurement contract on 16\u202fOctober\u202f2025 for an initial four satellites (with an option for 20 more) to be built in Japan.",
+    "references": [
+     "0eacf121-5e77-4ea0-907d-b0150afc7506",
+     "e0335279-2a99-4e11-b42b-2ab36f042d4d",
+     "23cfbffe-eef8-4517-a7fe-7543986ad6c5"
+    ]
+   },
+   {
+    "content": "ICEYE, through the joint venture Rheinmetall\u202fICEYE Space Solutions, received the German Armed Forces \u201cSPOCK\u202f1\u201d contract on 18\u202fDecember\u202f2025, valued at roughly \u20ac1.7\u202fbillion and running to end\u201120210 with extensions.",
+    "references": [
+     "82244537-3667-40c1-8aef-b04abc7987cd",
+     "b8605e1f-0f4f-4a7d-aa52-7bd28c394e18",
+     "bb10fc0f-47e0-4d6f-994b-b8be76e5b2a4"
+    ]
+   },
+   {
+    "content": "ICEYE signed a multi\u2011year sovereign SAR system contract with the Swedish Defence Materiel Administration on 12\u202fJanuary\u202f2026, described as a multi\u2011million\u2011euro agreement.",
+    "references": [
+     "2ce316cb-18b5-4e6c-bb7c-fe1728dc2dcc",
+     "11bc0ef8-0010-4d36-a3d4-03959e2969e9"
+    ]
+   },
+   {
+    "content": "Bank Gospodarstwa Krajowego (BGK) provided a PLN\u202f40\u202fmillion (~US$11\u202fmillion) loan to ICEYE in 2026 to support R&D and production facilities in Poland.",
+    "references": [
+     "d2d5f06c-f837-4535-ab80-e394ca2c1ba4"
+    ]
+   },
+   {
+    "content": "The Hellenic Innovation & Infrastructure Fund invested \u20ac35\u202fmillion in ICEYE as its first HIIF investment, linked to a planned satellite plant in Greece.",
+    "references": [
+     "4c49b2e1-3aef-4523-b227-d6fda1ac863e"
+    ]
+   },
+   {
+    "content": "An \u20ac80\u202fmillion earmark under the EU SAFE mechanism was allocated for the joint SAR satellite procurement involving Greece and Poland.",
+    "references": [
+     "4c49b2e1-3aef-4523-b227-d6fda1ac863e"
+    ]
+   },
+   {
+    "content": "Business Finland approved a continuation R&D grant of \u20ac28.3\u202fmillion to ICEYE in 2026, the final tranche of a previously announced investment decision.",
+    "references": [
+     "bf7159bf-70af-4ef5-afb4-e871b3397704"
+    ]
+   },
+   {
+    "content": "ICEYE signed a subscription contract with ESA\u2019s Civil Security Hub Poland on 12\u202fNovember\u202f2026 to provide flood, wildfire and river\u2011ice monitoring services.",
+    "references": [
+     "7a12bf07-245b-44b7-87d2-44263186e4b7"
+    ]
+   }
+  ],
+  "context": [
+   {
+    "id": "7ad371c1-5d4a-4d7c-bf85-adce702546f3",
+    "content": "Discord     Instagram     Linkedin     X\n\n News\n  + Launch\n  + Contracts\n  + Business\n  + Defence\n  + Technology\n  + Legislation\n  + Science\n Newsletter\n Launch Schedule\n  + 2026\n  + 2025\n  + 2024\n Rockets\n  + Orbital Rockets\n  + Suborbital Rockets\n Space Map\n Download\n\nLogo\n\n0,00 EUR\n\nNo products in the cart.\n\nLogo [...] The total value of the acquisition is approximately \u20ac158 million. According to an 8 September ICEYE press release, the figure also includes options to extend the life of the satellites and to expand the system in the future. While the number of satellites to be procured by the Finnish Defence Forces has not been disclosed, a similar agreement signed with the Polish Armed Forces in May 2025 carried a total value of approximately \u20ac200 million for the acquisition of three ICEYE SAR satellites, [...] Logo\n\n + Business\n  + Defence\n  + Technology\n  + Legislation\n  + Science\n Newsletter\n Launch Schedule\n  + 2026\n  + 2025\n  + 2024\n Rockets\n  + Orbital Rockets\n  + Suborbital Rockets\n Space Map\n Download\n\n News\n  + Launch\n  + Contracts\n  + Business\n  + Defence\n  + Technology\n  + Legislation\n  + Science\n Newsletter\n Launch Schedule\n  + 2026\n  + 2025\n  + 2024\n Rockets\n  + Orbital Rockets\n  + Suborbital Rockets\n Space Map\n Download",
+    "origins": [
+     {
+      "source": {
+       "name": "European Spaceflight Homepage",
+       "url": "https://europeanspaceflight.com/finnish-defence-forces-award-iceye-158m-euros-contract-for-sar-satellites"
+      },
+      "document": {
+       "name": "Finnish Defence Forces Award ICEYE \u20ac158M Contract for SAR Satellites",
+       "url": "https://europeanspaceflight.com/finnish-defence-forces-award-iceye-158m-euros-contract-for-sar-satellites"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "1b7bf754-48f2-4aa5-9a7e-b55db8c2366c",
+    "content": "intelligence, surveillance and reconnaissance capability. On 5 September the Minister of Defence authorised the Finnish Defence Forces to order a SAR (Synthetic Aperture Radar) satellite system from the Finnish ICEYE Oy. The procurement contract was signed by Brigadier General Engineering Juha-Matti Ylitalo, Deputy Chief of Finnish Defence Forces Logistics Command and Seppo Aaltonen, VP Nordics & NATO at ICEYE, in Tampere on 8 September 2025. The procurement is based on the letter of intent [...] of Nordic and NATO Cooperation, Seppo Aaltonen, signed a procurement contract. The Deputy Chief of the Defence Forces Logistics Command, Brigadier General (Eng.) Juha-Matti Ylitalo, and Iceye Ltd\u2019s Head of Nordic and NATO Cooperation, Seppo Aaltonen, signed a procurement contract. [...] letter of intent signed by the Ministry of Defence and ICEYE in June this year. It includes the satellites and all related technology and equipment, which will enhance the Defence Forces\u2019 independent surveillance capability in space. The procurement includes options which will enable extension of the satellites\u2019 life cycle and expansion of the system. The Deputy Chief of the Defence Forces Logistics Command, Brigadier General (Eng.) Juha-Matti Ylitalo, and Iceye Ltd\u2019s Head of Nordic and NATO",
+    "origins": [
+     {
+      "source": {
+       "name": "Etusivu - Valtioneuvosto",
+       "url": "https://valtioneuvosto.fi/en/-/1948673/finnish-defence-forces-to-procure-satellites-from-iceye"
+      },
+      "document": {
+       "name": "Finnish Defence Forces to procure satellites from ICEYE - Finnish Government",
+       "url": "https://valtioneuvosto.fi/en/-/1948673/finnish-defence-forces-to-procure-satellites-from-iceye"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "d3c2e39a-d251-4c12-becf-1b9e00e8122b",
+    "content": "What has changed the game is price. ICEYE shrank the radar satellite to roughly a tenth of the size of a traditional reconnaissance satellite and cut the cost to a fraction of what it used to be. This has meant that small and medium-sized countries, not just major powers, can now afford the capability. ICEYE has numerous customers, among them seven NATO member states that have procured sovereign satellite systems, and the company has supported Ukraine since 2022. In January 2026, Sweden became a customer through an agreement with the Swedish Defence Materiel Administration (FMV), making Sweden the first sovereign-system customer in the Nordics besides Finland. [...] The foundation is already in place. In December 2025, the Finnish Ministry of Defence signed a letter of intent with the Netherlands and Poland on cooperation around SAR satellites from ICEYE, and more countries are expected to join. ICEYE already works closely with allies such as Poland, the Netherlands and Germany, and Aaltonen sees the Baltic states as a good fit as well. He believes that Sweden now being a customer means Norway, Denmark and other NATO allies gain a well-proven concept to step into.\n\n\"Every time, it gets easier. We build up standards, train the teams, and the alliance becomes more proficient,\" he says. [...] \"The AI can flag a suspected target within a few tens of seconds, and then an analyst reviews it. The human is always kept in the decision loop,\" he says.\n\nThe concept has been tested in exercises. During the major French exercise ORION 2026, ICEYE embedded a mobile ISR (intelligence, surveillance and reconnaissance) cell within a French army brigade and fed targeting data into the brigade's sensor-to-shooter chain. The company also took part in Cold Response 2026 in northern Norway, Finland and Sweden, one of the largest NATO exercises in a long time, involving around 30,000 soldiers from 14 nations.\n\nFor Aaltonen, this is in line with a Nordic way of fighting.",
+    "origins": [
+     {
+      "source": {
+       "name": "Nordiska F\u00f6rsvarsnyheter | Nordic Defence Sector",
+       "url": "https://nordicdefencesector.com/en/article/from-satellite-to-target-in-minutes-iceye-on-long-range-targeting-in-the-nordics"
+      },
+      "document": {
+       "name": "From satellite to target in minutes: ICEYE on long-range targeting in the Nordics",
+       "url": "https://nordicdefencesector.com/en/article/from-satellite-to-target-in-minutes-iceye-on-long-range-targeting-in-the-nordics"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "32039de1-5606-41d9-a145-a5ac9f6d085c",
+    "content": "The sovereign-intelligence demand signal is the structural part. Defense News framed ICEYE\u2019s positioning in November as Europe\u2019s defence space-intelligence linchpin, on the back of contracts signed with the armed forces of Poland, Portugal, the Netherlands and Finland through 2025.\n\nThe US\u2019s pause on intelligence-sharing with Ukraine in March 2025 was, on the same coverage, the catalyst that moved European procurement budgets decisively toward sovereign satellite-intelligence capabilities. [...] \u2018It also enhances our financial flexibility as demand for sovereign intelligence capabilities continues to grow exponentially.\u2019\n\nOn the strategic-capital line, the RCF sits on top of a \u20ac150m Series E equity round closed in December 2024, led by US venture firm General Catalyst, and a separate \u20ac158m Finnish Defence Forces SAR-satellite supply contract signed in September 2025, covering three satellites with options for additional units. [...] The combination, equity, government-supply contract, and now a senior-bank-syndicate credit line, is the financing stack that lets ICEYE underwrite the multi-year procurement contracts the company is increasingly being asked to write for European and Asia-Pacific defence customers.",
+    "origins": [
+     {
+      "source": {
+       "name": "TNW | The heart of tech",
+       "url": "https://thenextweb.com/news/iceye-300-million-revolving-credit-facility"
+      },
+      "document": {
+       "name": "ICEYE secures a \u20ac300M revolving credit facility from a seven-bank syndicate",
+       "url": "https://thenextweb.com/news/iceye-300-million-revolving-credit-facility"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "82244537-3667-40c1-8aef-b04abc7987cd",
+    "content": "The contract runs from the end of 2025 to the end of 2030 with options to extend. The scope of delivery includes a very high number of images per day, a service that will be provided by Rheinmetall ICEYE Space Solutions from its own sovereign constellation. Production of the first joint venture SAR satellites is scheduled to begin in the third quarter of 2026 at the company\u2019s site in Neuss. [...] Helsinki, Finland \u2013 December 18th, 2025 \u2013 Rheinmetall and ICEYE have received a major order from the German Armed Forces for the space sector. The Federal Office of Bundeswehr Equipment, Information Technology and In-Service Support (BAAINBw) has commissioned Rheinmetall ICEYE Space Solutions to supply the German Armed Forces with space-based reconnaissance data via exclusive access to a synthetic aperture radar (SAR) satellite constellation. [...] Within the Bundeswehr, the project is entitled \u2018SAR Space System for Persistent Operational Tracking Stage 1\u2019, (and referred to as \u2018SPOCK 1\u2019). SAR satellites project a powerful radar beam off the Earth\u2019s surface from an orbit of 500 to 600 kilometers. The beam returns to the satellite in a series of pulses, which are processed to build a detailed picture of the ground below. Because SAR technology uses radar to illuminate the Earth instead of sunlight, it can see through clouds, smoke, ash,",
+    "origins": [
+     {
+      "source": {
+       "name": "ICEYE",
+       "url": "https://www.iceye.com/newsroom/press-releases/iceye-and-rheinmetall-win-major-contract-worth-billions-for-space-reconnaissance"
+      },
+      "document": {
+       "name": "ICEYE and Rheinmetall win major contract worth billions for space reconnaissance",
+       "url": "https://www.iceye.com/newsroom/press-releases/iceye-and-rheinmetall-win-major-contract-worth-billions-for-space-reconnaissance"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "b8605e1f-0f4f-4a7d-aa52-7bd28c394e18",
+    "content": "The contract runs from the end of 2025 to the end of 2030 with options to extend. The scope of delivery includes a very high number of images per day, a service that will be provided by Rheinmetall ICEYE Space Solutions from its own sovereign constellation. Production of the first joint venture SAR satellites is scheduled to begin in the third quarter of 2026 at the company\u2019s site in Neuss. [...] jumpToMain\n\nOliver Hoffmann, Head of Press and Public Relations\n\nHead of Public Relations\n\nPhone: +49 211 473-4748\n\n186500\n\n# 18.12.2025 | Press release\n\nMajor contract worth billions for space reconnaissance: Rheinmetall and ICEYE open up Dimension Space\n\nshareOntwitter) shareOnlinkedIn) shareOnxing)\n\n## Key Facts [...] Further information about Rheinmetall ICEYE Space Solutions GmbH:\n\nRheinmetall ICEYE Space Solutions GmbH\n\n164356\n\nDo you have a question or need further information?\n\nContact us\n\nContact\n\nOliver Hoffmann, Head of Press and Public Relations\n\nHead of Public Relations\n\nPhone: +49 211 473-4748\n\nAvailable documents\n\n2025-12-18-rheinmetall-and-iceye-win-billion-euro-contract-for-space-reconnaissance\n\n.pdf234.84 kB",
+    "origins": [
+     {
+      "source": {
+       "name": "F\u00fchrendes Systemhaus f\u00fcr Sicherheits- und Verteidigungstechnologien",
+       "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-18-rheinmetall-and-iceye-win-billion-euro-contract-for-space-reconnaissance"
+      },
+      "document": {
+       "name": "Rheinmetall and ICEYE win billion-euro contract for space reconnaissance | Rheinmetall",
+       "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-18-rheinmetall-and-iceye-win-billion-euro-contract-for-space-reconnaissance"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "bb10fc0f-47e0-4d6f-994b-b8be76e5b2a4",
+    "content": "said Thursday. The contract, referred to as SPOCK 1, runs from the end of 2025 to the end of 2030 and comes with options to extend. The new joint venture between the German defense and technology firm and Iceye is called Rheinmetall Iceye Space Solutions and is based in Neuss, near D\u00fcsseldorf. Production of the first joint venture SAR satellites is scheduled to begin in the third quarter of 2026. Iceye noted the venture will provide SAR images and a full service that includes that operations, [...] # German Armed Forces Picks Rheinmetall and Iceye for SAR Constellation. An Iceye satellite in orbit. The German Armed Forces has awarded a new joint venture between Rheinmetall and Iceye a contract to deliver an exclusive constellation, valued at approximately 1.7 billion euro ($2 billion). Data from the synthetic aperture radar (SAR) constellation will primarily be used to protect the German Armed Forces\u2019 Lithuania Brigade and secure NATO\u2019s eastern flank, the companies said Thursday. The [...] that operations, ground station management, and AI-driven image evaluation. However, the satellite constellation will remain the property of Rheinmetall Iceye Space Solutions. This award comes after Germany pledged to invest 35 billion euro in space defense capabilities by 2030, with plans to acquire satellite constellations for early warning, reconnaissance, and communications. Iceye CEO and co-founder Rafal Modrzewski called the agreement a mark of Iceye\u2019s \u201cevolution from a New Space pioneer",
+    "origins": [
+     {
+      "source": {
+       "name": "satellitetoday.com",
+       "url": "https://www.satellitetoday.com/government-military/2025/12/18/german-armed-forces-picks-rheinmetall-and-iceye-for-sar-constellation"
+      },
+      "document": {
+       "name": "German Armed Forces Picks Rheinmetall and Iceye for SAR Constellation\u00a0 - Via Satellite",
+       "url": "https://www.satellitetoday.com/government-military/2025/12/18/german-armed-forces-picks-rheinmetall-and-iceye-for-sar-constellation"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "2ce316cb-18b5-4e6c-bb7c-fe1728dc2dcc",
+    "content": "Helsinki, Finland \u2013 January 12, 2026 - ICEYE, the global leader in Synthetic Aperture Radar (SAR) satellite operations, and the Swedish Defence Materiel Administration (FMV) have signed a contract to deliver sovereign SAR systems for the Swedish Armed Forces. The multi-million, multi-year agreement will strengthen Sweden\u2019s national intelligence, surveillance, and reconnaissance (ISR) capabilities and resilience by providing timely, actionable insights in all weather and lighting conditions. [...] Under the contract, Sweden will procure ICEYE\u2019s SAR satellites, data and software, along with the associated ground and technical systems required to establish a sovereign, space-based surveillance and intelligence capability. The Swedish Armed Forces will own and operate the system, ensuring sovereign control over tasking, data, and operational use to support national defence and security requirements. [...] The agreement was signed in Stockholm by Brigadier General Carl-Fredrik Edstr\u00f6m, Director of the Air and Space Systems Division, Swedish Defence Materiel Administration (FMV) and Seppo Aaltonen, VP Nordics & NATO, ICEYE.",
+    "origins": [
+     {
+      "source": {
+       "name": "ICEYE",
+       "url": "https://www.iceye.com/newsroom/press-releases/iceye-to-deliver-sovereign-space-based-intelligence-capabilities-to-the-swedish-armed-forces"
+      },
+      "document": {
+       "name": "ICEYE to deliver sovereign space-based intelligence capabilities to the Swedish Armed Forces",
+       "url": "https://www.iceye.com/newsroom/press-releases/iceye-to-deliver-sovereign-space-based-intelligence-capabilities-to-the-swedish-armed-forces"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "11bc0ef8-0010-4d36-a3d4-03959e2969e9",
+    "content": "Arctic, and NATO\u2019s North-Eastern Flank. Helsinki, Finland \u2013 January 12, 2026 - ICEYE, the global leader in Synthetic Aperture Radar (SAR) satellite operations, and the Swedish Defence Materiel Administration (FMV) have signed a contract to deliver sovereign SAR systems for the Swedish Armed Forces. The multi-million, multi-year agreement will strengthen Sweden\u2019s national intelligence, surveillance, and reconnaissance (ISR) capabilities and resilience by providing timely, actionable insights in [...] insights in all weather and lighting conditions. The agreement was signed in Stockholm by Brigadier General Carl-Fredrik Edstr\u00f6m, Director of the Air and Space Systems Division, Swedish Defence Materiel Administration (FMV) and Seppo Aaltonen, VP Nordics & NATO, ICEYE. Under the contract, Sweden will procure ICEYE\u2019s SAR satellites, data and software, along with the associated ground and technical systems required to establish a sovereign, space-based surveillance and intelligence capability. [...] in the Nordics. The agreement reflects ICEYE\u2019s role in the continuing shift of European and NATO defence toward the tactical use of space: evolving from strategic single, vulnerable legacy systems to sovereignly owned, more resilient, high-revisit space-based intelligence capabilities that can support decision-makers at tactical speed. Seppo Aaltonen, VP of Nordics and NATO, at ICEYE said: \u201cICEYE is proud to partner with the Swedish Armed Forces and deliver sovereign space-based ISR",
+    "origins": [
+     {
+      "source": {
+       "name": "ICEYE",
+       "url": "https://www.iceye.com/newsroom/press-releases/iceye-to-deliver-sovereign-space-based-intelligence-capabilities-to-the-swedish-armed-forces?hsLang=en"
+      },
+      "document": {
+       "name": "ICEYE to deliver sovereign space-based intelligence capabilities to the Swedish Armed Forces",
+       "url": "https://www.iceye.com/newsroom/press-releases/iceye-to-deliver-sovereign-space-based-intelligence-capabilities-to-the-swedish-armed-forces?hsLang=en"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "d2d5f06c-f837-4535-ab80-e394ca2c1ba4",
+    "content": "PLN 40 million ($11 million) to support ICEYE\u2019s research projects and production facilities. \u201cBy signing the agreement with ICEYE, through Vinci, Bank Gospodarstwa Krajowego is implementing its 2025\u20132030 strategy, which foresees support for innovative Polish technologies. ICEYE\u2019s solutions are a strong example of dual-use technology. The satellites provide intelligence in agriculture, crisis management and defense,\u201d Czekaj said. ICEYE operates the world\u2019s largest constellation of radar [...] of radar surveillance satellites, offering imagery with a resolution of up to 25 cm, allowing object detection regardless of weather or time of day. Since 2018, the company has launched 54 satellites for its own constellation and for third-party clients, with plans to add about 20 satellites annually starting this year. In May, ICEYE signed an agreement with Poland\u2019s Ministry of National Defence to supply three radar satellites under the MicroSAR program. Founded by Finnish engineers, ICEYE has [...] Foreigners From 151 Countries Signed Contracts With Russian Armed Forces \u2014 Coordination Headquarters.",
+    "origins": [
+     {
+      "source": {
+       "name": "\u041c\u0456\u043b\u0456\u0442\u0430\u0440\u043d\u0438\u0439",
+       "url": "https://militarnyi.com/en/news/poland-invests-in-iceye-ukraine-s-people-s-satellite-maker"
+      },
+      "document": {
+       "name": "Poland Invests in ICEYE, Ukraine\u2019s \u2018People\u2019s Satellite\u2019 Maker",
+       "url": "https://militarnyi.com/en/news/poland-invests-in-iceye-ukraine-s-people-s-satellite-maker"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "4c49b2e1-3aef-4523-b227-d6fda1ac863e",
+    "content": "## Greek satellites under the SAFE mechanism\n\nAccording to information, a Memorandum of Understanding between the defence ministers of Poland and Greece is expected to be signed in Poland in the coming days, covering the joint procurement of SAR satellites under the SAFE mechanism.\n\nNaftemporiki \u0394\u0399\u0391\u0392\u0391\u03a3\u03a4\u0395 \u0395\u03a0\u0399\u03a3\u0397\u03a3\n\n\u039f \u039c\u03b5\u03bb\u03b1\u03bd\u03c3\u03cc\u03bd \u03b1\u03c0\u03b1\u03bd\u03c4\u03ac \u03c3\u03c4\u03bf \u0399\u03c3\u03c1\u03b1\u03ae\u03bb: \u039c\u03bf\u03c5 \u03b1\u03c0\u03b1\u03b3\u03bf\u03c1\u03b5\u03cd\u03bf\u03c5\u03bd \u03c4\u03b7\u03bd \u03b5\u03af\u03c3\u03bf\u03b4\u03bf \u03c3\u03b5 \u03c7\u03ce\u03c1\u03b1 \u03c0\u03bf\u03c5 \u03c0\u03bf\u03c4\u03ad \u03b4\u03b5\u03bd \u03b6\u03ae\u03c4\u03b7\u03c3\u03b1 \u03bd\u03b1 \u03b5\u03b9\u03c3\u03ad\u03bb\u03b8\u03c9 \n\n### \u039f \u039c\u03b5\u03bb\u03b1\u03bd\u03c3\u03cc\u03bd \u03b1\u03c0\u03b1\u03bd\u03c4\u03ac \u03c3\u03c4\u03bf \u0399\u03c3\u03c1\u03b1\u03ae\u03bb: \u039c\u03bf\u03c5 \u03b1\u03c0\u03b1\u03b3\u03bf\u03c1\u03b5\u03cd\u03bf\u03c5\u03bd \u03c4\u03b7\u03bd \u03b5\u03af\u03c3\u03bf\u03b4\u03bf \u03c3\u03b5 \u03c7\u03ce\u03c1\u03b1 \u03c0\u03bf\u03c5 \u03c0\u03bf\u03c4\u03ad \u03b4\u03b5\u03bd \u03b6\u03ae\u03c4\u03b7\u03c3\u03b1 \u03bd\u03b1 \u03b5\u03b9\u03c3\u03ad\u03bb\u03b8\u03c9\n\nPoland\u2019s Ministry of Defence has already signed a contract with ICEYE for its part of the programme. As the joint procurement moves forward, Greece\u2019s participation is also expected to be confirmed. [...] Funding of \u20ac80 million has been earmarked through SAFE for the Greek proposal under the joint procurement, with implementation scheduled to run until 2030.\n\nHowever, defence industry executives told Naftemporiki that there is optimism that the Greek component of the joint SAR satellite procurement under SAFE could be completed before 2030, provided the agreement is signed.\n\n## Space Operations Command at Dekeleia Air Base\n\nAt the operational level, Greece is also strengthening its satellite capabilities through the establishment of a Space Operations Command at Dekeleia Air Base, as part of the third phase of the Armed Forces\u2019 New Structure 2024\u20132035. [...] An essential complement to the development of national space capabilities is the establishment of a domestic technological base capable of supporting and upgrading satellites. In this context, Greece has already put in place a domestic assembly, integration and testing facility for space hardware at the Hellenic Aerospace Industry\u2019s premises.\n\n## First investment by the Hellenic Innovation and Infrastructure Fund (HIIF): \u20ac35 million investment in ICEYE\n\nThe importance of satellite communications to Greece\u2019s national security and defence planning is also underscored by the first investment of the Hellenic Innovation and Infrastructure Fund (HIIF), amounting to \u20ac35 million, in ICEYE.",
+    "origins": [
+     {
+      "source": {
+       "name": "\u0395\u03b9\u03b4\u03ae\u03c3\u03b5\u03b9\u03c2 \u03b1\u03c0\u03cc \u03c4\u03b7\u03bd \u0395\u03bb\u03bb\u03ac\u03b4\u03b1 \u03ba\u03b1\u03b9 \u03c4\u03bf\u03bd \u039a\u03cc\u03c3\u03bc\u03bf | \u0397 \u039d\u0391\u03a5\u03a4\u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397",
+       "url": "https://www.naftemporiki.gr/english/2188720/iceye-plans-new-satellite-manufacturing-plant-in-attica-opening-more-than-250-jobs"
+      },
+      "document": {
+       "name": "ICEYE plans new satellite manufacturing plant in Attica, opening more than 250 jobs",
+       "url": "https://www.naftemporiki.gr/english/2188720/iceye-plans-new-satellite-manufacturing-plant-in-attica-opening-more-than-250-jobs"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "960054ed-e6f3-498d-ad9c-096f11e25c10",
+    "content": "# ICEYE and IHI start cooperation to develop SAR satellite constellation in Japan. Written by ICEYE | 22 May 2025. Helsinki - May 22, 2025 - ICEYE, the global leader in Synthetic Aperture Radar (SAR) satellite operations for earth observation, and IHI Corporation (\u201cIHI\u201d), the Japanese heavy industries company, start cooperating on the development of a SAR constellation of up to 24 satellites, to provide earth observation data for military, civilian and commercial purposes. A memorandum of [...] A memorandum of understanding between the two companies was signed at DSEI Japan, the biannual defense event taking place this week at Makuhari Messe, near Tokyo. As part of the planned development, IHI and ICEYE plan to establish a satellite manufacturing facility in Japan, with satellites to be operated domestically. This initiative is intended to support Japan\u2019s space ambitions of boosting space industries while strengthening national security and resilience. The foundation is still subject [...] is still subject to definitive agreements and official approvals. Rafal Modrzewski, Co-founder & CEO of ICEYE, said: \u201cICEYE has had a close relationship with Japan since 2018, building trust and long-term commitment. The strengthening of Finland-Japan relationship and technical alliance enhance the security of both nations. By collaborating with Japanese organizations, ICEYE improves their defense capabilities and strengthens shared security. We are dedicated to creating new connections and",
+    "origins": [
+     {
+      "source": {
+       "name": "ICEYE",
+       "url": "https://www.iceye.com/newsroom/press-releases/iceye-and-ihi-start-cooperation-to-develop-sar-satellite-constellation-in-japan?hs_amp=true"
+      },
+      "document": {
+       "name": "ICEYE and IHI start cooperation to develop SAR satellite constellation in Japan",
+       "url": "https://www.iceye.com/newsroom/press-releases/iceye-and-ihi-start-cooperation-to-develop-sar-satellite-constellation-in-japan?hs_amp=true"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "0eacf121-5e77-4ea0-907d-b0150afc7506",
+    "content": "completion of the 24-satellite constellation by fiscal year 2029. The contract follows the memorandum of understanding signed between ICEYE and IHI in May 2025 to jointly develop the constellation and establish domestic production facilities in Japan. This cooperation builds on the companies' shared vision to combine ICEYE's SAR technology and rapid satellite deployment capabilities with IHI's engineering heritage to advance Japan's manufacturing and space capabilities. Owning the world's [...] # ICEYE and IHI sign agreement to build an Earth observation satellite constellation. ICEYE and IHI sign agreement to build an Earth observation satellite constellation. ## ICEYE and IHI sign agreement to build an Earth observation satellite constellation. HELSINKI, Oct. 16, 2025 /PRNewswire/ -- ICEYE, the global leader in Synthetic Aperture Radar (SAR) satellite operations for Earth observation, and IHI Corporation (\"IHI\"), the Japanese leader in aerospace and defense industries, have signed a [...] have signed a procurement contract to build an Earth observation satellite constellation for security, civilian, and commercial use. The agreement marks a significant step in the partnership between ICEYE and IHI. This agreement with IHI marks a new milestone in strengthening our partnership and enhancing shared security and resilience. By combining IHI's engineering excellence with ICEYE's SAR technology, we're enabling sovereign access to critical Earth observation data and advancing Japan's",
+    "origins": [
+     {
+      "source": {
+       "name": "morningstar.com",
+       "url": "https://www.morningstar.com/news/pr-newswire/20251016la99676/iceye-and-ihi-sign-agreement-to-build-an-earth-observation-satellite-constellation"
+      },
+      "document": {
+       "name": "ICEYE and IHI sign agreement to build an Earth observation satellite constellation | Morningstar",
+       "url": "https://www.morningstar.com/news/pr-newswire/20251016la99676/iceye-and-ihi-sign-agreement-to-build-an-earth-observation-satellite-constellation"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "e0335279-2a99-4e11-b42b-2ab36f042d4d",
+    "content": "on a memorandum of understanding signed in May 2025 to jointly develop the constellation and establish domestic satellite production in Japan. This cooperation combines ICEYE\u2019s rapid satellite deployment capabilities with IHI\u2019s engineering heritage to enhance Japan\u2019s space and manufacturing sectors. ICEYE   IHI   Japan   SAR   satellite   space. The system is designed to counter threats to satellites in what the company described as an increasingly contested and congested space domain. #### [...] # ICEYE and IHI sign agreement to build satellite constellation for Earth Observation in Japan. ICEYE and Japan\u2019s IHI Corporation have signed a procurement contract to build an Earth observation satellite constellation for security, civilian, and commercial applications. The agreement includes an initial order of four satellites and an image acquisition system, with the option for 20 more, aiming to start phased commissioning from April 2026. This agreement with IHI marks a new milestone in [...] a new milestone in strengthening our partnership and enhancing shared security and resilience. By combining IHI\u2019s engineering excellence with ICEYE\u2019s SAR technology, we\u2019re enabling sovereign access to critical Earth observation data and advancing Japan\u2019s leadership in space-based intelligence.\u201d. The collaboration aims to strengthen Japan\u2019s sovereign access to space-based intelligence and boost resilience through advanced monitoring systems. Hiroshi Ide, President and CEO of IHI, stated, \u201cAt",
+    "origins": [
+     {
+      "source": {
+       "name": "Defence Industry Europe",
+       "url": "https://defence-industry.eu/iceye-and-ihi-sign-agreement-to-build-satellite-constellation-for-earth-observation-in-japan"
+      },
+      "document": {
+       "name": "ICEYE and IHI sign agreement to build satellite constellation for Earth Observation in Japan - Defence Industry Europe",
+       "url": "https://defence-industry.eu/iceye-and-ihi-sign-agreement-to-build-satellite-constellation-for-earth-observation-in-japan"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "23cfbffe-eef8-4517-a7fe-7543986ad6c5",
+    "content": "The contract follows the memorandum of understanding signed between ICEYE and IHI in May 2025 to jointly develop the constellation and establish domestic production facilities in Japan. This cooperation builds on the companies\u2019 shared vision to combine ICEYE\u2019s SAR technology and rapid satellite deployment capabilities with IHI\u2019s engineering heritage to advance Japan\u2019s manufacturing and space capabilities. [...] Helsinki, Finland \u2013 October 16th, 2025 \u2013 ICEYE, the global leader in Synthetic Aperture Radar (SAR) satellite operations for Earth observation, and IHI Corporation (\u201cIHI\u201d), the Japanese leader in aerospace and defense industries, have signed a procurement contract to build an Earth observation satellite constellation for security, civilian, and commercial use [...] Rafal Modrzewski, Co-founder and CEO of ICEYE, said: \u201cICEYE has built a trusted partnership with Japan since 2018, grounded in shared values and innovation. This agreement with IHI marks a new milestone in strengthening our partnership and enhancing shared security and resilience. By combining IHI\u2019s engineering excellence with ICEYE\u2019s SAR technology, we\u2019re enabling sovereign access to critical Earth observation data and advancing Japan\u2019s leadership in space-based intelligence.\u201d",
+    "origins": [
+     {
+      "source": {
+       "name": "arctictoday.com",
+       "url": "https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-iceye-and-ihi-sign-agreement-to-build-an-earth-observation-satellite-constellation"
+      },
+      "document": {
+       "name": "\ud83c\uddeb\ud83c\uddee ICEYE and IHI sign agreement to build an Earth observation satellite constellation - ArcticToday",
+       "url": "https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-iceye-and-ihi-sign-agreement-to-build-an-earth-observation-satellite-constellation"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "7a12bf07-245b-44b7-87d2-44263186e4b7",
+    "content": "Warsaw, Poland \u2013 November 12, 2026 \u2013  ICEYE,  the world leader in sovereign intelligence from space, and the Space Research Centre of the Polish Academy of Sciences (CBK PAN) announced a contract under which ICEYE will supply flood, wildfire, and river ice monitoring to Civil Security Hub Poland (CS Hub PL), Poland\u2019s node in the European Space Agency\u2019s (ESA) Space Resilience Nodes initiative. The agreement gives CS Hub PL standing access to ICEYE disaster monitoring under a subscription model, rather than requiring services to be activated separately for each event. The contract is part of ESA\u2019s European Resilience from Space for Earth Observation (ERS-EO) initiative, which aims to give Europe reliable, secure, timely, \u201calways on\u201d access to independent space-based information during [...] ICEYE is the world leader in sovereign intelligence from space. We deliver persistent monitoring capabilities to detect and respond to changes in any location on Earth.   \n  \nICEYE owns the world's largest and most advanced SAR (synthetic aperture radar) satellite constellation. To our customers we provide intelligence with unmatched quality, latency and revisit times, in any weather, day or night. To governments who choose to operate their own constellation we provide this proven capability as a sovereign system.   \n  \nICEYE-built constellations serve customers in defense and intelligence, environmental monitoring, insurance and emergency management. We enable fast decisions that contribute to a safer future. [...] The contract builds on earlier collaboration between ICEYE, CBK PAN, and ESA, including operational support during Storm Boris in September 2024, an activation already communicated under the Civil Security Hub name. ICEYE delivered flood data every 6 hours to CBK PAN\u2019s Crisis Information Centre, which passed the data to the State Fire Service, regional and local crisis management teams, and hydrological services. Flood Rapid Impact was the main source of flood information during the first four days of the event, according to the Crisis Information Centre. ICEYE developed and matured these flood and wildfire services with ESA and CBK PAN through the COSMOS project under ESA\u2019s Civil Security from Space initiative. ICEYE\u2019s flood monitoring was further developed for Polish end users through",
+    "origins": [
+     {
+      "source": {
+       "name": "ICEYE",
+       "url": "https://www.iceye.com/newsroom/press-releases/civil-security-hub-poland-adds-iceye-flood-and-wildfire-monitoring?hsLang=en"
+      },
+      "document": {
+       "name": "Civil Security Hub Poland adds ICEYE flood and wildfire monitoring to support Polish emergency services",
+       "url": "https://www.iceye.com/newsroom/press-releases/civil-security-hub-poland-adds-iceye-flood-and-wildfire-monitoring?hsLang=en"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "68fe3643-c61b-404d-8e21-195f5b5add2b",
+    "content": "Logo\n\n + Business\n  + Defence\n  + Technology\n  + Legislation\n  + Science\n Newsletter\n Launch Schedule\n  + 2026\n  + 2025\n  + 2024\n Rockets\n  + Orbital Rockets\n  + Suborbital Rockets\n Space Map\n Download\n\n News\n  + Launch\n  + Contracts\n  + Business\n  + Defence\n  + Technology\n  + Legislation\n  + Science\n Newsletter\n Launch Schedule\n  + 2026\n  + 2025\n  + 2024\n Rockets\n  + Orbital Rockets\n  + Suborbital Rockets\n Space Map\n Download\n\n# ICEYE Secures Three Defence Contracts in Just Two Weeks\n\nBy [...] Discord     Instagram     Linkedin     X\n\n News\n  + Launch\n  + Contracts\n  + Business\n  + Defence\n  + Technology\n  + Legislation\n  + Science\n Newsletter\n Launch Schedule\n  + 2026\n  + 2025\n  + 2024\n Rockets\n  + Orbital Rockets\n  + Suborbital Rockets\n Space Map\n Download\n\nLogo\n\n0,00 EUR\n\nNo products in the cart.\n\nLogo [...] By\n\nAndrew Parsonson\n\n-\n\nFacebookXPinterestLinkedinReddItTumblrMixCopy URL\n\nCommercial Earth observation provider ICEYE announced defence agreements with Portugal, the Netherlands, and NATO over a two-week period.\n\nCredit: ICEYE\n\nFinnish Earth observation data provider ICEYE has secured agreements with three European defence customers within a two-week period.",
+    "origins": [
+     {
+      "source": {
+       "name": "European Spaceflight Homepage",
+       "url": "https://europeanspaceflight.com/iceye-secures-three-defence-contracts-in-just-two-weeks"
+      },
+      "document": {
+       "name": "ICEYE Secures Three Defence Contracts in Just Two Weeks - European Spaceflight",
+       "url": "https://europeanspaceflight.com/iceye-secures-three-defence-contracts-in-just-two-weeks"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "bf7159bf-70af-4ef5-afb4-e871b3397704",
+    "content": "round included \u20ac450 million of primary investment at a valuation exceeding \u20ac10 billion. In May 2026, ICEYE announced that it has secured a \u20ac300 million 3-year committed revolving credit facility (RCF). The Scaleup Europe Fund was established by the European Commission alongside a group of European investors and managed by EQT. In 2025, ICEYE crossed over \u20ac250 million in revenue, and over \u20ac100 million in EBITDA, with a contracted backlog of over \u20ac1.5 billion. The company has built a strong [...] # Scaleup Europe Fund backs ICEYE in \u20ac1bn funding round - In June 2026, ICEYE announced a partnership with Portugal\u2019s CTI Aeroespacial. ## Scaleup Europe Fund backs ICEYE in \u20ac1bn funding round. In June 2026, ICEYE announced a partnership with Portugal\u2019s CTI Aeroespacial. EQT today announced that the Scaleup Europe Fund has completed its first investment by co-leading Espoo-based SpaceTech company ICEYE\u2019s recently announced \u20ac1 billion Series F funding round. The funding round included \u20ac450 [...] FAP). In June, the company also announced the appointment of Eric Jensen as global Chief Operating Officer, and that Business Finland, Finland\u2019s public innovation agency, had approved a \u20ac28.3 million continuation grant, the final tranche of a previously announced major R&D investment decision. The satellites were integrated by Exolaunch and successfully launched on March 30, 2026, aboard SpaceX\u2019s Transporter-16 rideshare mission from Vandenberg Space Force Base, California, USA.",
+    "origins": [
+     {
+      "source": {
+       "name": "AICEP",
+       "url": "https://portugalglobal.pt/en/news/2026/agosto/scaleup-europe-fund-backs-iceye-in-1bn-funding-round"
+      },
+      "document": {
+       "name": "Scaleup Europe Fund backs ICEYE in \u20ac1bn funding round",
+       "url": "https://portugalglobal.pt/en/news/2026/agosto/scaleup-europe-fund-backs-iceye-in-1bn-funding-round"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "5dcf83d9-20ee-4d80-a202-ef078a0dd9d9",
+    "content": "Cyprus signs for another Israel Shipyards patrol vessel, Breaking Defense reports\n Ukraine signs letter of intent with ICEYE and Nokia for sovereign satcom\n UK and Canada plan two distinct but complementary defense institutions\n Air Force announces industry day tied to fighter engine re-competition\n Autonomous Warfare Command startup funding hinges on reconciliation, Defense One reports\n Corvid Technologies plans $95 million Mooresville expansion that adds vehicle launch-system manufacturing\n Warhound launches with $200 million seed round to supply military working dogs\n Booz Allen's Civil and Commercial revenue falls 15%\n Leonardo-Rheinmetall venture secures $4.16 billion in Italian Army orders, MF reports\n Portugal authorizes Embraer KC-390 purchase for resale to Greece [...] Lockheed to bring Hadrian automation into its Texas munitions plant\n Turkey proposes 229% rise in defense procurement spending, Breaking Defense reports\n Gecko Robotics\u2019 Navy ship-maintenance contract ceiling rises to $300 million, DefenseScoop reports\n Hanwha Defense USA plans U.S. supply chain for Army\u2019s XM1776 cannon, DefenseScoop reports\n Global Ordnance, Sparkz sign supply deal targeting 210,000 drone battery packs\n Army tactical communications call reserves controlled files for current Department of War contractors\n Northrop Grumman named principal contractor for possible Dutch countermeasure sale estimated at $294 million\n BAE signs framework for up to 25,000 APKWS guidance sections a year\n Elbit awarded roughly $235 million European contract for PULS launchers and rockets [...] FFG generated around \u20ac760 million in revenue in 2025 under German Commercial Code accounting, Deutz reported in July.2\n\nFFG produces, maintains and modernizes vehicles including armored recovery vehicles, infantry fighting vehicles and armored personnel carriers. Deutz describes FFG as an established partner of the Bundeswehr and armed forces in NATO and Ukraine.2\n\nDeutz's defense business recorded \u20ac89.2 million in new orders in the first nine months of 2026. The company expects FFG's inclusion to increase defense's share of group orders substantially from the first quarter of 2027.1\n\nThe acquisition combines FFG's military vehicle expertise with Deutz's propulsion portfolio. Deutz expects that combination to make it a systems provider for European defense programs.2\n\nSources (2)",
+    "origins": [
+     {
+      "source": {
+       "name": "TGOs",
+       "url": "https://tgos.io/news/2026/11/08/propulsion-supplier-deutz-closes-1-6-billion-acquisition-of"
+      },
+      "document": {
+       "name": "Propulsion supplier Deutz closes \u20ac1.6 billion acquisition of military vehicle maker FFG \u00b7 TGOs",
+       "url": "https://tgos.io/news/2026/11/08/propulsion-supplier-deutz-closes-1-6-billion-acquisition-of"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "c3001bab-876b-4961-a135-55ef7998f7c1",
+    "content": "data directly to decision-makers, and a mutual learning opportunity on maximising the benefits of tactical SAR use into actionable insights. It puts strategic-grade space intelligence tools in the hands of the commander in minutes, not hours or days, fundamentally changing how modern operations are planned and executed,\u201d said Pekka Laurila, CSO and Co-founder of ICEYE. ICEYE has recently signed agreements to provide its SAR satellite technology and ISR capabilities to the Polish Armed Forces, [...] \u201cWith Rheinmetall, we have a strong and reliable partner at our side.\u201d. By combining IHI\u2019s engineering excellence with ICEYE\u2019s SAR technology, we\u2019re enabling sovereign access to critical Earth observation data and advancing Japan\u2019s leadership in space-based intelligence.\u201d. Jordi Laguarda, VP Spain & Portugal & Italy \u2013 Missions Systems, at ICEYE, said: \u201cOur participation in the 2025 NATO Tiger Meet is a testament to the operational capability of the ISR Cell to deliver data directly to [...] The contract supports SPOCK-1, the German satellite reconnaissance programme awarded to Rheinmetall ICEYE Space Solutions, with SATIM supplying its technology from within the European Union while Rheinmetall operates the system independently in Germany. ICEYE enables that, with the world\u2019s largest SAR constellation, software defined satellites, and fully sovereign missions that put independent visibility back in Europe\u2019s hands.\u201d. The company has already supplied sovereign systems to several",
+    "origins": [
+     {
+      "source": {
+       "name": "Defence Industry Europe",
+       "url": "https://defence-industry.eu/tag/iceye/feed"
+      },
+      "document": {
+       "name": "ICEYE \u2013 Defence Industry Europe",
+       "url": "https://defence-industry.eu/tag/iceye/feed"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "f1fad56f-9568-4228-bd73-d9ac2564a59d",
+    "content": "# ICEYE. ## PAR Government awarded a prime spot on a USD 900M United States Space Force contract. Space/C4ISR / Defence Industry Europe. PAR Government in close partnership with ICEYE US, has signed a prime contract award for the Proliferated Low Earth Orbit (PLEO) Satellite-Based Services initiative led by the U.S. Space Force. PAR Government awarded a prime spot on a USD 900M United States Space Force contract Read More \u00bb. ## ICEYE supports the European Maritime Safety Agency with SAR [...] ICEYE - Defence Industry Europe [...] Agency with SAR satellite data. Space/C4ISR / Defence Industry Europe. ICEYE announced the start of a framework contract with the European Maritime Safety Agency (EMSA) to support their efforts in managing various aspects of maritime operations with SAR data. ICEYE supports the European Maritime Safety Agency with SAR satellite data Read More \u00bb. ## ICEYE to provide SAR radars for BAE Systems\u2019 multi-sensor satellite constellation. Space/C4ISR / Defence Industry Europe. ICEYE to provide radar",
+    "origins": [
+     {
+      "source": {
+       "name": "Defence Industry Europe",
+       "url": "https://defence-industry.eu/tag/iceye/page/5"
+      },
+      "document": {
+       "name": "ICEYE - Defence Industry Europe",
+       "url": "https://defence-industry.eu/tag/iceye/page/5"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   }
+  ],
+  "entities": [
+   {
+    "id": "0247c487-08b6-4e07-8e92-0969cdfeaa2d",
+    "name": "ICEYE",
+    "entity_type": "Company",
+    "mentions": [
+     "ICEYE"
+    ]
+   },
+   {
+    "id": "1006ef7e-00dc-4e9a-bc1d-a4a87ae27130",
+    "name": "Polish Armed Forces",
+    "entity_type": "Organization",
+    "mentions": [
+     "Polish Armed Forces"
+    ]
+   },
+   {
+    "id": "6d909137-a0a9-414c-bc93-40cbf5f6acd8",
+    "name": "IHI Corporation",
+    "entity_type": "Company",
+    "mentions": [
+     "IHI Corporation"
+    ]
+   },
+   {
+    "id": "e4dd8a94-8066-4726-8af6-e94e2d63dd47",
+    "name": "Portugal",
+    "entity_type": "GPE",
+    "mentions": [
+     "Portugal"
+    ]
+   },
+   {
+    "id": "c380ee36-924c-4de9-978f-bb9f13dc926a",
+    "name": "Netherlands",
+    "entity_type": "Country",
+    "mentions": [
+     "Netherlands"
+    ]
+   },
+   {
+    "id": "1d08ec1d-4615-55dc-b637-d6ad8c073b78",
+    "name": "NATO",
+    "entity_type": "IntergovernmentalOrganization",
+    "mentions": [
+     "NATO"
+    ]
+   },
+   {
+    "id": "0695668e-837b-44de-bd85-464a64bda0f6",
+    "name": "German Armed Forces",
+    "entity_type": "Organization",
+    "mentions": [
+     "German Armed Forces",
+     "BAAINBw"
+    ]
+   },
+   {
+    "id": "9ac653ab-6ccc-48fb-8bda-18f47f56ed27",
+    "name": "Swedish Defence Materiel Administration (FMV)",
+    "entity_type": "Organization",
+    "mentions": [
+     "Swedish Defence Materiel Administration",
+     "FMV"
+    ]
+   },
+   {
+    "id": "7e16fe83-40dd-46a5-8b1b-36201f506e12",
+    "name": "Bank Gospodarstwa Krajowego",
+    "entity_type": "Organization",
+    "mentions": [
+     "BGK",
+     "Bank Gospodarstwa Krajowego"
+    ]
+   },
+   {
+    "id": "3b0499bc-3c7e-4d50-aee5-42de34a5f8d0",
+    "name": "Business Finland Oy",
+    "entity_type": "Company",
+    "mentions": [
+     "Business Finland"
+    ]
+   },
+   {
+    "id": "9bfb7eb4-0dab-415b-ac4c-861b03eb3aec",
+    "name": "ESA",
+    "entity_type": "Organization",
+    "mentions": [
+     "ESA"
+    ]
+   },
+   {
+    "id": "9ca29206-b46e-4b95-99b4-7642364c9896",
+    "name": "Ukraine",
+    "entity_type": "Country",
+    "mentions": [
+     "Ukraine"
+    ]
+   },
+   {
+    "id": "00fbc410-9f35-4adf-a4a3-422a6d982d2b",
+    "name": "NOKIA CORP",
+    "entity_type": "Company",
+    "mentions": [
+     "Nokia"
+    ]
+   },
+   {
+    "id": "b396b1e3-0125-4041-bc39-3d85720f7d86",
+    "name": "PAR Government Systems Corporation",
+    "entity_type": "Company",
+    "mentions": [
+     "PAR Government"
+    ]
+   },
+   {
+    "id": "605d5ee7-5539-431b-a6c0-b2e3377a7108",
+    "name": "U.S. Space Force",
+    "entity_type": "Organization",
+    "mentions": [
+     "U.S. Space Force"
+    ]
+   }
+  ]
+ }
+}
