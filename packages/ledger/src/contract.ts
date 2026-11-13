@@ -275,7 +275,7 @@ export type WithheldClaim = {
 export type Packet = {
   id: string;
   mandateId: string;
-  /** Versions count up from 1. An edit makes a new version and needs a new approval. */
+  /** Counts up from 1 within the mandate. An edit makes a new version and needs a new approval. */
   version: number;
   candidate: EntityRef;
   basedOnRevision: number;
@@ -325,6 +325,8 @@ export type WorkEvent = {
   /** Seconds the step took, when it has finished. */
   seconds: number | null;
   entity: EntityRef | null;
+  /** For a read or probe: true when the store answered and no request went to Cala. */
+  fromStore: boolean;
 };
 
 /** The statement of work: actual counts, not estimates. */
@@ -362,6 +364,49 @@ export type WorkResult = {
   partial: boolean;
   gaps: string[];
 };
+
+/** One atomic claim from a Cala knowledge answer, with the passages it cites. */
+export type ProbeClaim = {
+  index: number;
+  text: string;
+  passages: { text: string; source: SourceRef }[];
+};
+
+/** A signal probe's answer, parsed from Cala's knowledge/search response. */
+export type ProbeAnswer = {
+  subject: EntityRef;
+  question: string;
+  claims: ProbeClaim[];
+  /** The entities Cala resolved in the answer, with the names it matched them from. */
+  entities: { id: string; name: string; entityType: string; mentions: string[] }[];
+};
+
+/** The fields of one agreement, read out of one claim. Missing data stays null. */
+export type ExtractedAgreement = {
+  claimIndex: number;
+  /** The two parties, named exactly as the claim names them. */
+  partyA: string;
+  partyB: string;
+  /** Their Cala IDs when the answer's entities resolve them without ambiguity, else null. */
+  partyAId: string | null;
+  partyBId: string | null;
+  type: AgreementType;
+  date: string | null;
+  datePrecision: "day" | "month" | "year" | null;
+  /** An intended or announced agreement is not an executed one. */
+  status: "executed" | "intended" | "unknown";
+  value: number | null;
+  units: string | null;
+  valueIsProgrammeCeiling: boolean;
+  /** False when the claim concerns a subsidiary, parent or joint venture of the probed entity. */
+  aboutSubjectItself: boolean;
+};
+
+/**
+ * Reads agreement fields out of a probe answer. It is one schema-bound model call per answer;
+ * deterministic checks in the ledger decide which of its results may become edges.
+ */
+export type AgreementExtractor = (answer: ProbeAnswer) => Promise<ExtractedAgreement[]>;
 
 export class NotFoundError extends Error {}
 
@@ -415,7 +460,7 @@ export interface Ledger {
   getEvidenceBundle(mandateId: string, ownerId: string, candidateId: string): Promise<EvidenceBundle>;
   /** Deterministic checks: references, counts, units, supported fields. */
   validatePacket(bundle: EvidenceBundle, sections: PacketSections): Promise<ValidationResult>;
-  /** Saves a new version. Earlier drafts and approvals of the same candidate are superseded. */
+  /** Saves a new version. Earlier versions in the mandate are superseded. */
   savePacket(input: {
     mandateId: string;
     ownerId: string;
@@ -423,10 +468,12 @@ export interface Ledger {
     sections: PacketSections;
     withheld: WithheldClaim[];
   }): Promise<Packet>;
-  approvePacket(mandateId: string, ownerId: string, packetId: string, version: number): Promise<Packet>;
-  getPacket(mandateId: string, ownerId: string, packetId: string, version?: number): Promise<Packet>;
+  /** Approves exactly this version. A later edit is a new version and needs its own approval. */
+  approvePacket(mandateId: string, ownerId: string, version: number): Promise<Packet>;
+  getPacket(mandateId: string, ownerId: string, version: number): Promise<Packet>;
   listPackets(mandateId: string, ownerId: string): Promise<Packet[]>;
-  exportPacket(mandateId: string, ownerId: string, packetId: string, version: number): Promise<string>;
+  /** The approved or draft version as Markdown, without the private notes. */
+  exportPacket(mandateId: string, ownerId: string, version: number): Promise<string>;
 
   // Work log
 
