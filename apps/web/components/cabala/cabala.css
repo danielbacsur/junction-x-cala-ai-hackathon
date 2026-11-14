@@ -1,0 +1,469 @@
+/* ---------------------------------------------------------------------------
+   Cabala: the one figure. Line, fills and stepped motion, after Cala's film.
+   Every animation runs in steps, like drawings shot on twos; nothing eases.
+--------------------------------------------------------------------------- */
+.cabala {
+  --cabala-paper: var(--color-paper);
+  --cabala-line: #0b0a09;
+  --cabala-stroke: 2.7;
+
+  display: block;
+  flex: none;
+  overflow: visible;
+}
+
+/* The bust sits on a deeper disc, so the cream cap and teeth stand out at 24px. */
+.cabala[data-variant="bust"] {
+  --cabala-paper: var(--color-card);
+  --cabala-stroke: 4;
+
+  overflow: hidden;
+  border-radius: 9999px;
+  background: var(--color-paper-deep);
+}
+
+.cabala .ln {
+  fill: none;
+  stroke: var(--cabala-line);
+  stroke-width: var(--cabala-stroke);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cabala .ln.thin {
+  stroke-width: calc(var(--cabala-stroke) * 0.82);
+}
+
+/* Limbs are line only: paper where they leave the body, body colour where they cross it. */
+.cabala .paper {
+  fill: var(--cabala-paper);
+  stroke: none;
+}
+
+.cabala .paper-ln {
+  fill: var(--cabala-paper);
+  stroke: var(--cabala-line);
+  stroke-width: var(--cabala-stroke);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cabala .skin-ln {
+  fill: var(--color-salmon);
+  stroke: var(--cabala-line);
+  stroke-width: var(--cabala-stroke);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cabala .body {
+  fill: var(--color-salmon);
+}
+
+.cabala .ink {
+  fill: var(--cabala-line);
+}
+
+.cabala .cheek {
+  fill: none;
+  stroke: var(--color-yellow);
+  stroke-width: 3.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cabala .grain {
+  fill: var(--color-card);
+  opacity: 0.75;
+}
+
+.cabala .drop {
+  fill: var(--color-blue);
+  stroke: var(--cabala-line);
+  stroke-width: var(--cabala-stroke);
+  stroke-linejoin: round;
+}
+
+/* Origins are in the drawing's own units, whatever size it is shown at. */
+.cabala g,
+.cabala path,
+.cabala ellipse {
+  transform-box: view-box;
+}
+
+.cabala .figure {
+  transform-origin: 5px 241px;
+}
+
+.cabala .head {
+  transform-origin: 0 60px;
+}
+
+.cabala .eyes {
+  transform-origin: 0 37px;
+}
+
+.cabala .wave {
+  transform-origin: 100px 62px;
+}
+
+.cabala .spin {
+  transform-origin: 94px -47px;
+}
+
+.cabala .spark {
+  transform-origin: 0 60px;
+}
+
+.cabala .scribble {
+  stroke-dasharray: 520;
+}
+
+@keyframes cabala-blink {
+  0%,
+  91% {
+    transform: scaleY(1);
+  }
+
+  92%,
+  96% {
+    transform: scaleY(0.12);
+  }
+
+  97%,
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes cabala-breathe {
+  from {
+    transform: scale(1, 1);
+  }
+
+  to {
+    transform: scale(1.012, 0.978);
+  }
+}
+
+@keyframes cabala-bob {
+  from {
+    transform: rotate(-1.4deg);
+  }
+
+  to {
+    transform: rotate(1.4deg);
+  }
+}
+
+@keyframes cabala-sway {
+  from {
+    transform: rotate(-2.2deg);
+  }
+
+  to {
+    transform: rotate(1.2deg);
+  }
+}
+
+@keyframes cabala-scribble {
+  from {
+    stroke-dashoffset: 520;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes cabala-spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cabala-scan {
+  0% {
+    transform: translateX(-3px);
+  }
+
+  25% {
+    transform: translateX(-1px);
+  }
+
+  50% {
+    transform: translateX(1.5px);
+  }
+
+  75%,
+  100% {
+    transform: translateX(3.5px);
+  }
+}
+
+@keyframes cabala-tap {
+  0%,
+  49% {
+    transform: translateY(0);
+  }
+
+  50%,
+  100% {
+    transform: translateY(4.5px);
+  }
+}
+
+@keyframes cabala-typebob {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(1.5px);
+  }
+}
+
+@keyframes cabala-wave {
+  from {
+    transform: rotate(-7deg);
+  }
+
+  to {
+    transform: rotate(8deg);
+  }
+}
+
+@keyframes cabala-lean {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(1.8deg);
+  }
+}
+
+@keyframes cabala-hop {
+  0% {
+    transform: translateY(0) scale(1, 1);
+  }
+
+  12% {
+    transform: translateY(0) scale(1.07, 0.9);
+  }
+
+  36% {
+    transform: translateY(-38px) scale(0.95, 1.07);
+  }
+
+  56% {
+    transform: translateY(0) scale(1.06, 0.92);
+  }
+
+  72%,
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+}
+
+@keyframes cabala-twinkle {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  30%,
+  70% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes cabala-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes cabala-drip {
+  0% {
+    transform: translateY(-6px);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+}
+
+@keyframes cabala-doze {
+  from {
+    transform: scale(1.02, 0.965);
+  }
+
+  to {
+    transform: scale(1.032, 0.948);
+  }
+}
+
+@keyframes cabala-z {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  20%,
+  80% {
+    opacity: 1;
+  }
+}
+
+/* The film redraws a held pose on every second frame, so its line shimmers. */
+@keyframes cabala-boil {
+  0% {
+    filter: url(#cabala-boil-1);
+  }
+
+  25% {
+    filter: url(#cabala-boil-2);
+  }
+
+  50% {
+    filter: url(#cabala-boil-3);
+  }
+
+  75%,
+  100% {
+    filter: url(#cabala-boil-4);
+  }
+}
+
+/* A still pose first. Motion is added only for people who have not asked for less of it. */
+.cabala[data-state="asleep"] .figure {
+  transform: scale(1.02, 0.965);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cabala[data-boil] .all {
+    animation: cabala-boil 0.4s steps(1, end) infinite;
+  }
+
+  .cabala .eyes {
+    animation: cabala-blink 4.4s steps(1, end) infinite;
+  }
+
+  .cabala[data-state="idle"] .figure {
+    animation: cabala-breathe 1.9s steps(6, end) infinite alternate;
+  }
+
+  .cabala[data-state="idle"] .head {
+    animation: cabala-bob 3.8s steps(8, end) infinite alternate;
+  }
+
+  .cabala[data-state="thinking"] .figure {
+    animation: cabala-sway 2.6s steps(8, end) infinite alternate;
+  }
+
+  .cabala[data-state="thinking"] .scribble {
+    animation: cabala-scribble 1.6s steps(14, end) infinite alternate;
+  }
+
+  .cabala[data-state="thinking"] .spin {
+    animation: cabala-spin 3.2s steps(16, end) infinite;
+  }
+
+  .cabala[data-state="reading"] .pupils {
+    animation: cabala-scan 2.4s steps(1, end) infinite;
+  }
+
+  .cabala[data-state="reading"] .figure {
+    animation: cabala-breathe 2.4s steps(6, end) infinite alternate;
+  }
+
+  .cabala[data-state="working"] .figure {
+    animation: cabala-typebob 0.32s steps(1, end) infinite alternate;
+  }
+
+  .cabala[data-state="working"] .tap-a {
+    animation: cabala-tap 0.32s steps(1, end) infinite;
+  }
+
+  .cabala[data-state="working"] .tap-b {
+    animation: cabala-tap 0.32s steps(1, end) -0.16s infinite;
+  }
+
+  .cabala[data-state="waiting"] .figure {
+    animation: cabala-lean 2.2s steps(5, end) infinite alternate;
+  }
+
+  .cabala[data-state="waiting"] .wave {
+    animation: cabala-wave 0.64s steps(4, end) infinite alternate;
+  }
+
+  .cabala[data-state="done"] .figure {
+    animation:
+      cabala-hop 0.8s steps(10, end) 1,
+      cabala-breathe 1.9s steps(6, end) 0.8s infinite alternate;
+  }
+
+  .cabala[data-state="done"] .spark {
+    animation: cabala-twinkle 1.4s steps(6, end) infinite;
+  }
+
+  .cabala[data-state="done"] .spark + .spark {
+    animation-delay: -0.7s;
+  }
+
+  .cabala[data-state="error"] .figure {
+    animation: cabala-shake 0.4s steps(4, end) 2;
+  }
+
+  .cabala[data-state="error"] .sweat {
+    animation: cabala-drip 1.5s steps(8, end) infinite;
+  }
+
+  .cabala[data-state="asleep"] .figure {
+    animation: cabala-doze 3.2s steps(5, end) infinite alternate;
+  }
+
+  .cabala[data-state="asleep"] .eyes {
+    animation: none;
+  }
+
+  .cabala[data-state="asleep"] .zed {
+    animation: cabala-z 3.2s steps(4, end) infinite;
+  }
+
+  .cabala[data-state="asleep"] .zed:nth-child(2) {
+    animation-delay: 0.8s;
+  }
+
+  .cabala[data-state="asleep"] .zed:nth-child(3) {
+    animation-delay: 1.6s;
+  }
+
+  /* Off screen or in a hidden tab, every loop stops where it is. */
+  .cabala[data-paused] *,
+  .cabala[data-paused] .all {
+    animation-play-state: paused !important;
+  }
+}
