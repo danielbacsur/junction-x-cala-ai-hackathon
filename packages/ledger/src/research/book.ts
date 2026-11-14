@@ -569,9 +569,10 @@ function reasonFor(
         : `is tied to ${through}, which funds you`;
 
     // Three hops end at the candidate itself: a backer of a company beside the founder. A grant
-    // or a loan is named as one, so a grantor is not read as holding a stake.
+    // or a loan is named as one, so a grantor is not read as holding a stake, and a non-dilutive
+    // row names the grant or loan it rests on even where the body also holds a stake there.
     if (third && best.end.id === candidate.id) {
-      const gave = !onlyNonDilutive(money)
+      const gave = !(candidate.category === "non_dilutive" || onlyNonDilutive(money))
         ? "backs"
         : money.has("grant") && money.has("loan")
           ? "made grants and loans to"

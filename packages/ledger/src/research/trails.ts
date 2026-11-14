@@ -295,9 +295,16 @@ function independentTrails(group: StoredTrail[]): number {
 
 /**
  * Finds the subject's trails in the store and replaces its stored set. Every hop carries its own
- * sources; a hop whose direction no round's roles settle is stored as undirected.
+ * sources; a hop whose direction no round's roles settle is stored as undirected. The cap is a
+ * parameter so a test can reach it with a handful of records.
  */
-export async function computeTrails(db: Db, subject: EntityRef, mode: Role, now: Date): Promise<StoredTrail[]> {
+export async function computeTrails(
+  db: Db,
+  subject: EntityRef,
+  mode: Role,
+  now: Date,
+  cap = PER_SUBJECT,
+): Promise<StoredTrail[]> {
   const paths = uniqueBy(await findPaths(db, subject.id, mode), (path) => `${path.shape}|${path.nodes.join(">")}`).filter(
     (path) => new Set(path.nodes).size === path.nodes.length,
   );
@@ -552,7 +559,27 @@ export async function computeTrails(db: Db, subject: EntityRef, mode: Role, now:
   }
 
   kept.sort(compareTrails);
-  kept.splice(PER_SUBJECT);
+
+  // The cap keeps the strongest trails, which for a well-connected subject are all two hops
+  // long. For a founder, a public funder named on a public-money signal that stays is a
+  // candidate in its own right, listed through its own trail to that company, so that trail
+  // stays with it.
+  const cut = kept.splice(cap);
+
+  if (mode === "founder" && cut.length > 0) {
+    const funders = new Set(
+      (await db.query<{ entity_id: string }>("select entity_id from public_funders")).map((row) => row.entity_id),
+    );
+    const named = new Set(
+      kept.flatMap((trail) =>
+        trail.pattern === "T2" && trail.signal
+          ? trail.signal.parties.filter((party) => funders.has(party.entity.id)).map((party) => `${trail.end.id}>${party.entity.id}`)
+          : [],
+      ),
+    );
+
+    kept.push(...cut.filter((trail) => trail.hops.length === 3 && named.has(`${trail.hops[1]!.to.id}>${trail.end.id}`)));
+  }
 
   await db.transaction(async (tx) => {
     await tx.query("select pg_advisory_xact_lock(hashtext($1)::bigint)", [`trails:${subject.id}:${mode}`]);

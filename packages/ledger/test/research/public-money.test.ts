@@ -4,6 +4,7 @@ import { requestId } from "../../src/cala/id";
 import type { Book } from "../../src/contract";
 import { partyKind, roundKind } from "../../src/research/money";
 import { narrowStarBody, roundBody } from "../../src/research/requests";
+import { computeTrails } from "../../src/research/trails";
 import { ids, ingestRecords, NOW, type World, world } from "./helpers";
 
 /**
@@ -120,6 +121,13 @@ describe("a public body in an equity round", () => {
     });
     expect(signal!.parties.find((party) => party.entity.id === real.tesi)!.role).toBe("INVESTOR");
 
+    // The question about an equity round does not ask how it was "obtained", as one about a grant does.
+    const lifeline = await w.research.getBrief(found.mandate.id, found.mandate.ownerId, "476a73ac-afa2-4713-9f73-188bc7ec0b95");
+
+    expect(lifeline.questions).toContain(
+      "Ask Lifeline Ventures about it: Series A with Tesi, Lifeline Ventures, HealthCap and 1 more, USD 14,000,000, announcement date 2026-07-06.",
+    );
+
     // Its trail is the full three hops to Tesi, never the shorter one to the company it backs.
     const trails = await w.research.getTrails(found.mandate.id, found.mandate.ownerId, real.tesi);
 
@@ -181,6 +189,27 @@ describe("a public body in an equity round", () => {
   });
 });
 
+describe("a public body named on a signal that the trail cap keeps", () => {
+  test("keeps its own trail too, so it is not dropped where two-hop trails fill the cap", async () => {
+    const subject = await w.research.entityRef(real.confidentialMind);
+    // A cap of three leaves room for two-hop trails only, as 400 does for a well-connected company.
+    const kept = await computeTrails(w.db, subject, "founder", NOW, 3);
+    const beyond = kept.slice(3);
+
+    expect(kept.slice(0, 3).every((trail) => trail.hopCount === 2)).toBe(true);
+    expect(kept.slice(0, 3).some((trail) => trail.signal?.label === "Series A with Tesi, Lifeline Ventures, HealthCap and 1 more")).toBe(true);
+
+    // Tesi's trail to CurifyLabs survives the cap. HealthCap's, which is no public body's, does not.
+    expect(beyond.length).toBeGreaterThan(0);
+    expect(beyond.every((trail) => trail.hopCount === 3)).toBe(true);
+    expect(beyond.map((trail) => trail.end.id)).toContain(real.tesi);
+    expect(beyond.some((trail) => trail.end.name === "HealthCap")).toBe(false);
+
+    // The next ranking stores the full set again.
+    await computeTrails(w.db, subject, "founder", NOW);
+  });
+});
+
 describe("a public body whose money the record does not name", () => {
   test("is a lead, called a body and not an investor, with the reason it is not non-dilutive", async () => {
     // Stiftelsen Industrifonden is tied to Open Payments Europe by an INVESTED_IN edge alone.
@@ -210,13 +239,20 @@ describe("a public body that granted and also invested", () => {
       { name: "Seed", instrument: "EQUITY", role: "INVESTOR" },
     ]);
 
-    const wanted = row(await book(ids.redpine, true), real.eic)!;
+    const on = await book(ids.redpine, true);
+    const wanted = row(on, real.eic)!;
 
     expect(wanted).toMatchObject({ category: "non_dilutive", bestTrail: { pattern: "T2", signalLabel: "Grant from European Innovation Council" } });
     expect(wanted.reason).toContain("European Innovation Council is a public funder by Cala's description active beside you: Grant from European Innovation Council");
     // The way to Embedl is VINNOVA, which granted to both: a shared funder, not an investor to ask.
     expect(wanted.reason).toMatch(/ for Embedl, which VINNOVA funds as it funds you\.$/);
     expect(wanted.reason).not.toContain("Ask VINNOVA");
+
+    // Nor does its brief put that question to VINNOVA.
+    const brief = await w.research.getBrief(on.mandate.id, on.mandate.ownerId, real.eic);
+
+    expect(brief.trails.some((trail) => trail.pattern === "T2" && trail.hops[0]!.role === "GRANTOR")).toBe(true);
+    expect(brief.questions.some((question) => question.startsWith("Ask VINNOVA"))).toBe(false);
 
     const off = await book(ids.redpine, false);
 
@@ -230,7 +266,8 @@ describe("a public body that granted and also invested", () => {
 
   test("names its stakes in other companies beside the row, and does not rest the row on them", async () => {
     // Synthetic: written for this test, never returned by Cala. ENOVA, a grantor of Photoncycle,
-    // is given a seed stake in a second company that Luminar Ventures backs.
+    // is given a seed stake in a second company that Luminar Ventures backs. IFB Innovationsstarter,
+    // which nothing else ties to Redpine, is given the same stake and a grant too old to be a signal.
     const sources = [{ name: "example.test", document: "https://example.test/stake", date: "2026-06-01", source_rank: "PRIMARY" }];
     const party = (id: string, name: string, type: string, role?: string) => ({ id, name, entity_type: type, properties: { sources, ...(role ? { role } : {}) } });
     const read = (id: string, body: unknown, properties: Record<string, unknown>, relationships: unknown, name: string, type: string) => {
@@ -247,25 +284,26 @@ describe("a public body that granted and also invested", () => {
         provenance: { fixture: "test", note: "Synthetic: written for one test, never returned by Cala." },
       };
     };
+    const round = (id: string, name: string, instrument: string, date: string, funders: ReturnType<typeof party>[]) =>
+      read(
+        id,
+        roundBody,
+        { instrument: { value: instrument, sources }, event_date: { value: date, sources } },
+        { outgoing: {}, incoming: { PARTICIPATES_IN_FUNDING_ROUND: [party("stake-co", "Stake Company", "Company", "ISSUER"), ...funders] } },
+        name,
+        "FundingRound",
+      );
 
     await w.research.ingest(
       read("stake-co", narrowStarBody, {}, { outgoing: {}, incoming: { INVESTED_IN: [party(ids.luminar, "Luminar Ventures", "Organization")] } }, "Stake Company", "Company"),
     );
     await w.research.ingest(
-      read(
-        "round-stake",
-        roundBody,
-        { instrument: { value: "EQUITY", sources }, event_date: { value: "2026-05-01", sources } },
-        {
-          outgoing: {},
-          incoming: {
-            PARTICIPATES_IN_FUNDING_ROUND: [party("stake-co", "Stake Company", "Company", "ISSUER"), party(ids.enova, "ENOVA SF", "Company", "INVESTOR")],
-          },
-        },
-        "Seed",
-        "FundingRound",
-      ),
+      round("round-stake", "Seed", "EQUITY", "2026-05-01", [
+        party(ids.enova, "ENOVA SF", "Company", "INVESTOR"),
+        party(real.ifb, "IFB Innovationsstarter GmbH", "Company", "INVESTOR"),
+      ]),
     );
+    await w.research.ingest(round("round-old-grant", "Grant", "GRANT", "2020-03-01", [party(real.ifb, "IFB Innovationsstarter GmbH", "Company", "GRANTOR")]));
 
     const wanted = await book(ids.redpine, true);
     const enova = row(wanted, ids.enova)!;
@@ -281,11 +319,19 @@ describe("a public body that granted and also invested", () => {
     expect(trails.length).toBeGreaterThan(0);
     expect(trails.some((trail) => trail.hops.some((hop) => hop.to.id === "stake-co" || hop.from.id === "stake-co"))).toBe(false);
 
-    // With public funding off the same body is listed on the stake alone.
-    const off = row(await book(ids.redpine, false), ids.enova)!;
+    // A body with a grant and a stake in the one company: its non-dilutive row names the grant.
+    expect(row(wanted, real.ifb)).toMatchObject({ category: "non_dilutive", bestTrail: { pattern: "T1", hopCount: 3, signalLabel: null } });
+    expect(row(wanted, real.ifb)!.reason).toBe(
+      "IFB Innovationsstarter GmbH, a public funder by our classification, made a grant to Stake Company (roles in the same round), a company beside you through Luminar Ventures; Luminar Ventures is the route to ask about.",
+    );
 
-    expect(off.category).toBe("lead");
-    expect(off.reason).toContain("ENOVA SF, a public investor by our classification, backs Stake Company (roles in the same round)");
+    // With public funding off the same bodies are listed on the stake alone.
+    const off = await book(ids.redpine, false);
+
+    expect(row(off, ids.enova)!.category).toBe("lead");
+    expect(row(off, ids.enova)!.reason).toContain("ENOVA SF, a public investor by our classification, backs Stake Company (roles in the same round)");
+    expect(row(off, real.ifb)!.category).toBe("lead");
+    expect(row(off, real.ifb)!.reason).toContain("IFB Innovationsstarter GmbH, a public investor by our classification, backs Stake Company");
   });
 });
 

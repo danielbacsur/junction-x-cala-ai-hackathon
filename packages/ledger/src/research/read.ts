@@ -360,15 +360,30 @@ function questionsFor(mandate: Mandate, trails: Trail[], candidate: EntityRef): 
 
   for (const trail of trails.slice(0, 3)) {
     const first = trail.hops[0]!;
+    // A founder's first hop that only granted or lent is a funder two companies share. It is
+    // not an investor with a portfolio to speak of, so no question is put to it.
+    const funder =
+      mandate.role === "founder" &&
+      first.role !== null &&
+      first.role.split(", ").every((role) => role === "GRANTOR" || role === "LENDER");
 
     if (trail.pattern === "T2" && trail.signal) {
-      questions.push(`Ask ${first.to.name} how ${trail.end.name} obtained it: ${describeSignal(trail.signal)}.`);
+      const granted = trail.signal.parties.some((party) => party.role === "GRANTOR" || party.role === "LENDER");
+
+      if (funder) continue;
+
+      // Only a grant or a loan is "obtained"; a round the first hop may have joined is asked about.
+      questions.push(
+        granted
+          ? `Ask ${first.to.name} how ${trail.end.name} obtained it: ${describeSignal(trail.signal)}.`
+          : `Ask ${first.to.name} about it: ${describeSignal(trail.signal)}.`,
+      );
     } else if (trail.pattern === "T6" && trail.signal) {
       questions.push(`Ask what this covers and whether it is executed: ${describeSignal(trail.signal)}.`);
     } else if (trail.pattern === "T4" && trail.signal) {
       questions.push(`Ask how ${trail.end.name} bears on ${trail.subject.name}: ${describeSignal(trail.signal)}.`);
     } else if (mandate.role === "founder" && trail.hops.length === 3) {
-      questions.push(`Ask ${first.to.name} what they know of ${candidate.name}'s work with ${trail.hops[1]!.to.name}.`);
+      if (!funder) questions.push(`Ask ${first.to.name} what they know of ${candidate.name}'s work with ${trail.hops[1]!.to.name}.`);
     } else if (mandate.role === "investor" && trail.hops.length === 3) {
       questions.push(`Ask ${first.to.name} about ${trail.hops[1]!.to.name} as a co-investor, and what they have seen of ${candidate.name}.`);
     }
