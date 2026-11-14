@@ -477,7 +477,14 @@ export interface Ledger {
 
   // Work log
 
-  logWork(mandateId: string, event: Omit<WorkEvent, "id" | "mandateId" | "at">): Promise<WorkEvent>;
+  /**
+   * Appends one line. With a key, a retry of the same step returns the first line instead of
+   * appending a second.
+   */
+  logWork(
+    mandateId: string,
+    event: Omit<WorkEvent, "id" | "mandateId" | "at"> & { key?: string },
+  ): Promise<WorkEvent>;
   listWorkEvents(mandateId: string, ownerId: string, afterId?: string): Promise<WorkEvent[]>;
   getStatement(mandateId: string, ownerId: string): Promise<Statement>;
 }
