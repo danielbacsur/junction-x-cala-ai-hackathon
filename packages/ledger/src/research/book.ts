@@ -476,7 +476,9 @@ function reasonFor(candidate: Candidate, profile: Profile, best: StoredTrail | n
     }
 
     if (candidate.category === "non_dilutive" && best.signal && best.end.id !== candidate.id) {
-      return `${name} is a public funder active beside you: ${describeSignal(best.signal)} for ${best.end.name}, which you reach through ${first!.to.name}. Ask ${first!.to.name} how ${best.end.name} obtained it.`;
+      const basis = profile.registry?.ours ? " by our classification" : "";
+
+      return `${name} is a public funder${basis} active beside you: ${describeSignal(best.signal)} for ${best.end.name}, which you reach through ${first!.to.name}. Ask ${first!.to.name} how ${best.end.name} obtained it.`;
     }
 
     // An existing backer, public or private: a follow-up target, never a new lead.
@@ -494,7 +496,10 @@ function reasonFor(candidate: Candidate, profile: Profile, best: StoredTrail | n
     return `${name}'s counterparty ${counterparty} also has an agreement with ${anchor}, as Cala reports.${signal}`;
   }
 
-  return `${name} shares ${second?.to.name ?? first!.to.name} with ${first!.to.name}, which has an investment tie with your fund; a reference exists.${signal}`;
+  if (!second) return `${name} and your fund are both tied to ${first!.to.name}.${signal}`;
+
+  // Worded as ties: which of them funded which is said hop by hop on the trail, where roles settle it.
+  return `${name} and ${first!.to.name} are both tied to ${second.to.name} by investment, and ${first!.to.name} is tied to your fund; ${second.to.name} is a reference to ask.${signal}`;
 }
 
 function trailLines(candidate: Candidate, best: StoredTrail | null): FitLine[] {
@@ -654,7 +659,7 @@ export async function rankMandate(
       const names = await entityRefs(db, silent);
 
       gaps.push(
-        `${silent.length} existing backer${silent.length === 1 ? " has" : "s have"} no other stored investment, so no trail runs through ${silent.length === 1 ? "it" : "them"}: ${list(silent.map((id) => names.get(id)!.name), 6)}.`,
+        `${silent.length} of the investors and funders Cala lists for you ${silent.length === 1 ? "has" : "have"} no other stored investment, so no trail runs through ${silent.length === 1 ? "it" : "them"}: ${list(silent.map((id) => names.get(id)!.name), 6)}.`,
       );
     }
 
@@ -818,6 +823,8 @@ export async function rankMandate(
   });
 
   await db.transaction(async (tx) => {
+    // Two rankings of one mandate, such as a pass and a page load, write one after the other.
+    await tx.query("select pg_advisory_xact_lock(hashtext($1)::bigint)", [`book:${mandate.id}`]);
     await tx.query("delete from book_rows where mandate_id = $1 and revision = $2", [mandate.id, mandate.revision]);
     await insertRows(
       tx,

@@ -555,6 +555,7 @@ export async function computeTrails(db: Db, subject: EntityRef, mode: Role, now:
   kept.splice(PER_SUBJECT);
 
   await db.transaction(async (tx) => {
+    await tx.query("select pg_advisory_xact_lock(hashtext($1)::bigint)", [`trails:${subject.id}:${mode}`]);
     await tx.query("delete from trails where subject_id = $1 and mode = $2", [subject.id, mode]);
     await insertRows(
       tx,

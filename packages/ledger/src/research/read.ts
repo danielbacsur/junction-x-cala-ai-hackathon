@@ -97,7 +97,7 @@ export async function coverage(db: Db): Promise<Coverage> {
   }>(
     `select
        (select count(*)::integer from roster where event_id = $1 and role = 'ATTENDEE') as roster_size,
-       (select max(fetched_at) from roster where event_id = $1) as roster_fetched_at,
+       (select read_at from entities where id = $1) as roster_fetched_at,
        (select count(*)::integer from entities where read_kind in ('star', 'person')) as read_in_full,
        (select count(*)::integer from entities e where e.read_kind = 'star' and (
           exists (select 1 from public_funders f where f.entity_id = e.id)

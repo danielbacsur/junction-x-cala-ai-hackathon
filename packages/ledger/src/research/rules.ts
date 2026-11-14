@@ -17,6 +17,9 @@ export function windowStart(now: Date, months = WINDOW_MONTHS): string {
 
 const quoted = (values: string[]) => values.map((value) => `'${value}'`).join(", ");
 
+/** The advisory lock that serializes rebuilds of the derived tables. */
+const DERIVE_LOCK = 2026111401;
+
 /**
  * Rebuilds everything computed from the stored graph, when something new was ingested since the
  * last time: the traversable ties with their direction, identity proposals, the review queue of
@@ -32,7 +35,14 @@ export async function ensureDerived(db: Db, now: Date): Promise<boolean> {
 
   if ((await seq("derived_seq")) === target) return false;
 
-  await db.transaction(async (tx) => {
+  return db.transaction(async (tx) => {
+    // One rebuild at a time across processes; whoever waited here finds the work already done.
+    await tx.query("select pg_advisory_xact_lock($1::bigint)", [DERIVE_LOCK]);
+
+    const [done] = await tx.query<{ value: string }>("select value #>> '{}' as value from store_meta where key = 'derived_seq'");
+
+    if (done?.value === target) return false;
+
     await rebuildTies(tx);
     await proposeIdentities(tx);
     await queueUnclassifiedFunders(tx);
@@ -42,9 +52,9 @@ export async function ensureDerived(db: Db, now: Date): Promise<boolean> {
        on conflict (key) do update set value = excluded.value`,
       [target],
     );
-  });
 
-  return true;
+    return true;
+  });
 }
 
 /**

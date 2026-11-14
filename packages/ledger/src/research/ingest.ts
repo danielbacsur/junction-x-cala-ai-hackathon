@@ -297,8 +297,10 @@ async function normalizeEntityRead(db: Db, input: IngestInput, entity: CalaEntit
      select x.event_id, x.entity_id, x.role, x.sources, $2, $3
      from jsonb_to_recordset($1::jsonb) as x(event_id text, entity_id text, role text, sources jsonb)
      on conflict (event_id, entity_id) do update set
-       role = excluded.role, sources = excluded.sources, response_id = excluded.response_id, fetched_at = excluded.fetched_at`,
-    [input.id, input.fetchedAt],
+       role = excluded.role, sources = excluded.sources, response_id = excluded.response_id, fetched_at = excluded.fetched_at
+     where $4::boolean`,
+    // The event's own read is the roster's snapshot; a company's read of the same fact does not redate it.
+    [input.id, input.fetchedAt, kind === "roster"],
   );
 
   await insertRows(
