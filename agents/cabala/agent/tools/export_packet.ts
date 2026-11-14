@@ -6,10 +6,14 @@ import { ownerOf } from "@/agent/lib/owner";
 import { mandateId } from "@/agent/lib/schemas";
 import { line } from "@/agent/lib/worklog";
 
+/** How much of the file the model is shown. The whole file is the app's to serve. */
+const SHOWN = 4_000;
+
 export default defineTool({
   description:
     "Export one packet version as Markdown, without the owner's private notes. The result says whether that " +
-    "version is approved; a draft may be exported, and you say that it is a draft.",
+    "version is approved and shows the start of the file; a draft may be exported, and you say that it is a " +
+    "draft. To read a packet's text in full, use get_packet.",
 
   inputSchema: z.object({
     mandateId,
@@ -28,9 +32,16 @@ export default defineTool({
 
     await ledger.logWork(
       mandateId,
-      line(`Packet version ${version} for ${packet.candidate.name} exported as Markdown`, packet.candidate),
+      line(`Packet version ${version} for ${packet.candidate.name} exported as Markdown`, { entity: packet.candidate }),
     );
 
-    return { version, candidate: packet.candidate.name, status: packet.status, approvedAt: packet.approvedAt, markdown };
+    return {
+      version,
+      candidate: packet.candidate.name,
+      status: packet.status,
+      approvedAt: packet.approvedAt,
+      characters: markdown.length,
+      start: markdown.slice(0, SHOWN),
+    };
   },
 });

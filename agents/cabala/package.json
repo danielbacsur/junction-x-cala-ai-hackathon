@@ -9,8 +9,9 @@
     "build": "eve build",
     "deploy": "eve deploy",
     "dev": "eve dev --port 3001",
-    "eval": "eve eval",
+    "eval": "BOOKRUNNER_FAKE_LEDGER=1 BOOKRUNNER_FAKE_STATE=.eve/evals/fake-ledger.json eve eval",
     "start": "eve start --port 3001",
+    "test": "node --test \"agent/**/*.test.ts\"",
     "typecheck": "tsc"
   },
 

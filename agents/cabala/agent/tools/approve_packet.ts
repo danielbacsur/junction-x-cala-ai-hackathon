@@ -49,9 +49,12 @@ export default defineTool({
     const packet = await ledger.approvePacket(mandateId, ownerId, version);
 
     await ledger.setStage(mandateId, ownerId, "delivered");
+    await ledger.logWork(mandateId, line("Delivered.", { kind: "stage" }));
     await ledger.logWork(
       mandateId,
-      line(`Packet version ${packet.version} for ${packet.candidate.name} approved by the customer`, packet.candidate),
+      line(`Packet version ${packet.version} for ${packet.candidate.name} approved by the customer`, {
+        entity: packet.candidate,
+      }),
     );
 
     return {

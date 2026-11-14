@@ -18,22 +18,28 @@ function sessionIdOf(request: Request) {
 
 /**
  * The guest whose message started a session, read from the session's own record. Null means
- * nothing is recorded yet, as for a session created without a first message.
+ * nothing is recorded yet, as for a session created without a first message, or that no such
+ * session exists, which eve's own route then answers. Any other failure to read is thrown, so a
+ * store that cannot be read lets nobody in.
  */
 async function sessionOwner(sessionId: string) {
   const known = owners.get(sessionId);
 
   if (known !== undefined) return known;
 
-  for await (const event of sessions.attach(sessionId).stream({ startIndex: 0, follow: false })) {
-    if (event.type !== "delivery.admitted") continue;
+  try {
+    for await (const event of sessions.attach(sessionId).stream({ startIndex: 0, follow: false })) {
+      if (event.type !== "delivery.admitted") continue;
 
-    const sender = event.data.principal;
-    const owner = sender?.type === "user" && sender.issuer === GUEST_ISSUER ? sender.id : NOBODY;
+      const sender = event.data.principal;
+      const owner = sender?.type === "user" && sender.issuer === GUEST_ISSUER ? sender.id : NOBODY;
 
-    owners.set(sessionId, owner);
+      owners.set(sessionId, owner);
 
-    return owner;
+      return owner;
+    }
+  } catch (error) {
+    if (!(error instanceof Error) || error.name !== "WorkflowRunNotFoundError") throw error;
   }
 
   return null;

@@ -10,7 +10,8 @@ export default defineTool({
   description:
     "Check named entities for signals: dated, sourced grants, financings, agreements and filed events. The ledger " +
     "answers from the store and runs signal probes inside the mandate's probe budget; a probe takes up to a " +
-    "minute. An entity with nothing found is reported as none found on a date, never as having none.",
+    "minute. The result holds the signals now stored for each entity and the ledger's own log lines about what " +
+    "it asked. An entity with nothing found is reported as none found on a date, never as having none.",
 
   inputSchema: z.object({
     mandateId,
@@ -24,20 +25,22 @@ export default defineTool({
   async execute({ mandateId, entityIds }, ctx) {
     const ownerId = ownerOf(ctx.session);
     const ledger = getLedger();
+    const before = (await ledger.listWorkEvents(mandateId, ownerId)).at(-1)?.id;
     const signals = await ledger.checkSignals(mandateId, ownerId, entityIds);
-    const coverage = await ledger.getCoverage();
-    const today = new Date().toISOString().slice(0, 10);
-    const empty = entityIds.filter((id) => !signals.some((signal) => signal.entity.id === id));
+
+    // Whether Cala was asked, answered from the store or could not be reached is in the lines the
+    // ledger logged during the call; the signals alone do not say.
+    const logged = (await ledger.listWorkEvents(mandateId, ownerId, before))
+      .filter((event) => ["probe", "queued", "outage", "gap"].includes(event.kind))
+      .map((event) => event.message);
 
     return {
       signals: signals.map(compactSignal),
-      noneFound: empty.map((entityId) => ({
-        entityId,
-        say:
-          coverage.cala === "answering"
-            ? `None found by Cala on ${today}. That is not evidence that none exist.`
-            : "Nothing is stored and Cala is not answering, so no probe ran. Unknown, not none.",
-      })),
+      withoutSignals: entityIds.filter((id) => !signals.some((signal) => signal.entity.id === id)),
+      ledgerLog: logged,
+      note:
+        "For an entity without signals, say what the ledger's log says: none found by Cala on that date, or not " +
+        "asked. Neither means that none exist.",
     };
   },
 });

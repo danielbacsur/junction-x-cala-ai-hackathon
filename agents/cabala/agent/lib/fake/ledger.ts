@@ -54,10 +54,14 @@ type Held = {
   worked: boolean;
   conclusions: Record<string, Conclusion>;
   packets: Packet[];
-  events: WorkEvent[];
+  /** Work-log lines; a line written with a key is not written twice. */
+  events: (WorkEvent & { key?: string })[];
 };
 
 type State = { serial: number; held: Record<string, Held> };
+
+/** Milliseconds a pass waits before each line it logs, so that a run can be watched or interrupted. */
+const DELAY_MS = Number(process.env.BOOKRUNNER_FAKE_DELAY_MS ?? 0);
 
 function load(): State {
   try {
@@ -95,10 +99,15 @@ export function createFakeLedger(): Ledger {
     writeFileSync(STATE_FILE, JSON.stringify({ serial: state.serial, held: Object.fromEntries(held) }));
   }
 
-  function log(mandateId: string, event: Omit<WorkEvent, "id" | "mandateId" | "at">) {
+  function log(mandateId: string, event: Omit<WorkEvent, "id" | "mandateId" | "at"> & { key?: string }) {
+    const events = held.get(mandateId)?.events;
+    const written = event.key ? events?.find((each) => each.key === event.key) : undefined;
+
+    if (written) return written;
+
     const entry = { ...event, id: nextId("event"), mandateId, at: now() };
 
-    held.get(mandateId)?.events.push(entry);
+    events?.push(entry);
 
     return entry;
   }
@@ -172,15 +181,13 @@ export function createFakeLedger(): Ledger {
         trail:
           "OTB Ventures is tied to ICEYE (undirected, from OTB's portfolio page). ICEYE and IHI Corporation signed a " +
           `memorandum of understanding on 22 May 2025. IHI Corporation and ${candidate} signed one in mid-2026. ` +
-          "Both agreements are reported by Cala from press coverage.",
+          "Both agreements are reported by Cala from the documents it cites.",
         whyHesitate:
           "The agreement is a memorandum with no disclosed amount. The NASA award names Kuva US Inc., and its " +
           "$476 million figure is the ceiling of the whole programme.",
         questions: ["What would turn the IHI memorandum into a contract?"],
         agenda: ["The IHI memorandum and its next step", "What Kuva US Inc. has been awarded so far"],
-        outreachDraft:
-          `Hello, I would like to talk at Slush about ${candidate}'s work with IHI Corporation. We know IHI through ` +
-          "its agreement with ICEYE.",
+        outreachDraft: `Hello, I would like to talk at Slush about ${candidate}'s memorandum with IHI Corporation.`,
         privateNotes: "",
       },
       trails: first.trails,
@@ -367,10 +374,7 @@ export function createFakeLedger(): Ledger {
     async setStage(mandateId, ownerId, stage) {
       const entry = open(mandateId, ownerId);
 
-      if (entry.mandate.stage !== stage) {
-        entry.mandate = { ...entry.mandate, stage, updatedAt: now() };
-        log(mandateId, { kind: "stage", message: `Stage: ${stage}`, seconds: null, entity: null, fromStore: true });
-      }
+      entry.mandate = { ...entry.mandate, stage, updatedAt: now() };
 
       return entry.mandate;
     },
@@ -412,11 +416,22 @@ export function createFakeLedger(): Ledger {
         return { mandate: entry.mandate, requestsUsed: 0, trailsFound: 0, rows: 0, partial: true, gaps: book(entry).gaps };
       }
 
+      // A pass that takes time writes its state as it goes, as the real one does.
+      const step = async (event: Parameters<typeof log>[1]) => {
+        if (DELAY_MS > 0) await new Promise((resolve) => setTimeout(resolve, DELAY_MS));
+
+        log(mandateId, event);
+        persist();
+      };
+
       const onTrails = new Map(
         scenario.rows.flatMap((row) => row.trails).flatMap((trail) => trail.hops).map((hop) => [hop.to.id, hop.to]),
       );
 
-      log(mandateId, {
+      entry.mandate = { ...entry.mandate, stage: "researching", updatedAt: now() };
+      await step({ kind: "stage", message: "Researching.", seconds: null, entity: null, fromStore: false });
+
+      await step({
         kind: READ_IN_FULL.has(scenario.subject.id) ? "read" : "gap",
         message: READ_IN_FULL.has(scenario.subject.id)
           ? `Read ${scenario.subject.name} from the store`
@@ -428,7 +443,7 @@ export function createFakeLedger(): Ledger {
 
       for (const entity of onTrails.values()) {
         if (READ_IN_FULL.has(entity.id)) {
-          log(mandateId, { kind: "read", message: `Read ${entity.name} from the store`, seconds: 0, entity, fromStore: true });
+          await step({ kind: "read", message: `Read ${entity.name} from the store`, seconds: 0, entity, fromStore: true });
         }
       }
 
@@ -437,7 +452,7 @@ export function createFakeLedger(): Ledger {
 
         if (!proposal) continue;
 
-        log(mandateId, {
+        await step({
           kind: proposal.alreadyProbedAt ? "probe" : "queued",
           message: proposal.alreadyProbedAt
             ? `Probe for ${proposal.entity.name} answered from the store`
@@ -455,7 +470,7 @@ export function createFakeLedger(): Ledger {
 
       for (const row of rows) {
         for (const trail of row.trails) {
-          log(mandateId, {
+          await step({
             kind: "trail",
             message: `Trail to ${row.candidate.name}: ${trail.pattern}, ${trail.hopCount} connections`,
             seconds: null,
@@ -465,7 +480,10 @@ export function createFakeLedger(): Ledger {
         }
       }
 
-      log(mandateId, { kind: "book", message: `Book ranked: ${rows.length} rows`, seconds: 0, entity: null, fromStore: true });
+      await step({ kind: "book", message: `Book ranked: ${rows.length} rows`, seconds: 0, entity: null, fromStore: true });
+
+      entry.mandate = { ...entry.mandate, stage: "challenging", updatedAt: now() };
+      await step({ kind: "stage", message: "Challenging.", seconds: null, entity: null, fromStore: false });
 
       return {
         mandate: entry.mandate,
@@ -474,6 +492,29 @@ export function createFakeLedger(): Ledger {
         rows: rows.length,
         partial: false,
         gaps: scenario.gaps,
+      };
+    },
+
+    async readAround(mandateId, ownerId, entityId) {
+      const entry = open(mandateId, ownerId);
+      const entity = ENTITIES.find((each) => each.id === entityId) ?? null;
+      const rows = rowsOf(entry);
+
+      log(mandateId, {
+        kind: "queued",
+        message: `Reads around ${entity?.name ?? entityId} queued: Cala is not answering`,
+        seconds: 0,
+        entity,
+        fromStore: true,
+      });
+
+      return {
+        mandate: entry.mandate,
+        requestsUsed: 0,
+        trailsFound: 0,
+        rows: rows.length,
+        partial: true,
+        gaps: [`Nothing new was read around ${entity?.name ?? entityId}: Cala is not answering.`],
       };
     },
 
@@ -576,6 +617,17 @@ export function createFakeLedger(): Ledger {
     async savePacket({ mandateId, ownerId, candidateId, sections, withheld }) {
       const entry = open(mandateId, ownerId);
       const row = seedRow(entry, candidateId);
+      const latest = entry.packets.at(-1);
+
+      // Saving what the latest version already holds is a retry, not an edit.
+      if (
+        latest?.candidate.id === candidateId &&
+        JSON.stringify(latest.sections) === JSON.stringify(sections) &&
+        JSON.stringify(latest.withheld) === JSON.stringify(withheld)
+      ) {
+        return latest;
+      }
+
       const packet: Packet = {
         id: nextId("packet"),
         mandateId,
@@ -589,8 +641,27 @@ export function createFakeLedger(): Ledger {
         approvedAt: null,
         createdAt: now(),
       };
+      const known = new Set(entry.packets.flatMap((each) => each.withheld.map((claim) => claim.sentence)));
+      const fresh = withheld.filter((claim) => !known.has(claim.sentence));
 
       entry.packets = [...entry.packets.map((each) => ({ ...each, status: "superseded" as const })), packet];
+
+      for (const [by, label] of [
+        ["validation", "Validation"],
+        ["second_read", "Second read"],
+      ] as const) {
+        const count = fresh.filter((claim) => claim.by === by).length;
+
+        if (count === 0) continue;
+
+        log(mandateId, {
+          kind: "withheld",
+          message: `${label}: ${count} ${count === 1 ? "claim" : "claims"} withheld (packet v${packet.version})`,
+          seconds: null,
+          entity: row.candidate,
+          fromStore: false,
+        });
+      }
 
       return packet;
     },
@@ -659,7 +730,7 @@ export function createFakeLedger(): Ledger {
         probes: count("probe"),
         sourcesCited: cited.size,
         trailsFound: new Set(rows.flatMap((row) => row.trails.map((trail) => trail.id))).size,
-        claimsWithheld: entry.packets.reduce((total, packet) => total + packet.withheld.length, 0),
+        claimsWithheld: new Set(entry.packets.flatMap((packet) => packet.withheld.map((claim) => claim.sentence))).size,
         servedFromStore: entry.events.filter((event) => event.fromStore && ["read", "probe"].includes(event.kind)).length,
       };
     },

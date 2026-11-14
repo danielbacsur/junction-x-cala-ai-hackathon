@@ -11,15 +11,20 @@ const PROMISED_INTRODUCTION = /\b(?:can|could|will|would|able to|happy to)\s+(?:
 const ASSERTED_APPETITE =
   /\b(?:has|have|shows?|signals?|proves?|confirms?)\s+(?:\w+\s+){0,2}appetite\b|\b(?:is|are)\s+(?:\w+\s+)?(?:looking|keen|ready|eager)\s+to\s+(?:invest|fund|back)\b|\bwants?\s+to\s+(?:invest|fund|back)\b/i;
 const CLAIMED_CAUSATION = /\b(?:led to|resulted in|caused|thanks to|as a result of)\b/i;
-const FUNDING_WORDS = /\b(?:fund(?:ed|s|ing)?|invest(?:ed|s|ing|or|ors)?|back(?:ed|s|ing|er|ers)?|financ(?:ed|es|ing))\b/i;
+// Verb forms and roles only: "fund", "capital" and "ventures" are also what funds are called.
+const FUNDING_WORDS = /\b(?:funded|funding|invested|invests|investing|investors?|backed|backs|backing|backers?|financed|finances|financing)\b/i;
 const SAYS_UNSETTLED = /\bundirected\b|\bdirection\b|\bnot (?:settled|established|known|evidenced)\b/i;
 
 /** Two names further apart than this many words are not one statement about the pair. */
 const NEAR = 8;
 
-/** The first word of a name, which is how prose usually refers to an entity. */
+const ARTICLES = new Set(["the", "a", "an"]);
+
+/** The first word of a name that is not an article, which is how prose usually refers to an entity. */
 function shortName(name: string) {
-  return name.split(/\s+/)[0]!.toLowerCase();
+  const words = name.toLowerCase().split(/\s+/);
+
+  return words.find((word) => !ARTICLES.has(word)) ?? words[0]!;
 }
 
 function sentencesOf(text: string) {

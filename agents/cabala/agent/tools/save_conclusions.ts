@@ -53,7 +53,7 @@ export default defineTool({
 
     if (ready) {
       await ledger.setStage(mandateId, ownerId, "ready");
-      await ledger.logWork(mandateId, line("Book ready for your decision", null, "book"));
+      await ledger.logWork(mandateId, line("Ready for your decision.", { kind: "stage" }));
     }
 
     return {
