@@ -1,5 +1,6 @@
 import type { SourceRef } from "../contract";
 import type { Db } from "../db";
+import { nonDilutive, partyKind } from "./money";
 import { agreementLabel } from "./probes";
 import { FINANCING_EVENT, filedEvents, financierRoles, recipientRoles, relations } from "./relations";
 import { hashId, insertRows, mergeSources, uniqueBy } from "./sql";
@@ -20,6 +21,9 @@ const quoted = (values: string[]) => values.map((value) => `'${value}'`).join(",
 /** The advisory lock that serializes rebuilds of the derived tables. */
 const DERIVE_LOCK = 2026111401;
 
+/** Raise it when a rule here changes, and every store rebuilds its derived tables on next use. */
+const DERIVE_VERSION = 2;
+
 /**
  * Rebuilds everything computed from the stored graph, when something new was ingested since the
  * last time: the traversable ties with their direction, identity proposals, the review queue of
@@ -31,7 +35,7 @@ export async function ensureDerived(db: Db, now: Date): Promise<boolean> {
       ?.value ?? "0";
 
   // The window moves with the day, so a new day is also a reason to rebuild.
-  const target = `${await seq("ingest_seq")}@${windowStart(now)}`;
+  const target = `${await seq("ingest_seq")}@${windowStart(now)}@${DERIVE_VERSION}`;
 
   if ((await seq("derived_seq")) === target) return false;
 
@@ -323,7 +327,9 @@ const eventLabels: Record<string, string> = {
 function names(parties: { name: string | null; entity_id: string }[]): string {
   const listed = parties.slice(0, 3).map((party) => party.name ?? party.entity_id);
 
-  return parties.length > 3 ? `${listed.join(", ")} and ${parties.length - 3} more` : listed.join(" and ");
+  if (parties.length > 3) return `${listed.join(", ")} and ${parties.length - 3} more`;
+
+  return listed.length === 3 ? `${listed[0]}, ${listed[1]} and ${listed[2]}` : listed.join(" and ");
 }
 
 /**
@@ -367,10 +373,13 @@ async function rebuildSignals(db: Db, now: Date): Promise<void> {
     // The same participation is often seen on two reads; one party per entity and role.
     const parties = uniqueBy(round.participants ?? [], (party) => `${party.entity_id}|${party.role}`);
     const recipients = parties.filter((party) => recipientRoles.includes(party.role));
-    // Registry bodies first, so a label that names only three financiers names the public one.
-    const financiers = parties
-      .filter((party) => financierRoles.includes(party.role))
-      .sort((a, b) => Number(funders.has(b.entity_id)) - Number(funders.has(a.entity_id)));
+    const named = parties.some((party) => party.role === "GRANTOR" || party.role === "LENDER");
+    const money = (party: { role: string }) => partyKind(party.role, round, named);
+    // Registry bodies first, and among them those that granted or lent, so a label that names
+    // only three financiers names the public one and the basis is that of the body it names.
+    const weight = (party: { entity_id: string; role: string }) =>
+      funders.has(party.entity_id) ? (nonDilutive([money(party)]) ? 2 : 1) : 0;
+    const financiers = parties.filter((party) => financierRoles.includes(party.role)).sort((a, b) => weight(b) - weight(a));
     const publicFunder = financiers.map((party) => funders.get(party.entity_id)).find(Boolean);
 
     for (const recipient of recipients) {
@@ -398,18 +407,22 @@ async function rebuildSignals(db: Db, now: Date): Promise<void> {
       } else {
         if (publicFunder) type = "public_money";
 
-        const grantors = financiers.filter((party) => party.role === "GRANTOR");
-        const lenders = financiers.filter((party) => party.role === "LENDER");
+        // A grant is named as one only from a GRANTOR whose round is not equity, and a loan
+        // likewise. Public money is worded by what the public body put in: its stake is never
+        // called a grant because someone else granted in the same record.
+        const granted = financiers.filter((party) => party.role === "GRANTOR" && money(party) === "grant");
+        const lent = financiers.filter((party) => party.role === "LENDER" && money(party) === "loan");
+        const about = publicFunder ? financiers.filter((party) => funders.has(party.entity_id)) : financiers;
         const title = round.entity_type === "FundingRound" ? (round.name ?? "Funding round") : "Financing";
+        const beside = granted.length + lent.length > 0 && round.entity_type === "FundingRound";
 
-        label =
-          grantors.length > 0
-            ? `Grant from ${names(grantors)}`
-            : lenders.length > 0
-              ? `Loan from ${names(lenders)}`
-              : financiers.length > 0
-                ? `${title} with ${names(financiers)}`
-                : `${title} (financiers not in stored reads)`;
+        label = about.some((party) => granted.includes(party))
+          ? `Grant from ${names(granted)}`
+          : about.some((party) => lent.includes(party))
+            ? `Loan from ${names(lent)}`
+            : financiers.length > 0
+              ? `${beside ? "Funding round" : title} with ${names(financiers)}`
+              : `${title} (financiers not in stored reads)`;
       }
 
       if (type === "public_money") {

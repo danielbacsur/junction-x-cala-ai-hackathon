@@ -10,9 +10,10 @@
 import { readdir, readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 
+import { migrate } from "../src/admin";
 import { requestId } from "../src/cala/id";
 import { CalaUnavailableError } from "../src/contract";
-import { connect, migrate } from "../src/db";
+import { connect } from "../src/db";
 import { createResearch } from "../src/research";
 import type { IngestInput } from "../src/research/ingest";
 import { fromSavedRequest } from "../src/research/requests";

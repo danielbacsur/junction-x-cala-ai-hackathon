@@ -1,6 +1,7 @@
 import { PGlite } from "@electric-sql/pglite";
 
-import { type Db, migrate } from "../src/db";
+import { migrate } from "../src/admin";
+import type { Db } from "../src/db";
 
 /** A fresh in-memory Postgres with every migration applied, for one test file. */
 export async function memoryDb(): Promise<Db> {

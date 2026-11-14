@@ -1,6 +1,7 @@
 import { afterAll, beforeAll, describe, expect, test } from "vitest";
 
-import { connect, type Db, migrate } from "../../src/db";
+import { migrate } from "../../src/admin";
+import { connect, type Db } from "../../src/db";
 import { createPrivateStore, type PrivateStore } from "../../src/private";
 import { enova, openConstraints, photoncycle, redpine, sections } from "./fixtures";
 import { fakeResearch } from "./store";

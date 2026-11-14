@@ -2,6 +2,7 @@ import { copyFile, mkdir, mkdtemp, readdir, readFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { fileURLToPath } from "node:url";
 
+import { fixtureExtractor, importFixtures } from "../../src/admin";
 import { type Budget, CalaBudgetError, type CalaClient, type CalaRequest, type RawResponse } from "../../src/cala/contract";
 import { requestId } from "../../src/cala/id";
 import {
@@ -15,10 +16,14 @@ import {
   type WorkEvent,
 } from "../../src/contract";
 import type { Db } from "../../src/db";
-import { createRawStore, createResearch, fixtureExtractor, importFixtures, type Research } from "../../src/research";
+import { createRawStore, createResearch, type IngestInput, type Research } from "../../src/research";
+import { fromSavedRequest } from "../../src/research/requests";
 import { memoryDb } from "../db";
 
 export const fixtures = fileURLToPath(new URL("../../fixtures/", import.meta.url));
+
+/** Reads saved by the Slush crawl of 2026-11-14, kept as the crawler wrote them. */
+export const records = fileURLToPath(new URL("./records/", import.meta.url));
 
 /** The day the fixtures were saved, so the 24-month signal window sits where the evidence is. */
 export const NOW = new Date("2026-11-14T12:00:00Z");
@@ -57,7 +62,7 @@ export const noConstraints: Constraints = {
 /** A small stand-in for the private store: mandates in memory, and the work log as an array. */
 export function fakeMandates(research: () => Pick<Research, "entityRef">) {
   const mandates = new Map<string, Mandate>();
-  const events: (Omit<WorkEvent, "id" | "at"> & { id: string })[] = [];
+  const events: (Omit<WorkEvent, "id" | "at"> & { id: string; key?: string })[] = [];
 
   const api: Pick<Ledger, "getMandate" | "logWork" | "setStage"> = {
     async getMandate(mandateId, ownerId) {
@@ -69,9 +74,11 @@ export function fakeMandates(research: () => Pick<Research, "entityRef">) {
     },
 
     async logWork(mandateId, event) {
-      const stored = { ...event, id: String(events.length + 1), mandateId };
+      // As in the private store: a line written under a key is written once.
+      const written = event.key ? events.find((line) => line.mandateId === mandateId && line.key === event.key) : undefined;
+      const stored = written ?? { ...event, id: String(events.length + 1), mandateId };
 
-      events.push(stored);
+      if (!written) events.push(stored);
 
       return { ...stored, at: NOW.toISOString() };
     },
@@ -214,6 +221,31 @@ export async function liveCala(): Promise<CalaClient & { sent: CalaRequest[] }> 
 
     recover: async () => true,
   };
+}
+
+/** Ingests crawl records from test/research/records by name, as the crawl importer does. */
+export async function ingestRecords(research: Pick<Research, "ingest">, names: string[]): Promise<void> {
+  for (const name of names) {
+    const saved = JSON.parse(await readFile(`${records}/${name}.json`, "utf8")) as {
+      _request: { method?: string; path?: string; body?: unknown };
+      _fetched_at: string;
+      _seconds?: number;
+      response: unknown;
+    };
+    const request = fromSavedRequest(saved._request)!;
+    const input: IngestInput = {
+      id: requestId(request),
+      request,
+      status: 200,
+      fetchedAt: new Date(saved._fetched_at.replace(/([+-]\d{2})(\d{2})$/, "$1:$2")).toISOString(),
+      seconds: saved._seconds ?? 0,
+      body: saved.response,
+      fromStore: true,
+      provenance: { fixture: `records/${name}.json`, note: "Slush crawl of 2026-11-14." },
+    };
+
+    await research.ingest(input);
+  }
 }
 
 /** A fixtures folder that holds the Slush roster and nothing else: the state before any research. */

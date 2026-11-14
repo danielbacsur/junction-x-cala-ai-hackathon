@@ -7,9 +7,10 @@
  */
 import { fileURLToPath } from "node:url";
 
+import { fixtureExtractor, importFixtures, migrate } from "../src/admin";
 import { CalaUnavailableError } from "../src/contract";
-import { connect, migrate } from "../src/db";
-import { createResearch, fixtureExtractor, importFixtures } from "../src/research";
+import { connect } from "../src/db";
+import { createResearch } from "../src/research";
 
 // The repo's .env.local holds DATABASE_URL in development. A value already set wins.
 for (const file of [".env.local", ".env"]) {

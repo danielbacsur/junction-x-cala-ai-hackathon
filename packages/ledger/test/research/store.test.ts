@@ -1,8 +1,8 @@
 import { afterAll, beforeAll, expect, test } from "vitest";
 
+import { importFixtures } from "../../src/admin";
 import { requestId } from "../../src/cala/id";
 import type { Db } from "../../src/db";
-import { importFixtures } from "../../src/research/fixtures";
 import { ingestResponse } from "../../src/research/ingest";
 import { createRawStore } from "../../src/research/raw";
 import { narrowStarBody, starBody } from "../../src/research/requests";

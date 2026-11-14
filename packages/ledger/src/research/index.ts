@@ -19,7 +19,6 @@ import { ensureDerived } from "./rules";
 import { json } from "./sql";
 import { createWorker } from "./work";
 
-export { fixtureExtractor, importFixtures } from "./fixtures";
 export type { IngestInput } from "./ingest";
 export type { Provenance } from "./raw";
 export { createRawStore } from "./raw";

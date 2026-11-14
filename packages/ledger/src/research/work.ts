@@ -1,4 +1,5 @@
 import { type Budget, CalaBudgetError, type CalaClient, type CalaRequest } from "../cala/contract";
+import { requestId } from "../cala/id";
 import {
   type AgreementExtractor,
   CalaUnavailableError,
@@ -15,6 +16,7 @@ import type { Db } from "../db";
 import { describeTrail, investorKind, rankMandate } from "./book";
 import { type IngestInput, ingestResponse } from "./ingest";
 import { readAgreements } from "./probes";
+import { getRaw } from "./raw";
 import { entityRow, refOf } from "./read";
 import { financierRoles, recipientRoles } from "./relations";
 import { narrowStarBody, probeQuestion, probeRequest, roundRequest, SLUSH_EVENT_ID, starRequest } from "./requests";
@@ -80,8 +82,11 @@ export function createWorker(context: WorkContext) {
   /** The last ranking of the mandates worked most recently, and the store state each was made from. */
   const rankings = new Map<string, { state: string; result: Awaited<ReturnType<typeof rankMandate>> }>();
 
-  const log = (mandateId: string, event: Partial<Omit<WorkEvent, "id" | "mandateId" | "at">> & Pick<WorkEvent, "kind" | "message">) =>
-    mandates.logWork(mandateId, { seconds: null, entity: null, fromStore: false, ...event });
+  /** One line of the work log. With a key, a step that runs again finds its line already written. */
+  const log = (
+    mandateId: string,
+    event: Partial<Omit<WorkEvent, "id" | "mandateId" | "at">> & Pick<WorkEvent, "kind" | "message"> & { key?: string },
+  ) => mandates.logWork(mandateId, { seconds: null, entity: null, fromStore: false, ...event });
 
   /** Notes why live work stopped, once. After this the pass serves from the store only. */
   async function halt(pass: Pass, error: unknown): Promise<boolean> {
@@ -212,9 +217,24 @@ export function createWorker(context: WorkContext) {
     return sentence ? (sentence.length > 90 ? `${sentence.slice(0, 87)}...` : sentence) : null;
   }
 
+  /** True when a request made now would go out: the pass may still spend and Cala is not latched. */
+  async function wouldSend(pass: Pass): Promise<boolean> {
+    if (pass.stop || pass.budget.used >= pass.budget.limit) return false;
+
+    try {
+      return (await cala.status()).state !== "latched";
+    } catch {
+      return true;
+    }
+  }
+
   /**
    * One signal probe for one entity. An answer already in the store is reused; a new one counts
    * against the mandate's six. The claims are stored as reported and then read for agreements.
+   *
+   * A probe that goes to Cala is logged twice: when it is sent, without a duration, so a reader
+   * of the work log can tell that Cabala is waiting and for how long, and when it ends, with
+   * one, whether Cala answered or not.
    */
   async function probe(pass: Pass, entity: EntityRef): Promise<void> {
     const mandateId = pass.mandate.id;
@@ -228,14 +248,15 @@ export function createWorker(context: WorkContext) {
 
     if (!responseId) {
       // The slot is taken before the request starts, so overlapped probes cannot overrun the six.
+      // A slot left by a step that died mid-request keeps its time, which names the attempt.
       const [slot] = pass.stop
         ? []
-        : await db.query<{ taken: boolean }>(
+        : await db.query<{ asked_at: unknown }>(
             `insert into mandate_probes (mandate_id, entity_id, from_store)
              select $1, $2, false
              where (select count(*) from mandate_probes where mandate_id = $1 and not from_store and entity_id <> $2) < $3
-             on conflict (mandate_id, entity_id) do update set asked_at = clock_timestamp()
-             returning true as taken`,
+             on conflict (mandate_id, entity_id) do update set asked_at = mandate_probes.asked_at
+             returning asked_at`,
             [mandateId, entity.id, PROBES],
           );
 
@@ -247,9 +268,23 @@ export function createWorker(context: WorkContext) {
         return;
       }
 
+      const request = probeRequest(probeQuestion(entity.name, await hintFor(entity.id), new Date(windowStart(context.now()))));
+      // No start line for a question the store will answer, or one that cannot be sent at all.
+      const sent = !(await getRaw(db, requestId(request))) && (await wouldSend(pass));
+      const started = performance.now();
+
+      if (sent) {
+        // Keyed by the attempt, so a resumed step that asks again writes no second line.
+        await log(mandateId, {
+          kind: "probe",
+          message: `Asking Cala about ${entity.name}.`,
+          entity,
+          key: `probe:${entity.id}:${iso(slot.asked_at)}:sent`,
+        });
+      }
+
       try {
-        const question = probeQuestion(entity.name, await hintFor(entity.id), new Date(windowStart(context.now())));
-        const response = await send(pass, probeRequest(question), { probeSubjectId: entity.id });
+        const response = await send(pass, request, { probeSubjectId: entity.id });
 
         responseId = response.id;
         fromStore = response.fromStore;
@@ -260,6 +295,28 @@ export function createWorker(context: WorkContext) {
           entity.id,
         ]);
         pass.unmade.push(`signal probe for ${entity.name}`);
+
+        // The line that says the wait is over, so nothing reads the probe as still in flight.
+        // It goes before an outage is noted, which stays the last word on what Cabala is doing.
+        if (sent) {
+          const why =
+            error instanceof CalaUnavailableError
+              ? "Cala is refusing requests"
+              : error instanceof CalaBudgetError
+                ? "the pass had no requests left"
+                : isAbort(error) || pass.signal?.aborted
+                  ? "the pass was cancelled"
+                  : error instanceof Error
+                    ? error.message
+                    : "the request failed";
+
+          await log(mandateId, {
+            kind: "probe",
+            message: `Cala gave no answer about ${entity.name}: ${why}.`,
+            seconds: (performance.now() - started) / 1000,
+            entity,
+          });
+        }
 
         if (!(await halt(pass, error))) {
           const gap = `The signal probe for ${entity.name} failed: ${error instanceof Error ? error.message : "the request failed"}.`;

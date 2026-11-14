@@ -18,17 +18,19 @@ const TROUBLE: Record<Trouble, string> = {
   stream: "I lost the connection to this session. The work log is still the record of what was done.",
 };
 
-/** What a turn asked that no button can answer by itself. */
+/**
+ * Cabala's latest words. A turn speaks in several parts, a line before it starts work and its
+ * account afterwards, so the newest part that says something is the one shown.
+ */
 function textOf(session: CabalaSession): string | null {
   for (const message of session.messages.toReversed()) {
     if (message.role !== "assistant") continue;
 
-    const text = message.parts
-      .map((part) => (part.type === "text" ? part.text : ""))
-      .join("")
-      .trim();
+    for (const part of message.parts.toReversed()) {
+      const text = part.type === "text" ? part.text.trim() : "";
 
-    if (text) return text;
+      if (text) return text;
+    }
   }
 
   return null;

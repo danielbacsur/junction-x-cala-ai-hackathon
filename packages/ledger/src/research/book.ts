@@ -10,6 +10,7 @@ import type {
   SourceRef,
 } from "../contract";
 import type { Db } from "../db";
+import { type MoneyKind, nonDilutive, partyKind } from "./money";
 import { financierRoles, recipientRoles } from "./relations";
 import { SLUSH_EVENT_ID } from "./requests";
 import { ensureDerived } from "./rules";
@@ -442,6 +443,8 @@ type Candidate = {
   role: string;
   trails: StoredTrail[];
   directFitOnly: boolean;
+  /** Trails that reach the candidate on evidence its category does not rest on. Named, not shown. */
+  aside: StoredTrail[];
 };
 
 type Ranked = Candidate & { profile: Profile; fit: Fit; best: StoredTrail | null; reason: string };
@@ -452,8 +455,96 @@ function excluded(profile: Profile, constraints: Constraints): boolean {
   );
 }
 
-/** One sentence on why to meet, worded from the trail and never beyond it. */
-function reasonFor(candidate: Candidate, profile: Profile, best: StoredTrail | null, mandate: Mandate, fit: Fit): string {
+const unknownMoney: ReadonlySet<MoneyKind> = new Set(["unknown"]);
+
+/**
+ * What each of these financiers put into the companies it funds, read from the stored rounds
+ * with `partyKind`. A pair that no stored round ties is unknown: an INVESTED_IN edge says that
+ * money moved and not what kind.
+ */
+async function moneyFrom(db: Db, funderIds: string[], signalIds: string[]) {
+  const byPair = new Map<string, Set<MoneyKind>>();
+  const byRound = new Map<string, Set<MoneyKind>>();
+
+  for (const row of await db.query<{
+    round_id: string;
+    financier: string;
+    recipient: string;
+    role: string;
+    name: string | null;
+    instrument: string | null;
+    named: boolean;
+  }>(
+    `select distinct p.round_id, p.entity_id as financier, recipient.entity_id as recipient, p.role,
+            rounds.name, rounds.instrument,
+            exists (
+              select 1 from participations other where other.round_id = p.round_id and other.role in ('GRANTOR', 'LENDER')
+            ) as named
+     from participations p
+     join rounds on rounds.id = p.round_id
+     join participations recipient
+       on recipient.round_id = p.round_id and recipient.role in (${quoted(recipientRoles)}) and recipient.entity_id <> p.entity_id
+     where p.entity_id in (${idList}) and p.role in (${quoted(financierRoles)})`,
+    [json(funderIds)],
+  )) {
+    const kind = partyKind(row.role, row, row.named);
+
+    for (const [kinds, key] of [
+      [byPair, `${row.financier}|${row.recipient}`],
+      [byRound, `${row.round_id}|${row.financier}`],
+    ] as const) {
+      kinds.set(key, (kinds.get(key) ?? new Set<MoneyKind>()).add(kind));
+    }
+  }
+
+  // A signal made from a round names that round as its basis; one made from a bare tie does not.
+  const rounds = new Map(
+    (
+      await db.query<{ id: string; basis_id: string | null }>(`select id, basis_id from signals where id in (${idList})`, [
+        json(signalIds),
+      ])
+    ).map((row) => [row.id, row.basis_id]),
+  );
+
+  return {
+    /** Everything the funder put into one company, over all the stored rounds between the two. */
+    ofTie: (funder: string, company: string): ReadonlySet<MoneyKind> => byPair.get(`${funder}|${company}`) ?? unknownMoney,
+    /** What the funder put into the round behind one signal. */
+    inSignal: (signalId: string, funder: string): ReadonlySet<MoneyKind> =>
+      byRound.get(`${rounds.get(signalId)}|${funder}`) ?? unknownMoney,
+  };
+}
+
+/**
+ * How a registry body is named in a reason: by what its place on the trail rests on, and on
+ * whose classification it is public. Only a grant or a loan makes it a funder; with equity it is
+ * an investor, and where the record does not say, a body.
+ */
+function publicName(profile: Profile, category: CandidateCategory, money: ReadonlySet<MoneyKind>): string | null {
+  if (!profile.registry) return null;
+
+  const what = category === "non_dilutive" ? "funder" : money.has("equity") ? "investor" : "body";
+
+  return `a public ${what} by ${profile.registry.ours ? "our classification" : "Cala's description"}`;
+}
+
+/** True when everything the stored rounds show is a grant or a loan: no equity, nothing unnamed. */
+const onlyNonDilutive = (money: ReadonlySet<MoneyKind>) => !money.has("equity") && !money.has("unknown");
+
+/**
+ * One sentence on why to meet, worded from the trail and never beyond it. `money` is what the
+ * candidate's own place on the trail rests on, and `route` what the trail's first hop put into
+ * the founder's company.
+ */
+function reasonFor(
+  candidate: Candidate,
+  profile: Profile,
+  best: StoredTrail | null,
+  mandate: Mandate,
+  fit: Fit,
+  money: ReadonlySet<MoneyKind>,
+  route: ReadonlySet<MoneyKind>,
+): string {
   const name = profile.ref.name;
 
   if (!best) {
@@ -466,29 +557,66 @@ function reasonFor(candidate: Candidate, profile: Profile, best: StoredTrail | n
   const signal = best.signal ? ` ${best.end.name} carries: ${describeSignal(best.signal)}.` : "";
 
   if (mandate.role === "founder") {
-    const basis = profile.registry?.ours ? " by our classification" : "";
+    const called = publicName(profile, candidate.category, money);
+    const who = called ? `${name}, ${called},` : name;
+    const through = first!.to.name;
+    // A first hop that only granted or lent to the founder is a funder the two companies share.
+    // It is not an investor who can be asked about its portfolio, so nothing says to ask it.
+    const shared = !onlyNonDilutive(route)
+      ? null
+      : second?.direction === "from_funds_to"
+        ? `${through} funds as it funds you`
+        : `is tied to ${through}, which funds you`;
 
-    // Three hops end at the candidate itself: a backer of a company beside the founder.
+    // Three hops end at the candidate itself: a backer of a company beside the founder. A grant
+    // or a loan is named as one, so a grantor is not read as holding a stake.
     if (third && best.end.id === candidate.id) {
+      const gave = !onlyNonDilutive(money)
+        ? "backs"
+        : money.has("grant") && money.has("loan")
+          ? "made grants and loans to"
+          : money.has("grant")
+            ? "made a grant to"
+            : "made a loan to";
       const tie =
         third.direction === "to_funds_from"
-          ? `backs ${second!.to.name} (roles in the same round)`
+          ? `${gave} ${second!.to.name} (roles in the same round)`
           : `has an investment tie with ${second!.to.name} (direction not settled)`;
-      const who = candidate.category === "non_dilutive" ? `${name}, a public funder${basis},` : name;
 
-      return `${who} ${tie}, a company beside you through ${first!.to.name}; ${first!.to.name} is the route to ask about.`;
+      return shared
+        ? `${who} ${tie}, a company that ${shared}.`
+        : `${who} ${tie}, a company beside you through ${through}; ${through} is the route to ask about.`;
     }
 
-    if (candidate.category === "non_dilutive" && best.signal && best.end.id !== candidate.id) {
-      return `${name} is a public funder${basis} active beside you: ${describeSignal(best.signal)} for ${best.end.name}, which you reach through ${first!.to.name}. Ask ${first!.to.name} how ${best.end.name} obtained it.`;
+    // A public funder named on a sibling's grant or loan, reached through the founder's own backer.
+    if (candidate.category === "non_dilutive" && best.signal && first!.to.id !== candidate.id) {
+      const found = `${name} is ${called} active beside you: ${describeSignal(best.signal)} for ${best.end.name}`;
+
+      return shared
+        ? `${found}, which ${shared}.`
+        : `${found}, which you reach through ${through}. Ask ${through} how ${best.end.name} obtained it.`;
+    }
+
+    // A public funder whose grant or loan the founder already has: the same funder, not a new one.
+    if (candidate.category === "non_dilutive") {
+      const tie = first!.direction === "to_funds_from" ? "already funds you" : "has an investment tie with you";
+
+      return best.signal
+        ? `${who} ${tie} and is tied to ${best.end.name}.${signal} This is a funder you already have, not a new one.`
+        : `${who} ${tie} and is tied to ${best.end.name}, a company beside you. A funder you already have, not a new one.`;
     }
 
     // An existing backer, public or private: a follow-up target, never a new lead.
-    const tie = first!.direction === "to_funds_from" ? "already backs you" : "has an investment tie with you";
+    const tie =
+      first!.direction !== "to_funds_from"
+        ? "has an investment tie with you"
+        : onlyNonDilutive(money)
+          ? "already funds you"
+          : "already backs you";
 
     return best.signal
-      ? `${name} ${tie} and is tied to ${best.end.name}.${signal} Ask ${name} about ${best.end.name}'s experience; this is a follow-up, not a new investor.`
-      : `${name} ${tie} and is tied to ${best.end.name}, a company beside you. A follow-up target, not a new investor.`;
+      ? `${who} ${tie} and is tied to ${best.end.name}.${signal} Ask ${name} about ${best.end.name}'s experience; this is a follow-up, not a new investor.`
+      : `${who} ${tie} and is tied to ${best.end.name}, a company beside you. A follow-up target, not a new investor.`;
   }
 
   if (best.pattern === "T6" && best.hops.some((hop) => hop.family === "agreement")) {
@@ -519,9 +647,24 @@ function trailLines(candidate: Candidate, best: StoredTrail | null): FitLine[] {
   if (best.signal) {
     lines.push({
       criterion: "Signal",
-      statement: `${best.signal.entity.name}: ${describeSignal(best.signal)}.${best.signal.flag ? ` ${best.signal.flag}` : ""}${best.signal.publicBasis ? ` Public funder by ${best.signal.publicBasis.ours ? "our classification" : "Cala's description"} (${best.signal.publicBasis.basis}).` : ""}`,
+      statement: `${best.signal.entity.name}: ${describeSignal(best.signal)}.${best.signal.flag ? ` ${best.signal.flag}` : ""}${best.signal.publicBasis ? ` Counted as public money by ${best.signal.publicBasis.ours ? "our classification" : "Cala's description"} (${best.signal.publicBasis.basis}).` : ""}`,
       kind: "observed",
       sources: best.signal.sources.slice(0, 10),
+    });
+  }
+
+  // What a non-dilutive row leaves out: the same body's stakes, which are not what it rests on.
+  const companies = uniqueBy(
+    candidate.aside.filter((trail) => trail.end.id === candidate.id && trail.hops.length > 1),
+    (trail) => trail.hops[trail.hops.length - 2]!.to.id,
+  ).map((trail) => trail.hops[trail.hops.length - 2]!.to.name);
+
+  if (companies.length > 0) {
+    lines.push({
+      criterion: "Also an investor",
+      statement: `Stored rounds also tie it to ${list(companies)} beside you through equity or money of a kind they do not name. That is not non-dilutive funding and is not what this row rests on.`,
+      kind: "observed",
+      sources: mergeSources(...candidate.aside.map((trail) => trail.hops[trail.hops.length - 1]!.sources)).slice(0, 8),
     });
   }
 
@@ -587,12 +730,17 @@ export async function rankMandate(
   const candidates = new Map<string, Candidate>();
   const gaps: string[] = [];
 
-  const offer = (id: string, category: CandidateCategory, role: string, trail: StoredTrail | null) => {
-    const candidate = candidates.get(id) ?? { id, category, role, trails: [], directFitOnly: false };
+  // A candidate may be reached on evidence of more than one kind, so offers are kept by category.
+  const offers = new Map<string, { category: CandidateCategory; role: string; trails: StoredTrail[] }[]>();
 
-    if (trail && !candidate.trails.some((one) => one.id === trail.id)) candidate.trails.push(trail);
+  const offer = (id: string, category: CandidateCategory, role: string, trail: StoredTrail) => {
+    const made = offers.get(id) ?? [];
+    const one = made.find((held) => held.category === category) ?? { category, role, trails: [] };
 
-    candidates.set(id, candidate);
+    if (!made.includes(one)) made.push(one);
+    if (!one.trails.some((held) => held.id === trail.id)) one.trails.push(trail);
+
+    offers.set(id, made);
   };
 
   const registry = new Set(
@@ -602,6 +750,9 @@ export async function rankMandate(
     "select to_id, direction, stated from ties where from_id = $1 and family = 'investment'",
     [subjectId],
   );
+
+  /** What a financier's place on one trail rests on. Set for a founder, whose Book it sorts. */
+  let restsOn: (id: string, trail: StoredTrail) => ReadonlySet<MoneyKind> = () => unknownMoney;
 
   if (mandate.role === "founder") {
     const backers = new Set(
@@ -614,20 +765,50 @@ export async function rankMandate(
     const routed = new Set<string>();
     const funders = new Set<string>();
 
+    const met = trails.flatMap((trail) => [
+      trail.hops[0]!.to.id,
+      trail.end.id,
+      ...(trail.signal?.parties ?? []).map((party) => party.entity.id),
+    ]);
+    const money = await moneyFrom(db, [...new Set(met)], [
+      ...new Set(trails.flatMap((trail) => (trail.signal ? [trail.signal.id] : []))),
+    ]);
+
+    // Its money in the sibling at the end, in the founder's own company, or in the signal's round.
+    restsOn = (id, trail) =>
+      trail.end.id === id
+        ? money.ofTie(id, trail.hops[trail.hops.length - 2]!.to.id)
+        : trail.hops[0]!.to.id === id
+          ? money.ofTie(id, subjectId)
+          : trail.signal
+            ? money.inSignal(trail.signal.id, id)
+            : unknownMoney;
+
+    /**
+     * A registry body is non-dilutive only on a grant or a loan, and only when the mandate asks
+     * for public funding. On equity, or on money the record does not name, it is an investor
+     * like any other, whatever the mandate says: the choice is about the non-dilutive category.
+     * Unnamed money beside a grant to the same company is taken as that grant recorded twice.
+     */
+    const place = (id: string, trail: StoredTrail, investor: CandidateCategory, role: string) => {
+      const kinds = registry.has(id) ? restsOn(id, trail) : null;
+      const funds = kinds !== null && nonDilutive(kinds);
+
+      if (funds) funders.add(id);
+
+      if (funds && publicWanted) offer(id, "non_dilutive", `public funder, ${role}`, trail);
+      else if (investor === "follow_up" && !backersWanted) return;
+      else if (!kinds) offer(id, investor, role, trail);
+      else if (kinds.has("equity") || !funds) offer(id, investor, `public body, ${role}`, trail);
+    };
+
     for (const trail of trails) {
       const first = trail.hops[0]!.to.id;
 
       if (trail.pattern === "T4") continue;
 
       if (trail.hops.length === 3) {
-        // A public funder behind a sibling is never a new investor lead; it has its own category.
-        if (!registry.has(trail.end.id)) {
-          offer(trail.end.id, "lead", "has an investment tie with a company beside you", trail);
-        } else {
-          funders.add(trail.end.id);
-
-          if (publicWanted) offer(trail.end.id, "non_dilutive", "public funder active on a company beside you", trail);
-        }
+        place(trail.end.id, trail, "lead", "has an investment tie with a company beside you");
 
         continue;
       }
@@ -636,21 +817,22 @@ export async function rankMandate(
       // behind the sibling's signal is a non-dilutive candidate.
       if (backers.has(first)) {
         routed.add(first);
-
-        if (registry.has(first)) {
-          if (publicWanted) offer(first, "non_dilutive", "public funder already tied to you", trail);
-        } else if (backersWanted) {
-          offer(first, "follow_up", "existing backer", trail);
-        }
+        place(first, trail, "follow_up", "existing backer");
       }
 
       if (trail.pattern === "T2" && trail.signal) {
         for (const party of trail.signal.parties) {
-          if (!registry.has(party.entity.id) || party.entity.id === first || backers.has(party.entity.id)) continue;
+          const id = party.entity.id;
 
-          funders.add(party.entity.id);
+          if (!registry.has(id) || id === first || id === trail.end.id || backers.has(id)) continue;
 
-          if (publicWanted) offer(party.entity.id, "non_dilutive", "public funder active on a company beside you", trail);
+          // Only the bodies that granted or lent. A public investor in the same round is
+          // reached over its own tie to the sibling, at its full three hops.
+          if (!nonDilutive(restsOn(id, trail))) continue;
+
+          funders.add(id);
+
+          if (publicWanted) offer(id, "non_dilutive", "public funder active on a company beside you", trail);
         }
       }
     }
@@ -665,9 +847,11 @@ export async function rankMandate(
       );
     }
 
+    // Counted on grants and loans alone. One that also holds equity beside the founder is still
+    // listed, as the investor it is there.
     if (!publicWanted && funders.size > 0) {
       gaps.push(
-        `${funders.size} public funder${funders.size === 1 ? " is" : "s are"} active on companies beside you. Public funding is not switched on in this mandate, so ${funders.size === 1 ? "it is" : "they are"} not listed as candidates.`,
+        `${funders.size} public funder${funders.size === 1 ? " has" : "s have"} made grants or loans to you or to companies beside you. Public funding is not switched on in this mandate, so ${funders.size === 1 ? "it is not listed as a non-dilutive candidate" : "they are not listed as non-dilutive candidates"}.`,
       );
     }
 
@@ -690,7 +874,7 @@ export async function rankMandate(
     );
 
     for (const row of researched) {
-      if (candidates.has(row.id) || anchors.has(row.id) || row.id === subjectId) continue;
+      if (offers.has(row.id) || anchors.has(row.id) || row.id === subjectId) continue;
 
       candidates.set(row.id, {
         id: row.id,
@@ -698,6 +882,7 @@ export async function rankMandate(
         role: "no connection to your portfolio in stored evidence",
         trails: [],
         directFitOnly: true,
+        aside: [],
       });
     }
 
@@ -715,6 +900,21 @@ export async function rankMandate(
         `${attending.length} compan${attending.length === 1 ? "y" : "ies"} already tied to your fund ${attending.length === 1 ? "is" : "are"} listed by Cala as Slush attendees and ${attending.length === 1 ? "is" : "are"} not offered as new: ${list(attending.map((row) => row.name), 8)}.`,
       );
     }
+  }
+
+  // One row per candidate. A public body reached on a grant or loan and also on equity is listed
+  // as non-dilutive on the first alone; its stakes are named beside the row, never made part of it.
+  for (const [id, made] of offers) {
+    const chosen = made.find((one) => one.category === "non_dilutive") ?? made[0]!;
+
+    candidates.set(id, {
+      id,
+      category: chosen.category,
+      role: chosen.role,
+      trails: chosen.trails,
+      directFitOnly: false,
+      aside: made.filter((one) => one !== chosen).flatMap((one) => one.trails),
+    });
   }
 
   candidates.delete(subjectId);
@@ -750,14 +950,33 @@ export async function rankMandate(
     candidate.trails.splice(ROW_TRAILS);
 
     const best = candidate.trails[0] ?? null;
+    const founder = mandate.role === "founder";
+    const money = founder && best ? restsOn(candidate.id, best) : unknownMoney;
 
-    if (mandate.role === "founder" && candidate.category === "lead" && !investorKind(profile)) {
+    if (founder && candidate.category === "lead" && !investorKind(profile)) {
       fit.unknowns.push(
         "Whether it invests regularly is not established: stored reads show too few of its investments to say.",
       );
     }
 
-    ranked.push({ ...candidate, profile, fit, best, reason: reasonFor(candidate, profile, best, mandate, fit) });
+    // A public body listed as an investor on money of no stated kind: say why it is not more.
+    if (founder && profile.registry && best && candidate.category !== "non_dilutive" && !money.has("equity")) {
+      fit.unknowns.push(
+        "Stored rounds do not say what kind of money ties it to this trail, so it is not listed as non-dilutive: only a grant, a subsidy or a loan would make it that.",
+      );
+    }
+
+    // A grantor or lender nobody has classified sits among the leads: say what it is known to do.
+    if (founder && !profile.registry && best && onlyNonDilutive(money)) {
+      fit.unknowns.push(
+        "Stored rounds show it granting or lending, not investing. It is not in the public-funder registry, so it is not listed as a public funder.",
+      );
+    }
+
+    // What the trail's first hop put into the founder's own company.
+    const route = founder && best ? restsOn(best.hops[0]!.to.id, best) : unknownMoney;
+
+    ranked.push({ ...candidate, profile, fit, best, reason: reasonFor(candidate, profile, best, mandate, fit, money, route) });
   }
 
   ranked.sort((a, b) => compareRanked(a, b, wanted));

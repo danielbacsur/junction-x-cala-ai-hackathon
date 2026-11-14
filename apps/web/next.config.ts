@@ -17,12 +17,6 @@ const nextConfig: NextConfig = {
         loaders: ["@tailwindcss/turbopack"],
         as: "*.css",
       },
-
-      // See the loader: the ledger points at its own folders in a way Turbopack cannot bundle.
-      "*.ts": {
-        condition: { path: /packages\/ledger\/src\//, content: /import\.meta\.url/ },
-        loaders: ["./lib/loaders/ledger-folders.cjs"],
-      },
     },
   },
 

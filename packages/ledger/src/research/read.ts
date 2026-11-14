@@ -130,6 +130,28 @@ export async function coverage(db: Db): Promise<Coverage> {
 const show = (value: unknown): string =>
   Array.isArray(value) ? value.map(show).join(", ") : typeof value === "object" && value ? JSON.stringify(value) : String(value);
 
+/**
+ * The entity's sector as a property named "industry", which Cala holds as OPERATES_IN_INDUSTRY
+ * edges and not as a property. The value is the label the edge's own source used, such as "ai",
+ * and Cala's coarse industry, such as SOFTWARE_AND_SERVICES, only where no edge carries one.
+ * Several are joined with commas. The sources are those of the edges the value was read from.
+ */
+async function industryOf(db: Db, entityId: string): Promise<Dossier["properties"][number] | null> {
+  const edges = await db.query<{ name: string | null; original_label: string | null; sources: SourceRef[] }>(
+    `select target.name, edges.properties ->> 'original_label' as original_label, edges.sources
+     from edges left join entities target on target.id = edges.target_id
+     where edges.source_id = $1 and edges.relationship = 'OPERATES_IN_INDUSTRY'`,
+    [entityId],
+  );
+  const labelled = edges.filter((edge) => edge.original_label);
+  const read = labelled.length > 0 ? labelled : edges.filter((edge) => edge.name);
+  const labels = [...new Set(read.map((edge) => edge.original_label ?? edge.name!))].sort();
+
+  if (labels.length === 0) return null;
+
+  return { name: "industry", value: labels.join(", "), sources: mergeSources(...read.map((edge) => edge.sources)) };
+}
+
 /** Everything the store holds about one entity, for the source drawer. */
 export async function dossier(db: Db, entityId: string): Promise<Dossier> {
   const row = await entityRow(db, entityId);
@@ -174,12 +196,14 @@ export async function dossier(db: Db, entityId: string): Promise<Dossier> {
     [entityId],
   );
   const refs = await entityRefs(db, groups.map((group) => group.entity_id));
+  const properties = Object.entries(row.properties ?? {})
+    .filter(([name, property]) => name !== "id" && property?.value !== null && property?.value !== undefined)
+    .map(([name, property]) => ({ name, value: show(property.value), sources: toSources(property.sources) }));
+  const industry = properties.some((property) => property.name === "industry") ? null : await industryOf(db, entityId);
 
   return {
     entity: refOf(row),
-    properties: Object.entries(row.properties ?? {})
-      .filter(([name, property]) => name !== "id" && property?.value !== null && property?.value !== undefined)
-      .map(([name, property]) => ({ name, value: show(property.value), sources: toSources(property.sources) })),
+    properties: industry ? [...properties, industry] : properties,
     signals: await signalsOf(db, [entityId]),
     unresolvedClaims,
     possibleDuplicates: groups.map((group) => ({

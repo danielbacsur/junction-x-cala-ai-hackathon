@@ -1,6 +1,6 @@
 import { expect, test } from "vitest";
 
-import { migrate } from "../src/db";
+import { migrate } from "../src/admin";
 import { memoryDb } from "./db";
 
 test("migrations apply once and transactions roll back", async () => {

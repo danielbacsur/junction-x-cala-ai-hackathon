@@ -269,6 +269,8 @@ describe("from the store, with Cala latched off", () => {
       expect.objectContaining({ type: "agreement" }),
     );
     expect(w.mandates.events.at(-1)).toMatchObject({ kind: "queued", message: "Not asked: signal probe for Photoncycle." });
+    // Nothing went to Cala, so the log holds no probe for Photoncycle, sent or answered.
+    expect(w.mandates.events.some((event) => event.kind === "probe" && event.entity?.id === ids.photoncycle)).toBe(false);
   });
 
   test("entities are found in the store first, and Cala is asked only when the store has nothing close", async () => {
@@ -291,6 +293,29 @@ describe("from the store, with Cala latched off", () => {
     expect(await w.research.entityRef(ids.kuva)).toMatchObject({ name: "Kuva Space", entityType: "Company" });
     await expect(w.research.entityRef("00000000-0000-0000-0000-000000000000")).rejects.toThrow(NotFoundError);
     await expect(w.research.getDossier("00000000-0000-0000-0000-000000000000")).rejects.toThrow(NotFoundError);
+  });
+
+  test("a dossier gives the sector as an industry property, with the sources of its edges", async () => {
+    const industry = async (entityId: string) =>
+      (await w.research.getDossier(entityId)).properties.filter((property) => property.name === "industry");
+
+    // The label Redpine's own source used, not the coarse industry Cala files it under.
+    expect(await industry(ids.redpine)).toEqual([
+      { name: "industry", value: "ai", sources: [expect.objectContaining({ name: "linkedin.com", rank: "AGGREGATOR" })] },
+    ]);
+    // Photoncycle has three industry edges and one of them carries a label: that one is the value.
+    expect(await industry(ids.photoncycle)).toMatchObject([{ value: "energy" }]);
+
+    // No edge of Luminar's carries a label, so the coarse industry stands in.
+    const [luminar] = await industry(ids.luminar);
+
+    expect(luminar).toMatchObject({ name: "industry", value: "VENTURE_CAPITAL" });
+    expect(luminar!.sources.length).toBeGreaterThan(0);
+    // Several coarse industries are one comma-separated value.
+    expect(await industry(ids.kfund)).toMatchObject([{ value: "FINTECH, PRIVATE_EQUITY, SOFTWARE_AND_SERVICES, VENTURE_CAPITAL" }]);
+
+    // An entity seen only in a list has no industry edge, and gets no property made up for it.
+    expect(await industry(ids.nordicNinja)).toEqual([]);
   });
 
   test("coverage reports the latch as the store holds it", async () => {
@@ -340,8 +365,16 @@ describe("a cold subject, with Cala answering", () => {
     const events = w.mandates.events.filter((event) => event.mandateId === mandate.id);
 
     expect(events.filter((event) => event.kind === "read" && !event.fromStore).length).toBeGreaterThan(2);
-    expect(events.find((event) => event.kind === "probe")).toMatchObject({ fromStore: false });
-    expect(events.find((event) => event.kind === "probe")!.message).toContain("none found by Cala");
+
+    // The probe is logged when it is sent, without a duration, and again when it is answered.
+    const probes = events.filter((event) => event.kind === "probe");
+
+    expect(probes).toMatchObject([
+      { message: "Asking Cala about Redpine Technology AB.", seconds: null, fromStore: false, entity: { id: ids.redpine } },
+      { fromStore: false, entity: { id: ids.redpine } },
+    ]);
+    expect(probes[1]!.seconds).toBeGreaterThan(0);
+    expect(probes[1]!.message).toContain("none found by Cala");
 
     // The live probe used one of the mandate's six.
     expect(await w.db.query("select from_store from mandate_probes where mandate_id = $1", [mandate.id])).toEqual([{ from_store: false }]);
@@ -491,9 +524,74 @@ describe("a cold subject, with Cala answering", () => {
     const events = w.mandates.events.filter((event) => event.mandateId === mandate.id);
 
     expect(events.find((event) => event.kind === "gap")!.message).toContain("could not be read for agreements (the model is unavailable)");
-    expect(events.find((event) => event.kind === "probe")!.message).toContain("claims stored as reported");
+    expect(events.filter((event) => event.kind === "probe").at(-1)!.message).toContain("claims stored as reported");
     // Not read is not the same as nothing found: the dossier makes no "none found" statement.
     expect((await w.research.getDossier(ids.redpine)).unresolvedClaims.map((claim) => claim.claim.slice(0, 10))).toEqual(["The provid"]);
+
+    await w.db.close();
+  }, 60_000);
+
+  test("a resumed step does not log the start of the same probe twice", async () => {
+    const live = await liveCala();
+    let hang = true;
+    const cala: CalaClient = {
+      ...live,
+      // The first probe never comes back, as when the step that sent it dies mid-request.
+      request: (request, options) => (request.kind === "knowledge_search" && hang ? new Promise(() => {}) : live.request(request, options)),
+    };
+    const w = await world({ fixtures: "roster", cala: () => cala, extract: async () => [] });
+    const mandate = await w.mandates.create("founder", ids.redpine);
+    const probes = () => w.mandates.events.filter((event) => event.kind === "probe");
+
+    void w.research.checkSignals(mandate.id, mandate.ownerId, [ids.redpine]);
+    await expect.poll(probes).toHaveLength(1);
+
+    expect(probes()[0]).toMatchObject({ message: "Asking Cala about Redpine Technology AB.", seconds: null, fromStore: false });
+
+    // The step runs again and this time Cala answers: the start is not logged a second time.
+    hang = false;
+    await w.research.checkSignals(mandate.id, mandate.ownerId, [ids.redpine]);
+
+    expect(probes().map((event) => [event.message.split(":")[0], event.seconds === null])).toEqual([
+      ["Asking Cala about Redpine Technology AB.", true],
+      ["Asked Cala about Redpine Technology AB", false],
+    ]);
+
+    await w.db.close();
+  }, 60_000);
+
+  test("a probe Cala does not answer is closed in the log, and the next try starts a new line", async () => {
+    const live = await liveCala();
+    const cala: CalaClient = {
+      ...live,
+      async request(request, options) {
+        if (request.kind === "knowledge_search") throw new Error("Cala answered HTTP 500");
+
+        return live.request(request, options);
+      },
+    };
+    const w = await world({ fixtures: "roster", cala: () => cala });
+    const mandate = await w.mandates.create("founder", ids.redpine);
+
+    await w.research.checkSignals(mandate.id, mandate.ownerId, [ids.redpine]);
+
+    const events = w.mandates.events.filter((event) => event.mandateId === mandate.id);
+
+    expect(events.map((event) => event.kind)).toEqual(["probe", "probe", "gap", "queued"]);
+    expect(events[0]).toMatchObject({ message: "Asking Cala about Redpine Technology AB.", seconds: null, fromStore: false });
+    // The second line carries a duration, which is what ends the wait for whoever reads the log.
+    expect(events[1]).toMatchObject({
+      message: "Cala gave no answer about Redpine Technology AB: Cala answered HTTP 500.",
+      fromStore: false,
+      entity: { id: ids.redpine },
+    });
+    expect(events[1]!.seconds).toBeGreaterThanOrEqual(0);
+    expect(await w.db.query("select 1 from mandate_probes where mandate_id = $1", [mandate.id])).toEqual([]);
+
+    // Asking again is a new request, so it gets a start line of its own.
+    await w.research.checkSignals(mandate.id, mandate.ownerId, [ids.redpine]);
+
+    expect(w.mandates.events.filter((event) => event.kind === "probe" && event.seconds === null)).toHaveLength(2);
 
     await w.db.close();
   }, 60_000);

@@ -1,7 +1,7 @@
 import { expect, test } from "vitest";
 
 import { createLedgerParts, NotFoundError, type PacketSections } from "../src";
-import { fixtureExtractor, importFixtures } from "../src/research";
+import { fixtureExtractor, importFixtures } from "../src/admin";
 import { memoryDb } from "./db";
 import { ids, noConstraints, storedCala } from "./research/helpers";
 

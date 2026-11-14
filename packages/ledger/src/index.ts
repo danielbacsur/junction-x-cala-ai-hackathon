@@ -13,12 +13,12 @@ export { checkAgreements, createAgreementExtractor } from "./cala/extract";
 export { requestId } from "./cala/id";
 export { createMemoryStore, type MemoryStore } from "./cala/memory";
 export * from "./contract";
-export { connect, type Db, migrate } from "./db";
+export { connect, type Db } from "./db";
 export * from "./guest";
 export { calaKeysFromEnv } from "./keys";
 
 export { createPrivateStore, type PrivateStore, SupersededError } from "./private";
-export { confirmIdentity, createRawStore, createResearch, importFixtures, type Research } from "./research";
+export { confirmIdentity, createRawStore, createResearch, type Research } from "./research";
 
 export type LedgerOptions = {
   /** Postgres connection string for both stores. */
@@ -31,7 +31,10 @@ export type LedgerOptions = {
   extractAgreements?: AgreementExtractor;
 };
 
-/** The ledger with the parts it is made of, for scripts that import responses or run migrations. */
+/**
+ * The ledger with the parts it is made of, for scripts that import responses. Migrations and the
+ * fixture importer are in the package's second entry, `@fundraising/package-ledger/admin`.
+ */
 export function createLedgerParts(options: LedgerOptions) {
   const db = options.db ?? connect(options.databaseUrl);
   const cala = options.cala ?? createCalaClient({ keys: options.calaKeys, store: createRawStore(db) });
