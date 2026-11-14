@@ -1,0 +1,12 @@
+{
+ "_request": {
+  "method": "GET",
+  "path": "/entities?name=contract&entity_types=CorporateEvent&limit=30",
+  "body": null
+ },
+ "_fetched_at": "2026-11-14T12:19:57+0200",
+ "_seconds": 0.5,
+ "response": {
+  "entities": []
+ }
+}

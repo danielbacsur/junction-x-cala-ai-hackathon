@@ -1,0 +1,135 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/f64927eb-8545-51bd-8568-203fc5588937",
+  "body": {
+   "properties": [
+    "name",
+    "description",
+    "round_label",
+    "round_type",
+    "transaction_value",
+    "transaction_value_units",
+    "announcement_date",
+    "close_date",
+    "instrument",
+    "event_date",
+    "event_type"
+   ],
+   "relationships": {
+    "incoming": {
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 100
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 100
+     }
+    },
+    "outgoing": {}
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:26:24+0200",
+ "_seconds": 0.74,
+ "response": {
+  "id": "f64927eb-8545-51bd-8568-203fc5588937",
+  "name": "Grant",
+  "entity_type": "FundingRound",
+  "description": null,
+  "properties": {
+   "name": {
+    "value": "Grant",
+    "sources": [
+     {
+      "name": "startupcity.hamburg",
+      "document": "https://startupcity.hamburg/news-events/news/these-startups-were-funded-by-ifb-in-december-2024",
+      "date": "2024-12-19",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "round_label": {
+    "value": "GRANT",
+    "sources": [
+     {
+      "name": "startupcity.hamburg",
+      "document": "https://startupcity.hamburg/news-events/news/these-startups-were-funded-by-ifb-in-december-2024",
+      "date": "2024-12-19",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "announcement_date": {
+    "value": "2024-12-19",
+    "sources": [
+     {
+      "name": "startupcity.hamburg",
+      "document": "https://startupcity.hamburg/news-events/news/these-startups-were-funded-by-ifb-in-december-2024",
+      "date": "2024-12-19",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "instrument": {
+    "value": "GRANT",
+    "sources": [
+     {
+      "name": "startupcity.hamburg",
+      "document": "https://startupcity.hamburg/news-events/news/these-startups-were-funded-by-ifb-in-december-2024",
+      "date": "2024-12-19",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {},
+   "incoming": {
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "15fe4d14-50d7-481b-91bd-724a852039ab",
+      "name": "TrustNXT",
+      "entity_type": "Company",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "startupcity.hamburg",
+         "document": "https://startupcity.hamburg/news-events/news/these-startups-were-funded-by-ifb-in-december-2024",
+         "date": "2024-12-19",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "1004906b-6dc6-5ac2-8293-f747bfd6c1f9"
+      }
+     },
+     {
+      "id": "43f1235b-4325-4e2f-8d90-bd0e4b2a99c1",
+      "name": "IFB Innovationsstarter GmbH",
+      "entity_type": "Company",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "startupcity.hamburg",
+         "document": "https://startupcity.hamburg/news-events/news/these-startups-were-funded-by-ifb-in-december-2024",
+         "date": "2024-12-19",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "670ab48b-476c-5d4c-a597-d3358c8d6952"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

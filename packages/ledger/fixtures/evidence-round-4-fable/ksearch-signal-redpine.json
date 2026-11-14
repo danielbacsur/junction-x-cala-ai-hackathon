@@ -1,0 +1,222 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/knowledge/search",
+  "body": {
+   "input": "Which government contracts, public grants or public funding agreements, partnerships and customer agreements has Redpine Technology AB (redpine.ai, Sweden) announced since January 2025? For each give the counterparty, date, type and value."
+  }
+ },
+ "_fetched_at": "2026-11-14T12:28:10+0200",
+ "_started_offset_s": 0.0,
+ "_seconds": 32.31,
+ "response": {
+  "content": "## Redpine Technology AB \u2014 Contracts, Grants, Partnerships & Customer Agreements since January 2025\n\nAfter an extensive search across multiple sources, **no publicly announced government contracts, public grants, public funding agreements, partnerships, or customer agreements** have been found for Redpine Technology AB (redpine.ai) since January 2025.\n\n### What is publicly known\n\nRedpine Technology AB is a Stockholm-based startup founded in 2024 that provides a licensed, non-public data platform for AI development. The publicly available information about the company since January 2025 is limited to:\n\n- **Funding rounds (venture capital, not public grants):**\n  - **Angel round** \u2014 September 2025, ~$1.3 M\n  - **Seed round** \u2014 28 April 2026, \u20ac6.8 M, led by NordicNinja with participation from Luminar Ventures and Node.vc (convertible preferred stock)\n\n- **One named customer reference:** AsedaSciences is listed on Redpine's website as a customer, but no date, contract type, or value has been disclosed.\n\n- **Product offerings** include Redpine Science (token-based API for licensed peer-reviewed full text), pre-training data corpora, and RL environments \u2014 but no specific customer or partnership deals have been publicly announced.\n\nNo government contracts, public grants, or public funding agreements involving Redpine Technology AB appear in any publicly available source for the period since January 2025. The company's disclosed funding consists entirely of private venture capital rounds.\n",
+  "explainability": [
+   {
+    "content": "The provided facts only describe Redpine Technology AB's funding rounds (Angel round September 2025 and Seed round April 2026) and mention a named customer, but contain no information about any government contracts, public grants, public funding agreements, partnerships, or customer agreements.",
+    "references": [
+     "dd86b089-2628-44ed-869d-e0b79e1285f7",
+     "a6c1ef9f-18ff-4b8e-9089-5c45f236914a",
+     "a7680c7f-5fde-4ceb-b3fd-a05f166f47e2",
+     "895ce8b6-86ce-4ea5-bad1-b75cf7f1cebf",
+     "e556a62e-7411-4f81-aaa1-d231db243fc1",
+     "a9ee04ed-799c-4042-8b04-781d2d268216",
+     "e669eb53-315e-47f0-b5a5-fb8ef51c784a"
+    ]
+   }
+  ],
+  "context": [
+   {
+    "id": "dd86b089-2628-44ed-869d-e0b79e1285f7",
+    "content": "Ha\\\\\\\\\\\\\\\\ |  \\\\\\\\\\\\@redpine.ai  linkedin |. | Da\\\\\\ Os\\\\\\\\\\\\\\ |  \\\\\\\\\\@redpine.ai  linkedin |. ## Funding. ## Funding series. ## Funding Series Analysis. The company Redpine has raised a total of $9.3m in funding over 2 rounds. ### Key Insights:.  Redpine Seed Round, April 2026: $8m.  Redpine Angel Round, September 2025: $1.3m. ## Industries. Redpine is active in the following industries:.  Software as a service (SaaS). [...] # Redpine. Redpine is a provider of data infrastructure for AI development founded in 2024 by Anders Hammarback. Startups icon Seedtable Score 21   Startups icon Startups. ## Overview. ## Unlock Complete Company Intelligence. Access comprehensive data and insights available only to Seedtable members. ### Financial Details.  \u2022 Complete funding history and valuations.  \u2022 Revenue estimates and financial metrics.  \u2022 Investment round details and terms. ### People & Contacts.  \u2022 Contact information [...] Redpine Company Information - Funding, Investors, and More",
+    "origins": [
+     {
+      "source": {
+       "name": "Seedtable: Connect with fast-growing startups at the perfect moment",
+       "url": "https://www.seedtable.com/startups/Redpine-Z5ZBYGE"
+      },
+      "document": {
+       "name": "Redpine Company Information - Funding, Investors, and More",
+       "url": "https://www.seedtable.com/startups/Redpine-Z5ZBYGE"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "a6c1ef9f-18ff-4b8e-9089-5c45f236914a",
+    "content": "# Redpine - Company Profile. ## Redpine - About the company. ## Redpine's funding and investors. Redpine has raised a total funding of $10.6M over 2 rounds. Its first funding round was on Sep 23, 2025. Its latest funding round was a Seed round on Apr 28, 2026 for  $\\*\\*\\*\\*\\*. 5 investors participated in its latest round. Redpine has 3 institutional investors and 8 angel investors. | Rank | Company Details | Short Description | Total Funding | Investors | Tracxn Score |. | 8th | Logo for Toloka Ai  Toloka Ai 2014, Amsterdam  (Netherlands), Series C | Provider of AI data and human-in-the-loop training platform | $72M | Bezos Expeditions, Nebius | 61/100 |. | 22nd | Logo for Redpine  Redpine 2024, Stockholm  (Sweden), Seed | Provider of licensed multimodal AI data for training and inference | $10.6M | NordicNinja, Luminar Ventures \u00a0&\u00a09\u00a0others | 51/100 |.",
+    "origins": [
+     {
+      "source": {
+       "name": "Technology & Data for Venture Capital, Corp Dev, Investment Banks",
+       "url": "https://tracxn.com/d/companies/redpine/__stq3zReEFLLQgE3SqnF9XUBym0LDHgjmPn2rf8KrNWE"
+      },
+      "document": {
+       "name": "Redpine - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+       "url": "https://tracxn.com/d/companies/redpine/__stq3zReEFLLQgE3SqnF9XUBym0LDHgjmPn2rf8KrNWE"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "a7680c7f-5fde-4ceb-b3fd-a05f166f47e2",
+    "content": "# Redpine. **Raised $7.3M** from NordicNinja, Luminar Ventures and 1 more 28 Apr 2026 4 open roles. Redpine has raised \u20ac6.8 million in a seed funding round led by NordicNinja, with participation from Luminar Ventures and Node.vc. The funding will be used to support international expansion and enhance its AI data platform, which provides access to high-quality, curated datasets for AI training. Redpine has developed a token-based API platform that allows AI companies to access and pay for premium, non-public datasets in real time. The company is building a proprietary network of data partnerships and plans to hire talent in engineering and data science to scale its operations. Redpine is positioned to disrupt the scraping economy dominated by incumbents like Scale AI and Appen by offering a compliant, licensed data access model. Swedish AI company Redpine has raised \u20ac6.8 million in a seed funding round led by NordicNinja, with participation from Luminar Ventures and Node.vc. The funding will support Redpine's international expansion and the development of its AI\u2026.",
+    "origins": [
+     {
+      "source": {
+       "name": "MapCo AI Deal Intelligence",
+       "url": "https://www.mapco.ai/company/redpine"
+      },
+      "document": {
+       "name": "Redpine raised $7.3M \u2014 AI Model Ecosystems funding & jobs | MapCo",
+       "url": "https://www.mapco.ai/company/redpine"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "895ce8b6-86ce-4ea5-bad1-b75cf7f1cebf",
+    "content": "Based in Sweden, Redpine Technology AB offers a data platform tailored for agentic AI, providing access to licensed, non-public datasets to enhance AI training and insights across various sectors. Redpine Technology AB is a Stockholm-based company established in 2024 that specializes in providing access to non-public datasets for AI development. The company has raised a total of EUR 8. 000 mn in funding, with its most recent financing round occurring on April 28, 2026, during the Seed round led [...] Based in Sweden, Redpine Technology AB offers a data platform tailored for agentic AI, providing access to licensed, non-public datasets to enhance AI training and insights across various sectors. Redpine Technology AB is a Stockholm-based company established in 2024 that specializes in providing access to non-public datasets for AI development. The company has raised a total of EUR 8. 000 mn in funding, with its most recent financing round occurring on April 28, 2026, during the Seed round led [...] 000 mn in Seed funding led by NordicNinja VC, with participation from Luminar Ventures and Node. vc. The company plans to utilize this funding to grow its team, enhance platform development, and establish additional data partnerships to broaden access to non-public datasets across various industries. Redpine aims to develop new products and expand its market reach, particularly targeting sectors in healthcare and finance, by late 2026.",
+    "origins": [
+     {
+      "source": {
+       "name": "Preqin | Alternative Assets Data, Solutions and Insights",
+       "url": "https://www.preqin.com/data/profile/asset/redpine-technology-ab/798522"
+      },
+      "document": {
+       "name": "Redpine Technology AB Asset Profile | Preqin | BlackRock",
+       "url": "https://www.preqin.com/data/profile/asset/redpine-technology-ab/798522"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "e556a62e-7411-4f81-aaa1-d231db243fc1",
+    "content": "Title: Redpine Technology AB, Seed Funding in Sweden, Europe [...] EstateHedge FundConsultant. Redpine Technology AB, Seed Funding Transaction. Convertible Investment Fund Investement in Sweden, Europe. Home/Transactions/Convertible/Europe/Redpine Technology Ab, Seed Funding. Name:Redpine Technology AB, Seed Funding. Amount:Available on swfi.com. Announced At:04/28/2026. Closed At:04/28/2026. Security Type:Convertible Preferred Stock. Book a DemoPublic Fund Monitor. Image 11: LinkedInImage 12: LinkedInImage 13: LinkedIn. \u00a9 Sovereign Wealth Fund Institute | All [...] Redpine Technology AB, Seed Funding in Sweden, Europe",
+    "origins": [
+     {
+      "source": {
+       "name": "SWFI Subscription is a professional subscription-based investor research platform.",
+       "url": "https://www.swfinstitute.org/transaction/69f0e6c52d114525ead30ad2"
+      },
+      "document": {
+       "name": "Redpine Technology AB, Seed Funding in Sweden, Europe",
+       "url": "https://www.swfinstitute.org/transaction/69f0e6c52d114525ead30ad2"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "a9ee04ed-799c-4042-8b04-781d2d268216",
+    "content": "redpine.ai \u00b7 also known as Redpine Technology AB \u00b7 updated Nov 10, 2026\n\nRL environmentsTraining data\n\nSuggest an edit\n\n## On Who's buying data\n\n Licensing agent or marketplace: Usage-based revenue share on each licence; no rates published (Content and data licensing for rights holders)\n\n  redpine.ai \u00b7 observed Nov 10, 2026 \u00b7 Compare with other buyers\n\n  Quote from Redpine\n  > They license specific corpora for AI use and receive a revenue share when agents consume that data.\n\nHeadquarters\n:   Sweden (Stockholm), per its site\n\n    Sources:redpine.ailegal.redpine.ai\n\nFounded\n:   2024\n\n    Sources:redpine.aitech.eu\n\nHeadcount\n:   Not publicly listed\n\nTotal funding\n:   Not publicly listed\n\nLatest round\n:   Seed, EUR 6.8M, April 2026\n\n    Sources:node.vctech.euredpine.ai\n\n## Trust & data [...] Who Sells Data 208 vendors \u00b7 updated Nov 11, 2026\nTalk to the founder\n\n# Redpine\n\nRedpine, operated by Redpine Technology AB, licenses non-public data directly from publishers, research firms and other rights holders and sells access to AI builders. Its Redpine Science product lets agents search licensed peer-reviewed full text through MCP, API and CLI, billed at $1 per 1,000 tokens. It also licenses pre-training corpora to order (science, medical, private source code, company documents, audio, and video for world models and robotics) and builds RL environments with tasks, tools, a harness and graders from licensed, non-public data.\n\nSources:redpine.ai/aboutredpine.ai (2)redpine.ai/pre-training-dataredpine.ai/rllegal.redpine.ai [...] Sources:redpine.ai/pre-training-dataredpine.ai/about\n\nDelivery formats\n:   APIMCP toolsDatasets\n\n    Sources:redpine.ai/aboutredpine.ai/pre-training-data\n\nPublic samples & benchmarks\n:    Example Redpine Science answers with real sources and per-source prices on its home page\n\n    Sources:redpine.ai (1)redpine.ai/pre-training-dataredpine.ai/rl\n\nNamed customers\n:   AsedaSciences (named on its About page)\n\n    Source:redpine.ai\n\n    Quote\n    > AsedaSciences is a named public example.\n\nEvery change to these facts is kept in the public claims log. Record co\\_4310d6db6ded.\n\n0 selected to compare (up to 4)\n\nCompare",
+    "origins": [
+     {
+      "source": {
+       "name": "Who Sells Data",
+       "url": "https://whosellsdata.com/vendors/redpine"
+      },
+      "document": {
+       "name": "Redpine | Who Sells Data",
+       "url": "https://whosellsdata.com/vendors/redpine"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "e669eb53-315e-47f0-b5a5-fb8ef51c784a",
+    "content": "# Redpine\n\nRedpine, operated by Redpine Technology AB, licenses non-public data directly from publishers, research firms and other rights holders and sells access to AI builders. Its Redpine Science product lets agents search licensed peer-reviewed full text through MCP, API and CLI, billed at $1 per 1,000 tokens. It also licenses pre-training corpora to order (science, medical, private source code, company documents, audio, and video for world models and robotics) and builds RL environments with tasks, tools, a harness and graders from licensed, non-public data.\n\nSources:redpine.ai/aboutredpine.ai (2)redpine.ai/pre-training-dataredpine.ai/rllegal.redpine.ai\n\nredpine.ai \u00b7 also known as Redpine Technology AB \u00b7 updated Nov 10, 2026\n\n## On Who's buying data [...] ## On Who's buying data\n\nLicensing agent or marketplace: Usage-based revenue share on each licence; no rates published (Content and data licensing for rights holders)\n\nredpine.ai \u00b7 observed Nov 10, 2026 \u00b7 Compare with other buyers\n\nSources:redpine.ailegal.redpine.ai\n\nSources:redpine.aitech.eu\n\nSources:node.vctech.euredpine.ai\n\n## Trust & data\n\nHow the vendor protects buyer material, where its data comes from, and where it can run.\n\nSource:redpine.ai\n\nSources:redpine.ai/aboutredpine.ai/rl\n\nSources:redpine.ailegal.redpine.ai\n\n## What they sell\n\nSources:redpine.ai/rlredpine.ai/pre-training-dataredpine.ai/about\n\nSources:redpine.ai/pre-training-dataredpine.ai/about\n\nSources:redpine.ai/aboutredpine.ai/pre-training-data\n\nSources:redpine.ai (1)redpine.ai/pre-training-dataredpine.ai/rl [...] Source:redpine.ai\n\nEvery change to these facts is kept in the public claims log. Record co\\_4310d6db6ded.\n\n## Similar vendors\n\nOverlap in what they sell, where, and from what data. Not a ranking.\n\nCompare Redpine with Innodata, SuperAnnotate, Uber AI Solutions.\n\n0 selected to compare (up to 4)\n\nMaintained by Secludy AI. Secludy makes sensitive data safe to use for AI and may sell to companies listed here. Listings are free, unranked, and never paid for. Populated facts link to evidence; unknowns are marked. Full disclosure\n\nAnyone can add a missing company or fix a listing. Reuse terms are not yet approved; third-party material retains its own terms.",
+    "origins": [
+     {
+      "source": {
+       "name": "whosellsdata.com",
+       "url": "https://whosellsdata.com/vendors/redpine"
+      },
+      "document": {
+       "name": "Redpine | Who Sells Data",
+       "url": "https://whosellsdata.com/vendors/redpine"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   }
+  ],
+  "entities": [
+   {
+    "id": "ffc9399d-04d8-4e3e-afc1-dd64e3fb652b",
+    "name": "Redpine",
+    "entity_type": "Company",
+    "mentions": [
+     "Redpine Technology AB"
+    ]
+   },
+   {
+    "id": "cb488d2f-846a-52ff-9717-26d63a9b2636",
+    "name": "Stockholm",
+    "entity_type": "Municipality",
+    "mentions": [
+     "Stockholm"
+    ]
+   },
+   {
+    "id": "45268f56-905f-4cbe-9729-0ad0bbff87fa",
+    "name": "Sweden",
+    "entity_type": "Country",
+    "mentions": [
+     "Sweden"
+    ]
+   },
+   {
+    "id": "3abb97ac-3884-47a3-99a7-c5834d7b42fe",
+    "name": "AsedaSciences",
+    "entity_type": "Organization",
+    "mentions": [
+     "AsedaSciences"
+    ]
+   },
+   {
+    "id": "a46a1058-93a7-4b0f-bc1f-bc31238fb006",
+    "name": "NORDICNINJA VC LIMITED",
+    "entity_type": "Company",
+    "mentions": [
+     "NordicNinja"
+    ]
+   },
+   {
+    "id": "be67283b-4529-4a2d-834a-96edc4b36971",
+    "name": "Luminar Ventures",
+    "entity_type": "Company",
+    "mentions": [
+     "Luminar Ventures"
+    ]
+   },
+   {
+    "id": "abd185d2-6933-484f-85b7-a4c4a1b60e56",
+    "name": "node.vc",
+    "entity_type": "Company",
+    "mentions": [
+     "Node.vc"
+    ]
+   }
+  ]
+ }
+}

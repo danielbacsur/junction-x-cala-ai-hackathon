@@ -1,0 +1,25 @@
+{
+  "_note": "Seed for the public-funder registry (consensus draft 2, point 16.4). 'basis' says why a body is listed. IDs marked null must be resolved by name at build time. Any participant with role GRANTOR is added automatically with basis 'grantor in graph'. Classification as public is ours unless the Cala description states it, and the product must say so.",
+  "bodies": [
+    {"name": "Business Finland", "ids": ["d5b41639-eb27-43df-a6ee-a4f03807fbca", "3b0499bc-3c7e-4d50-aee5-42de34a5f8d0"], "country": "FI", "fund_of_funds": false, "basis": "Cala description: Finnish government agency"},
+    {"name": "Business Finland Venture Capital", "ids": ["41c754b1-029c-4087-b456-920d3c67ae0e"], "country": "FI", "fund_of_funds": true, "basis": "Cala description: government agency's venture capital arm investing in early-stage VC funds"},
+    {"name": "Tesi (Finnish Industry Investment)", "ids": ["df5be140-d50e-4e21-bb4f-d8f1e4ad3959"], "country": "FI", "fund_of_funds": true, "basis": "Cala description: Finnish public investment company"},
+    {"name": "Solidium Oy", "ids": ["767464bf-a91c-49b8-817a-b9cfec86f5c4"], "country": "FI", "fund_of_funds": false, "basis": "our classification: Finnish state holding company"},
+    {"name": "European Investment Bank", "ids": ["01c894d5-9eee-4929-a536-c1626fcddb96"], "country": "EU", "fund_of_funds": false, "basis": "Cala description: EU-owned multilateral development bank"},
+    {"name": "European Investment Fund", "ids": ["4b4ee6ab-0588-4802-8e4b-428fad1c2ee9"], "country": "EU", "fund_of_funds": true, "basis": "our classification: EIB Group fund of funds"},
+    {"name": "European Commission", "ids": ["cc0d7437-ffbd-4981-9711-4c26ba4cccdb"], "country": "EU", "fund_of_funds": false, "basis": "grantor in graph (Katana MRP, cordis.europa.eu)"},
+    {"name": "Scaleup Europe Fund", "ids": ["1dc243c5-c12b-4639-b560-3d13988cf767"], "country": "EU", "fund_of_funds": false, "basis": "our classification: EU-backed growth fund"},
+    {"name": "EIC Fund", "ids": [null], "country": "EU", "fund_of_funds": false, "basis": "our classification; appears in EIB's portfolio list"},
+    {"name": "Saminvest AB", "ids": ["077d67bb-1ec0-484e-892a-4140d31af6d1"], "country": "SE", "fund_of_funds": true, "basis": "our classification: Swedish state-owned fund of funds (Cala's description says only 'Swedish venture capital firm')"},
+    {"name": "VINNOVA", "ids": [null], "country": "SE", "fund_of_funds": false, "basis": "grantor in graph (Redpine, vinnova.se)"},
+    {"name": "Stiftelsen Industrifonden", "ids": [null], "country": "SE", "fund_of_funds": false, "basis": "our classification: state-founded evergreen fund; investor in Open Payments Europe"},
+    {"name": "Innovation Norway", "ids": [null], "country": "NO", "fund_of_funds": false, "basis": "grantor in graph (Photoncycle, stotte.brreg.no)"},
+    {"name": "ENOVA SF", "ids": [null], "country": "NO", "fund_of_funds": false, "basis": "grantor in graph (Photoncycle, stotte.brreg.no)"},
+    {"name": "Innovate UK", "ids": [null], "country": "GB", "fund_of_funds": false, "basis": "grantor in graph (Waymap, gtr.ukri.org)"},
+    {"name": "NSSIF (National Security Strategic Investment Fund)", "ids": [null], "country": "GB", "fund_of_funds": false, "basis": "our classification; investor in ICEYE"},
+    {"name": "High-Tech Gründerfonds", "ids": ["a2abbba3-d423-4c3b-abb4-e0e24c05e91d"], "country": "DE", "fund_of_funds": false, "basis": "our classification: public-private seed fund"},
+    {"name": "IFB Innovationsstarter GmbH", "ids": [null], "country": "DE", "fund_of_funds": false, "basis": "grantor in graph (TrustNXT)"},
+    {"name": "NASA", "ids": ["903f54b0-1bb2-406c-8bcc-9b80df792a75"], "country": "US", "fund_of_funds": false, "basis": "counterparty in a Cala knowledge claim (Kuva Space)"},
+    {"name": "ESA", "ids": ["9bfb7eb4-0dab-415b-ac4c-861b03eb3aec"], "country": "EU", "fund_of_funds": false, "basis": "counterparty in Cala knowledge claims (ICEYE, Kuva Space)"}
+  ]
+}

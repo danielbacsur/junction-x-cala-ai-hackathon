@@ -1,0 +1,1171 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/f3e7fd9f-cb4c-4dc6-bdc0-e41f4a92c265",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 200
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 200
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 200
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 200
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 200
+     },
+     "TRADED_ON": {
+      "limit": 200
+     },
+     "LISTED_ON": {
+      "limit": 200
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "FOUNDED": {
+      "limit": 200
+     },
+     "WORKS_AT": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_CEO_OF": {
+      "limit": 200
+     },
+     "IS_CTO_OF": {
+      "limit": 200
+     },
+     "IS_CFO_OF": {
+      "limit": 200
+     },
+     "IS_COO_OF": {
+      "limit": 200
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 200
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "MANUFACTURED_BY": {
+      "limit": 200
+     },
+     "DESIGNED_BY": {
+      "limit": 200
+     },
+     "OPERATED_BY": {
+      "limit": 200
+     },
+     "CREATED_BY": {
+      "limit": 200
+     },
+     "PUBLISHED_BY": {
+      "limit": 200
+     },
+     "GRANTED_BY": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:29:26+0200",
+ "_seconds": 0.75,
+ "response": {
+  "id": "f3e7fd9f-cb4c-4dc6-bdc0-e41f4a92c265",
+  "name": "Lightbringer",
+  "entity_type": "Company",
+  "description": "Lightbringer is the IP layer for deep tech companies: an AI-native patent firm and platform for filing and managing patents.",
+  "properties": {
+   "name": {
+    "value": "Lightbringer",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-05-05"
+     },
+     {
+      "name": "lightbringer.com",
+      "document": "https://lightbringer.com/",
+      "date": "2026-10-29",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2026/06/swedish-ai-patent-platform-lightbringer-raises-e8-6-million-to-take-on-big-law-and-replace-existing-patent-firms/",
+      "date": "2026-06-01",
+      "date_precision": "month",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "legal_name": {
+    "value": "Lightbringer AB",
+    "sources": [
+     {
+      "name": "lightbringer.com",
+      "document": "https://lightbringer.com/about/legal/privacy-policy",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "allabolag.se",
+      "document": "https://www.allabolag.se/foretag/lightbringer-ab/malm%C3%B6/internet-konsulter-operat%C3%B6rer/2KIOGCLI5YFHL",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [],
+    "sources": []
+   },
+   "description": {
+    "value": "Lightbringer is the IP layer for deep tech companies: an AI-native patent firm and platform for filing and managing patents.",
+    "sources": [
+     {
+      "name": "lightbringer.com",
+      "document": "https://lightbringer.com/",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "lightbringer.com",
+      "document": "https://www.lightbringer.com/news-items/lightbringer-raises-10m-to-take-on-patent-attorneys-in-the-u-s-with-the-worlds-first-ai-native-patent-firm",
+      "date": "2026-06-16",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "website": {
+    "value": "lightbringer.com",
+    "sources": [
+     {
+      "name": "lightbringer.com",
+      "document": "https://lightbringer.com/",
+      "date": "2026-10-29",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "dns.google",
+      "document": "https://dns.google/query?name=lightbringer.com&type=A",
+      "date": "2026-10-29",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "lightbringer.com",
+      "document": "https://lightbringer.com/news-items/legal-tech-company-lightbringer-raises-42",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "headquarters_address": {
+    "value": "Jagaregatan 4, 211 19 Malm\u00f6, Sweden",
+    "sources": [
+     {
+      "name": "lightbringer.com",
+      "document": "https://lightbringer.com/about/offices/office-hq",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "lightbringer.com",
+      "document": "https://lightbringer.com/about/legal/privacy-policy",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2023-03-15",
+    "sources": [
+     {
+      "name": "wikidata.org",
+      "document": "https://www.wikidata.org/wiki/Q141521275",
+      "date": "2026-10-30",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     },
+     {
+      "name": "allabolag.se",
+      "document": "https://www.allabolag.se/foretag/lightbringer-ab/malm%C3%B6/internet-konsulter-operat%C3%B6rer/2KIOGCLI5YFHL",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     },
+     {
+      "name": "lightbringer.com",
+      "document": "https://lightbringer.com/about/team",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "funding_stage": {
+    "value": "SERIES_A",
+    "sources": [
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2026/06/swedish-ai-patent-platform-lightbringer-raises-e8-6-million-to-take-on-big-law-and-replace-existing-patent-firms/",
+      "date": "2026-06-16",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "total_funding": {
+    "value": 10000000.0,
+    "sources": [
+     {
+      "name": "lightbringer.com",
+      "document": "https://www.lightbringer.com/news-items/lightbringer-raises-10m-to-take-on-patent-attorneys-in-the-u-s-with-the-worlds-first-ai-native-patent-firm",
+      "date": "2026-06-16",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "total_funding_units": {
+    "value": "USD",
+    "sources": [
+     {
+      "name": "lightbringer.com",
+      "document": "https://www.lightbringer.com/news-items/lightbringer-raises-10m-to-take-on-patent-attorneys-in-the-u-s-with-the-worlds-first-ai-native-patent-firm",
+      "date": "2026-06-16",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "operational_status": {
+    "value": "ACTIVE",
+    "sources": [
+     {
+      "name": "lightbringer.com",
+      "document": "https://lightbringer.com/",
+      "date": "2026-11-06",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "b0cac98a-cfbf-5cea-bb8b-e4354d59a03f",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "oresundstartups.com",
+         "document": "https://oresundstartups.com/lightbringer-secures-e4-3-million-seed-funding-to-expand-ai-powered-patent-protection-platform/",
+         "date": "2024-12-23",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "lightbringer.com",
+         "document": "https://lightbringer.com/news-items/legal-tech-company-lightbringer-raises-42",
+         "date": "2024-12-18",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "b67bf371-be1d-5321-adb2-218c43cb3f3c"
+      }
+     },
+     {
+      "id": "d8479f8a-33aa-5ed1-9af5-6d51983064d8",
+      "name": "Series A",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2026/06/swedish-ai-patent-platform-lightbringer-raises-e8-6-million-to-take-on-big-law-and-replace-existing-patent-firms/",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "dagensps.se",
+         "document": "https://www.dagensps.se/bors-finans/lightbringer-tar-in-92-miljoner-i-usa-brist-pa-svenskt-riskkapital/",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "thesaasnews.com",
+         "document": "https://www.thesaasnews.com/news/lightbringer-raises-10m-series-a/",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "ecbab677-cb67-55b8-bf2a-be7836b8a6e8"
+      }
+     },
+     {
+      "id": "d92838fa-4619-57c1-a4c0-05123c80a014",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "vinnova.se",
+         "document": "https://www.vinnova.se/en/p/tinc---accelerator-program2",
+         "date": "2024-06-28",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "f89a47c5-1224-5080-803f-3bb5d8968c06"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_EVENT": [
+     {
+      "id": "bc844d56-6ab4-452b-96bf-2661e86e592b",
+      "name": "Slush 2026",
+      "entity_type": "Event",
+      "properties": {
+       "role": "ATTENDEE",
+       "sources": [
+        {
+         "name": "Slush",
+         "document": "https://slush.org/",
+         "date": "2026-11-14"
+        }
+       ],
+       "id": "69d180e5-7f2d-5cd3-a8d0-3708585f9e1f"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "8ecf5e57-a149-438c-9eb4-089809bade56",
+      "name": "SOFTWARE_AND_SERVICES",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "35758e81-1c6c-480c-8a53-402233d7c2bf"
+      }
+     },
+     {
+      "id": "bbb603eb-5c96-4b54-a63e-f2cb748af140",
+      "name": "LEGAL",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "71fb6263-d28a-43db-bbbb-b202825e1787"
+      }
+     },
+     {
+      "id": "bbb603eb-5c96-4b54-a63e-f2cb748af140",
+      "name": "LEGAL",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "linkedin.com",
+         "document": "https://www.linkedin.com/company/lightbringerapp/",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "3e2153da-78dd-55f8-9059-8ecc8b8825ba",
+       "original_label": "legal"
+      }
+     }
+    ],
+    "HAS_DOMAIN_NAME": [
+     {
+      "id": "f39191e6-1414-5847-83b6-10a08a3fac20",
+      "name": "lightbringer.com",
+      "entity_type": "DomainName",
+      "properties": {
+       "sources": [
+        {
+         "name": "lightbringer.com",
+         "document": "https://lightbringer.com/",
+         "date": "2026-10-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "dns.google",
+         "document": "https://dns.google/query?name=lightbringer.com&type=A",
+         "date": "2026-10-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "lightbringer.com",
+         "document": "https://lightbringer.com/news-items/legal-tech-company-lightbringer-raises-42",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "27502b11-c502-5093-8873-84592e7a0272",
+       "valid_since": "2024-12-18",
+       "status": "ACTIVE"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "2be62c77-0289-5bf2-9219-15dd79ff5fa9",
+      "name": "Sk\u00e5ne Ventures",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "ideon.se",
+         "document": "https://ideon.se/ideoncompanynews/lightbringer-secures-funding/",
+         "date": "2024-08-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "oresundstartups.com",
+         "document": "https://oresundstartups.com/lightbringer-secures-e4-3-million-seed-funding-to-expand-ai-powered-patent-protection-platform/",
+         "date": "2024-12-23",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "0b6f486d-7f46-408a-9b59-12866a98fc96"
+      }
+     },
+     {
+      "id": "3a3ae25a-3ee4-51ab-955d-7354e8be9cbf",
+      "name": "Johannes Bolvede",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "ideon.se",
+         "document": "https://ideon.se/ideoncompanynews/lightbringer-secures-funding/",
+         "date": "2024-08-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "fd028e55-d858-432f-ae99-592a34b41aeb"
+      }
+     },
+     {
+      "id": "419755b4-cfee-56fc-8625-99664be9ef7c",
+      "name": "Hjalmar Antonsson",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "oresundstartups.com",
+         "document": "https://oresundstartups.com/lightbringer-secures-e4-3-million-seed-funding-to-expand-ai-powered-patent-protection-platform/",
+         "date": "2024-12-23",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "d75acf6f-b308-48e9-b18e-85b07e02033a"
+      }
+     },
+     {
+      "id": "4803d793-af97-4f2e-a45c-fe84770f133d",
+      "name": "Zenith Ventures",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "lightbringer.com",
+         "document": "https://lightbringer.com/news-items/legal-tech-company-lightbringer-raises-42",
+         "date": "2024-12-18",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "cambridgenetwork.co.uk",
+         "document": "https://www.cambridgenetwork.co.uk/index.php/news/legal-tech-company-lightbringer-raises-eu42-lets-companies-build-patent-portfolios-ai",
+         "date": "2024-12-18",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "oresundstartups.com",
+         "document": "https://oresundstartups.com/lightbringer-secures-e4-3-million-seed-funding-to-expand-ai-powered-patent-protection-platform/",
+         "date": "2024-12-23",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "e8881434-6774-46b3-8a54-6e2d8478d794"
+      }
+     },
+     {
+      "id": "6fad750f-7189-5516-abca-8fd019671d83",
+      "name": "Sannah Westerlund",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "oresundstartups.com",
+         "document": "https://oresundstartups.com/lightbringer-secures-e4-3-million-seed-funding-to-expand-ai-powered-patent-protection-platform/",
+         "date": "2024-12-23",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "e118faa2-bb24-4037-9f88-ca726475b606"
+      }
+     },
+     {
+      "id": "7de66648-3b00-4835-aa54-8fdc8bffd87d",
+      "name": "6 Degrees Capital",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "lightbringer.com",
+         "document": "https://www.lightbringer.com/news-items/lightbringer-raises-10m-to-take-on-patent-attorneys-in-the-u-s-with-the-worlds-first-ai-native-patent-firm",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2026/06/16/lightbringer-raises-10m-to-scale-ai-powered-patent-services/",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "40e4968a-8fc9-43ac-a611-bcd2fbdcdd4c"
+      }
+     },
+     {
+      "id": "9771b83b-4031-4057-9603-75fbb14aebd2",
+      "name": "Newion Investments",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "lightbringer.com",
+         "document": "https://www.lightbringer.com/news-items/lightbringer-raises-10m-to-take-on-patent-attorneys-in-the-u-s-with-the-worlds-first-ai-native-patent-firm",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2026/06/16/lightbringer-raises-10m-to-scale-ai-powered-patent-services/",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "f9e03c74-3a10-4db6-a5a9-b5431071941f"
+      }
+     },
+     {
+      "id": "b6a25d24-12b2-475d-ac15-04c3d161f220",
+      "name": "LIKEMINDED GROUP LTD",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "ideon.se",
+         "document": "https://ideon.se/ideoncompanynews/lightbringer-secures-funding/",
+         "date": "2024-08-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "830d97c8-0f4a-4bc6-9538-8b86c786a4e7"
+      }
+     },
+     {
+      "id": "be67283b-4529-4a2d-834a-96edc4b36971",
+      "name": "Luminar Ventures",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        },
+        {
+         "name": "lightbringer.com",
+         "document": "https://www.lightbringer.com/news-items/lightbringer-raises-10m-to-take-on-patent-attorneys-in-the-u-s-with-the-worlds-first-ai-native-patent-firm",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2026/06/16/lightbringer-raises-10m-to-scale-ai-powered-patent-services/",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "thesaasnews.com",
+         "document": "https://www.thesaasnews.com/news/lightbringer-raises-10m-series-a/",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "eef059f7-684c-4def-baca-648fe9210ced"
+      }
+     },
+     {
+      "id": "d405faf4-b2f7-4e7a-a083-b5d2346e616d",
+      "name": "Alliance VC",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Our investments",
+         "document": "https://alliance.vc/portfolio",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "lightbringer.com",
+         "document": "https://www.lightbringer.com/news-items/lightbringer-raises-10m-to-take-on-patent-attorneys-in-the-u-s-with-the-worlds-first-ai-native-patent-firm",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2026/06/16/lightbringer-raises-10m-to-scale-ai-powered-patent-services/",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "thesaasnews.com",
+         "document": "https://www.thesaasnews.com/news/lightbringer-raises-10m-series-a/",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "fecf7b19-f68e-4e54-be9e-07dbbc5c1121"
+      }
+     },
+     {
+      "id": "eaef62a7-ed51-56b6-b622-688da4058c62",
+      "name": "Johan Billgren",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "ideon.se",
+         "document": "https://ideon.se/ideoncompanynews/lightbringer-secures-funding/",
+         "date": "2024-08-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "a01b8937-2659-443a-9c44-0a8d216bdeaf"
+      }
+     },
+     {
+      "id": "eee25e4c-2965-5c1c-a274-381186969187",
+      "name": "Jimmy Lundstr\u00f6m",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "ideon.se",
+         "document": "https://ideon.se/ideoncompanynews/lightbringer-secures-funding/",
+         "date": "2024-08-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "795b7a2c-fbb5-4686-ad48-9768ce624699"
+      }
+     }
+    ],
+    "FOUNDED": [
+     {
+      "id": "36a68b39-bc02-40ed-8727-dbc75a230ddb",
+      "name": "Markus Andreasson",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/lightbringer",
+         "date": "2026-05-05"
+        },
+        {
+         "name": "Legal tech company Lightbringer raises \u20ac4.2 M",
+         "document": "https://www.lightbringer.com/news-items/legal-tech-company-lightbringer-raises-42",
+         "date": "2025-10-20"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/lightbringer/__nlfZMKB0KHQ_N5Mma2Ik02ZKto9qnJ-WN-BYb6ruqBs",
+         "date": "2026-05-05"
+        },
+        {
+         "name": "lightbringer.com",
+         "document": "https://lightbringer.com/about/team",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "8508acd4-2abc-5e2e-96db-738cf2ce6764",
+       "valid_since": "2023-01-01"
+      }
+     },
+     {
+      "id": "3a3ae25a-3ee4-51ab-955d-7354e8be9cbf",
+      "name": "Johannes Bolvede",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "ideon.se",
+         "document": "https://ideon.se/ideoncompanynews/lightbringer-secures-funding/",
+         "date": "2024-08-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "382cfe34-193b-50fc-9367-e3c324d87d1f"
+      }
+     },
+     {
+      "id": "9ffbfea4-af1d-5699-9660-a8af0b393e90",
+      "name": "Ola Wassvik",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "lightbringer.com",
+         "document": "https://lightbringer.com/about/team",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "3656d109-d7b9-5fe1-9a0f-900d4e8056ad",
+       "valid_since": "2023-01-01"
+      }
+     },
+     {
+      "id": "c97ebcf4-68aa-4d51-8700-6cd2a6b06317",
+      "name": "Dominic Davies",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "lightbringer.com",
+         "document": "https://lightbringer.com/about/team",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "patentrenewal.com",
+         "document": "https://www.patentrenewal.com/team/dominic-davies",
+         "date": "2026-11-03",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "7befa219-e8e6-5d9e-9123-0d941ec00e89",
+       "valid_since": "2023-01-01"
+      }
+     }
+    ],
+    "IS_CEO_OF": [
+     {
+      "id": "c97ebcf4-68aa-4d51-8700-6cd2a6b06317",
+      "name": "Dominic Davies",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "lightbringer.com",
+         "document": "https://lightbringer.com/about/team",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "patentrenewal.com",
+         "document": "https://www.patentrenewal.com/team/dominic-davies",
+         "date": "2026-11-03",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        },
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/befattningshavare/lightbringer-ab/malm%C3%B6/internet-konsulter-operat%C3%B6rer/2KIOGCLI5YFHL",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "ef9b0439-4f9e-598a-b123-ec15af14ca87"
+      }
+     }
+    ],
+    "IS_CTO_OF": [
+     {
+      "id": "36a68b39-bc02-40ed-8727-dbc75a230ddb",
+      "name": "Markus Andreasson",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "lightbringer.com",
+         "document": "https://lightbringer.com/about/team",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "4a8146da-7b42-5be5-a368-85ca60fe9422"
+      }
+     },
+     {
+      "id": "36a68b39-bc02-40ed-8727-dbc75a230ddb",
+      "name": "Markus Andreasson",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "ideon.se",
+         "document": "https://ideon.se/stories/lightbringer-revolutionizing-the-patent-process/",
+         "date": "2026-05-05"
+        },
+        {
+         "name": "Markus Andreasson Email & Phone Number | Lightbringer CTO and Co-Founder Contact Information",
+         "document": "https://rocketreach.co/markus-andreasson-email_56780367",
+         "date": "2026-01-01"
+        },
+        {
+         "name": "se.linkedin.com",
+         "document": "https://se.linkedin.com/in/mandreasson",
+         "date": "2026-05-05"
+        }
+       ],
+       "id": "9ebc0288-b017-454a-931a-89698f339967",
+       "valid_since": "2024-03-01"
+      }
+     }
+    ],
+    "IS_BOARD_MEMBER_OF": [
+     {
+      "id": "03c28f37-a72c-5a62-a053-fe5f412c4a5e",
+      "name": "Reid Jackson",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/befattningshavare/lightbringer-ab/malm%C3%B6/internet-konsulter-operat%C3%B6rer/2KIOGCLI5YFHL",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "18c46d2f-a6e7-5872-a00e-234367a79f08"
+      }
+     },
+     {
+      "id": "30169d7d-1e32-5c4d-b6da-df1ca273f29c",
+      "name": "Andrew Stentiford",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/befattningshavare/lightbringer-ab/malm%C3%B6/internet-konsulter-operat%C3%B6rer/2KIOGCLI5YFHL",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "9d4b1b66-e21f-5f78-a7c4-68696c48a142"
+      }
+     },
+     {
+      "id": "36a68b39-bc02-40ed-8727-dbc75a230ddb",
+      "name": "Markus Andreasson",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "lightbringer.com",
+         "document": "https://lightbringer.com/about/team",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/befattningshavare/lightbringer-ab/malm%C3%B6/internet-konsulter-operat%C3%B6rer/2KIOGCLI5YFHL",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "369ab715-1370-523f-a1ef-08e803f98bff"
+      }
+     },
+     {
+      "id": "3a3ae25a-3ee4-51ab-955d-7354e8be9cbf",
+      "name": "Johannes Bolvede",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/befattningshavare/lightbringer-ab/malm%C3%B6/internet-konsulter-operat%C3%B6rer/2KIOGCLI5YFHL",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "c42b57fc-a5a2-5cba-87c0-b7d2fa9e4327"
+      }
+     },
+     {
+      "id": "6fad750f-7189-5516-abca-8fd019671d83",
+      "name": "Sannah Westerlund",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/befattningshavare/lightbringer-ab/malm%C3%B6/internet-konsulter-operat%C3%B6rer/2KIOGCLI5YFHL",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "cf0bd6bf-c308-5429-9cfe-b82990399141"
+      }
+     },
+     {
+      "id": "906a61ef-7a7f-418e-a2bc-55795067444d",
+      "name": "Thomas Olszewski",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "lightbringer.com",
+         "document": "https://www.lightbringer.com/news-items/lightbringer-raises-10m-to-take-on-patent-attorneys-in-the-u-s-with-the-worlds-first-ai-native-patent-firm",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "8d38cb3c-6961-51ef-ac26-6e1b3884f0f8",
+       "valid_since": "2026-06-16"
+      }
+     },
+     {
+      "id": "9ffbfea4-af1d-5699-9660-a8af0b393e90",
+      "name": "Ola Wassvik",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "lightbringer.com",
+         "document": "https://lightbringer.com/about/team",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/befattningshavare/lightbringer-ab/malm%C3%B6/internet-konsulter-operat%C3%B6rer/2KIOGCLI5YFHL",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "f24c28e1-0f89-5e91-8a2b-5f5c03c75df1"
+      }
+     },
+     {
+      "id": "c1c78c6c-5ca3-5415-81bd-ce1dfeed7ce4",
+      "name": "Henrik Torstensson",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/befattningshavare/lightbringer-ab/malm%C3%B6/internet-konsulter-operat%C3%B6rer/2KIOGCLI5YFHL",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "2284b3a3-f840-5def-ac05-f5cfd958bb88"
+      }
+     },
+     {
+      "id": "c97ebcf4-68aa-4d51-8700-6cd2a6b06317",
+      "name": "Dominic Davies",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/befattningshavare/lightbringer-ab/malm%C3%B6/internet-konsulter-operat%C3%B6rer/2KIOGCLI5YFHL",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        },
+        {
+         "name": "lightbringer.com",
+         "document": "https://lightbringer.com/about/team",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "dd15c8b0-f09e-5561-b7c2-235de94f5c91"
+      }
+     },
+     {
+      "id": "d3afa619-edc2-566c-b05f-a58b585ab038",
+      "name": "Dorus Olgers",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "lightbringer.com",
+         "document": "https://www.lightbringer.com/news-items/lightbringer-raises-10m-to-take-on-patent-attorneys-in-the-u-s-with-the-worlds-first-ai-native-patent-firm",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "571d6945-aa96-51a4-805c-5cba53bb9925",
+       "valid_since": "2026-06-16"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/0247c487-08b6-4e07-8e92-0969cdfeaa2d",
+  "body": {
+   "properties": [
+    "name"
+   ],
+   "relationships": {
+    "outgoing": {
+     "HAS_CUSTOMER": {
+      "limit": 5
+     },
+     "PARTNERS_WITH": {
+      "limit": 5
+     },
+     "IS_SUPPLIER_OF": {
+      "limit": 5
+     },
+     "AWARDED_CONTRACT": {
+      "limit": 5
+     },
+     "ACQUIRED": {
+      "limit": 5
+     },
+     "IS_PARTNER_OF": {
+      "limit": 5
+     },
+     "IS_CUSTOMER_OF": {
+      "limit": 5
+     },
+     "HAS_CONTRACT_WITH": {
+      "limit": 5
+     }
+    },
+    "incoming": {
+     "IS_CUSTOMER_OF": {
+      "limit": 5
+     },
+     "IS_SUPPLIER_OF": {
+      "limit": 5
+     },
+     "IS_PARTNER_OF": {
+      "limit": 5
+     },
+     "ACQUIRED": {
+      "limit": 5
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:20:04+0200",
+ "_seconds": 0.25,
+ "response": {
+  "id": "0247c487-08b6-4e07-8e92-0969cdfeaa2d",
+  "name": "ICEYE",
+  "entity_type": "Company",
+  "description": "Finnish aerospace and defense company founded in 2014 and headquartered in Espoo.",
+  "properties": {
+   "name": {
+    "value": "ICEYE",
+    "sources": [
+     {
+      "name": "Backing founders building the future.",
+      "document": "https://trueventures.com/portfolio",
+      "date": "2026-01-01"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {},
+   "incoming": {}
+  },
+  "numerical_observations": []
+ }
+}

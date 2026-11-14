@@ -1,0 +1,183 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/55019305-51c2-5fb1-9d8b-976a1308ca1c",
+  "body": {
+   "properties": [
+    "name",
+    "description",
+    "round_label",
+    "round_type",
+    "transaction_value",
+    "transaction_value_units",
+    "announcement_date",
+    "close_date",
+    "instrument",
+    "event_date",
+    "event_type"
+   ],
+   "relationships": {
+    "incoming": {
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 100
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 100
+     }
+    },
+    "outgoing": {}
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:26:31+0200",
+ "_seconds": 0.24,
+ "response": {
+  "id": "55019305-51c2-5fb1-9d8b-976a1308ca1c",
+  "name": "Grant",
+  "entity_type": "FundingRound",
+  "description": null,
+  "properties": {
+   "name": {
+    "value": "Grant",
+    "sources": [
+     {
+      "name": "cordis.europa.eu",
+      "document": "https://cordis.europa.eu/project/id/855987",
+      "date": "2019-02-25",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "round_label": {
+    "value": "GRANT",
+    "sources": [
+     {
+      "name": "cordis.europa.eu",
+      "document": "https://cordis.europa.eu/project/id/855987",
+      "date": "2019-02-25",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "transaction_value": {
+    "value": 50000.0,
+    "sources": [
+     {
+      "name": "cordis.europa.eu",
+      "document": "https://cordis.europa.eu/project/id/855987",
+      "date": "2019-02-25",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "transaction_value_units": {
+    "value": "EUR",
+    "sources": [
+     {
+      "name": "cordis.europa.eu",
+      "document": "https://cordis.europa.eu/project/id/855987",
+      "date": "2019-02-25",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "announcement_date": {
+    "value": "2019-02-25",
+    "sources": [
+     {
+      "name": "cordis.europa.eu",
+      "document": "https://cordis.europa.eu/project/id/855987",
+      "date": "2019-02-25",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "close_date": {
+    "value": "2019-05-31",
+    "sources": [
+     {
+      "name": "cordis.europa.eu",
+      "document": "https://cordis.europa.eu/project/id/855987",
+      "date": "2019-02-25",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "instrument": {
+    "value": "GRANT",
+    "sources": [
+     {
+      "name": "cordis.europa.eu",
+      "document": "https://cordis.europa.eu/project/id/855987",
+      "date": "2019-02-25",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "event_date": {
+    "value": "2019-01-23",
+    "sources": [
+     {
+      "name": "cordis.europa.eu",
+      "document": "https://cordis.europa.eu/project/id/855987",
+      "date": "2019-02-25",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {},
+   "incoming": {
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "51f64e19-6d58-4b3a-8374-ce9e9213b1bc",
+      "name": "Katana MRP",
+      "entity_type": "Company",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "cordis.europa.eu",
+         "document": "https://cordis.europa.eu/project/id/855987",
+         "date": "2019-02-25",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "21f431b2-cd41-5ab4-b5d4-7dd46670ec4b"
+      }
+     },
+     {
+      "id": "c11c80dd-f29e-5f65-bc84-06871200dcef",
+      "name": "European Commission (Digital Europe Programme, European Digital Innovation Hubs)",
+      "entity_type": "Organization",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "cordis.europa.eu",
+         "document": "https://cordis.europa.eu/project/id/855987",
+         "date": "2019-02-25",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "1fe6c709-3b8f-5c51-9c8d-a6065358b835"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

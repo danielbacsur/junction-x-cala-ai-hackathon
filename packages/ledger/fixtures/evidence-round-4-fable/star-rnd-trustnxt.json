@@ -1,0 +1,573 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/15fe4d14-50d7-481b-91bd-724a852039ab",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 200
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 200
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 200
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 200
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 200
+     },
+     "TRADED_ON": {
+      "limit": 200
+     },
+     "LISTED_ON": {
+      "limit": 200
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "FOUNDED": {
+      "limit": 200
+     },
+     "WORKS_AT": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_CEO_OF": {
+      "limit": 200
+     },
+     "IS_CTO_OF": {
+      "limit": 200
+     },
+     "IS_CFO_OF": {
+      "limit": 200
+     },
+     "IS_COO_OF": {
+      "limit": 200
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 200
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "MANUFACTURED_BY": {
+      "limit": 200
+     },
+     "DESIGNED_BY": {
+      "limit": 200
+     },
+     "OPERATED_BY": {
+      "limit": 200
+     },
+     "CREATED_BY": {
+      "limit": 200
+     },
+     "PUBLISHED_BY": {
+      "limit": 200
+     },
+     "GRANTED_BY": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:24:04+0200",
+ "_seconds": 1.22,
+ "response": {
+  "id": "15fe4d14-50d7-481b-91bd-724a852039ab",
+  "name": "TrustNXT",
+  "entity_type": "Company",
+  "description": "TrustNXT provides a cryptographic trust layer for Physical AI, securing data provenance across robotics, autonomous systems and critical infrastructure.",
+  "properties": {
+   "name": {
+    "value": "TrustNXT",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-07-29"
+     },
+     {
+      "name": "trustnxt.com",
+      "document": "https://trustnxt.com/",
+      "date": "2026-10-29",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2025/09/hamburgs-trustnxt-bags-e1-6-million-to-combat-ai-manipulation-of-images-and-videos/",
+      "date": "2025-09-01",
+      "date_precision": "month",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "legal_name": {
+    "value": "TrustNXT GmbH",
+    "sources": [
+     {
+      "name": "trustnxt.com",
+      "document": "https://trustnxt.com/",
+      "date": "2026-11-03",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [],
+    "sources": []
+   },
+   "description": {
+    "value": "TrustNXT provides a cryptographic trust layer for Physical AI, securing data provenance across robotics, autonomous systems and critical infrastructure.",
+    "sources": [
+     {
+      "name": "trustnxt.com",
+      "document": "https://trustnxt.com/",
+      "date": "2026-11-03",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "website": {
+    "value": "trustnxt.com",
+    "sources": [
+     {
+      "name": "trustnxt.com",
+      "document": "https://trustnxt.com/",
+      "date": "2026-10-29",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "dns.google",
+      "document": "https://dns.google/query?name=trustnxt.com&type=A",
+      "date": "2026-10-29",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "headquarters_address": {
+    "value": "Esplanade 40, 20354 Hamburg, Germany",
+    "sources": [
+     {
+      "name": "trustnxt.com",
+      "document": "https://trustnxt.com/legal-notice",
+      "date": "2026-11-12",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2024-01-01",
+    "sources": [
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/trustnxt/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "employee_count_range": {
+    "value": [
+     7,
+     11
+    ],
+    "sources": [
+     {
+      "name": "getclera.com",
+      "document": "https://www.getclera.com/companies/trustnxt",
+      "date": "2026-11-12",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "funding_stage": {
+    "value": "PRE_SEED",
+    "sources": [
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2025/09/hamburgs-trustnxt-bags-e1-6-million-to-combat-ai-manipulation-of-images-and-videos/",
+      "date": "2025-09-04",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "trustnxt.com",
+      "document": "https://trustnxt.com/journal/eur1-6-million-pre-seed-financing-for-trustnxt-deep-tech-to-combat-ai-manipulation-of-images-and",
+      "date": "2025-09-01",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "total_funding": {
+    "value": 1600000.0,
+    "sources": [
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2025/09/hamburgs-trustnxt-bags-e1-6-million-to-combat-ai-manipulation-of-images-and-videos/",
+      "date": "2025-09-01",
+      "date_precision": "month",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "total_funding_units": {
+    "value": "EUR",
+    "sources": [
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2025/09/hamburgs-trustnxt-bags-e1-6-million-to-combat-ai-manipulation-of-images-and-videos/",
+      "date": "2025-09-01",
+      "date_precision": "month",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "operational_status": {
+    "value": "ACTIVE",
+    "sources": [
+     {
+      "name": "trustnxt.com",
+      "document": "https://trustnxt.com/",
+      "date": "2026-11-03",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "f64927eb-8545-51bd-8568-203fc5588937",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "startupcity.hamburg",
+         "document": "https://startupcity.hamburg/news-events/news/these-startups-were-funded-by-ifb-in-december-2024",
+         "date": "2024-12-19",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "1004906b-6dc6-5ac2-8293-f747bfd6c1f9"
+      }
+     },
+     {
+      "id": "fcb1ea94-738f-5be4-85fd-756089a6428e",
+      "name": "Pre-Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/09/hamburgs-trustnxt-bags-e1-6-million-to-combat-ai-manipulation-of-images-and-videos/",
+         "date": "2025-09-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "trustnxt.com",
+         "document": "https://trustnxt.com/journal/eur1-6-million-pre-seed-financing-for-trustnxt-deep-tech-to-combat-ai-manipulation-of-images-and",
+         "date": "2025-09-01",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "87055b8e-4af7-526d-8bc0-cf5e94b17a8c"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_EVENT": [
+     {
+      "id": "bc844d56-6ab4-452b-96bf-2661e86e592b",
+      "name": "Slush 2026",
+      "entity_type": "Event",
+      "properties": {
+       "role": "ATTENDEE",
+       "sources": [
+        {
+         "name": "Slush",
+         "document": "https://slush.org/",
+         "date": "2026-11-14"
+        }
+       ],
+       "id": "460e4b0b-61a8-5422-9e01-199e4e56c2a2"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "8ecf5e57-a149-438c-9eb4-089809bade56",
+      "name": "SOFTWARE_AND_SERVICES",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "linkedin.com",
+         "document": "https://www.linkedin.com/company/trustnxt/",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "e71e6c53-6bb4-5444-bd27-3cc88e1cddc3",
+       "original_label": "cyber"
+      }
+     }
+    ],
+    "HAS_DOMAIN_NAME": [
+     {
+      "id": "9cf6c029-af96-5444-a697-c35eb7631eb6",
+      "name": "trustnxt.com",
+      "entity_type": "DomainName",
+      "properties": {
+       "sources": [
+        {
+         "name": "trustnxt.com",
+         "document": "https://trustnxt.com/",
+         "date": "2026-10-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "dns.google",
+         "document": "https://dns.google/query?name=trustnxt.com&type=A",
+         "date": "2026-10-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "dc87a45f-c39c-55eb-bc23-6c24d882506a",
+       "status": "ACTIVE"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "16728a00-ad78-424a-bb95-82baed67c6d9",
+      "name": "D11Z Ventures",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "trustnxt.com",
+         "document": "https://trustnxt.com/journal/eur1-6-million-pre-seed-financing-for-trustnxt-deep-tech-to-combat-ai-manipulation-of-images-and",
+         "date": "2025-09-01",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/pre-seed-financing-trustnxt/",
+         "date": "2025-09-04",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "a1e24630-5623-4613-9dd5-b7faf21d16db"
+      }
+     },
+     {
+      "id": "4089d2f1-ad83-47f5-b8f2-d94c554c6067",
+      "name": "Dieter Schwarz Foundation",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Insights & Portfolio News | D11Z Ventures",
+         "document": "https://d11z.com/news",
+         "date": "2026-07-29"
+        }
+       ],
+       "id": "cdee0cbc-ebe2-5277-9210-412af7bb6d96",
+       "valid_since": "2025-05-09"
+      }
+     },
+     {
+      "id": "a2abbba3-d423-4c3b-abb4-e0e24c05e91d",
+      "name": "High-Tech Gr\u00fcnderfonds GmbH & Co. KG",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "trustnxt.com",
+         "document": "https://trustnxt.com/journal/eur1-6-million-pre-seed-financing-for-trustnxt-deep-tech-to-combat-ai-manipulation-of-images-and",
+         "date": "2025-09-01",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/pre-seed-financing-trustnxt/",
+         "date": "2025-09-04",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "53fbb5ae-4174-4654-b981-bb2d400bc6d1"
+      }
+     }
+    ],
+    "FOUNDED": [
+     {
+      "id": "a7bcb4e0-caa4-5e57-a65b-e9c288cc0218",
+      "name": "Sebastian Adank",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "startupfundraising.com",
+         "document": "https://startupfundraising.com/founders/sebastian-adank-trustnxt",
+         "date": "2026-11-03",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "f48fbea7-11e6-5013-a318-6a2b947274bb"
+      }
+     },
+     {
+      "id": "cfc97833-54f6-5c97-be62-8c9ed430c1bd",
+      "name": "Andreas Reich",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "starting-up.de",
+         "document": "https://www.starting-up.de/news/news-investments/hamburger-deeptech-start-up-trustnxt-sichert-sich16-mio-euro-finanzierung.html",
+         "date": "2025-09-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "cf1ecdbe-0884-5b3e-8273-f0b41312965e"
+      }
+     },
+     {
+      "id": "d3de4163-e2fe-5478-887c-cbbed0c4d972",
+      "name": "Ariane Scheer-Danielsson",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "trustnxt.com",
+         "document": "https://trustnxt.com/journal/eur1-6-million-pre-seed-financing-for-trustnxt-deep-tech-to-combat-ai-manipulation-of-images-and",
+         "date": "2025-09-01",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "f26ce273-99a3-5237-ae00-40da350874c2"
+      }
+     }
+    ],
+    "WORKS_AT": [
+     {
+      "id": "33db18a9-4f96-5b32-b199-ed00c7bc367c",
+      "name": "Ji-Young Lim",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Head of Engineering",
+       "sources": [
+        {
+         "name": "trustnxt.com",
+         "document": "https://trustnxt.com/journal/welcome-to-the-team-ji-young",
+         "date": "2026-03-01",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "ae3acaf7-6531-5a7f-bc12-ee6050f49085"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/lookup",
+  "body": {
+   "id": {
+    "cik": "0001321655"
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:20:39+0200",
+ "_seconds": 0.22,
+ "response": {
+  "id": "bf4e5b99-c93c-418c-93b8-cd9df1cd74e0",
+  "name": "Palantir",
+  "entity_type": "Company",
+  "description": "Founded in 2003 by Peter Thiel and Alexander Karp, headquartered in Denver, Colorado."
+ }
+}

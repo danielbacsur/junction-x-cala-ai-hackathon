@@ -1,0 +1,4 @@
+{
+  "_note": "Hand-written reading of the claims in the probe fixture of the same name, in the shape the agreement extractor returns (ExtractedAgreement[]). It stands in for the model call when fixtures are imported and in tests. The ledger's deterministic checks still decide which of these become edges.",
+  "agreements": []
+}

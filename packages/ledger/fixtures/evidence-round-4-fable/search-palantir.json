@@ -1,0 +1,61 @@
+{
+ "_request": {
+  "method": "GET",
+  "path": "/entities?name=Palantir%20Technologies&entity_types=Company&limit=8",
+  "body": null
+ },
+ "_fetched_at": "2026-11-14T12:20:32+0200",
+ "_seconds": 0.46,
+ "response": {
+  "entities": [
+   {
+    "id": "df8d1232-d6ca-482f-bb4f-23e3c91f0b2c",
+    "name": "Palantir Technologies France SAS",
+    "entity_type": "Company",
+    "description": "a French subsidiary of the data analytics software company Palantir Technologies"
+   },
+   {
+    "id": "a1f92c10-6706-4dd8-8932-77cd08662cb3",
+    "name": "PALANTIR TECHNOLOGIES UK, LTD.",
+    "entity_type": "Company",
+    "description": "British software and services company, subsidiary of Palantir, founded in 2009 and headquartered in London."
+   },
+   {
+    "id": "b768f201-a11c-4f0b-ba94-e2b67b032f69",
+    "name": "Palantir Technologies Inc.",
+    "entity_type": "Company",
+    "description": "It is a data analytics and software company."
+   },
+   {
+    "id": "25fdc622-fa59-4526-a202-42b6c960905b",
+    "name": "Palantir Technologies Geneva S\u00e0rl",
+    "entity_type": "Company",
+    "description": "A Swiss subsidiary company of the U.S. data\u2011analytics firm Palantir, headquartered in Geneva."
+   },
+   {
+    "id": "3121259e-d808-4287-994e-5c54bb318452",
+    "name": "Palantir Technologies, Inc.",
+    "entity_type": "Company",
+    "description": "An American data\u2011analytics software company founded in 2003."
+   },
+   {
+    "id": "0cc4e54c-963d-4b12-9070-c077ec0bd31d",
+    "name": "Palantir Technologies GmbH",
+    "entity_type": "Company",
+    "description": "German subsidiary of Palantir Technologies, a data analytics software company."
+   },
+   {
+    "id": "69f0c00e-713d-4687-8d4a-3e2fc2227fbd",
+    "name": "Palantir Technologies Inc",
+    "entity_type": "Company",
+    "description": "American data analytics and software company"
+   },
+   {
+    "id": "6915d459-fa26-4402-b166-d47d73bc746d",
+    "name": "Palantir Technologies Lithuania, UAB",
+    "entity_type": "Company",
+    "description": "Lithuanian subsidiary of Palantir Technologies."
+   }
+  ]
+ }
+}

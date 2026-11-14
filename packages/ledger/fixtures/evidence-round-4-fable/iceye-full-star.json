@@ -1,0 +1,1049 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/0247c487-08b6-4e07-8e92-0969cdfeaa2d",
+  "body": {
+   "properties": [
+    "name",
+    "description",
+    "founding_date",
+    "headquarters_address",
+    "website"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 200
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 50
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 5
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 20
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 50
+     },
+     "IS_MEMBER_OF": {
+      "limit": 50
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 50
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "FOUNDED": {
+      "limit": 20
+     },
+     "WORKS_AT": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 100
+     },
+     "IS_CEO_OF": {
+      "limit": 10
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 50
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 50
+     },
+     "MANUFACTURED_BY": {
+      "limit": 50
+     },
+     "OPERATED_BY": {
+      "limit": 50
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:20:11+0200",
+ "_seconds": 0.18,
+ "response": {
+  "id": "0247c487-08b6-4e07-8e92-0969cdfeaa2d",
+  "name": "ICEYE",
+  "entity_type": "Company",
+  "description": "Finnish aerospace and defense company founded in 2014 and headquartered in Espoo.",
+  "properties": {
+   "name": {
+    "value": "ICEYE",
+    "sources": [
+     {
+      "name": "Backing founders building the future.",
+      "document": "https://trueventures.com/portfolio",
+      "date": "2026-01-01"
+     }
+    ]
+   },
+   "description": {
+    "value": "Finnish aerospace and defense company founded in 2014 and headquartered in Espoo.",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-08-19"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2014-09-04",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/743700XY20YYW4T0OM62",
+      "date": "2026-04-08"
+     }
+    ]
+   },
+   "headquarters_address": {
+    "value": "Maarintie 6, 02150 ESPOO, ESPOO, FI-02150, FI",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/743700XY20YYW4T0OM62",
+      "date": "2026-04-08"
+     }
+    ]
+   },
+   "website": {
+    "value": "iceye.com",
+    "sources": [
+     {
+      "name": "Backing founders building the future.",
+      "document": "https://trueventures.com/portfolio",
+      "date": "2026-01-01"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "INVESTED_IN": [
+     {
+      "id": "12f22f14-5759-4ded-be2a-f430fde40ede",
+      "name": "BAE SYSTEMS PLC",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "satellitetoday.com",
+         "document": "https://www.satellitetoday.com/finance/2022/02/03/iceye-raises-136m-in-series-d-funding-round",
+         "date": "2026-06-20"
+        }
+       ],
+       "id": "74f75e50-4347-5cd0-9ad7-e19f3b885261"
+      }
+     },
+     {
+      "id": "4547d026-f5f2-42fa-abc9-c2d424fefb4e",
+      "name": "HAME CAPITAL LTD",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "The latest startup news and analysis from Europe | Sifted",
+         "document": "https://sifted.eu/articles/satellite-startup-iceye-2bn-valuation-defence",
+         "date": "2026-06-20"
+        }
+       ],
+       "id": "81f9db6e-6fbc-5974-bac7-f20776858a55"
+      }
+     },
+     {
+      "id": "5e541d9e-a75d-42d3-9214-cdc606f844ef",
+      "name": "MOLTEN VENTURES PLC",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "satellitetoday.com",
+         "document": "https://www.satellitetoday.com/finance/2022/02/03/iceye-raises-136m-in-series-d-funding-round",
+         "date": "2026-06-20"
+        }
+       ],
+       "id": "7c3a1a20-e7e3-5ed1-9c66-90b23a218cb1"
+      }
+     },
+     {
+      "id": "767464bf-a91c-49b8-817a-b9cfec86f5c4",
+      "name": "Solidium Oy",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/the-next-spacex-these-uk-european-spacetech-startups-are-taking-off-in-2025",
+         "date": "2026-06-20"
+        },
+        {
+         "name": "ICEYE",
+         "document": "https://www.iceye.com/newsroom/press-releases/iceye-closes-65m-extension-to-existing-growth-funding-round-for-a-total-of-158m-raised-in-2024?hs_amp=true",
+         "date": "2026-06-20"
+        }
+       ],
+       "id": "5552357b-2c7e-58f2-88b1-7222ee9a42fb"
+      }
+     },
+     {
+      "id": "d26a193e-78e6-47ed-a265-877bc5a60b35",
+      "name": "OTB Ventures",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "satellitetoday.com",
+         "document": "https://www.satellitetoday.com/finance/2022/02/03/iceye-raises-136m-in-series-d-funding-round",
+         "date": "2026-06-20"
+        }
+       ],
+       "id": "1cddc106-fc79-50d0-83a2-a56f5e23c6f9"
+      }
+     },
+     {
+      "id": "e54f3f3b-1c7b-47b0-9915-a5730f7be7c5",
+      "name": "BlackRock, Inc.",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/the-next-spacex-these-uk-european-spacetech-startups-are-taking-off-in-2025",
+         "date": "2026-06-20"
+        },
+        {
+         "name": "ICEYE",
+         "document": "https://www.iceye.com/newsroom/press-releases/iceye-closes-65m-extension-to-existing-growth-funding-round-for-a-total-of-158m-raised-in-2024?hs_amp=true",
+         "date": "2026-06-20"
+        }
+       ],
+       "id": "11b79b18-b6b8-5808-844f-613967f8dd52"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_CORPORATE_EVENT": [
+     {
+      "id": "056ac7ba-5f0d-4a4c-b799-5a98ea1aff79",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        }
+       ],
+       "event_date": "2024-04-17",
+       "id": "6f8c641a-c023-46c8-b5b2-eae45c9b2714"
+      }
+     },
+     {
+      "id": "0a5aed18-1752-4861-bd63-c0ad8e50aa3e",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        }
+       ],
+       "event_date": "2021-12-06",
+       "id": "304635dd-1124-43b8-a6e5-85bab2e7d162"
+      }
+     },
+     {
+      "id": "14d61a0d-13b0-44fb-aad6-5fc009e7d26c",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        }
+       ],
+       "event_date": "2017-09-25",
+       "id": "61270373-3123-4d1d-9b17-5883ea0ca31d"
+      }
+     },
+     {
+      "id": "247584b7-6e2c-4a77-b903-8da6682a4916",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        }
+       ],
+       "event_date": "2025-08-25",
+       "id": "3c5b197b-748c-4ad0-b916-0735c14585cd"
+      }
+     },
+     {
+      "id": "2de6a705-3f48-41a5-8710-a857c8c99fa7",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        }
+       ],
+       "event_date": "2018-02-28",
+       "id": "548a6cbd-cc0c-4e65-b864-33b8852481c9"
+      }
+     },
+     {
+      "id": "303eb7aa-0563-4a96-9b05-ffb3585746bd",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        },
+        {
+         "name": "The European space tech industry is firing up its booster rockets | TechCrunch",
+         "document": "https://techcrunch.com/2019/10/26/the-european-spacetech-industry-is-firing-up-its-booster-rockets",
+         "date": "2019-10-26"
+        }
+       ],
+       "event_date": "2018-05-24",
+       "id": "ea717f52-5567-49db-82a6-7a207931a833"
+      }
+     },
+     {
+      "id": "4ab4c151-7230-47ae-bc75-c31bc8ab5191",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        },
+        {
+         "name": "Satellite radar startup ICEYE raises $87 million to continue to grow its operational constellation | TechCrunch",
+         "document": "https://techcrunch.com/2020/09/22/satellite-radar-startup-iceye-raises-87-million-to-continue-to-grow-its-operational-constellation",
+         "date": "2020-09-22"
+        }
+       ],
+       "event_date": "2020-09-22",
+       "id": "976e2c7c-1ac5-4e84-a0be-9ebdad1dc9c7"
+      }
+     },
+     {
+      "id": "657b9317-1f31-47b3-b605-504596bd33e3",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        }
+       ],
+       "event_date": "2026-06-01",
+       "id": "ef62523c-640d-4dc3-bddf-e073afe541cf"
+      }
+     },
+     {
+      "id": "84c16387-1647-402e-9cb1-a7d3fa030116",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        }
+       ],
+       "event_date": "2015-11-12",
+       "id": "59a6f5a6-bedb-4723-b61f-2b2be5b71538"
+      }
+     },
+     {
+      "id": "9937b2df-975a-41d7-a850-d05ddaec7470",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        }
+       ],
+       "event_date": "2020-12-01",
+       "id": "32e578ae-d652-4b02-a577-7b465bfb5841"
+      }
+     },
+     {
+      "id": "a306679c-2489-4ad0-819a-cfb44ed745f0",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        }
+       ],
+       "event_date": "2018-12-14",
+       "id": "2f0bcf24-d7ca-48be-a20d-85d01bd25105"
+      }
+     },
+     {
+      "id": "abc3f58e-afd5-49fe-8c3e-955c6cf4c0ee",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        }
+       ],
+       "event_date": "2025-12-05",
+       "id": "da20a141-2a3f-4c5b-8741-b336ee522f7b"
+      }
+     },
+     {
+      "id": "b347fab2-e4ec-48fb-abba-a289ad2d10ae",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        }
+       ],
+       "event_date": "2024-12-18",
+       "id": "c7c06a9b-38e3-42bb-95b6-580853f011c2"
+      }
+     },
+     {
+      "id": "c6323f1f-75b9-43fa-a19c-1f58769662d5",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        },
+        {
+         "name": "Microsatellite radar imaging startup raises $13M to launch new constellation | TechCrunch",
+         "document": "https://techcrunch.com/2017/08/23/microsatellite-radar-imaging-startup-raises-13m-to-launch-new-constellation",
+         "date": "2017-08-23"
+        }
+       ],
+       "event_date": "2017-08-23",
+       "id": "25cf09f5-6898-4430-987b-32a702e9f95f"
+      }
+     },
+     {
+      "id": "dd45b8b4-b532-4093-9cfd-5832f0d147c3",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        },
+        {
+         "name": "ICEYE's new $136M in funding points to a white-hot space-based remote-sensing market | TechCrunch",
+         "document": "https://techcrunch.com/2022/02/03/iceyes-new-136m-in-funding-points-to-a-white-hot-space-based-remote-sensing-market",
+         "date": "2022-02-03"
+        }
+       ],
+       "event_date": "2022-02-03",
+       "id": "37c606a6-3bd0-47ab-9a20-7aaf71d73a6c"
+      }
+     },
+     {
+      "id": "e9916eb8-deb2-4e04-aeaf-2cb24531ba5c",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/iceye/__LYPRQx3i9d8_A05BEgw8V1KyFzEeFfqq2LqwT9QBKB8/funding-and-investors",
+         "date": "2026-06-10"
+        }
+       ],
+       "event_date": "2015-09-01",
+       "id": "98f18afe-c0a9-4ae5-a9f6-fd02d6bb8001"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "8ecf5e57-a149-438c-9eb4-089809bade56",
+      "name": "SOFTWARE_AND_SERVICES",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "seraphim.vc",
+         "document": "https://seraphim.vc/portfolio/",
+         "date": "2026-05-11"
+        },
+        {
+         "name": "investors.seraphim.vc",
+         "document": "https://investors.seraphim.vc/wp-content/uploads/2025/11/Q1-FY25_26-SSIT-NAV-Factsheet-FINAL-1.pdf",
+         "date": "2026-05-11"
+        }
+       ],
+       "id": "e7062ed0-bd95-4ff6-8c03-c4d7dc5aeb65"
+      }
+     },
+     {
+      "id": "bb7caa00-59c3-4587-9aaf-5d9195444829",
+      "name": "AEROSPACE_AND_DEFENSE",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "Portfolio",
+         "document": "https://www.nssif.gov.uk/investment/portfolio",
+         "date": "2025-11-11"
+        },
+        {
+         "name": "ICEYE reaches \u20ac2.4 billion valuation following Series E round",
+         "document": "https://www.nssif.gov.uk/news/iceye-reaches-2-4-billion-valuation-following-series-e-round",
+         "date": "2025-12-12"
+        }
+       ],
+       "id": "d1e52fe3-0cad-458f-a769-d082b7abded5"
+      }
+     },
+     {
+      "id": "be9a1964-bfc6-4aad-bde1-1f94bf10cf4c",
+      "name": "HARDWARE_AND_EQUIPMENT",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "Portfolio",
+         "document": "https://www.nssif.gov.uk/investment/portfolio",
+         "date": "2025-11-11"
+        },
+        {
+         "name": "ICEYE reaches \u20ac2.4 billion valuation following Series E round",
+         "document": "https://www.nssif.gov.uk/news/iceye-reaches-2-4-billion-valuation-following-series-e-round",
+         "date": "2025-12-12"
+        }
+       ],
+       "id": "cf459c30-b6b3-4da2-a48f-ff06010d90b8"
+      }
+     }
+    ],
+    "HAS_HEADQUARTERS_IN": [
+     {
+      "id": "680000b7-a490-418f-8098-9b1757db2e58",
+      "name": "Finland",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "GLEIF",
+         "document": "https://search.gleif.org/#/record/743700XY20YYW4T0OM62",
+         "date": "2026-04-08"
+        }
+       ],
+       "id": "e33dec17-dbcd-58b0-8739-a25d210b5f58"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "00fbc410-9f35-4adf-a4a3-422a6d982d2b",
+      "name": "NOKIA CORP",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "bloomberg.com",
+         "document": "https://www.bloomberg.com/news/features/2026-06-09/iceye-10-billion-valuation-shows-europe-firmly-in-space-race",
+         "date": "2026-07-02"
+        }
+       ],
+       "id": "96a8cbf6-e654-51c2-b1d3-405a794ecd52"
+      }
+     },
+     {
+      "id": "01c894d5-9eee-4929-a536-c1626fcddb96",
+      "name": "European Investment Bank",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "TechCrunch | Startup and Technology News",
+         "document": "https://techcrunch.com/2026/08/11/whats-scaleup-europe-the-5-7b-fund-that-just-backed-satellite-company-iceye",
+         "date": "2026-08-14"
+        }
+       ],
+       "id": "6cd89897-2921-5271-a730-c68a61d62eac"
+      }
+     },
+     {
+      "id": "0ed1779e-d00d-4b08-8c29-8ac92abef113",
+      "name": "Endeavor Catalyst",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Pulse 2.0",
+         "document": "https://pulse2.com/endeavor-catalyst-backed-european-companies-raise-more-than-8-3-billion-across-2025-and-first-half-of-2026/amp",
+         "date": "2026-09-05"
+        }
+       ],
+       "id": "ff44b994-930e-502b-8802-fd0add55aaec"
+      }
+     },
+     {
+      "id": "12f22f14-5759-4ded-be2a-f430fde40ede",
+      "name": "BAE SYSTEMS PLC",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "satellitetoday.com",
+         "document": "https://www.satellitetoday.com/finance/2022/02/03/iceye-raises-136m-in-series-d-funding-round",
+         "date": "2026-06-20"
+        }
+       ],
+       "id": "4977170c-c3e4-576a-949a-f67c5c9530af"
+      }
+     },
+     {
+      "id": "1dc243c5-c12b-4639-b560-3d13988cf767",
+      "name": "Scaleup Europe Fund",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "bloomberg.com",
+         "document": "https://www.bloomberg.com/news/articles/2026-08-05/eqt-run-scaleup-europe-fund-invests-in-satellite-startup-iceye",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "be8dd218-5845-5657-a39e-1db40052ed4e"
+      }
+     },
+     {
+      "id": "2cf6b07b-b617-4c0d-9e79-a997a4ba2239",
+      "name": "A. P. M\u00f8ller Holding A/S",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/corporate-investments/investments-by-a-p-moller-holding/__f8bI5GZsXs_ERSv0FRuTBGbUdU5ciCfpDX-hQ2R14TA",
+         "date": "2026-06-23"
+        }
+       ],
+       "id": "c9dfc960-9300-5c10-acba-9c65e4c9f9a4",
+       "valid_since": "2025-12-05"
+      }
+     },
+     {
+      "id": "3be23b71-1c95-4c04-a88e-ad743ced8c87",
+      "name": "A.P. Moller Group",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/184620-70",
+         "date": "2026-06-30"
+        }
+       ],
+       "id": "9788c1ab-1f3c-5d65-934c-ccac175df524"
+      }
+     },
+     {
+      "id": "47e998c2-17bc-42da-9c12-c42193e7e557",
+      "name": "Temasek Holdings (Private) Limited",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "bloomberg.com",
+         "document": "https://www.bloomberg.com/news/features/2026-06-09/iceye-10-billion-valuation-shows-europe-firmly-in-space-race",
+         "date": "2026-07-02"
+        }
+       ],
+       "id": "13367cfc-9e56-5407-abb7-0c1b776b2978"
+      }
+     },
+     {
+      "id": "50732e32-f90a-40b1-8f28-2d3414b5fa53",
+      "name": "NSSIF (National Security Strategic Investment Fund)",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Portfolio",
+         "document": "https://www.nssif.gov.uk/investment/portfolio",
+         "date": "2025-11-11"
+        },
+        {
+         "name": "ICEYE reaches \u20ac2.4 billion valuation following Series E round",
+         "document": "https://www.nssif.gov.uk/news/iceye-reaches-2-4-billion-valuation-following-series-e-round",
+         "date": "2025-12-12"
+        }
+       ],
+       "id": "67b7289f-d8c3-4338-9572-39b82ab14e3f"
+      }
+     },
+     {
+      "id": "6bd348a0-3393-4589-8552-31bc7eda8c4c",
+      "name": "True Ventures",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "First to believe.",
+         "document": "https://trueventures.com",
+         "date": "2026-01-01"
+        }
+       ],
+       "id": "3fb696a7-0d5f-5082-b458-988f489555e4"
+      }
+     },
+     {
+      "id": "767464bf-a91c-49b8-817a-b9cfec86f5c4",
+      "name": "Solidium Oy",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/the-next-spacex-these-uk-european-spacetech-startups-are-taking-off-in-2025",
+         "date": "2026-06-20"
+        },
+        {
+         "name": "Reinsurance news delivered to you daily by Reinsurance News",
+         "document": "https://www.reinsurancene.ws/iceye-raises-total-of-158m-in-2024-with-recent-65m-funding",
+         "date": "2026-06-20"
+        },
+        {
+         "name": "ICEYE",
+         "document": "https://www.iceye.com/newsroom/press-releases/iceye-closes-65m-extension-to-existing-growth-funding-round-for-a-total-of-158m-raised-in-2024?hs_amp=true",
+         "date": "2026-06-20"
+        },
+        {
+         "name": "satellitetoday.com",
+         "document": "https://www.satellitetoday.com/finance/2024/12/18/iceye-raises-65m-in-additional-funding",
+         "date": "2026-06-20"
+        },
+        {
+         "name": "ICEYE",
+         "document": "https://www.iceye.com/press/press-releases/iceye-closes-65m-extension-to-existing-growth-funding-round-for-a-total-of-158m-raised-in-2024",
+         "date": "2026-06-20"
+        },
+        {
+         "name": "The latest startup news and analysis from Europe | Sifted",
+         "document": "https://sifted.eu/articles/space-tech-startup-iceye-raise-news",
+         "date": "2026-06-20"
+        }
+       ],
+       "id": "796bf661-59da-5ecb-b107-3fa4f6210796"
+      }
+     },
+     {
+      "id": "b5737807-ca09-4bb3-9c11-e80e836f97fd",
+      "name": "Kembara Fund I, FCR",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "bloomberg.com",
+         "document": "https://www.bloomberg.com/news/articles/2026-08-05/eqt-run-scaleup-europe-fund-invests-in-satellite-startup-iceye",
+         "date": "2026-08-31"
+        }
+       ],
+       "id": "65113a5f-7688-50ac-a596-271af0d6a433"
+      }
+     },
+     {
+      "id": "d26a193e-78e6-47ed-a265-877bc5a60b35",
+      "name": "OTB Ventures",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Portfolio - OTB Ventures",
+         "document": "https://otb.vc/portfolio",
+         "date": "2026-08-21"
+        }
+       ],
+       "id": "4b16322c-7a0b-4d4d-b076-40f0e9c21c75"
+      }
+     },
+     {
+      "id": "d609b4f2-f233-4764-9af0-68189d9d1769",
+      "name": "EU fund",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "EQT's Scaleup Europe fund makes first investment - co-leads \u20ac1 billion funding round in ICEYE, Europe's leader in sovereign intelligence from space",
+         "document": "https://www.prnewswire.com/news-releases/eqts-scaleup-europe-fund-makes-first-investment--co-leads-1-billion-funding-round-in-iceye-europes-leader-in-sovereign-intelligence-from-space-302843516.html",
+         "date": "2026-08-05"
+        },
+        {
+         "name": "Scaleup Europe Fund Makes its First Space Bet",
+         "document": "https://payloadspace.com/scaleup-europe-fund-makes-its-first-space-bet",
+         "date": "2026-08-07"
+        }
+       ],
+       "id": "00b11075-a365-54ac-8952-383dbf938ed3",
+       "valid_since": "2026-08-05"
+      }
+     },
+     {
+      "id": "e54f3f3b-1c7b-47b0-9915-a5730f7be7c5",
+      "name": "BlackRock, Inc.",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/the-next-spacex-these-uk-european-spacetech-startups-are-taking-off-in-2025",
+         "date": "2026-06-20"
+        },
+        {
+         "name": "Reinsurance news delivered to you daily by Reinsurance News",
+         "document": "https://www.reinsurancene.ws/iceye-raises-total-of-158m-in-2024-with-recent-65m-funding",
+         "date": "2026-06-20"
+        },
+        {
+         "name": "ICEYE",
+         "document": "https://www.iceye.com/newsroom/press-releases/iceye-closes-65m-extension-to-existing-growth-funding-round-for-a-total-of-158m-raised-in-2024?hs_amp=true",
+         "date": "2026-06-20"
+        },
+        {
+         "name": "satellitetoday.com",
+         "document": "https://www.satellitetoday.com/finance/2024/12/18/iceye-raises-65m-in-additional-funding",
+         "date": "2026-06-20"
+        },
+        {
+         "name": "ICEYE",
+         "document": "https://www.iceye.com/newsroom/press-releases/iceye-closes-65m-extension-to-existing-growth-funding-round-for-a-total-of-158m-raised-in-2024",
+         "date": "2026-06-20"
+        },
+        {
+         "name": "ICEYE",
+         "document": "https://www.iceye.com/press/press-releases/iceye-closes-65m-extension-to-existing-growth-funding-round-for-a-total-of-158m-raised-in-2024",
+         "date": "2026-06-20"
+        },
+        {
+         "name": "VCBacked - Find venture funded startups for your business",
+         "document": "https://vcbacked.co/company/iceye",
+         "date": "2026-06-20"
+        }
+       ],
+       "id": "fb372b27-255c-57a7-87a9-c0164c873872"
+      }
+     },
+     {
+      "id": "ea874c8a-9e87-4a39-bfa0-b9969915527f",
+      "name": "Chione",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/private-equity/chione/__Y8LFalp0RDY6eu_YII9HtwI9O_OSrEbgr0p9ZH8fhsA",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "Chione Portfolio Investments, Chione Funds, Chione Exits",
+         "document": "https://www.cbinsights.com/investor/chione",
+         "date": "2022-02-03"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/342097-30",
+         "date": "2026-08-24"
+        }
+       ],
+       "id": "a26511a9-2360-48c4-8d58-5d7f8382d31f"
+      }
+     },
+     {
+      "id": "fd6de90c-bbe4-562e-adae-ee80641701f3",
+      "name": "Qatar Investment Authority",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "QIA Participates In ICEYE'S EUR 1B Series F Funding Round",
+         "document": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN42G19U:0-qia-participates-in-iceye-s-eur-1b-series-f-funding-round",
+         "date": "2026-06-09"
+        },
+        {
+         "name": "QIA Participates in ICEYE\u2019s \u20ac1B Series F Funding Round",
+         "document": "https://qia.qa/en/Newsroom/Pages/QIA-Participates-in-ICEYE%E2%80%99s-%E2%82%AC1B-Series-F-Funding-Round.aspx",
+         "date": "2026-06-09"
+        }
+       ],
+       "id": "7643e658-cc64-4bd3-be2c-4b69e0db4350",
+       "valid_since": "2026-06-09"
+      }
+     }
+    ],
+    "FOUNDED": [
+     {
+      "id": "21c54080-9b46-4a6b-a926-8b8d9af507c0",
+      "name": "Pekka Laurila",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "fi.wikipedia.org",
+         "document": "https://fi.wikipedia.org/wiki/Iceye",
+         "date": "2026-08-20"
+        },
+        {
+         "name": "en.wikipedia.org",
+         "document": "https://en.wikipedia.org/wiki/ICEYE",
+         "date": "2026-08-20"
+        },
+        {
+         "name": "About us | Company | ICEYE",
+         "document": "https://www.iceye.com/company",
+         "date": "2015-01-01"
+        },
+        {
+         "name": "Suomen kuumimmassa yhti\u00f6ss\u00e4 kamerat pit\u00e4\u00e4 j\u00e4tt\u00e4\u00e4 narikkaan \u2013 n\u00e4in suomalaisyhti\u00f6ist\u00e4 tuli avaruuden valloittajia",
+         "document": "https://yle.fi/a/74-20187718",
+         "date": "2025-11-15"
+        },
+        {
+         "name": "Kauppalehti selvitti miljardien arvoisen Iceyen omistajat \u2013 Katso lista",
+         "document": "https://www.kauppalehti.fi/uutiset/a/4640332c-be45-461c-9813-ec7fd802a591",
+         "date": "2026-01-27"
+        }
+       ],
+       "id": "7456b61d-1f96-4849-ae5a-3851e4fa8de4"
+      }
+     }
+    ],
+    "WORKS_AT": [
+     {
+      "id": "21c54080-9b46-4a6b-a926-8b8d9af507c0",
+      "name": "Pekka Laurila",
+      "entity_type": "Person",
+      "properties": {
+       "role": "CSO",
+       "sources": [
+        {
+         "name": "fi.wikipedia.org",
+         "document": "https://fi.wikipedia.org/wiki/Iceye",
+         "date": "2026-08-20"
+        },
+        {
+         "name": "en.wikipedia.org",
+         "document": "https://en.wikipedia.org/wiki/ICEYE",
+         "date": "2026-08-20"
+        },
+        {
+         "name": "About us | Company | ICEYE",
+         "document": "https://www.iceye.com/company",
+         "date": "2015-01-01"
+        },
+        {
+         "name": "Suomen kuumimmassa yhti\u00f6ss\u00e4 kamerat pit\u00e4\u00e4 j\u00e4tt\u00e4\u00e4 narikkaan \u2013 n\u00e4in suomalaisyhti\u00f6ist\u00e4 tuli avaruuden valloittajia",
+         "document": "https://yle.fi/a/74-20187718",
+         "date": "2025-11-15"
+        },
+        {
+         "name": "Kauppalehti selvitti miljardien arvoisen Iceyen omistajat \u2013 Katso lista",
+         "document": "https://www.kauppalehti.fi/uutiset/a/4640332c-be45-461c-9813-ec7fd802a591",
+         "date": "2026-01-27"
+        }
+       ],
+       "id": "bca3d1ee-991a-4d89-9211-8cefcb73bdd5"
+      }
+     }
+    ],
+    "IS_MEMBER_OF": [
+     {
+      "id": "680000b7-a490-418f-8098-9b1757db2e58",
+      "name": "Finland",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/news/articles/how-spacexs-float-could-lift-the-tide-for-european-space-tech",
+         "date": "2026-06-20"
+        }
+       ],
+       "id": "7c175823-0bc5-5b40-89ff-fd17b560f478"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

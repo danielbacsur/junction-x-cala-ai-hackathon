@@ -1,0 +1,1280 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/9ce0289c-a897-4e88-b160-eb9c5f1684a6",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 200
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 200
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 200
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 200
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 200
+     },
+     "TRADED_ON": {
+      "limit": 200
+     },
+     "LISTED_ON": {
+      "limit": 200
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "FOUNDED": {
+      "limit": 200
+     },
+     "WORKS_AT": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_CEO_OF": {
+      "limit": 200
+     },
+     "IS_CTO_OF": {
+      "limit": 200
+     },
+     "IS_CFO_OF": {
+      "limit": 200
+     },
+     "IS_COO_OF": {
+      "limit": 200
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 200
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "MANUFACTURED_BY": {
+      "limit": 200
+     },
+     "DESIGNED_BY": {
+      "limit": 200
+     },
+     "OPERATED_BY": {
+      "limit": 200
+     },
+     "CREATED_BY": {
+      "limit": 200
+     },
+     "PUBLISHED_BY": {
+      "limit": 200
+     },
+     "GRANTED_BY": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:29:10+0200",
+ "_seconds": 0.24,
+ "response": {
+  "id": "9ce0289c-a897-4e88-b160-eb9c5f1684a6",
+  "name": "Open Payments Europe AB",
+  "entity_type": "Company",
+  "description": "Open Payments is a Stockholm-based open banking platform for B2B payments: one API to bank APIs for ERP, treasury and accounting systems, with payment initiation, account information and payment ex...",
+  "properties": {
+   "name": {
+    "value": "Open Payments Europe AB",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/984500A9506K51F9SA76",
+      "date": "2026-04-08"
+     }
+    ]
+   },
+   "legal_name": {
+    "value": "Open Payments Europe AB",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/984500A9506K51F9SA76",
+      "date": "2026-04-08"
+     },
+     {
+      "name": "fi.se",
+      "document": "https://www.fi.se/en/our-registers/company-register/details?id=178391",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "allabolag.se",
+      "document": "https://www.allabolag.se/5569732737/befattningar",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [
+     "Open Payments",
+     "FinTech Open Payments",
+     "Open Payments Europe"
+    ],
+    "sources": []
+   },
+   "description": {
+    "value": "Open Payments is a Stockholm-based open banking platform for B2B payments: one API to bank APIs for ERP, treasury and accounting systems, with payment initiation, account information and payment ex...",
+    "sources": [
+     {
+      "name": "alfvendidrikson.com",
+      "document": "https://www.alfvendidrikson.com/post/open-payments-to-join-the-a-d-family",
+      "date": "2025-01-23",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "fi.se",
+      "document": "https://www.fi.se/en/our-registers/company-register/details?id=178391",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "website": {
+    "value": "openpayments.io",
+    "sources": [
+     {
+      "name": "openpayments.io",
+      "document": "https://openpayments.io/",
+      "date": "2026-10-29",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "dns.google",
+      "document": "https://dns.google/query?name=openpayments.io&type=A",
+      "date": "2026-10-29",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "headquarters_address": {
+    "value": "Sveav\u00e4gen 17, 111 57 Stockholm, Sweden",
+    "sources": [
+     {
+      "name": "fi.se",
+      "document": "https://www.fi.se/en/our-registers/company-register/details?id=178391",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "allabolag.se",
+      "document": "https://www.allabolag.se/5569732737/befattningar",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2017-01-01",
+    "sources": [
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/openpayments",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     },
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2019/05/stockholm-based-fintech-startup-open-payments-raises-e1-2-million-seed-funding-for-its-psd2-compliant-platform/",
+      "date": "2019-05-28",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "alfvendidrikson.com",
+      "document": "https://www.alfvendidrikson.com/post/open-payments-to-join-the-a-d-family",
+      "date": "2025-01-23",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "funding_stage": {
+    "value": "SEED",
+    "sources": [
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2020/08/stockholm-based-open-payments-raises-e3-million-seed-funding-to-become-a-leading-platform-provider-in-the-eu/",
+      "date": "2020-08-24",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "total_funding": {
+    "value": 10200000.0,
+    "sources": [
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2020/08/stockholm-based-open-payments-raises-e3-million-seed-funding-to-become-a-leading-platform-provider-in-the-eu/",
+      "date": "2020-08-24",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "openpayments.io",
+      "document": "https://www.openpayments.io/news-press/open-payments-raises-3-meur-seed-funding-backed-by-industrifonden",
+      "date": "2020-08-24",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2025/01/fintech-open-payments-raises-e3-million-to-support-continued-growth/",
+      "date": "2025-01-23",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "alfvendidrikson.com",
+      "document": "https://www.alfvendidrikson.com/post/open-payments-to-join-the-a-d-family",
+      "date": "2025-01-23",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "tech.eu",
+      "document": "https://tech.eu/2025/01/23/swedish-fintech-open-payments-secures-3m/",
+      "date": "2025-01-23",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "openpayments.io",
+      "document": "https://www.openpayments.io/news-press/open-payments-raises-1-3-meur-seed-funding-from-luminar-ventures",
+      "date": "2019-05-28",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2019/05/stockholm-based-fintech-startup-open-payments-raises-e1-2-million-seed-funding-for-its-psd2-compliant-platform/",
+      "date": "2019-05-28",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "tech.eu",
+      "document": "https://tech.eu/2019/05/28/swedish-fintech-startup-open-payments-raises-e1-2-million/",
+      "date": "2019-05-28",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2023/03/swedish-fintech-open-payments-closes-e3-million-to-fuel-growth-plans/",
+      "date": "2023-03-29",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "tech.eu",
+      "document": "https://tech.eu/2023/03/29/open-payments-opens-up-to-industrifonden-global-brain-and-sony-financial-ventures-to-the-tune-of-eur3-million/",
+      "date": "2023-03-29",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "techarenan.news",
+      "document": "https://www.techarenan.news/2023/04/12/fintech-startup-opens-payments-raises-eur3m-to-offer-b2b-payment-solutions",
+      "date": "2023-04-12",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "total_funding_units": {
+    "value": "EUR",
+    "sources": [
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2020/08/stockholm-based-open-payments-raises-e3-million-seed-funding-to-become-a-leading-platform-provider-in-the-eu/",
+      "date": "2020-08-24",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "openpayments.io",
+      "document": "https://www.openpayments.io/news-press/open-payments-raises-3-meur-seed-funding-backed-by-industrifonden",
+      "date": "2020-08-24",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2025/01/fintech-open-payments-raises-e3-million-to-support-continued-growth/",
+      "date": "2025-01-23",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "alfvendidrikson.com",
+      "document": "https://www.alfvendidrikson.com/post/open-payments-to-join-the-a-d-family",
+      "date": "2025-01-23",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "tech.eu",
+      "document": "https://tech.eu/2025/01/23/swedish-fintech-open-payments-secures-3m/",
+      "date": "2025-01-23",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "openpayments.io",
+      "document": "https://www.openpayments.io/news-press/open-payments-raises-1-3-meur-seed-funding-from-luminar-ventures",
+      "date": "2019-05-28",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2019/05/stockholm-based-fintech-startup-open-payments-raises-e1-2-million-seed-funding-for-its-psd2-compliant-platform/",
+      "date": "2019-05-28",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "tech.eu",
+      "document": "https://tech.eu/2019/05/28/swedish-fintech-startup-open-payments-raises-e1-2-million/",
+      "date": "2019-05-28",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2023/03/swedish-fintech-open-payments-closes-e3-million-to-fuel-growth-plans/",
+      "date": "2023-03-29",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "tech.eu",
+      "document": "https://tech.eu/2023/03/29/open-payments-opens-up-to-industrifonden-global-brain-and-sony-financial-ventures-to-the-tune-of-eur3-million/",
+      "date": "2023-03-29",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "techarenan.news",
+      "document": "https://www.techarenan.news/2023/04/12/fintech-startup-opens-payments-raises-eur3m-to-offer-b2b-payment-solutions",
+      "date": "2023-04-12",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "operational_status": {
+    "value": "ACTIVE",
+    "sources": [
+     {
+      "name": "openpayments.io",
+      "document": "https://www.openpayments.io/",
+      "date": "2026-11-06",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "fi.se",
+      "document": "https://www.fi.se/en/our-registers/company-register/details?id=178391",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "82700d27-8726-570d-b211-16ccfb828329",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "openpayments.io",
+         "document": "https://www.openpayments.io/news-press/open-payments-raises-1-3-meur-seed-funding-from-luminar-ventures",
+         "date": "2019-05-28",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2019/05/stockholm-based-fintech-startup-open-payments-raises-e1-2-million-seed-funding-for-its-psd2-compliant-platform/",
+         "date": "2019-05-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2019/05/28/swedish-fintech-startup-open-payments-raises-e1-2-million/",
+         "date": "2019-05-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "1b7bc31d-051f-5070-8c4b-7503d38e409e"
+      }
+     },
+     {
+      "id": "9683a5f9-768f-5672-8ad1-2e2dd36783a1",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "app.fundz.net",
+         "document": "https://app.fundz.net/companies/open-payments",
+         "date": "2026-11-04",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "0c02b7ee-1f10-500c-9fb3-b9ab885ff861"
+      }
+     },
+     {
+      "id": "ca52a7ba-88de-5004-9116-6d3f54f3b594",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2023/03/swedish-fintech-open-payments-closes-e3-million-to-fuel-growth-plans/",
+         "date": "2023-03-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2023/03/29/open-payments-opens-up-to-industrifonden-global-brain-and-sony-financial-ventures-to-the-tune-of-eur3-million/",
+         "date": "2023-03-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "techarenan.news",
+         "document": "https://www.techarenan.news/2023/04/12/fintech-startup-opens-payments-raises-eur3m-to-offer-b2b-payment-solutions",
+         "date": "2023-04-12",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "0a905566-2bbd-51f0-929d-2c9142b5170c"
+      }
+     },
+     {
+      "id": "d801e0e6-e97f-57be-80a7-6dfeba16f408",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2020/08/stockholm-based-open-payments-raises-e3-million-seed-funding-to-become-a-leading-platform-provider-in-the-eu/",
+         "date": "2020-08-24",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "openpayments.io",
+         "document": "https://www.openpayments.io/news-press/open-payments-raises-3-meur-seed-funding-backed-by-industrifonden",
+         "date": "2020-08-24",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "dc9a1296-3cd5-58f5-8e85-cf9efda0262d"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_EVENT": [
+     {
+      "id": "bc844d56-6ab4-452b-96bf-2661e86e592b",
+      "name": "Slush 2026",
+      "entity_type": "Event",
+      "properties": {
+       "role": "ATTENDEE",
+       "sources": [
+        {
+         "name": "Slush",
+         "document": "https://slush.org/",
+         "date": "2026-11-14"
+        }
+       ],
+       "id": "3195c560-1a24-57a1-9bfa-398e28722a58"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "8190c30d-2703-40ab-94d0-6c193cb53908",
+      "name": "FINTECH",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "linkedin.com",
+         "document": "https://www.linkedin.com/company/openpayments",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "cda26b9a-5602-5d88-9b1b-c6bd5106e0f4",
+       "original_label": "fintech"
+      }
+     }
+    ],
+    "HAS_HEADQUARTERS_IN": [
+     {
+      "id": "45268f56-905f-4cbe-9729-0ad0bbff87fa",
+      "name": "Sweden",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "GLEIF",
+         "document": "https://search.gleif.org/#/record/984500A9506K51F9SA76",
+         "date": "2026-04-08"
+        }
+       ],
+       "id": "4afd2f01-f6ba-551e-b020-4ac4bc10edfd"
+      }
+     }
+    ],
+    "IS_REGISTERED_IN": [
+     {
+      "id": "45268f56-905f-4cbe-9729-0ad0bbff87fa",
+      "name": "Sweden",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "GLEIF",
+         "document": "https://search.gleif.org/#/record/984500A9506K51F9SA76",
+         "date": "2026-04-08"
+        }
+       ],
+       "id": "318d49d8-f9c3-5a6d-a3f4-2a657f186951"
+      }
+     }
+    ],
+    "HAS_DOMAIN_NAME": [
+     {
+      "id": "8382cb13-98e6-55a3-b3f2-3c6dbfe5190b",
+      "name": "openpayments.io",
+      "entity_type": "DomainName",
+      "properties": {
+       "sources": [
+        {
+         "name": "openpayments.io",
+         "document": "https://openpayments.io/",
+         "date": "2026-10-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "dns.google",
+         "document": "https://dns.google/query?name=openpayments.io&type=A",
+         "date": "2026-10-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "2d05d9e7-72e4-5217-90f9-11d646399994",
+       "status": "ACTIVE"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "7684b497-6faa-4239-8344-597c42d95999",
+      "name": "STIFTELSEN INDUSTRIFONDEN",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2020/08/stockholm-based-open-payments-raises-e3-million-seed-funding-to-become-a-leading-platform-provider-in-the-eu/",
+         "date": "2020-08-24",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/01/fintech-open-payments-raises-e3-million-to-support-continued-growth/",
+         "date": "2025-01-23",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "alfvendidrikson.com",
+         "document": "https://www.alfvendidrikson.com/post/open-payments-to-join-the-a-d-family",
+         "date": "2025-01-23",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2025/01/23/swedish-fintech-open-payments-secures-3m/",
+         "date": "2025-01-23",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "2b8dfca6-ebb2-496c-84bd-8405b21377f7"
+      }
+     },
+     {
+      "id": "bc817c14-4df6-5f3e-8881-777757570634",
+      "name": "Global Brain Corporation",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2023/03/swedish-fintech-open-payments-closes-e3-million-to-fuel-growth-plans/",
+         "date": "2023-03-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2023/03/29/open-payments-opens-up-to-industrifonden-global-brain-and-sony-financial-ventures-to-the-tune-of-eur3-million/",
+         "date": "2023-03-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "techarenan.news",
+         "document": "https://www.techarenan.news/2023/04/12/fintech-startup-opens-payments-raises-eur3m-to-offer-b2b-payment-solutions",
+         "date": "2023-04-12",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "a07fae6c-bd60-4fb1-acf4-8b8add694348"
+      }
+     },
+     {
+      "id": "bcbdbe17-e63a-449f-805c-95242c1e2fd5",
+      "name": "Brightly Ventures, Inc.",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2020/08/stockholm-based-open-payments-raises-e3-million-seed-funding-to-become-a-leading-platform-provider-in-the-eu/",
+         "date": "2020-08-24",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "b8e9056c-7a79-4d3f-8f72-842173ae8699"
+      }
+     },
+     {
+      "id": "be67283b-4529-4a2d-834a-96edc4b36971",
+      "name": "Luminar Ventures",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2020/08/stockholm-based-open-payments-raises-e3-million-seed-funding-to-become-a-leading-platform-provider-in-the-eu/",
+         "date": "2020-08-24",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "f3875cbf-25cc-4a9f-80b8-fc69f3bd7653"
+      }
+     },
+     {
+      "id": "d39ae471-6225-4f17-8207-bfb7466536a4",
+      "name": "Sony Financial Ventures",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2023/03/swedish-fintech-open-payments-closes-e3-million-to-fuel-growth-plans/",
+         "date": "2023-03-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2023/03/29/open-payments-opens-up-to-industrifonden-global-brain-and-sony-financial-ventures-to-the-tune-of-eur3-million/",
+         "date": "2023-03-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "techarenan.news",
+         "document": "https://www.techarenan.news/2023/04/12/fintech-startup-opens-payments-raises-eur3m-to-offer-b2b-payment-solutions",
+         "date": "2023-04-12",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "ec2c9f24-155c-4a19-a8ad-5f1bbd2785be"
+      }
+     },
+     {
+      "id": "db089029-ceca-4e5e-b60a-b4e39a98c3b5",
+      "name": "Alfv\u00e9n & Didrikson",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/01/fintech-open-payments-raises-e3-million-to-support-continued-growth/",
+         "date": "2025-01-23",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "alfvendidrikson.com",
+         "document": "https://www.alfvendidrikson.com/post/open-payments-to-join-the-a-d-family",
+         "date": "2025-01-23",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2025/01/23/swedish-fintech-open-payments-secures-3m/",
+         "date": "2025-01-23",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "d2f8b8ad-1e4c-42d2-9093-600c97c59ea1"
+      }
+     },
+     {
+      "id": "f9477b73-6b4d-40e5-9446-3d12f563a3f5",
+      "name": "Sony",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/march-wrap-up-10-women-founded-tech-startups-that-received-funding-in-europe",
+         "date": "2026-07-03"
+        }
+       ],
+       "id": "4611dff0-1f15-5296-b392-ac27d592595f"
+      }
+     }
+    ],
+    "FOUNDED": [
+     {
+      "id": "5757b4fe-5e7a-486a-bea2-3f5ff1bc9bc9",
+      "name": "Louise Brandt",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "www.eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/01/fintech-open-payments-raises-e3-million-to-support-continued-growth",
+         "date": "2026-08-20"
+        },
+        {
+         "name": "Open Payments Raises \u20ac3M Led by Alfv\u00e9n & Didrikson | Open Payments",
+         "document": "https://www.openpayments.io/news-press/open-payments-raises-3-meur-in-a-funding-round-led-by-alfven-didrikson-to-support-continued-growth",
+         "date": "2026-05-28"
+        },
+        {
+         "name": "www.pymnts.com",
+         "document": "https://www.pymnts.com/news/b2b-payments/2023/open-payments-raises-3-2-million-for-b2b-open-banking/partial",
+         "date": "2026-08-20"
+        },
+        {
+         "name": "Izettle-veteran vill bli betaltj\u00e4nsternas b\u00e4sta v\u00e4n \u2013 tar\u2026",
+         "document": "https://www.di.se/digital/izettle-veteran-vill-bli-betaltjansternas-basta-van-tar-in-13-5-miljoner",
+         "date": "2019-05-27"
+        }
+       ],
+       "id": "ab08ddcc-cf0b-406c-8b5b-aa6c780d4f78"
+      }
+     },
+     {
+      "id": "5757b4fe-5e7a-486a-bea2-3f5ff1bc9bc9",
+      "name": "Louise Brandt",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/01/fintech-open-payments-raises-e3-million-to-support-continued-growth/",
+         "date": "2025-01-23",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "f5752983-7dd0-5260-900e-87b3e6de05bd"
+      }
+     },
+     {
+      "id": "630f0a99-90cc-4c0b-be07-a902f03d6fb4",
+      "name": "Per Westin",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "www.eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/01/fintech-open-payments-raises-e3-million-to-support-continued-growth",
+         "date": "2026-08-20"
+        },
+        {
+         "name": "Izettle-veteran vill bli betaltj\u00e4nsternas b\u00e4sta v\u00e4n \u2013 tar\u2026",
+         "document": "https://www.di.se/digital/izettle-veteran-vill-bli-betaltjansternas-basta-van-tar-in-13-5-miljoner",
+         "date": "2019-05-27"
+        }
+       ],
+       "id": "fd93c0f5-4030-4af0-8ac4-2060151b05f3"
+      }
+     },
+     {
+      "id": "630f0a99-90cc-4c0b-be07-a902f03d6fb4",
+      "name": "Per Westin",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/01/fintech-open-payments-raises-e3-million-to-support-continued-growth/",
+         "date": "2025-01-23",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "273cefb4-d042-551c-8f9f-a7c9e93e9121"
+      }
+     },
+     {
+      "id": "ce04e5dd-42df-44a7-ae70-adf8f40366be",
+      "name": "Jonas Kjellin",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "www.eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/01/fintech-open-payments-raises-e3-million-to-support-continued-growth",
+         "date": "2026-08-20"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/open-payments/__EWtOFE3GtGQvw3ti2Wx0IEL9vNo04phuCRYu62oBwI0",
+         "date": "2026-08-20"
+        },
+        {
+         "name": "Izettle-veteran vill bli betaltj\u00e4nsternas b\u00e4sta v\u00e4n \u2013 tar\u2026",
+         "document": "https://www.di.se/digital/izettle-veteran-vill-bli-betaltjansternas-basta-van-tar-in-13-5-miljoner",
+         "date": "2019-05-27"
+        }
+       ],
+       "id": "61e3d58f-f8b9-49fe-b2b8-0016f4e39025"
+      }
+     },
+     {
+      "id": "ce04e5dd-42df-44a7-ae70-adf8f40366be",
+      "name": "Jonas Kjellin",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/01/fintech-open-payments-raises-e3-million-to-support-continued-growth/",
+         "date": "2025-01-23",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "49d05c6b-83fe-5640-b310-da652b476c0c"
+      }
+     }
+    ],
+    "WORKS_AT": [
+     {
+      "id": "5757b4fe-5e7a-486a-bea2-3f5ff1bc9bc9",
+      "name": "Louise Brandt",
+      "entity_type": "Person",
+      "properties": {
+       "role": "CEO",
+       "sources": [
+        {
+         "name": "www.eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/01/fintech-open-payments-raises-e3-million-to-support-continued-growth",
+         "date": "2026-08-20"
+        },
+        {
+         "name": "Open Payments Raises \u20ac3M Led by Alfv\u00e9n & Didrikson | Open Payments",
+         "document": "https://www.openpayments.io/news-press/open-payments-raises-3-meur-in-a-funding-round-led-by-alfven-didrikson-to-support-continued-growth",
+         "date": "2026-05-28"
+        },
+        {
+         "name": "www.pymnts.com",
+         "document": "https://www.pymnts.com/news/b2b-payments/2023/open-payments-raises-3-2-million-for-b2b-open-banking/partial",
+         "date": "2026-08-20"
+        },
+        {
+         "name": "Izettle-veteran vill bli betaltj\u00e4nsternas b\u00e4sta v\u00e4n \u2013 tar\u2026",
+         "document": "https://www.di.se/digital/izettle-veteran-vill-bli-betaltjansternas-basta-van-tar-in-13-5-miljoner",
+         "date": "2019-05-27"
+        }
+       ],
+       "id": "d5353d34-37c8-4e0e-9fbf-be978cccefed"
+      }
+     },
+     {
+      "id": "630f0a99-90cc-4c0b-be07-a902f03d6fb4",
+      "name": "Per Westin",
+      "entity_type": "Person",
+      "properties": {
+       "role": "CPO",
+       "sources": [
+        {
+         "name": "www.eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/01/fintech-open-payments-raises-e3-million-to-support-continued-growth",
+         "date": "2026-08-20"
+        },
+        {
+         "name": "Izettle-veteran vill bli betaltj\u00e4nsternas b\u00e4sta v\u00e4n \u2013 tar\u2026",
+         "document": "https://www.di.se/digital/izettle-veteran-vill-bli-betaltjansternas-basta-van-tar-in-13-5-miljoner",
+         "date": "2019-05-27"
+        }
+       ],
+       "id": "9a4709bb-c0b5-4584-8be9-1a8c7c9932fa"
+      }
+     },
+     {
+      "id": "630f0a99-90cc-4c0b-be07-a902f03d6fb4",
+      "name": "Per Westin",
+      "entity_type": "Person",
+      "properties": {
+       "role": "CPO",
+       "sources": [
+        {
+         "name": "openpayments.io",
+         "document": "https://www.openpayments.io/news-press/open-payments-raises-1-3-meur-seed-funding-from-luminar-ventures",
+         "date": "2019-05-28",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "5dc4f04c-3f7d-5d86-be41-56bfbc2c9e9a"
+      }
+     },
+     {
+      "id": "ce04e5dd-42df-44a7-ae70-adf8f40366be",
+      "name": "Jonas Kjellin",
+      "entity_type": "Person",
+      "properties": {
+       "role": "CEO",
+       "sources": [
+        {
+         "name": "www.eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/01/fintech-open-payments-raises-e3-million-to-support-continued-growth",
+         "date": "2026-08-20"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/open-payments/__EWtOFE3GtGQvw3ti2Wx0IEL9vNo04phuCRYu62oBwI0",
+         "date": "2026-08-20"
+        },
+        {
+         "name": "Izettle-veteran vill bli betaltj\u00e4nsternas b\u00e4sta v\u00e4n \u2013 tar\u2026",
+         "document": "https://www.di.se/digital/izettle-veteran-vill-bli-betaltjansternas-basta-van-tar-in-13-5-miljoner",
+         "date": "2019-05-27"
+        }
+       ],
+       "id": "4866727b-23a6-46a9-8136-2ec6f5001c2a"
+      }
+     }
+    ],
+    "IS_CEO_OF": [
+     {
+      "id": "5757b4fe-5e7a-486a-bea2-3f5ff1bc9bc9",
+      "name": "Louise Brandt",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2023/03/swedish-fintech-open-payments-closes-e3-million-to-fuel-growth-plans/",
+         "date": "2023-03-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/5569732737/befattningar",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "ba3f9b6e-9215-59e0-afa2-3288f18ed896"
+      }
+     },
+     {
+      "id": "ce04e5dd-42df-44a7-ae70-adf8f40366be",
+      "name": "Jonas Kjellin",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "openpayments.io",
+         "document": "https://www.openpayments.io/news-press/open-payments-raises-1-3-meur-seed-funding-from-luminar-ventures",
+         "date": "2019-05-28",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2020/08/stockholm-based-open-payments-raises-e3-million-seed-funding-to-become-a-leading-platform-provider-in-the-eu/",
+         "date": "2020-08-24",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "0c8e54ab-3d4a-5d23-b1d7-26c05846e7f3"
+      }
+     }
+    ],
+    "IS_BOARD_MEMBER_OF": [
+     {
+      "id": "2d8b0f4f-6546-57af-84d8-2f5c3ddd9a19",
+      "name": "M\u00e5ns Alfv\u00e9n",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/5569732737/befattningar",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        },
+        {
+         "name": "alfvendidrikson.com",
+         "document": "https://www.alfvendidrikson.com/post/open-payments-to-join-the-a-d-family",
+         "date": "2025-01-23",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "648810b2-9ee1-5c37-903a-891f34bccc22"
+      }
+     },
+     {
+      "id": "5757b4fe-5e7a-486a-bea2-3f5ff1bc9bc9",
+      "name": "Louise Brandt",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/5569732737/befattningar",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "79aaa0d3-8141-5824-bd81-d1b5b6ae4c01"
+      }
+     },
+     {
+      "id": "66560573-b174-5cfa-87cc-99a67864d89b",
+      "name": "Rolf Tolke",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/5569732737/befattningar",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "ebab372c-506a-51b4-b0b8-816fc840caec"
+      }
+     },
+     {
+      "id": "8532d680-375a-576c-ac89-fb7c636f81a0",
+      "name": "Emil Ahlanzberg",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/5569732737/befattningar",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        },
+        {
+         "name": "alfvendidrikson.com",
+         "document": "https://www.alfvendidrikson.com/post/open-payments-to-join-the-a-d-family",
+         "date": "2025-01-23",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "725170ff-7f53-5fe2-8ddc-c423e5b8abf3"
+      }
+     },
+     {
+      "id": "8e2d027a-dc57-5f23-bf9b-d905928a55d7",
+      "name": "Robin Egerot",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/5569732737/befattningar",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "cfbe8a02-8eb0-562b-8444-358aa72761af"
+      }
+     },
+     {
+      "id": "9430c7e5-c851-55fd-8739-73089c7019f4",
+      "name": "Michael Lyngsaa Hansen",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/5569732737/befattningar",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "03931ab5-1341-5b12-9971-5908c1f9e802"
+      }
+     },
+     {
+      "id": "9b7d767d-158e-5525-9c02-c00657fdea30",
+      "name": "Anna Ljungdahl",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/5569732737/befattningar",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "e7179c55-2890-55f1-a88d-7de12af30a17"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

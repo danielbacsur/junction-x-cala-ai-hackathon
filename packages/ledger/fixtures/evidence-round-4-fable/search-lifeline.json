@@ -1,0 +1,49 @@
+{
+ "_request": {
+  "method": "GET",
+  "path": "/entities?name=Lifeline%20Ventures&limit=6",
+  "body": null
+ },
+ "_fetched_at": "2026-11-14T12:25:54+0200",
+ "_seconds": 0.34,
+ "response": {
+  "entities": [
+   {
+    "id": "4d668c75-c7a0-4f5b-baea-ce0fa6a34e31",
+    "name": "Lifeline Ventures AB",
+    "entity_type": "Company",
+    "description": "A Swedish company incorporated in 2010 and headquartered in Stockholm."
+   },
+   {
+    "id": "476a73ac-afa2-4713-9f73-188bc7ec0b95",
+    "name": "Lifeline Ventures",
+    "entity_type": "Organization",
+    "description": "Finnish venture capital firm headquartered in Helsinki."
+   },
+   {
+    "id": "111aea67-7cea-43ec-b4cd-25b1b9b6140a",
+    "name": "Lifeline Ventures Fund II Ky",
+    "entity_type": "Company",
+    "description": "Finnish venture capital fund based in Helsinki, founded in 2014."
+   },
+   {
+    "id": "912e9dc4-796a-4694-ae51-679ef378a953",
+    "name": "LIFELINE VENTURES SPV",
+    "entity_type": "Company",
+    "description": "A company whose fiscal year ends on December\u202f31."
+   },
+   {
+    "id": "503fca19-dcb6-4f69-9834-b2fa4f6debdf",
+    "name": "Lifeline Ventures III AB",
+    "entity_type": "Company",
+    "description": "Swedish company incorporated in 2011 and headquartered in Stockholm."
+   },
+   {
+    "id": "16055086-7d3a-4990-a5e4-422333413419",
+    "name": "Lifeline Ventures Fund VI SCSp",
+    "entity_type": "Company",
+    "description": "a Luxembourg-based venture capital fund incorporated in 2025"
+   }
+  ]
+ }
+}

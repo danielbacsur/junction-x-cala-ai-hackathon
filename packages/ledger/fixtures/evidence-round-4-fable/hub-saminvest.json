@@ -1,0 +1,555 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/077d67bb-1ec0-484e-892a-4140d31af6d1",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 100
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 100
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 100
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 100
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 100
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 100
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 100
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 100
+     },
+     "IS_MEMBER_OF": {
+      "limit": 100
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 100
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 100
+     },
+     "TRADED_ON": {
+      "limit": 100
+     },
+     "LISTED_ON": {
+      "limit": 100
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "FOUNDED": {
+      "limit": 100
+     },
+     "WORKS_AT": {
+      "limit": 100
+     },
+     "IS_MEMBER_OF": {
+      "limit": 100
+     },
+     "IS_CEO_OF": {
+      "limit": 100
+     },
+     "IS_CTO_OF": {
+      "limit": 100
+     },
+     "IS_CFO_OF": {
+      "limit": 100
+     },
+     "IS_COO_OF": {
+      "limit": 100
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 100
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 100
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 100
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 100
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 100
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 100
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 100
+     },
+     "MANUFACTURED_BY": {
+      "limit": 100
+     },
+     "DESIGNED_BY": {
+      "limit": 100
+     },
+     "OPERATED_BY": {
+      "limit": 100
+     },
+     "CREATED_BY": {
+      "limit": 100
+     },
+     "PUBLISHED_BY": {
+      "limit": 100
+     },
+     "GRANTED_BY": {
+      "limit": 100
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:29:32+0200",
+ "_seconds": 0.29,
+ "response": {
+  "id": "077d67bb-1ec0-484e-892a-4140d31af6d1",
+  "name": "Saminvest AB",
+  "entity_type": "Company",
+  "description": "Swedish venture capital firm headquartered in Stockholm, founded in 2016.",
+  "properties": {
+   "name": {
+    "value": "Saminvest AB",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/549300V7T8F8ZG2GFP66",
+      "date": "2026-04-08"
+     }
+    ]
+   },
+   "legal_name": {
+    "value": "Saminvest AB",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/549300V7T8F8ZG2GFP66",
+      "date": "2026-04-08"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [],
+    "sources": []
+   },
+   "description": {
+    "value": "Swedish venture capital firm headquartered in Stockholm, founded in 2016.",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-08-19"
+     }
+    ]
+   },
+   "website": {
+    "value": "saminvest.se",
+    "sources": []
+   },
+   "headquarters_address": {
+    "value": "Sveav\u00e4gen 17, Stockholm, SE-AB, 111 57, SE",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/549300V7T8F8ZG2GFP66",
+      "date": "2026-04-08"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2016-06-16",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/549300V7T8F8ZG2GFP66",
+      "date": "2026-04-08"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "INVESTED_IN": [
+     {
+      "id": "114c3c85-dcce-450a-8305-1bacb716aec1",
+      "name": "Butterfly Ventures",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Butterfly Ventures Announces the First Closing of 47 Million Euros of Their New 100 Million Euro EU Article 8 Based Fund",
+         "document": "https://news.cision.com/butterfly-ventures/r/butterfly-ventures-announces-the-first-closing-of-47-million-euros-of-their-new-100-million-euro-eu-,c3588489",
+         "date": "2022-06-21"
+        },
+        {
+         "name": "arcticstartup.com",
+         "document": "https://arcticstartup.com/butterfly-ventures-announces-a-sustainable-fund",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Backing deep tech in Nordics, Butterfly Ventures flutters in \u20ac47 million for its \u20ac100-million fund",
+         "document": "https://tech.eu/2022/06/21/backing-deep-tech-and-hardware-startups-in-nordics-and-baltics-butterfly-ventures-flutters-in-eur47-million-for-its-eur100-million-fund",
+         "date": "2022-06-21"
+        },
+        {
+         "name": "Butterfly Ventures from Finland announces new sustainable fund - private-equitynews.com",
+         "document": "https://www.private-equitynews.com/news/butterfly-ventures-from-finland-announces-new-sustainable-fund",
+         "date": "2022-06-21"
+        },
+        {
+         "name": "Portfolio - Fund investments",
+         "document": "https://tesi.fi/en/portfolio/funds",
+         "date": "2022-11-01"
+        }
+       ],
+       "id": "b6c1098d-7087-403b-8949-14d320fe0aed"
+      }
+     },
+     {
+      "id": "be67283b-4529-4a2d-834a-96edc4b36971",
+      "name": "Luminar Ventures",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "arcticstartup.com",
+         "document": "https://arcticstartup.com/luminar-ventures-closes-second-fund-e65m",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Luminar Ventures \u2014 VC Fund Profile | Waveup Copilot",
+         "document": "https://hub.waveup.com/funds/luminar-ventures",
+         "date": "2026-03-04"
+        },
+        {
+         "name": "Luminar Ventures | Investor Profile & Funding Criteria | CAPLINK",
+         "document": "https://caplink.capital/investor-database/luminar-ventures",
+         "date": "2026-01-01"
+        },
+        {
+         "name": "incubatorlist.com",
+         "document": "https://incubatorlist.com/luminar-ventures",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Our investments",
+         "document": "https://www.saminvest.se/en/our-investments",
+         "date": "2025-09-30"
+        }
+       ],
+       "id": "310329e0-6bf0-4816-9f09-e17adbb36b17"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_CORPORATE_EVENT": [
+     {
+      "id": "8036349d-8441-4d40-8219-7a8d76c43e53",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Butterfly Ventures",
+         "document": "https://www.privateequityinternational.com/institution-profiles/butterfly-ventures.html",
+         "date": "2022-06-08"
+        },
+        {
+         "name": "Butterfly Ventures and Our Funds \u2013 Butterfly Ventures",
+         "document": "https://butterfly.vc/transparency-disclosure/butterfly-ventures-and-our-funds-in-detail",
+         "date": "2025-10-27"
+        },
+        {
+         "name": "Top 15 Finnish VCs Actively Funding Startups in 2026",
+         "document": "https://www.peony.ink/blog/venture-capital-firms-finland",
+         "date": "2026-04-08"
+        }
+       ],
+       "event_date": "2024-02-01",
+       "id": "6082fcd6-2cf8-40ee-9246-331cde1189a7"
+      }
+     },
+     {
+      "id": "ae44e4a6-fa0f-4581-af47-70773cd0e5f3",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Luminar Ventures closes second fund at \u20ac65M, focusing on AI and fintech in the Nordics",
+         "document": "https://tech.eu/2023/10/06/luminar-ventures-eur65-ai-and-fintech-in-the-norics",
+         "date": "2023-10-06"
+        },
+        {
+         "name": "arcticstartup.com",
+         "document": "https://arcticstartup.com/luminar-ventures-closes-second-fund-e65m",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Luminar Ventures Completes Second Fund, at \u20ac65M",
+         "document": "https://vcwire.tech/2023/10/10/luminar-ventures-completes-second-fund-at-e65m",
+         "date": "2023-10-10"
+        },
+        {
+         "name": "jacob-key-83530.medium.com",
+         "document": "https://jacob-key-83530.medium.com/luminar-ventures-announces-final-close-of-its-second-fund-at-715-msek-launches-a-prominent-angel-b171a4aeb646",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Nordic VC firm closes \u20ac65M second fund, sets stage for accelerated startup investment | Audacious Investor\u2122\ufe0f",
+         "document": "https://www.linkedin.com/posts/audaciousinvestor_nordic-vc-firm-closes-65m-second-fund-sets-activity-7196116688243752960-kS_S",
+         "date": "2024-05-14"
+        }
+       ],
+       "event_date": "2023-10-06",
+       "id": "acc7eb4b-237b-4222-9ca3-d49d6d15c963"
+      }
+     },
+     {
+      "id": "be385fff-1d6a-4485-8d60-52abeaa944fc",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Butterfly Ventures Announces the First Closing of 47 Million Euros of Their New 100 Million Euro EU Article 8 Based Fund",
+         "document": "https://news.cision.com/butterfly-ventures/r/butterfly-ventures-announces-the-first-closing-of-47-million-euros-of-their-new-100-million-euro-eu-,c3588489",
+         "date": "2022-06-21"
+        },
+        {
+         "name": "arcticstartup.com",
+         "document": "https://arcticstartup.com/butterfly-ventures-announces-a-sustainable-fund",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Backing deep tech in Nordics, Butterfly Ventures flutters in \u20ac47 million for its \u20ac100-million fund",
+         "document": "https://tech.eu/2022/06/21/backing-deep-tech-and-hardware-startups-in-nordics-and-baltics-butterfly-ventures-flutters-in-eur47-million-for-its-eur100-million-fund",
+         "date": "2022-06-21"
+        },
+        {
+         "name": "Butterfly Ventures from Finland announces new sustainable fund - private-equitynews.com",
+         "document": "https://www.private-equitynews.com/news/butterfly-ventures-from-finland-announces-new-sustainable-fund",
+         "date": "2022-06-21"
+        },
+        {
+         "name": "Portfolio - Fund investments",
+         "document": "https://tesi.fi/en/portfolio/funds",
+         "date": "2022-11-01"
+        }
+       ],
+       "event_date": "2022-06-21",
+       "id": "97923ccc-959a-4814-9b07-728afb4ac39b"
+      }
+     },
+     {
+      "id": "f2cf8c3c-5b4e-449e-8004-15408147239d",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "arcticstartup.com",
+         "document": "https://arcticstartup.com/luminar-ventures-closes-second-fund-e65m",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Luminar Ventures \u2014 VC Fund Profile | Waveup Copilot",
+         "document": "https://hub.waveup.com/funds/luminar-ventures",
+         "date": "2026-03-04"
+        },
+        {
+         "name": "Luminar Ventures | Investor Profile & Funding Criteria | CAPLINK",
+         "document": "https://caplink.capital/investor-database/luminar-ventures",
+         "date": "2026-01-01"
+        },
+        {
+         "name": "incubatorlist.com",
+         "document": "https://incubatorlist.com/luminar-ventures",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Our investments",
+         "document": "https://www.saminvest.se/en/our-investments",
+         "date": "2025-09-30"
+        }
+       ],
+       "event_date": "2018-02-01",
+       "id": "bba27859-fd92-462b-a67a-72861f039570"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "f48ebf95-99ea-4756-99cc-8a2a2d71f2e2",
+      "name": "VENTURE_CAPITAL",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "Saminvest",
+         "document": "https://www.saminvest.se/en",
+         "date": "2025-12-31"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/saminvest",
+         "date": "2026-06-08"
+        }
+       ],
+       "id": "20e4824e-7551-41db-8839-7a4aaee9684e"
+      }
+     }
+    ],
+    "HAS_HEADQUARTERS_IN": [
+     {
+      "id": "0d26ac0b-7421-4caa-9a84-7dedaade94a6",
+      "name": "Stockholms l\u00e4n [SE-01]",
+      "entity_type": "CountrySubdivision",
+      "properties": {
+       "sources": [
+        {
+         "name": "GLEIF",
+         "document": "https://search.gleif.org/#/record/549300V7T8F8ZG2GFP66",
+         "date": "2026-04-08"
+        }
+       ],
+       "id": "f66c7bf9-f54f-552d-a5a5-247e3dc24cee"
+      }
+     }
+    ],
+    "IS_REGISTERED_IN": [
+     {
+      "id": "0d26ac0b-7421-4caa-9a84-7dedaade94a6",
+      "name": "Stockholms l\u00e4n [SE-01]",
+      "entity_type": "CountrySubdivision",
+      "properties": {
+       "sources": [
+        {
+         "name": "GLEIF",
+         "document": "https://search.gleif.org/#/record/549300V7T8F8ZG2GFP66",
+         "date": "2026-04-08"
+        }
+       ],
+       "id": "38d16d8f-c6ab-5ecb-88db-540583129b98"
+      }
+     },
+     {
+      "id": "45268f56-905f-4cbe-9729-0ad0bbff87fa",
+      "name": "Sweden",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "GLEIF",
+         "document": "https://search.gleif.org/#/record/549300V7T8F8ZG2GFP66",
+         "date": "2026-04-08"
+        }
+       ],
+       "id": "acccf218-88b2-5e37-95ea-76f1609f017e"
+      }
+     }
+    ],
+    "IS_DIRECT_PARENT_OF": [
+     {
+      "id": "18f02935-de40-4b0f-aae5-858bed54b93a",
+      "name": "Inlandsinnovation AB",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "GLEIF",
+         "document": "https://search.gleif.org/#/record/5493000NG5M92R93JV15",
+         "date": "2026-04-08"
+        }
+       ],
+       "id": "c970628a-a540-52ca-8089-5cea4cd9e190",
+       "valid_since": "2019-11-18"
+      }
+     },
+     {
+      "id": "890ada4b-63c2-4f79-98d0-9e6cda192502",
+      "name": "Fouriertransform Aktiebolag",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "GLEIF",
+         "document": "https://search.gleif.org/#/record/549300R2PQ6UTYBIUX57",
+         "date": "2026-04-08"
+        }
+       ],
+       "id": "49f6309a-9f89-5b7d-a45b-ebddab6f850e",
+       "valid_since": "2022-11-02"
+      }
+     }
+    ],
+    "HAS_PRESENCE_IN": [
+     {
+      "id": "45268f56-905f-4cbe-9729-0ad0bbff87fa",
+      "name": "Sweden",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "Saminvest",
+         "document": "https://www.saminvest.se/en",
+         "date": "2025-12-31"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/saminvest",
+         "date": "2026-06-08"
+        }
+       ],
+       "id": "8e8f11c3-3fd3-4583-bf73-12ecf625c073"
+      }
+     }
+    ]
+   },
+   "incoming": {}
+  },
+  "numerical_observations": []
+ }
+}

@@ -1,0 +1,1989 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/3b0499bc-3c7e-4d50-aee5-42de34a5f8d0",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 1000
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 1000
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 1000
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 1000
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 1000
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 1000
+     },
+     "IS_MEMBER_OF": {
+      "limit": 1000
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 1000
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 1000
+     },
+     "TRADED_ON": {
+      "limit": 1000
+     },
+     "LISTED_ON": {
+      "limit": 1000
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "FOUNDED": {
+      "limit": 1000
+     },
+     "WORKS_AT": {
+      "limit": 1000
+     },
+     "IS_MEMBER_OF": {
+      "limit": 1000
+     },
+     "IS_CEO_OF": {
+      "limit": 1000
+     },
+     "IS_CTO_OF": {
+      "limit": 1000
+     },
+     "IS_CFO_OF": {
+      "limit": 1000
+     },
+     "IS_COO_OF": {
+      "limit": 1000
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 1000
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 1000
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 1000
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 1000
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 1000
+     },
+     "MANUFACTURED_BY": {
+      "limit": 1000
+     },
+     "DESIGNED_BY": {
+      "limit": 1000
+     },
+     "OPERATED_BY": {
+      "limit": 1000
+     },
+     "CREATED_BY": {
+      "limit": 1000
+     },
+     "PUBLISHED_BY": {
+      "limit": 1000
+     },
+     "GRANTED_BY": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:25:09+0200",
+ "_seconds": 0.56,
+ "response": {
+  "id": "3b0499bc-3c7e-4d50-aee5-42de34a5f8d0",
+  "name": "Business Finland Oy",
+  "entity_type": "Company",
+  "description": "Finnish government agency headquartered in Helsinki that promotes trade, investment and innovation for Finnish companies, founded in 2015.",
+  "properties": {
+   "name": {
+    "value": "Business Finland Oy",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/743700AVXTHX1NX6QZ08",
+      "date": "2026-09-16"
+     }
+    ]
+   },
+   "legal_name": {
+    "value": "Business Finland Oy",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/743700AVXTHX1NX6QZ08",
+      "date": "2026-09-16"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [
+     "Business Finland",
+     "Business Finland / Tekes"
+    ],
+    "sources": []
+   },
+   "description": {
+    "value": "Finnish government agency headquartered in Helsinki that promotes trade, investment and innovation for Finnish companies, founded in 2015.",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-08-21"
+     }
+    ]
+   },
+   "headquarters_address": {
+    "value": "Porkkalankatu 1, 00180 HELSINKI, HELSINKI, FI-00180, FI",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/743700AVXTHX1NX6QZ08",
+      "date": "2026-09-16"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2015-11-18",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/743700AVXTHX1NX6QZ08",
+      "date": "2026-09-16"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "INVESTED_IN": [
+     {
+      "id": "2a812ff4-d285-53c1-9ee2-0d63b4a8e9a9",
+      "name": "Fiberdom",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/04/fiberdom-secures-e3-5-million-to-drive-plastic-free-circular-material-innovations/",
+         "date": "2025-04-01",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "054c0d60-954f-4324-ad39-fdc44134a1a0"
+      }
+     },
+     {
+      "id": "68983faa-b52c-5c09-b8f4-65b1e147b682",
+      "name": "Dashboa",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "news.cision.com",
+         "document": "https://news.cision.com/ai-marketing-oy/r/dashboa-raises--1-3-million-to-lead-the-next-wave-of-ai-driven-digital-marketing,c4268302",
+         "date": "2025-11-18",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "5e6864d2-0777-4522-ad1d-c749c31fc230"
+      }
+     },
+     {
+      "id": "76b6cff7-27b2-4985-8a49-abc78365c973",
+      "name": "PromoRepublic",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "en.ain.ua",
+         "document": "https://en.ain.ua/2020/12/03/finnish-ukrainian-promorepublic-raises-1-5m",
+         "date": "2020-12-03",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "90c4ff0b-15e6-4bb2-8521-5f5b5afdef0b"
+      }
+     },
+     {
+      "id": "935214ea-8278-48a7-bd24-6298435906e2",
+      "name": "Agileday",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "agileday.com",
+         "document": "https://agileday.com/blog/agileday-raises-eu6-4m-to-future-proof-professional-services-firms-with-ai",
+         "date": "2026-01-23",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "agileday.com",
+         "document": "https://agileday.com/press",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "2c347331-b59f-41eb-a6a0-94b7853ff3ad"
+      }
+     },
+     {
+      "id": "9cbe6702-77ee-5faf-8855-695fb49c9b20",
+      "name": "Revial",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "revial.ai",
+         "document": "https://revial.ai/revial-julkistaa-miljoonan-euron-rahoituksen/",
+         "date": "2026-05-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "sttinfo.fi",
+         "document": "https://www.sttinfo.fi/tiedote/71983164/suomalainen-kasvuyhtio-revial-haluaa-muuttaa-pysyvasti-sen-miten-myyntia-tehdaan-ja-johdetaan?lang=fi",
+         "date": "2026-05-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "5624161f-5651-4f58-b626-3384f5c674da"
+      }
+     },
+     {
+      "id": "9fb29819-a62b-5d13-be35-67eeb5e534a1",
+      "name": "Vensum",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2023/05/26/finnish-start-up-vensum-raises-3-8-million-to-develop-software-controlled-power-converters/",
+         "date": "2023-05-26",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2023/05/helsinki-based-vensum-raises-e3-8-million-in-seed-funding-to-redefine-power-conversion-technology/",
+         "date": "2023-05-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "81f95139-6862-426a-9938-bb2b4615a2c5"
+      }
+     },
+     {
+      "id": "a9518065-ea0e-4c62-b77b-8b21de7d5cac",
+      "name": "Jobilla",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "news.cision.com",
+         "document": "https://news.cision.com/san-francisco-oy/r/jobilla-launches-ai-powered-recruitment-tools-to-help-companies-recruit-in-any-language--anywhere-in,c4028866",
+         "date": "2024-08-27",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "a2c46e03-f510-403f-8a32-ee4607bb6e8c"
+      }
+     },
+     {
+      "id": "c0862817-4426-555f-b743-44a75e726b89",
+      "name": "Root Signals",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "scorable.ai",
+         "document": "https://scorable.ai/post/root-signals-raises-2-8m-to-accelerate-genai-business-adoption-by-having-ai-watch-ai",
+         "date": "2024-09-04",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "sttinfo.fi",
+         "document": "https://sttinfo.fi/files/69820843/70479275/124337/fi",
+         "date": "2024-09-04",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2024/09/04/root-signals-raises-2-8m-for-genai-auditing/",
+         "date": "2024-09-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2024/09/helsinki-based-root-signals-raises-e2-5-million-to-make-genai-outputs-measurable-and-reliable/",
+         "date": "2024-09-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "fcdc5049-030e-45fe-be3a-39ba7eae4e4c"
+      }
+     },
+     {
+      "id": "d2d8ebe5-f6e6-5948-bfd2-45ceac4f1ebf",
+      "name": "Jaakko.com",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "bebeez.eu",
+         "document": "https://bebeez.eu/2026/04/13/jaakko-raises-e500k/",
+         "date": "2026-04-13",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "raising.fi",
+         "document": "https://raising.fi/news/jaakko-com-undisclosed-april-2026",
+         "date": "2026-04-13",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "inforcapital.com",
+         "document": "https://inforcapital.com/news/jaakko-raises-500k/",
+         "date": "2026-04-13",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "proptechconnect.com",
+         "document": "https://proptechconnect.com/finnish-proptech-jaakkocom-secures-e500k-to-scale-beyond-domestic-market/",
+         "date": "2026-04-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "a4fde184-adf8-4ff2-8268-d91570bc4bc3"
+      }
+     },
+     {
+      "id": "da87c715-6d32-52c7-b107-aeee58229f79",
+      "name": "Flowhaven Oy",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "licensinginternational.org",
+         "document": "https://licensinginternational.org/news/flowhaven-raises-5-2-million-in-seed-funding-led-by-global-founders-capital-to-expand-brand-licensing-business/",
+         "date": "2019-12-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "0d5a84ca-f181-4f5f-852d-16667faa7728"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "004396c2-b866-5da9-9d82-869b0e20beac",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "invesdor.com",
+         "document": "https://www.invesdor.com/rounds/b5b32c41-f6f0-4595-8ef0-5cae1d535e42",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "e877f47d-b9a0-5c23-91b7-5cc89e25c687"
+      }
+     },
+     {
+      "id": "01f63730-5a83-5591-905c-71c0dc554444",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "ca19a66f-7cb6-5f43-ae33-35af6acf93d1"
+      }
+     },
+     {
+      "id": "02ca23d8-79e9-5dd4-88da-a92058cb42ad",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "treamer.com",
+         "document": "https://www.treamer.com/en/finland/blog/speed-and-flexibility-to-the-labor-market-treamer-raised-funding-to-scale-its-business-in-finland-and-abroad",
+         "date": "2020-09-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "1fd8759e-be4a-5074-8756-64e15c1fd7e7"
+      }
+     },
+     {
+      "id": "0421c573-ceb9-5098-b7ad-d5d1d942a8c6",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "grants.fi",
+         "document": "https://grants.fi/en/references/alveos-x-grants/",
+         "date": "2026-06-11",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "is_lead": true,
+       "id": "e9d68664-a4e9-5be5-98e3-0331a0e99daa"
+      }
+     },
+     {
+      "id": "09639893-f2c5-59a6-a015-937935d6fd72",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "news.curifylabs.com",
+         "document": "https://news.curifylabs.com/curifylabs-leads-5.6m-eu-funded-robopharma-project-and-raised-6.7m-to-modernise-personalised-medicine",
+         "date": "2025-05-27",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "b40dbaa1-3134-5f65-b04e-bb293651b312"
+      }
+     },
+     {
+      "id": "0cf2d8e7-2c68-50d3-87a1-462372aff31f",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "kaleva.fi",
+         "document": "https://www.kaleva.fi/uusi-rakennusmateriaali-sitoo-paljon-hiilta-oulula/11639760",
+         "date": "2025-05-21",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "is_lead": true,
+       "id": "4b9af861-48e3-5598-ab85-993678da36b7"
+      }
+     },
+     {
+      "id": "0da71836-bfd8-590d-8359-730ead570657",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "cf2e50d2-1f34-58f6-9ea8-7cca132009f9"
+      }
+     },
+     {
+      "id": "1105c229-e497-5dc2-af4c-8a8751e025d4",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "bodibuddy.com",
+         "document": "https://bodibuddy.com/en/about",
+         "date": "2026-11-10",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "kuopassa.net",
+         "document": "https://kuopassa.net/koronatuki/uusimaa/apua-24-oy",
+         "date": "2026-11-10",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "is_lead": true,
+       "id": "666b496c-54b0-5009-86c1-2f55068dc6af"
+      }
+     },
+     {
+      "id": "12a1a9b5-0d18-5c72-99d8-ee0e87f4821c",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "vcbacked.co",
+         "document": "https://www.vcbacked.co/company/infine",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "is_lead": true,
+       "id": "583f46a4-cdf7-53e6-bc30-904660feb29f"
+      }
+     },
+     {
+      "id": "1400aea2-817d-5e90-93b7-2780e681985d",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "strgy.com",
+         "document": "https://strgy.com/news/strgy-ai-raises-1m-angel-funding",
+         "date": "2026-08-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "25146dee-d2ec-5804-b20e-e30759547670"
+      }
+     },
+     {
+      "id": "20f4f195-752a-5007-9305-34802dfde53b",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "mirrorapp.io",
+         "document": "https://mirrorapp.io/",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "c864416b-d389-59cb-a775-11aba0929668"
+      }
+     },
+     {
+      "id": "20fbdf1b-6c25-5289-9091-1110829fb58d",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "yrittajat.fi",
+         "document": "https://www.yrittajat.fi/uutiset/nooksio-oy/",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "is_lead": true,
+       "id": "4ce01635-f140-5514-a7cf-61ae0d67bcf8"
+      }
+     },
+     {
+      "id": "257ab4cc-2d0e-5468-9f2b-094924021d1d",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "aatos.app",
+         "document": "https://aatos.app/uk/newsletters/aatos-selected-to-business-finland-funding-program/",
+         "date": "2022-10-24",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "0ae98442-4cc7-55ee-af91-5923e25241a2"
+      }
+     },
+     {
+      "id": "27725344-26a4-529b-a01b-a58e15c424ad",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "soilence.com",
+         "document": "https://soilence.com/",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "595d23c9-abd0-56c8-8b78-cdb021ecb942"
+      }
+     },
+     {
+      "id": "317c6142-3108-58c2-8f2b-6f0e25c2eb19",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "bebeez.eu",
+         "document": "https://bebeez.eu/2026/04/13/jaakko-raises-e500k/",
+         "date": "2026-04-13",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "raising.fi",
+         "document": "https://raising.fi/news/jaakko-com-undisclosed-april-2026",
+         "date": "2026-04-13",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "inforcapital.com",
+         "document": "https://inforcapital.com/news/jaakko-raises-500k/",
+         "date": "2026-04-13",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "proptechconnect.com",
+         "document": "https://proptechconnect.com/finnish-proptech-jaakkocom-secures-e500k-to-scale-beyond-domestic-market/",
+         "date": "2026-04-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "b0b08e3d-18f9-5d0e-b9a1-7906631405e2"
+      }
+     },
+     {
+      "id": "3665ad2f-da9a-5df5-a8ce-ccf7113e66db",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "news.cision.com",
+         "document": "https://news.cision.com/san-francisco-oy/r/jobilla-launches-ai-powered-recruitment-tools-to-help-companies-recruit-in-any-language--anywhere-in,c4028866",
+         "date": "2024-08-27",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "961ab1b2-97f2-5c86-8e0e-95e089afaa49"
+      }
+     },
+     {
+      "id": "3f3c05e3-038b-5a03-9531-a213d080b6ae",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "fygy.ai",
+         "document": "https://fygy.ai/fi/tietoa-meista",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "d4bcee5b-7882-5cbb-b4cd-098b865419e6"
+      }
+     },
+     {
+      "id": "47ae1443-0959-5836-b246-dff119878540",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "b55f3413-9226-54f9-9c6c-0be582327bc8"
+      }
+     },
+     {
+      "id": "47c5460d-96e4-5248-a67e-1d6cc67e47ae",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "0ffd01e3-770c-5dee-89b0-af16f433b4e2"
+      }
+     },
+     {
+      "id": "49b052d8-35df-536f-9b39-3ebd939df8ad",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "predit.io",
+         "document": "https://www.predit.io/blog/news-2/predit-ltd-receives-significant-funding-to-make-the-mira-intelligent-tomography-concept-production-ready-and-scalable-18",
+         "date": "2025-11-28",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "e7808fe7-8291-5643-91fd-ed9e8fd6fdd4"
+      }
+     },
+     {
+      "id": "4b41bca7-6aff-5dc4-9f12-1d17f7d8850d",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "b42cbc9a-9b7f-5e2c-bd8b-ad38d58d7b8a"
+      }
+     },
+     {
+      "id": "51428f51-3d31-5658-a5f1-69205e179e7f",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "news.curifylabs.com",
+         "document": "https://news.curifylabs.com/curifylabs-has-been-granted-400k-eur-deep-tech-accelerator-funding-by-business-finland",
+         "date": "2023-09-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "90596f91-0d41-5eca-8fb7-51fbfed67f24"
+      }
+     },
+     {
+      "id": "56f0926f-2fcc-55a2-b7f6-969fe9132d5f",
+      "name": "Funding round",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "news.cision.com",
+         "document": "https://news.cision.com/ai-marketing-oy/r/dashboa-raises--1-3-million-to-lead-the-next-wave-of-ai-driven-digital-marketing,c4268302",
+         "date": "2025-11-18",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "7b95d213-4628-5cf1-bce4-7fac26c593d7"
+      }
+     },
+     {
+      "id": "578c5561-d050-5743-ac86-dfc5ffa9f7ae",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "e5d52d82-4c48-5efc-a6bf-d3d63910a18c"
+      }
+     },
+     {
+      "id": "5790badb-d9eb-5c5d-b048-0729bb6e2ea5",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "dundee.id",
+         "document": "https://dundee.id/",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "711ebfaf-02e2-57ea-889c-0d47dc53cfa1"
+      }
+     },
+     {
+      "id": "58b6cd83-09f1-5746-b772-082eeb943589",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "supersight.fi",
+         "document": "https://supersight.fi/en/news-room/transforming-people-counting-with-ai-a-new-model-will-be-trained-on-europes-fastest-supercomputer-lumi-now-available-for-pre-order",
+         "date": "2024-03-08",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "vcbacked.co",
+         "document": "https://www.vcbacked.co/company/supersight",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "is_lead": true,
+       "id": "691d0136-e690-5b30-82d6-fe3373430e67"
+      }
+     },
+     {
+      "id": "5a9ce9a7-e103-5a1b-b8df-077baba0d665",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "aircohol.com",
+         "document": "https://aircohol.com/",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "2271a77e-774d-5607-a894-92bfdbdc9c99"
+      }
+     },
+     {
+      "id": "603d923c-396a-501a-9989-9b7990766c1a",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "gamesbeat.com",
+         "document": "https://gamesbeat.com/?p=333606",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "is_lead": true,
+       "id": "734a0f81-9f41-5eb1-a5da-44823805279b"
+      }
+     },
+     {
+      "id": "6c0ba621-a282-5556-bee2-c26a2232d998",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "aalto.fi",
+         "document": "https://www.aalto.fi/en/news/meet-our-startup-sisusemi-cleans-semiconductors-at-the-atomic-level",
+         "date": "2026-06-26",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "is_lead": true,
+       "id": "7ca593b9-c9e6-51ff-bf35-3f2724556738"
+      }
+     },
+     {
+      "id": "6e35ad26-974c-596c-bfd8-a0636e314a41",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "jobilla.com",
+         "document": "https://www.jobilla.com/en/news/finnish-startup-jobilla-raises-8-25m-to-build-a-candidate-driven-recruiting-funnel-that-competes-in-a-league-of-its-own",
+         "date": "2022-02-01",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "krogerus.com",
+         "document": "https://www.krogerus.com/articles/our-work/krogerus-advises-juuri-partners-on-its-investment-in-jobilla",
+         "date": "2022-02-01",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "finsmes.com",
+         "document": "https://www.finsmes.com/?p=217278",
+         "date": "2026-11-11",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "is_lead": true,
+       "id": "3231a576-517c-52d8-a728-100c809ca7b7"
+      }
+     },
+     {
+      "id": "7335dc79-095b-5391-a938-1bc166e83344",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "ddbed876-a526-5298-a928-18c9627ced9d"
+      }
+     },
+     {
+      "id": "77c9353c-d35b-5356-8a11-f952a577543e",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "arcticstartup.com",
+         "document": "https://arcticstartup.com/cornea-sense-raises-e1-1m-seed/",
+         "date": "2026-07-15",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "is_lead": true,
+       "id": "c6e759ec-a8fe-50d0-846a-55d984b0808c"
+      }
+     },
+     {
+      "id": "7e23a9d0-c783-5aaf-b35b-d8419a4e2855",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "rotoboost.com",
+         "document": "https://rotoboost.com/news/baowu-worlds-largest-steelmaker-teams-with-rotoboost-to-industrialize-natural-gas-splitting-for-green-steel-at-scale",
+         "date": "2025-10-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "d0c337df-d116-5b72-9eb1-00e8e789cc34"
+      }
+     },
+     {
+      "id": "7ed574e4-9daf-5872-9cd9-b6b218d1bae4",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "invesdor.com",
+         "document": "https://www.invesdor.com/rounds/b5b32c41-f6f0-4595-8ef0-5cae1d535e42",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "effcc8c0-f4d0-5d44-b80f-cd6768bda822"
+      }
+     },
+     {
+      "id": "808d9b89-f62e-5ccd-8275-49caeb339c1a",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "eeedb4bc-cb59-5970-b210-3378294a2320"
+      }
+     },
+     {
+      "id": "839612a6-f58b-508a-91e0-0aba3b16d4cf",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "bouncewatch.com",
+         "document": "https://bouncewatch.com/company/quickbi-oy",
+         "date": "2025-11-13",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "7bb9edf4-aad5-5f14-ac8c-7a7d0414f2cc"
+      }
+     },
+     {
+      "id": "893faf84-aed1-54f1-9be5-bc825afd0c20",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "dandelier.com",
+         "document": "https://dandelier.com/about-us/",
+         "date": "2026-08-11",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "3a381069-2cda-5794-91fc-9042de6f05f3"
+      }
+     },
+     {
+      "id": "89abaa71-46c8-5060-88e0-440af21313dc",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2021/09/finnish-testimonial-marketing-platform-trustmary-secures-e1-86-million-to-accelerate-growth-in-europe-and-north-america/",
+         "date": "2021-09-14",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "martechseries.com",
+         "document": "https://martechseries.com/?p=226442",
+         "date": "2021-09-14",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "trustmary.com",
+         "document": "https://trustmary.com/news/trustmary-announces-2-2-million-funding-to-further-drive-growth-in-europe-and-north-america/",
+         "date": "2021-09-14",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "1505d985-d98f-561f-93c1-dc6b418e5c16"
+      }
+     },
+     {
+      "id": "89c776d5-ccaf-5562-aeab-b9ee5e5b77e2",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "ecogen.fi",
+         "document": "https://www.ecogen.fi/2025/12/23/business-finland-tempo-grant/",
+         "date": "2025-12-23",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "eb053200-c285-58c9-83f5-7d150a6a4411"
+      }
+     },
+     {
+      "id": "8d44ac95-150d-5d07-b90d-c26b58d08be1",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "9dd042d3-85ab-5af8-a0fa-703542870f4a"
+      }
+     },
+     {
+      "id": "91f9d833-b76a-5dac-a686-f6b2699aae06",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "arcticstartup.com",
+         "document": "https://arcticstartup.com/offerswap-raises-e2-million/",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "08340e57-8ddc-5ea3-82f4-a84c014efcf2"
+      }
+     },
+     {
+      "id": "9205dad1-f368-52d4-8280-a95b6a485a10",
+      "name": "Series A",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "agileday.com",
+         "document": "https://agileday.com/blog/agileday-raises-eu6-4m-to-future-proof-professional-services-firms-with-ai",
+         "date": "2026-01-23",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "agileday.com",
+         "document": "https://agileday.com/press",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "d8c86f97-adfc-5833-88af-5caecf7b8b7c"
+      }
+     },
+     {
+      "id": "921c671f-6834-51cb-9990-a0dba8062479",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "proverse.ai",
+         "document": "https://proverse.ai/news/proverse-to-provide-key-metaverse-technology-for-eur13m-finnish-defence-consortium/",
+         "date": "2026-05-21",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "sttinfo.fi",
+         "document": "https://www.sttinfo.fi/tiedote/72059306/proverse-to-provide-key-metaverse-technology-for-eur13m-finnish-defence-consortium?publisherId=69821554&lang=en",
+         "date": "2026-05-21",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "e87a9495-98c8-5f32-b23d-981454dfea8a"
+      }
+     },
+     {
+      "id": "922c864d-d461-53c5-ae21-92dbe9811518",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "maculaser.com",
+         "document": "https://maculaser.com/maculaser-secures-400keur-deep-tech-accelerator-grant-elevating-retinal-health-innovations/",
+         "date": "2023-09-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "14163b8e-ffed-5dfb-872d-dcfe9c4cca33"
+      }
+     },
+     {
+      "id": "9270893b-0709-54de-b660-c7291612984a",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        },
+        {
+         "name": "files.phz.fi",
+         "document": "https://files.phz.fi/apprien/investors/apprien-investor-presentation-20250522.pdf",
+         "date": "2025-05-22",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "6d0834d0-7138-5c68-acfa-a55dd7135594"
+      }
+     },
+     {
+      "id": "93744dc0-5538-5107-88f3-6a702fb984ae",
+      "name": "Series A",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/04/fiberdom-secures-e3-5-million-to-drive-plastic-free-circular-material-innovations/",
+         "date": "2025-04-01",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "c58f9b14-204f-5be4-926c-6f2b54db9005"
+      }
+     },
+     {
+      "id": "94b2ddfd-cd45-5957-b264-c6d4673e794e",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "32b092b2-0634-5410-bfae-87e8920cf207"
+      }
+     },
+     {
+      "id": "955f49c6-ae9b-530d-a090-4aa5f69fdeda",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "sttinfo.fi",
+         "document": "https://www.sttinfo.fi/tiedote/72312638/lignosphere-kerasi-yli-12-miljoonaa-mukaan-satavuotias-yhdysvaltalainen-materiaalivalmistaja",
+         "date": "2026-09-14",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "ec631818-d73f-5f17-8567-d2a12125d15c"
+      }
+     },
+     {
+      "id": "978aa7f0-6648-54b0-92ad-29055e933436",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "047660cf-1db0-5fa7-85fe-f36a688721b3"
+      }
+     },
+     {
+      "id": "9b470351-fd5b-5cd5-92de-ff3113e40274",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "537350fc-3026-5517-9bf7-116e5a84ebed"
+      }
+     },
+     {
+      "id": "9e87f242-af2a-5066-93d6-78142d9adf6f",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2023/05/26/finnish-start-up-vensum-raises-3-8-million-to-develop-software-controlled-power-converters/",
+         "date": "2023-05-26",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2023/05/helsinki-based-vensum-raises-e3-8-million-in-seed-funding-to-redefine-power-conversion-technology/",
+         "date": "2023-05-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "5b949adb-eb6d-598a-a4e8-e97587d1a15a"
+      }
+     },
+     {
+      "id": "adb03642-2645-596c-9a02-54f2bd08ef6c",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "bd2f8e05-5496-54fe-aaa5-a8de649d04d7"
+      }
+     },
+     {
+      "id": "ae2b23fc-c359-5136-9f81-64df01cfe12f",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "a8cc4daf-5304-51eb-a924-abcd6712134b"
+      }
+     },
+     {
+      "id": "b2648282-9f06-5bbd-9c2b-af41077907be",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "businessfinland.fi",
+         "document": "https://www.businessfinland.fi/en/services/Advice-and-market-information/data-bank/cases/2026/geyser-batteries/",
+         "date": "2026-02-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "06ba3796-f275-50cb-b470-a46d4d493edd"
+      }
+     },
+     {
+      "id": "b37b9e87-8a1e-5ad1-87a9-72d0c7d6326e",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "revial.ai",
+         "document": "https://revial.ai/revial-julkistaa-miljoonan-euron-rahoituksen/",
+         "date": "2026-05-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "sttinfo.fi",
+         "document": "https://www.sttinfo.fi/tiedote/71983164/suomalainen-kasvuyhtio-revial-haluaa-muuttaa-pysyvasti-sen-miten-myyntia-tehdaan-ja-johdetaan?lang=fi",
+         "date": "2026-05-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "5c3c6854-d700-5207-850d-418e0aad49c5"
+      }
+     },
+     {
+      "id": "b55e6c4d-8663-5a9f-9fc9-87f69137db3a",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "71994868-3e19-5176-b641-9ceee90bff30"
+      }
+     },
+     {
+      "id": "b84ad314-c8aa-5758-b850-c0db2d981feb",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2023/05/26/finnish-start-up-vensum-raises-3-8-million-to-develop-software-controlled-power-converters/",
+         "date": "2023-05-26",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2023/05/helsinki-based-vensum-raises-e3-8-million-in-seed-funding-to-redefine-power-conversion-technology/",
+         "date": "2023-05-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "is_lead": true,
+       "id": "e774041c-ec3a-5200-be16-751750e2fd4f"
+      }
+     },
+     {
+      "id": "bb8bc8d4-293e-52aa-9b4d-dc5fcb8c1a62",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "markets.financialcontent.com",
+         "document": "https://markets.financialcontent.com/advisoranalyst/article/getnews-2025-6-11-exolyt-receives-prestigious-young-innovative-company-funding-from-business-finland-to-accelerate-global-expansion",
+         "date": "2025-06-11",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "cbinsights.com",
+         "document": "https://www.cbinsights.com/company/exolyt/financials",
+         "date": "2026-11-07",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "is_lead": true,
+       "id": "15198661-8917-581c-b7fe-2a2e22772cd6"
+      }
+     },
+     {
+      "id": "bc0e15a9-6587-562b-b780-61732e526c35",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "licensinginternational.org",
+         "document": "https://licensinginternational.org/news/flowhaven-raises-5-2-million-in-seed-funding-led-by-global-founders-capital-to-expand-brand-licensing-business/",
+         "date": "2019-12-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "a24d4cee-837e-5c49-a2e3-f29bbf6f596d"
+      }
+     },
+     {
+      "id": "c063fbb1-a930-5cdf-9e68-c2361ecc0f8a",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "yrittajat.fi",
+         "document": "https://www.yrittajat.fi/uutiset/mikkelilaisyrityksen-meluton-ja-paastoton-sahkovesijetti-kiinnostaa-maailmalla-sarjatuotanto-alkaa-viela-tana-vuonna/",
+         "date": "2025-08-05",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "is_lead": true,
+       "id": "82fa8ca9-663a-57ff-95d1-98da67b1fc81"
+      }
+     },
+     {
+      "id": "c77ed355-8c5b-5203-938b-8cc25118727b",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "73cb7c24-16a2-56b8-8b20-cee268e50a41"
+      }
+     },
+     {
+      "id": "c846da99-24ac-5bfb-aa3d-4d767c668068",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "vttresearch.com",
+         "document": "https://vttresearch.com/en/news-and-ideas/finnish-consortium-led-vtt-joins-40-million-euro-eu-project-address-global",
+         "date": "2023-11-14",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "96374afb-13fd-566f-b680-b688626d5f18"
+      }
+     },
+     {
+      "id": "cdeec0d6-21ff-5bc0-93c8-a75be1eb16b8",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "realitycrisis.io",
+         "document": "https://realitycrisis.io/story",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "realitycrisis.io",
+         "document": "https://realitycrisis.io/",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "22c6f2a6-70b6-592c-a70e-65c6cd64d30a"
+      }
+     },
+     {
+      "id": "d0c7a444-6f35-5438-b803-6eb19f1f6e6f",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "onego.bio",
+         "document": "https://www.onego.bio/press/our-news/additional-funding",
+         "date": "2022-09-07",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2022/09/finnish-startup-onego-bio-picks-up-e4-5-million-to-accelerate-the-development-of-chicken-less-egg-product/",
+         "date": "2022-09-08",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "is_lead": true,
+       "id": "632d0288-eab5-5896-874e-422cc55e3491"
+      }
+     },
+     {
+      "id": "df8af45d-a0e5-5634-8645-cdd3753ba22e",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "qmill.com",
+         "document": "https://qmill.com/qmill-raises-4m-in-seed-funding-to-deliver-near-term-industrial-quantum-advantage-via-cutting-edge-algorithms/",
+         "date": "2024-09-17",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "bef1b377-8222-5063-9da8-6a533e14695c"
+      }
+     },
+     {
+      "id": "e4ec9b61-3960-52d7-b0f6-2033598dd135",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "3a36d83e-383d-51d4-adaf-db87b6b86bf2"
+      }
+     },
+     {
+      "id": "e691eb76-2dc0-5268-a046-d8c0eadbfc70",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "saidot.ai",
+         "document": "https://www.saidot.ai/insights/saidot-raises-seed-round-to-grow-its-ai-governance-platform",
+         "date": "2023-10-05",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "a31e4710-ce92-5bd3-afc4-2194608d563d"
+      }
+     },
+     {
+      "id": "e6b43a75-d750-5cf6-98c2-ecf9e42c527f",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "scorable.ai",
+         "document": "https://scorable.ai/post/root-signals-raises-2-8m-to-accelerate-genai-business-adoption-by-having-ai-watch-ai",
+         "date": "2024-09-04",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "sttinfo.fi",
+         "document": "https://sttinfo.fi/files/69820843/70479275/124337/fi",
+         "date": "2024-09-04",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2024/09/04/root-signals-raises-2-8m-for-genai-auditing/",
+         "date": "2024-09-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2024/09/helsinki-based-root-signals-raises-e2-5-million-to-make-genai-outputs-measurable-and-reliable/",
+         "date": "2024-09-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "3df5da11-5959-5b4d-8ec5-eb746a3708fb"
+      }
+     },
+     {
+      "id": "e6d12a9a-cdde-553a-b52e-f385bbdb724e",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "52438d6d-16e8-5948-928c-fb323f720f19"
+      }
+     },
+     {
+      "id": "f2017ea3-421f-5a06-9307-46e37cc727c2",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "businessfinland.fi",
+         "document": "https://www.businessfinland.fi/en/whats-new/news/2026/funding-for-quantum-computing-projects/",
+         "date": "2026-05-21",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "11537447-71b1-50a8-b5d3-3ab0e64eb14e"
+      }
+     },
+     {
+      "id": "f474ad8d-9ba7-549a-8f3c-ac463d4a37bd",
+      "name": "Funding round",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "helsinki.fi",
+         "document": "https://www.helsinki.fi/en/news/innovations/university-helsinki-funds-invests-eu50000-ferrivia-oy-through-helseed-entrepreneurship-programme",
+         "date": "2026-06-17",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "d29f9b3c-57de-5373-b531-e5468765248a"
+      }
+     },
+     {
+      "id": "f77b6046-933f-5175-b66e-3125b46ac725",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "en.ain.ua",
+         "document": "https://en.ain.ua/2020/12/03/finnish-ukrainian-promorepublic-raises-1-5m",
+         "date": "2020-12-03",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "bb302753-b584-5247-9da1-a5361bc08ee5"
+      }
+     }
+    ],
+    "HAS_HEADQUARTERS_IN": [
+     {
+      "id": "680000b7-a490-418f-8098-9b1757db2e58",
+      "name": "Finland",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "GLEIF",
+         "document": "https://search.gleif.org/#/record/743700AVXTHX1NX6QZ08",
+         "date": "2026-04-08"
+        }
+       ],
+       "id": "de37a784-9c5b-5ae2-9f5a-6c8fb5e495f4"
+      }
+     }
+    ],
+    "IS_REGISTERED_IN": [
+     {
+      "id": "680000b7-a490-418f-8098-9b1757db2e58",
+      "name": "Finland",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "GLEIF",
+         "document": "https://search.gleif.org/#/record/743700AVXTHX1NX6QZ08",
+         "date": "2026-04-08"
+        }
+       ],
+       "id": "9df4cb1b-6b2b-594f-92b5-8d06b025edc3"
+      }
+     }
+    ]
+   },
+   "incoming": {}
+  },
+  "numerical_observations": []
+ }
+}

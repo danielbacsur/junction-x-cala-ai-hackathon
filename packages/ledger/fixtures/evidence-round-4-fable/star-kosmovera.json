@@ -1,0 +1,272 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/42e9c1a6-48ea-492b-a179-b6c6a99f4585",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 1000
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 1000
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 1000
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 1000
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 1000
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 1000
+     },
+     "IS_MEMBER_OF": {
+      "limit": 1000
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 1000
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 1000
+     },
+     "TRADED_ON": {
+      "limit": 1000
+     },
+     "LISTED_ON": {
+      "limit": 1000
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "FOUNDED": {
+      "limit": 1000
+     },
+     "WORKS_AT": {
+      "limit": 1000
+     },
+     "IS_MEMBER_OF": {
+      "limit": 1000
+     },
+     "IS_CEO_OF": {
+      "limit": 1000
+     },
+     "IS_CTO_OF": {
+      "limit": 1000
+     },
+     "IS_CFO_OF": {
+      "limit": 1000
+     },
+     "IS_COO_OF": {
+      "limit": 1000
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 1000
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 1000
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 1000
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 1000
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 1000
+     },
+     "MANUFACTURED_BY": {
+      "limit": 1000
+     },
+     "DESIGNED_BY": {
+      "limit": 1000
+     },
+     "OPERATED_BY": {
+      "limit": 1000
+     },
+     "CREATED_BY": {
+      "limit": 1000
+     },
+     "PUBLISHED_BY": {
+      "limit": 1000
+     },
+     "GRANTED_BY": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:27:15+0200",
+ "_seconds": 0.5,
+ "response": {
+  "id": "42e9c1a6-48ea-492b-a179-b6c6a99f4585",
+  "name": "KOSMOVERA, S.L.",
+  "entity_type": "Organization",
+  "description": "Registro Mercantil de Barcelona, sheet B-629984",
+  "properties": {
+   "name": {
+    "value": "KOSMOVERA, S.L.",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-03-07"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [
+     "KOSMOVERA S.L."
+    ],
+    "sources": []
+   },
+   "description": {
+    "value": "Registro Mercantil de Barcelona, sheet B-629984",
+    "sources": [
+     {
+      "name": "boe.es",
+      "document": "https://www.boe.es/borme/dias/2025/03/10/pdfs/BORME-A-2025-47-08.pdf",
+      "date": "2025-03-10",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "empresia.es",
+      "document": "https://www.empresia.es/empresa/kosmovera/",
+      "date": "2025-03-10",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     },
+     {
+      "name": "empresia.es",
+      "document": "https://www.empresia.es/persona/bou-balust-elisenda/",
+      "date": "2025-03-10",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2025-01-21",
+    "sources": [
+     {
+      "name": "Expansi\u00f3n - Diario Econ\u00f3mico e informaci\u00f3n de mercados | EXPANSI\u00d3N",
+      "document": "https://www.expansion.com/directorio-empresas/kosmovera-sl_11344169_J73_08.html",
+      "date": "2019-09-08"
+     },
+     {
+      "name": "https://www.einforma.com/informacion-empresa/kosmovera",
+      "document": "https://www.einforma.com/informacion-empresa/kosmovera",
+      "date": "2026-03-15"
+     },
+     {
+      "name": "https://www.informa.es/directorio-empresas/Empresa_KOSMOVERA.html",
+      "document": "https://www.informa.es/directorio-empresas/Empresa_KOSMOVERA.html",
+      "date": "2026-03-15"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "IS_SUBSIDIARY_OF": [
+     {
+      "id": "81cfdabc-53f7-426a-b358-a942e159ca0f",
+      "name": "Cala AI",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "boe.es",
+         "document": "https://www.boe.es/borme/dias/2025/03/10/pdfs/BORME-A-2025-47-08.pdf",
+         "date": "2025-03-10",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        },
+        {
+         "name": "empresia.es",
+         "document": "https://www.empresia.es/empresa/kosmovera/",
+         "date": "2025-03-10",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        },
+        {
+         "name": "empresia.es",
+         "document": "https://www.empresia.es/persona/bou-balust-elisenda/",
+         "date": "2025-03-10",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "668d063f-1f11-5ac6-9fb7-788256d3a536",
+       "valid_since": "2025-01-21"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "WORKS_AT": [
+     {
+      "id": "0d81a94e-4b23-4290-a389-913f287a5a0c",
+      "name": "Elisenda Bou-Balust",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "librebor.me",
+         "document": "https://librebor.me/borme/empresa/kosmovera",
+         "date": "2026-09-18"
+        }
+       ],
+       "id": "a595a1a7-4a05-5307-a2da-9802efc86a67"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

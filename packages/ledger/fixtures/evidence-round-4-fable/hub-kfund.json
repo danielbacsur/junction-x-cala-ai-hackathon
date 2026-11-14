@@ -1,0 +1,2769 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/2c557cbb-4e37-44db-9f47-5bc327a86320",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 1000
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 1000
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 1000
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 1000
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 1000
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 1000
+     },
+     "IS_MEMBER_OF": {
+      "limit": 1000
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 1000
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 1000
+     },
+     "TRADED_ON": {
+      "limit": 1000
+     },
+     "LISTED_ON": {
+      "limit": 1000
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "FOUNDED": {
+      "limit": 1000
+     },
+     "WORKS_AT": {
+      "limit": 1000
+     },
+     "IS_MEMBER_OF": {
+      "limit": 1000
+     },
+     "IS_CEO_OF": {
+      "limit": 1000
+     },
+     "IS_CTO_OF": {
+      "limit": 1000
+     },
+     "IS_CFO_OF": {
+      "limit": 1000
+     },
+     "IS_COO_OF": {
+      "limit": 1000
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 1000
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 1000
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 1000
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 1000
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 1000
+     },
+     "MANUFACTURED_BY": {
+      "limit": 1000
+     },
+     "DESIGNED_BY": {
+      "limit": 1000
+     },
+     "OPERATED_BY": {
+      "limit": 1000
+     },
+     "CREATED_BY": {
+      "limit": 1000
+     },
+     "PUBLISHED_BY": {
+      "limit": 1000
+     },
+     "GRANTED_BY": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:26:38+0200",
+ "_seconds": 0.78,
+ "response": {
+  "id": "2c557cbb-4e37-44db-9f47-5bc327a86320",
+  "name": "Kfund",
+  "entity_type": "Organization",
+  "description": "A Spanish venture capital and private equity firm based in Madrid, founded in 2016, that invests in fintech and software services.",
+  "properties": {
+   "name": {
+    "value": "Kfund",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-07-09"
+     },
+     {
+      "name": "startup.eu",
+      "document": "https://www.startup.eu/investments/cala-7-m-pre-seed-05-2026",
+      "date": "2026-05-11",
+      "date_precision": "day"
+     },
+     {
+      "name": "dealflow.es",
+      "document": "https://dealflow.es/issue/513/embat-raised-30m-lightspeed-makes-1st-investment-in-spain-cala-spain-tech-report-2026",
+      "date": "2026-05-18",
+      "date_precision": "day"
+     },
+     {
+      "name": "newsletter.dealflow.es",
+      "document": "https://newsletter.dealflow.es/p/dealflowes-513-embat-raised-30m-lightspeed",
+      "date": "2026-05-18",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/posts/elisendabou_were-finally-open-14-months-ago-activity-7459601462898266112-NJCs",
+      "date": "2026-05-11",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "dealroom.co",
+      "document": "https://dealroom.co/news/130391-barcelonas-cala-raises-7m-pre-seed-to-build-a-knowledge-layer-for-ai-age/",
+      "date": "2026-05-29",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     },
+     {
+      "name": "infiniteloop.media",
+      "document": "https://infiniteloop.media/p/building-the-verified-knowledge-graph-your-ai-agents-need-better-data",
+      "date": "2026-06-03",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "fortune.com",
+      "document": "https://fortune.com/2026/10/13/startup-causa-prima-20-million-billing-disputes-ai-agents/",
+      "date": "2026-10-13",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "forbes.es",
+      "document": "https://forbes.es/ultima-hora/1043071/la-tecnologica-causa-prima-capta-18-millones-de-euros-en-una-nueva-ronda-y-sube-su-financiacion-a-27-millones/",
+      "date": "2026-10-13",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "startuprise.co.uk",
+      "document": "https://startuprise.co.uk/mafer-ai-raises-e2m-to-build-ai-platform-for-rd-teams-in-formulation-industries/",
+      "date": "2026-05-29",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "thesaasnews.com",
+      "document": "https://www.thesaasnews.com/news/mafer-ai-raises-2m-pre-seed/",
+      "date": "2026-06-02",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2025/01/a-new-line-of-defense-cybersecurity-startup-zynap-raises-e5-7-million-for-threat-intelligence/",
+      "date": "2025-01-21",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [
+     "K Fund",
+     "Kfund",
+     "Leadwind",
+     "K-Fund",
+     "Kfund (Leadwind)",
+     "K Fund (Kfund)"
+    ],
+    "sources": []
+   },
+   "description": {
+    "value": "A Spanish venture capital and private equity firm based in Madrid, founded in 2016, that invests in fintech and software services.",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-08-20"
+     }
+    ]
+   },
+   "website": {
+    "value": "kfund.vc",
+    "sources": [
+     {
+      "name": "Kfund | LinkedIn",
+      "document": "https://es.linkedin.com/company/kfund",
+      "date": "2026-06-30"
+     },
+     {
+      "name": "www.kfund.vc",
+      "document": "https://www.kfund.vc/post/visiting-analyst-program--autumn-2026",
+      "date": "2026-07-22"
+     },
+     {
+      "name": "es.linkedin.com",
+      "document": "https://es.linkedin.com/company/kfund",
+      "date": "2026-07-22"
+     },
+     {
+      "name": "Kfund \u2014 From Southern Europe to the world",
+      "document": "https://www.kfund.vc",
+      "date": "2022-01-01"
+     },
+     {
+      "name": "Failory: 90% of Startups Fail \u2014 Learn How Not To.",
+      "document": "https://www.failory.com/blog/venture-capital-firms-madrid",
+      "date": "2026-07-03"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2016-07-01",
+    "sources": [
+     {
+      "name": "mindmaps.dka.global",
+      "document": "https://mindmaps.dka.global/firms/8653",
+      "date": "2026-07-09"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "INVESTED_IN": [
+     {
+      "id": "01c0d729-be62-48e2-aeaf-313dfe311c61",
+      "name": "Abacum",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Why we\u2019re doubling down on Abacum: Real-time finance, real strategic impact \u2014 K Fund",
+         "document": "https://www.kfund.vc/post/why-were-doubling-down-on-abacum-real-time-finance-real-strategic-impact",
+         "date": "2025-06-23"
+        }
+       ],
+       "id": "058c881e-0cdd-4a31-acb3-7a6ee6fd4b0f"
+      }
+     },
+     {
+      "id": "03807281-f8e9-4f8c-9844-d71afafc17c5",
+      "name": "HappyRobot",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2026/01/with-e255-million-in-funding-dutch-company-mews-doubles-down-on-automation-and-payments-in-hospitality",
+         "date": "2026-08-09"
+        }
+       ],
+       "id": "68a1f6f2-c78f-5fa0-beff-e8a0b6ceb668"
+      }
+     },
+     {
+      "id": "0804911d-7269-4d24-af73-0acbcd79bb8a",
+      "name": "BEONx",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/portfolio",
+         "date": "2022-01-01"
+        }
+       ],
+       "id": "e7d4cdee-daf0-45d7-bd10-9c26df7e441f"
+      }
+     },
+     {
+      "id": "08ced7a4-94ad-4d45-83d7-99d2d86204be",
+      "name": "Barkibu",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/portfolio",
+         "date": "2022-01-01"
+        }
+       ],
+       "id": "767e02bf-97db-47e8-a476-8799aff94b89"
+      }
+     },
+     {
+      "id": "12459b37-17fb-4ccd-8307-d8e22da64e66",
+      "name": "Hubtype",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Technology & Data for Venture Capital, Corp Dev, Investment Banks",
+         "document": "https://tracxn.com/d/explore/chatbots-startups-in-barcelona-spain/__3npYGO9ppb9k3dQc-z8crDiytI1Yzbw1o1T710X34Uo/companies",
+         "date": "2026-07-09"
+        }
+       ],
+       "id": "9d00b141-3cb0-432d-89dc-6ee606223322"
+      }
+     },
+     {
+      "id": "128415b6-1889-4e01-b590-9ac7007ce25e",
+      "name": "aktiia SA",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Aktiia secures $42 million in Series B funding round and rebrands to Hilo",
+         "document": "https://www.prnewswire.com/news-releases/aktiia-secures-42-million-in-series-b-funding-round-and-rebrands-to-hilo-302444697.html",
+         "date": "2025-05-02"
+        },
+        {
+         "name": "www.massdevice.com",
+         "document": "https://www.massdevice.com/aktiia-42m-blood-pressure-monitoring-tech",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "Aktiia Raises $42 M in Series B and Becomes Hilo",
+         "document": "https://hilo.com/en-gb/blogs/pre/hilo-42m-series-b-rebrand",
+         "date": "2026-05-06"
+        },
+        {
+         "name": "Molten participates in $42 million Series B for Aktiia/Hilo",
+         "document": "https://www.moltenventures.com/news/molten-participates-in-42-million-series-b-in-aktiia-as-it-rebrands-to-hilo",
+         "date": "2025-05-01"
+        },
+        {
+         "name": "Aktiia secures $42 million in Series B funding round and rebrands to Hilo - Wellington",
+         "document": "https://wellington-partners.com/aktiia-secures-42-million-in-series-b-funding-round-and-rebrands-to-hilo",
+         "date": "2025-05-01"
+        }
+       ],
+       "id": "4248c1f9-bd4f-4270-9948-e54705a5707b"
+      }
+     },
+     {
+      "id": "1a0edbf9-deb5-45be-ba24-0e7a0377cc92",
+      "name": "THEKER Robotics",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Technology & Data for Venture Capital, Corp Dev, Investment Banks",
+         "document": "https://tracxn.com/d/companies/iriusrisk/__9Jq8KHFiJQ_froAAQlk9S3zVfTMNvsbS6M51TIFlNaU",
+         "date": "2026-06-30"
+        },
+        {
+         "name": "Marketing4eCommerce | Noticias y tendencias de marketing y eCommerce",
+         "document": "https://marketing4ecommerce.net/adsmurai-seaya",
+         "date": "2026-06-30"
+        }
+       ],
+       "id": "dfbadf55-bb10-43f0-967f-6bc2eb721568"
+      }
+     },
+     {
+      "id": "269e515a-4927-484f-922f-e4fd932d7669",
+      "name": "BankTrack",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/portfolio",
+         "date": "2022-01-01"
+        }
+       ],
+       "id": "36d4571c-968a-40a8-bd3d-954c21aafe21"
+      }
+     },
+     {
+      "id": "28fb2742-e941-41b3-88c7-11445e008e01",
+      "name": "Arengu",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/portfolio",
+         "date": "2022-01-01"
+        }
+       ],
+       "id": "1eda2236-18b6-4ac1-a025-fce52903334f"
+      }
+     },
+     {
+      "id": "2bdea5e8-a630-4098-9fb1-3f84bbaa77a2",
+      "name": "Cala",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Dealroom.co | Barcelona's Cala raises \u20ac7M pre-seed to build a knowledge layer for AI agents",
+         "document": "https://app.dealroom.co/news/note/barcelona-s-cala-raises-7m-pre-seed-to-build-a-knowledge-layer-for-ai-agents",
+         "date": "2026-05-29"
+        },
+        {
+         "name": "Barcelona AI infrastructure startup Cala emerges from stealth with \u20ac7 million pre-seed round",
+         "document": "https://www.startup.eu/investments/cala-7-m-pre-seed-05-2026",
+         "date": "2026-05-11"
+        },
+        {
+         "name": "Dealflow - Issue #513: Embat raised \u20ac30M. Lightspeed makes 1st investment in Spain (Cala). Spain tech report 2026.",
+         "document": "https://dealflow.es/issue/513/embat-raised-30m-lightspeed-makes-1st-investment-in-spain-cala-spain-tech-report-2026",
+         "date": "2026-05-07"
+        },
+        {
+         "name": "Building the verified knowledge graph: Your AI agents need better data",
+         "document": "https://infiniteloop.media/p/building-the-verified-knowledge-graph-your-ai-agents-need-better-data",
+         "date": "2026-06-03"
+        }
+       ],
+       "id": "cb9ef7bb-34e8-4dec-831e-2e88dcc5117f"
+      }
+     },
+     {
+      "id": "32683947-f82a-4809-a1a9-585686739d10",
+      "name": "2501",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/portfolio",
+         "date": "2022-01-01"
+        }
+       ],
+       "id": "f0ac9165-2abe-4fe2-afd5-41dcb029a385"
+      }
+     },
+     {
+      "id": "429be417-3c73-4edb-8c4a-e2c8993aea8c",
+      "name": "Frekuent",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Our Investment in Frekuent: Pioneering the Future of Unattended Retail Payments \u2014 K Fund",
+         "document": "https://www.kfund.vc/post/our-investment-in-frekuent-pioneering-the-future-of-unattended-retail-payments",
+         "date": "2025-03-06"
+        }
+       ],
+       "id": "4c298c25-ad7e-572b-9d35-c28db3f6923e"
+      }
+     },
+     {
+      "id": "5469edaf-d708-48a2-a6e1-c148e3c2ae94",
+      "name": "Pollen",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "The catalyzer of Innovationand Entrepreneurship of Ci\u00eancias ULisboa",
+         "document": "https://teclabs.pt/tec-labs-news/pollen-raises-e3-2-million-and-sets-sights-on-european-expansion",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "b9e76042-1f96-5823-9ea5-003875891bd9"
+      }
+     },
+     {
+      "id": "54e69f9f-0105-48bb-8101-bf8bbd61b1d0",
+      "name": "Zynap",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Dealflow - Spanish startup, tech and Venture Capital news",
+         "document": "https://dealflow.es/issue/454/exoticca-and-libeen-get-25m-heymondo-acquired-4-new-funds",
+         "date": "2026-07-09"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/01/a-new-line-of-defense-cybersecurity-startup-zynap-raises-e5-7-million-for-threat-intelligence/",
+         "date": "2025-01-21",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "9d8a6506-79e6-49cb-a8f6-8def8745acf4"
+      }
+     },
+     {
+      "id": "7430907f-b6d6-4064-9576-c53757c80d2b",
+      "name": "Lumo Homes",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/portfolio",
+         "date": "2022-01-01"
+        }
+       ],
+       "id": "6d5ef7ca-7e45-4b18-854c-017be019bc98"
+      }
+     },
+     {
+      "id": "7fa13d76-cd07-4bcf-9c62-f8efd7acbd30",
+      "name": "MITO",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Reinventing video creation with collaborative AI: Why we invested in MITO \u2014 K Fund",
+         "document": "https://www.kfund.vc/post/reinventing-video-creation-with-collaborative-ai-why-we-invested-in-mito",
+         "date": "2026-03-09"
+        }
+       ],
+       "id": "e34594a2-2c38-54d3-9075-6c7f3a987e29"
+      }
+     },
+     {
+      "id": "81cfdabc-53f7-426a-b358-a942e159ca0f",
+      "name": "Cala AI",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "startup.eu",
+         "document": "https://www.startup.eu/investments/cala-7-m-pre-seed-05-2026",
+         "date": "2026-05-11",
+         "date_precision": "day"
+        },
+        {
+         "name": "dealflow.es",
+         "document": "https://dealflow.es/issue/513/embat-raised-30m-lightspeed-makes-1st-investment-in-spain-cala-spain-tech-report-2026",
+         "date": "2026-05-18",
+         "date_precision": "day"
+        },
+        {
+         "name": "newsletter.dealflow.es",
+         "document": "https://newsletter.dealflow.es/p/dealflowes-513-embat-raised-30m-lightspeed",
+         "date": "2026-05-18",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "linkedin.com",
+         "document": "https://www.linkedin.com/posts/elisendabou_were-finally-open-14-months-ago-activity-7459601462898266112-NJCs",
+         "date": "2026-05-11",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "dealroom.co",
+         "document": "https://dealroom.co/news/130391-barcelonas-cala-raises-7m-pre-seed-to-build-a-knowledge-layer-for-ai-age/",
+         "date": "2026-05-29",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        },
+        {
+         "name": "infiniteloop.media",
+         "document": "https://infiniteloop.media/p/building-the-verified-knowledge-graph-your-ai-agents-need-better-data",
+         "date": "2026-06-03",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "5b2e39db-207a-4af7-8902-85cc1d392525"
+      }
+     },
+     {
+      "id": "8583c875-1a49-4ac6-8ab6-56afd753d18a",
+      "name": "Wide Eyes",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Stylitics acquires our portfolio company Wide Eyes, the advanced visual AI solutions startup for fashion and retail \u2014 K Fund",
+         "document": "https://www.kfund.vc/post/stylitics-acquires-our-portfolio-company-wide-eyes-the-advanced-visual-ai-solutions-startup-for-fashion-and-retail",
+         "date": "2024-02-27"
+        }
+       ],
+       "id": "e4399e1c-3aff-48dd-bfe1-2016eeaac6fd"
+      }
+     },
+     {
+      "id": "8ecb289d-6c04-4fb9-ab08-a007c5ef9fa6",
+      "name": "Tucuvi",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Startups Real - News about startups and entrepreneurs in Spain",
+         "document": "https://startupsreal.com/category/investments",
+         "date": "2026-07-10"
+        }
+       ],
+       "id": "886b8c6b-5c98-5b2c-a84c-2c3cc36b34a9"
+      }
+     },
+     {
+      "id": "9b1e621f-9f3c-4abc-ab7b-f593aeabc255",
+      "name": "LOOK UP",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Look Up secures \u20ac50 million in funding to accelerate the global deployment of its space surveillance radar network, expand its space traffic management services, and scale its international growth.",
+         "document": "https://www.lookupspace.com/blog/look-up-secures-eu50-million-in-funding-to-accelerate-the-global-deployment",
+         "date": "2026-03-03"
+        },
+        {
+         "name": "capital-riesgo.es",
+         "document": "https://capital-riesgo.es/en/articles/kfund-participates-in-50-million-round-at-look-up-to-accelerate-its-global-deployment",
+         "date": "2026-07-09"
+        }
+       ],
+       "id": "46268bba-8399-4fd9-be80-9be1dc54092a",
+       "valid_since": "2025-06-11"
+      }
+     },
+     {
+      "id": "a26ccd22-8986-4fcd-b029-b4b53821f14d",
+      "name": "Zynap",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "fundz.net",
+         "document": "https://www.fundz.net/fundings/zynap-funding-round-series-a-2b7263",
+         "date": "2026-07-09"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/news/zynap-raises-6-million-in-a-seed-extension-round-led-by-kibo-ventures-and-kfund-joined-by-angel-investors-in-spain",
+         "date": "2026-07-09"
+        }
+       ],
+       "id": "1a6ee4a0-90cd-4a4b-b20b-10319985d5d1"
+      }
+     },
+     {
+      "id": "a2c0d14b-f783-47f5-bafd-4091c44da67c",
+      "name": "Alinia AI, Inc.",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/portfolio",
+         "date": "2022-01-01"
+        }
+       ],
+       "id": "64f3121a-e1a6-4789-8ac5-50afb1740f86"
+      }
+     },
+     {
+      "id": "a3715bbc-d851-4a7f-a2eb-0f1b9f39f799",
+      "name": "2501",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/portfolio",
+         "date": "2022-01-01"
+        }
+       ],
+       "id": "bd66e925-f99a-44ef-b5c5-f3f0c454ba87"
+      }
+     },
+     {
+      "id": "b53ea560-5dbd-46a5-9f89-5a37a8df75a0",
+      "name": "Base4 Biosciences",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Cinco D\u00edas: econom\u00eda y mercados",
+         "document": "https://cincodias.elpais.com/companias/2026-04-22/base4-biosciences-cierra-una-ronda-con-kfund-baobab-ventures-itnig-y-masia-vc-para-su-ia-de-deteccion-de-enfermedades.html",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "capital-riesgo.es",
+         "document": "https://capital-riesgo.es/es/articles/tags/base4+biosciences",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "9fafaee8-978b-5905-8645-0c53758ea3d7"
+      }
+     },
+     {
+      "id": "b9d6ab48-be9b-48da-a871-401243ee5262",
+      "name": "InfiniteWatch",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/infinite-watch/__2i4_Y2_YTUUIcjBPZNv5uq8RfG0Vcdh8xnZ2bwzhp0I",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/infinitewatch/__2i4_Y2_YTUUIcjBPZNv5uq8RfG0Vcdh8xnZ2bwzhp0I",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/infinite-watch/__2i4_Y2_YTUUIcjBPZNv5uq8RfG0Vcdh8xnZ2bwzhp0I/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/infinitewatch/news_and_analysis",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/person/sergio-furio/person_overview_investor/timeline",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/1232246-89",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "d71cf621-07e0-49d6-9503-0b1e37250853"
+      }
+     },
+     {
+      "id": "bdacede2-378c-4221-aeeb-3462c6e3c62d",
+      "name": "Pollen",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "www.kfund.vc",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Technology & Data for Venture Capital, Corp Dev, Investment Banks",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Dealflow - Spanish startup, tech and Venture Capital news",
+         "document": "https://dealflow.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "es.linkedin.com",
+         "document": "https://es.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "mindmaps.dka.global",
+         "document": "https://mindmaps.dka.global/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Our Investment in Frekuent: Pioneering the Future of Unattended Retail Payments \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Marketing4eCommerce | Noticias y tendencias de marketing y eCommerce",
+         "document": "https://marketing4ecommerce.net/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund | LinkedIn",
+         "document": "https://es.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Why we\u2019re doubling down on Abacum: Real-time finance, real strategic impact \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Reinventing video creation with collaborative AI: Why we invested in MITO \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Startups Real - News about startups and entrepreneurs in Spain",
+         "document": "https://startupsreal.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "fundz.net",
+         "document": "https://www.fundz.net/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Failory: 90% of Startups Fail \u2014 Learn How Not To.",
+         "document": "https://www.failory.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "capital-riesgo.es",
+         "document": "https://capital-riesgo.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Look Up secures \u20ac50 million in funding to accelerate the global deployment of its space surveillance radar network, expand its space traffic management services, and scale its international growth.",
+         "document": "https://www.lookupspace.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The catalyzer of Innovationand Entrepreneurship of Ci\u00eancias ULisboa",
+         "document": "https://teclabs.pt/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Stylitics acquires our portfolio company Wide Eyes, the advanced visual AI solutions startup for fashion and retail \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cinco D\u00edas: econom\u00eda y mercados",
+         "document": "https://cincodias.elpais.com/",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "a1bfaac5-8459-557a-a9f1-4d479292d964"
+      }
+     },
+     {
+      "id": "c7a1ff6f-d18c-4931-8efe-7d94ad79c980",
+      "name": "Tucuvi",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "www.kfund.vc",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Technology & Data for Venture Capital, Corp Dev, Investment Banks",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Dealflow - Spanish startup, tech and Venture Capital news",
+         "document": "https://dealflow.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "es.linkedin.com",
+         "document": "https://es.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "mindmaps.dka.global",
+         "document": "https://mindmaps.dka.global/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Our Investment in Frekuent: Pioneering the Future of Unattended Retail Payments \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Marketing4eCommerce | Noticias y tendencias de marketing y eCommerce",
+         "document": "https://marketing4ecommerce.net/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund | LinkedIn",
+         "document": "https://es.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Why we\u2019re doubling down on Abacum: Real-time finance, real strategic impact \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Reinventing video creation with collaborative AI: Why we invested in MITO \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Startups Real - News about startups and entrepreneurs in Spain",
+         "document": "https://startupsreal.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "fundz.net",
+         "document": "https://www.fundz.net/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Failory: 90% of Startups Fail \u2014 Learn How Not To.",
+         "document": "https://www.failory.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "capital-riesgo.es",
+         "document": "https://capital-riesgo.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Look Up secures \u20ac50 million in funding to accelerate the global deployment of its space surveillance radar network, expand its space traffic management services, and scale its international growth.",
+         "document": "https://www.lookupspace.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The catalyzer of Innovationand Entrepreneurship of Ci\u00eancias ULisboa",
+         "document": "https://teclabs.pt/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Stylitics acquires our portfolio company Wide Eyes, the advanced visual AI solutions startup for fashion and retail \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cinco D\u00edas: econom\u00eda y mercados",
+         "document": "https://cincodias.elpais.com/",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "3635f782-62e3-540c-999f-3371a71a587d"
+      }
+     },
+     {
+      "id": "d108a1a5-d9cc-42f8-87f4-3872b111c5a5",
+      "name": "Factorial",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/news/articles/factorial-hr-europe-unicorn",
+         "date": "2026-07-09"
+        }
+       ],
+       "id": "a2d2ce2f-a6ff-4208-af72-c76863da0670"
+      }
+     },
+     {
+      "id": "d3e58b16-2148-4703-8f79-9fcbdb404ad4",
+      "name": "bcome",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/portfolio",
+         "date": "2022-01-01"
+        }
+       ],
+       "id": "71ddd570-a6c7-461b-b8cb-e3b0beeda263"
+      }
+     },
+     {
+      "id": "d3fa5226-39ee-4e2d-a9b6-0f2a6d6bb1cd",
+      "name": "Mafer",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "startuprise.co.uk",
+         "document": "https://startuprise.co.uk/mafer-ai-raises-e2m-to-build-ai-platform-for-rd-teams-in-formulation-industries/",
+         "date": "2026-05-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "thesaasnews.com",
+         "document": "https://www.thesaasnews.com/news/mafer-ai-raises-2m-pre-seed/",
+         "date": "2026-06-02",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "92e5838d-dd98-45df-8b12-03b426591dbd"
+      }
+     },
+     {
+      "id": "d60ae203-195c-47e2-8736-ddf93b663657",
+      "name": "InfiniteWatch",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/news/smowltech-closed-a-165-million-investment-round-led-by-the-bolsa-social-fund-and-sparkmind-vc",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/news/infinitewatch-raised-a-4-million-pre-seed-round-led-by-base10-partners-with-additional-backing-from-sequoia-and-a16z-scouts-kfund-kibo-lifex",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "a0e9492a-126a-56b2-a4df-abb5ba691433"
+      }
+     },
+     {
+      "id": "d727c020-0520-4bd6-b641-3da88d1cb02b",
+      "name": "BLISS",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Our investment in Bliss: Building the AI infrastructure layer for insurance distribution in Brazil \u2014 K Fund",
+         "document": "https://www.kfund.vc/post/our-investment-in-bliss-building-the-ai-infrastructure-layer-for-insurance-distribution-in-brazil",
+         "date": "2026-04-23"
+        }
+       ],
+       "id": "a277cd01-9af3-505c-8e8a-d67d357dd636"
+      }
+     },
+     {
+      "id": "db3ff836-a359-456d-8fcd-7ec7b68fa720",
+      "name": "Aldara",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "\u2022 Latinamerican VC, Startup and Tech News",
+         "document": "https://contxto.com/es/proptech",
+         "date": "2026-08-31"
+        }
+       ],
+       "id": "fe086c76-cf5c-5ad3-b7a3-c307327dfbb0"
+      }
+     },
+     {
+      "id": "db95edaa-058f-494d-a4f4-5f56bf81afd9",
+      "name": "Amenitiz",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "The Silent Backbone of Independent Hospitality: Why We Invested in Amenitiz \u2014 K Fund",
+         "document": "https://www.kfund.vc/post/the-silent-backbone-of-independent-hospitality-why-we-invested-in-amenitiz",
+         "date": "2026-03-09"
+        }
+       ],
+       "id": "5e587298-c0cb-5882-9180-66dff49e369b"
+      }
+     },
+     {
+      "id": "dc15260e-c6b7-41cb-aa1d-90e32914ce72",
+      "name": "Bdeo",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/portfolio",
+         "date": "2022-01-01"
+        }
+       ],
+       "id": "32a95023-81f3-4ce5-b1ab-6c83e7eab8de"
+      }
+     },
+     {
+      "id": "e037d607-453b-41bd-8756-47864d49db65",
+      "name": "QuiverAI",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "app.dealroom.co",
+         "document": "https://app.dealroom.co/companies/quiverai",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "9cd37fb4-f0c6-542d-ba30-c5f7167f52e9"
+      }
+     },
+     {
+      "id": "ee8dd31d-eff3-4772-a2b9-822ada157ba6",
+      "name": "CRESCENTA INVESTMENTS, SGIIC SA",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Our investment in Crescenta: democratizing access to private markets \u2014 K Fund",
+         "document": "https://www.kfund.vc/post/our-investment-in-crescenta-democratizing-access-to-private-markets",
+         "date": "2024-02-27"
+        },
+        {
+         "name": "www.crescenta.com",
+         "document": "https://www.crescenta.com/dam/jcr:dba4a8e4-709c-4880-8c0e-d9c2cf6206e5/2025.01.22%20NdP_Crescenta%20cierra%20una%20ronda%20de%20financiaci%C3%B3n%20de%207%20millones%20de%20euros%20liderada%20por%20Acurio%20Ventures%20y%20Kfund.pdf",
+         "date": "2026-07-09"
+        }
+       ],
+       "id": "f77a2543-9349-40e9-901c-b001531f8174",
+       "valid_since": "2025-01-22"
+      }
+     },
+     {
+      "id": "f1195e81-d399-4f6e-a3ed-7021731b7255",
+      "name": "Look Up",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "www.kfund.vc",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Technology & Data for Venture Capital, Corp Dev, Investment Banks",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Dealflow - Spanish startup, tech and Venture Capital news",
+         "document": "https://dealflow.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "es.linkedin.com",
+         "document": "https://es.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "mindmaps.dka.global",
+         "document": "https://mindmaps.dka.global/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Our Investment in Frekuent: Pioneering the Future of Unattended Retail Payments \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Marketing4eCommerce | Noticias y tendencias de marketing y eCommerce",
+         "document": "https://marketing4ecommerce.net/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund | LinkedIn",
+         "document": "https://es.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Why we\u2019re doubling down on Abacum: Real-time finance, real strategic impact \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Reinventing video creation with collaborative AI: Why we invested in MITO \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Startups Real - News about startups and entrepreneurs in Spain",
+         "document": "https://startupsreal.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "fundz.net",
+         "document": "https://www.fundz.net/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Failory: 90% of Startups Fail \u2014 Learn How Not To.",
+         "document": "https://www.failory.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "capital-riesgo.es",
+         "document": "https://capital-riesgo.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Look Up secures \u20ac50 million in funding to accelerate the global deployment of its space surveillance radar network, expand its space traffic management services, and scale its international growth.",
+         "document": "https://www.lookupspace.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The catalyzer of Innovationand Entrepreneurship of Ci\u00eancias ULisboa",
+         "document": "https://teclabs.pt/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Stylitics acquires our portfolio company Wide Eyes, the advanced visual AI solutions startup for fashion and retail \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cinco D\u00edas: econom\u00eda y mercados",
+         "document": "https://cincodias.elpais.com/",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "054d8927-fafc-5226-9483-92c703fb7868"
+      }
+     },
+     {
+      "id": "f7daa254-a8f6-4e11-b420-ad35a090eb3e",
+      "name": "Sa\u00fade Bliss",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "capital-riesgo.es",
+         "document": "https://capital-riesgo.es/en/articles/kfund-co-leads-a-9-5-million-funding-round-for-bliss-to-optimize-health-insurance-sales-in-brazil",
+         "date": "2026-07-22"
+        }
+       ],
+       "id": "a877a5f6-b170-4e89-a381-ca4d743d5148",
+       "valid_since": "2026-03-25"
+      }
+     },
+     {
+      "id": "fb5dcb66-2de2-4e82-a478-9b66beac6f17",
+      "name": "Omnia",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/10/with-e3-5-million-in-funding-spanish-startup-omnia-is-helping-brands-stand-out-across-ai-platforms",
+         "date": "2026-07-22"
+        }
+       ],
+       "id": "8276ce20-584f-5d70-b479-f990df0055e5"
+      }
+     },
+     {
+      "id": "fc612a84-2309-41c6-9450-23ff8c6a9db0",
+      "name": "Traza",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "SMNTCN",
+         "document": "https://smntcn.com/en/article/traza-privlekaet-21-milliona-dlya-avtomatizatsii-zakupok-s-pomoshchyu-ii-1308",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "07b84155-b338-5379-9fc0-b8136ac9ad5c"
+      }
+     },
+     {
+      "id": "fc9b463a-a6db-41e7-ba8c-b94e51a163e3",
+      "name": "Causa Prima",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Seedtable: Connect with fast-growing startups at the perfect moment",
+         "document": "https://seedtable.com/companies/causa-prima/funding-rounds/pre-seed-2026-06",
+         "date": "2026-09-17"
+        },
+        {
+         "name": "SaaS B2B Fundraising News | The SaaS News",
+         "document": "https://www.thesaasnews.com/news/causa-prima-raises-10m-pre-seed",
+         "date": "2026-09-17"
+        },
+        {
+         "name": "Europe\u2019s Most Complete Startup Investment Tracker",
+         "document": "https://www.startup.eu/investments/causa-prima-10-m-pre-seed-06-2026",
+         "date": "2026-09-17"
+        },
+        {
+         "name": "Dealroom.co | Mapping the world's tech ecosystems",
+         "document": "https://dealroom.co/news/134810-causa-prima-raises-10m-pre-seed-led-by-creandum-for-agent-to-agent-b2b-p",
+         "date": "2026-09-17"
+        },
+        {
+         "name": "thedisruptormag.com",
+         "document": "https://thedisruptormag.com/causa-prima-raises-10-million-pre-seed-round-backed-by-borusan-ventures-and-creandum",
+         "date": "2026-09-17"
+        },
+        {
+         "name": "Seedtable: Connect with fast-growing startups at the perfect moment",
+         "document": "https://seedtable.com/companies/causa-prima",
+         "date": "2026-09-17"
+        },
+        {
+         "name": "fortune.com",
+         "document": "https://fortune.com/2026/10/13/startup-causa-prima-20-million-billing-disputes-ai-agents/",
+         "date": "2026-10-13",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "forbes.es",
+         "document": "https://forbes.es/ultima-hora/1043071/la-tecnologica-causa-prima-capta-18-millones-de-euros-en-una-nueva-ronda-y-sube-su-financiacion-a-27-millones/",
+         "date": "2026-10-13",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "20a51156-febe-56a3-b31d-8795d7188693"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "7cd8444d-d757-5687-8402-ba78f1c4f264",
+      "name": "Pre-Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "startuprise.co.uk",
+         "document": "https://startuprise.co.uk/mafer-ai-raises-e2m-to-build-ai-platform-for-rd-teams-in-formulation-industries/",
+         "date": "2026-05-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "thesaasnews.com",
+         "document": "https://www.thesaasnews.com/news/mafer-ai-raises-2m-pre-seed/",
+         "date": "2026-06-02",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "b6da05f5-26a9-5b16-a998-cddaa00cf968"
+      }
+     },
+     {
+      "id": "c69676e8-9a3c-5aa7-8e1c-e65893e84a6a",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/01/a-new-line-of-defense-cybersecurity-startup-zynap-raises-e5-7-million-for-threat-intelligence/",
+         "date": "2025-01-21",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "is_lead": true,
+       "id": "db5f54f8-fec7-5d7c-a174-2ebd97bc18df"
+      }
+     },
+     {
+      "id": "f13cba6a-aca3-5346-86f9-72adb6340709",
+      "name": "Pre-Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "startup.eu",
+         "document": "https://www.startup.eu/investments/cala-7-m-pre-seed-05-2026",
+         "date": "2026-05-11",
+         "date_precision": "day"
+        },
+        {
+         "name": "dealflow.es",
+         "document": "https://dealflow.es/issue/513/embat-raised-30m-lightspeed-makes-1st-investment-in-spain-cala-spain-tech-report-2026",
+         "date": "2026-05-18",
+         "date_precision": "day"
+        },
+        {
+         "name": "newsletter.dealflow.es",
+         "document": "https://newsletter.dealflow.es/p/dealflowes-513-embat-raised-30m-lightspeed",
+         "date": "2026-05-18",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "linkedin.com",
+         "document": "https://www.linkedin.com/posts/elisendabou_were-finally-open-14-months-ago-activity-7459601462898266112-NJCs",
+         "date": "2026-05-11",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "dealroom.co",
+         "document": "https://dealroom.co/news/130391-barcelonas-cala-raises-7m-pre-seed-to-build-a-knowledge-layer-for-ai-age/",
+         "date": "2026-05-29",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        },
+        {
+         "name": "infiniteloop.media",
+         "document": "https://infiniteloop.media/p/building-the-verified-knowledge-graph-your-ai-agents-need-better-data",
+         "date": "2026-06-03",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "f10b8f31-147d-5f16-8a3b-fd4c550dba01"
+      }
+     },
+     {
+      "id": "ffee4e4b-e11f-5e5c-9b89-973eca45bc17",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "fortune.com",
+         "document": "https://fortune.com/2026/10/13/startup-causa-prima-20-million-billing-disputes-ai-agents/",
+         "date": "2026-10-13",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "forbes.es",
+         "document": "https://forbes.es/ultima-hora/1043071/la-tecnologica-causa-prima-capta-18-millones-de-euros-en-una-nueva-ronda-y-sube-su-financiacion-a-27-millones/",
+         "date": "2026-10-13",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/causa-prima-10m-pre-seed-creandum-b2b-payments-ai-agents-network/",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "thesaasnews.com",
+         "document": "https://www.thesaasnews.com/news/causa-prima-raises-10m-pre-seed/",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "startbase.com",
+         "document": "https://www.startbase.com/news/causa-prima-sammelt-10-millionen-us-dollar-fuer-ki-netzwerk-im-b2b-finanzwesen-ein",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "fd1ca789-2972-5aaa-a18f-b620008ae159"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_CORPORATE_EVENT": [
+     {
+      "id": "0036ff50-f76b-4e0c-a3b0-a590fe5bbe9f",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Look Up secures \u20ac50 million in funding to accelerate the global deployment of its space surveillance radar network, expand its space traffic management services, and scale its international growth.",
+         "document": "https://www.lookupspace.com/blog/look-up-secures-eu50-million-in-funding-to-accelerate-the-global-deployment",
+         "date": "2026-03-03"
+        },
+        {
+         "name": "www.eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/06/french-spacetech-startup-look-up-lands-e50-million-to-tackle-space-collisions-with-radar-tech",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "French SSA company Look Up raises 50 million euros",
+         "document": "https://spacenews.com/french-ssa-company-look-up-raises-50-million-euros",
+         "date": "2025-06-13"
+        },
+        {
+         "name": "www.satellitetoday.com",
+         "document": "https://www.satellitetoday.com/finance/2025/06/12/look-up-secures-funding-as-it-aims-to-make-waves-in-sda-space",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Look Up secures \u20ac50m in funding to accelerate the global deployment of its space surveillance radar network",
+         "document": "https://www.karista.vc/stories/look-up-secures-eu50m-in-funding",
+         "date": "2025-06-12"
+        }
+       ],
+       "event_date": "2025-06-11",
+       "id": "3fd143ff-6150-4d89-a044-66835175899c"
+      }
+     },
+     {
+      "id": "202fac90-a76b-40b2-9ae8-f8969547df49",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/tucuvi/__yQiJieZ1zjklaIcdyu9_0pX_1l2rUKBber4mIJ7Xa7I/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/tucuvi/__yQiJieZ1zjklaIcdyu9_0pX_1l2rUKBber4mIJ7Xa7I",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/436813-75",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/tucuvi",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2026-01-08",
+       "id": "decf4d09-c380-481a-9b6d-da63fc1e7673"
+      }
+     },
+     {
+      "id": "579663a3-cd6b-4cff-9c21-5f666e2987da",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Dealroom.co | Barcelona's Cala raises \u20ac7M pre-seed to build a knowledge layer for AI agents",
+         "document": "https://app.dealroom.co/news/note/barcelona-s-cala-raises-7m-pre-seed-to-build-a-knowledge-layer-for-ai-agents",
+         "date": "2026-05-29"
+        },
+        {
+         "name": "Barcelona AI infrastructure startup Cala emerges from stealth with \u20ac7 million pre-seed round",
+         "document": "https://www.startup.eu/investments/cala-7-m-pre-seed-05-2026",
+         "date": "2026-05-11"
+        },
+        {
+         "name": "Dealflow - Issue #513: Embat raised \u20ac30M. Lightspeed makes 1st investment in Spain (Cala). Spain tech report 2026.",
+         "document": "https://dealflow.es/issue/513/embat-raised-30m-lightspeed-makes-1st-investment-in-spain-cala-spain-tech-report-2026",
+         "date": "2026-05-07"
+        },
+        {
+         "name": "Building the verified knowledge graph: Your AI agents need better data",
+         "document": "https://infiniteloop.media/p/building-the-verified-knowledge-graph-your-ai-agents-need-better-data",
+         "date": "2026-06-03"
+        }
+       ],
+       "event_date": "2026-05-01",
+       "id": "18da1687-6b4f-4892-898c-68090a442862"
+      }
+     },
+     {
+      "id": "5c28c9c5-cb6b-4a9c-8e99-c62d0b2c13ab",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Aktiia secures $42 million in Series B funding round and rebrands to Hilo",
+         "document": "https://www.prnewswire.com/news-releases/aktiia-secures-42-million-in-series-b-funding-round-and-rebrands-to-hilo-302444697.html",
+         "date": "2025-05-02"
+        },
+        {
+         "name": "www.massdevice.com",
+         "document": "https://www.massdevice.com/aktiia-42m-blood-pressure-monitoring-tech",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "Aktiia Raises $42 M in Series B and Becomes Hilo",
+         "document": "https://hilo.com/en-gb/blogs/pre/hilo-42m-series-b-rebrand",
+         "date": "2026-05-06"
+        },
+        {
+         "name": "Molten participates in $42 million Series B for Aktiia/Hilo",
+         "document": "https://www.moltenventures.com/news/molten-participates-in-42-million-series-b-in-aktiia-as-it-rebrands-to-hilo",
+         "date": "2025-05-01"
+        },
+        {
+         "name": "Aktiia secures $42 million in Series B funding round and rebrands to Hilo - Wellington",
+         "document": "https://wellington-partners.com/aktiia-secures-42-million-in-series-b-funding-round-and-rebrands-to-hilo",
+         "date": "2025-05-01"
+        }
+       ],
+       "event_date": "2025-05-01",
+       "id": "2c73bada-ca3a-413c-8cb1-57469a5f238c"
+      }
+     },
+     {
+      "id": "bf92b6fd-07ba-4749-a586-e27244cdc8f0",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/pollen-3-2m-seed-rui-bento-uber-universal-battery-swapping-europe",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Pollen raises \u20ac3.2M to expand universal battery swapping network for two-wheelers",
+         "document": "https://portugalstartupnews.com/2026/05/17/pollen-raises-e3-2m-to-expand-universal-battery-swapping-network-for-two-wheelers",
+         "date": "2026-05-17"
+        },
+        {
+         "name": "Pollen is building the battery-swapping network electric motorcycles have been waiting for",
+         "document": "https://tech.eu/2026/07/15/pollen-is-building-the-battery-swapping-network-electric-motorcycles-have-been-waiting-for",
+         "date": "2026-07-15"
+        },
+        {
+         "name": "Lisbon\u2019s Pollen Raises \u20ac3.2M to Build a Universal Battery-Swap Network \u2014 Co-Led by Sweden\u2019s Pale Blue Dot | NorthSouth HQ",
+         "document": "https://www.northsouthhq.com/articles/pollen-battery-swap-pale-blue-dot-sweden-seed-lisbon-june-2026.html",
+         "date": "2026-06-03"
+        }
+       ],
+       "event_date": "2026-05-07",
+       "id": "4791a1d7-7367-4a14-b2a7-09772b014c34"
+      }
+     },
+     {
+      "id": "ce4abb0a-9196-49dd-bb6a-175447d2b076",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/509628-79",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "bec7b3f6-c4b6-405e-9ff9-83a38e917359"
+      }
+     },
+     {
+      "id": "ea91634d-f399-4065-9b8b-c3373fcf8e8f",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/infinite-watch/__2i4_Y2_YTUUIcjBPZNv5uq8RfG0Vcdh8xnZ2bwzhp0I",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/infinitewatch/__2i4_Y2_YTUUIcjBPZNv5uq8RfG0Vcdh8xnZ2bwzhp0I",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/infinite-watch/__2i4_Y2_YTUUIcjBPZNv5uq8RfG0Vcdh8xnZ2bwzhp0I/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/infinitewatch/news_and_analysis",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/person/sergio-furio/person_overview_investor/timeline",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/1232246-89",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2025-12-18",
+       "id": "8cfca6d0-f531-4c3e-938b-aa540bc6cc71"
+      }
+     },
+     {
+      "id": "fd0284d7-4469-44bc-a96b-d2cd68b33cdb",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/tucuvi/__yQiJieZ1zjklaIcdyu9_0pX_1l2rUKBber4mIJ7Xa7I/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/tucuvi/__yQiJieZ1zjklaIcdyu9_0pX_1l2rUKBber4mIJ7Xa7I",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/436813-75",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2026-01-08",
+       "id": "51ad4ac7-2232-4565-97d4-c69fb70b47a1"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "21774ccd-d5c5-4fa2-8ed1-ac3d20b46339",
+      "name": "PRIVATE_EQUITY",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "es.linkedin.com",
+         "document": "https://es.linkedin.com/company/kfund",
+         "date": "2026-07-22"
+        }
+       ],
+       "id": "3022e3be-bc06-492d-8c14-8bc2ef7f22d0"
+      }
+     },
+     {
+      "id": "8190c30d-2703-40ab-94d0-6c193cb53908",
+      "name": "FINTECH",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/investors/venture-capital-firms-in-spain",
+         "date": "2026-07-03"
+        }
+       ],
+       "id": "e4c6f325-af8d-4ebb-ad31-9e4ba659aa1f"
+      }
+     },
+     {
+      "id": "8ecf5e57-a149-438c-9eb4-089809bade56",
+      "name": "SOFTWARE_AND_SERVICES",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "Tech.eu - European Startup, Funding and Technology News",
+         "document": "https://tech.eu/tag/spain",
+         "date": "2026-07-02"
+        }
+       ],
+       "id": "d427b4b4-2f78-46f2-9ec5-ddc665228956"
+      }
+     },
+     {
+      "id": "f48ebf95-99ea-4756-99cc-8a2a2d71f2e2",
+      "name": "VENTURE_CAPITAL",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "Startups Real - News about startups and entrepreneurs in Spain",
+         "document": "https://startupsreal.com/category/investments",
+         "date": "2026-07-10"
+        }
+       ],
+       "id": "5ccc27a8-544c-5d77-90db-6a854bbd53f6",
+       "valid_since": "2019-01-01"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "01c0d729-be62-48e2-aeaf-313dfe311c61",
+      "name": "Abacum",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "www.kfund.vc",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Technology & Data for Venture Capital, Corp Dev, Investment Banks",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Dealflow - Spanish startup, tech and Venture Capital news",
+         "document": "https://dealflow.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "es.linkedin.com",
+         "document": "https://es.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "mindmaps.dka.global",
+         "document": "https://mindmaps.dka.global/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Our Investment in Frekuent: Pioneering the Future of Unattended Retail Payments \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Marketing4eCommerce | Noticias y tendencias de marketing y eCommerce",
+         "document": "https://marketing4ecommerce.net/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund | LinkedIn",
+         "document": "https://es.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Why we\u2019re doubling down on Abacum: Real-time finance, real strategic impact \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Reinventing video creation with collaborative AI: Why we invested in MITO \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Startups Real - News about startups and entrepreneurs in Spain",
+         "document": "https://startupsreal.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "fundz.net",
+         "document": "https://www.fundz.net/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Failory: 90% of Startups Fail \u2014 Learn How Not To.",
+         "document": "https://www.failory.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "capital-riesgo.es",
+         "document": "https://capital-riesgo.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Look Up secures \u20ac50 million in funding to accelerate the global deployment of its space surveillance radar network, expand its space traffic management services, and scale its international growth.",
+         "document": "https://www.lookupspace.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The catalyzer of Innovationand Entrepreneurship of Ci\u00eancias ULisboa",
+         "document": "https://teclabs.pt/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Stylitics acquires our portfolio company Wide Eyes, the advanced visual AI solutions startup for fashion and retail \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cinco D\u00edas: econom\u00eda y mercados",
+         "document": "https://cincodias.elpais.com/",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "07d4cda5-0937-567b-bc9c-5f06997941a2"
+      }
+     },
+     {
+      "id": "2bdea5e8-a630-4098-9fb1-3f84bbaa77a2",
+      "name": "Cala",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "#30 Elisenda Bou: from Barcelona to building robots in MIT & NASA, founding AI startup, and being acquired by Apple",
+         "document": "https://www.viewsbypol.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Dem\u00f3crata | Medio pol\u00edtico de referencia para los que deciden",
+         "document": "https://www.democrata.es/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "https://startup-seeker.com/company/cala~ai",
+         "document": "https://startup-seeker.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Building the verified knowledge graph: Your AI agents need better data",
+         "document": "https://infiniteloop.media/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "dealroom.co",
+         "document": "https://app.dealroom.co/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Ferrovial SE (FER) Shareholder/Analyst Call Prepared Remarks Transcript",
+         "document": "https://www.seekingalpha.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "wa4steam.com",
+         "document": "https://wa4steam.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "#wa4steam #steam #womenintech #investors #wa4steamawards #bestentrepreneur #womeninsteam #leadership #innovation #barcelona | WA4STEAM",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Elisenda Bou-Balust",
+         "document": "https://eel.upc.edu/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Dealroom.co | Barcelona's Cala raises \u20ac7M pre-seed to build a knowledge layer for AI agents",
+         "document": "https://app.dealroom.co/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Barcelona AI infrastructure startup Cala emerges from stealth with \u20ac7 million pre-seed round",
+         "document": "https://www.startup.eu/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Angel fund Masia launches today with the goal of deploying \u20ac20 million across startups in Barcelona | EU-Startups | Audacious Investor\u2122\ufe0f",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Issey Masuda Mora",
+         "document": "https://bilbostack.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://www.4yfn.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "I serendipitously said yes to an unexpected role at Cala and this is how my onboarding week went: Monday - first day, new office, breakfast with the team, laptop setup Wednesday - jump on stage to\u2026 | \u00b7 Elies Delgado Tamarit \u00b7 | 32 comments",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Dealflow - Issue #513: Embat raised \u20ac30M. Lightspeed makes 1st investment in Spain (Cala). Spain tech report 2026.",
+         "document": "https://dealflow.es/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Home | TheFutureParty",
+         "document": "https://www.futureparty.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Cala | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "es.linkedin.com",
+         "document": "https://es.linkedin.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Euro Seed 50 | Creandum",
+         "document": "https://euroseed50.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Dealroom",
+         "document": "https://app.dealroom.co/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Two years ago, when Elisenda Bou-Balust , member of Masia\u2019s Advisory Board, and Pau Agullo first told us about FriquiFund, it was immediately clear to me that this was something we wanted \u2014 and\u2026 | Carlos Trenchs Sainz de la Maza",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "AI Daily - Latest AI News, Research & Technology Updates",
+         "document": "https://ai-daily.news/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "https://www.zonebourse.com/insider/BALUST-ELISENDA-BOU-A2617K",
+         "document": "https://www.zonebourse.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Forbes Espa\u00f1a: Nada personal, solo negocios - Forbes Espa\u00f1a",
+         "document": "https://forbes.es/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "www.marketscreener.com",
+         "document": "https://www.marketscreener.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Home Page",
+         "document": "https://www.pymnts.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Bilbostack",
+         "document": "https://bilbostack.com/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "https://www.wikidata.org/wiki/Q77862013",
+         "document": "https://www.wikidata.org/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Clara Ventures",
+         "document": "https://www.clara.ventures/",
+         "date": "2026-08-12"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://4yfn.com/",
+         "date": "2026-08-12"
+        }
+       ],
+       "id": "4875af79-033d-501f-b418-edbe88739262"
+      }
+     },
+     {
+      "id": "3303472b-77bc-416a-b29b-5d6c4bf81b8a",
+      "name": "SHAKERS GLOBAL SOLUTIONS SL",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Dealflow - Spanish startup, tech and Venture Capital news",
+         "document": "https://dealflow.es/issue/467/heura-gets-20m-cdti-is-on-fire-percentil-wak-face-similar-fate",
+         "date": "2026-07-25"
+        }
+       ],
+       "id": "cefdf42d-2818-5153-ae78-55b224faaee7"
+      }
+     },
+     {
+      "id": "3a9c0371-21e0-46d0-a15d-df434973dd7d",
+      "name": "Genesy",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "SaaS B2B Fundraising News | The SaaS News",
+         "document": "https://www.thesaasnews.com/news/genesy-raises-5-million-in-seed-round",
+         "date": "2026-07-22"
+        },
+        {
+         "name": "bouncewatch.com",
+         "document": "https://bouncewatch.com/company/genesy-ai",
+         "date": "2026-07-22"
+        }
+       ],
+       "id": "96dfe309-e892-59fb-b146-0be9213d3f17"
+      }
+     },
+     {
+      "id": "5469edaf-d708-48a2-a6e1-c148e3c2ae94",
+      "name": "Pollen",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "The catalyzer of Innovationand Entrepreneurship of Ci\u00eancias ULisboa",
+         "document": "https://teclabs.pt/tec-labs-news/pollen-raises-e3-2-million-and-sets-sights-on-european-expansion",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "b06744a5-9e06-56d9-b417-c84bda092c59"
+      }
+     },
+     {
+      "id": "57dcbb4a-e060-42b3-9f16-d1b96372ef9b",
+      "name": "Tucuvi",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/166765-24",
+         "date": "2026-08-31"
+        },
+        {
+         "name": "El Referente, revista l\u00edder en startups e innovaci\u00f3n en Espa\u00f1a",
+         "document": "https://elreferente.es/tag/leadwind",
+         "date": "2026-08-31"
+        }
+       ],
+       "id": "3523315c-5468-567b-b48f-7991ebab9d59"
+      }
+     },
+     {
+      "id": "5b46ef66-1a9c-4306-ab6d-9d2c57dda8d4",
+      "name": "Crescenta",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/news/crescenta-cierra-una-ronda-de-financiaci%C3%B3n-de-cinco-millones-liderada-por-kfund",
+         "date": "2026-08-31"
+        }
+       ],
+       "id": "9925d4d5-1677-58b2-87c4-b7a6b5f102e9"
+      }
+     },
+     {
+      "id": "7c68c8ff-aa38-4072-bd22-59bfc9829fef",
+      "name": "SALUPRO SPAIN SL",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "bouncewatch.com",
+         "document": "https://bouncewatch.com/explore/startup/salupro",
+         "date": "2026-08-26"
+        }
+       ],
+       "id": "1274b9ca-8d01-5859-900c-6ed8d180dd05"
+      }
+     },
+     {
+      "id": "7fa13d76-cd07-4bcf-9c62-f8efd7acbd30",
+      "name": "MITO",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "www.kfund.vc",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Technology & Data for Venture Capital, Corp Dev, Investment Banks",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Dealflow - Spanish startup, tech and Venture Capital news",
+         "document": "https://dealflow.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "es.linkedin.com",
+         "document": "https://es.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "mindmaps.dka.global",
+         "document": "https://mindmaps.dka.global/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Our Investment in Frekuent: Pioneering the Future of Unattended Retail Payments \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Marketing4eCommerce | Noticias y tendencias de marketing y eCommerce",
+         "document": "https://marketing4ecommerce.net/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund | LinkedIn",
+         "document": "https://es.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Why we\u2019re doubling down on Abacum: Real-time finance, real strategic impact \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Reinventing video creation with collaborative AI: Why we invested in MITO \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Startups Real - News about startups and entrepreneurs in Spain",
+         "document": "https://startupsreal.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "fundz.net",
+         "document": "https://www.fundz.net/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Failory: 90% of Startups Fail \u2014 Learn How Not To.",
+         "document": "https://www.failory.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "capital-riesgo.es",
+         "document": "https://capital-riesgo.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Look Up secures \u20ac50 million in funding to accelerate the global deployment of its space surveillance radar network, expand its space traffic management services, and scale its international growth.",
+         "document": "https://www.lookupspace.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The catalyzer of Innovationand Entrepreneurship of Ci\u00eancias ULisboa",
+         "document": "https://teclabs.pt/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Stylitics acquires our portfolio company Wide Eyes, the advanced visual AI solutions startup for fashion and retail \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cinco D\u00edas: econom\u00eda y mercados",
+         "document": "https://cincodias.elpais.com/",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "d5df8082-0bd6-5da1-9de5-05a4a8ff4dbd"
+      }
+     },
+     {
+      "id": "8ecb289d-6c04-4fb9-ab08-a007c5ef9fa6",
+      "name": "Tucuvi",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "app.fundz.net",
+         "document": "https://app.fundz.net/fundings/tucuvi-funding-round-series-a-fb0861",
+         "date": "2026-07-25"
+        }
+       ],
+       "id": "3be7b203-1dfe-50c8-8052-c96bc177a453"
+      }
+     },
+     {
+      "id": "d98d13c5-2cee-4f9e-b80a-8fdb896eb116",
+      "name": "Shakers",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Advocating for startups - Allied for Startups",
+         "document": "https://alliedforstartups.org/insights/a-spanish-scaleup-shakers-partners-with-allied-for-startups-to-promote-european-tech-talent",
+         "date": "2026-08-03"
+        }
+       ],
+       "id": "72688112-1993-5c54-b583-7d44d5b7609f"
+      }
+     },
+     {
+      "id": "db3ff836-a359-456d-8fcd-7ec7b68fa720",
+      "name": "Aldara",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "\u2022 Latinamerican VC, Startup and Tech News",
+         "document": "https://contxto.com/es/proptech",
+         "date": "2026-08-31"
+        },
+        {
+         "name": "\u2022 Latinamerican VC, Startup and Tech News",
+         "document": "https://contxto.com/en/proptech",
+         "date": "2026-08-31"
+        }
+       ],
+       "id": "c2e6e51b-62ed-5fda-9f10-b648c9dfe9ef"
+      }
+     },
+     {
+      "id": "ee8dd31d-eff3-4772-a2b9-822ada157ba6",
+      "name": "CRESCENTA INVESTMENTS, SGIIC SA",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Tech.eu - European Startup, Funding and Technology News",
+         "document": "https://tech.eu/2023/12/20/crescenta-raises-3-5m-in-spain-s-largest-fintech-pre-seed-round",
+         "date": "2026-07-31"
+        }
+       ],
+       "id": "cddccaad-db76-5557-950d-f7ec8041ad3c"
+      }
+     },
+     {
+      "id": "f1195e81-d399-4f6e-a3ed-7021731b7255",
+      "name": "Look Up",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "www.kfund.vc",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Technology & Data for Venture Capital, Corp Dev, Investment Banks",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Dealflow - Spanish startup, tech and Venture Capital news",
+         "document": "https://dealflow.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "es.linkedin.com",
+         "document": "https://es.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "mindmaps.dka.global",
+         "document": "https://mindmaps.dka.global/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Our Investment in Frekuent: Pioneering the Future of Unattended Retail Payments \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Marketing4eCommerce | Noticias y tendencias de marketing y eCommerce",
+         "document": "https://marketing4ecommerce.net/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund | LinkedIn",
+         "document": "https://es.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Kfund \u2014 From Southern Europe to the world",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Why we\u2019re doubling down on Abacum: Real-time finance, real strategic impact \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Reinventing video creation with collaborative AI: Why we invested in MITO \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Startups Real - News about startups and entrepreneurs in Spain",
+         "document": "https://startupsreal.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "fundz.net",
+         "document": "https://www.fundz.net/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Failory: 90% of Startups Fail \u2014 Learn How Not To.",
+         "document": "https://www.failory.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "capital-riesgo.es",
+         "document": "https://capital-riesgo.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Look Up secures \u20ac50 million in funding to accelerate the global deployment of its space surveillance radar network, expand its space traffic management services, and scale its international growth.",
+         "document": "https://www.lookupspace.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The catalyzer of Innovationand Entrepreneurship of Ci\u00eancias ULisboa",
+         "document": "https://teclabs.pt/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Stylitics acquires our portfolio company Wide Eyes, the advanced visual AI solutions startup for fashion and retail \u2014 K Fund",
+         "document": "https://www.kfund.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cinco D\u00edas: econom\u00eda y mercados",
+         "document": "https://cincodias.elpais.com/",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "2a0d956b-df74-5ebf-a8a7-cf1a9d073c09"
+      }
+     },
+     {
+      "id": "fc612a84-2309-41c6-9450-23ff8c6a9db0",
+      "name": "Traza",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "SMNTCN",
+         "document": "https://smntcn.com/en/article/traza-privlekaet-21-milliona-dlya-avtomatizatsii-zakupok-s-pomoshchyu-ii-1308",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "5713449a-9a87-5f03-a9a1-b99eff0dfc81"
+      }
+     },
+     {
+      "id": "fc9b463a-a6db-41e7-ba8c-b94e51a163e3",
+      "name": "Causa Prima",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Seedtable: Connect with fast-growing startups at the perfect moment",
+         "document": "https://seedtable.com/companies/causa-prima/funding-rounds/pre-seed-2026-06",
+         "date": "2026-09-17"
+        },
+        {
+         "name": "SaaS B2B Fundraising News | The SaaS News",
+         "document": "https://www.thesaasnews.com/news/causa-prima-raises-10m-pre-seed",
+         "date": "2026-09-17"
+        }
+       ],
+       "id": "73b81172-5b43-575f-8640-4b8126b5ac2b"
+      }
+     }
+    ],
+    "FOUNDED": [
+     {
+      "id": "06ff790f-6140-4121-9245-82d84ca5ca44",
+      "name": "Carina Szpilka L\u00e1zaro",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "Failory: 90% of Startups Fail \u2014 Learn How Not To.",
+         "document": "https://www.failory.com/blog/venture-capital-firms-madrid",
+         "date": "2026-07-03"
+        }
+       ],
+       "id": "5a0afa24-9b72-4858-83ff-bd8427a1730c"
+      }
+     },
+     {
+      "id": "264d6b71-de4b-42ed-bb0d-185f4a1a6717",
+      "name": "I\u00f1aki Arrola",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "Failory: 90% of Startups Fail \u2014 Learn How Not To.",
+         "document": "https://www.failory.com/blog/venture-capital-firms-madrid",
+         "date": "2026-07-03"
+        }
+       ],
+       "id": "7cc148f4-2d24-49b0-864c-3c2f952ae4dd"
+      }
+     },
+     {
+      "id": "616dec75-3f11-467f-933a-ee1c4c24b6df",
+      "name": "Ian Noel",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "Failory: 90% of Startups Fail \u2014 Learn How Not To.",
+         "document": "https://www.failory.com/blog/venture-capital-firms-madrid",
+         "date": "2026-07-03"
+        }
+       ],
+       "id": "998a5503-ecb0-40c7-ab44-74ba5045fbc2"
+      }
+     }
+    ],
+    "WORKS_AT": [
+     {
+      "id": "616dec75-3f11-467f-933a-ee1c4c24b6df",
+      "name": "Ian Noel",
+      "entity_type": "Person",
+      "properties": {
+       "role": "General Partner",
+       "sources": [
+        {
+         "name": "foundersuite.com",
+         "document": "https://foundersuite.com/investors/ian-noel",
+         "date": "2026-07-03"
+        },
+        {
+         "name": "Ian Noel, K Fund",
+         "document": "https://www.vcic.org/ian-noel-k-fund",
+         "date": "2017-03-01"
+        },
+        {
+         "name": "elreferente.es",
+         "document": "https://elreferente.es/emprendedores/ian-noel",
+         "date": "2026-07-03"
+        }
+       ],
+       "id": "e53b0982-d11a-4c5e-8236-97d1d5033397"
+      }
+     }
+    ],
+    "IS_MEMBER_OF": [
+     {
+      "id": "264d6b71-de4b-42ed-bb0d-185f4a1a6717",
+      "name": "I\u00f1aki Arrola",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/kfund-closes-e70m-to-invest-up-to-e10m-in-ai-and-blockchain-startups",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "db80436f-7146-59fa-9b4f-8f8cbb71f8b0"
+      }
+     },
+     {
+      "id": "616dec75-3f11-467f-933a-ee1c4c24b6df",
+      "name": "Ian Noel",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Co-Founder",
+       "sources": [
+        {
+         "name": "K Fund - aVenture Asset Manager Research",
+         "document": "https://aventure.vc/investors/firms/k-fund-madrid-es?tab=firm",
+         "date": "2024-02-17"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/kfund",
+         "date": "2026-07-03"
+        }
+       ],
+       "id": "444ff259-d88e-4187-9e2d-041b90edaffc",
+       "valid_since": "2016-01-01"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

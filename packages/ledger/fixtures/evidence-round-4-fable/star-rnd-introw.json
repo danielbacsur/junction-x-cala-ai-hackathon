@@ -1,0 +1,355 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/adbbd5fd-4054-41aa-9978-98e86ff7b5de",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 200
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 200
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 200
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 200
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 200
+     },
+     "TRADED_ON": {
+      "limit": 200
+     },
+     "LISTED_ON": {
+      "limit": 200
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "FOUNDED": {
+      "limit": 200
+     },
+     "WORKS_AT": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_CEO_OF": {
+      "limit": 200
+     },
+     "IS_CTO_OF": {
+      "limit": 200
+     },
+     "IS_CFO_OF": {
+      "limit": 200
+     },
+     "IS_COO_OF": {
+      "limit": 200
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 200
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "MANUFACTURED_BY": {
+      "limit": 200
+     },
+     "DESIGNED_BY": {
+      "limit": 200
+     },
+     "OPERATED_BY": {
+      "limit": 200
+     },
+     "CREATED_BY": {
+      "limit": 200
+     },
+     "PUBLISHED_BY": {
+      "limit": 200
+     },
+     "GRANTED_BY": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:24:40+0200",
+ "_seconds": 0.17,
+ "response": {
+  "id": "adbbd5fd-4054-41aa-9978-98e86ff7b5de",
+  "name": "Introw",
+  "entity_type": "Company",
+  "description": "An AI-driven platform founded around 2023 in Ghent that helps sales teams find contacts.",
+  "properties": {
+   "name": {
+    "value": "Introw",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-10-01"
+     },
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/introw/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [],
+    "sources": []
+   },
+   "description": {
+    "value": "An AI-driven platform founded around 2023 in Ghent that helps sales teams find contacts.",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-10-01"
+     }
+    ]
+   },
+   "headquarters_address": {
+    "value": "Ghent, Belgium",
+    "sources": [
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/introw/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2023-01-01",
+    "sources": [
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/introw/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "funding_stage": {
+    "value": "SEED",
+    "sources": [
+     {
+      "name": "nordic9.com",
+      "document": "https://nordic9.com/news/introw-raised-a-3-million-seed-round-led-by-visionaries-club-joined-by-pitchdrive-in-belgium/",
+      "date": "2026-11-04",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "tech.eu",
+      "document": "https://tech.eu/2025/11/13/introw-raises-3m-to-redefine-partner-sales-with-ai/",
+      "date": "2025-11-13",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "thesaasnews.com",
+      "document": "https://www.thesaasnews.com/news/introw-raises-3-million-in-funding/",
+      "date": "2025-11-14",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "total_funding": {
+    "value": 3000000.0,
+    "sources": [
+     {
+      "name": "tech.eu",
+      "document": "https://tech.eu/2025/11/13/introw-raises-3m-to-redefine-partner-sales-with-ai/",
+      "date": "2025-11-13",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "thesaasnews.com",
+      "document": "https://www.thesaasnews.com/news/introw-raises-3-million-in-funding/",
+      "date": "2025-11-14",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "total_funding_units": {
+    "value": "USD",
+    "sources": [
+     {
+      "name": "tech.eu",
+      "document": "https://tech.eu/2025/11/13/introw-raises-3m-to-redefine-partner-sales-with-ai/",
+      "date": "2025-11-13",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "thesaasnews.com",
+      "document": "https://www.thesaasnews.com/news/introw-raises-3-million-in-funding/",
+      "date": "2025-11-14",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "e5996aff-fec5-5c81-8948-83cf9a64ca26",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "nordic9.com",
+         "document": "https://nordic9.com/news/introw-raised-a-3-million-seed-round-led-by-visionaries-club-joined-by-pitchdrive-in-belgium/",
+         "date": "2026-11-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "a8c11309-7b3c-553d-96c3-7d7896382bec"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_EVENT": [
+     {
+      "id": "bc844d56-6ab4-452b-96bf-2661e86e592b",
+      "name": "Slush 2026",
+      "entity_type": "Event",
+      "properties": {
+       "role": "ATTENDEE",
+       "sources": [
+        {
+         "name": "Slush",
+         "document": "https://slush.org/",
+         "date": "2026-11-14"
+        }
+       ],
+       "id": "76809cf4-c450-5515-a231-45118e20e4c8"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "8ecf5e57-a149-438c-9eb4-089809bade56",
+      "name": "SOFTWARE_AND_SERVICES",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "linkedin.com",
+         "document": "https://www.linkedin.com/company/introw/",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "3fdf05fa-baa4-5e03-bb84-81c5bfaae20b",
+       "original_label": "enterpriseSoftware"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "43e37758-3cd9-4559-b3e4-ad94ece9f6f9",
+      "name": "Visionaries Club GmbH",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2025/11/13/introw-raises-3m-to-redefine-partner-sales-with-ai/",
+         "date": "2025-11-13",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "67f4c394-12f3-4e33-82e3-6c95c937aefb"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

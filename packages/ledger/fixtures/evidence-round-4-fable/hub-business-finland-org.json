@@ -1,0 +1,3183 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/d5b41639-eb27-43df-a6ee-a4f03807fbca",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 1000
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 1000
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 1000
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 1000
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 1000
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 1000
+     },
+     "IS_MEMBER_OF": {
+      "limit": 1000
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 1000
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 1000
+     },
+     "TRADED_ON": {
+      "limit": 1000
+     },
+     "LISTED_ON": {
+      "limit": 1000
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "FOUNDED": {
+      "limit": 1000
+     },
+     "WORKS_AT": {
+      "limit": 1000
+     },
+     "IS_MEMBER_OF": {
+      "limit": 1000
+     },
+     "IS_CEO_OF": {
+      "limit": 1000
+     },
+     "IS_CTO_OF": {
+      "limit": 1000
+     },
+     "IS_CFO_OF": {
+      "limit": 1000
+     },
+     "IS_COO_OF": {
+      "limit": 1000
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 1000
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 1000
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 1000
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 1000
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 1000
+     },
+     "MANUFACTURED_BY": {
+      "limit": 1000
+     },
+     "DESIGNED_BY": {
+      "limit": 1000
+     },
+     "OPERATED_BY": {
+      "limit": 1000
+     },
+     "CREATED_BY": {
+      "limit": 1000
+     },
+     "PUBLISHED_BY": {
+      "limit": 1000
+     },
+     "GRANTED_BY": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:25:02+0200",
+ "_seconds": 0.99,
+ "response": {
+  "id": "d5b41639-eb27-43df-a6ee-a4f03807fbca",
+  "name": "Business Finland",
+  "entity_type": "Organization",
+  "description": "Finnish government agency that funds and promotes innovation and export activities.",
+  "properties": {
+   "name": {
+    "value": "Business Finland",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-06-20"
+     },
+     {
+      "name": "adamanthealth.com",
+      "document": "https://adamanthealth.com/news/deep-tech-accelerator-funding-2023",
+      "date": "2023-06-29",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "sttinfo.fi",
+      "document": "https://www.sttinfo.fi/tiedote/72287300/rakennuskonserni-jatke-panostaa-tekoalyyn-tyomaan-johtamiseen-kehitetty-adicio-syntyi-tyomaiden-tarpeesta?lang=fi",
+      "date": "2026-09-03",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "helsinki.fi",
+      "document": "https://www.helsinki.fi/en/helsinki-innovation-services/news-archive/business-finland-grants-commercialisation-funding-seven-new-research-projects-university-helsinki",
+      "date": "2025-03-18",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "agentformers.fi",
+      "document": "https://agentformers.fi/blog/the-agentformers-journey",
+      "date": "2026-04-30",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "aiatella.com",
+      "document": "https://www.aiatella.com/blog-details/aiatella-2m-seed",
+      "date": "2025-06-04",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "tech.eu",
+      "document": "https://tech.eu/2025/06/04/aiatella-raises-2m-for-ai-powered-cardiovascular-imaging-and-screening/",
+      "date": "2025-06-04",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "cense-analytics.com",
+      "document": "https://cense-analytics.com/cense-analytics-partner-in-agclimate-helping-farms-cut-greenhouse-gas-emissions/",
+      "date": "2025-05-12",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "luke.fi",
+      "document": "https://www.luke.fi/en/news/agclimate-project-develops-solutions-to-measure-and-reduce-greenhouse-gas-emissions-from-agricultural-lands",
+      "date": "2025-05-09",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "carbonaide.com",
+      "document": "https://carbonaide.com/news/deep-tech-accelerator-funding-granted/",
+      "date": "2025-01-30",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "businessfinland.fi",
+      "document": "https://www.businessfinland.fi/en/whats-new/news/2025/6-million-euros-funding-for-deep-tech-startups-to-accelerate-market-entry/",
+      "date": "2025-02-03",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "comparables.ai",
+      "document": "https://www.comparables.ai/articles/business-finland-financing",
+      "date": "2022-05-25",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "cronvall.fi",
+      "document": "https://cronvall.fi/blog/cronvallille-myonnetty-eurostars-rahoitus",
+      "date": "2025-03-12",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "distance.tech",
+      "document": "https://distance.tech/news/launch_release",
+      "date": "2024-06-13",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "en.ain.ua",
+      "document": "https://en.ain.ua/2024/06/14/distance-technologies-pre-seed-investment",
+      "date": "2024-06-14",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "bebeez.eu",
+      "document": "https://bebeez.eu/?p=42215",
+      "date": "2026-11-09",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "siliconangle.com",
+      "document": "https://siliconangle.com/2024/06/11/startup-flow-raises-4m-iterate-parallel-processing-tech-massively-accelerates-cpu/",
+      "date": "2024-06-11",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2023/11/espoo-based-kuva-space-raises-e16-6-million-to-launch-microsatellite-constellation-for-earth-observation/",
+      "date": "2023-11-02",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "kuvaspace.com",
+      "document": "https://kuvaspace.com/en/resources/kuva-space-raises-e16-6m-funding-round-to-launch-its-microsatellite-constellation-and-observe-the-molecular-composition-of-any-material-on-earth",
+      "date": "2023-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "quanscient.com",
+      "document": "https://quanscient.com/news/quanscient-raises-3.9-million-euros-to-accelerate-hardware-innovation-with-fast-simulations",
+      "date": "2023-04-20",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "ridable.com",
+      "document": "https://ridable.com/investors",
+      "date": "2026-11-13",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "rotomate.ai",
+      "document": "https://rotomate.ai/blog/rotomate-funding-announcement",
+      "date": "2026-06-10",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2026/06/finnish-skyfora-raises-e6-5-million-to-quicken-deployment-of-atmospheric-sensing-network/",
+      "date": "2026-06-09",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "stayingbee.com",
+      "document": "https://stayingbee.com/blog/stayingbee-awarded-business-finland-tempo-funding-2ae4c6/",
+      "date": "2026-01-13",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "syntask.co",
+      "document": "https://www.syntask.co/about",
+      "date": "2026-11-13",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "susa.games",
+      "document": "https://susa.games/about",
+      "date": "2026-11-13",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "surgerix.com",
+      "document": "https://surgerix.com/",
+      "date": "2025-12-18",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "tietopankki.businessfinland.fi",
+      "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+      "date": "2026-11-13",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "venuesim.tech",
+      "document": "https://venuesim.tech/",
+      "date": "2026-11-13",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [],
+    "sources": []
+   },
+   "description": {
+    "value": "Finnish government agency that funds and promotes innovation and export activities.",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-08-04"
+     }
+    ]
+   },
+   "website": {
+    "value": "businessfinland.fi",
+    "sources": [
+     {
+      "name": "AgFunderNews",
+      "document": "https://agfundernews.com/solar-foods-wins-89-2m-backing-for-protein-from-air-factory-but-final-investment-decision-still-pending",
+      "date": "2026-06-20"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2018-01-01",
+    "sources": [
+     {
+      "name": "Business Finland | OpenVerse",
+      "document": "https://observatory.open-verse.eu/observatory/national-initiatives/business-finland",
+      "date": "2025-07-01"
+     },
+     {
+      "name": "Business Finland to start operations on 1 January 2018",
+      "document": "https://tem.fi/en/-/business-finland-aloittaa-toimintansa-1-tammikuuta-2018",
+      "date": "2017-12-28"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "INVESTED_IN": [
+     {
+      "id": "0e6d0b97-c525-4247-8351-ae4aa7ab0aee",
+      "name": "Biomensio",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/biomensio/__uEGUNbc50bqBavVSinRniUsn0H6rslhr4ukpD6Sqc-s",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/biomensio/__uEGUNbc50bqBavVSinRniUsn0H6rslhr4ukpD6Sqc-s/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "1ff4ff53-4672-4e76-a854-66bbbb4267de"
+      }
+     },
+     {
+      "id": "13ed609c-83a2-4f9e-9301-48f17322d930",
+      "name": "Zervant",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/zervant/__knb1cDIgEg1w4d77T0JCTNtQOFXDvioi_8RSU7Qdl5k/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "1b81874a-30ac-4c84-8995-dc40639b21cf"
+      }
+     },
+     {
+      "id": "1ed8a766-e29c-443b-b082-496d5a634d40",
+      "name": "Sisu Semi",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "SisuSemi Oy Secures over \u20ac1 Million in Pre-Seed funding to Revolutionize Semiconductor Industry with Groundbreaking Surface Cleaning Technology - SisuSemi",
+         "document": "https://www.sisusemi.com/news/sisusemi-oy-secures-over-1-million-in-seed-funding",
+         "date": "2025-03-14"
+        },
+        {
+         "name": "\ud835\udde6\ud835\uddf6\ud835\ude00\ud835\ude02\ud835\udde6\ud835\uddf2\ud835\uddfa\ud835\uddf6 \ud835\udde2\ud835\ude06 \ud835\udde6\ud835\uddf2\ud835\uddf0\ud835\ude02\ud835\uddff\ud835\uddf2\ud835\ude00 \ud835\uddfc\ud835\ude03\ud835\uddf2\ud835\uddff \u20ac\ud835\udfed \ud835\udde0\ud835\uddf6\ud835\uddf9\ud835\uddf9\ud835\uddf6\ud835\uddfc\ud835\uddfb \ud835\uddf6\ud835\uddfb \ud835\udde6\ud835\uddf2\ud835\uddf2\ud835\uddf1 \ud835\uddf3\ud835\ude02\ud835\uddfb\ud835\uddf1\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\ude01\ud835\uddfc \ud835\udde5\ud835\uddf2\ud835\ude03\ud835\uddfc\ud835\uddf9\ud835\ude02\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb\ud835\uddf6\ud835\ude07\ud835\uddf2 \ud835\udde6\ud835\uddf2\ud835\uddfa\ud835\uddf6\ud835\uddf0\ud835\uddfc\ud835\uddfb\ud835\uddf1\ud835\ude02\ud835\uddf0\ud835\ude01\ud835\uddfc\ud835\uddff \ud835\udddc\ud835\uddfb\ud835\uddf1\ud835\ude02\ud835\ude00\ud835\ude01\ud835\uddff\ud835\ude06 \ud835\ude04\ud835\uddf6\ud835\ude01\ud835\uddf5\u2026 | SisuSemi | 16 comments",
+         "document": "https://www.linkedin.com/posts/sisusemi_%F0%9D%97%A6%F0%9D%97%B6%F0%9D%98%80%F0%9D%98%82%F0%9D%97%A6%F0%9D%97%B2%F0%9D%97%BA%F0%9D%97%B6-%F0%9D%97%A2%F0%9D%98%86-%F0%9D%97%A6%F0%9D%97%B2%F0%9D%97%B0%F0%9D%98%82%F0%9D%97%BF%F0%9D%97%B2%F0%9D%98%80-%F0%9D%97%BC%F0%9D%98%83-activity-7306215817526833152-YoK4",
+         "date": "2025-03-14"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/756012-88",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "SisuSemi Oy Invests in the Future: Seed Funding Ignites Stealth University-Driven Deep Tech Startup",
+         "document": "https://www.trysignalbase.com/news/funding/sisusemi-oy-invests-in-the-future-seed-funding-ignites-stealth-university-driven-deep-tech-startup",
+         "date": "2025-03-14"
+        }
+       ],
+       "id": "d8626869-5ab5-4e29-86df-9afb4701196c"
+      }
+     },
+     {
+      "id": "2e990364-f6ad-4355-b3bf-91b1d133e0b9",
+      "name": "Bonusway",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/bonusway/__uiyvKjoTJ49395za_ke8HrwWl_9VjepWxafYT0JnuOk/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "bad693b2-4057-440f-86cd-80672456dd04"
+      }
+     },
+     {
+      "id": "35c45b4f-b837-4f71-a91d-06a7a5a2c626",
+      "name": "Aito Software Oy",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/aito/__UgG_0C9KKaJROVkpelcZkAnOBuiEw-30nc7PpNhRihk",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/aito/__UgG_0C9KKaJROVkpelcZkAnOBuiEw-30nc7PpNhRihk#founders-and-board-of-directors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Nokia Chairman Risto Siilasmaa backs machine learning startup Aito.ai | TechCrunch",
+         "document": "https://techcrunch.com/2019/05/07/aito-ai",
+         "date": "2019-05-07"
+        }
+       ],
+       "id": "34857869-20d0-42a8-8dda-afafaa510a98"
+      }
+     },
+     {
+      "id": "37463094-f423-4c89-b72c-90a45efdaaa3",
+      "name": "Test of Things",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/test-of-things/__Um4hsW_M0uafvAP3fXPPct5JiBNj5rp1EDAcJCBf0XU",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/test-of-things/__Um4hsW_M0uafvAP3fXPPct5JiBNj5rp1EDAcJCBf0XU/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/717658-21",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/test-of-things",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "106c66f0-4851-4ea4-a594-96d1db5ec3ec"
+      }
+     },
+     {
+      "id": "3b22df0b-5719-4079-be7f-5cec28484bea",
+      "name": "Polka Dot Studio",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/227729-35",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/person/peter-vesterbacka",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/person/nicolas-brabeck-letmathe",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/110830-87",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/227751-31",
+         "date": "2026-08-24"
+        }
+       ],
+       "id": "1e5e1093-691f-4f06-ac71-ace2a8ef3f9c"
+      }
+     },
+     {
+      "id": "41f89a61-54ac-4068-82af-a2d2096efcfc",
+      "name": "Kuva Space",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Kuva Space raises \u20ac16.6M Series A to scale hyperspectral imagery ambitions | TechCrunch",
+         "document": "https://techcrunch.com/2023/11/02/2623303",
+         "date": "2023-11-02"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/kuva-space/__C6sCi4Nph5GgnUpfG8sIOIWyuuGlKsL9_Z6HpRYOy_s/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2023/11/espoo-based-kuva-space-raises-e16-6-million-to-launch-microsatellite-constellation-for-earth-observation/",
+         "date": "2023-11-02",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "kuvaspace.com",
+         "document": "https://kuvaspace.com/en/resources/kuva-space-raises-e16-6m-funding-round-to-launch-its-microsatellite-constellation-and-observe-the-molecular-composition-of-any-material-on-earth",
+         "date": "2023-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "1a1344fe-2417-4468-9231-2186bc18516e"
+      }
+     },
+     {
+      "id": "4388c5df-b59c-4c62-886f-15f0d002b367",
+      "name": "Solar Foods Oyj",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "AgFunderNews",
+         "document": "https://agfundernews.com/solar-foods-wins-89-2m-backing-for-protein-from-air-factory-but-final-investment-decision-still-pending",
+         "date": "2026-06-20"
+        }
+       ],
+       "id": "483b2c10-f8e6-584d-a593-b6d38386dcb2"
+      }
+     },
+     {
+      "id": "4dba17c1-6a65-4477-aca7-fd7e7f0b179c",
+      "name": "Sniffie",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "SNIFFIE SECURED A 2.5M\u20ac FUNDING FOR ECOMMERCE PRICING AUTOMATION",
+         "document": "https://news.cision.com/sniffie-software-oy/r/sniffie-secured-a-2-5m--funding-for-ecommerce-pricing-automation,c3495643",
+         "date": "2022-02-01"
+        },
+        {
+         "name": "Sniffie Software",
+         "document": "https://www.cbinsights.com/company/sniffie-software/financials",
+         "date": "2022-03-02"
+        },
+        {
+         "name": "Sniffie Software Ltd. Asset Profile | Preqin",
+         "document": "https://www.preqin.com/data/profile/asset/sniffie-software-ltd-/466158",
+         "date": "2025-02-19"
+        },
+        {
+         "name": "www.zoominfo.com",
+         "document": "https://www.zoominfo.com/c/sniffie-software/440573647",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "615bbb71-239d-4afe-b1fd-ffe5b0521960"
+      }
+     },
+     {
+      "id": "4e9350ec-f5cf-46f3-8fb9-4e1ed2eb15f6",
+      "name": "FOV Ventures",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "FOV Ventures Raises $18 Million to Fund European Metaverse Startups",
+         "document": "https://roadtovr.com/fov-ventures-fund-raise-announcement",
+         "date": "2022-03-22"
+        },
+        {
+         "name": "FOV Ventures gathers 16.5m euros for fund",
+         "document": "https://www.venturecapitaljournal.com/fov-ventures-gathers-16-5m-euros-for-fund",
+         "date": "2022-03-10"
+        },
+        {
+         "name": "FOV Ventures launches \u20ac25m fund to back metaverse startups",
+         "document": "https://www.uktech.news/funding/vc-funding/fov-ventures-launches-metaverse-fund-20220310",
+         "date": "2022-03-10"
+        },
+        {
+         "name": "FOV Ventures: Annual Review",
+         "document": "https://viewpoints.fov.ventures/p/fov-ventures-2022",
+         "date": "2023-01-05"
+        },
+        {
+         "name": "FOV Ventures company information, funding & investors",
+         "document": "https://directory.startupluxembourg.com/companies/fov_ventures",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "ba4429ad-2f33-4a9c-88b3-589f4035f98c"
+      }
+     },
+     {
+      "id": "4ef2b209-41c1-4d34-a426-a64d25f782d6",
+      "name": "Audicin",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/audicin-raises-1-6m-oura-co-founder-business-finland-nervous-system-recovery-wearables",
+         "date": "2026-06-20"
+        }
+       ],
+       "id": "e07fe683-61d2-5328-9c57-c69fa418391c"
+      }
+     },
+     {
+      "id": "517d6c7d-fc0b-4b97-897a-4ef5c2f62f10",
+      "name": "Alinor",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/alinor",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/funding_round/alinor-series-unknown--f32a7ca3",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/503428-06",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "5849608c-8872-4ec8-926d-81667de0ab46"
+      }
+     },
+     {
+      "id": "5466f036-ebe0-4171-ae24-643c83cfef6b",
+      "name": "Skyfora",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Skyfora raises \u20ac6.5M to turn telecom networks into real-time weather sensors for AI forecasting",
+         "document": "https://www.skyfora.com/news/bfb58b55-bc9e-4c80-9c79-9ecc9bf904b4",
+         "date": "2026-06-09"
+        },
+        {
+         "name": "Skyfora secures \u20ac4 Million to supercharge AI weather forecasts using\u2026",
+         "document": "https://www.mwcbarcelona.com/articles/skyfora-secures-4-million-supercharge-ai-weather-forecasts-using-telecom-gnss-meteorology",
+         "date": "2025-03-04"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2026/06/finnish-skyfora-raises-e6-5-million-to-quicken-deployment-of-atmospheric-sensing-network/",
+         "date": "2026-06-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "8506e0b7-b11a-553b-b00a-df857ade7742"
+      }
+     },
+     {
+      "id": "636e313d-2933-451f-90f8-bc77db6f0329",
+      "name": "Mixed Reality",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "DISTANCE LAUNCH RELEASE",
+         "document": "https://distance.tech/news/launch_release",
+         "date": "2024-06-13"
+        },
+        {
+         "name": "en.ain.ua",
+         "document": "https://en.ain.ua/2024/06/14/distance-technologies-pre-seed-investment",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Distance emerges from stealth with $2.7M in funding",
+         "document": "https://www.auganix.org/xr-news-distance-emerges-from-stealth-with-2-7m-in-funding-to-announce-its-glasses-free-xr-technology",
+         "date": "2024-06-13"
+        }
+       ],
+       "id": "6b333e93-1983-44ac-87d6-48061a452e0c"
+      }
+     },
+     {
+      "id": "72941c0f-0508-4c50-8a5f-1eb87ad0df1e",
+      "name": "Aiven",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/aiven/__X_wU91LlJT_XQgArV0QPxA8eH631xAmZQot1PcBqm1U/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/182199-43",
+         "date": "2026-08-24"
+        }
+       ],
+       "id": "050c16fb-54c3-4911-a2ec-8adf4fca5262"
+      }
+     },
+     {
+      "id": "734fbd38-7969-43d3-a47f-b953e4fe232b",
+      "name": "Lumoa",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/lumoa/__EUCCGhioyswrN91VgmB7uRpKuaau3wams-18H-GgFek",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/lumoa/__EUCCGhioyswrN91VgmB7uRpKuaau3wams-18H-GgFek/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/228025-99",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "fcd14e7b-8988-4263-b8ae-bbde945b8d8d"
+      }
+     },
+     {
+      "id": "782eb8fd-05e5-494c-85b0-f51ab765e484",
+      "name": "Furro",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Subscribe to Our Newsletter",
+         "document": "https://superherocapital.com/superhero-capital-invests-in-furro-the-insurtech-redefining-pet-protection",
+         "date": "2025-06-03"
+        },
+        {
+         "name": "Alternative pet insurance product gaining traction in Finland. | Gytenis Galkis",
+         "document": "https://www.linkedin.com/posts/gytenis_alternative-pet-insurance-product-gaining-activity-7493206999413866496-UATb",
+         "date": "2026-08-12"
+        }
+       ],
+       "id": "ed90880e-2b45-48c7-87e5-88b672d51d6c"
+      }
+     },
+     {
+      "id": "7a550651-b481-4d58-acda-0d4d7d81f964",
+      "name": "Freska",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/freska/__wOFJTcvd9tmrIPGEmZkQZXDNgVX-ziYf-Ax9AF9YhGU",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/freska/__wOFJTcvd9tmrIPGEmZkQZXDNgVX-ziYf-Ax9AF9YhGU/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Home cleaning space hasn't quite dried up yet as Nordic startup Freska raises \u20ac2M | TechCrunch",
+         "document": "https://techcrunch.com/2017/05/09/home-cleaning-space-hasnt-quite-dried-up-yet-as-nordic-startup-freska-raises-e2m",
+         "date": "2017-05-09"
+        },
+        {
+         "name": "Freska | Valuation, Funding Rounds & Stock Price | Caplight",
+         "document": "https://www.caplight.com/company/freska",
+         "date": "2018-10-26"
+        }
+       ],
+       "id": "dd6cb2d3-a06d-446d-8464-580a760910e0"
+      }
+     },
+     {
+      "id": "88917971-7acd-5977-b108-0ef6fa5ce36e",
+      "name": "Distance Technologies Oy",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "distance.tech",
+         "document": "https://distance.tech/news/launch_release",
+         "date": "2024-06-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "en.ain.ua",
+         "document": "https://en.ain.ua/2024/06/14/distance-technologies-pre-seed-investment",
+         "date": "2024-06-14",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "65538290-44ed-4922-94d2-110afdf3c9b4"
+      }
+     },
+     {
+      "id": "89888bda-2012-418d-b8b9-ae9368306ecf",
+      "name": "Fixably",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/fixably/__lz3RA1ai2rSMPUTO-ZCflKoDZLzbES7I9ASCBs3kofU/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/439302-43",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "cdc2d4bb-30c5-4bb2-a9ab-7b00bf233e84"
+      }
+     },
+     {
+      "id": "8c47cffa-006e-4dbe-ab9c-85e62349f8aa",
+      "name": "Beddit",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [],
+       "id": "45563ace-44e4-401c-a3b6-72947ff2f64d"
+      }
+     },
+     {
+      "id": "98ff140a-f183-485a-8d7d-3e02bf137c9b",
+      "name": "Rotomate",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/rotomate/__2MejRK4i_F71FaMuLO8kowBGL0zopKaGd9ocKJfgFJU/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/rotomate/__2MejRK4i_F71FaMuLO8kowBGL0zopKaGd9ocKJfgFJU",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/artificial-intelligence/ai-startups-in-saas-in-helsinki-in-finland/__sVrjwzONOK4Hiy48vbMQSeypyyzOVj0oaUEBjXjLI7g",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "04cc3dd6-c696-4543-b9e9-b312c9bd7ac7"
+      }
+     },
+     {
+      "id": "a2be62fd-59e2-48d8-bb2b-c39b58391e6f",
+      "name": "Nadmed",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/459204-31",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/nadmed",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/funding_round/nadmed-series-a--f5503e9e",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "02291303-177e-4f5b-adc3-aef270b60a93"
+      }
+     },
+     {
+      "id": "a4bb4826-e75a-5002-a125-9b63e84e862d",
+      "name": "SURGERIX",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "surgerix.com",
+         "document": "https://surgerix.com/",
+         "date": "2026-08-20",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "sttinfo.fi",
+         "document": "https://www.sttinfo.fi/tiedote/72245155/surgerixille-900-000-euron-rahoitus-mikrokirurgisen-visualisoinnin-kehittamiseen?lang=fi",
+         "date": "2026-08-20",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "34013ac3-11ad-4bb4-a648-8c31f9c36d9c"
+      }
+     },
+     {
+      "id": "a9cf8365-f937-43d7-9002-4d57affe07ed",
+      "name": "Vibecatch",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/133873-75",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/vibecatch",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "2269e186-6494-41a1-abe3-005b4c1d6626"
+      }
+     },
+     {
+      "id": "ac728bf6-eb5b-412d-93af-519426ae9390",
+      "name": "Happy Plant Protein",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/happyplantprotein/__8cyWVZkxHEskv8NwhkkrEibmq_T_lvoVYmqyIlnDfJw",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/happy-plant-protein/__8cyWVZkxHEskv8NwhkkrEibmq_T_lvoVYmqyIlnDfJw",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/happyplantprotein/__8cyWVZkxHEskv8NwhkkrEibmq_T_lvoVYmqyIlnDfJw/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/707873-59",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "3b58fa77-2e53-41ce-b2e3-8eeabf899c23"
+      }
+     },
+     {
+      "id": "ae4068b9-b335-4f13-9003-92549a22bcdb",
+      "name": "Surveypal",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/surveypal/__GrjmoW9-ZVmLYPRPgsOvHog08bNLiWAxR5JVs-Ag9Ds/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/93899-89",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "070077ed-8c86-45cd-a48f-79c0e79bd6d8"
+      }
+     },
+     {
+      "id": "b64a3cd3-5541-4b49-94d7-d4bdabdc51af",
+      "name": "RoadCloud OY",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/roadcloud/__hyLFlTJW4GyCdmVjlazT3jAMdF1S9hG1-6kBLMa9ajc",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/roadcloud",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/roadcloud/financial_details",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/265429-27",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "d8f24201-7976-4a94-a426-4a8706dc9739"
+      }
+     },
+     {
+      "id": "b91501a7-6208-4adc-9bc7-2e53827195be",
+      "name": "REVIEVE OY",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/revieve/__98ucHtXaupHew237QTKmVabPLiZ31QovBqsu12y-yPY/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/revieve/__98ucHtXaupHew237QTKmVabPLiZ31QovBqsu12y-yPY",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/revieve/company_overview/overview_timeline",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "crunchbase.com",
+         "document": "https://crunchbase.com/organization/revieve/company_financials",
+         "date": "2026-08-24"
+        }
+       ],
+       "id": "3257c0f3-6f1f-4cb4-b2de-1bbb810fc92e"
+      }
+     },
+     {
+      "id": "b99e4393-8626-5fdb-8fbf-96ab03c9aca7",
+      "name": "AIATELLA",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "aiatella.com",
+         "document": "https://www.aiatella.com/blog-details/aiatella-2m-seed",
+         "date": "2025-06-04",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2025/06/04/aiatella-raises-2m-for-ai-powered-cardiovascular-imaging-and-screening/",
+         "date": "2025-06-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "7e09486c-efa4-4469-a6ec-4639740d2d2f"
+      }
+     },
+     {
+      "id": "becbc0ec-cf5a-423f-8a1f-304fb15dad59",
+      "name": "Polku Therapeutics",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/torrey-pines-investment/investor_summary/overview_timeline",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/664012-45",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/42802-93",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "d3b9ec73-ce0b-4b48-b52f-e10765dd0171"
+      }
+     },
+     {
+      "id": "caa55db7-c054-422c-aa79-01cfba170253",
+      "name": "Super Plus Games",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/newsletter/mobile-gaming-studio-scores-47m",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/267339-07",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/explore/gaming-startups-in-finland/__yvM4696OQhlmZv8ulFzgCY3KWuue1OKGTMS6aOUqYWc/companies",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "e23b9830-2427-4f3a-9d4e-6a6ce266ca87"
+      }
+     },
+     {
+      "id": "cd65a246-2be6-4e1f-8aa2-41004e5d6f58",
+      "name": "Kide Science",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/kidescience/__FHutbmx5tagRmVYAAOTOlKO8kUBr3fy76RYfjaIDI4c/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/kide-science/__FHutbmx5tagRmVYAAOTOlKO8kUBr3fy76RYfjaIDI4c",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/explore/k-12-edtech-startups-in-finland/__V8rFUJ2ftHkiMOhcRW2XHBVITgea-TmHVV054Gi0EX4",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "6de063fa-eeed-46a8-bd06-b9b1aabda6c7"
+      }
+     },
+     {
+      "id": "d08e3484-b6c2-4c7b-920d-0be3616ba33a",
+      "name": "Innomost",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/innomost/__JfKjM93TMF0c4qTu-Pkp9bKuSgzKiuusO1npAPyeeUs",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/innomost/__JfKjM93TMF0c4qTu-Pkp9bKuSgzKiuusO1npAPyeeUs/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/459733-96",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "c9483b5e-7ac3-48a8-8113-efa0b7eadeac"
+      }
+     },
+     {
+      "id": "d1a47feb-1088-405c-be60-1f7997f7e6a7",
+      "name": "Bioretec Oy",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/funding_round/bioretec-post-ipo-equity--5ef413cd",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/bioretec",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/bioretec/__RL27cjnwQtO4wFK9Vg9icgt7FG73myu1Gi474RDMRVM/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "28fb2f40-78e7-4e6c-9ec6-676917aadf6c"
+      }
+     },
+     {
+      "id": "d9d2a282-308a-46cd-86b3-bfcd5be9a28e",
+      "name": "AddSearch",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Watch Out Google, AddSearch -- Like Swiftype -- Wants To Stop In-Website Search From Sucking | TechCrunch",
+         "document": "https://techcrunch.com/2014/01/03/addsearch",
+         "date": "2014-01-03"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/addsearch/__w0oOb7EWXdbCOHBqFwGP0ydOW0z6lMMM94BPBFIqkx0",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "3e26c76f-8c87-4e02-bb17-66b0284d365a"
+      }
+     },
+     {
+      "id": "dfc26dad-408b-4630-8a68-e490d2fbd786",
+      "name": "Comparables.ai",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/comparables/__P_FJ9tDEE1C8ioK_XrUs1zXfdL6C6dqOS9-zPSCgqEg",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/comparables/__P_FJ9tDEE1C8ioK_XrUs1zXfdL6C6dqOS9-zPSCgqEg/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/490297-69",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "comparables.ai",
+         "document": "https://www.comparables.ai/articles/business-finland-financing",
+         "date": "2022-05-25",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "6e08e473-35e0-4f44-ad5f-7e96367cf691"
+      }
+     },
+     {
+      "id": "f1970456-a6e4-4b95-91a8-58c5a92d9bfe",
+      "name": "Flow Computing",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Flow claims it can 100x any CPU's power with its companion chip and some elbow grease | TechCrunch",
+         "document": "https://techcrunch.com/2024/06/11/flow-claims-it-can-100x-any-cpus-power-with-its-companion-chip-and-some-elbow-grease",
+         "date": "2024-06-11"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/509257-36",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/flow/__RxrvcZz34aknppcBUMqGKWuXTt5j82CcwTi0PbwOumQ",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "bebeez.eu",
+         "document": "https://bebeez.eu/?p=42215",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "siliconangle.com",
+         "document": "https://siliconangle.com/2024/06/11/startup-flow-raises-4m-iterate-parallel-processing-tech-massively-accelerates-cpu/",
+         "date": "2024-06-11",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "18e9283b-66bb-4915-98db-fb50a368fff4"
+      }
+     },
+     {
+      "id": "f4f6c0a6-37c6-44ee-85d7-631c66121b3d",
+      "name": "Carbonaide Oy",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "When life gives you carbon, make Carbonaide | TechCrunch",
+         "document": "https://techcrunch.com/2023/03/28/carbonaide-cement",
+         "date": "2023-03-28"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/lakan-betoni",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/vantaan-energia-oy",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/carbonaide/__12qZ1arnIM7J8X3Dbk53qR5uxQnNSsqJyf_xJgViHxs",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "5e3f4cd9-b423-40c1-8fe3-749b90665716"
+      }
+     },
+     {
+      "id": "fa92035a-411b-40a4-a2b0-a90afbdeccdb",
+      "name": "Egg White Company",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Animal-free egg protein startup Onego Bio is one step closer to cracking the traditional egg market | TechCrunch",
+         "document": "https://techcrunch.com/2024/04/01/animal-free-egg-protein-onego-bio-40m",
+         "date": "2024-04-01"
+        }
+       ],
+       "id": "854286d3-76da-40e2-987f-8eeed2b549d6"
+      }
+     },
+     {
+      "id": "fc2c4085-acbd-4339-8533-d187dec1c249",
+      "name": "Treon",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/treon/__R9vhvjraPaC3Wr-WGbK-bxUf9r44ybXuV4znqKgaEIU",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/treon/__R9vhvjraPaC3Wr-WGbK-bxUf9r44ybXuV4znqKgaEIU/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/268556-41",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/treon/financial_details",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "146b36a0-0f8b-450a-bd6b-b9661da2bce9"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "0791d092-0908-5fd2-8283-64efab8fdf4a",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "adamanthealth.com",
+         "document": "https://adamanthealth.com/news/deep-tech-accelerator-funding-2023",
+         "date": "2023-06-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "9f8e9076-7734-534d-8b28-f1138eab3950"
+      }
+     },
+     {
+      "id": "07ccae29-247c-51b5-acb9-9ba7f4c0ea27",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "helsinki.fi",
+         "document": "https://www.helsinki.fi/en/helsinki-innovation-services/news-archive/business-finland-grants-commercialisation-funding-seven-new-research-projects-university-helsinki",
+         "date": "2025-03-18",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "agentformers.fi",
+         "document": "https://agentformers.fi/blog/the-agentformers-journey",
+         "date": "2026-04-30",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "2412c5be-8f5f-530d-9c0a-2d7f12e453d0"
+      }
+     },
+     {
+      "id": "0acc3119-c675-5535-ab6f-727860719c9c",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "sttinfo.fi",
+         "document": "https://www.sttinfo.fi/tiedote/72287300/rakennuskonserni-jatke-panostaa-tekoalyyn-tyomaan-johtamiseen-kehitetty-adicio-syntyi-tyomaiden-tarpeesta?lang=fi",
+         "date": "2026-09-03",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "82c1bce5-4c5d-55a8-a6ff-fd2e9ffb2c6a"
+      }
+     },
+     {
+      "id": "129d8b15-dad9-562e-a4a5-8aabd5f7ec18",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "cense-analytics.com",
+         "document": "https://cense-analytics.com/cense-analytics-partner-in-agclimate-helping-farms-cut-greenhouse-gas-emissions/",
+         "date": "2025-05-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "luke.fi",
+         "document": "https://www.luke.fi/en/news/agclimate-project-develops-solutions-to-measure-and-reduce-greenhouse-gas-emissions-from-agricultural-lands",
+         "date": "2025-05-09",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "d117010f-3818-56a5-b1d5-92333ef25615"
+      }
+     },
+     {
+      "id": "14611a9b-9f18-56b7-a679-a6aa1792dea7",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "stayingbee.com",
+         "document": "https://stayingbee.com/blog/stayingbee-awarded-business-finland-tempo-funding-2ae4c6/",
+         "date": "2026-01-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "24912fd5-2bd0-5f2c-bcb4-60b590a8441f"
+      }
+     },
+     {
+      "id": "1b0fda9e-70b1-58ba-8444-1775d15b5942",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "venuesim.tech",
+         "document": "https://venuesim.tech/",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "4bba078f-a4ec-5d1d-a275-dab12e4bcc09"
+      }
+     },
+     {
+      "id": "1cb97fd9-ae2e-5d1d-a690-cbe897a6b0ae",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "rotomate.ai",
+         "document": "https://rotomate.ai/blog/rotomate-funding-announcement",
+         "date": "2026-06-10",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "65267e9e-5d8c-58e4-b14d-7fb12811eb12"
+      }
+     },
+     {
+      "id": "31db35af-6604-5eeb-8164-e3e66904718c",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2026/06/finnish-skyfora-raises-e6-5-million-to-quicken-deployment-of-atmospheric-sensing-network/",
+         "date": "2026-06-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "bc513739-0baa-5d5b-81e8-3bcdb5de0175"
+      }
+     },
+     {
+      "id": "353c5255-efe0-510d-a5b1-3dcc22e1ae2a",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "nadmed.com",
+         "document": "https://www.nadmed.com/recognition-for-nadmed-technology/",
+         "date": "2023-07-10",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "6f08f0d2-231c-5e57-bbd9-85227d117a90"
+      }
+     },
+     {
+      "id": "37638371-b731-5563-b2b4-71bcb04ce82f",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "surgerix.com",
+         "document": "https://surgerix.com/",
+         "date": "2026-08-20",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "sttinfo.fi",
+         "document": "https://www.sttinfo.fi/tiedote/72245155/surgerixille-900-000-euron-rahoitus-mikrokirurgisen-visualisoinnin-kehittamiseen?lang=fi",
+         "date": "2026-08-20",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "fafee79a-d1d0-5d08-bed8-454046eca64f"
+      }
+     },
+     {
+      "id": "51cf3c31-9ca7-5b85-a820-86c8206ab5cd",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "cronvall.fi",
+         "document": "https://cronvall.fi/blog/cronvallille-myonnetty-eurostars-rahoitus",
+         "date": "2025-03-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "b2a1542c-6b0c-5285-b35c-0e53cfa3e1c1"
+      }
+     },
+     {
+      "id": "5268b056-9f19-5cc9-a82d-dabcf0b14805",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "surgerix.com",
+         "document": "https://surgerix.com/",
+         "date": "2025-12-18",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "6f32d1a1-7d1e-54e1-a734-1424b26d0285"
+      }
+     },
+     {
+      "id": "6c396ccd-4bce-5edb-8290-8ce590cb84b8",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "syntask.co",
+         "document": "https://www.syntask.co/about",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "c9167dc9-ca27-5511-9492-a748d66bb5d4"
+      }
+     },
+     {
+      "id": "7e53dd3e-94d3-56be-8793-55a2e7eec2d1",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "tietopankki.businessfinland.fi",
+         "document": "https://tietopankki.businessfinland.fi/anonymous/extensions/fundingawarded/fundingawarded.html",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "is_lead": true,
+       "id": "223c20e0-82de-5981-96c3-1e616aaa8725"
+      }
+     },
+     {
+      "id": "85d659c1-127d-5e1e-90c2-430b1f4bf918",
+      "name": "Series A",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2023/11/espoo-based-kuva-space-raises-e16-6-million-to-launch-microsatellite-constellation-for-earth-observation/",
+         "date": "2023-11-02",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "kuvaspace.com",
+         "document": "https://kuvaspace.com/en/resources/kuva-space-raises-e16-6m-funding-round-to-launch-its-microsatellite-constellation-and-observe-the-molecular-composition-of-any-material-on-earth",
+         "date": "2023-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "df865977-2a4c-594b-a75b-e2ae693b3f7b"
+      }
+     },
+     {
+      "id": "9249d573-59cc-5f57-bd1f-d6232212efd8",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "aiatella.com",
+         "document": "https://www.aiatella.com/blog-details/aiatella-2m-seed",
+         "date": "2025-06-04",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2025/06/04/aiatella-raises-2m-for-ai-powered-cardiovascular-imaging-and-screening/",
+         "date": "2025-06-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "b119aa7c-ba8e-55d4-9347-86929f911d29"
+      }
+     },
+     {
+      "id": "9756ba2a-448f-5992-8860-ad2241c4a83e",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "susa.games",
+         "document": "https://susa.games/about",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "1c1d0ea6-9d54-587e-b9bc-e1eceb71afe2"
+      }
+     },
+     {
+      "id": "985ac2e9-6d38-5e16-ab0e-6967e9b14e13",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "quanscient.com",
+         "document": "https://quanscient.com/news/quanscient-raises-3.9-million-euros-to-accelerate-hardware-innovation-with-fast-simulations",
+         "date": "2023-04-20",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "9336108a-29ff-56f9-bd08-6093f8c6ed01"
+      }
+     },
+     {
+      "id": "ac163d41-630a-5ade-98c8-a7bb39d538c0",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "nadmed.com",
+         "document": "https://www.nadmed.com/recognition-for-nadmed-technology/",
+         "date": "2023-07-10",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "a36e2d27-c3de-5bee-9dc1-7096462599ea"
+      }
+     },
+     {
+      "id": "c5051823-fa84-572f-946c-978d69c89e9a",
+      "name": "Series A",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "id": "60154723-ea8f-519f-910c-779f2e73aa7b"
+      }
+     },
+     {
+      "id": "cd748b0d-878a-5e4c-a425-f325bc044152",
+      "name": "Pre-Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "bebeez.eu",
+         "document": "https://bebeez.eu/?p=42215",
+         "date": "2026-11-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "siliconangle.com",
+         "document": "https://siliconangle.com/2024/06/11/startup-flow-raises-4m-iterate-parallel-processing-tech-massively-accelerates-cpu/",
+         "date": "2024-06-11",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "103be13d-4dee-564b-adc2-df335ced9b12"
+      }
+     },
+     {
+      "id": "d1ec9643-c882-5f29-8237-a6e15cbe5da6",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "nadmed.com",
+         "document": "https://www.nadmed.com/nadmed-secures-e3-5m-to-accelerate-international-sales-expansion/",
+         "date": "2024-08-22",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "news.cision.com",
+         "document": "https://news.cision.com/san-francisco-oy/r/nadmed-raises--3-5m-to-bring-nad-tests-to-international-markets--advancing-personalized-treatment-op,c4027281",
+         "date": "2024-08-22",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "750babba-5018-5ee5-bcd0-5d8086237a55"
+      }
+     },
+     {
+      "id": "d39c2301-ad09-533b-acb3-e598d29b13ff",
+      "name": "Pre-Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "comparables.ai",
+         "document": "https://www.comparables.ai/articles/business-finland-financing",
+         "date": "2022-05-25",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "d483ab67-4d15-56b5-9afe-862589bd318a"
+      }
+     },
+     {
+      "id": "d461ec83-6682-5220-97ae-f48f7f97522d",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "distance.tech",
+         "document": "https://distance.tech/news/launch_release",
+         "date": "2024-06-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "en.ain.ua",
+         "document": "https://en.ain.ua/2024/06/14/distance-technologies-pre-seed-investment",
+         "date": "2024-06-14",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "924f6205-ad90-50b6-908d-580a6bcff974"
+      }
+     },
+     {
+      "id": "e00bb46c-4da0-56d8-b4e1-57d27e01d1a2",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "ridable.com",
+         "document": "https://ridable.com/investors",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "4c68f251-d84e-5ab6-8bf5-6cfd60ac4744"
+      }
+     },
+     {
+      "id": "e3828089-6edb-50bc-866d-f102b0ab07bc",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "GRANTOR",
+       "sources": [
+        {
+         "name": "carbonaide.com",
+         "document": "https://carbonaide.com/news/deep-tech-accelerator-funding-granted/",
+         "date": "2025-01-30",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "businessfinland.fi",
+         "document": "https://www.businessfinland.fi/en/whats-new/news/2025/6-million-euros-funding-for-deep-tech-startups-to-accelerate-market-entry/",
+         "date": "2025-02-03",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "da2f238b-1073-5a8b-88f4-53e83b346bda"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_CORPORATE_EVENT": [
+     {
+      "id": "064f3298-ab90-4af1-9a2a-934b08b39213",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/herantispharma/__-zwve_I77y_A1R7kDAV0HRn3Rd-9vtovBgwwp7NgPJ8",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/explore/healthcare-startups-in-helsinki-finland/__XN956jGAFtbrM4HeXeauOVmeSu_gM2xnBE8dw7Sztms/companies",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2022-10-05",
+       "id": "b2102300-cf90-45e6-b4cc-4fe6b88dfe52"
+      }
+     },
+     {
+      "id": "09d8b71f-7922-4040-85f0-62041f94cc82",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/roadcloud/__hyLFlTJW4GyCdmVjlazT3jAMdF1S9hG1-6kBLMa9ajc",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/roadcloud",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/roadcloud/financial_details",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/265429-27",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2018-09-16",
+       "id": "e4499f85-1d59-489e-982a-680a46474dcd"
+      }
+     },
+     {
+      "id": "0c85866f-a088-4505-afa5-2afb4d930281",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/ssh-communications-security/__lBXlxGrUIS-4Qa2xDOs4pcULxvPPx4WaPNNoixgFE0k",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2021-09-30",
+       "id": "1598872d-2d68-4a7f-82d0-55650b008b15"
+      }
+     },
+     {
+      "id": "124382b4-09d5-4a08-bdc8-96490715016b",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/comparables/__P_FJ9tDEE1C8ioK_XrUs1zXfdL6C6dqOS9-zPSCgqEg",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/comparables/__P_FJ9tDEE1C8ioK_XrUs1zXfdL6C6dqOS9-zPSCgqEg/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/490297-69",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2022-01-26",
+       "id": "08ed0c1a-ae87-495e-a764-3e6621efe143"
+      }
+     },
+     {
+      "id": "15185bf0-8129-4a67-8b11-4d8c36d9c155",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/innomost/__JfKjM93TMF0c4qTu-Pkp9bKuSgzKiuusO1npAPyeeUs",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/innomost/__JfKjM93TMF0c4qTu-Pkp9bKuSgzKiuusO1npAPyeeUs/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/459733-96",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2022-08-29",
+       "id": "4cb12fb8-8d24-4d3a-b7b8-25a1dd755180"
+      }
+     },
+     {
+      "id": "1784a45e-fb04-4f67-b428-2d5b27af28aa",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "SisuSemi Oy Secures over \u20ac1 Million in Pre-Seed funding to Revolutionize Semiconductor Industry with Groundbreaking Surface Cleaning Technology - SisuSemi",
+         "document": "https://www.sisusemi.com/news/sisusemi-oy-secures-over-1-million-in-seed-funding",
+         "date": "2025-03-14"
+        },
+        {
+         "name": "\ud835\udde6\ud835\uddf6\ud835\ude00\ud835\ude02\ud835\udde6\ud835\uddf2\ud835\uddfa\ud835\uddf6 \ud835\udde2\ud835\ude06 \ud835\udde6\ud835\uddf2\ud835\uddf0\ud835\ude02\ud835\uddff\ud835\uddf2\ud835\ude00 \ud835\uddfc\ud835\ude03\ud835\uddf2\ud835\uddff \u20ac\ud835\udfed \ud835\udde0\ud835\uddf6\ud835\uddf9\ud835\uddf9\ud835\uddf6\ud835\uddfc\ud835\uddfb \ud835\uddf6\ud835\uddfb \ud835\udde6\ud835\uddf2\ud835\uddf2\ud835\uddf1 \ud835\uddf3\ud835\ude02\ud835\uddfb\ud835\uddf1\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\ude01\ud835\uddfc \ud835\udde5\ud835\uddf2\ud835\ude03\ud835\uddfc\ud835\uddf9\ud835\ude02\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb\ud835\uddf6\ud835\ude07\ud835\uddf2 \ud835\udde6\ud835\uddf2\ud835\uddfa\ud835\uddf6\ud835\uddf0\ud835\uddfc\ud835\uddfb\ud835\uddf1\ud835\ude02\ud835\uddf0\ud835\ude01\ud835\uddfc\ud835\uddff \ud835\udddc\ud835\uddfb\ud835\uddf1\ud835\ude02\ud835\ude00\ud835\ude01\ud835\uddff\ud835\ude06 \ud835\ude04\ud835\uddf6\ud835\ude01\ud835\uddf5\u2026 | SisuSemi | 16 comments",
+         "document": "https://www.linkedin.com/posts/sisusemi_%F0%9D%97%A6%F0%9D%97%B6%F0%9D%98%80%F0%9D%98%82%F0%9D%97%A6%F0%9D%97%B2%F0%9D%97%BA%F0%9D%97%B6-%F0%9D%97%A2%F0%9D%98%86-%F0%9D%97%A6%F0%9D%97%B2%F0%9D%97%B0%F0%9D%98%82%F0%9D%97%BF%F0%9D%97%B2%F0%9D%98%80-%F0%9D%97%BC%F0%9D%98%83-activity-7306215817526833152-YoK4",
+         "date": "2025-03-14"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/756012-88",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "SisuSemi Oy Invests in the Future: Seed Funding Ignites Stealth University-Driven Deep Tech Startup",
+         "document": "https://www.trysignalbase.com/news/funding/sisusemi-oy-invests-in-the-future-seed-funding-ignites-stealth-university-driven-deep-tech-startup",
+         "date": "2025-03-14"
+        }
+       ],
+       "event_date": "2025-03-14",
+       "id": "be6eeef9-ebae-4703-8842-64ba6b634af0"
+      }
+     },
+     {
+      "id": "17e16693-b4d8-40b9-9f5c-9ffced40a7f9",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/133873-75",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/vibecatch",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "c1863a84-ce0f-4b94-808e-0231dfdd573e"
+      }
+     },
+     {
+      "id": "19d5c847-3e4d-409a-bd94-ab97c1502d6c",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Nordic Science Investments leads GlobeVAC\u2019s \u20ac450K pre-seed round | EstVCA",
+         "document": "https://www.estvca.ee/news/nordic-science-investments-leads-globevac-s-eur450k-pre-seed-round",
+         "date": "2026-04-26"
+        },
+        {
+         "name": "Globevac wants to make vaccines available to everyone | Helsinki Innovation Services | University of Helsinki",
+         "document": "https://www.helsinki.fi/en/helsinki-innovation-services/industry-and-investors/commercialisation-projects/globevac-wants-make-vaccines-available-everyone",
+         "date": "2026-01-01"
+        }
+       ],
+       "event_date": "2021-01-01",
+       "id": "ee14ce31-7587-4ac4-b139-5ac53430c3c6"
+      }
+     },
+     {
+      "id": "1b80eac9-9528-4cc3-9ea7-1897065f483b",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "When life gives you carbon, make Carbonaide | TechCrunch",
+         "document": "https://techcrunch.com/2023/03/28/carbonaide-cement",
+         "date": "2023-03-28"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/lakan-betoni",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/vantaan-energia-oy",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/carbonaide/__12qZ1arnIM7J8X3Dbk53qR5uxQnNSsqJyf_xJgViHxs",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2023-03-28",
+       "id": "3bd66fa4-3817-4ac0-ac50-4fa867ecddf4"
+      }
+     },
+     {
+      "id": "221e85e9-b2ff-46e0-afa1-a7070d3f5473",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Subscribe to Our Newsletter",
+         "document": "https://superherocapital.com/superhero-capital-invests-in-furro-the-insurtech-redefining-pet-protection",
+         "date": "2025-06-03"
+        },
+        {
+         "name": "Alternative pet insurance product gaining traction in Finland. | Gytenis Galkis",
+         "document": "https://www.linkedin.com/posts/gytenis_alternative-pet-insurance-product-gaining-activity-7493206999413866496-UATb",
+         "date": "2026-08-12"
+        }
+       ],
+       "event_date": "2025-06-03",
+       "id": "08403712-a769-4db5-b155-493234a2f61f"
+      }
+     },
+     {
+      "id": "23b7a576-9167-4ea8-975b-acff8b3f705b",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/aiven/__X_wU91LlJT_XQgArV0QPxA8eH631xAmZQot1PcBqm1U/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/182199-43",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2017-08-30",
+       "id": "57ddab81-6279-46ce-8cf9-00eaf122590a"
+      }
+     },
+     {
+      "id": "25613fee-4428-4f6a-8918-a1bb7c1cfb25",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/test-of-things/__Um4hsW_M0uafvAP3fXPPct5JiBNj5rp1EDAcJCBf0XU",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/test-of-things/__Um4hsW_M0uafvAP3fXPPct5JiBNj5rp1EDAcJCBf0XU/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/717658-21",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/test-of-things",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "1d93d6f5-486b-45a8-99a3-85499a4f77c7"
+      }
+     },
+     {
+      "id": "25af2b50-3d95-4237-8aa3-f7b6c97894ef",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/surveypal/__GrjmoW9-ZVmLYPRPgsOvHog08bNLiWAxR5JVs-Ag9Ds/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/93899-89",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2013-05-01",
+       "id": "0000b5e6-3da8-43f6-a5a5-e967cd37241a"
+      }
+     },
+     {
+      "id": "2ce11f86-d420-4c28-ba3f-1540d3ecea67",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "FOV Ventures Raises $18 Million to Fund European Metaverse Startups",
+         "document": "https://roadtovr.com/fov-ventures-fund-raise-announcement",
+         "date": "2022-03-22"
+        },
+        {
+         "name": "FOV Ventures gathers 16.5m euros for fund",
+         "document": "https://www.venturecapitaljournal.com/fov-ventures-gathers-16-5m-euros-for-fund",
+         "date": "2022-03-10"
+        },
+        {
+         "name": "FOV Ventures launches \u20ac25m fund to back metaverse startups",
+         "document": "https://www.uktech.news/funding/vc-funding/fov-ventures-launches-metaverse-fund-20220310",
+         "date": "2022-03-10"
+        },
+        {
+         "name": "FOV Ventures: Annual Review",
+         "document": "https://viewpoints.fov.ventures/p/fov-ventures-2022",
+         "date": "2023-01-05"
+        },
+        {
+         "name": "FOV Ventures company information, funding & investors",
+         "document": "https://directory.startupluxembourg.com/companies/fov_ventures",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2022-03-10",
+       "id": "d5d309b3-6475-4074-8b96-11acf94005c6"
+      }
+     },
+     {
+      "id": "39ce4b4b-f39e-44e6-a94b-06cd2830f3ae",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "SNIFFIE SECURED A 2.5M\u20ac FUNDING FOR ECOMMERCE PRICING AUTOMATION",
+         "document": "https://news.cision.com/sniffie-software-oy/r/sniffie-secured-a-2-5m--funding-for-ecommerce-pricing-automation,c3495643",
+         "date": "2022-02-01"
+        },
+        {
+         "name": "Sniffie Software",
+         "document": "https://www.cbinsights.com/company/sniffie-software/financials",
+         "date": "2022-03-02"
+        },
+        {
+         "name": "Sniffie Software Ltd. Asset Profile | Preqin",
+         "document": "https://www.preqin.com/data/profile/asset/sniffie-software-ltd-/466158",
+         "date": "2025-02-19"
+        },
+        {
+         "name": "www.zoominfo.com",
+         "document": "https://www.zoominfo.com/c/sniffie-software/440573647",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2022-02-01",
+       "id": "f4a9edf2-271a-4586-9514-0c473b1a8327"
+      }
+     },
+     {
+      "id": "4d6a898a-f693-49d3-a498-1f50ce06e50f",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Watch Out Google, AddSearch -- Like Swiftype -- Wants To Stop In-Website Search From Sucking | TechCrunch",
+         "document": "https://techcrunch.com/2014/01/03/addsearch",
+         "date": "2014-01-03"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/addsearch/__w0oOb7EWXdbCOHBqFwGP0ydOW0z6lMMM94BPBFIqkx0",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2014-01-03",
+       "id": "4a2a1e19-1762-4d97-91af-bd797d69bd1a"
+      }
+     },
+     {
+      "id": "517f3ac3-105b-4e8f-b137-efb7730a599a",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/bonusway/__uiyvKjoTJ49395za_ke8HrwWl_9VjepWxafYT0JnuOk/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2014-06-03",
+       "id": "e91482f9-a3a6-4f4c-86b2-cb4e96a3d7cc"
+      }
+     },
+     {
+      "id": "51b149dc-8c79-4956-86da-573c72ab0e12",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/alinor",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/funding_round/alinor-series-unknown--f32a7ca3",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/503428-06",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2022-10-15",
+       "id": "38c51413-ec30-480f-8348-5cb9461252aa"
+      }
+     },
+     {
+      "id": "527ee3eb-3292-4bae-b363-069e85c774f8",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/funding_round/bioretec-post-ipo-equity--5ef413cd",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/bioretec",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/bioretec/__RL27cjnwQtO4wFK9Vg9icgt7FG73myu1Gi474RDMRVM/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2023-04-27",
+       "id": "5fc5d2cd-ef8e-4641-b0d7-73d03a966b7b"
+      }
+     },
+     {
+      "id": "53c1f92c-5bc9-430a-8c1f-14c0dfc3ac40",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/torrey-pines-investment/investor_summary/overview_timeline",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/664012-45",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/42802-93",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2024-09-15",
+       "id": "6e10fe1a-8b8a-4c30-ad37-0897defff97f"
+      }
+     },
+     {
+      "id": "53e4c3e2-3901-4dd2-b728-f4d86516f475",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Meet the Finnish biotech startup bringing a long-lost mycoprotein to your plate | TechCrunch",
+         "document": "https://techcrunch.com/2024/05/22/meet-the-finnish-biotech-startup-bringing-a-long-lost-mycoprotein-to-your-plate",
+         "date": "2024-05-22"
+        }
+       ],
+       "id": "91720f6f-5702-4d90-8ed6-13e244b23a88"
+      }
+     },
+     {
+      "id": "5601f3c3-8aa0-4bd7-a0a5-354a401b7102",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/227729-35",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/person/peter-vesterbacka",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/person/nicolas-brabeck-letmathe",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/110830-87",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/227751-31",
+         "date": "2026-08-24"
+        }
+       ],
+       "id": "61b6b31c-6ea5-49f2-9c41-79164134f86f"
+      }
+     },
+     {
+      "id": "5b58e2cf-c4c7-416c-aaa4-97e24ccee7c6",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Gravito",
+         "document": "https://www.cbinsights.com/company/gravito/financials",
+         "date": "2023-01-09"
+        },
+        {
+         "name": "Gravito - Products, Competitors, Financials, Employees, Headquarters Locations",
+         "document": "https://www.cbinsights.com/company/gravito",
+         "date": "2024-02-20"
+        }
+       ],
+       "event_date": "2024-10-30",
+       "id": "3a69322d-9a9d-458c-85c7-43a655ea40ce"
+      }
+     },
+     {
+      "id": "5f1ba733-e178-4257-847c-96d714a62838",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/459204-31",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/nadmed",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/funding_round/nadmed-series-a--f5503e9e",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "4bff431a-bd40-42e1-bca9-6288aeba44ac"
+      }
+     },
+     {
+      "id": "6529de1a-d241-476a-b97b-504f3b8f395f",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Flow claims it can 100x any CPU's power with its companion chip and some elbow grease | TechCrunch",
+         "document": "https://techcrunch.com/2024/06/11/flow-claims-it-can-100x-any-cpus-power-with-its-companion-chip-and-some-elbow-grease",
+         "date": "2024-06-11"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/509257-36",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/flow/__RxrvcZz34aknppcBUMqGKWuXTt5j82CcwTi0PbwOumQ",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2024-06-12",
+       "id": "f0fc989a-210e-4f60-b084-184c43b1d0df"
+      }
+     },
+     {
+      "id": "70273f9e-bde6-4a34-befc-387a09dc0bae",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/treon/__R9vhvjraPaC3Wr-WGbK-bxUf9r44ybXuV4znqKgaEIU",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/treon/__R9vhvjraPaC3Wr-WGbK-bxUf9r44ybXuV4znqKgaEIU/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/268556-41",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/treon/financial_details",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2023-09-06",
+       "id": "04770a23-a6e7-487b-abd8-ee5e131cf070"
+      }
+     },
+     {
+      "id": "73b31c1b-f1d4-430e-bca3-008d435a43e5",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/zervant/__knb1cDIgEg1w4d77T0JCTNtQOFXDvioi_8RSU7Qdl5k/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2013-07-03",
+       "id": "4ed245e2-3348-4222-872f-614079733965"
+      }
+     },
+     {
+      "id": "77ef7c90-dd62-448f-9131-f13eac4a1c7d",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Danfoss to receive EUR 10 million in funding from Business Finland for fossil-free solutions in industry and transportation",
+         "document": "https://www.danfoss.com/en/about-danfoss/news/cf/danfoss-to-receive-eur-10-million-in-funding-from-business-finland-for-fossil-free-solutions-in-industry-and-transportation",
+         "date": "2023-03-31"
+        },
+        {
+         "name": "Inspiring speeches and discussions at the Fossil Free Future program launch event",
+         "document": "https://www.danfoss.com/en/about-danfoss/news/dds/fossil-free-future-program-launched-in-finland",
+         "date": "2023-11-10"
+        }
+       ],
+       "event_date": "2023-03-31",
+       "id": "66f6c2ed-d61c-40a8-aeae-8442f3865a33"
+      }
+     },
+     {
+      "id": "7c5b0d2f-0b96-428e-ba37-ee860e50abac",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/fixably/__lz3RA1ai2rSMPUTO-ZCflKoDZLzbES7I9ASCBs3kofU/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/439302-43",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2023-06-07",
+       "id": "acb0e9a5-1117-4862-8bd5-5c94c09dc71c"
+      }
+     },
+     {
+      "id": "83bf66e1-70d4-4e9d-a882-764ee618c252",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/aito/__UgG_0C9KKaJROVkpelcZkAnOBuiEw-30nc7PpNhRihk",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/aito/__UgG_0C9KKaJROVkpelcZkAnOBuiEw-30nc7PpNhRihk#founders-and-board-of-directors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Nokia Chairman Risto Siilasmaa backs machine learning startup Aito.ai | TechCrunch",
+         "document": "https://techcrunch.com/2019/05/07/aito-ai",
+         "date": "2019-05-07"
+        }
+       ],
+       "event_date": "2019-05-07",
+       "id": "a5ad9cdc-f152-453c-8b21-d04d5b33d0b9"
+      }
+     },
+     {
+      "id": "92ad8089-521e-4871-968f-6c6cfc7b79fc",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/lumoa/__EUCCGhioyswrN91VgmB7uRpKuaau3wams-18H-GgFek",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/lumoa/__EUCCGhioyswrN91VgmB7uRpKuaau3wams-18H-GgFek/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/228025-99",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2018-06-05",
+       "id": "7f81ed75-6249-4007-890b-ce34309b3894"
+      }
+     },
+     {
+      "id": "92b235ab-faa4-41a4-b970-d6faf4abb9ed",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/biomensio/__uEGUNbc50bqBavVSinRniUsn0H6rslhr4ukpD6Sqc-s",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/biomensio/__uEGUNbc50bqBavVSinRniUsn0H6rslhr4ukpD6Sqc-s/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2016-11-28",
+       "id": "5102654f-3743-46dc-897d-89af6d7a94d9"
+      }
+     },
+     {
+      "id": "97255876-dd29-49e6-bcb2-b0c8d54d80d1",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/nextgames/__XASuf_YcQ0er2UDm-S___EfTWwaZ8x0DwiBS0n8B2Tg/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2019-11-29",
+       "id": "b9edee6c-ff50-4893-a64b-ed6e5f671eaa"
+      }
+     },
+     {
+      "id": "9871b184-732f-4d4d-ac98-54423742ab93",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "sifted.eu",
+         "document": "https://sifted.eu/articles/first-time-vc-funds-2022",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Transparency & Disclosure",
+         "document": "https://www.fov.ventures/transparency-disclosure-policy",
+         "date": "2025-02-20"
+        }
+       ],
+       "event_date": "2023-01-01",
+       "id": "c6ef98e5-ce08-4746-ac81-e1908e9dbc47"
+      }
+     },
+     {
+      "id": "9a218964-705b-4fc6-bf90-3b9b83229f77",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/freska/__wOFJTcvd9tmrIPGEmZkQZXDNgVX-ziYf-Ax9AF9YhGU",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/freska/__wOFJTcvd9tmrIPGEmZkQZXDNgVX-ziYf-Ax9AF9YhGU/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Home cleaning space hasn't quite dried up yet as Nordic startup Freska raises \u20ac2M | TechCrunch",
+         "document": "https://techcrunch.com/2017/05/09/home-cleaning-space-hasnt-quite-dried-up-yet-as-nordic-startup-freska-raises-e2m",
+         "date": "2017-05-09"
+        },
+        {
+         "name": "Freska | Valuation, Funding Rounds & Stock Price | Caplight",
+         "document": "https://www.caplight.com/company/freska",
+         "date": "2018-10-26"
+        }
+       ],
+       "event_date": "2017-05-05",
+       "id": "4c9242d7-3485-4791-95f8-6953b16c620f"
+      }
+     },
+     {
+      "id": "a6603a4a-745a-49c3-83e6-5e9637c7102c",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/kidescience/__FHutbmx5tagRmVYAAOTOlKO8kUBr3fy76RYfjaIDI4c/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/kide-science/__FHutbmx5tagRmVYAAOTOlKO8kUBr3fy76RYfjaIDI4c",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/explore/k-12-edtech-startups-in-finland/__V8rFUJ2ftHkiMOhcRW2XHBVITgea-TmHVV054Gi0EX4",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2018-12-04",
+       "id": "c0f1c181-a0e1-48ef-81f8-d14f1f714df4"
+      }
+     },
+     {
+      "id": "b6b319fb-bc49-45f9-80b0-409fcb54d930",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Freska | Valuation, Funding Rounds & Stock Price | Caplight",
+         "document": "https://www.caplight.com/company/freska",
+         "date": "2018-10-26"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/160618-87",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2018-10-26",
+       "id": "1a37ced7-44cb-49b1-bfd0-688ada328cb7"
+      }
+     },
+     {
+      "id": "bc0bfea2-53da-4424-a7cf-738b7b25ab8f",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "DISTANCE LAUNCH RELEASE",
+         "document": "https://distance.tech/news/launch_release",
+         "date": "2024-06-13"
+        },
+        {
+         "name": "en.ain.ua",
+         "document": "https://en.ain.ua/2024/06/14/distance-technologies-pre-seed-investment",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Distance emerges from stealth with $2.7M in funding",
+         "document": "https://www.auganix.org/xr-news-distance-emerges-from-stealth-with-2-7m-in-funding-to-announce-its-glasses-free-xr-technology",
+         "date": "2024-06-13"
+        }
+       ],
+       "event_date": "2024-06-13",
+       "id": "b5f7d2c0-f461-41a5-909e-b1513ca4c0f6"
+      }
+     },
+     {
+      "id": "bfb670ff-2680-4008-ad17-75e181d044ed",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [],
+       "event_date": "2013-01-01",
+       "id": "abfe8f80-6b79-447b-83ff-c76b44cc0a2f"
+      }
+     },
+     {
+      "id": "c95bd01e-c312-4749-99bb-faba96fd4bb8",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/newsletter/mobile-gaming-studio-scores-47m",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/267339-07",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/explore/gaming-startups-in-finland/__yvM4696OQhlmZv8ulFzgCY3KWuue1OKGTMS6aOUqYWc/companies",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2021-01-22",
+       "id": "f05d2992-4a3f-426c-b0c7-fc7682595e0b"
+      }
+     },
+     {
+      "id": "d0d7b073-e6a9-4dc6-8c2b-0798bc6a80ff",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/reorbit/__jHH-J3eAQMBCCadIhwtvwYXFm3lkmdlH_FvBx81hPew/funding-and-investors",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2023-12-21",
+       "id": "bb38ec1e-953b-4dc8-9cc4-bd87176202ba"
+      }
+     },
+     {
+      "id": "e3946466-908d-4614-b0f7-c58c414f946c",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Kuva Space raises \u20ac16.6M Series A to scale hyperspectral imagery ambitions | TechCrunch",
+         "document": "https://techcrunch.com/2023/11/02/2623303",
+         "date": "2023-11-02"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/kuva-space/__C6sCi4Nph5GgnUpfG8sIOIWyuuGlKsL9_Z6HpRYOy_s/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2023-11-02",
+       "id": "258818c9-7107-4ebf-9b55-f572a16b5671"
+      }
+     },
+     {
+      "id": "e5f5885b-2fcb-4345-893b-d1c560fa1fc7",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/happyplantprotein/__8cyWVZkxHEskv8NwhkkrEibmq_T_lvoVYmqyIlnDfJw",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/happy-plant-protein/__8cyWVZkxHEskv8NwhkkrEibmq_T_lvoVYmqyIlnDfJw",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/happyplantprotein/__8cyWVZkxHEskv8NwhkkrEibmq_T_lvoVYmqyIlnDfJw/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/707873-59",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2024-11-14",
+       "id": "daeb1c3a-6317-445e-ac66-d6dba26fd31c"
+      }
+     },
+     {
+      "id": "f0f21dad-641d-4c6c-a4cb-8f28e5a3f449",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/revieve/__98ucHtXaupHew237QTKmVabPLiZ31QovBqsu12y-yPY/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/revieve/__98ucHtXaupHew237QTKmVabPLiZ31QovBqsu12y-yPY",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/revieve/company_overview/overview_timeline",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "crunchbase.com",
+         "document": "https://crunchbase.com/organization/revieve/company_financials",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2019-06-17",
+       "id": "64a7d7ca-fd68-48bd-ab58-55f5f95a1c52"
+      }
+     },
+     {
+      "id": "f591d576-1e9f-48a6-84a5-d3fa1d620fd9",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/rotomate/__2MejRK4i_F71FaMuLO8kowBGL0zopKaGd9ocKJfgFJU/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/rotomate/__2MejRK4i_F71FaMuLO8kowBGL0zopKaGd9ocKJfgFJU",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/artificial-intelligence/ai-startups-in-saas-in-helsinki-in-finland/__sVrjwzONOK4Hiy48vbMQSeypyyzOVj0oaUEBjXjLI7g",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2026-06-10",
+       "id": "dc04b1c1-b8c4-4085-a5c8-95995fd8bb87"
+      }
+     },
+     {
+      "id": "fc6da176-e81b-44cf-b0e7-cde321fb7f51",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Animal-free egg protein startup Onego Bio is one step closer to cracking the traditional egg market | TechCrunch",
+         "document": "https://techcrunch.com/2024/04/01/animal-free-egg-protein-onego-bio-40m",
+         "date": "2024-04-01"
+        }
+       ],
+       "event_date": "2024-04-01",
+       "id": "0f5c839c-3398-4fdc-b147-5d7ea38cf52e"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "68fba581-2da9-4565-9e38-300a594f2361",
+      "name": "GOVERNMENT_AND_PUBLIC_ADMIN",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "AgFunderNews",
+         "document": "https://agfundernews.com/solar-foods-wins-89-2m-backing-for-protein-from-air-factory-but-final-investment-decision-still-pending",
+         "date": "2026-06-20"
+        }
+       ],
+       "id": "9c1baff0-5013-558b-a486-994be62a8aae"
+      }
+     }
+    ],
+    "IS_MEMBER_OF": [
+     {
+      "id": "cb3dbb7f-de57-47c7-9bfd-2c3f74765512",
+      "name": "Team Finland network",
+      "entity_type": "Organization",
+      "properties": {
+       "role": "core member",
+       "sources": [
+        {
+         "name": "Team Finland organizations",
+         "document": "https://www.team-finland.fi/en/team-finland-organisations",
+         "date": "2018-12-14"
+        },
+        {
+         "name": "About Team Finland",
+         "document": "https://www.team-finland.fi/en/about-team-finland",
+         "date": "2018-12-27"
+        },
+        {
+         "name": "Business Finland Sustainability Story",
+         "document": "https://www.businessfinland.com/how-we-can-help/about",
+         "date": "2022-09-22"
+        }
+       ],
+       "id": "59c40169-3490-5745-9a4d-0be638672dcf"
+      }
+     }
+    ]
+   },
+   "incoming": {}
+  },
+  "numerical_observations": []
+ }
+}

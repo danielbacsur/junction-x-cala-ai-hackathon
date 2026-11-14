@@ -1,0 +1,3515 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/f2b20ea8-c011-4ee4-b038-4bee061c8145",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 1000
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 1000
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 1000
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 1000
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 1000
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 1000
+     },
+     "IS_MEMBER_OF": {
+      "limit": 1000
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 1000
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 1000
+     },
+     "TRADED_ON": {
+      "limit": 1000
+     },
+     "LISTED_ON": {
+      "limit": 1000
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "FOUNDED": {
+      "limit": 1000
+     },
+     "WORKS_AT": {
+      "limit": 1000
+     },
+     "IS_MEMBER_OF": {
+      "limit": 1000
+     },
+     "IS_CEO_OF": {
+      "limit": 1000
+     },
+     "IS_CTO_OF": {
+      "limit": 1000
+     },
+     "IS_CFO_OF": {
+      "limit": 1000
+     },
+     "IS_COO_OF": {
+      "limit": 1000
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 1000
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 1000
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 1000
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 1000
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 1000
+     },
+     "MANUFACTURED_BY": {
+      "limit": 1000
+     },
+     "DESIGNED_BY": {
+      "limit": 1000
+     },
+     "OPERATED_BY": {
+      "limit": 1000
+     },
+     "CREATED_BY": {
+      "limit": 1000
+     },
+     "PUBLISHED_BY": {
+      "limit": 1000
+     },
+     "GRANTED_BY": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:26:54+0200",
+ "_seconds": 1.78,
+ "response": {
+  "id": "f2b20ea8-c011-4ee4-b038-4bee061c8145",
+  "name": "Masia VC",
+  "entity_type": "Company",
+  "description": "Spanish venture capital firm based in Barcelona that invests in software and services.",
+  "properties": {
+   "name": {
+    "value": "Masia VC",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-06-01"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [
+     "Masia",
+     "Masia Ventures",
+     "Masia Investor",
+     "Masia / Maisa",
+     "Masia fund"
+    ],
+    "sources": []
+   },
+   "description": {
+    "value": "Spanish venture capital firm based in Barcelona that invests in software and services.",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-08-02"
+     }
+    ]
+   },
+   "website": {
+    "value": "masiavc.com",
+    "sources": [
+     {
+      "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+      "document": "https://inforcapital.com/companies/masia-vc",
+      "date": "2026-06-02"
+     }
+    ]
+   },
+   "headquarters_address": {
+    "value": "Barcelona, Spain",
+    "sources": [
+     {
+      "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+      "document": "https://inforcapital.com/companies/masia-vc",
+      "date": "2026-08-04"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2025-05-27",
+    "sources": [
+     {
+      "name": "Menlo Times - Technology, Startups, Innovation & News",
+      "document": "https://www.menlotimes.com/post/barcelona-based-new-angel-fund-masia-launches-to-nourish-barcelona-s-tech-hub",
+      "date": "2026-08-04"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "INVESTED_IN": [
+     {
+      "id": "06656d93-f6ef-4d85-bac7-4a2b956ca442",
+      "name": "Galtea AI",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-06-02"
+        }
+       ],
+       "id": "95c59b38-0ae7-5be2-b0d7-f3f0364a2674"
+      }
+     },
+     {
+      "id": "0a484fed-0700-42dc-a4c7-2c1c16246827",
+      "name": "Zymvol Biomodeling",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "d995eb14-4d6b-5704-a9d2-7a8245283a40"
+      }
+     },
+     {
+      "id": "14a84db2-32ca-43fb-b7a4-69cc5fd5f0cc",
+      "name": "Fermat",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/post/barcelona-based-new-angel-fund-masia-launches-to-nourish-barcelona-s-tech-hub",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "5b8fb950-62fb-57ad-b069-da7efcac6d1d"
+      }
+     },
+     {
+      "id": "1cd23ace-567a-4817-bc12-3e580d59e543",
+      "name": "Tolemy Bio",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tolemy.bio",
+         "document": "https://tolemy.bio/",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "6aefe3fb-b6d0-5130-8b2e-6c10aa9ef9c2"
+      }
+     },
+     {
+      "id": "2bdea5e8-a630-4098-9fb1-3f84bbaa77a2",
+      "name": "Cala",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-06-02"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://www.4yfn.com/",
+         "date": "2026-06-02"
+        },
+        {
+         "name": "https://www.zonebourse.com/insider/BALUST-ELISENDA-BOU-A2617K",
+         "document": "https://www.zonebourse.com/",
+         "date": "2026-06-02"
+        },
+        {
+         "name": "Euro Seed 50 | Creandum",
+         "document": "https://euroseed50.com/",
+         "date": "2026-06-02"
+        },
+        {
+         "name": "I serendipitously said yes to an unexpected role at Cala and this is how my onboarding week went: Monday - first day, new office, breakfast with the team, laptop setup Wednesday - jump on stage to\u2026 | \u00b7 Elies Delgado Tamarit \u00b7 | 32 comments",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-06-02"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-06-02"
+        },
+        {
+         "name": "Forbes Espa\u00f1a: Nada personal, solo negocios - Forbes Espa\u00f1a",
+         "document": "https://forbes.es/",
+         "date": "2026-06-02"
+        },
+        {
+         "name": "Bilbostack",
+         "document": "https://bilbostack.com/",
+         "date": "2026-06-02"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/",
+         "date": "2026-06-02"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-06-02"
+        },
+        {
+         "name": "Cala | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-06-02"
+        },
+        {
+         "name": "https://startup-seeker.com/company/cala~ai",
+         "document": "https://startup-seeker.com/",
+         "date": "2026-06-02"
+        },
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/",
+         "date": "2026-06-02"
+        },
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/",
+         "date": "2026-06-02"
+        }
+       ],
+       "id": "7980d8be-1c6c-5a68-bc41-40fcea387fe8"
+      }
+     },
+     {
+      "id": "307ae8fd-183b-4801-8593-88e86dfe0bdd",
+      "name": "Overwatch AI",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Overwatch AI Raises $1.5M in Funding",
+         "document": "https://www.thesaasnews.com/news/overwatch-ai-raises-1-5m-in-funding",
+         "date": "2026-05-20"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/845828-65",
+         "date": "2026-06-02"
+        }
+       ],
+       "id": "7f49197c-450c-51ab-b65e-b495f4872dcc",
+       "valid_since": "2026-05-20"
+      }
+     },
+     {
+      "id": "34939b19-e86c-4052-85e1-0a9b1d3ccd19",
+      "name": "Biorce",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/post/barcelona-based-new-angel-fund-masia-launches-to-nourish-barcelona-s-tech-hub",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "98fe51e5-3cd1-57d0-9078-b517bf7a696b"
+      }
+     },
+     {
+      "id": "492ede70-b0bc-4aa2-9250-e222ce198521",
+      "name": "Oliva",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Forbes Espa\u00f1a: Nada personal, solo negocios - Forbes Espa\u00f1a",
+         "document": "https://forbes.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Bilbostack",
+         "document": "https://bilbostack.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The catalyzer of Innovationand Entrepreneurship of Ci\u00eancias ULisboa",
+         "document": "https://teclabs.pt/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "CB Insights \u2014 Predictive Intelligence on Private Companies",
+         "document": "https://www.cbinsights.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://www.4yfn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "WWWhat's new",
+         "document": "https://wwwhatsnew.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cala | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "capital-riesgo.es",
+         "document": "https://capital-riesgo.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Overwatch AI Raises $1.5M in Funding",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://startup-seeker.com/company/cala~ai",
+         "document": "https://startup-seeker.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://www.zonebourse.com/insider/BALUST-ELISENDA-BOU-A2617K",
+         "document": "https://www.zonebourse.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cinco D\u00edas: econom\u00eda y mercados",
+         "document": "https://cincodias.elpais.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "I serendipitously said yes to an unexpected role at Cala and this is how my onboarding week went: Monday - first day, new office, breakfast with the team, laptop setup Wednesday - jump on stage to\u2026 | \u00b7 Elies Delgado Tamarit \u00b7 | 32 comments",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Euro Seed 50 | Creandum",
+         "document": "https://euroseed50.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tolemy.bio",
+         "document": "https://tolemy.bio/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "684d386f-0a4a-57fa-9fde-0f9d7fa296a6"
+      }
+     },
+     {
+      "id": "514f0390-2d68-43c7-b235-6ab8476a4704",
+      "name": "Capably",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-06-02"
+        }
+       ],
+       "id": "80861a05-08a1-5e30-8569-cf9e1373feb8"
+      }
+     },
+     {
+      "id": "5469edaf-d708-48a2-a6e1-c148e3c2ae94",
+      "name": "Pollen",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "The catalyzer of Innovationand Entrepreneurship of Ci\u00eancias ULisboa",
+         "document": "https://teclabs.pt/tec-labs-news/pollen-raises-e3-2-million-and-sets-sights-on-european-expansion",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "2861613b-50d7-52b4-bfb2-431812d0bebe"
+      }
+     },
+     {
+      "id": "5f54f809-09ef-4149-9ce6-e724dc8abed7",
+      "name": "Didit",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Forbes Espa\u00f1a: Nada personal, solo negocios - Forbes Espa\u00f1a",
+         "document": "https://forbes.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Bilbostack",
+         "document": "https://bilbostack.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The catalyzer of Innovationand Entrepreneurship of Ci\u00eancias ULisboa",
+         "document": "https://teclabs.pt/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "CB Insights \u2014 Predictive Intelligence on Private Companies",
+         "document": "https://www.cbinsights.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://www.4yfn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "WWWhat's new",
+         "document": "https://wwwhatsnew.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cala | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "capital-riesgo.es",
+         "document": "https://capital-riesgo.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Overwatch AI Raises $1.5M in Funding",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://startup-seeker.com/company/cala~ai",
+         "document": "https://startup-seeker.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://www.zonebourse.com/insider/BALUST-ELISENDA-BOU-A2617K",
+         "document": "https://www.zonebourse.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cinco D\u00edas: econom\u00eda y mercados",
+         "document": "https://cincodias.elpais.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "I serendipitously said yes to an unexpected role at Cala and this is how my onboarding week went: Monday - first day, new office, breakfast with the team, laptop setup Wednesday - jump on stage to\u2026 | \u00b7 Elies Delgado Tamarit \u00b7 | 32 comments",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Euro Seed 50 | Creandum",
+         "document": "https://euroseed50.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tolemy.bio",
+         "document": "https://tolemy.bio/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "9c131f11-2b80-5a55-9d72-b7ec9c369225"
+      }
+     },
+     {
+      "id": "63ccd4b4-9f02-46ff-8403-194716a0a74e",
+      "name": "Modern Relay",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/news/barcelona-and-san-francisco-based-modern-relay-lands-25-million-for-its-enterprise-ai-foundation-layer",
+         "date": "2026-07-09"
+        }
+       ],
+       "id": "7321d8b7-988f-59b8-a542-13713b9a504e"
+      }
+     },
+     {
+      "id": "68c166b7-5608-40a2-b6bc-ef7d9dc894d5",
+      "name": "Doctor.One",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/845828-65",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "46152380-4742-5436-b6c5-12ce8cd88873"
+      }
+     },
+     {
+      "id": "6e408e73-aa09-423b-bb3f-6376dc03f655",
+      "name": "Didit",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/845828-65",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/news/didit-raised-2-million-in-total-including-yc-accelerators-contribution-with-saasholic-hypersphere-roar-vc-masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "22eee828-81c4-57e7-af7a-00a81e877de3"
+      }
+     },
+     {
+      "id": "7af47996-36c7-4c47-9bba-0d6c7b9f9202",
+      "name": "Doctor.One",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Forbes Espa\u00f1a: Nada personal, solo negocios - Forbes Espa\u00f1a",
+         "document": "https://forbes.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Bilbostack",
+         "document": "https://bilbostack.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The catalyzer of Innovationand Entrepreneurship of Ci\u00eancias ULisboa",
+         "document": "https://teclabs.pt/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "CB Insights \u2014 Predictive Intelligence on Private Companies",
+         "document": "https://www.cbinsights.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://www.4yfn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "WWWhat's new",
+         "document": "https://wwwhatsnew.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cala | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "capital-riesgo.es",
+         "document": "https://capital-riesgo.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Overwatch AI Raises $1.5M in Funding",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://startup-seeker.com/company/cala~ai",
+         "document": "https://startup-seeker.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://www.zonebourse.com/insider/BALUST-ELISENDA-BOU-A2617K",
+         "document": "https://www.zonebourse.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cinco D\u00edas: econom\u00eda y mercados",
+         "document": "https://cincodias.elpais.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "I serendipitously said yes to an unexpected role at Cala and this is how my onboarding week went: Monday - first day, new office, breakfast with the team, laptop setup Wednesday - jump on stage to\u2026 | \u00b7 Elies Delgado Tamarit \u00b7 | 32 comments",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Euro Seed 50 | Creandum",
+         "document": "https://euroseed50.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tolemy.bio",
+         "document": "https://tolemy.bio/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "b6fe1c28-dfd8-5ae8-a594-5a464060ad41"
+      }
+     },
+     {
+      "id": "7ef90c12-3c88-49fe-b825-8b1f9736572d",
+      "name": "Overwatch AI",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Forbes Espa\u00f1a: Nada personal, solo negocios - Forbes Espa\u00f1a",
+         "document": "https://forbes.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Bilbostack",
+         "document": "https://bilbostack.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The catalyzer of Innovationand Entrepreneurship of Ci\u00eancias ULisboa",
+         "document": "https://teclabs.pt/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "CB Insights \u2014 Predictive Intelligence on Private Companies",
+         "document": "https://www.cbinsights.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://www.4yfn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "WWWhat's new",
+         "document": "https://wwwhatsnew.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cala | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "capital-riesgo.es",
+         "document": "https://capital-riesgo.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Overwatch AI Raises $1.5M in Funding",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://startup-seeker.com/company/cala~ai",
+         "document": "https://startup-seeker.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://www.zonebourse.com/insider/BALUST-ELISENDA-BOU-A2617K",
+         "document": "https://www.zonebourse.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cinco D\u00edas: econom\u00eda y mercados",
+         "document": "https://cincodias.elpais.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "I serendipitously said yes to an unexpected role at Cala and this is how my onboarding week went: Monday - first day, new office, breakfast with the team, laptop setup Wednesday - jump on stage to\u2026 | \u00b7 Elies Delgado Tamarit \u00b7 | 32 comments",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Euro Seed 50 | Creandum",
+         "document": "https://euroseed50.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tolemy.bio",
+         "document": "https://tolemy.bio/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "1b2e3dc8-d5d1-568f-80c0-af7d62b1327d"
+      }
+     },
+     {
+      "id": "81cfdabc-53f7-426a-b358-a942e159ca0f",
+      "name": "Cala AI",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "startup.eu",
+         "document": "https://www.startup.eu/investments/cala-7-m-pre-seed-05-2026",
+         "date": "2026-05-11",
+         "date_precision": "day"
+        },
+        {
+         "name": "dealflow.es",
+         "document": "https://dealflow.es/issue/513/embat-raised-30m-lightspeed-makes-1st-investment-in-spain-cala-spain-tech-report-2026",
+         "date": "2026-05-18",
+         "date_precision": "day"
+        },
+        {
+         "name": "newsletter.dealflow.es",
+         "document": "https://newsletter.dealflow.es/p/dealflowes-513-embat-raised-30m-lightspeed",
+         "date": "2026-05-18",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "linkedin.com",
+         "document": "https://www.linkedin.com/posts/elisendabou_were-finally-open-14-months-ago-activity-7459601462898266112-NJCs",
+         "date": "2026-05-11",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "dealroom.co",
+         "document": "https://dealroom.co/news/130391-barcelonas-cala-raises-7m-pre-seed-to-build-a-knowledge-layer-for-ai-age/",
+         "date": "2026-05-29",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        },
+        {
+         "name": "infiniteloop.media",
+         "document": "https://infiniteloop.media/p/building-the-verified-knowledge-graph-your-ai-agents-need-better-data",
+         "date": "2026-06-03",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "19ae758f-dd4f-49c4-b0d4-9278476f69cc"
+      }
+     },
+     {
+      "id": "94c03614-08c2-40b9-a4eb-147439fcde7e",
+      "name": "Didit",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "CB Insights \u2014 Predictive Intelligence on Private Companies",
+         "document": "https://www.cbinsights.com/investor/roar-venture",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "f88862c6-3770-5ea2-a8cc-b3801267f531"
+      }
+     },
+     {
+      "id": "990b2399-8a33-4d55-93ad-1843b4c6f146",
+      "name": "CareerOS",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-06-02"
+        }
+       ],
+       "id": "3e684b17-5860-5e7a-8685-0b113bf9b928"
+      }
+     },
+     {
+      "id": "a362a49c-27bc-49ff-ae53-72271604d0f4",
+      "name": "Spock",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-06-02"
+        }
+       ],
+       "id": "d5018af1-202b-54ba-b803-c07571e23289"
+      }
+     },
+     {
+      "id": "b0d4e022-98df-42e6-9220-695f366699f3",
+      "name": "Oliva",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/post/barcelona-based-new-angel-fund-masia-launches-to-nourish-barcelona-s-tech-hub",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "3a44113d-3eb9-50b1-9e92-f59761cfe33b"
+      }
+     },
+     {
+      "id": "b53ea560-5dbd-46a5-9f89-5a37a8df75a0",
+      "name": "Base4 Biosciences",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Cinco D\u00edas: econom\u00eda y mercados",
+         "document": "https://cincodias.elpais.com/companias/2026-04-22/base4-biosciences-cierra-una-ronda-con-kfund-baobab-ventures-itnig-y-masia-vc-para-su-ia-de-deteccion-de-enfermedades.html",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "capital-riesgo.es",
+         "document": "https://capital-riesgo.es/es/articles/tags/base4+biosciences",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "4eae5f35-e59f-5de0-bb96-10fbfe76b5c6"
+      }
+     },
+     {
+      "id": "bf51f256-8fa0-4fc8-bd73-c2d2a53cf021",
+      "name": "Galtea",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "WWWhat's new",
+         "document": "https://wwwhatsnew.com/?p=489059",
+         "date": "2026-06-28"
+        },
+        {
+         "name": "WWWhat's new",
+         "document": "https://wwwhatsnew.com/2026/03/27/galtea-barcelona-testing-agentes-ia-seed-32-millones",
+         "date": "2026-06-28"
+        }
+       ],
+       "id": "919c760d-f228-5810-8231-2f8fa716dd1f"
+      }
+     },
+     {
+      "id": "cece07b5-e8c3-43a5-b5d5-ce8b5e0b3669",
+      "name": "Hop Aero",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/740595-70",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "9ab0c2f1-4913-5771-bf97-4331db7420d1"
+      }
+     },
+     {
+      "id": "d3fa5226-39ee-4e2d-a9b6-0f2a6d6bb1cd",
+      "name": "Mafer",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "startuprise.co.uk",
+         "document": "https://startuprise.co.uk/mafer-ai-raises-e2m-to-build-ai-platform-for-rd-teams-in-formulation-industries/",
+         "date": "2026-05-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "thesaasnews.com",
+         "document": "https://www.thesaasnews.com/news/mafer-ai-raises-2m-pre-seed/",
+         "date": "2026-06-02",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "4e5ace54-9403-424f-8daf-0a2358bde14d"
+      }
+     },
+     {
+      "id": "d732d67d-2efb-476c-88fa-c9b7626d455c",
+      "name": "Modern Relay",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/news/modern-relay-cierra-una-ronda-de-26m-liderada-por-point-nine-participan-masia-y-ba",
+         "date": "2026-08-31"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/news/barcelona-and-san-francisco-based-modern-relay-lands-25-million-for-its-enterprise-ai-foundation-layer",
+         "date": "2026-08-31"
+        }
+       ],
+       "id": "f23ea3a5-9a81-5ff3-bc72-768f8c67ada3"
+      }
+     },
+     {
+      "id": "e28a199f-46c1-4229-95df-0d8ab4d5617d",
+      "name": "IMA Health",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "0a6912d0-41fd-5ea3-9ee7-822c98df29f1"
+      }
+     },
+     {
+      "id": "e4395b85-5880-46f2-b184-122f81190853",
+      "name": "Oliva",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-06-02"
+        }
+       ],
+       "id": "6c56c9fe-8ca9-58d4-ab50-39c290ac6523"
+      }
+     },
+     {
+      "id": "e490db9b-d1b9-47c1-920d-317bed1cf1dc",
+      "name": "Ima",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/post/barcelona-based-new-angel-fund-masia-launches-to-nourish-barcelona-s-tech-hub",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "dca3e739-3746-5133-b0c6-3831761bdb3f"
+      }
+     },
+     {
+      "id": "eff6bb01-8485-4e9f-a427-285f62bef0d3",
+      "name": "Maisa",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/845828-65",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "186dc5f4-7350-5dbe-9abf-fc7efb2a1dfe"
+      }
+     },
+     {
+      "id": "f44053c6-64cf-49ab-b549-c90c484475e4",
+      "name": "Saturn Dynamics",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "itbrief.co.uk",
+         "document": "https://itbrief.co.uk/story/london-startup-saturn-dynamics-launches-arc-for-robots",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "f674f8dc-8be0-46ba-a2be-fd02fa7d6cde"
+      }
+     },
+     {
+      "id": "fc612a84-2309-41c6-9450-23ff8c6a9db0",
+      "name": "Traza",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "The AlleyWatch February 2026 New York Venture Capital Funding Report",
+         "document": "https://www.alleywatch.com/tag/traza/feed",
+         "date": "2026-07-13"
+        },
+        {
+         "name": "SMNTCN",
+         "document": "https://smntcn.com/en/article/traza-privlekaet-21-milliona-dlya-avtomatizatsii-zakupok-s-pomoshchyu-ii-1308",
+         "date": "2026-07-13"
+        },
+        {
+         "name": "The Officer \u2014 Noticias de econom\u00eda, empresas, inversi\u00f3n y directivos",
+         "document": "https://theofficer.es/traza-la-startup-que-convierte-las-compras-en-una-ventaja-competitiva",
+         "date": "2026-07-13"
+        }
+       ],
+       "id": "8cb20dfc-11c3-5a63-b072-8a5f28102dd8"
+      }
+     },
+     {
+      "id": "fe2f83b6-ce78-4b47-856d-a13b9c0e3d3b",
+      "name": "Pollen",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Forbes Espa\u00f1a: Nada personal, solo negocios - Forbes Espa\u00f1a",
+         "document": "https://forbes.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Bilbostack",
+         "document": "https://bilbostack.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The catalyzer of Innovationand Entrepreneurship of Ci\u00eancias ULisboa",
+         "document": "https://teclabs.pt/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "CB Insights \u2014 Predictive Intelligence on Private Companies",
+         "document": "https://www.cbinsights.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://www.4yfn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "WWWhat's new",
+         "document": "https://wwwhatsnew.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cala | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "capital-riesgo.es",
+         "document": "https://capital-riesgo.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Overwatch AI Raises $1.5M in Funding",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://startup-seeker.com/company/cala~ai",
+         "document": "https://startup-seeker.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://www.zonebourse.com/insider/BALUST-ELISENDA-BOU-A2617K",
+         "document": "https://www.zonebourse.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cinco D\u00edas: econom\u00eda y mercados",
+         "document": "https://cincodias.elpais.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "I serendipitously said yes to an unexpected role at Cala and this is how my onboarding week went: Monday - first day, new office, breakfast with the team, laptop setup Wednesday - jump on stage to\u2026 | \u00b7 Elies Delgado Tamarit \u00b7 | 32 comments",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Euro Seed 50 | Creandum",
+         "document": "https://euroseed50.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tolemy.bio",
+         "document": "https://tolemy.bio/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "6874d258-629c-539a-b304-656d1c191094"
+      }
+     },
+     {
+      "id": "ff8accd5-6b7b-4c40-837b-f5c8d900aff2",
+      "name": "Traza",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Founder Lodge",
+         "document": "https://founderlodge.com/investor-profile/masia-24037",
+         "date": "2026-06-02"
+        },
+        {
+         "name": "Traza Raises $2.1M Pre-Seed",
+         "document": "https://www.thesaasnews.com/news/traza-raises-2-1m-pre-seed",
+         "date": "2026-04-16"
+        }
+       ],
+       "id": "bcb32531-f471-5ad0-8c7e-5d4156de5c9f",
+       "valid_since": "2026-04-16"
+      }
+     },
+     {
+      "id": "ffc22705-f4ad-4d70-b182-145979f3242e",
+      "name": "Biorce",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "siliconcanals.com",
+         "document": "https://siliconcanals.com/meet-masia-a-new-e20m-angel-fund",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/post/barcelona-based-new-angel-fund-masia-launches-to-nourish-barcelona-s-tech-hub",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "5648325e-22b5-53ff-9f49-3039f6ba329d"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "7cd8444d-d757-5687-8402-ba78f1c4f264",
+      "name": "Pre-Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "startuprise.co.uk",
+         "document": "https://startuprise.co.uk/mafer-ai-raises-e2m-to-build-ai-platform-for-rd-teams-in-formulation-industries/",
+         "date": "2026-05-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "thesaasnews.com",
+         "document": "https://www.thesaasnews.com/news/mafer-ai-raises-2m-pre-seed/",
+         "date": "2026-06-02",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "f77d1b12-a71e-54b7-9ace-797c50bbec32"
+      }
+     },
+     {
+      "id": "aa898e67-21c6-5977-b546-945ba724cb94",
+      "name": "Pre-Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "itbrief.co.uk",
+         "document": "https://itbrief.co.uk/story/london-startup-saturn-dynamics-launches-arc-for-robots",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "52f3d044-c0b6-5cd5-bd46-a0b0e4c014e3"
+      }
+     },
+     {
+      "id": "f13cba6a-aca3-5346-86f9-72adb6340709",
+      "name": "Pre-Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "startup.eu",
+         "document": "https://www.startup.eu/investments/cala-7-m-pre-seed-05-2026",
+         "date": "2026-05-11",
+         "date_precision": "day"
+        },
+        {
+         "name": "dealflow.es",
+         "document": "https://dealflow.es/issue/513/embat-raised-30m-lightspeed-makes-1st-investment-in-spain-cala-spain-tech-report-2026",
+         "date": "2026-05-18",
+         "date_precision": "day"
+        },
+        {
+         "name": "newsletter.dealflow.es",
+         "document": "https://newsletter.dealflow.es/p/dealflowes-513-embat-raised-30m-lightspeed",
+         "date": "2026-05-18",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "linkedin.com",
+         "document": "https://www.linkedin.com/posts/elisendabou_were-finally-open-14-months-ago-activity-7459601462898266112-NJCs",
+         "date": "2026-05-11",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "dealroom.co",
+         "document": "https://dealroom.co/news/130391-barcelonas-cala-raises-7m-pre-seed-to-build-a-knowledge-layer-for-ai-age/",
+         "date": "2026-05-29",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        },
+        {
+         "name": "infiniteloop.media",
+         "document": "https://infiniteloop.media/p/building-the-verified-knowledge-graph-your-ai-agents-need-better-data",
+         "date": "2026-06-03",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "636c8054-7a4b-5c4d-a91c-9e3372db86fe"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_CORPORATE_EVENT": [
+     {
+      "id": "579663a3-cd6b-4cff-9c21-5f666e2987da",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Dealroom.co | Barcelona's Cala raises \u20ac7M pre-seed to build a knowledge layer for AI agents",
+         "document": "https://app.dealroom.co/news/note/barcelona-s-cala-raises-7m-pre-seed-to-build-a-knowledge-layer-for-ai-agents",
+         "date": "2026-05-29"
+        },
+        {
+         "name": "Barcelona AI infrastructure startup Cala emerges from stealth with \u20ac7 million pre-seed round",
+         "document": "https://www.startup.eu/investments/cala-7-m-pre-seed-05-2026",
+         "date": "2026-05-11"
+        },
+        {
+         "name": "Dealflow - Issue #513: Embat raised \u20ac30M. Lightspeed makes 1st investment in Spain (Cala). Spain tech report 2026.",
+         "document": "https://dealflow.es/issue/513/embat-raised-30m-lightspeed-makes-1st-investment-in-spain-cala-spain-tech-report-2026",
+         "date": "2026-05-07"
+        },
+        {
+         "name": "Building the verified knowledge graph: Your AI agents need better data",
+         "document": "https://infiniteloop.media/p/building-the-verified-knowledge-graph-your-ai-agents-need-better-data",
+         "date": "2026-06-03"
+        }
+       ],
+       "event_date": "2026-05-01",
+       "id": "77812ce1-3a19-47c6-b897-68e22c695a64"
+      }
+     },
+     {
+      "id": "bf92b6fd-07ba-4749-a586-e27244cdc8f0",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/pollen-3-2m-seed-rui-bento-uber-universal-battery-swapping-europe",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Pollen raises \u20ac3.2M to expand universal battery swapping network for two-wheelers",
+         "document": "https://portugalstartupnews.com/2026/05/17/pollen-raises-e3-2m-to-expand-universal-battery-swapping-network-for-two-wheelers",
+         "date": "2026-05-17"
+        },
+        {
+         "name": "Pollen is building the battery-swapping network electric motorcycles have been waiting for",
+         "document": "https://tech.eu/2026/07/15/pollen-is-building-the-battery-swapping-network-electric-motorcycles-have-been-waiting-for",
+         "date": "2026-07-15"
+        },
+        {
+         "name": "Lisbon\u2019s Pollen Raises \u20ac3.2M to Build a Universal Battery-Swap Network \u2014 Co-Led by Sweden\u2019s Pale Blue Dot | NorthSouth HQ",
+         "document": "https://www.northsouthhq.com/articles/pollen-battery-swap-pale-blue-dot-sweden-seed-lisbon-june-2026.html",
+         "date": "2026-06-03"
+        }
+       ],
+       "event_date": "2026-05-07",
+       "id": "e7637c2e-5494-4726-b66f-642a0ab9419e"
+      }
+     },
+     {
+      "id": "ec1be61d-525c-4a54-95f0-51645e38a3a0",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/traza/__zlu-K-I5nHC_KZJmJDGSVJR_vAq8ukUnBuQpuIg6Knc/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/artificial-intelligence/ai-startups-in-native-ai-in-supply-chain-in-bay-area-in-united-states/__-yPQvHLQ24ZyMs-N3fjrim96dtwxAVXS58PzTtyJSUc",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/traza-0115/financial_details",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/kfund/investor_summary/overview_timeline",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/1375579-81",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2026-04-15",
+       "id": "e519909f-5296-4eba-aca7-dafbe210d19b"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "11ce48e0-a853-4085-8142-f674977b1a3a",
+      "name": "RENEWABLE_ENERGY",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/845828-65",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "3ff9dab3-6c00-53e4-8a46-72c5d6de3da7"
+      }
+     },
+     {
+      "id": "211634f1-a4ff-46f8-a558-596235045d51",
+      "name": "BIOTECHNOLOGY",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "fb83f654-fb89-57aa-9f69-db5f5ae99ffb"
+      }
+     },
+     {
+      "id": "8190c30d-2703-40ab-94d0-6c193cb53908",
+      "name": "FINTECH",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "38284c24-e33b-5801-818b-76d73e28ff80"
+      }
+     },
+     {
+      "id": "8ecf5e57-a149-438c-9eb4-089809bade56",
+      "name": "SOFTWARE_AND_SERVICES",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-06-02"
+        }
+       ],
+       "id": "50c6c573-f30d-5fa5-a625-fb71b546e413"
+      }
+     },
+     {
+      "id": "bb7caa00-59c3-4587-9aaf-5d9195444829",
+      "name": "AEROSPACE_AND_DEFENSE",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/845828-65",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "746cc423-d887-525e-b224-78f9f01137bb"
+      }
+     },
+     {
+      "id": "be9a1964-bfc6-4aad-bde1-1f94bf10cf4c",
+      "name": "HARDWARE_AND_EQUIPMENT",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/845828-65",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "d8a4eeeb-1766-5dd7-9cfb-983fe7a20421"
+      }
+     },
+     {
+      "id": "dd70bbef-ce9b-4560-babf-e60310d2c6b1",
+      "name": "HEALTHCARE_PROVIDERS",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "c0366d15-43e7-5728-b47c-0498ead5269b"
+      }
+     },
+     {
+      "id": "f48ebf95-99ea-4756-99cc-8a2a2d71f2e2",
+      "name": "VENTURE_CAPITAL",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-06-02"
+        }
+       ],
+       "id": "15d6ae78-7636-52f0-b090-7dcade971b81"
+      }
+     }
+    ],
+    "IS_MEMBER_OF": [
+     {
+      "id": "b186979d-5ba6-4b48-87f9-9ea26753f683",
+      "name": "ALDEA VENTURES, S.G.E.I.C. S.A.",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "46b14fac-ca59-512f-ad84-0bc15bff561a"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "06656d93-f6ef-4d85-bac7-4a2b956ca442",
+      "name": "Galtea AI",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-06-02"
+        }
+       ],
+       "id": "81826901-2c64-547a-862b-35c3b0680c98"
+      }
+     },
+     {
+      "id": "14a84db2-32ca-43fb-b7a4-69cc5fd5f0cc",
+      "name": "Fermat",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-06-02"
+        }
+       ],
+       "id": "79cf89ee-a602-5c3c-8546-3e022c48e1bb"
+      }
+     },
+     {
+      "id": "2bdea5e8-a630-4098-9fb1-3f84bbaa77a2",
+      "name": "Cala",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "SMNTCN",
+         "document": "https://smntcn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Overwatch AI Raises $1.5M in Funding",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The AlleyWatch February 2026 New York Venture Capital Funding Report",
+         "document": "https://www.alleywatch.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Founder Lodge",
+         "document": "https://founderlodge.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://startup-seeker.com/company/cala~ai",
+         "document": "https://startup-seeker.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://www.zonebourse.com/insider/BALUST-ELISENDA-BOU-A2617K",
+         "document": "https://www.zonebourse.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Traza Raises $2.1M Pre-Seed",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Bilbostack",
+         "document": "https://bilbostack.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "WWWhat's new",
+         "document": "https://wwwhatsnew.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "I serendipitously said yes to an unexpected role at Cala and this is how my onboarding week went: Monday - first day, new office, breakfast with the team, laptop setup Wednesday - jump on stage to\u2026 | \u00b7 Elies Delgado Tamarit \u00b7 | 32 comments",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cala | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Euro Seed 50 | Creandum",
+         "document": "https://euroseed50.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "CB Insights \u2014 Predictive Intelligence on Private Companies",
+         "document": "https://www.cbinsights.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The Officer \u2014 Noticias de econom\u00eda, empresas, inversi\u00f3n y directivos",
+         "document": "https://theofficer.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Forbes Espa\u00f1a: Nada personal, solo negocios - Forbes Espa\u00f1a",
+         "document": "https://forbes.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://www.4yfn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "siliconcanals.com",
+         "document": "https://siliconcanals.com/",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "52612db1-fe64-5ea7-9576-01ac29693f1c"
+      }
+     },
+     {
+      "id": "34939b19-e86c-4052-85e1-0a9b1d3ccd19",
+      "name": "Biorce",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "SMNTCN",
+         "document": "https://smntcn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Overwatch AI Raises $1.5M in Funding",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The AlleyWatch February 2026 New York Venture Capital Funding Report",
+         "document": "https://www.alleywatch.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Founder Lodge",
+         "document": "https://founderlodge.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://startup-seeker.com/company/cala~ai",
+         "document": "https://startup-seeker.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://www.zonebourse.com/insider/BALUST-ELISENDA-BOU-A2617K",
+         "document": "https://www.zonebourse.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Traza Raises $2.1M Pre-Seed",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Bilbostack",
+         "document": "https://bilbostack.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "WWWhat's new",
+         "document": "https://wwwhatsnew.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "I serendipitously said yes to an unexpected role at Cala and this is how my onboarding week went: Monday - first day, new office, breakfast with the team, laptop setup Wednesday - jump on stage to\u2026 | \u00b7 Elies Delgado Tamarit \u00b7 | 32 comments",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cala | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Euro Seed 50 | Creandum",
+         "document": "https://euroseed50.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "CB Insights \u2014 Predictive Intelligence on Private Companies",
+         "document": "https://www.cbinsights.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The Officer \u2014 Noticias de econom\u00eda, empresas, inversi\u00f3n y directivos",
+         "document": "https://theofficer.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Forbes Espa\u00f1a: Nada personal, solo negocios - Forbes Espa\u00f1a",
+         "document": "https://forbes.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://www.4yfn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "siliconcanals.com",
+         "document": "https://siliconcanals.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/05/angel-fund-masia-launches-today-with-the-goal-of-deploying-e20-million-across-startups-in-barcelona",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "dd23eb65-9278-5c89-8a5d-f5e7a0f2d3f6"
+      }
+     },
+     {
+      "id": "43b4e281-3e77-4971-8c2d-bb713f2c1e5d",
+      "name": "Fermat",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Business Insider - Latest News in Tech, Markets, Economy & Innovation",
+         "document": "https://www.businessinsider.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Recent Investments",
+         "document": "https://baincapitalventures.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "CB Insights \u2014 Predictive Intelligence on Private Companies",
+         "document": "https://www.cbinsights.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "siliconcanals.com",
+         "document": "https://siliconcanals.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Fermat",
+         "document": "https://www.cbinsights.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Fermat Commerce: Funding, Team & Investors",
+         "document": "https://startupintros.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Ferm\u00e0t raises $45M in Series B for personalized e-commerce | Traded: Venture Capital posted on the topic | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "www.linkedin.com",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "About FERM\u00c0T: AI-Native Commerce Platform",
+         "document": "https://www.fermatcommerce.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "www.zoominfo.com",
+         "document": "https://www.zoominfo.com/",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "8190ca60-d210-58fc-8f86-916f3ff24940"
+      }
+     },
+     {
+      "id": "514f0390-2d68-43c7-b235-6ab8476a4704",
+      "name": "Capably",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-06-02"
+        }
+       ],
+       "id": "3b1ec532-7757-5bb3-b80e-e6f4f6892127"
+      }
+     },
+     {
+      "id": "5469edaf-d708-48a2-a6e1-c148e3c2ae94",
+      "name": "Pollen",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "The catalyzer of Innovationand Entrepreneurship of Ci\u00eancias ULisboa",
+         "document": "https://teclabs.pt/tec-labs-news/pollen-raises-e3-2-million-and-sets-sights-on-european-expansion",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "5af205a5-0229-5300-a5e5-310ae4dd748f"
+      }
+     },
+     {
+      "id": "63ccd4b4-9f02-46ff-8403-194716a0a74e",
+      "name": "Modern Relay",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "SMNTCN",
+         "document": "https://smntcn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Overwatch AI Raises $1.5M in Funding",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The AlleyWatch February 2026 New York Venture Capital Funding Report",
+         "document": "https://www.alleywatch.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Founder Lodge",
+         "document": "https://founderlodge.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://startup-seeker.com/company/cala~ai",
+         "document": "https://startup-seeker.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://www.zonebourse.com/insider/BALUST-ELISENDA-BOU-A2617K",
+         "document": "https://www.zonebourse.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Traza Raises $2.1M Pre-Seed",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Bilbostack",
+         "document": "https://bilbostack.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "WWWhat's new",
+         "document": "https://wwwhatsnew.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "I serendipitously said yes to an unexpected role at Cala and this is how my onboarding week went: Monday - first day, new office, breakfast with the team, laptop setup Wednesday - jump on stage to\u2026 | \u00b7 Elies Delgado Tamarit \u00b7 | 32 comments",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cala | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Euro Seed 50 | Creandum",
+         "document": "https://euroseed50.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "CB Insights \u2014 Predictive Intelligence on Private Companies",
+         "document": "https://www.cbinsights.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The Officer \u2014 Noticias de econom\u00eda, empresas, inversi\u00f3n y directivos",
+         "document": "https://theofficer.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Forbes Espa\u00f1a: Nada personal, solo negocios - Forbes Espa\u00f1a",
+         "document": "https://forbes.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://www.4yfn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "siliconcanals.com",
+         "document": "https://siliconcanals.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "b2443a10-b37b-5c9e-bcb5-f73615639a0c"
+      }
+     },
+     {
+      "id": "68c166b7-5608-40a2-b6bc-ef7d9dc894d5",
+      "name": "Doctor.One",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "SMNTCN",
+         "document": "https://smntcn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Overwatch AI Raises $1.5M in Funding",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The AlleyWatch February 2026 New York Venture Capital Funding Report",
+         "document": "https://www.alleywatch.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Founder Lodge",
+         "document": "https://founderlodge.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://startup-seeker.com/company/cala~ai",
+         "document": "https://startup-seeker.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://www.zonebourse.com/insider/BALUST-ELISENDA-BOU-A2617K",
+         "document": "https://www.zonebourse.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Traza Raises $2.1M Pre-Seed",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Bilbostack",
+         "document": "https://bilbostack.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "WWWhat's new",
+         "document": "https://wwwhatsnew.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "I serendipitously said yes to an unexpected role at Cala and this is how my onboarding week went: Monday - first day, new office, breakfast with the team, laptop setup Wednesday - jump on stage to\u2026 | \u00b7 Elies Delgado Tamarit \u00b7 | 32 comments",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cala | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Euro Seed 50 | Creandum",
+         "document": "https://euroseed50.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "CB Insights \u2014 Predictive Intelligence on Private Companies",
+         "document": "https://www.cbinsights.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The Officer \u2014 Noticias de econom\u00eda, empresas, inversi\u00f3n y directivos",
+         "document": "https://theofficer.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Forbes Espa\u00f1a: Nada personal, solo negocios - Forbes Espa\u00f1a",
+         "document": "https://forbes.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://www.4yfn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "siliconcanals.com",
+         "document": "https://siliconcanals.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/845828-65",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "727f419d-abda-5f30-bd63-514e2e460bcd"
+      }
+     },
+     {
+      "id": "6e408e73-aa09-423b-bb3f-6376dc03f655",
+      "name": "Didit",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "SMNTCN",
+         "document": "https://smntcn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Overwatch AI Raises $1.5M in Funding",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The AlleyWatch February 2026 New York Venture Capital Funding Report",
+         "document": "https://www.alleywatch.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Founder Lodge",
+         "document": "https://founderlodge.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://startup-seeker.com/company/cala~ai",
+         "document": "https://startup-seeker.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://www.zonebourse.com/insider/BALUST-ELISENDA-BOU-A2617K",
+         "document": "https://www.zonebourse.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Traza Raises $2.1M Pre-Seed",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Bilbostack",
+         "document": "https://bilbostack.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "WWWhat's new",
+         "document": "https://wwwhatsnew.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "I serendipitously said yes to an unexpected role at Cala and this is how my onboarding week went: Monday - first day, new office, breakfast with the team, laptop setup Wednesday - jump on stage to\u2026 | \u00b7 Elies Delgado Tamarit \u00b7 | 32 comments",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cala | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Euro Seed 50 | Creandum",
+         "document": "https://euroseed50.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "CB Insights \u2014 Predictive Intelligence on Private Companies",
+         "document": "https://www.cbinsights.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The Officer \u2014 Noticias de econom\u00eda, empresas, inversi\u00f3n y directivos",
+         "document": "https://theofficer.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Forbes Espa\u00f1a: Nada personal, solo negocios - Forbes Espa\u00f1a",
+         "document": "https://forbes.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://www.4yfn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "siliconcanals.com",
+         "document": "https://siliconcanals.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/news/didit-raised-2-million-in-total-including-yc-accelerators-contribution-with-saasholic-hypersphere-roar-vc-masia-vc",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/news/smowltech-closed-a-165-million-investment-round-led-by-the-bolsa-social-fund-and-sparkmind-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "a587394d-794f-5a30-a3bb-19a81a174171"
+      }
+     },
+     {
+      "id": "7ef90c12-3c88-49fe-b825-8b1f9736572d",
+      "name": "Overwatch AI",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "SMNTCN",
+         "document": "https://smntcn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Overwatch AI Raises $1.5M in Funding",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The AlleyWatch February 2026 New York Venture Capital Funding Report",
+         "document": "https://www.alleywatch.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Founder Lodge",
+         "document": "https://founderlodge.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://startup-seeker.com/company/cala~ai",
+         "document": "https://startup-seeker.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://www.zonebourse.com/insider/BALUST-ELISENDA-BOU-A2617K",
+         "document": "https://www.zonebourse.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Traza Raises $2.1M Pre-Seed",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Bilbostack",
+         "document": "https://bilbostack.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "WWWhat's new",
+         "document": "https://wwwhatsnew.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "I serendipitously said yes to an unexpected role at Cala and this is how my onboarding week went: Monday - first day, new office, breakfast with the team, laptop setup Wednesday - jump on stage to\u2026 | \u00b7 Elies Delgado Tamarit \u00b7 | 32 comments",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cala | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Euro Seed 50 | Creandum",
+         "document": "https://euroseed50.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "CB Insights \u2014 Predictive Intelligence on Private Companies",
+         "document": "https://www.cbinsights.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The Officer \u2014 Noticias de econom\u00eda, empresas, inversi\u00f3n y directivos",
+         "document": "https://theofficer.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Forbes Espa\u00f1a: Nada personal, solo negocios - Forbes Espa\u00f1a",
+         "document": "https://forbes.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://www.4yfn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "siliconcanals.com",
+         "document": "https://siliconcanals.com/",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "4e3a828a-40c8-5461-978e-a13f9e4f46de"
+      }
+     },
+     {
+      "id": "853573cb-50dd-4950-9271-d084ced6b80a",
+      "name": "Biorce",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/post/barcelona-based-new-angel-fund-masia-launches-to-nourish-barcelona-s-tech-hub",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "siliconcanals.com",
+         "document": "https://siliconcanals.com/meet-masia-a-new-e20m-angel-fund",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "db4bfa0a-16e3-58b3-b490-afcf6e6f262d"
+      }
+     },
+     {
+      "id": "86ae346a-bcaa-415d-9ba0-8fdec0e31e75",
+      "name": "Maisa",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "SMNTCN",
+         "document": "https://smntcn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Overwatch AI Raises $1.5M in Funding",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The AlleyWatch February 2026 New York Venture Capital Funding Report",
+         "document": "https://www.alleywatch.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Founder Lodge",
+         "document": "https://founderlodge.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://startup-seeker.com/company/cala~ai",
+         "document": "https://startup-seeker.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://www.zonebourse.com/insider/BALUST-ELISENDA-BOU-A2617K",
+         "document": "https://www.zonebourse.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Traza Raises $2.1M Pre-Seed",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Bilbostack",
+         "document": "https://bilbostack.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "WWWhat's new",
+         "document": "https://wwwhatsnew.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "I serendipitously said yes to an unexpected role at Cala and this is how my onboarding week went: Monday - first day, new office, breakfast with the team, laptop setup Wednesday - jump on stage to\u2026 | \u00b7 Elies Delgado Tamarit \u00b7 | 32 comments",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cala | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Euro Seed 50 | Creandum",
+         "document": "https://euroseed50.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "CB Insights \u2014 Predictive Intelligence on Private Companies",
+         "document": "https://www.cbinsights.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The Officer \u2014 Noticias de econom\u00eda, empresas, inversi\u00f3n y directivos",
+         "document": "https://theofficer.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Forbes Espa\u00f1a: Nada personal, solo negocios - Forbes Espa\u00f1a",
+         "document": "https://forbes.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://www.4yfn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "siliconcanals.com",
+         "document": "https://siliconcanals.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/845828-65",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "1fcddde4-5b45-5efb-afa5-ae37f48d6776"
+      }
+     },
+     {
+      "id": "990b2399-8a33-4d55-93ad-1843b4c6f146",
+      "name": "CareerOS",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-06-02"
+        }
+       ],
+       "id": "7caf25f4-4a86-5892-a9c0-c50ee80d1424"
+      }
+     },
+     {
+      "id": "a362a49c-27bc-49ff-ae53-72271604d0f4",
+      "name": "Spock",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/post/barcelona-based-new-angel-fund-masia-launches-to-nourish-barcelona-s-tech-hub",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "siliconcanals.com",
+         "document": "https://siliconcanals.com/meet-masia-a-new-e20m-angel-fund",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "d8367378-7426-56ad-8c1e-81d3248daf8c"
+      }
+     },
+     {
+      "id": "b0d4e022-98df-42e6-9220-695f366699f3",
+      "name": "Oliva",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/post/barcelona-based-new-angel-fund-masia-launches-to-nourish-barcelona-s-tech-hub",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "siliconcanals.com",
+         "document": "https://siliconcanals.com/meet-masia-a-new-e20m-angel-fund",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "8c9bf04c-eb3b-5210-a553-be315434bb87"
+      }
+     },
+     {
+      "id": "b186979d-5ba6-4b48-87f9-9ea26753f683",
+      "name": "ALDEA VENTURES, S.G.E.I.C. S.A.",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "d076edc9-895a-56ad-b348-f80cd6471c82"
+      }
+     },
+     {
+      "id": "bf51f256-8fa0-4fc8-bd73-c2d2a53cf021",
+      "name": "Galtea",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "SaaS B2B Fundraising News | The SaaS News",
+         "document": "https://www.thesaasnews.com/news/galtea-raises-3-2-million-seed-round",
+         "date": "2026-07-09"
+        },
+        {
+         "name": "TNW | The heart of tech",
+         "document": "http://thenextweb.com/news/galtea-3-2m-ai-evaluation-platform",
+         "date": "2026-07-09"
+        }
+       ],
+       "id": "b1c794dc-b97a-5e0f-b62f-45732090b63f"
+      }
+     },
+     {
+      "id": "d732d67d-2efb-476c-88fa-c9b7626d455c",
+      "name": "Modern Relay",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/news/modern-relay-cierra-una-ronda-de-26m-liderada-por-point-nine-participan-masia-y-ba",
+         "date": "2026-08-31"
+        }
+       ],
+       "id": "f82043e0-1087-5f95-8bd4-6165704f681a"
+      }
+     },
+     {
+      "id": "e4395b85-5880-46f2-b184-122f81190853",
+      "name": "Oliva",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-06-02"
+        }
+       ],
+       "id": "6afd288b-eda5-5b2a-80e0-1e2883f43934"
+      }
+     },
+     {
+      "id": "fc612a84-2309-41c6-9450-23ff8c6a9db0",
+      "name": "Traza",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "SMNTCN",
+         "document": "https://smntcn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Overwatch AI Raises $1.5M in Funding",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The AlleyWatch February 2026 New York Venture Capital Funding Report",
+         "document": "https://www.alleywatch.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Founder Lodge",
+         "document": "https://founderlodge.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://startup-seeker.com/company/cala~ai",
+         "document": "https://startup-seeker.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "https://www.zonebourse.com/insider/BALUST-ELISENDA-BOU-A2617K",
+         "document": "https://www.zonebourse.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Discover what happens on the European investment scene",
+         "document": "https://nordic9.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Traza Raises $2.1M Pre-Seed",
+         "document": "https://www.thesaasnews.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Bilbostack",
+         "document": "https://bilbostack.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "WWWhat's new",
+         "document": "https://wwwhatsnew.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "I serendipitously said yes to an unexpected role at Cala and this is how my onboarding week went: Monday - first day, new office, breakfast with the team, laptop setup Wednesday - jump on stage to\u2026 | \u00b7 Elies Delgado Tamarit \u00b7 | 32 comments",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Cala | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Euro Seed 50 | Creandum",
+         "document": "https://euroseed50.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "CB Insights \u2014 Predictive Intelligence on Private Companies",
+         "document": "https://www.cbinsights.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "The Officer \u2014 Noticias de econom\u00eda, empresas, inversi\u00f3n y directivos",
+         "document": "https://theofficer.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Forbes Espa\u00f1a: Nada personal, solo negocios - Forbes Espa\u00f1a",
+         "document": "https://forbes.es/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Thank you to all our attendees and sponsors",
+         "document": "https://www.4yfn.com/",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "siliconcanals.com",
+         "document": "https://siliconcanals.com/",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "d2fe2d8c-830b-5aac-b412-a7b685c83635"
+      }
+     },
+     {
+      "id": "ff8accd5-6b7b-4c40-837b-f5c8d900aff2",
+      "name": "Traza",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "The AlleyWatch February 2026 New York Venture Capital Funding Report",
+         "document": "https://www.alleywatch.com/tag/traza/feed",
+         "date": "2026-07-13"
+        },
+        {
+         "name": "SMNTCN",
+         "document": "https://smntcn.com/en/article/traza-privlekaet-21-milliona-dlya-avtomatizatsii-zakupok-s-pomoshchyu-ii-1308",
+         "date": "2026-07-13"
+        }
+       ],
+       "id": "3dde9ecb-d749-5362-bade-d5d564f7fd38"
+      }
+     },
+     {
+      "id": "ffc22705-f4ad-4d70-b182-145979f3242e",
+      "name": "Biorce",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "siliconcanals.com",
+         "document": "https://siliconcanals.com/meet-masia-a-new-e20m-angel-fund",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "startuphub.ai",
+         "document": "https://www.startuphub.ai/news/masia-angel-fund-launches-with-20-million-for-barcelona-startups",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/post/barcelona-based-new-angel-fund-masia-launches-to-nourish-barcelona-s-tech-hub",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "9ddcf274-41e4-5074-a364-91d3a2caaf6e"
+      }
+     }
+    ],
+    "FOUNDED": [
+     {
+      "id": "7b853886-fe5f-4092-ad2f-468aba758846",
+      "name": "Carlos Trenchs",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/post/barcelona-based-new-angel-fund-masia-launches-to-nourish-barcelona-s-tech-hub",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "a10fdb9e-5776-5a01-8bd8-a47f5febf4e3"
+      }
+     },
+     {
+      "id": "98cf09c3-3470-4162-95f5-403823f0d69b",
+      "name": "Pepe Borrell",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/post/barcelona-based-new-angel-fund-masia-launches-to-nourish-barcelona-s-tech-hub",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "646371b0-f043-5965-836a-9f883645b01e"
+      }
+     },
+     {
+      "id": "bb6a36ca-c18d-4884-b5e4-f5201a3fd473",
+      "name": "Pepe Borrell",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "Spanish Masia closes \u20ac20M angel fund to back next-gen Barcelona's startups",
+         "document": "https://www.vestbee.com/insights/articles/masia-closes-20-m-angel-fund",
+         "date": "2025-05-26"
+        }
+       ],
+       "id": "3aae07bc-2df6-5635-8889-b8e504b6358a",
+       "valid_since": "2024-01-01"
+      }
+     }
+    ],
+    "WORKS_AT": [
+     {
+      "id": "7b853886-fe5f-4092-ad2f-468aba758846",
+      "name": "Carlos Trenchs",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/agenda/speakers/17449-carlos-trench",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "1e056013-5ad0-5863-aeda-69c3fa737899"
+      }
+     },
+     {
+      "id": "98cf09c3-3470-4162-95f5-403823f0d69b",
+      "name": "Pepe Borrell",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "Menlo Times - Technology, Startups, Innovation & News",
+         "document": "https://www.menlotimes.com/post/barcelona-based-new-angel-fund-masia-launches-to-nourish-barcelona-s-tech-hub",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "b1e1f7bf-5cfe-537b-a29f-9131e399452d"
+      }
+     },
+     {
+      "id": "bb6a36ca-c18d-4884-b5e4-f5201a3fd473",
+      "name": "Pepe Borrell",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Co-founder & Partner",
+       "sources": [
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/collective-members/pepe-borrell",
+         "date": "2000-01-01"
+        },
+        {
+         "name": "FF News \u2014 The Fintech News Network",
+         "document": "https://ffnews.com/people/pepe-borrell",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "1f5c2580-5729-5c69-8e57-b7030676b495"
+      }
+     }
+    ],
+    "IS_MEMBER_OF": [
+     {
+      "id": "4a665379-afe8-44bf-8f55-b86e95a9351d",
+      "name": "Oleksii Reshetnik",
+      "entity_type": "Person",
+      "properties": {
+       "role": "collective member",
+       "sources": [
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/collective-members/oleksii-reshetnik",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "8146a3ac-2350-5e5f-993a-7d9b126a8421"
+      }
+     },
+     {
+      "id": "7b853886-fe5f-4092-ad2f-468aba758846",
+      "name": "Carlos Trenchs",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/05/angel-fund-masia-launches-today-with-the-goal-of-deploying-e20-million-across-startups-in-barcelona",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "caf6c09a-3e14-50a2-b1cd-ab1b0e758e1a"
+      }
+     },
+     {
+      "id": "b186979d-5ba6-4b48-87f9-9ea26753f683",
+      "name": "ALDEA VENTURES, S.G.E.I.C. S.A.",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "MWC - The Largest And Most Influential Connectivity Event",
+         "document": "https://www.mwcbarcelona.com/agenda/speakers/17449-carlos-trench",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "8fa3daed-8e82-56cb-9790-9608e5046141"
+      }
+     },
+     {
+      "id": "bb6a36ca-c18d-4884-b5e4-f5201a3fd473",
+      "name": "Pepe Borrell",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Co-founder & Partner",
+       "sources": [
+        {
+         "name": "About us \u2022 Masia",
+         "document": "https://www.masia.vc/about",
+         "date": "2000-01-01"
+        }
+       ],
+       "id": "4a092cf3-c73b-5a52-9f7b-e739a69633a8"
+      }
+     },
+     {
+      "id": "e2a48684-3bb8-4398-956b-a8a0938a97c3",
+      "name": "Caixa Capital Risc",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "InforCapital: Market Intelligence for Private Equity & Venture Capital",
+         "document": "https://inforcapital.com/companies/masia-vc",
+         "date": "2026-08-04"
+        }
+       ],
+       "id": "6a3fb70a-263e-53e7-9ed3-fb39dc8356d1"
+      }
+     },
+     {
+      "id": "ee03953e-19e9-4339-befb-184353c8f086",
+      "name": "Pedro Coelho",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Founder",
+       "sources": [
+        {
+         "name": "Masia",
+         "document": "https://www.masia.vc/collective-members/pedro-coelho",
+         "date": "2026-08-04"
+        },
+        {
+         "name": "New angel fund \u2018Masia\u2019 aims to cement Barcelona\u2019s tech hub status",
+         "document": "https://tech.eu/2025/05/26/new-angel-fund-masia-aims-to-cement-barcelona-s-tech-hub-status",
+         "date": "2025-05-26"
+        },
+        {
+         "name": "Founders in our Masia: Pedro Coelho from Biorce",
+         "document": "https://masiacollective.substack.com/p/founders-in-our-masia-pedro-coelho",
+         "date": "2025-06-02"
+        }
+       ],
+       "id": "4279d95e-b285-5074-a90c-19d227ca74aa"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

@@ -1,0 +1,1720 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/be67283b-4529-4a2d-834a-96edc4b36971",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 1000
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 1000
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 1000
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 1000
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 1000
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 1000
+     },
+     "IS_MEMBER_OF": {
+      "limit": 1000
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 1000
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 1000
+     },
+     "TRADED_ON": {
+      "limit": 1000
+     },
+     "LISTED_ON": {
+      "limit": 1000
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "FOUNDED": {
+      "limit": 1000
+     },
+     "WORKS_AT": {
+      "limit": 1000
+     },
+     "IS_MEMBER_OF": {
+      "limit": 1000
+     },
+     "IS_CEO_OF": {
+      "limit": 1000
+     },
+     "IS_CTO_OF": {
+      "limit": 1000
+     },
+     "IS_CFO_OF": {
+      "limit": 1000
+     },
+     "IS_COO_OF": {
+      "limit": 1000
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 1000
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 1000
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 1000
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 1000
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 1000
+     },
+     "MANUFACTURED_BY": {
+      "limit": 1000
+     },
+     "DESIGNED_BY": {
+      "limit": 1000
+     },
+     "OPERATED_BY": {
+      "limit": 1000
+     },
+     "CREATED_BY": {
+      "limit": 1000
+     },
+     "PUBLISHED_BY": {
+      "limit": 1000
+     },
+     "GRANTED_BY": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:27:08+0200",
+ "_seconds": 0.63,
+ "response": {
+  "id": "be67283b-4529-4a2d-834a-96edc4b36971",
+  "name": "Luminar Ventures",
+  "entity_type": "Company",
+  "description": "Nordic venture capital fund specializing in early-stage investments in technology companies.",
+  "properties": {
+   "name": {
+    "value": "Luminar Ventures",
+    "sources": [
+     {
+      "name": "7 Best Venture Capital (VC) Firms in Sweden",
+      "document": "https://earlynode.com/vc-fundraising/7-best-venture-capital-vc-firms-in-sweden",
+      "date": "2026-01-01"
+     },
+     {
+      "name": "Top Venture Capital Firms in Sweden 2026: Investor Guide",
+      "document": "https://vc-mapping.gilion.com/venture-capital-firms/sweden",
+      "date": "2023-01-23"
+     },
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2024/12/from-hours-to-minutes-swedish-startup-corsmed-raises-e3-3-million-to-accelerate-mris/",
+      "date": "2024-12-18",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "corsmed.com",
+      "document": "https://corsmed.com/news/corsmed-raises-3-5m-from-luminar-and-big-pi-ventures-to-save-100m-lives",
+      "date": "2024-12-18",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "lightbringer.com",
+      "document": "https://www.lightbringer.com/news-items/lightbringer-raises-10m-to-take-on-patent-attorneys-in-the-u-s-with-the-worlds-first-ai-native-patent-firm",
+      "date": "2026-06-16",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "tech.eu",
+      "document": "https://tech.eu/2026/06/16/lightbringer-raises-10m-to-scale-ai-powered-patent-services/",
+      "date": "2026-06-16",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "thesaasnews.com",
+      "document": "https://www.thesaasnews.com/news/lightbringer-raises-10m-series-a/",
+      "date": "2026-06-16",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "accessnewswire.com",
+      "document": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/motorica-raises-%e2%82%ac5m-to-lead-the-generative-ai-revolution-in-chara-1042323",
+      "date": "2025-06-24",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "cartoonbrew.com",
+      "document": "https://cartoonbrew.com/business/motorica-raises-5-8m-for-its-game-animation-ai-platform-248114.html",
+      "date": "2025-06-26",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2020/08/stockholm-based-open-payments-raises-e3-million-seed-funding-to-become-a-leading-platform-provider-in-the-eu/",
+      "date": "2020-08-24",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "thenextweb.com",
+      "document": "https://thenextweb.com/news/photoncycle-raises-e15m-series-a-to-address-europes-seasonal-energy-storage-gap",
+      "date": "2026-03-04",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "techfundingnews.com",
+      "document": "https://techfundingnews.com/nordicninja-leads-redpine-in-e6-8m-round-to-let-ai-agents-access-private-data/",
+      "date": "2026-04-28",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "thenextweb.com",
+      "document": "https://thenextweb.com/news/redpine-raises-e6-8m-api-for-ai-agents",
+      "date": "2026-04-28",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "arcticstartup.com",
+      "document": "https://arcticstartup.com/redpine-raises-e6-8m-seed/",
+      "date": "2026-05-01",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "sifted.eu",
+      "document": "https://sifted.eu/articles/redpine-raises-e6-8m-to-give-ai-agents-access-to-non-public-data",
+      "date": "2026-04-28",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "redpine.ai",
+      "document": "https://www.redpine.ai/about",
+      "date": "2026-11-07",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [],
+    "sources": []
+   },
+   "description": {
+    "value": "Nordic venture capital fund specializing in early-stage investments in technology companies.",
+    "sources": [
+     {
+      "name": "7 Best Venture Capital (VC) Firms in Sweden",
+      "document": "https://earlynode.com/vc-fundraising/7-best-venture-capital-vc-firms-in-sweden",
+      "date": "2026-01-01"
+     },
+     {
+      "name": "Top Venture Capital Firms in Sweden 2026: Investor Guide",
+      "document": "https://vc-mapping.gilion.com/venture-capital-firms/sweden",
+      "date": "2023-01-23"
+     }
+    ]
+   },
+   "website": {
+    "value": "luminarventures.com",
+    "sources": [
+     {
+      "name": "7 Best Venture Capital (VC) Firms in Sweden",
+      "document": "https://earlynode.com/vc-fundraising/7-best-venture-capital-vc-firms-in-sweden",
+      "date": "2026-01-01"
+     },
+     {
+      "name": "Top Venture Capital Firms in Sweden 2026: Investor Guide",
+      "document": "https://vc-mapping.gilion.com/venture-capital-firms/sweden",
+      "date": "2023-01-23"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "INVESTED_IN": [
+     {
+      "id": "03dad16e-f580-4d1c-b747-6b7cec1ca849",
+      "name": "Hypertype",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "b0501509-dd3f-46d0-b08d-66303b9e3277"
+      }
+     },
+     {
+      "id": "07a8634e-16c0-45d1-b571-ddb57185ce35",
+      "name": "Turbotic",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "5ed6f314-3ad8-4c04-afd0-8c690c33c38b"
+      }
+     },
+     {
+      "id": "1186e3f0-accc-4434-beed-5299531eece1",
+      "name": "V\u00e5rden",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "5e3554b3-47b9-438e-b180-7cec536b4850"
+      }
+     },
+     {
+      "id": "1d770251-6753-4d51-b58e-c903467efaa8",
+      "name": "MYNT LTD",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "6abdbf2b-b2ee-4dba-b1aa-93342ead7584"
+      }
+     },
+     {
+      "id": "1dc2b69e-4960-4403-a0f4-c81aadd6a37b",
+      "name": "Pet Buddy Group",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "e6439655-6540-4215-8790-36be322c7d33"
+      }
+     },
+     {
+      "id": "20e735fb-c4ee-4a94-8914-9f8f1f10f48c",
+      "name": "IntuiCell AB",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "7093905e-4eb1-4039-ac5f-247a25ed50fa"
+      }
+     },
+     {
+      "id": "331fec23-9c63-4885-a8f5-c2902c9e1b9d",
+      "name": "Redpine Technology AB",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/nordicninja-leads-redpine-in-e6-8m-round-to-let-ai-agents-access-private-data/",
+         "date": "2026-04-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "thenextweb.com",
+         "document": "https://thenextweb.com/news/redpine-raises-e6-8m-api-for-ai-agents",
+         "date": "2026-04-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "arcticstartup.com",
+         "document": "https://arcticstartup.com/redpine-raises-e6-8m-seed/",
+         "date": "2026-05-01",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "sifted.eu",
+         "document": "https://sifted.eu/articles/redpine-raises-e6-8m-to-give-ai-agents-access-to-non-public-data",
+         "date": "2026-04-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "redpine.ai",
+         "document": "https://www.redpine.ai/about",
+         "date": "2026-11-07",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "c07db679-dfd8-423c-ba8b-126fdba2c039"
+      }
+     },
+     {
+      "id": "3608d99f-cd9c-4948-a494-0ee0e4ce4afe",
+      "name": "Greenely Premium AB",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "badfb364-fe74-4c92-b979-30d7de0ada34"
+      }
+     },
+     {
+      "id": "421cacef-3390-49eb-a100-8dabe395f7d4",
+      "name": "Insurello",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "16e22f76-b15d-480d-93dd-c2ec1dd817ed"
+      }
+     },
+     {
+      "id": "4b018310-5894-4e3e-a545-6b6ad98319dc",
+      "name": "Vibrant",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "0fb1ea85-11f0-43f9-90ff-5669b41d94c1"
+      }
+     },
+     {
+      "id": "4e6da229-9ece-4b79-bcac-7f2a3b50f000",
+      "name": "Health Integrator",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "2a243a80-9fcd-44cd-be4f-cf5fbb86533d"
+      }
+     },
+     {
+      "id": "4fa10bab-978e-48db-94a8-c2ca4219bf8c",
+      "name": "Omocom F\u00f6rs\u00e4kring AB",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "22489587-29cf-4ace-b500-21600f658261"
+      }
+     },
+     {
+      "id": "5c8ff096-2293-4757-9098-038617abaafd",
+      "name": "Heja",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "c84414e9-bb0b-4c03-9c42-337f6e7bb1d5"
+      }
+     },
+     {
+      "id": "605d0bcc-ed37-4540-96de-ff0b11c4b367",
+      "name": "CodeScene",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "ddb7a765-3074-4223-a8f3-a4158fe02402"
+      }
+     },
+     {
+      "id": "62f1e517-58c7-4cf7-88c4-21d75995918d",
+      "name": "Pley",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "8e283f75-8cea-45af-9917-5347b5365265"
+      }
+     },
+     {
+      "id": "7e8887d3-cecd-4e77-bca2-ee8651454fbc",
+      "name": "Motorica",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        },
+        {
+         "name": "accessnewswire.com",
+         "document": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/motorica-raises-%e2%82%ac5m-to-lead-the-generative-ai-revolution-in-chara-1042323",
+         "date": "2025-06-24",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "cartoonbrew.com",
+         "document": "https://cartoonbrew.com/business/motorica-raises-5-8m-for-its-game-animation-ai-platform-248114.html",
+         "date": "2025-06-26",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "e650a897-80b4-4823-a361-0829c32e3ea0"
+      }
+     },
+     {
+      "id": "800a743b-5368-4f2c-855b-7488ccbd5b97",
+      "name": "Rocky Road",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/rocky-road/__0xvZ3WdLyOnY5kHzQS4jGGi6dcSo0K_DrXlvks9iNGk",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/rockyroad/__0xvZ3WdLyOnY5kHzQS4jGGi6dcSo0K_DrXlvks9iNGk",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/490880-80",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/rocky-road-9579/financial_details",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "c1af2440-46ea-4467-9616-3e006375afac"
+      }
+     },
+     {
+      "id": "86918e08-e1e0-4caa-8b76-d4e22fd61699",
+      "name": "Corsmed AB",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2024/12/from-hours-to-minutes-swedish-startup-corsmed-raises-e3-3-million-to-accelerate-mris/",
+         "date": "2024-12-18",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "corsmed.com",
+         "document": "https://corsmed.com/news/corsmed-raises-3-5m-from-luminar-and-big-pi-ventures-to-save-100m-lives",
+         "date": "2024-12-18",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "b7c94cf3-4615-471d-a9de-facd5d47b141"
+      }
+     },
+     {
+      "id": "8c0241b3-ee4a-49c3-8350-a50d1ff4b4fb",
+      "name": "Berget AI",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "befedfcc-29b6-475a-b303-86dead781045"
+      }
+     },
+     {
+      "id": "90d1c3ab-9550-4367-b550-c44f82d5e9e9",
+      "name": "Ivy",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "77974bc2-4088-4c8c-8597-93e93fdea270"
+      }
+     },
+     {
+      "id": "9b1836ea-04c2-43f5-b428-7ab287c2ae7b",
+      "name": "Fika Jobs",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "0efcb545-25a5-4b0b-a199-6a4459c1dbc4"
+      }
+     },
+     {
+      "id": "9bec53fc-7b2d-4bd9-bab0-63de85312613",
+      "name": "ReCarber",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "79bf1d10-43ff-4ae0-a3f0-0cc3cc632e83"
+      }
+     },
+     {
+      "id": "9ce0289c-a897-4e88-b160-eb9c5f1684a6",
+      "name": "Open Payments Europe AB",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2020/08/stockholm-based-open-payments-raises-e3-million-seed-funding-to-become-a-leading-platform-provider-in-the-eu/",
+         "date": "2020-08-24",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "f3875cbf-25cc-4a9f-80b8-fc69f3bd7653"
+      }
+     },
+     {
+      "id": "a960ae4c-d95e-4236-b7ad-e93b5cb7f001",
+      "name": "Deckmatch",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "67945d1b-24ac-416f-9a0a-6a037f9ffc7b"
+      }
+     },
+     {
+      "id": "a96a2d1c-909e-4d4a-adf7-f93f8606be86",
+      "name": "Normative",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "eb897a08-39a0-4199-9190-a55924e8e56c"
+      }
+     },
+     {
+      "id": "aa4c523c-decf-48cf-b899-221c8ebe0dca",
+      "name": "RockyRoad",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "c34757d6-2536-404f-b76d-527fb9b378d9"
+      }
+     },
+     {
+      "id": "b8fde47c-b54e-4bcf-ae68-f0f7c85e41b4",
+      "name": "Albacross",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "415dadeb-99b4-4769-b7d9-e51571e2b364"
+      }
+     },
+     {
+      "id": "c960c5cc-d911-4e74-aeaf-fd493a6a3579",
+      "name": "Aviant",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "21127123-5d81-4bc2-b442-f7c99effe0a2"
+      }
+     },
+     {
+      "id": "cec0de23-2fed-4684-8070-db4e93b2d479",
+      "name": "Yazen",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "0c66ac0a-dd70-47ba-891a-430b8218ebff"
+      }
+     },
+     {
+      "id": "d1258379-3358-47a2-97c3-ac70c8db51b0",
+      "name": "RUN",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "c0f44247-1759-457f-8309-5dc94b9fa85e"
+      }
+     },
+     {
+      "id": "d1be4d5b-113c-4b2a-ae1d-69311b8fbe3c",
+      "name": "Mindler",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "1231d14f-a632-4d01-8fcd-f0210a86d7de"
+      }
+     },
+     {
+      "id": "d5f8974b-7765-44f7-afc6-6f1767b8bad0",
+      "name": "Photoncycle",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        },
+        {
+         "name": "thenextweb.com",
+         "document": "https://thenextweb.com/news/photoncycle-raises-e15m-series-a-to-address-europes-seasonal-energy-storage-gap",
+         "date": "2026-03-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "f5066686-a9d0-4bc9-9229-d39f50eee43d"
+      }
+     },
+     {
+      "id": "d711a7e4-e47c-490f-92f2-8690290e4f45",
+      "name": "OpenPayments",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "4908cf9e-39be-4b7c-b332-5c0a29331d13"
+      }
+     },
+     {
+      "id": "dedda0ad-124a-4909-ab91-24ed867aca8f",
+      "name": "MUNINN SMARTTECH LIMITED",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "89ebdb93-2862-4de7-ac6d-c8ea30eea0f9"
+      }
+     },
+     {
+      "id": "e3583f22-09d2-40a5-86e1-01e69b361a79",
+      "name": "Opper AI",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "83593ea1-83da-4bce-940b-9d662d53f859"
+      }
+     },
+     {
+      "id": "e7317ec1-4fab-48c7-b59a-4ce0d9ace738",
+      "name": "XNOMAD LLP",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "7eae62e0-4b2e-4b94-81b8-78431b0a3a32"
+      }
+     },
+     {
+      "id": "f0592c22-0af2-45c3-a217-8cf15c06b49f",
+      "name": "iPercept",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "4813696f-2a18-4214-b469-291d1f626cb3"
+      }
+     },
+     {
+      "id": "f132a021-7128-4d81-852c-4aed310be3fe",
+      "name": "FirstQFM",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "0319a5e5-018d-4c39-b9ee-5ba8fc1a5b16"
+      }
+     },
+     {
+      "id": "f3e7fd9f-cb4c-4dc6-bdc0-e41f4a92c265",
+      "name": "Lightbringer",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        },
+        {
+         "name": "lightbringer.com",
+         "document": "https://www.lightbringer.com/news-items/lightbringer-raises-10m-to-take-on-patent-attorneys-in-the-u-s-with-the-worlds-first-ai-native-patent-firm",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2026/06/16/lightbringer-raises-10m-to-scale-ai-powered-patent-services/",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "thesaasnews.com",
+         "document": "https://www.thesaasnews.com/news/lightbringer-raises-10m-series-a/",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "eef059f7-684c-4def-baca-648fe9210ced"
+      }
+     },
+     {
+      "id": "f4081a78-0914-4233-be85-fad385d1f8f6",
+      "name": "Carla",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "018843ca-c659-4986-a20a-51eee40df31d"
+      }
+     },
+     {
+      "id": "f40d21da-d524-4ac0-8059-4beec6c3fef3",
+      "name": "Starmony",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "f78f4159-01e7-4820-9581-a595df8463c8"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "03428a20-6314-5bee-8511-f42b244a8e58",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "taiyangnews.info",
+         "document": "https://taiyangnews.info/photoncycle-prepping-for-market-launch-with-seed-funding",
+         "date": "2024-04-10",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "4cd205e7-8e1b-500f-a27a-4006dfab0511"
+      }
+     },
+     {
+      "id": "1a4c0e31-af92-5cde-a145-92c03ec1e7f5",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "accessnewswire.com",
+         "document": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/motorica-raises-%e2%82%ac5m-to-lead-the-generative-ai-revolution-in-chara-1042323",
+         "date": "2025-06-24",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "cartoonbrew.com",
+         "document": "https://cartoonbrew.com/business/motorica-raises-5-8m-for-its-game-animation-ai-platform-248114.html",
+         "date": "2025-06-26",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "8f0ae7c4-8190-5b4e-8f1a-62c47aafe9d3"
+      }
+     },
+     {
+      "id": "269f52e9-aab3-5240-93df-692286e33d23",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2024/12/from-hours-to-minutes-swedish-startup-corsmed-raises-e3-3-million-to-accelerate-mris/",
+         "date": "2024-12-18",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "corsmed.com",
+         "document": "https://corsmed.com/news/corsmed-raises-3-5m-from-luminar-and-big-pi-ventures-to-save-100m-lives",
+         "date": "2024-12-18",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "4cf8c590-7c0d-5d63-a7df-9f80d92f0f10"
+      }
+     },
+     {
+      "id": "82700d27-8726-570d-b211-16ccfb828329",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "openpayments.io",
+         "document": "https://www.openpayments.io/news-press/open-payments-raises-1-3-meur-seed-funding-from-luminar-ventures",
+         "date": "2019-05-28",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2019/05/stockholm-based-fintech-startup-open-payments-raises-e1-2-million-seed-funding-for-its-psd2-compliant-platform/",
+         "date": "2019-05-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2019/05/28/swedish-fintech-startup-open-payments-raises-e1-2-million/",
+         "date": "2019-05-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "e31508af-0203-57eb-b046-4b4b69dd62da"
+      }
+     },
+     {
+      "id": "922d6772-8e37-5ce0-b473-dee51632c7a7",
+      "name": "Series A",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "thenextweb.com",
+         "document": "https://thenextweb.com/news/photoncycle-raises-e15m-series-a-to-address-europes-seasonal-energy-storage-gap",
+         "date": "2026-03-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "6f58df78-1e0d-5932-8601-d76aa4870ec5"
+      }
+     },
+     {
+      "id": "b0cac98a-cfbf-5cea-bb8b-e4354d59a03f",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "lightbringer.com",
+         "document": "https://lightbringer.com/news-items/legal-tech-company-lightbringer-raises-42",
+         "date": "2024-12-18",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "cambridgenetwork.co.uk",
+         "document": "https://www.cambridgenetwork.co.uk/index.php/news/legal-tech-company-lightbringer-raises-eu42-lets-companies-build-patent-portfolios-ai",
+         "date": "2024-12-18",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "oresundstartups.com",
+         "document": "https://oresundstartups.com/lightbringer-secures-e4-3-million-seed-funding-to-expand-ai-powered-patent-protection-platform/",
+         "date": "2024-12-23",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "is_lead": true,
+       "id": "b9d00fbf-ca98-5470-ba22-55ccbbd1c94d"
+      }
+     },
+     {
+      "id": "d801e0e6-e97f-57be-80a7-6dfeba16f408",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2020/08/stockholm-based-open-payments-raises-e3-million-seed-funding-to-become-a-leading-platform-provider-in-the-eu/",
+         "date": "2020-08-24",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "2a7adaa1-3397-53ef-905d-eade8fc3ad8c"
+      }
+     },
+     {
+      "id": "d8479f8a-33aa-5ed1-9af5-6d51983064d8",
+      "name": "Series A",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "lightbringer.com",
+         "document": "https://www.lightbringer.com/news-items/lightbringer-raises-10m-to-take-on-patent-attorneys-in-the-u-s-with-the-worlds-first-ai-native-patent-firm",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2026/06/16/lightbringer-raises-10m-to-scale-ai-powered-patent-services/",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "thesaasnews.com",
+         "document": "https://www.thesaasnews.com/news/lightbringer-raises-10m-series-a/",
+         "date": "2026-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "10285be5-d3a3-5294-89c5-00ec1f21aa45"
+      }
+     },
+     {
+      "id": "f7e9dbb3-dd97-51be-8ebf-be133b8dc750",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/nordicninja-leads-redpine-in-e6-8m-round-to-let-ai-agents-access-private-data/",
+         "date": "2026-04-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "thenextweb.com",
+         "document": "https://thenextweb.com/news/redpine-raises-e6-8m-api-for-ai-agents",
+         "date": "2026-04-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "arcticstartup.com",
+         "document": "https://arcticstartup.com/redpine-raises-e6-8m-seed/",
+         "date": "2026-05-01",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "sifted.eu",
+         "document": "https://sifted.eu/articles/redpine-raises-e6-8m-to-give-ai-agents-access-to-non-public-data",
+         "date": "2026-04-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "redpine.ai",
+         "document": "https://www.redpine.ai/about",
+         "date": "2026-11-07",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "fdbdc665-25b2-5043-a1a8-7afe9b3ce6d5"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_CORPORATE_EVENT": [
+     {
+      "id": "135ce520-8860-4733-90c9-2ce3b3098472",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/ipercept/__J2lcQw-qNQ291NELI-6-3BgB2nTXGbvIkKqP_qsCW-8/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/468043-93",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2025-05-05",
+       "id": "fe8d75b9-431f-4546-beb7-4002cbcbb526"
+      }
+     },
+     {
+      "id": "177dd4fb-fb44-48c5-a357-c1825cb9dca1",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Energy tech startup Greenely grabs \u20ac8M to reach more households and support Europe's energy transition | TechCrunch",
+         "document": "https://techcrunch.com/2024/07/26/energy-tech-startup-greenely-grabs-e8m-to-reach-more-households-and-support-europes-energy-transition",
+         "date": "2024-07-26"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/greenely/__Kf6ejAg-tDJRXbL0SoRaZyd31XcDubiGni9oBbt-QIg",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2024-07-26",
+       "id": "5f47fc49-1afb-4464-807c-1a87cba8750e"
+      }
+     },
+     {
+      "id": "23f6ebe2-3136-4c32-af68-4e6baffc0315",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/heja/__qBz4mb5JM_PlEd2lv8bGezTA-A0ogpdxd588V5LNPXs",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/heja/__qBz4mb5JM_PlEd2lv8bGezTA-A0ogpdxd588V5LNPXs/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/funding_round/heja-seed--7396be42",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2018-06-28",
+       "id": "52c7aba6-83dd-4e80-a06b-94d6682d7823"
+      }
+     },
+     {
+      "id": "42f9e21f-9425-406d-8987-ff8046cb7dc1",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/insurello/__lXMYkJUKgbjFJ0kbSDY0ctsk3XcY1JbEYJ3X7yxsAQ8",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/insurello/__lXMYkJUKgbjFJ0kbSDY0ctsk3XcY1JbEYJ3X7yxsAQ8/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/181895-41",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/insurello/company_overview/overview_timeline",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2021-07-08",
+       "id": "e6144f25-977c-41fb-9914-66254060d9cd"
+      }
+     },
+     {
+      "id": "71ff2b7b-10a3-440e-b762-9622769b3a50",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/rocky-road/__0xvZ3WdLyOnY5kHzQS4jGGi6dcSo0K_DrXlvks9iNGk",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/rockyroad/__0xvZ3WdLyOnY5kHzQS4jGGi6dcSo0K_DrXlvks9iNGk",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/490880-80",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/rocky-road-9579/financial_details",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2023-09-21",
+       "id": "c7fd89d1-d3f3-4c54-a433-ce8aa908761d"
+      }
+     },
+     {
+      "id": "8da26f3f-2598-4d04-b1de-d29b19de5297",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/ipercept/__J2lcQw-qNQ291NELI-6-3BgB2nTXGbvIkKqP_qsCW-8/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/ipercept/__J2lcQw-qNQ291NELI-6-3BgB2nTXGbvIkKqP_qsCW-8",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "8c1ad45d-bcc9-40b5-9da3-c68727eb179c"
+      }
+     },
+     {
+      "id": "ae44e4a6-fa0f-4581-af47-70773cd0e5f3",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "Luminar Ventures closes second fund at \u20ac65M, focusing on AI and fintech in the Nordics",
+         "document": "https://tech.eu/2023/10/06/luminar-ventures-eur65-ai-and-fintech-in-the-norics",
+         "date": "2023-10-06"
+        },
+        {
+         "name": "arcticstartup.com",
+         "document": "https://arcticstartup.com/luminar-ventures-closes-second-fund-e65m",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Luminar Ventures Completes Second Fund, at \u20ac65M",
+         "document": "https://vcwire.tech/2023/10/10/luminar-ventures-completes-second-fund-at-e65m",
+         "date": "2023-10-10"
+        },
+        {
+         "name": "jacob-key-83530.medium.com",
+         "document": "https://jacob-key-83530.medium.com/luminar-ventures-announces-final-close-of-its-second-fund-at-715-msek-launches-a-prominent-angel-b171a4aeb646",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Nordic VC firm closes \u20ac65M second fund, sets stage for accelerated startup investment | Audacious Investor\u2122\ufe0f",
+         "document": "https://www.linkedin.com/posts/audaciousinvestor_nordic-vc-firm-closes-65m-second-fund-sets-activity-7196116688243752960-kS_S",
+         "date": "2024-05-14"
+        }
+       ],
+       "event_date": "2023-10-06",
+       "id": "08e101a8-d163-49e9-a007-e68e8dec214a"
+      }
+     },
+     {
+      "id": "b0144e21-639d-44d7-8d24-798d46d63f77",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/people/per-emanuelsson/__rI_1BOVN2znd8-u0YnkR50uE-A71fy0vrwof2s3tZKw",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "Energy tech startup Greenely grabs \u20ac8M to reach more households and support Europe's energy transition | TechCrunch",
+         "document": "https://techcrunch.com/2024/07/26/energy-tech-startup-greenely-grabs-e8m-to-reach-more-households-and-support-europes-energy-transition",
+         "date": "2024-07-26"
+        }
+       ],
+       "event_date": "2019-07-25",
+       "id": "2a2edf43-14bf-4129-8a9a-adc34ca0044d"
+      }
+     },
+     {
+      "id": "f2cf8c3c-5b4e-449e-8004-15408147239d",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "arcticstartup.com",
+         "document": "https://arcticstartup.com/luminar-ventures-closes-second-fund-e65m",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Luminar Ventures \u2014 VC Fund Profile | Waveup Copilot",
+         "document": "https://hub.waveup.com/funds/luminar-ventures",
+         "date": "2026-03-04"
+        },
+        {
+         "name": "Luminar Ventures | Investor Profile & Funding Criteria | CAPLINK",
+         "document": "https://caplink.capital/investor-database/luminar-ventures",
+         "date": "2026-01-01"
+        },
+        {
+         "name": "incubatorlist.com",
+         "document": "https://incubatorlist.com/luminar-ventures",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Our investments",
+         "document": "https://www.saminvest.se/en/our-investments",
+         "date": "2025-09-30"
+        }
+       ],
+       "event_date": "2018-02-01",
+       "id": "7cf426ea-7419-4839-86a0-ec77df50405d"
+      }
+     },
+     {
+      "id": "f938f1b4-eaee-420b-8ca1-2f7e6db6f614",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/yazen/__5KYV1DVf02mpNz1dCYJxAk8uI8YEe2EhcK9GGR-7KAU",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/funding_round/yazen-seed--a1b581f8",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2023-08-30",
+       "id": "e5412ac5-26d5-4fee-852a-07d02b877ab5"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "f48ebf95-99ea-4756-99cc-8a2a2d71f2e2",
+      "name": "VENTURE_CAPITAL",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "7 Best Venture Capital (VC) Firms in Sweden",
+         "document": "https://earlynode.com/vc-fundraising/7-best-venture-capital-vc-firms-in-sweden",
+         "date": "2026-01-01"
+        },
+        {
+         "name": "Top Venture Capital Firms in Sweden 2026: Investor Guide",
+         "document": "https://vc-mapping.gilion.com/venture-capital-firms/sweden",
+         "date": "2023-01-23"
+        }
+       ],
+       "id": "92a1c8f6-1317-45fb-bda4-2e438545288c"
+      }
+     }
+    ],
+    "HAS_HEADQUARTERS_IN": [
+     {
+      "id": "45268f56-905f-4cbe-9729-0ad0bbff87fa",
+      "name": "Sweden",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "Partners | FiBAN",
+         "document": "https://fiban.org/portfolio",
+         "date": "2025-08-26"
+        }
+       ],
+       "id": "0928d4da-d0a3-4baa-8e87-d1bf4e977927"
+      }
+     }
+    ],
+    "HAS_PRESENCE_IN": [
+     {
+      "id": "45268f56-905f-4cbe-9729-0ad0bbff87fa",
+      "name": "Sweden",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "7 Best Venture Capital (VC) Firms in Sweden",
+         "document": "https://earlynode.com/vc-fundraising/7-best-venture-capital-vc-firms-in-sweden",
+         "date": "2026-01-01"
+        },
+        {
+         "name": "Top Venture Capital Firms in Sweden 2026: Investor Guide",
+         "document": "https://vc-mapping.gilion.com/venture-capital-firms/sweden",
+         "date": "2023-01-23"
+        }
+       ],
+       "id": "e00cafeb-ce8c-4fb6-a65d-b03650036b1b"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "077d67bb-1ec0-484e-892a-4140d31af6d1",
+      "name": "Saminvest AB",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "arcticstartup.com",
+         "document": "https://arcticstartup.com/luminar-ventures-closes-second-fund-e65m",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Luminar Ventures \u2014 VC Fund Profile | Waveup Copilot",
+         "document": "https://hub.waveup.com/funds/luminar-ventures",
+         "date": "2026-03-04"
+        },
+        {
+         "name": "Luminar Ventures | Investor Profile & Funding Criteria | CAPLINK",
+         "document": "https://caplink.capital/investor-database/luminar-ventures",
+         "date": "2026-01-01"
+        },
+        {
+         "name": "incubatorlist.com",
+         "document": "https://incubatorlist.com/luminar-ventures",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Our investments",
+         "document": "https://www.saminvest.se/en/our-investments",
+         "date": "2025-09-30"
+        }
+       ],
+       "id": "310329e0-6bf0-4816-9f09-e17adbb36b17"
+      }
+     },
+     {
+      "id": "22b39b41-d5c9-4809-a600-b1719f9b8cf1",
+      "name": "Lightbringer AB",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "startuphub.ai",
+         "document": "https://www.startuphub.ai/lightbringer-secures-e4-2m-to-revolutionize-sme-ip-protection",
+         "date": "2026-07-09"
+        },
+        {
+         "name": "We are a membership organisation bringing people together through networking, learning, recruitment and events",
+         "document": "https://www.cambridgenetwork.co.uk/news/legal-tech-company-lightbringer-raises-eu42-lets-companies-build-patent-portfolios-ai",
+         "date": "2026-07-09"
+        }
+       ],
+       "id": "4020615a-abc9-596b-8d01-ff535c869ab9"
+      }
+     },
+     {
+      "id": "4b4ee6ab-0588-4802-8e4b-428fad1c2ee9",
+      "name": "European Investment Fund",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures closes second fund at \u20ac65M, focusing on AI and fintech in the Nordics",
+         "document": "https://tech.eu/2023/10/06/luminar-ventures-eur65-ai-and-fintech-in-the-norics",
+         "date": "2023-10-06"
+        },
+        {
+         "name": "arcticstartup.com",
+         "document": "https://arcticstartup.com/luminar-ventures-closes-second-fund-e65m",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Luminar Ventures Completes Second Fund, at \u20ac65M",
+         "document": "https://vcwire.tech/2023/10/10/luminar-ventures-completes-second-fund-at-e65m",
+         "date": "2023-10-10"
+        },
+        {
+         "name": "jacob-key-83530.medium.com",
+         "document": "https://jacob-key-83530.medium.com/luminar-ventures-announces-final-close-of-its-second-fund-at-715-msek-launches-a-prominent-angel-b171a4aeb646",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Nordic VC firm closes \u20ac65M second fund, sets stage for accelerated startup investment | Audacious Investor\u2122\ufe0f",
+         "document": "https://www.linkedin.com/posts/audaciousinvestor_nordic-vc-firm-closes-65m-second-fund-sets-activity-7196116688243752960-kS_S",
+         "date": "2024-05-14"
+        }
+       ],
+       "id": "8a70d309-3903-4a47-8369-b2e802f61a5d"
+      }
+     },
+     {
+      "id": "cdd4fc83-8fda-4922-ab3b-59aaf1a9063b",
+      "name": "FIBAN LTD",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Partners | FiBAN",
+         "document": "https://fiban.org/portfolio",
+         "date": "2025-08-26"
+        }
+       ],
+       "id": "587afd11-aa32-43ab-b9b8-e4af29cd7fb3"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

@@ -1,0 +1,1077 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/d5f8974b-7765-44f7-afc6-6f1767b8bad0",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 200
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 200
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 200
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 200
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 200
+     },
+     "TRADED_ON": {
+      "limit": 200
+     },
+     "LISTED_ON": {
+      "limit": 200
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "FOUNDED": {
+      "limit": 200
+     },
+     "WORKS_AT": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_CEO_OF": {
+      "limit": 200
+     },
+     "IS_CTO_OF": {
+      "limit": 200
+     },
+     "IS_CFO_OF": {
+      "limit": 200
+     },
+     "IS_COO_OF": {
+      "limit": 200
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 200
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "MANUFACTURED_BY": {
+      "limit": 200
+     },
+     "DESIGNED_BY": {
+      "limit": 200
+     },
+     "OPERATED_BY": {
+      "limit": 200
+     },
+     "CREATED_BY": {
+      "limit": 200
+     },
+     "PUBLISHED_BY": {
+      "limit": 200
+     },
+     "GRANTED_BY": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:29:18+0200",
+ "_seconds": 1.53,
+ "response": {
+  "id": "d5f8974b-7765-44f7-afc6-6f1767b8bad0",
+  "name": "Photoncycle",
+  "entity_type": "Company",
+  "description": "The year-round solar energy system for heating and electricity",
+  "properties": {
+   "name": {
+    "value": "Photoncycle",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-05-08"
+     },
+     {
+      "name": "photoncycle.com",
+      "document": "https://photoncycle.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/photoncycle/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "legal_name": {
+    "value": "Photoncycle AS",
+    "sources": [
+     {
+      "name": "photoncycle.com",
+      "document": "https://www.photoncycle.com/en/",
+      "date": "2026-11-04",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [],
+    "sources": []
+   },
+   "description": {
+    "value": "The year-round solar energy system for heating and electricity",
+    "sources": [
+     {
+      "name": "photoncycle.com",
+      "document": "https://photoncycle.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "website": {
+    "value": "photoncycle.com",
+    "sources": [
+     {
+      "name": "photoncycle.com",
+      "document": "https://photoncycle.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "dns.google",
+      "document": "https://dns.google/query?name=photoncycle.com&type=A",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "headquarters_address": {
+    "value": "Oslo, Norway",
+    "sources": [
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/photoncycle/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2020-01-01",
+    "sources": [
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/photoncycle/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "funding_stage": {
+    "value": "SERIES_A",
+    "sources": [
+     {
+      "name": "eu-startups.com",
+      "document": "https://www.eu-startups.com/2026/03/oslos-photoncycle-raises-e15-million-to-enable-households-to-store-surplus-summer-solar-power-for-winter-use/",
+      "date": "2026-03-04",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "total_funding": {
+    "value": 40940657.0,
+    "sources": [
+     {
+      "name": "stotte.brreg.no",
+      "document": "https://stotte.brreg.no/en/oppslag/stoettetildeling/1000019728",
+      "date": "2024-05-08",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "stotte.brreg.no",
+      "document": "https://stotte.brreg.no/en/oppslag/stoettetildeling/1000026319",
+      "date": "2025-06-19",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "stotte.brreg.no",
+      "document": "https://stotte.brreg.no/en/oppslag/stoettetildeling/1000026931",
+      "date": "2025-09-22",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "stotte.brreg.no",
+      "document": "https://stotte.brreg.no/en/oppslag/stoettetildeling/1000031655",
+      "date": "2025-12-11",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "total_funding_units": {
+    "value": "NOK",
+    "sources": [
+     {
+      "name": "stotte.brreg.no",
+      "document": "https://stotte.brreg.no/en/oppslag/stoettetildeling/1000019728",
+      "date": "2024-05-08",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "stotte.brreg.no",
+      "document": "https://stotte.brreg.no/en/oppslag/stoettetildeling/1000026319",
+      "date": "2025-06-19",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "stotte.brreg.no",
+      "document": "https://stotte.brreg.no/en/oppslag/stoettetildeling/1000026931",
+      "date": "2025-09-22",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "stotte.brreg.no",
+      "document": "https://stotte.brreg.no/en/oppslag/stoettetildeling/1000031655",
+      "date": "2025-12-11",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "operational_status": {
+    "value": "ACTIVE",
+    "sources": [
+     {
+      "name": "photoncycle.com",
+      "document": "https://photoncycle.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "03428a20-6314-5bee-8511-f42b244a8e58",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "photoncycle.com",
+         "document": "https://www.photoncycle.com/en/news/photoncycle-closes-seed-round",
+         "date": "2024-04-05",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "32aa7c5e-7b97-519f-bd18-d5608cc98801"
+      }
+     },
+     {
+      "id": "48681996-125a-51d3-9c20-61db0d626dd0",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "stotte.brreg.no",
+         "document": "https://stotte.brreg.no/en/oppslag/stoettetildeling/1000026319",
+         "date": "2025-06-19",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "6a6c4c85-7052-5040-af98-abe6f6a96cc8"
+      }
+     },
+     {
+      "id": "624aff32-cf55-5435-9768-eeb95eb97fda",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "stotte.brreg.no",
+         "document": "https://stotte.brreg.no/en/oppslag/stoettetildeling/1000019728",
+         "date": "2024-05-08",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "49b56ab8-77f1-50b9-8efc-d23919def584"
+      }
+     },
+     {
+      "id": "922d6772-8e37-5ce0-b473-dee51632c7a7",
+      "name": "Series A",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2026/03/oslos-photoncycle-raises-e15-million-to-enable-households-to-store-surplus-summer-solar-power-for-winter-use/",
+         "date": "2026-03-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "365c9151-756b-57ac-a202-82677b1d142b"
+      }
+     },
+     {
+      "id": "da65b870-36bb-5d82-8e78-3ab6c90190c9",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "stotte.brreg.no",
+         "document": "https://stotte.brreg.no/en/oppslag/stoettetildeling/1000026931",
+         "date": "2025-09-22",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        },
+        {
+         "name": "stotte.brreg.no",
+         "document": "https://stotte.brreg.no/en/oppslag/stoettetildeling/1000031655",
+         "date": "2025-12-11",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "665ac11e-0125-5d9e-8e69-fcb8dc2c9944"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_CORPORATE_EVENT": [
+     {
+      "id": "2e009ec2-ff16-4258-a0ac-758b7221dbeb",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/photoncycle/__K_fz8f9JI0uUGDnUOskGhh5b20eu4zCbM12X0i-3gJE/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/photoncycle/__K_fz8f9JI0uUGDnUOskGhh5b20eu4zCbM12X0i-3gJE",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2023-03-01",
+       "id": "36ffe304-a83d-42d8-a95c-443999304563"
+      }
+     },
+     {
+      "id": "d40aebfb-4d57-473d-ae8a-a05cb179d424",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/photoncycle/__K_fz8f9JI0uUGDnUOskGhh5b20eu4zCbM12X0i-3gJE/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/photoncycle/__K_fz8f9JI0uUGDnUOskGhh5b20eu4zCbM12X0i-3gJE",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/voima-ventures/investor_summary/overview_timeline",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/funding_round/photoncycle-series-a--f27114b2",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/506944-36",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2026-03-04",
+       "id": "ba2262cd-cadd-4087-b657-4992e9dccb8b"
+      }
+     },
+     {
+      "id": "ffd7ece5-3e98-4f0e-a323-3ba7ce1893af",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/photoncycle/__K_fz8f9JI0uUGDnUOskGhh5b20eu4zCbM12X0i-3gJE/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/photoncycle/__K_fz8f9JI0uUGDnUOskGhh5b20eu4zCbM12X0i-3gJE",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "Photoncycle targets low-cost energy storage with a clever hydrogen solution | TechCrunch",
+         "document": "https://techcrunch.com/2024/04/02/photoncycle-solar-energy-storage-solid-hydrogen",
+         "date": "2024-04-02"
+        }
+       ],
+       "event_date": "2024-04-09",
+       "id": "8b3404ad-6c5e-406a-8636-25ea1270bb30"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_EVENT": [
+     {
+      "id": "bc844d56-6ab4-452b-96bf-2661e86e592b",
+      "name": "Slush 2026",
+      "entity_type": "Event",
+      "properties": {
+       "role": "ATTENDEE",
+       "sources": [
+        {
+         "name": "Slush",
+         "document": "https://slush.org/",
+         "date": "2026-11-14"
+        }
+       ],
+       "id": "4d108eda-42e2-5e72-9577-958cd313ff3c"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "11ce48e0-a853-4085-8142-f674977b1a3a",
+      "name": "RENEWABLE_ENERGY",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "voimaventures.com",
+         "document": "https://voimaventures.com/portfolio",
+         "date": "2026-08-24"
+        }
+       ],
+       "id": "c698f95d-17b1-4df4-907d-97b211f52cb1"
+      }
+     },
+     {
+      "id": "11ce48e0-a853-4085-8142-f674977b1a3a",
+      "name": "RENEWABLE_ENERGY",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "linkedin.com",
+         "document": "https://www.linkedin.com/company/photoncycle/",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "2d549e69-f32a-58b5-b967-43fdd92c58c7",
+       "original_label": "energy"
+      }
+     },
+     {
+      "id": "be9a1964-bfc6-4aad-bde1-1f94bf10cf4c",
+      "name": "HARDWARE_AND_EQUIPMENT",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "voimaventures.com",
+         "document": "https://voimaventures.com/portfolio",
+         "date": "2026-08-24"
+        }
+       ],
+       "id": "8afe889a-4508-47b1-b148-41e039f08c1e"
+      }
+     }
+    ],
+    "HAS_HEADQUARTERS_IN": [
+     {
+      "id": "a634a2e2-ecd7-4253-bffb-8ece69e0191a",
+      "name": "Norway",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "voimaventures.com",
+         "document": "https://voimaventures.com/portfolio",
+         "date": "2026-08-24"
+        }
+       ],
+       "id": "495e2d75-2ad2-42ca-8170-ee8ef701fea5"
+      }
+     }
+    ],
+    "HAS_DOMAIN_NAME": [
+     {
+      "id": "5ade36dd-2d93-5a04-abd6-3337d776d104",
+      "name": "photoncycle.com",
+      "entity_type": "DomainName",
+      "properties": {
+       "sources": [
+        {
+         "name": "photoncycle.com",
+         "document": "https://photoncycle.com/",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "dns.google",
+         "document": "https://dns.google/query?name=photoncycle.com&type=A",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "8c8d6843-9f31-5ca8-b1d2-6908b48e3f6a",
+       "status": "ACTIVE"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "1c4ea99e-d351-4abd-b230-420f1a194603",
+      "name": "Momentum Partners",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/photoncycle/__K_fz8f9JI0uUGDnUOskGhh5b20eu4zCbM12X0i-3gJE/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/photoncycle/__K_fz8f9JI0uUGDnUOskGhh5b20eu4zCbM12X0i-3gJE",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "Photoncycle targets low-cost energy storage with a clever hydrogen solution | TechCrunch",
+         "document": "https://techcrunch.com/2024/04/02/photoncycle-solar-energy-storage-solid-hydrogen",
+         "date": "2024-04-02"
+        },
+        {
+         "name": "thenextweb.com",
+         "document": "https://thenextweb.com/news/photoncycle-raises-e15m-series-a-to-address-europes-seasonal-energy-storage-gap",
+         "date": "2026-03-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "11138303-ae28-4464-a995-4941141e9009"
+      }
+     },
+     {
+      "id": "1f973216-f1e5-4466-8409-da6608460c02",
+      "name": "Voima Ventures Oy",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "voimaventures.com",
+         "document": "https://voimaventures.com/portfolio",
+         "date": "2026-08-24"
+        }
+       ],
+       "id": "a2fe4aa5-8139-450c-99f3-d31fe98a40e5"
+      }
+     },
+     {
+      "id": "3ef31033-9773-4fbd-91bf-1a971554e683",
+      "name": "STARTUPLAB FOUNDERS AS",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "sifted.eu",
+         "document": "https://sifted.eu/articles/norwegian-startuplab-closes-32m-fund",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "Photoncycle AS - Aksjon\u00e6rer i Norge.",
+         "document": "https://www.proff.no/aksjon%C3%A6rer/-/photoncycle-as/925751359",
+         "date": "2025-01-01"
+        },
+        {
+         "name": "venturecapitalarchive.com",
+         "document": "https://venturecapitalarchive.com/venture-funds/startuplab-ventures-startuplab-no",
+         "date": "2026-08-24"
+        }
+       ],
+       "id": "5f1f2710-b08f-406e-a3f3-7911c3d5d79c"
+      }
+     },
+     {
+      "id": "4d668c75-c7a0-4f5b-baea-ce0fa6a34e31",
+      "name": "Lifeline Ventures AB",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "thenextweb.com",
+         "document": "https://thenextweb.com/news/photoncycle-raises-e15m-series-a-to-address-europes-seasonal-energy-storage-gap",
+         "date": "2026-03-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "42c878db-996b-4312-bff9-8ffd243de4bf"
+      }
+     },
+     {
+      "id": "8540e55a-1f3b-4969-bf08-6802f5344d24",
+      "name": "Eviny Ventures",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/photoncycle/__K_fz8f9JI0uUGDnUOskGhh5b20eu4zCbM12X0i-3gJE/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/photoncycle/__K_fz8f9JI0uUGDnUOskGhh5b20eu4zCbM12X0i-3gJE",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/voima-ventures/investor_summary/overview_timeline",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/funding_round/photoncycle-series-a--f27114b2",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/506944-36",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "thenextweb.com",
+         "document": "https://thenextweb.com/news/photoncycle-raises-e15m-series-a-to-address-europes-seasonal-energy-storage-gap",
+         "date": "2026-03-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "ce3991b7-445e-4ed3-98aa-4616c149e3a8"
+      }
+     },
+     {
+      "id": "8673db97-466e-4e7e-8417-a0ce1207bf9e",
+      "name": "Voima Ventures",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/photoncycle/__K_fz8f9JI0uUGDnUOskGhh5b20eu4zCbM12X0i-3gJE/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/photoncycle/__K_fz8f9JI0uUGDnUOskGhh5b20eu4zCbM12X0i-3gJE",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/voima-ventures/investor_summary/overview_timeline",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/funding_round/photoncycle-series-a--f27114b2",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/506944-36",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2026/03/04/photoncycle-raises-eur15m-to-scale-seasonal-energy-storage-in-europe/",
+         "date": "2026-03-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "8a9a58df-bcff-4679-9fe0-ab00d01fc7d1"
+      }
+     },
+     {
+      "id": "a46a1058-93a7-4b0f-bc1f-bc31238fb006",
+      "name": "NORDICNINJA VC LIMITED",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/photoncycle/__K_fz8f9JI0uUGDnUOskGhh5b20eu4zCbM12X0i-3gJE/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/photoncycle/__K_fz8f9JI0uUGDnUOskGhh5b20eu4zCbM12X0i-3gJE",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/voima-ventures/investor_summary/overview_timeline",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/funding_round/photoncycle-series-a--f27114b2",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/506944-36",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2026/03/04/photoncycle-raises-eur15m-to-scale-seasonal-energy-storage-in-europe/",
+         "date": "2026-03-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "0c37ea17-b9b1-4c20-ba66-e1212dffb618"
+      }
+     },
+     {
+      "id": "be67283b-4529-4a2d-834a-96edc4b36971",
+      "name": "Luminar Ventures",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        },
+        {
+         "name": "thenextweb.com",
+         "document": "https://thenextweb.com/news/photoncycle-raises-e15m-series-a-to-address-europes-seasonal-energy-storage-gap",
+         "date": "2026-03-04",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "f5066686-a9d0-4bc9-9229-d39f50eee43d"
+      }
+     }
+    ],
+    "FOUNDED": [
+     {
+      "id": "a8d23d89-2175-55ee-a185-9f7e8b65ea52",
+      "name": "Bjorn Brandtzaeg",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "photoncycle.com",
+         "document": "https://www.photoncycle.com/en/about",
+         "date": "2026-11-03",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "e9e00b6a-82f6-597c-b51e-0cdaf5b26f48"
+      }
+     }
+    ],
+    "WORKS_AT": [
+     {
+      "id": "27d23090-5fd2-58ab-9e5a-e3ce8972176b",
+      "name": "Koray Abatay",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Chief Manufacturing Officer",
+       "sources": [
+        {
+         "name": "photoncycle.com",
+         "document": "https://www.photoncycle.com/en/about",
+         "date": "2026-11-03",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "89a83ad2-9d82-5fdc-a5b6-bbca4e49b844"
+      }
+     },
+     {
+      "id": "35d964b2-4a38-5e67-84e8-7165a7e24d4f",
+      "name": "Elina Koivisto",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Chief Growth Officer",
+       "sources": [
+        {
+         "name": "photoncycle.com",
+         "document": "https://www.photoncycle.com/en/about",
+         "date": "2026-11-03",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "7d00ed1b-8792-5e12-ad44-4e2bd9606d80"
+      }
+     },
+     {
+      "id": "78f1c9c1-93bb-55d1-98c0-59903162bfa4",
+      "name": "Sebastian Gutter\u00f8d",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Chief Science Officer",
+       "sources": [
+        {
+         "name": "photoncycle.com",
+         "document": "https://www.photoncycle.com/en/about",
+         "date": "2026-11-03",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "a591eb87-e62f-5260-b745-3a7761026440"
+      }
+     }
+    ],
+    "IS_CEO_OF": [
+     {
+      "id": "a8d23d89-2175-55ee-a185-9f7e8b65ea52",
+      "name": "Bjorn Brandtzaeg",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "photoncycle.com",
+         "document": "https://www.photoncycle.com/en/about",
+         "date": "2026-11-03",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "348d4425-b285-5d44-b91d-3d112dbf2be2"
+      }
+     }
+    ],
+    "IS_BOARD_MEMBER_OF": [
+     {
+      "id": "48355932-8559-57a0-8633-da5d6094990c",
+      "name": "B\u00e5rd Mikkelsen",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "data.brreg.no",
+         "document": "https://data.brreg.no/enhetsregisteret/api/enheter/925751359/roller",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "da943b26-3bbb-57f7-8d4a-89e10d30b367"
+      }
+     },
+     {
+      "id": "b21d4e86-8cc1-56b4-8ab4-4556c1d4acef",
+      "name": "Erling K\u00f8pke Paulsen",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "data.brreg.no",
+         "document": "https://data.brreg.no/enhetsregisteret/api/enheter/925751359/roller",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        },
+        {
+         "name": "photoncycle.com",
+         "document": "https://www.photoncycle.com/en/about",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "ecc8b25d-a32a-5d63-87d4-3b7410dc3245"
+      }
+     },
+     {
+      "id": "c902557f-cb9f-53f4-85bf-21c378d44d5f",
+      "name": "Inka Mero",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "photoncycle.com",
+         "document": "https://www.photoncycle.com/en/about",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "08be0dc5-c7e2-52e5-add8-6c088ab7699a"
+      }
+     },
+     {
+      "id": "caf91eff-17b6-565f-8336-31bd7c410562",
+      "name": "Teemu Mattila",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "data.brreg.no",
+         "document": "https://data.brreg.no/enhetsregisteret/api/enheter/925751359/roller",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        },
+        {
+         "name": "photoncycle.com",
+         "document": "https://www.photoncycle.com/en/about",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "b6cc6060-6c1c-549d-9fe5-1c93e27708ff"
+      }
+     },
+     {
+      "id": "d1356db2-eff4-5b84-a181-70387ca24848",
+      "name": "Tomosaku Sohara",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "photoncycle.com",
+         "document": "https://www.photoncycle.com/en/about",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "eda552a0-625f-5a25-bb36-af4a83208f07"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

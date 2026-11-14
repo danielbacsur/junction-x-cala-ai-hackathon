@@ -1,0 +1,65 @@
+{
+  "_note": "Hand-written reading of the claims in the probe fixture of the same name, in the shape the agreement extractor returns (ExtractedAgreement[]). It stands in for the model call when fixtures are imported and in tests. The ledger's deterministic checks still decide which of these become edges.",
+  "agreements": [
+    {
+      "claimIndex": 0,
+      "partyA": "Kuva US Inc.",
+      "partyB": "NASA",
+      "partyAId": null,
+      "partyBId": "903f54b0-1bb2-406c-8bcc-9b80df792a75",
+      "type": "government_contract",
+      "date": "2026-06-18",
+      "datePrecision": "day",
+      "status": "executed",
+      "value": 476000000,
+      "units": "USD",
+      "valueIsProgrammeCeiling": true,
+      "aboutSubjectItself": false
+    },
+    {
+      "claimIndex": 2,
+      "partyA": "Kuva Space",
+      "partyB": "Finnish Environment Institute (Syke)",
+      "partyAId": "41f89a61-54ac-4068-82af-a2d2096efcfc",
+      "partyBId": null,
+      "type": "partnership",
+      "date": "2025-07-03",
+      "datePrecision": "day",
+      "status": "executed",
+      "value": null,
+      "units": null,
+      "valueIsProgrammeCeiling": false,
+      "aboutSubjectItself": true
+    },
+    {
+      "claimIndex": 4,
+      "partyA": "Kuva Space",
+      "partyB": "IHI Corporation",
+      "partyAId": "41f89a61-54ac-4068-82af-a2d2096efcfc",
+      "partyBId": "6d909137-a0a9-414c-bc93-40cbf5f6acd8",
+      "type": "mou",
+      "date": "2026",
+      "datePrecision": "year",
+      "status": "executed",
+      "value": null,
+      "units": null,
+      "valueIsProgrammeCeiling": false,
+      "aboutSubjectItself": true
+    },
+    {
+      "claimIndex": 6,
+      "partyA": "Kuva Space",
+      "partyB": "Château Puybarbe",
+      "partyAId": "41f89a61-54ac-4068-82af-a2d2096efcfc",
+      "partyBId": "8a37b7fa-e810-5656-aa41-9251ba8ffd94",
+      "type": "customer_agreement",
+      "date": "2026-03-19",
+      "datePrecision": "day",
+      "status": "executed",
+      "value": null,
+      "units": null,
+      "valueIsProgrammeCeiling": false,
+      "aboutSubjectItself": true
+    }
+  ]
+}

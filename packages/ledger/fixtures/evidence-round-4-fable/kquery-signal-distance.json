@@ -1,0 +1,114 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/knowledge/query",
+  "body": {
+   "input": "Which government contracts, public grants or public funding agreements, partnerships and customer agreements has Distance Technologies Oy (Finnish mixed-reality optics company) announced since January 2025? For each give the counterparty, date, type and value."
+  }
+ },
+ "_fetched_at": "2026-11-14T12:28:37+0200",
+ "_started_offset_s": 14.0,
+ "_seconds": 46.02,
+ "response": {
+  "results": [
+   {
+    "counterparty": "Aechelon Technology, Inc.",
+    "date": "20 Jan 2025",
+    "type": "Strategic Partnership",
+    "value": null
+   },
+   {
+    "counterparty": "Patria (via Patria-led eALLIANCE programme, funded by Business Finland)",
+    "date": "20 Mar 2025",
+    "type": "Partnership / Public-funded collaboration",
+    "value": null
+   },
+   {
+    "counterparty": "Funding round (investors not fully detailed in sources)",
+    "date": "May 2025",
+    "type": "Funding",
+    "value": "$13.4 million"
+   },
+   {
+    "counterparty": "General Dynamics Land Systems\u2013UK (GDLS-UK)",
+    "date": "29 Aug 2025",
+    "type": "Technology collaboration / Customer agreement",
+    "value": null
+   },
+   {
+    "counterparty": "Early production contracts (counterparties not publicly named)",
+    "date": "Jan 2026",
+    "type": "Production contracts",
+    "value": null
+   },
+   {
+    "counterparty": "Supacat",
+    "date": "4 Jun 2026",
+    "type": "3-year Framework Agreement",
+    "value": null
+   },
+   {
+    "counterparty": "Galvion",
+    "date": "~Aug 2026",
+    "type": "Development partnership",
+    "value": null
+   },
+   {
+    "counterparty": "FORVIA HELLA (international automotive supplier)",
+    "date": "9 Sep 2026",
+    "type": "Strategic Partnership (with HELLA Ventures investment)",
+    "value": null
+   }
+  ],
+  "entities": [
+   {
+    "id": "136c8108-75f1-4627-8dfe-e5d01c34f2d8",
+    "name": "Patria",
+    "entity_type": "Organization",
+    "mentions": [
+     "Patria"
+    ]
+   },
+   {
+    "id": "3b0499bc-3c7e-4d50-aee5-42de34a5f8d0",
+    "name": "Business Finland Oy",
+    "entity_type": "Company",
+    "mentions": [
+     "Business Finland"
+    ]
+   },
+   {
+    "id": "6f097734-e219-41ec-8a50-c557ea5c0cdd",
+    "name": "SUPACAT LIMITED",
+    "entity_type": "Company",
+    "mentions": [
+     "Supacat"
+    ]
+   },
+   {
+    "id": "e5e5de49-40fc-4cb2-bba5-e01a675d2212",
+    "name": "Galvion Ltd.",
+    "entity_type": "Company",
+    "mentions": [
+     "Galvion"
+    ]
+   },
+   {
+    "id": "83722225-26a9-4084-9abd-b8b8cda76b04",
+    "name": "FORVIA HELLA",
+    "entity_type": "Organization",
+    "mentions": [
+     "FORVIA HELLA"
+    ]
+   },
+   {
+    "id": "49102958-1ca4-528c-8a03-c3df3d1b8621",
+    "name": "HELLA Ventures",
+    "entity_type": "Organization",
+    "mentions": [
+     "HELLA Ventures"
+    ]
+   }
+  ]
+ }
+}

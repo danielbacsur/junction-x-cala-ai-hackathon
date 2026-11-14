@@ -1,0 +1,70 @@
+{
+  "_note": "Provenance of the fixtures. The three folders are copies of .handoff/debate/evidence-round-{2,4,6}-fable, file for file. Round 4 and 6 files wrap the body as {_request, _fetched_at, _seconds, response} and are imported from that. Round 2 files were saved bare; the entries under 'reconstructed' say how each is imported. Nothing here was fetched by the importer.",
+  "approximateFetchedAt": "2026-11-14T12:02:00+02:00",
+  "notResponses": {
+    "evidence-round-4-fable/star-body.json": "Request body: the narrower star read.",
+    "evidence-round-4-fable/person-body.json": "Request body: the person read.",
+    "evidence-round-4-fable/round-body.json": "Request body: the round and event read.",
+    "evidence-round-6-fable/star-body-v2.json": "Request body: the star read of consensus point 5.2.",
+    "evidence-round-4-fable/public-funder-registry.seed.json": "Seed of the public-funder registry. Loaded by sql/102_public_funder_seed.sql."
+  },
+  "skip": {
+    "evidence-round-2-fable/event-slush-1000.json": "First page of the Slush roster; slush-attendees.json holds all three pages.",
+    "evidence-round-2-fable/event-slush.json": "First 500 Slush participants; slush-attendees.json holds the whole roster.",
+    "evidence-round-2-fable/kq-slush.json": "An empty knowledge/query answer saved without its question.",
+    "evidence-round-2-fable/slush-sample.json": "Eight early star reads saved without their request; evidence-round-4-fable/star-rnd-*.json reads the same eight entities later and in full."
+  },
+  "reconstructed": {
+    "evidence-round-2-fable/slush-attendees.json": {
+      "kind": "roster",
+      "note": "The merged Slush 2026 participant list (2,989 rows, sorted by ID). The three page responses (limit 1,000, offsets 0, 1,000 and 2,000) were not saved; the importer cuts the list back into three pages under the event header of event-slush-1000.json and stores each under the request the live client would send for it. Saved without its request or fetch time. Round 2 made its requests between about 11:50 and 12:02 EET on 2026-11-14 (round-2-fable.md)."
+    },
+    "evidence-round-2-fable/round-064d8dc9-7431-5fdc-8958-1f23501946ad.json": {
+      "kind": "entity",
+      "note": "Saved without its request or fetch time. Round 2 made its requests between about 11:50 and 12:02 EET on 2026-11-14 (round-2-fable.md)."
+    },
+    "evidence-round-2-fable/round-2e9302fb-fc6c-574e-99d7-745034c3397f.json": {
+      "kind": "entity",
+      "note": "Saved without its request or fetch time. Round 2 made its requests between about 11:50 and 12:02 EET on 2026-11-14 (round-2-fable.md)."
+    },
+    "evidence-round-2-fable/round-8e2ad700-9a6e-5053-b7a2-14bcc8cf8280.json": {
+      "kind": "entity",
+      "note": "Saved without its request or fetch time. Round 2 made its requests between about 11:50 and 12:02 EET on 2026-11-14 (round-2-fable.md)."
+    },
+    "evidence-round-2-fable/round-9df60d07-219b-57f7-a517-3b519e95650f.json": {
+      "kind": "entity",
+      "note": "Saved without its request or fetch time. Round 2 made its requests between about 11:50 and 12:02 EET on 2026-11-14 (round-2-fable.md)."
+    },
+    "evidence-round-2-fable/round-c746d29b-0b31-5148-96b7-c72fb3b3d025.json": {
+      "kind": "entity",
+      "note": "Saved without its request or fetch time. Round 2 made its requests between about 11:50 and 12:02 EET on 2026-11-14 (round-2-fable.md)."
+    },
+    "evidence-round-2-fable/startup-2ae8111c-9356-4f96-b465-0ea1012d399d.json": {
+      "kind": "entity",
+      "full": true,
+      "note": "Saved as {introspection, entity}: every property and relationship the introspection listed was read. Saved without its request or fetch time. Round 2 made its requests between about 11:50 and 12:02 EET on 2026-11-14 (round-2-fable.md)."
+    },
+    "evidence-round-2-fable/startup-48b4b7e5-10a2-4b8b-ab0a-b98aa7cf6a90.json": {
+      "kind": "entity",
+      "full": true,
+      "note": "Saved as {introspection, entity}: every property and relationship the introspection listed was read. Saved without its request or fetch time. Round 2 made its requests between about 11:50 and 12:02 EET on 2026-11-14 (round-2-fable.md)."
+    }
+  },
+  "probes": {
+    "evidence-round-4-fable/ksearch-iceye-gov.json": {
+      "subjectId": "0247c487-08b6-4e07-8e92-0969cdfeaa2d",
+      "subject": "ICEYE",
+      "extraction": "extractions/ksearch-iceye-gov.json"
+    },
+    "evidence-round-4-fable/ksearch-signal-kuva-space.json": {
+      "subjectId": "41f89a61-54ac-4068-82af-a2d2096efcfc",
+      "subject": "Kuva Space",
+      "extraction": "extractions/ksearch-signal-kuva-space.json"
+    },
+    "evidence-round-4-fable/ksearch-signal-redpine.json": {
+      "subjectId": "331fec23-9c63-4885-a8f5-c2902c9e1b9d",
+      "subject": "Redpine Technology AB",
+      "extraction": "extractions/ksearch-signal-redpine.json"
+    }
+  }
+}

@@ -1,0 +1,690 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/7e8887d3-cecd-4e77-bca2-ee8651454fbc",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 200
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 200
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 200
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 200
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 200
+     },
+     "TRADED_ON": {
+      "limit": 200
+     },
+     "LISTED_ON": {
+      "limit": 200
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "FOUNDED": {
+      "limit": 200
+     },
+     "WORKS_AT": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_CEO_OF": {
+      "limit": 200
+     },
+     "IS_CTO_OF": {
+      "limit": 200
+     },
+     "IS_CFO_OF": {
+      "limit": 200
+     },
+     "IS_COO_OF": {
+      "limit": 200
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 200
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "MANUFACTURED_BY": {
+      "limit": 200
+     },
+     "DESIGNED_BY": {
+      "limit": 200
+     },
+     "OPERATED_BY": {
+      "limit": 200
+     },
+     "CREATED_BY": {
+      "limit": 200
+     },
+     "PUBLISHED_BY": {
+      "limit": 200
+     },
+     "GRANTED_BY": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:28:56+0200",
+ "_seconds": 0.67,
+ "response": {
+  "id": "7e8887d3-cecd-4e77-bca2-ee8651454fbc",
+  "name": "Motorica",
+  "entity_type": "Company",
+  "description": "The Frontier Motion Model. For every character, avatar and robot.",
+  "properties": {
+   "name": {
+    "value": "Motorica",
+    "sources": [
+     {
+      "name": "Luminar Ventures \u2013 Portfolio Companies",
+      "document": "https://luminarventures.com/portfolio",
+      "date": "2025-01-01"
+     },
+     {
+      "name": "motorica.com",
+      "document": "https://motorica.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/motorica-motion-engine/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "legal_name": {
+    "value": "Motorica AB",
+    "sources": [
+     {
+      "name": "allabolag.se",
+      "document": "https://www.allabolag.se/5592941107",
+      "date": "2026-11-12",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [],
+    "sources": []
+   },
+   "description": {
+    "value": "The Frontier Motion Model. For every character, avatar and robot.",
+    "sources": [
+     {
+      "name": "motorica.com",
+      "document": "https://motorica.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "website": {
+    "value": "motorica.com",
+    "sources": [
+     {
+      "name": "motorica.com",
+      "document": "https://motorica.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "dns.google",
+      "document": "https://dns.google/query?name=motorica.com&type=A",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "headquarters_address": {
+    "value": "Stockholm, Sweden",
+    "sources": [
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/motorica-motion-engine/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2020-12-29",
+    "sources": [
+     {
+      "name": "allabolag.se",
+      "document": "https://www.allabolag.se/5592941107",
+      "date": "2026-11-12",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "total_funding": {
+    "value": 5000000.0,
+    "sources": [
+     {
+      "name": "accessnewswire.com",
+      "document": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/motorica-raises-%e2%82%ac5m-to-lead-the-generative-ai-revolution-in-chara-1042323",
+      "date": "2025-06-24",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "cartoonbrew.com",
+      "document": "https://cartoonbrew.com/business/motorica-raises-5-8m-for-its-game-animation-ai-platform-248114.html",
+      "date": "2025-06-26",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "total_funding_units": {
+    "value": "EUR",
+    "sources": [
+     {
+      "name": "accessnewswire.com",
+      "document": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/motorica-raises-%e2%82%ac5m-to-lead-the-generative-ai-revolution-in-chara-1042323",
+      "date": "2025-06-24",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "cartoonbrew.com",
+      "document": "https://cartoonbrew.com/business/motorica-raises-5-8m-for-its-game-animation-ai-platform-248114.html",
+      "date": "2025-06-26",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "operational_status": {
+    "value": "ACTIVE",
+    "sources": [
+     {
+      "name": "motorica.com",
+      "document": "https://motorica.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "allabolag.se",
+      "document": "https://www.allabolag.se/5592941107",
+      "date": "2026-11-12",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "1a4c0e31-af92-5cde-a145-92c03ec1e7f5",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "accessnewswire.com",
+         "document": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/motorica-raises-%e2%82%ac5m-to-lead-the-generative-ai-revolution-in-chara-1042323",
+         "date": "2025-06-24",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "cartoonbrew.com",
+         "document": "https://cartoonbrew.com/business/motorica-raises-5-8m-for-its-game-animation-ai-platform-248114.html",
+         "date": "2025-06-26",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "e2e27eec-69a5-51c8-bb25-3869b22d6000"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_EVENT": [
+     {
+      "id": "bc844d56-6ab4-452b-96bf-2661e86e592b",
+      "name": "Slush 2026",
+      "entity_type": "Event",
+      "properties": {
+       "role": "ATTENDEE",
+       "sources": [
+        {
+         "name": "Slush",
+         "document": "https://slush.org/",
+         "date": "2026-11-14"
+        }
+       ],
+       "id": "c7d13f9f-bfb3-5a4e-8381-ec3fb8f8df00"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "8561e6a1-d703-405b-9981-f78cf3428db5",
+      "name": "ENTERTAINMENT",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "c7ab58c1-1aea-46a2-a0a7-b2513e7324c6"
+      }
+     },
+     {
+      "id": "8ecf5e57-a149-438c-9eb4-089809bade56",
+      "name": "SOFTWARE_AND_SERVICES",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        }
+       ],
+       "id": "14bfa0e9-6473-4b4a-b703-b7381569f32f"
+      }
+     },
+     {
+      "id": "8ecf5e57-a149-438c-9eb4-089809bade56",
+      "name": "SOFTWARE_AND_SERVICES",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "linkedin.com",
+         "document": "https://www.linkedin.com/company/motorica-motion-engine/",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "8ab48e48-dcda-5457-9a7b-0b4c3a0f799b",
+       "original_label": "ai"
+      }
+     }
+    ],
+    "HAS_DOMAIN_NAME": [
+     {
+      "id": "0a257a81-7ae6-5301-8d50-dcc1c5bfdfa3",
+      "name": "motorica.ai",
+      "entity_type": "DomainName",
+      "properties": {
+       "sources": [
+        {
+         "name": "dns.google",
+         "document": "https://dns.google/query?name=motorica.com&type=A",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "motorica.com",
+         "document": "https://motorica.com/",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "accessnewswire.com",
+         "document": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/motorica-raises-%e2%82%ac5m-to-lead-the-generative-ai-revolution-in-chara-1042323",
+         "date": "2025-06-24",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "motorica.ai",
+         "document": "https://www.motorica.ai/",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "80236785-2b10-5e8a-b743-99bb7c677894",
+       "status": "INACTIVE"
+      }
+     },
+     {
+      "id": "a1e6fce8-1a5d-5f0c-868b-ece8d46f56f2",
+      "name": "motorica.com",
+      "entity_type": "DomainName",
+      "properties": {
+       "sources": [
+        {
+         "name": "motorica.com",
+         "document": "https://motorica.com/",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "dns.google",
+         "document": "https://dns.google/query?name=motorica.com&type=A",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "accessnewswire.com",
+         "document": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/motorica-raises-%e2%82%ac5m-to-lead-the-generative-ai-revolution-in-chara-1042323",
+         "date": "2025-06-24",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "motorica.ai",
+         "document": "https://www.motorica.ai/",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "91cd43b2-0f65-5134-98b6-de56cf134cf2",
+       "status": "ACTIVE"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "be67283b-4529-4a2d-834a-96edc4b36971",
+      "name": "Luminar Ventures",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Luminar Ventures \u2013 Portfolio Companies",
+         "document": "https://luminarventures.com/portfolio",
+         "date": "2025-01-01"
+        },
+        {
+         "name": "accessnewswire.com",
+         "document": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/motorica-raises-%e2%82%ac5m-to-lead-the-generative-ai-revolution-in-chara-1042323",
+         "date": "2025-06-24",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "cartoonbrew.com",
+         "document": "https://cartoonbrew.com/business/motorica-raises-5-8m-for-its-game-animation-ai-platform-248114.html",
+         "date": "2025-06-26",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "e650a897-80b4-4823-a361-0829c32e3ea0"
+      }
+     },
+     {
+      "id": "f73a9046-131a-4972-b3c0-1cdfb1351df4",
+      "name": "Angular Ventures",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "accessnewswire.com",
+         "document": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/motorica-raises-%e2%82%ac5m-to-lead-the-generative-ai-revolution-in-chara-1042323",
+         "date": "2025-06-24",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "cartoonbrew.com",
+         "document": "https://cartoonbrew.com/business/motorica-raises-5-8m-for-its-game-animation-ai-platform-248114.html",
+         "date": "2025-06-26",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "42218abc-db21-4565-8049-a90f4b228a96"
+      }
+     }
+    ],
+    "FOUNDED": [
+     {
+      "id": "555cf60f-8b42-5c62-9abc-34449700bd3d",
+      "name": "Gustav Henter",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "cartoonbrew.com",
+         "document": "https://cartoonbrew.com/business/motorica-raises-5-8m-for-its-game-animation-ai-platform-248114.html",
+         "date": "2025-06-26",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "a976e9bd-9e08-5f8a-ba90-0a5910b7ea0b"
+      }
+     },
+     {
+      "id": "8f53ce86-072e-5804-add7-04ffb6ef4dbe",
+      "name": "Simon Alexanderson",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "cartoonbrew.com",
+         "document": "https://cartoonbrew.com/business/motorica-raises-5-8m-for-its-game-animation-ai-platform-248114.html",
+         "date": "2025-06-26",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "781e14fa-399e-5126-983a-db3e61cb3d03"
+      }
+     }
+    ],
+    "IS_CEO_OF": [
+     {
+      "id": "d27c7ff9-0f2e-59a7-b181-14269b86c4a8",
+      "name": "Willem Demmers",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "accessnewswire.com",
+         "document": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/motorica-raises-%e2%82%ac5m-to-lead-the-generative-ai-revolution-in-chara-1042323",
+         "date": "2025-06-24",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/5592941107/befattningar",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "58b5d101-2283-5cc4-805c-1f0a41925f1d"
+      }
+     }
+    ],
+    "IS_BOARD_MEMBER_OF": [
+     {
+      "id": "555cf60f-8b42-5c62-9abc-34449700bd3d",
+      "name": "Gustav Henter",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/5592941107/befattningar",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "453f0898-fdb7-53e6-995c-6d7c3855da0f"
+      }
+     },
+     {
+      "id": "6935f331-006e-503e-b2cd-309995859d9a",
+      "name": "David Peterson",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/5592941107/befattningar",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "6fc78f4a-bd12-5b91-a08a-c3d1ddc3f69b"
+      }
+     },
+     {
+      "id": "82dca62d-e24b-54ab-b740-464b2013bea6",
+      "name": "Stefan Lindeberg",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/5592941107/befattningar",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "19b41061-0209-5466-8f2c-793a833a72a4"
+      }
+     },
+     {
+      "id": "8f53ce86-072e-5804-add7-04ffb6ef4dbe",
+      "name": "Simon Alexanderson",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/5592941107/befattningar",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "4f3147c6-b649-51a7-8b2c-28970cf310f4"
+      }
+     },
+     {
+      "id": "d27c7ff9-0f2e-59a7-b181-14269b86c4a8",
+      "name": "Willem Demmers",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "allabolag.se",
+         "document": "https://www.allabolag.se/5592941107/befattningar",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "a2ee072f-ba1a-5702-80ec-234524c3bf05"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

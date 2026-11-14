@@ -1,0 +1,713 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/be95ef40-273a-5e19-ada9-36f905ac46f1",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 200
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 200
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 200
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 200
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 200
+     },
+     "TRADED_ON": {
+      "limit": 200
+     },
+     "LISTED_ON": {
+      "limit": 200
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "FOUNDED": {
+      "limit": 200
+     },
+     "WORKS_AT": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_CEO_OF": {
+      "limit": 200
+     },
+     "IS_CTO_OF": {
+      "limit": 200
+     },
+     "IS_CFO_OF": {
+      "limit": 200
+     },
+     "IS_COO_OF": {
+      "limit": 200
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 200
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "MANUFACTURED_BY": {
+      "limit": 200
+     },
+     "DESIGNED_BY": {
+      "limit": 200
+     },
+     "OPERATED_BY": {
+      "limit": 200
+     },
+     "CREATED_BY": {
+      "limit": 200
+     },
+     "PUBLISHED_BY": {
+      "limit": 200
+     },
+     "GRANTED_BY": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:24:19+0200",
+ "_seconds": 0.81,
+ "response": {
+  "id": "be95ef40-273a-5e19-ada9-36f905ac46f1",
+  "name": "Physicl",
+  "entity_type": "Company",
+  "description": "Physicl is the synthetic data platform for physical AI. Describe a scene, vary it millions of ways, and get exact ground truth on every frame.",
+  "properties": {
+   "name": {
+    "value": "Physicl",
+    "sources": [
+     {
+      "name": "physicl.ai",
+      "document": "https://physicl.ai/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/physicl",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "legal_name": {
+    "value": "Physicl, Inc.",
+    "sources": [
+     {
+      "name": "physicl.ai",
+      "document": "https://www.physicl.ai/",
+      "date": "2026-11-04",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "description": {
+    "value": "Physicl is the synthetic data platform for physical AI. Describe a scene, vary it millions of ways, and get exact ground truth on every frame.",
+    "sources": [
+     {
+      "name": "physicl.ai",
+      "document": "https://physicl.ai/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "website": {
+    "value": "physicl.ai",
+    "sources": [
+     {
+      "name": "physicl.ai",
+      "document": "https://physicl.ai/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "dns.google",
+      "document": "https://dns.google/query?name=physicl.ai&type=A",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "web.archive.org",
+      "document": "https://web.archive.org/web/20260317130554/https://www.physicl.ai/",
+      "date": "2026-11-13",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "headquarters_address": {
+    "value": "Paris, France",
+    "sources": [
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/physicl",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     },
+     {
+      "name": "thenextweb.com",
+      "document": "https://thenextweb.com/news/physicl-10m-seed-physical-ai-training-data",
+      "date": "2026-11-06",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2026-01-01",
+    "sources": [
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/physicl",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "funding_stage": {
+    "value": "SEED",
+    "sources": [
+     {
+      "name": "physicl.ai",
+      "document": "https://www.physicl.ai/insights/physicl-seed-studio",
+      "date": "2026-11-06",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "thenextweb.com",
+      "document": "https://thenextweb.com/news/physicl-10m-seed-physical-ai-training-data",
+      "date": "2026-11-06",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "techcrunch.com",
+      "document": "https://techcrunch.com/?p=3185667",
+      "date": "2026-11-06",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "total_funding": {
+    "value": 10000000.0,
+    "sources": [
+     {
+      "name": "physicl.ai",
+      "document": "https://www.physicl.ai/insights/physicl-seed-studio",
+      "date": "2026-11-06",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "thenextweb.com",
+      "document": "https://thenextweb.com/news/physicl-10m-seed-physical-ai-training-data",
+      "date": "2026-11-06",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "techcrunch.com",
+      "document": "https://techcrunch.com/?p=3185667",
+      "date": "2026-11-06",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "total_funding_units": {
+    "value": "USD",
+    "sources": [
+     {
+      "name": "physicl.ai",
+      "document": "https://www.physicl.ai/insights/physicl-seed-studio",
+      "date": "2026-11-06",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "thenextweb.com",
+      "document": "https://thenextweb.com/news/physicl-10m-seed-physical-ai-training-data",
+      "date": "2026-11-06",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "techcrunch.com",
+      "document": "https://techcrunch.com/?p=3185667",
+      "date": "2026-11-06",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "operational_status": {
+    "value": "ACTIVE",
+    "sources": [
+     {
+      "name": "physicl.ai",
+      "document": "https://physicl.ai/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "69675a81-b557-5053-a805-8508a15584a4",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "physicl.ai",
+         "document": "https://www.physicl.ai/insights/physicl-seed-studio",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "thenextweb.com",
+         "document": "https://thenextweb.com/news/physicl-10m-seed-physical-ai-training-data",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "techcrunch.com",
+         "document": "https://techcrunch.com/?p=3185667",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "79e9a71a-d326-55c3-b83e-ff674a7eab03"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_EVENT": [
+     {
+      "id": "bc844d56-6ab4-452b-96bf-2661e86e592b",
+      "name": "Slush 2026",
+      "entity_type": "Event",
+      "properties": {
+       "role": "ATTENDEE",
+       "sources": [
+        {
+         "name": "Slush",
+         "document": "https://slush.org/",
+         "date": "2026-11-14"
+        }
+       ],
+       "id": "00729fad-15f6-5f51-8222-1424dc696e67"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "8ecf5e57-a149-438c-9eb4-089809bade56",
+      "name": "SOFTWARE_AND_SERVICES",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "linkedin.com",
+         "document": "https://www.linkedin.com/company/physicl",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "278c353b-c105-54b4-8b81-04de5305abdf",
+       "original_label": "ai"
+      }
+     }
+    ],
+    "HAS_DOMAIN_NAME": [
+     {
+      "id": "03425db0-1f5e-50c8-9972-941150086b21",
+      "name": "physicl.ai",
+      "entity_type": "DomainName",
+      "properties": {
+       "sources": [
+        {
+         "name": "physicl.ai",
+         "document": "https://physicl.ai/",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "dns.google",
+         "document": "https://dns.google/query?name=physicl.ai&type=A",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "web.archive.org",
+         "document": "https://web.archive.org/web/20260317130554/https://www.physicl.ai/",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "317f4ad5-9470-568b-99ed-fd4b88da757a",
+       "valid_since": "2026-03-17",
+       "status": "ACTIVE"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "653ca6f9-a173-5a4f-aae0-d20618e6e55e",
+      "name": "Inovia Capital Inc.",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "physicl.ai",
+         "document": "https://www.physicl.ai/insights/physicl-seed-studio",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "thenextweb.com",
+         "document": "https://thenextweb.com/news/physicl-10m-seed-physical-ai-training-data",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "techcrunch.com",
+         "document": "https://techcrunch.com/?p=3185667",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "f461b935-1c96-4837-9d13-6c65850bceff"
+      }
+     },
+     {
+      "id": "e7d89295-2bee-4d53-a5ec-7bfc07c15be2",
+      "name": "U.S. Venture Partners",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "physicl.ai",
+         "document": "https://www.physicl.ai/insights/physicl-seed-studio",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "thenextweb.com",
+         "document": "https://thenextweb.com/news/physicl-10m-seed-physical-ai-training-data",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "2f9ac3df-fe87-49eb-bad5-5b9771136a66"
+      }
+     }
+    ],
+    "FOUNDED": [
+     {
+      "id": "0064009c-ee30-50e8-b6fb-d6d70dbdbfcb",
+      "name": "Alex de Vigan",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "physicl.ai",
+         "document": "https://www.physicl.ai/company",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "thenextweb.com",
+         "document": "https://thenextweb.com/news/physicl-10m-seed-physical-ai-training-data",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "techcrunch.com",
+         "document": "https://techcrunch.com/?p=3185667",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "94cbcae5-f3a3-52ea-84e0-f677fb5092a2"
+      }
+     }
+    ],
+    "WORKS_AT": [
+     {
+      "id": "260d3124-3186-5cbc-93d0-b1f82fb8065f",
+      "name": "Christoph Lassner",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Advisor",
+       "sources": [
+        {
+         "name": "physicl.ai",
+         "document": "https://www.physicl.ai/company",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "physicl.ai",
+         "document": "https://www.physicl.ai/insights/physicl-seed-studio",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "41da6f94-f333-5d48-bfde-02cb52305906"
+      }
+     },
+     {
+      "id": "2913e269-bb39-53f7-a62e-8a13a48c0b11",
+      "name": "S\u00e9bastien Deguy",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Advisor",
+       "sources": [
+        {
+         "name": "physicl.ai",
+         "document": "https://www.physicl.ai/company",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "physicl.ai",
+         "document": "https://www.physicl.ai/insights/physicl-seed-studio",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "cf3ad795-b686-5723-ab54-681858e669a4"
+      }
+     },
+     {
+      "id": "562064d2-3067-5d2c-8f7d-cdd5ea214e78",
+      "name": "Yaser Sheikh",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Advisor",
+       "sources": [
+        {
+         "name": "physicl.ai",
+         "document": "https://www.physicl.ai/company",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "physicl.ai",
+         "document": "https://www.physicl.ai/insights/physicl-seed-studio",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "bfe178ba-0d0f-5281-b977-ae14e5d3647a"
+      }
+     },
+     {
+      "id": "8c992098-a63c-4d6e-b67f-45ac9e991246",
+      "name": "Professor Matthias Niessner",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Advisor",
+       "sources": [
+        {
+         "name": "physicl.ai",
+         "document": "https://www.physicl.ai/company",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "physicl.ai",
+         "document": "https://www.physicl.ai/insights/physicl-seed-studio",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "23e3d804-9aa3-535f-b6c2-807a93600868"
+      }
+     },
+     {
+      "id": "baed5390-3181-5b10-992f-d5756ce2335a",
+      "name": "Thomas Wolf",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Advisor",
+       "sources": [
+        {
+         "name": "physicl.ai",
+         "document": "https://www.physicl.ai/company",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "physicl.ai",
+         "document": "https://www.physicl.ai/insights/physicl-seed-studio",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "4a8c212d-23d0-5032-9778-d1bbc8d25b74"
+      }
+     }
+    ],
+    "IS_CEO_OF": [
+     {
+      "id": "0064009c-ee30-50e8-b6fb-d6d70dbdbfcb",
+      "name": "Alex de Vigan",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "physicl.ai",
+         "document": "https://www.physicl.ai/company",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "prnewswire.co.uk",
+         "document": "https://www.prnewswire.co.uk/news-releases/physicl-launches-the-data-infrastructure-layer-for-physical-ai-at-nvidia-gtc-302715165.html",
+         "date": "2026-03-17",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "thenextweb.com",
+         "document": "https://thenextweb.com/news/physicl-10m-seed-physical-ai-training-data",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "techcrunch.com",
+         "document": "https://techcrunch.com/?p=3185667",
+         "date": "2026-11-06",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "4767180a-6448-58f4-a3a2-5d43a5214a67"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

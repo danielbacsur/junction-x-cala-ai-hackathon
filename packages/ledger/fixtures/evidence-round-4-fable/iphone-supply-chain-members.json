@@ -1,0 +1,73 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/296fa17a-0fe7-45e9-8da6-a70a50867943",
+  "body": {
+   "properties": [
+    "name",
+    "description"
+   ],
+   "relationships": {
+    "incoming": {
+     "IS_MEMBER_OF": {
+      "limit": 100
+     }
+    },
+    "outgoing": {}
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:20:46+0200",
+ "_seconds": 0.21,
+ "response": {
+  "id": "296fa17a-0fe7-45e9-8da6-a70a50867943",
+  "name": "iPhone supply chain",
+  "entity_type": "Organization",
+  "description": "a global network of suppliers and manufacturers that provide components for iPhone production",
+  "properties": {
+   "name": {
+    "value": "iPhone supply chain",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-08-31"
+     }
+    ]
+   },
+   "description": {
+    "value": "a global network of suppliers and manufacturers that provide components for iPhone production",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-08-31"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {},
+   "incoming": {
+    "IS_MEMBER_OF": [
+     {
+      "id": "c6772802-bdbc-4778-91e9-cd3d27d008d5",
+      "name": "Apple",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "The Jakarta Post - Still bold, fiercely independent",
+         "document": "https://www.thejakartapost.com/opinion/2024/12/05/apples-dilemma-indonesian-consumers-or-supply-chain-efficiency.html",
+         "date": "2026-08-31"
+        }
+       ],
+       "id": "28f15d40-d02a-581e-a5cf-60d8088826db"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

@@ -1,0 +1,1 @@
+{"properties": ["name", "description", "round_label", "round_type", "transaction_value", "transaction_value_units", "announcement_date", "close_date", "instrument", "event_date", "event_type"], "relationships": {"incoming": {"PARTICIPATES_IN_FUNDING_ROUND": {"limit": 100}, "PARTICIPATES_IN_CORPORATE_EVENT": {"limit": 100}}, "outgoing": {}}}

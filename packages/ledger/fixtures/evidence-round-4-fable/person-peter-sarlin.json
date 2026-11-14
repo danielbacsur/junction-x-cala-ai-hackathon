@@ -1,0 +1,187 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/9e0a05df-a76e-58f8-9b44-a7ba114fff8a",
+  "body": {
+   "properties": [
+    "name",
+    "description",
+    "linkedin_url"
+   ],
+   "relationships": {
+    "outgoing": {
+     "FOUNDED": {
+      "limit": 200
+     },
+     "WORKS_AT": {
+      "limit": 200
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_CEO_OF": {
+      "limit": 200
+     },
+     "IS_CTO_OF": {
+      "limit": 200
+     },
+     "IS_CFO_OF": {
+      "limit": 200
+     },
+     "IS_COO_OF": {
+      "limit": 200
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 200
+     },
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "STUDIED_AT": {
+      "limit": 200
+     },
+     "SPOKE_AT": {
+      "limit": 200
+     },
+     "RECEIVED_AWARD": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     },
+     "HAS_NATIONALITY": {
+      "limit": 200
+     }
+    },
+    "incoming": {}
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:27:30+0200",
+ "_seconds": 7.85,
+ "response": {
+  "id": "9e0a05df-a76e-58f8-9b44-a7ba114fff8a",
+  "name": "Peter Sarlin",
+  "entity_type": "Person",
+  "description": "An investor who participated in a seed funding round and invested in Redpine Technology AB.",
+  "properties": {
+   "name": {
+    "value": "Peter Sarlin",
+    "sources": [
+     {
+      "name": "thenextweb.com",
+      "document": "https://thenextweb.com/news/redpine-raises-e6-8m-api-for-ai-agents",
+      "date": "2026-04-28",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "arcticstartup.com",
+      "document": "https://arcticstartup.com/redpine-raises-e6-8m-seed/",
+      "date": "2026-05-01",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "techfundingnews.com",
+      "document": "https://techfundingnews.com/nordicninja-leads-redpine-in-e6-8m-round-to-let-ai-agents-access-private-data/",
+      "date": "2026-04-28",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "description": {
+    "value": "An investor who participated in a seed funding round and invested in Redpine Technology AB.",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-11-13",
+      "date_precision": null,
+      "source_rank": null
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "INVESTED_IN": [
+     {
+      "id": "331fec23-9c63-4885-a8f5-c2902c9e1b9d",
+      "name": "Redpine Technology AB",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "thenextweb.com",
+         "document": "https://thenextweb.com/news/redpine-raises-e6-8m-api-for-ai-agents",
+         "date": "2026-04-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "arcticstartup.com",
+         "document": "https://arcticstartup.com/redpine-raises-e6-8m-seed/",
+         "date": "2026-05-01",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/nordicninja-leads-redpine-in-e6-8m-round-to-let-ai-agents-access-private-data/",
+         "date": "2026-04-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "8a86859d-6f74-4863-abb3-2a13822fb0f9"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "f7e9dbb3-dd97-51be-8ebf-be133b8dc750",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "thenextweb.com",
+         "document": "https://thenextweb.com/news/redpine-raises-e6-8m-api-for-ai-agents",
+         "date": "2026-04-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "arcticstartup.com",
+         "document": "https://arcticstartup.com/redpine-raises-e6-8m-seed/",
+         "date": "2026-05-01",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/nordicninja-leads-redpine-in-e6-8m-round-to-let-ai-agents-access-private-data/",
+         "date": "2026-04-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "ab0f07ec-e77e-5ee4-9c02-e34eb9dcf52c"
+      }
+     }
+    ]
+   },
+   "incoming": {}
+  },
+  "numerical_observations": []
+ }
+}

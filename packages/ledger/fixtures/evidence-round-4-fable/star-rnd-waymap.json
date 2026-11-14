@@ -1,0 +1,1343 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/caf77a29-53cd-4c6c-9776-bb47acf63c54",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 200
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 200
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 200
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 200
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 200
+     },
+     "TRADED_ON": {
+      "limit": 200
+     },
+     "LISTED_ON": {
+      "limit": 200
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "FOUNDED": {
+      "limit": 200
+     },
+     "WORKS_AT": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_CEO_OF": {
+      "limit": 200
+     },
+     "IS_CTO_OF": {
+      "limit": 200
+     },
+     "IS_CFO_OF": {
+      "limit": 200
+     },
+     "IS_COO_OF": {
+      "limit": 200
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 200
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "MANUFACTURED_BY": {
+      "limit": 200
+     },
+     "DESIGNED_BY": {
+      "limit": 200
+     },
+     "OPERATED_BY": {
+      "limit": 200
+     },
+     "CREATED_BY": {
+      "limit": 200
+     },
+     "PUBLISHED_BY": {
+      "limit": 200
+     },
+     "GRANTED_BY": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:24:26+0200",
+ "_seconds": 0.57,
+ "response": {
+  "id": "caf77a29-53cd-4c6c-9776-bb47acf63c54",
+  "name": "WAYMAP LIMITED",
+  "entity_type": "Company",
+  "description": "Waymap is the world's only navigation app to guide you outdoors, indoors, and even deep underground. Accessible step-by-step navigation for all.",
+  "properties": {
+   "name": {
+    "value": "WAYMAP LIMITED",
+    "sources": [
+     {
+      "name": "Companies House UK",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813",
+      "date": "2026-05-01"
+     }
+    ]
+   },
+   "legal_name": {
+    "value": "Waymap Limited",
+    "sources": [
+     {
+      "name": "waymapnav.com",
+      "document": "https://www.waymapnav.com/terms-conditions",
+      "date": "2026-11-04",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813",
+      "date": "2026-11-13",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [
+     "waymap.org",
+     "Waymap"
+    ],
+    "sources": []
+   },
+   "description": {
+    "value": "Waymap is the world's only navigation app to guide you outdoors, indoors, and even deep underground. Accessible step-by-step navigation for all.",
+    "sources": [
+     {
+      "name": "waymapnav.com",
+      "document": "https://waymapnav.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "website": {
+    "value": "waymapnav.com",
+    "sources": [
+     {
+      "name": "waymapnav.com",
+      "document": "https://waymapnav.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "dns.google",
+      "document": "https://dns.google/query?name=waymapnav.com&type=A",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "headquarters_address": {
+    "value": "London, United Kingdom",
+    "sources": [
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/waymap/mycompany/?viewAsMember=true",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2017-11-07",
+    "sources": [
+     {
+      "name": "Companies House UK",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813",
+      "date": "2026-10-01"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813",
+      "date": "2026-11-13",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "funding_stage": {
+    "value": "SERIES_B",
+    "sources": [
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzUyNjQ5ODM4NWFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2026-06-18",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzU1MjM2NTAyMGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2026-10-23",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "total_funding": {
+    "value": 13850321.74,
+    "sources": [
+     {
+      "name": "techfundingnews.com",
+      "document": "https://techfundingnews.com/london-based-waymap-lands-7m-for-its-indoor-navigation-technology/",
+      "date": "2024-04-09",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "prnewswire.com",
+      "document": "https://www.prnewswire.com/news-releases/uk-social-impact-startup-waymap-successfully-closes-funding-round-led-by-telus-for-its-indoor-navigation-technology-302111242.html",
+      "date": "2024-04-09",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "tech.eu",
+      "document": "https://tech.eu/2024/04/09/london-startup-waymap-secures-ps7m/",
+      "date": "2024-04-09",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "telus.com",
+      "document": "https://www.telus.com/en/about/news-and-events/media-releases/uk-social-impact-startup-waymap-successfully-closes-funding-round-led-by-telus-for-its-indoor-navigation-technology",
+      "date": "2024-04-09",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzIxOTUyMjkzM2FkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2018-11-20",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzQwODc4MzE5MWFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2024-01-24",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzI4MDY3NTg4N2FkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2020-10-15",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzI5NzczNzg1MmFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2021-04-16",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzI5NzczODI0NmFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2021-04-14",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzMwMjk5NDAyM2FkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2021-06-01",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "gtr.ukri.org",
+      "document": "https://gtr.ukri.org/find-research-and-innovation/project/28c47050-4938-4337-ab46-3373f0b3b704",
+      "date": "2026-11-13",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "techcrunch.com",
+      "document": "https://techcrunch.com/?p=2336667",
+      "date": "2022-06-16",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "nordic9.com",
+      "document": "https://nordic9.com/news/waymap-raised-a-4-million-pre-series-a-investment-round/",
+      "date": "2022-05-30",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzUyNjQ5ODM4NWFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2026-06-18",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzU1MjM2NTAyMGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2026-10-23",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "total_funding_units": {
+    "value": "GBP",
+    "sources": [
+     {
+      "name": "techfundingnews.com",
+      "document": "https://techfundingnews.com/london-based-waymap-lands-7m-for-its-indoor-navigation-technology/",
+      "date": "2024-04-09",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "prnewswire.com",
+      "document": "https://www.prnewswire.com/news-releases/uk-social-impact-startup-waymap-successfully-closes-funding-round-led-by-telus-for-its-indoor-navigation-technology-302111242.html",
+      "date": "2024-04-09",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "tech.eu",
+      "document": "https://tech.eu/2024/04/09/london-startup-waymap-secures-ps7m/",
+      "date": "2024-04-09",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "telus.com",
+      "document": "https://www.telus.com/en/about/news-and-events/media-releases/uk-social-impact-startup-waymap-successfully-closes-funding-round-led-by-telus-for-its-indoor-navigation-technology",
+      "date": "2024-04-09",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzIxOTUyMjkzM2FkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2018-11-20",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzQwODc4MzE5MWFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2024-01-24",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzI4MDY3NTg4N2FkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2020-10-15",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzI5NzczNzg1MmFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2021-04-16",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzI5NzczODI0NmFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2021-04-14",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzMwMjk5NDAyM2FkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2021-06-01",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "gtr.ukri.org",
+      "document": "https://gtr.ukri.org/find-research-and-innovation/project/28c47050-4938-4337-ab46-3373f0b3b704",
+      "date": "2026-11-13",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "techcrunch.com",
+      "document": "https://techcrunch.com/?p=2336667",
+      "date": "2022-06-16",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "nordic9.com",
+      "document": "https://nordic9.com/news/waymap-raised-a-4-million-pre-series-a-investment-round/",
+      "date": "2022-05-30",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzUyNjQ5ODM4NWFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2026-06-18",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzU1MjM2NTAyMGFkaXF6a2N4/document?format=pdf&download=0",
+      "date": "2026-10-23",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "operational_status": {
+    "value": "ACTIVE",
+    "sources": [
+     {
+      "name": "Companies House UK",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813",
+      "date": "2026-10-01"
+     },
+     {
+      "name": "waymapnav.com",
+      "document": "https://waymapnav.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "find-and-update.company-information.service.gov.uk",
+      "document": "https://find-and-update.company-information.service.gov.uk/company/11050813",
+      "date": "2026-11-13",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "0e25b560-07c3-555c-86a5-bb27e7316e94",
+      "name": "Grant",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "gtr.ukri.org",
+         "document": "https://gtr.ukri.org/find-research-and-innovation/project/28c47050-4938-4337-ab46-3373f0b3b704",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        },
+        {
+         "name": "waymapnav.com",
+         "document": "https://waymapnav.com/news/waymap-backed-by-uk-governments-innovation-agency",
+         "date": "2021-11-23",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "5d475500-294a-5818-b807-e2feae72d508"
+      }
+     },
+     {
+      "id": "41fdd013-d8ec-5aaf-9ac1-bf9fb65925cf",
+      "name": "Series B",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "cbinsights.com",
+         "document": "https://www.cbinsights.com/company/waymap/financials",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        },
+        {
+         "name": "seedtable.com",
+         "document": "https://seedtable.com/companies/waymap/funding-rounds/series-a-2024-04",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        },
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzIxOTUyMjkzM2FkaXF6a2N4/document?format=pdf&download=0",
+         "date": "2018-11-20",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        },
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzQwODc4MzE5MWFkaXF6a2N4/document?format=pdf&download=0",
+         "date": "2024-01-24",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        },
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzUyNjQ5ODM4NWFkaXF6a2N4/document?format=pdf&download=0",
+         "date": "2026-06-18",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        },
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzU1MjM2NTAyMGFkaXF6a2N4/document?format=pdf&download=0",
+         "date": "2026-10-23",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "ea282d09-d1ac-5ebe-b26b-4e59c1ebedf3"
+      }
+     },
+     {
+      "id": "a9c91410-8336-5a28-81cc-6b30100af2cb",
+      "name": "Pre-Series A",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "techcrunch.com",
+         "document": "https://techcrunch.com/?p=2336667",
+         "date": "2022-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "nordic9.com",
+         "document": "https://nordic9.com/news/waymap-raised-a-4-million-pre-series-a-investment-round/",
+         "date": "2022-05-30",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "4062d005-fa93-5c5b-93a1-21b1ea009646"
+      }
+     },
+     {
+      "id": "d0bc45ed-b94c-5bef-b71a-ea248c9cf752",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzI4MDY3NTg4N2FkaXF6a2N4/document?format=pdf&download=0",
+         "date": "2020-10-15",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        },
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzI5NzczNzg1MmFkaXF6a2N4/document?format=pdf&download=0",
+         "date": "2021-04-16",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        },
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzI5NzczODI0NmFkaXF6a2N4/document?format=pdf&download=0",
+         "date": "2021-04-14",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        },
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzMwMjk5NDAyM2FkaXF6a2N4/document?format=pdf&download=0",
+         "date": "2021-06-01",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "e6f32751-a1bd-5691-9db8-1635d8b2e023"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_EVENT": [
+     {
+      "id": "bc844d56-6ab4-452b-96bf-2661e86e592b",
+      "name": "Slush 2026",
+      "entity_type": "Event",
+      "properties": {
+       "role": "ATTENDEE",
+       "sources": [
+        {
+         "name": "Slush",
+         "document": "https://slush.org/",
+         "date": "2026-11-14"
+        }
+       ],
+       "id": "7ca67c56-7c0f-50cc-a918-d5796757ae5c"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "1c1977b3-663a-47fb-81eb-51958758b70b",
+      "name": "CONSTRUCTION_AND_ENGINEERING",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "linkedin.com",
+         "document": "https://www.linkedin.com/company/waymap/mycompany/?viewAsMember=true",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "b2653099-4901-589f-9b32-2c08880b65a0",
+       "original_label": "propConstruction"
+      }
+     },
+     {
+      "id": "8ecf5e57-a149-438c-9eb4-089809bade56",
+      "name": "SOFTWARE_AND_SERVICES",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "Companies House UK",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813",
+         "date": "2026-05-01"
+        }
+       ],
+       "id": "788234c8-8d3e-5a5c-94c6-ca930ae90802"
+      }
+     }
+    ],
+    "IS_REGISTERED_IN": [
+     {
+      "id": "53914cb9-a4f7-4ea6-97f2-ec3f1933221d",
+      "name": "England",
+      "entity_type": "CountrySubdivision",
+      "properties": {
+       "sources": [
+        {
+         "name": "Companies House UK",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813",
+         "date": "2026-05-01"
+        }
+       ],
+       "id": "8b43d76e-ee3a-5d1c-9644-88bc690c50f9"
+      }
+     },
+     {
+      "id": "e332ff3d-605d-4b01-8222-5098236a3aff",
+      "name": "United Kingdom",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "Companies House UK",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813",
+         "date": "2026-05-01"
+        }
+       ],
+       "id": "e8b69620-70f6-5ae7-aecb-40d9f4701f2b"
+      }
+     }
+    ],
+    "HAS_DOMAIN_NAME": [
+     {
+      "id": "376df629-b507-56f6-91ce-5782b59adc30",
+      "name": "waymapnav.com",
+      "entity_type": "DomainName",
+      "properties": {
+       "sources": [
+        {
+         "name": "waymapnav.com",
+         "document": "https://waymapnav.com/",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "dns.google",
+         "document": "https://dns.google/query?name=waymapnav.com&type=A",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "ecd23613-1e03-5751-aa83-06761e0d4fab",
+       "status": "ACTIVE"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "25177212-0922-4cc9-ab89-30cdfdd8c4e2",
+      "name": "VENREX INVESTMENT MANAGEMENT LLP",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "prnewswire.com",
+         "document": "https://www.prnewswire.com/news-releases/uk-social-impact-startup-waymap-successfully-closes-funding-round-led-by-telus-for-its-indoor-navigation-technology-302111242.html",
+         "date": "2024-04-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2024/04/09/london-startup-waymap-secures-ps7m/",
+         "date": "2024-04-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "c8350060-d927-44d0-a833-1bf502b1ee20"
+      }
+     },
+     {
+      "id": "7ab76b66-de50-5d88-808a-14e7019f75e5",
+      "name": "Comprador Holdings",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "prnewswire.com",
+         "document": "https://www.prnewswire.com/news-releases/uk-social-impact-startup-waymap-successfully-closes-funding-round-led-by-telus-for-its-indoor-navigation-technology-302111242.html",
+         "date": "2024-04-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2024/04/09/london-startup-waymap-secures-ps7m/",
+         "date": "2024-04-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "88f491f3-1473-4ed8-b03c-8e23db76ad16"
+      }
+     },
+     {
+      "id": "b28b66ba-5cb2-5564-a3d1-c46fd6286642",
+      "name": "TELUS Pollinator Fund for Good",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/london-based-waymap-lands-7m-for-its-indoor-navigation-technology/",
+         "date": "2024-04-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "a059f203-74da-44b9-ba58-fc2a3d652329"
+      }
+     },
+     {
+      "id": "cdf7e7df-3367-5c24-937c-4d72152da8e2",
+      "name": "Philip Bassett",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/filing-history/MzI0NzYzNDQ5NWFkaXF6a2N4/document?format=pdf&download=0",
+         "date": "2019-10-24",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "fc2afb58-2c1a-494e-b8c2-961424c9c9c5"
+      }
+     }
+    ],
+    "FOUNDED": [
+     {
+      "id": "775ed0b1-14b0-50da-9cf3-d69e55cd93a8",
+      "name": "Tom Pey",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "waymapnav.com",
+         "document": "https://waymapnav.com/about-us",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "prnewswire.com",
+         "document": "https://www.prnewswire.com/news-releases/uk-social-impact-startup-waymap-successfully-closes-funding-round-led-by-telus-for-its-indoor-navigation-technology-302111242.html",
+         "date": "2024-04-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "15dc4813-3b71-5890-a350-8e5139f21f99"
+      }
+     }
+    ],
+    "WORKS_AT": [
+     {
+      "id": "45f3e481-1be6-5de9-8136-473a375b5a7a",
+      "name": "Florence Orban",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Company secretary",
+       "sources": [
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/officers",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "valid_until": "2018-10-26",
+       "id": "2b1580a8-f8d5-5086-8952-4eb37fab9428",
+       "valid_since": "2018-09-26"
+      }
+     },
+     {
+      "id": "5386996b-4ae5-5db5-a73f-ec21e2acb89e",
+      "name": "Celso Zuccollo",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Company secretary",
+       "sources": [
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/officers",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "valid_until": "2024-12-02",
+       "id": "cf41dee1-5d4d-575d-8a88-4953500b9d28",
+       "valid_since": "2020-06-01"
+      }
+     },
+     {
+      "id": "68c986cb-f523-5df3-ad34-27dc57ec05b6",
+      "name": "John Wilkinson",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Head of Finance and Operations",
+       "sources": [
+        {
+         "name": "waymapnav.com",
+         "document": "https://waymapnav.com/about-us",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "300f3ae0-7f46-5f89-b6c5-9245163d3ab5"
+      }
+     },
+     {
+      "id": "68c986cb-f523-5df3-ad34-27dc57ec05b6",
+      "name": "John Wilkinson",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Company secretary",
+       "sources": [
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/officers",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "701ffb47-3372-597d-a868-c5d5e0cf1e1f",
+       "valid_since": "2024-12-02"
+      }
+     },
+     {
+      "id": "775ed0b1-14b0-50da-9cf3-d69e55cd93a8",
+      "name": "Tom Pey",
+      "entity_type": "Person",
+      "properties": {
+       "role": "President",
+       "sources": [
+        {
+         "name": "waymapnav.com",
+         "document": "https://waymapnav.com/about-us",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "0281e7b0-efc7-5536-b286-06cd669e2061"
+      }
+     },
+     {
+      "id": "94e2e46f-40de-58cc-af43-c07346dbacdb",
+      "name": "Tim Murdoch",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Company secretary",
+       "sources": [
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/officers",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "valid_until": "2020-06-01",
+       "id": "bbaa98ea-a6ca-5fdd-9f92-d1824c7e63e4",
+       "valid_since": "2018-10-26"
+      }
+     },
+     {
+      "id": "f1fd6ec4-ea1e-5b77-8df7-199f208b4918",
+      "name": "Usman Raza",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Director of Engineering",
+       "sources": [
+        {
+         "name": "waymapnav.com",
+         "document": "https://waymapnav.com/about-us",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "264ac4f2-1cb1-502d-a6f6-f9ccdf294415"
+      }
+     }
+    ],
+    "IS_CEO_OF": [
+     {
+      "id": "5386996b-4ae5-5db5-a73f-ec21e2acb89e",
+      "name": "Celso Zuccollo",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "waymapnav.com",
+         "document": "https://waymapnav.com/about-us",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "c045b8ef-32af-5f44-8cd2-a18e35f942a0"
+      }
+     },
+     {
+      "id": "775ed0b1-14b0-50da-9cf3-d69e55cd93a8",
+      "name": "Tom Pey",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "techcrunch.com",
+         "document": "https://techcrunch.com/?p=2336667",
+         "date": "2022-06-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "prnewswire.com",
+         "document": "https://www.prnewswire.com/news-releases/uk-social-impact-startup-waymap-successfully-closes-funding-round-led-by-telus-for-its-indoor-navigation-technology-302111242.html",
+         "date": "2024-04-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "3bc70edd-271a-55db-ae20-ba86cb48e9f3"
+      }
+     }
+    ],
+    "IS_CTO_OF": [
+     {
+      "id": "858c6b03-f169-5794-acf6-ad37e12e18cb",
+      "name": "Zankar Sevak",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "waymapnav.com",
+         "document": "https://waymapnav.com/about-us",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "a2521507-2526-5e83-899b-36b4ed8b6579"
+      }
+     }
+    ],
+    "IS_COO_OF": [
+     {
+      "id": "5386996b-4ae5-5db5-a73f-ec21e2acb89e",
+      "name": "Celso Zuccollo",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2024/04/09/london-startup-waymap-secures-ps7m/",
+         "date": "2024-04-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "f7846ea0-72f4-5118-8be0-0044c1edf632"
+      }
+     }
+    ],
+    "IS_BOARD_MEMBER_OF": [
+     {
+      "id": "1322b3fc-3df7-5856-a835-f9416533545a",
+      "name": "Ian Stephenson",
+      "entity_type": "Person",
+      "properties": {
+       "valid_until": "2026-01-15",
+       "sources": [
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/officers",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "4ecd1313-12fc-5ed9-9087-2f7ddde47c21",
+       "valid_since": "2020-11-12"
+      }
+     },
+     {
+      "id": "45f3e481-1be6-5de9-8136-473a375b5a7a",
+      "name": "Florence Orban",
+      "entity_type": "Person",
+      "properties": {
+       "valid_until": "2018-10-26",
+       "sources": [
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/officers",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "c7ab18e6-f652-5749-a0d8-2e511b86e6e8",
+       "valid_since": "2018-09-26"
+      }
+     },
+     {
+      "id": "5386996b-4ae5-5db5-a73f-ec21e2acb89e",
+      "name": "Celso Zuccollo",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/officers",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "63f61a4e-3c07-5dd0-aef9-d247dd79b2df",
+       "valid_since": "2020-06-01"
+      }
+     },
+     {
+      "id": "5995493e-3ef4-577a-b376-007f4f5e390d",
+      "name": "Simon Meredith",
+      "entity_type": "Person",
+      "properties": {
+       "valid_until": "2018-02-15",
+       "sources": [
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/officers",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "d8647bc6-8e5b-5ad0-919d-4fce652a46bc",
+       "valid_since": "2017-11-07"
+      }
+     },
+     {
+      "id": "775ed0b1-14b0-50da-9cf3-d69e55cd93a8",
+      "name": "Tom Pey",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/officers",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "3b465070-e684-5f98-9d7a-d59a640d13b2",
+       "valid_since": "2018-02-15"
+      }
+     },
+     {
+      "id": "858c6b03-f169-5794-acf6-ad37e12e18cb",
+      "name": "Zankar Sevak",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/officers",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "d9c74b7e-e7e0-5ab7-8a4c-7d4624c2b324",
+       "valid_since": "2022-03-23"
+      }
+     },
+     {
+      "id": "94e2e46f-40de-58cc-af43-c07346dbacdb",
+      "name": "Tim Murdoch",
+      "entity_type": "Person",
+      "properties": {
+       "valid_until": "2022-12-01",
+       "sources": [
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/officers",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "4dcac06c-e193-585c-aa6a-a7ae7167d633",
+       "valid_since": "2018-09-26"
+      }
+     },
+     {
+      "id": "cdf7e7df-3367-5c24-937c-4d72152da8e2",
+      "name": "Philip Bassett",
+      "entity_type": "Person",
+      "properties": {
+       "valid_until": "2026-01-14",
+       "sources": [
+        {
+         "name": "find-and-update.company-information.service.gov.uk",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/officers",
+         "date": "2026-11-13",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "ef7c0783-0ea6-5dfe-b6b8-a275bcaf74b5",
+       "valid_since": "2023-11-03"
+      }
+     }
+    ],
+    "IS_BENEFICIARY_OWNER_OF": [
+     {
+      "id": "5cbed618-c997-52dd-9bb1-972e3c8d6030",
+      "name": "Simon Christopher Meredith",
+      "entity_type": "Person",
+      "properties": {
+       "valid_until": "2018-02-20",
+       "sources": [
+        {
+         "name": "Companies House UK",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/persons-with-significant-control",
+         "date": "2026-10-20"
+        }
+       ],
+       "natures_of_control": "Ownership of shares from 75 to 100 per cent.",
+       "id": "ceac1fbb-8052-5395-844a-d8c1a6a3b87a",
+       "valid_since": "2017-11-07"
+      }
+     },
+     {
+      "id": "665ad11e-999c-5e3e-aa2f-26324d79c4e6",
+      "name": "Philip Simon Lloyd Bassett",
+      "entity_type": "Person",
+      "properties": {
+       "valid_until": "2025-02-19",
+       "sources": [
+        {
+         "name": "Companies House UK",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/persons-with-significant-control",
+         "date": "2026-06-05"
+        }
+       ],
+       "natures_of_control": "Ownership of shares from 25 to 50 per cent.",
+       "id": "73c464a2-6821-51c3-a88b-a312f1dcd6ad",
+       "valid_since": "2020-09-30"
+      }
+     },
+     {
+      "id": "a16b99c8-fcf2-590c-8d13-0972a3b612ae",
+      "name": "Thomas Martin Pey",
+      "entity_type": "Person",
+      "properties": {
+       "valid_until": "2018-10-26",
+       "sources": [
+        {
+         "name": "Companies House UK",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/persons-with-significant-control",
+         "date": "2026-10-20"
+        }
+       ],
+       "natures_of_control": "Ownership of shares from 25 to 50 per cent.",
+       "id": "a60fedb1-aaf3-5dd8-a4b9-5148f627682c",
+       "valid_since": "2018-02-20"
+      }
+     },
+     {
+      "id": "a9e7c0e1-3f78-5af7-8fd0-1cdbd5b603f9",
+      "name": "Philip Simon Lloyd Bassett",
+      "entity_type": "Person",
+      "properties": {
+       "valid_until": "2025-02-19",
+       "sources": [
+        {
+         "name": "Companies House UK",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/persons-with-significant-control",
+         "date": "2026-10-20"
+        }
+       ],
+       "natures_of_control": "Ownership of shares from 25 to 50 per cent.",
+       "id": "a855ae5f-5c3e-5d41-9e77-f59934070f91",
+       "valid_since": "2020-09-30"
+      }
+     },
+     {
+      "id": "bd4fb43f-cdfe-59c7-9a9a-33d98d9cec15",
+      "name": "Simon Christopher Meredith",
+      "entity_type": "Person",
+      "properties": {
+       "valid_until": "2018-02-20",
+       "sources": [
+        {
+         "name": "Companies House UK",
+         "document": "https://find-and-update.company-information.service.gov.uk/company/11050813/persons-with-significant-control",
+         "date": "2026-06-05"
+        }
+       ],
+       "natures_of_control": "Ownership of shares from 75 to 100 per cent.",
+       "id": "1717f5d8-0081-5700-a062-926b4c515187",
+       "valid_since": "2017-11-07"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

@@ -1,0 +1,1638 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/a2abbba3-d423-4c3b-abb4-e0e24c05e91d",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 1000
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 1000
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 1000
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 1000
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 1000
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 1000
+     },
+     "IS_MEMBER_OF": {
+      "limit": 1000
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 1000
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 1000
+     },
+     "TRADED_ON": {
+      "limit": 1000
+     },
+     "LISTED_ON": {
+      "limit": 1000
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "FOUNDED": {
+      "limit": 1000
+     },
+     "WORKS_AT": {
+      "limit": 1000
+     },
+     "IS_MEMBER_OF": {
+      "limit": 1000
+     },
+     "IS_CEO_OF": {
+      "limit": 1000
+     },
+     "IS_CTO_OF": {
+      "limit": 1000
+     },
+     "IS_CFO_OF": {
+      "limit": 1000
+     },
+     "IS_COO_OF": {
+      "limit": 1000
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 1000
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 1000
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 1000
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 1000
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 1000
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 1000
+     },
+     "MANUFACTURED_BY": {
+      "limit": 1000
+     },
+     "DESIGNED_BY": {
+      "limit": 1000
+     },
+     "OPERATED_BY": {
+      "limit": 1000
+     },
+     "CREATED_BY": {
+      "limit": 1000
+     },
+     "PUBLISHED_BY": {
+      "limit": 1000
+     },
+     "GRANTED_BY": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:27:01+0200",
+ "_seconds": 0.53,
+ "response": {
+  "id": "a2abbba3-d423-4c3b-abb4-e0e24c05e91d",
+  "name": "High-Tech Gr\u00fcnderfonds GmbH & Co. KG",
+  "entity_type": "Company",
+  "description": "German venture capital firm headquartered in Bonn, founded in 2005.",
+  "properties": {
+   "name": {
+    "value": "High-Tech Gr\u00fcnderfonds GmbH & Co. KG",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/391200R6P6ZI19LPT380",
+      "date": "2026-09-08"
+     }
+    ]
+   },
+   "legal_name": {
+    "value": "High-Tech Gr\u00fcnderfonds GmbH & Co. KG",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/391200R6P6ZI19LPT380",
+      "date": "2026-09-08"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [
+     "High-Tech Grunderfonds GmbH & Co. KG",
+     "HTGF",
+     "High-Tech Gr\u00fcnderfonds",
+     "High-Tech Grunderfonds",
+     "High-Tech Gr\u00fcnderfonds (HTGF)",
+     "High-Tech Grunderfonds (HTGF)"
+    ],
+    "sources": []
+   },
+   "description": {
+    "value": "German venture capital firm headquartered in Bonn, founded in 2005.",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-08-22"
+     }
+    ]
+   },
+   "website": {
+    "value": "htgf.de",
+    "sources": []
+   },
+   "headquarters_address": {
+    "value": "Baunscheidtstra\u00dfe 17, Bonn, DE-NW, 53113, DE",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/391200R6P6ZI19LPT380",
+      "date": "2026-09-08"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2005-08-16",
+    "sources": [
+     {
+      "name": "GLEIF",
+      "document": "https://search.gleif.org/#/record/391200R6P6ZI19LPT380",
+      "date": "2026-09-08"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "INVESTED_IN": [
+     {
+      "id": "042f6274-612b-4acf-81ef-4734f533a90e",
+      "name": "Eyeo",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "preqin.com",
+         "document": "https://www.preqin.com/data/profile/asset/eyeo-imaging-b-v-/741022",
+         "date": "2026-01-01",
+         "date_precision": "year"
+        }
+       ],
+       "id": "f57171cd-e1f1-4158-8544-206e38462d3a"
+      }
+     },
+     {
+      "id": "0561198f-904a-55a8-892c-f024330c0b04",
+      "name": "alteva",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "startbase.com",
+         "document": "https://www.startbase.com/news/alteva-sichert-sich-17-millionen-euro-pre-seed-finanzierung/",
+         "date": "2025-01-20",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/alteva-htgf-pre-seed/",
+         "date": "2025-01-20",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "554350db-ed96-4e71-99d2-914f2ffbd3ce"
+      }
+     },
+     {
+      "id": "15fe4d14-50d7-481b-91bd-724a852039ab",
+      "name": "TrustNXT",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "trustnxt.com",
+         "document": "https://trustnxt.com/journal/eur1-6-million-pre-seed-financing-for-trustnxt-deep-tech-to-combat-ai-manipulation-of-images-and",
+         "date": "2025-09-01",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/pre-seed-financing-trustnxt/",
+         "date": "2025-09-04",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "53fbb5ae-4174-4654-b981-bb2d400bc6d1"
+      }
+     },
+     {
+      "id": "32fc8958-a669-4553-a314-4d8997916084",
+      "name": "instagrid GmbH",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "news.cision.com",
+         "document": "https://news.cision.com/instagrid-gmbh/r/instagrid--the-expert-for-mobile-high-performance-battery-systems-raises-33-million-u-s--dollars,c3501847",
+         "date": "2022-02-09",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/battery-pioneer-instagrid-raises-e8-5m-in-series-a-round-led-by-set-ventures/",
+         "date": "2020-02-04",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "instagrid.com",
+         "document": "https://instagrid.com/us/blog/a-series-financing-round-completed",
+         "date": "2026-11-11",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "1257399f-f6c0-47b5-89df-61c0d712d2ce"
+      }
+     },
+     {
+      "id": "39fc9903-8f90-4f7d-b0a7-122fc162735a",
+      "name": "REFLEX aerospace GmbH",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/reflex-aerospace/__T5MuSjI4oLwfaU5KdEh5hvkkDWFwwd8jonplSaczWpc",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/reflex-aerospace/__T5MuSjI4oLwfaU5KdEh5hvkkDWFwwd8jonplSaczWpc/funding-and-investors",
+         "date": "2026-07-29"
+        }
+       ],
+       "id": "739afeb7-b75a-47d4-a283-56df2c46dcf0"
+      }
+     },
+     {
+      "id": "4253a77c-c460-57c7-a5e6-72879c3c5a9e",
+      "name": "virtualQ",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/high-tech-gruenderfonds-htgf-invests-in-the-waiting-service-virtualq/",
+         "date": "2015-10-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "936c84b1-9c34-479e-bca2-3b8a7fea04ca"
+      }
+     },
+     {
+      "id": "512fbd3a-49c2-5d07-b2dc-e9196437a02a",
+      "name": "Sovity",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/htgf-investment-sovity/",
+         "date": "2023-02-15",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "2abc960e-bbeb-43a3-81c4-838023b619db"
+      }
+     },
+     {
+      "id": "5d4346ac-009d-4b83-8fb7-9b31e5ef8601",
+      "name": "WeSustain GmbH",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/wesustain/__bAElaNRyQCKhWt6zXZsf4OlTcULpykwGtQwl90bArlk",
+         "date": "2026-08-24"
+        }
+       ],
+       "id": "45bb9c7f-b2b2-4214-9474-6e6c9ec74adc"
+      }
+     },
+     {
+      "id": "5e16aff2-fe4a-4003-b3ce-d178f0e22e41",
+      "name": "Chipmetrics",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/chipmetrics/company_overview/overview_timeline",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/156736-90",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/newsletter/global-vc-deals-for-january-30-2024",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/explore/manufacturing-services-startups-in-finland/__DWDGmAnpXw7AO_mFHnCTlqup8PM7aAgBcSKHf1B5xik",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "05dc628e-1aff-4db4-b09f-9fc8d49e4515"
+      }
+     },
+     {
+      "id": "78eaad4d-aa41-46e6-b75c-3b99422bfced",
+      "name": "Sedivention GmbH",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/legal-entities/germany/sedivention-gmbh/__YrXlXtKe-G3akhsYKLz6tpNGTfBpKyYDaYjsRr_yFO4",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/legal-entities/germany/sedivention-gmbh/__NYD24jkqEJVAFLGh89z5jdMUu0CRFN9a0rCawKxj94E",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/sedivention/__HZ339N14Hl7447xqgfKJtfgIKDefXPsRNL2bVpCi3bU",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/explore/metabolic-diseases-startups-in-germany/__Xech5M45QuwNNCchLWIp2mnuP4NZ1Zjw0O2t5GG4rAs",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "fb6107a6-0a9a-4717-b525-3efe9897c0f3"
+      }
+     },
+     {
+      "id": "a226739d-23b2-4d38-a94c-f3ca53a4af51",
+      "name": "Co-reactive",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2026/01/dusseldorf-based-co-reactive-secures-e6-5-million-to-take-concrete-action-to-decarbonise-the-cement-industry/",
+         "date": "2026-01-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/co-reactive-seed-finanzierung/",
+         "date": "2026-01-28",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "f955570f-896e-4010-9735-4ae926f4fc83"
+      }
+     },
+     {
+      "id": "aaf53131-1df8-4a3c-9cd0-f92090982daf",
+      "name": "AIM 3D",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/aim3d/__lcGmtTakcjJ7rLDqivi0FQcF1jhWeY9rsLh-Os6iXMg/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/aim3d/__lcGmtTakcjJ7rLDqivi0FQcF1jhWeY9rsLh-Os6iXMg",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "9e76f61a-b5cb-4f6b-a9ce-52bc07d1abf8"
+      }
+     },
+     {
+      "id": "afdef5bd-c1f9-43d7-a1c5-08d3184d5dd4",
+      "name": "bookingkit GmbH",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/bookingkit/__8kZ_9RgvPVnNYoqivAsGwNm9V00R9eMDPqC7RASuGWM",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/bookingkit/__8kZ_9RgvPVnNYoqivAsGwNm9V00R9eMDPqC7RASuGWM/funding-and-investors",
+         "date": "2026-07-29"
+        }
+       ],
+       "id": "059a53f7-7805-4116-a7e3-0a10f61860e0"
+      }
+     },
+     {
+      "id": "bd638301-4707-45a6-b1c5-2e336665c50c",
+      "name": "Certivity",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/certivity-series-a/",
+         "date": "2025-07-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "munich-startup.de",
+         "document": "https://www.munich-startup.de/en/111443/certivity-series-a/",
+         "date": "2025-07-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "b8e600a3-0117-4cb0-9c62-0e976ae344a4"
+      }
+     },
+     {
+      "id": "d5d3b995-3edd-4780-b169-8841aa4a2ad3",
+      "name": "Lipocalyx",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/lipocalyx/__LT09KBR2s6DrmgzUoKbXL_GbambWRrU5ZYzfqlkKjIQ",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/venture-capital/goodvent-beteiligungsmanagement/__8Pb4N8_JYI_WhG1ZJhYRmE30EzRz60_x1n-652dvRfc",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/lipocalyx",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "4a384844-0bc6-4ca0-805f-65c570df33c2"
+      }
+     },
+     {
+      "id": "d6866d6c-c907-4eb5-93fd-3818b784730e",
+      "name": "INERATEC",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "ineratec.de",
+         "document": "https://www.ineratec.de/en/series-a-finanzierung-ineratec",
+         "date": "2022-01-01",
+         "date_precision": "month",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "startbase.com",
+         "document": "https://www.startbase.com/news/ineratec-erhaelt-20-millionen-euro/",
+         "date": "2022-01-01",
+         "date_precision": "month",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/htgf-financing-ineratec/",
+         "date": "2022-01-20",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "9fab6905-2c13-4c5e-a545-96aa7a0b1585"
+      }
+     },
+     {
+      "id": "e1918a6e-ed89-4cfc-9b7d-6bc28226b02c",
+      "name": "ZE ENERGY",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "environnement-magazine.fr",
+         "document": "https://www.environnement-magazine.fr/energie/article/2020/10/26/130669/ze-energy-developpe-premier-projet-solaire-stockage-france-continentale",
+         "date": "2020-10-26",
+         "date_precision": "day"
+        }
+       ],
+       "id": "ba07b5c4-cc2f-436f-923c-295d7b6947cc"
+      }
+     },
+     {
+      "id": "e40f317f-62ad-4948-a927-7989c47aab88",
+      "name": "Scavenger AI GmbH",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "scavenger-ai.com",
+         "document": "https://www.scavenger-ai.com/en/media-hub/scavenger-ai-sichert-sich-1-1-mio-pre-seed-finanzierung-f%C3%BCr-datengetriebene-entscheidungsfindung",
+         "date": "2024-04-11",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "scavenger-ai.com",
+         "document": "https://www.scavenger-ai.com/media-hub/scavenger-ai-sichert-sich-1-1-mio-pre-seed-finanzierung-f%C3%BCr-datengetriebene-entscheidungsfindung",
+         "date": "2024-04-11",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "04bfe65e-9c43-4f79-9877-63cd0a892313"
+      }
+     },
+     {
+      "id": "e889a662-a106-47ca-86bc-eb2a1bbb399a",
+      "name": "Neural Concept",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Swiss startup Neural Concept raises $27M to cut EV design time to 18 months | TechCrunch",
+         "document": "https://techcrunch.com/2024/06/03/swiss-startup-neural-concept-raises-27m-to-cut-ev-design-time-to-18-months",
+         "date": "2024-06-03"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/neuralconcept/__319an4XwlNLgpX6NLCyoLGUj87XXZPpLhNgsmgOHVDk",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/htgf-neural-concept-series-b/",
+         "date": "2024-06-03",
+         "date_precision": "day"
+        }
+       ],
+       "id": "c4143621-451a-4f0b-aa1a-f0f63bea9764"
+      }
+     },
+     {
+      "id": "ee145371-7cdb-4dee-997e-38f48b47b453",
+      "name": "Kranus Health",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/kranus-health/__53R_qLJ7TLizEbyl_tnVZD57R3b7X3rjAWi-EN8rAQc",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/kranus-health-gmbh/company_overview/overview_timeline",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "1b0eb95c-5eb8-414d-a447-a1ffe97577a3"
+      }
+     },
+     {
+      "id": "f1f18a7b-17ff-49e5-ae2e-fa8236ce55af",
+      "name": "PXL Vision",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/hgtf-investment-pxl-vision/",
+         "date": "2020-05-20",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "netzwoche.ch",
+         "document": "https://www.netzwoche.ch/news/2020-05-26/zuercher-start-up-pxl-vision-sammelt-46-millionen-franken",
+         "date": "2020-05-26",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "a78d4921-05ea-45f1-9588-f0cfa58a01df"
+      }
+     },
+     {
+      "id": "ffcf53df-6f00-42b6-a7c4-9eb1961e1a82",
+      "name": "GlassDollar",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/de/htgf-seed-glassdollar/",
+         "date": "2023-05-31",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "6a1aab64-4279-4176-98de-065fc591e186"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "0b7d8cb6-d990-5490-8bd7-bd8e98d94868",
+      "name": "Series A",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2026/05/11/eyeo-raises-eur40m-to-improve-imaging-and-sensor-performance/",
+         "date": "2026-05-11",
+         "date_precision": "day"
+        }
+       ],
+       "id": "8a1fdb32-b67b-5c5a-8734-849baf8486b5"
+      }
+     },
+     {
+      "id": "2d78f71e-3d00-5197-a7ce-53b605a5c533",
+      "name": "Series A",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "ineratec.de",
+         "document": "https://www.ineratec.de/en/news/german-clean-tech-company-ineratec-secures-investment-honda-and-existing-shareholders-support",
+         "date": "2023-01-25",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "4c39f49f-d043-5ee8-8520-56b5a34735e1"
+      }
+     },
+     {
+      "id": "350b5ff5-d3b3-56cb-b09f-bb71f55c7b1a",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "preqin.com",
+         "document": "https://www.preqin.com/data/profile/asset/eyeo-imaging-b-v-/741022",
+         "date": "2026-01-01",
+         "date_precision": "year"
+        }
+       ],
+       "id": "d966aae8-310f-5de7-a833-9eba938f1cc8"
+      }
+     },
+     {
+      "id": "3b02ab0a-ca15-5337-b797-c7d7254e0a96",
+      "name": "Series B",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "fyb.de",
+         "document": "https://www.fyb.de/en/ineratec-secures-118-million-euros-for-new-era-of-sustainable-mobility/",
+         "date": "2024-01-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "startbase.com",
+         "document": "https://www.startbase.com/news/ineratec-sichert-sich-118-mio-euro/",
+         "date": "2024-01-16",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "4665d2f8-76ca-5b39-a07a-2b54b74db9ee"
+      }
+     },
+     {
+      "id": "3be3258e-6f6d-5181-9be3-bd0bbb742242",
+      "name": "Series A",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/certivity-series-a/",
+         "date": "2025-07-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "munich-startup.de",
+         "document": "https://www.munich-startup.de/en/111443/certivity-series-a/",
+         "date": "2025-07-29",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "445110fa-cf81-5adc-960c-0fece0453c1e"
+      }
+     },
+     {
+      "id": "428aeede-5ae8-559b-9428-e8dff628769c",
+      "name": "Pre-Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "startbase.com",
+         "document": "https://www.startbase.com/news/alteva-sichert-sich-17-millionen-euro-pre-seed-finanzierung/",
+         "date": "2025-01-20",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/alteva-htgf-pre-seed/",
+         "date": "2025-01-20",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "7f8d3bb6-0b5d-5d2c-b1a5-d59ef4f62d31"
+      }
+     },
+     {
+      "id": "47a2f40d-63b4-57cf-8e53-14418c33d246",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/high-tech-gruenderfonds-htgf-invests-in-the-waiting-service-virtualq/",
+         "date": "2015-10-13",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "7a0cb77c-5d41-56a3-93f3-47f9c7a658cb"
+      }
+     },
+     {
+      "id": "4e911fa5-0654-599b-8dca-fb901f7717dc",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/de/htgf-seed-glassdollar/",
+         "date": "2023-05-31",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "acbd5ef3-d7e3-5932-819f-0843a43e7035"
+      }
+     },
+     {
+      "id": "6d533db8-254f-5536-9971-21dfffd472b3",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/htgf-investment-sovity/",
+         "date": "2023-02-15",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "c086f405-f026-5e9b-b50c-777936230841"
+      }
+     },
+     {
+      "id": "6d6b6ef9-75a9-5377-a2a1-0b8237fb7599",
+      "name": "Series A",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/hgtf-investment-pxl-vision/",
+         "date": "2020-05-20",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "netzwoche.ch",
+         "document": "https://www.netzwoche.ch/news/2020-05-26/zuercher-start-up-pxl-vision-sammelt-46-millionen-franken",
+         "date": "2020-05-26",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "5ac67733-ee21-5f1a-97ba-7cbd665f3a41"
+      }
+     },
+     {
+      "id": "70aabc7c-c169-5848-add1-b0ad144ae7a1",
+      "name": "Series A",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "news.cision.com",
+         "document": "https://news.cision.com/instagrid-gmbh/r/instagrid--the-expert-for-mobile-high-performance-battery-systems-raises-33-million-u-s--dollars,c3501847",
+         "date": "2022-02-09",
+         "date_precision": "day"
+        }
+       ],
+       "id": "02841f7e-49a0-5861-addb-c65a371774f7"
+      }
+     },
+     {
+      "id": "88969bea-5470-58ad-b12a-c6055cc0ed07",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2026/01/dusseldorf-based-co-reactive-secures-e6-5-million-to-take-concrete-action-to-decarbonise-the-cement-industry/",
+         "date": "2026-01-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/co-reactive-seed-finanzierung/",
+         "date": "2026-01-28",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "5ce3a460-ab4b-50b4-82c4-c2a9c0eb75fb"
+      }
+     },
+     {
+      "id": "8b43b329-264f-5d87-a844-2b354b25092e",
+      "name": "Pre-Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "scavenger-ai.com",
+         "document": "https://www.scavenger-ai.com/en/media-hub/scavenger-ai-sichert-sich-1-1-mio-pre-seed-finanzierung-f%C3%BCr-datengetriebene-entscheidungsfindung",
+         "date": "2024-04-11",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "scavenger-ai.com",
+         "document": "https://www.scavenger-ai.com/media-hub/scavenger-ai-sichert-sich-1-1-mio-pre-seed-finanzierung-f%C3%BCr-datengetriebene-entscheidungsfindung",
+         "date": "2024-04-11",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "ceec3167-bb64-5930-a407-b03c7f327a72"
+      }
+     },
+     {
+      "id": "982192e3-cc3b-54d9-8c9b-8a9f7420ba32",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/htgf-investment-certivity/",
+         "date": "2022-06-07",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2022/06/07/taking-on-the-automotive-industry-first-certivitys-regtech-solution-draws-eur14-million-in-earlybird-uni-x-led-round/",
+         "date": "2022-06-07",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "is_lead": true,
+       "id": "60d997b6-8925-5207-9cab-ea127d2295cf"
+      }
+     },
+     {
+      "id": "a3a86957-2ddd-5913-909f-ca5797fd3ff0",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "ineratec.de",
+         "document": "https://www.ineratec.de/en/series-a-finanzierung-ineratec",
+         "date": "2022-01-01",
+         "date_precision": "month",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "startbase.com",
+         "document": "https://www.startbase.com/news/ineratec-erhaelt-20-millionen-euro/",
+         "date": "2022-01-01",
+         "date_precision": "month",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/htgf-financing-ineratec/",
+         "date": "2022-01-20",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "medium.com",
+         "document": "https://medium.com/extantia-capital/extantia-invests-in-ineratec-a-leader-in-e-fuels-e1c0cd215829",
+         "date": "2021-07-19",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "6e02298e-6eac-5f5b-991e-bfb44ab5c6e9"
+      }
+     },
+     {
+      "id": "dc043910-208d-5aa4-9663-17003396b92d",
+      "name": "Series B",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "news.cision.com",
+         "document": "https://news.cision.com/instagrid-gmbh/r/instagrid--the-expert-for-mobile-high-performance-battery-systems-raises-33-million-u-s--dollars,c3501847",
+         "date": "2022-02-09",
+         "date_precision": "day"
+        }
+       ],
+       "id": "11e45d37-8ed7-52de-bbe0-98c7adff0304"
+      }
+     },
+     {
+      "id": "ddbee1d6-69d6-587d-a3f0-0ccd0c215e6d",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "vestbee.com",
+         "document": "https://www.vestbee.com/insights/articles/scavenger-ai-secures-2-5-m",
+         "date": "2025-10-30",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "scavenger-ai.com",
+         "document": "https://www.scavenger-ai.com/media-hub/scavenger-ai-will-europas-mittelstand-datenfit-machen-2-5-millionen-euro-seed-finanzierung-gesichert",
+         "date": "2025-10-30",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/seed-finanzierung-scavenger-ai/",
+         "date": "2025-10-30",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "8e78713f-7133-519a-94c8-5cce59d727fb"
+      }
+     },
+     {
+      "id": "de382866-624d-563e-8633-ca82a02ef5b1",
+      "name": "Series C",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "businesswire.com",
+         "document": "https://www.businesswire.com/news/home/20251218764112/en/Neural-Concept-Closes-$100M-Funding-Round-Led-by-Growth-Equity-at-Goldman-Sachs-Alternatives-to-Scale-AI-Native-Engineering",
+         "date": "2025-12-18",
+         "date_precision": "day"
+        }
+       ],
+       "id": "c47d45f9-34e1-5dc7-b9d8-ed281ad84e78"
+      }
+     },
+     {
+      "id": "eb4b6f58-fa98-5f00-8ae4-2e9579db8354",
+      "name": "Series C",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tech387.com",
+         "document": "https://www.tech387.com/blogs/germanys-instagrid-which-uses-software-to-supercharge-portable-batteries-raises-95m",
+         "date": "2024-01-22",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "instagrid.co",
+         "document": "https://instagrid.co/blog/instagrid-raises-usd95-mn-and-enters-the-north-american-market",
+         "date": "2024-01-23",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "68d01804-9d70-582d-b19e-9ca193ffcf08"
+      }
+     },
+     {
+      "id": "f145fd4e-5b3d-581a-9cd8-f13cdf88d2f1",
+      "name": "Series B",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/htgf-neural-concept-series-b/",
+         "date": "2024-06-03",
+         "date_precision": "day"
+        }
+       ],
+       "id": "200cedda-ebac-500d-98ce-98ea7f970b2c"
+      }
+     },
+     {
+      "id": "f4d57c7c-5b37-5d4d-b939-c1ecc352bf35",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "environnement-magazine.fr",
+         "document": "https://www.environnement-magazine.fr/energie/article/2020/10/26/130669/ze-energy-developpe-premier-projet-solaire-stockage-france-continentale",
+         "date": "2020-10-26",
+         "date_precision": "day"
+        }
+       ],
+       "id": "140f81e7-b6e9-5b1a-accf-4d02e152824a"
+      }
+     },
+     {
+      "id": "f76bfb08-0000-5f0f-9047-c405bd94c21b",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "assets.ctfassets.net",
+         "document": "https://assets.ctfassets.net/13jsp1mdo5j2/3El9hP8kNw8CuEGqtgsCy3/56ec468b57d2f157afed78abe2a5e927/20190128_instagrid_Pressemitteilung_HTGF_EN_final.pdf",
+         "date": "2019-01-30",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "instagrid.com",
+         "document": "https://instagrid.com/us/blog/funding-completed",
+         "date": "2026-11-04",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "cfaa82c0-b3ae-5d95-a5e3-7ff9fe14a613"
+      }
+     },
+     {
+      "id": "fcb1ea94-738f-5be4-85fd-756089a6428e",
+      "name": "Pre-Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "trustnxt.com",
+         "document": "https://trustnxt.com/journal/eur1-6-million-pre-seed-financing-for-trustnxt-deep-tech-to-combat-ai-manipulation-of-images-and",
+         "date": "2025-09-01",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "htgf.de",
+         "document": "https://www.htgf.de/en/pre-seed-financing-trustnxt/",
+         "date": "2025-09-04",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "8f76b4e3-785f-579f-ad87-9515c7d0e3a1"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_CORPORATE_EVENT": [
+     {
+      "id": "165bdf64-98bc-4bc7-909b-a40781788b81",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/reflex-aerospace/__T5MuSjI4oLwfaU5KdEh5hvkkDWFwwd8jonplSaczWpc",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/reflex-aerospace/__T5MuSjI4oLwfaU5KdEh5hvkkDWFwwd8jonplSaczWpc/funding-and-investors",
+         "date": "2026-07-29"
+        }
+       ],
+       "event_date": "2022-12-05",
+       "id": "8c810006-6def-482e-ac0a-1d8ce9d03073"
+      }
+     },
+     {
+      "id": "7309a806-7cca-4974-ace5-30f053b7d82a",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/bookingkit/__8kZ_9RgvPVnNYoqivAsGwNm9V00R9eMDPqC7RASuGWM",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/bookingkit/__8kZ_9RgvPVnNYoqivAsGwNm9V00R9eMDPqC7RASuGWM/funding-and-investors",
+         "date": "2026-07-29"
+        }
+       ],
+       "event_date": "2023-06-06",
+       "id": "a5045870-71bb-4447-8c5f-b3b81ef72fa9"
+      }
+     },
+     {
+      "id": "73fa5c4d-976a-4a66-b335-ab38f98b5a99",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/kranus-health/__53R_qLJ7TLizEbyl_tnVZD57R3b7X3rjAWi-EN8rAQc",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/kranus-health-gmbh/company_overview/overview_timeline",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2023-10-10",
+       "id": "914cd470-78a3-4ec7-b945-b833920e0a71"
+      }
+     },
+     {
+      "id": "75b5848b-8bf7-470f-a2e2-ba9b0bb66051",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/aim3d/__lcGmtTakcjJ7rLDqivi0FQcF1jhWeY9rsLh-Os6iXMg/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/aim3d/__lcGmtTakcjJ7rLDqivi0FQcF1jhWeY9rsLh-Os6iXMg",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2023-07-10",
+       "id": "abc36b7a-2482-4be6-b7df-278806a4955e"
+      }
+     },
+     {
+      "id": "8a9b6947-a34b-440f-b28d-78d806d6545d",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/legal-entities/germany/sedivention-gmbh/__YrXlXtKe-G3akhsYKLz6tpNGTfBpKyYDaYjsRr_yFO4",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/legal-entities/germany/sedivention-gmbh/__NYD24jkqEJVAFLGh89z5jdMUu0CRFN9a0rCawKxj94E",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/sedivention/__HZ339N14Hl7447xqgfKJtfgIKDefXPsRNL2bVpCi3bU",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/explore/metabolic-diseases-startups-in-germany/__Xech5M45QuwNNCchLWIp2mnuP4NZ1Zjw0O2t5GG4rAs",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2024-11-18",
+       "id": "a41558c3-37b6-4cea-b65a-8821a129a2cf"
+      }
+     },
+     {
+      "id": "98145179-1136-4420-9983-2efae3ac50ff",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Swiss startup Neural Concept raises $27M to cut EV design time to 18 months | TechCrunch",
+         "document": "https://techcrunch.com/2024/06/03/swiss-startup-neural-concept-raises-27m-to-cut-ev-design-time-to-18-months",
+         "date": "2024-06-03"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/neuralconcept/__319an4XwlNLgpX6NLCyoLGUj87XXZPpLhNgsmgOHVDk",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2024-06-03",
+       "id": "39f5dbc0-cdde-41f8-88a1-6493cc34c60a"
+      }
+     },
+     {
+      "id": "bf9252ff-324e-4fbf-a4ae-96dc612a4c80",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/chipmetrics/company_overview/overview_timeline",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/investor/156736-90",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/newsletter/global-vc-deals-for-january-30-2024",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/explore/manufacturing-services-startups-in-finland/__DWDGmAnpXw7AO_mFHnCTlqup8PM7aAgBcSKHf1B5xik",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2024-01-24",
+       "id": "69e4b41d-5642-4ec6-851b-86da32922564"
+      }
+     },
+     {
+      "id": "cacf0d0a-1c01-4b69-a281-4c879f4619d5",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/lipocalyx/__LT09KBR2s6DrmgzUoKbXL_GbambWRrU5ZYzfqlkKjIQ",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/venture-capital/goodvent-beteiligungsmanagement/__8Pb4N8_JYI_WhG1ZJhYRmE30EzRz60_x1n-652dvRfc",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/lipocalyx",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2011-09-22",
+       "id": "2e8ef9ce-8ae2-4ab1-a17a-a4b02c5d3a9a"
+      }
+     },
+     {
+      "id": "dbf5e7c4-0b37-42c1-ade1-b02b0707a557",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Swiss startup Neural Concept raises $27M to cut EV design time to 18 months | TechCrunch",
+         "document": "https://techcrunch.com/2024/06/03/swiss-startup-neural-concept-raises-27m-to-cut-ev-design-time-to-18-months",
+         "date": "2024-06-03"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/neuralconcept/__319an4XwlNLgpX6NLCyoLGUj87XXZPpLhNgsmgOHVDk",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2022-03-22",
+       "id": "184dd522-8dbf-4217-8989-cb1f5f931844"
+      }
+     },
+     {
+      "id": "e6f56714-7e6a-406d-8193-c6fdf7e242b2",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/reflex-aerospace/__T5MuSjI4oLwfaU5KdEh5hvkkDWFwwd8jonplSaczWpc",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/reflex-aerospace/__T5MuSjI4oLwfaU5KdEh5hvkkDWFwwd8jonplSaczWpc/funding-and-investors",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/space-forge/__ur4vUhTIJOKQTzdv4Pd_Sk6z98hWZcjbnj3qJVUC_0U",
+         "date": "2026-07-29"
+        }
+       ],
+       "event_date": "2025-11-04",
+       "id": "af478878-678b-41d6-a805-d2672acc0f39"
+      }
+     },
+     {
+      "id": "f63cffb3-ff2c-4b97-a6d9-2f3ba580f947",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/wesustain/__bAElaNRyQCKhWt6zXZsf4OlTcULpykwGtQwl90bArlk",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2010-10-20",
+       "id": "6aca3848-68a1-4cc4-8e63-dbe4134560b0"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "f48ebf95-99ea-4756-99cc-8a2a2d71f2e2",
+      "name": "VENTURE_CAPITAL",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "Germany's Top VC Firms & Investors in 2026: 50+ Listed",
+         "document": "https://vc-mapping.gilion.com/venture-capital-firms/germany",
+         "date": "2023-02-19"
+        },
+        {
+         "name": "www.pitchdrive.com",
+         "document": "https://www.pitchdrive.com/academy/top-20-venture-capital-vc-firms-in-germany-for-startups-in-2025",
+         "date": "2026-06-08"
+        }
+       ],
+       "id": "9ebf8eb0-a86d-4e4f-8008-6d9c620475f6"
+      }
+     }
+    ],
+    "HAS_HEADQUARTERS_IN": [
+     {
+      "id": "6c70569a-4ea6-4749-8806-4eeddfe51eed",
+      "name": "Nordrhein-Westfalen",
+      "entity_type": "CountrySubdivision",
+      "properties": {
+       "sources": [
+        {
+         "name": "GLEIF",
+         "document": "https://search.gleif.org/#/record/391200R6P6ZI19LPT380",
+         "date": "2026-04-08"
+        }
+       ],
+       "id": "8399420f-3370-5fab-8448-d76315a58257"
+      }
+     }
+    ],
+    "IS_REGISTERED_IN": [
+     {
+      "id": "61901653-115d-4cc4-a4e4-04d8c5009f1e",
+      "name": "Germany",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "GLEIF",
+         "document": "https://search.gleif.org/#/record/391200R6P6ZI19LPT380",
+         "date": "2026-04-08"
+        }
+       ],
+       "id": "38de73ba-74f6-503b-b365-32c760626475"
+      }
+     },
+     {
+      "id": "6c70569a-4ea6-4749-8806-4eeddfe51eed",
+      "name": "Nordrhein-Westfalen",
+      "entity_type": "CountrySubdivision",
+      "properties": {
+       "sources": [
+        {
+         "name": "GLEIF",
+         "document": "https://search.gleif.org/#/record/391200R6P6ZI19LPT380",
+         "date": "2026-04-08"
+        }
+       ],
+       "id": "5d419ac8-a9d3-5d14-9981-ea41063ad8bf"
+      }
+     }
+    ],
+    "HAS_PRESENCE_IN": [
+     {
+      "id": "61901653-115d-4cc4-a4e4-04d8c5009f1e",
+      "name": "Germany",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "Germany's Top VC Firms & Investors in 2026: 50+ Listed",
+         "document": "https://vc-mapping.gilion.com/venture-capital-firms/germany",
+         "date": "2023-02-19"
+        },
+        {
+         "name": "www.pitchdrive.com",
+         "document": "https://www.pitchdrive.com/academy/top-20-venture-capital-vc-firms-in-germany-for-startups-in-2025",
+         "date": "2026-06-08"
+        }
+       ],
+       "id": "fae627a8-7b02-4e7e-99f3-9090662d62cc"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "86ec6f10-2c55-4fc3-8fb6-da437c47e06f",
+      "name": "Seqana",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "axios.com",
+         "document": "https://www.axios.com/pro/climate-deals/2026/06/27/energy-climate-deals-vc-pe-ipos",
+         "date": "2026-07-02"
+        }
+       ],
+       "id": "64adfa19-d70a-547a-b7c1-3600059bc7a7"
+      }
+     }
+    ],
+    "OPERATED_BY": [
+     {
+      "id": "d77dc14f-c7c4-4c91-9bad-76930d4b0635",
+      "name": "Cloudsquid",
+      "entity_type": "Product",
+      "properties": {
+       "sources": [
+        {
+         "name": "SaaS B2B Fundraising News | The SaaS News",
+         "document": "https://www.thesaasnews.com/news/cloudsquid-raises-over-900k-in-funding",
+         "date": "2026-05-03"
+        }
+       ],
+       "id": "e3c4e002-61d8-5aeb-a229-5126582a3be5"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

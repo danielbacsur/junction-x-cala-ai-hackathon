@@ -1,0 +1,585 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/aa6d5d43-7a11-5732-b009-a17dcd82a0b3",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 200
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 200
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 200
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 200
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 200
+     },
+     "TRADED_ON": {
+      "limit": 200
+     },
+     "LISTED_ON": {
+      "limit": 200
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "FOUNDED": {
+      "limit": 200
+     },
+     "WORKS_AT": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_CEO_OF": {
+      "limit": 200
+     },
+     "IS_CTO_OF": {
+      "limit": 200
+     },
+     "IS_CFO_OF": {
+      "limit": 200
+     },
+     "IS_COO_OF": {
+      "limit": 200
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 200
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "MANUFACTURED_BY": {
+      "limit": 200
+     },
+     "DESIGNED_BY": {
+      "limit": 200
+     },
+     "OPERATED_BY": {
+      "limit": 200
+     },
+     "CREATED_BY": {
+      "limit": 200
+     },
+     "PUBLISHED_BY": {
+      "limit": 200
+     },
+     "GRANTED_BY": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:24:54+0200",
+ "_seconds": 0.6,
+ "response": {
+  "id": "aa6d5d43-7a11-5732-b009-a17dcd82a0b3",
+  "name": "Scrydon",
+  "entity_type": "Company",
+  "description": "European-native organisational AI: an AI Operating System, Analytics, and Sovereign Foundations on one sovereign platform. Move beyond copilots and pilots to governed enterprise AI, designed to sup...",
+  "properties": {
+   "name": {
+    "value": "Scrydon",
+    "sources": [
+     {
+      "name": "scrydon.com",
+      "document": "https://scrydon.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/scrydon",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "legal_name": {
+    "value": "Scrydon BV",
+    "sources": [
+     {
+      "name": "scrydon.com",
+      "document": "https://scrydon.com/legal/privacy-policy/",
+      "date": "2026-11-04",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "kbopub.economie.fgov.be",
+      "document": "https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?lang=en&ondernemingsnummer=1034697119",
+      "date": "2026-11-12",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     }
+    ]
+   },
+   "description": {
+    "value": "European-native organisational AI: an AI Operating System, Analytics, and Sovereign Foundations on one sovereign platform. Move beyond copilots and pilots to governed enterprise AI, designed to sup...",
+    "sources": [
+     {
+      "name": "scrydon.com",
+      "document": "https://scrydon.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "website": {
+    "value": "scrydon.com",
+    "sources": [
+     {
+      "name": "scrydon.com",
+      "document": "https://scrydon.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "dns.google",
+      "document": "https://dns.google/query?name=scrydon.com&type=A",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "scrydon.com",
+      "document": "https://scrydon.com/insights/2026/01/15/hello-world/",
+      "date": "2026-11-12",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "headquarters_address": {
+    "value": "Ghent, Belgium",
+    "sources": [
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/scrydon",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2026-02-23",
+    "sources": [
+     {
+      "name": "kbopub.economie.fgov.be",
+      "document": "https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?lang=en&ondernemingsnummer=1034697119",
+      "date": "2026-11-12",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "busibee.be",
+      "document": "https://busibee.be/nl/1034697119",
+      "date": "2026-11-12",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "operational_status": {
+    "value": "ACTIVE",
+    "sources": [
+     {
+      "name": "scrydon.com",
+      "document": "https://scrydon.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "kbopub.economie.fgov.be",
+      "document": "https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?lang=en&ondernemingsnummer=1034697119",
+      "date": "2026-11-12",
+      "date_precision": "day",
+      "source_rank": "FILING"
+     },
+     {
+      "name": "busibee.be",
+      "document": "https://busibee.be/nl/1034697119",
+      "date": "2026-11-12",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "38ab2cec-4d23-5abe-9528-133c02b0de63",
+      "name": "Funding round",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "scrydon.com",
+         "document": "https://scrydon.com/insights/2026/01/15/hello-world/",
+         "date": "2026-01-15",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "ea7e3727-70fc-5d39-ae5f-eab026a10d6d"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_EVENT": [
+     {
+      "id": "bc844d56-6ab4-452b-96bf-2661e86e592b",
+      "name": "Slush 2026",
+      "entity_type": "Event",
+      "properties": {
+       "role": "ATTENDEE",
+       "sources": [
+        {
+         "name": "Slush",
+         "document": "https://slush.org/",
+         "date": "2026-11-14"
+        }
+       ],
+       "id": "90df9f89-8a4a-572a-84cb-8cb0622119d0"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "8ecf5e57-a149-438c-9eb4-089809bade56",
+      "name": "SOFTWARE_AND_SERVICES",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "linkedin.com",
+         "document": "https://www.linkedin.com/company/scrydon",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "124f5d0a-8cea-5e00-b5c5-7f8e54f057e3",
+       "original_label": "ai"
+      }
+     }
+    ],
+    "HAS_DOMAIN_NAME": [
+     {
+      "id": "a17b4ddf-0685-5fd2-8885-ce5a5d96b991",
+      "name": "scrydon.com",
+      "entity_type": "DomainName",
+      "properties": {
+       "sources": [
+        {
+         "name": "scrydon.com",
+         "document": "https://scrydon.com/",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "dns.google",
+         "document": "https://dns.google/query?name=scrydon.com&type=A",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "scrydon.com",
+         "document": "https://scrydon.com/insights/2026/01/15/hello-world/",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "f3ee628f-0bd5-5fdb-a968-67a57b5f676b",
+       "valid_since": "2026-01-15",
+       "status": "ACTIVE"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "1091dc06-529c-53ab-99f2-b0c87374a00d",
+      "name": "Ventures by delaware",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "scrydon.com",
+         "document": "https://scrydon.com/insights/2026/01/15/hello-world/",
+         "date": "2026-01-15",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "info.delaware.pro",
+         "document": "https://info.delaware.pro/ventures-explorer-by-delaware-2026",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "f8a3245d-efc3-4946-9f1d-42463786883d"
+      }
+     }
+    ],
+    "FOUNDED": [
+     {
+      "id": "0dbfbe97-7c0b-570a-8bc0-b57f7ffdf803",
+      "name": "Nathan Bijnens",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "scrydon.com",
+         "document": "https://scrydon.com/insights/2026/01/15/hello-world/",
+         "date": "2026-01-15",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "f77ed4d1-ab03-527d-a402-6982428fe680"
+      }
+     },
+     {
+      "id": "24f75124-060a-5a13-a587-ddf2a6c6a6cb",
+      "name": "Xavier Geerinck",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "scrydon.com",
+         "document": "https://scrydon.com/about-us/",
+         "date": "2026-11-03",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "scrydon.com",
+         "document": "https://scrydon.com/insights/2026/01/15/hello-world/",
+         "date": "2026-01-15",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "787225b4-1f35-51cb-b189-1dde35418514"
+      }
+     },
+     {
+      "id": "895890bb-90f5-5369-96b1-8914ab71175f",
+      "name": "Cornelia Kutterer",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "scrydon.com",
+         "document": "https://scrydon.com/insights/2026/01/15/hello-world/",
+         "date": "2026-01-15",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "3d2cb1d7-31a9-5c84-b42c-a38edff54331"
+      }
+     }
+    ],
+    "WORKS_AT": [
+     {
+      "id": "895890bb-90f5-5369-96b1-8914ab71175f",
+      "name": "Cornelia Kutterer",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Chief Legal Officer",
+       "sources": [
+        {
+         "name": "scrydon.com",
+         "document": "https://scrydon.com/about-us/",
+         "date": "2026-11-03",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "fcba5e31-b502-5bc1-aab2-1c56c8e1a81c"
+      }
+     }
+    ],
+    "IS_CEO_OF": [
+     {
+      "id": "0dbfbe97-7c0b-570a-8bc0-b57f7ffdf803",
+      "name": "Nathan Bijnens",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "scrydon.com",
+         "document": "https://scrydon.com/about-us/",
+         "date": "2026-11-03",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "f6f86d63-b638-5441-ac1a-59409276a5f3"
+      }
+     }
+    ],
+    "IS_CTO_OF": [
+     {
+      "id": "24f75124-060a-5a13-a587-ddf2a6c6a6cb",
+      "name": "Xavier Geerinck",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "scrydon.com",
+         "document": "https://scrydon.com/about-us/",
+         "date": "2026-11-03",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "01149892-b25a-51a3-b14b-4b4536946afe"
+      }
+     }
+    ],
+    "IS_BOARD_MEMBER_OF": [
+     {
+      "id": "0dbfbe97-7c0b-570a-8bc0-b57f7ffdf803",
+      "name": "Nathan Bijnens",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "kbopub.economie.fgov.be",
+         "document": "https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?lang=en&ondernemingsnummer=1034697119",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "20b97f8f-6ba5-5d1d-ab9d-1f66a2170d25",
+       "valid_since": "2026-02-23"
+      }
+     },
+     {
+      "id": "24f75124-060a-5a13-a587-ddf2a6c6a6cb",
+      "name": "Xavier Geerinck",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "kbopub.economie.fgov.be",
+         "document": "https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?lang=en&ondernemingsnummer=1034697119",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "1f38c439-667b-551a-89f9-384140edf2a1",
+       "valid_since": "2026-02-23"
+      }
+     },
+     {
+      "id": "895890bb-90f5-5369-96b1-8914ab71175f",
+      "name": "Cornelia Kutterer",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "kbopub.economie.fgov.be",
+         "document": "https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?lang=en&ondernemingsnummer=1034697119",
+         "date": "2026-11-12",
+         "date_precision": "day",
+         "source_rank": "FILING"
+        }
+       ],
+       "id": "78944302-1e44-5cc0-b6e0-d0cdc444aec7",
+       "valid_since": "2026-02-23"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

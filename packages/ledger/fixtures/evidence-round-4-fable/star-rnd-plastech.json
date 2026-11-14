@@ -1,0 +1,271 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/2c22884b-8da7-5c68-936c-c431cf468aab",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 200
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 200
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 200
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 200
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 200
+     },
+     "TRADED_ON": {
+      "limit": 200
+     },
+     "LISTED_ON": {
+      "limit": 200
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "FOUNDED": {
+      "limit": 200
+     },
+     "WORKS_AT": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_CEO_OF": {
+      "limit": 200
+     },
+     "IS_CTO_OF": {
+      "limit": 200
+     },
+     "IS_CFO_OF": {
+      "limit": 200
+     },
+     "IS_COO_OF": {
+      "limit": 200
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 200
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "MANUFACTURED_BY": {
+      "limit": 200
+     },
+     "DESIGNED_BY": {
+      "limit": 200
+     },
+     "OPERATED_BY": {
+      "limit": 200
+     },
+     "CREATED_BY": {
+      "limit": 200
+     },
+     "PUBLISHED_BY": {
+      "limit": 200
+     },
+     "GRANTED_BY": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:24:47+0200",
+ "_seconds": 0.22,
+ "response": {
+  "id": "2c22884b-8da7-5c68-936c-c431cf468aab",
+  "name": "PLASTECH",
+  "entity_type": "Company",
+  "description": "Natural, cellulose-based splinting method to support broken limbs",
+  "properties": {
+   "name": {
+    "value": "PLASTECH",
+    "sources": [
+     {
+      "name": "oulu.fi",
+      "document": "https://www.oulu.fi/en/cooperation/innovation-entrepreneurship-and-technology-transfer/research-business-university-oulu-r2b-projects",
+      "date": "2026-11-03",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "focusdesign.fi",
+      "document": "https://www.focusdesign.fi",
+      "date": "2026-11-03",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "aliases": {
+    "value": [
+     "Plastech (Oulu & Aalto University R2B)"
+    ],
+    "sources": []
+   },
+   "description": {
+    "value": "Natural, cellulose-based splinting method to support broken limbs",
+    "sources": [
+     {
+      "name": "oulu.fi",
+      "document": "https://www.oulu.fi/en/cooperation/innovation-entrepreneurship-and-technology-transfer/research-business-university-oulu-r2b-projects",
+      "date": "2026-11-04",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "focusdesign.fi",
+      "document": "https://www.focusdesign.fi",
+      "date": "2026-11-04",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "headquarters_address": {
+    "value": "Oulu-Helsinki, Finland",
+    "sources": [
+     {
+      "name": "focusdesign.fi",
+      "document": "https://focusdesign.fi/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2025-01-01",
+    "sources": [
+     {
+      "name": "oulu.fi",
+      "document": "https://www.oulu.fi/en/cooperation/innovation-entrepreneurship-and-technology-transfer/research-business-university-oulu-r2b-projects",
+      "date": "2026-11-04",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "focusdesign.fi",
+      "document": "https://www.focusdesign.fi",
+      "date": "2026-11-04",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "PARTICIPATES_IN_EVENT": [
+     {
+      "id": "bc844d56-6ab4-452b-96bf-2661e86e592b",
+      "name": "Slush 2026",
+      "entity_type": "Event",
+      "properties": {
+       "role": "ATTENDEE",
+       "sources": [
+        {
+         "name": "Slush",
+         "document": "https://slush.org/",
+         "date": "2026-11-14"
+        }
+       ],
+       "id": "123ec6df-41b4-5447-856f-c86a03c36d76"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "ef520286-feae-4797-9346-55601c7c0e19",
+      "name": "PHARMACEUTICALS",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "focusdesign.fi",
+         "document": "https://focusdesign.fi/",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "252daad0-21cb-584e-a3df-ffebef3da699",
+       "original_label": "medtechPharma"
+      }
+     }
+    ]
+   },
+   "incoming": {}
+  },
+  "numerical_observations": []
+ }
+}

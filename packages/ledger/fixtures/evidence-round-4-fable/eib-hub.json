@@ -1,0 +1,4169 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/01c894d5-9eee-4929-a536-c1626fcddb96",
+  "body": {
+   "properties": [
+    "name",
+    "description"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 1000
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 1000
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 100
+     },
+     "IS_MEMBER_OF": {
+      "limit": 100
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:20:25+0200",
+ "_seconds": 0.63,
+ "response": {
+  "id": "01c894d5-9eee-4929-a536-c1626fcddb96",
+  "name": "European Investment Bank",
+  "entity_type": "Organization",
+  "description": "EU-owned multilateral development bank based in Luxembourg, founded in 1958",
+  "properties": {
+   "name": {
+    "value": "European Investment Bank",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-06-29"
+     },
+     {
+      "name": "webcapitalriesgo.com",
+      "document": "https://www.webcapitalriesgo.com/cabify-completa-su-ronda-de-e100m-con-la-entrada-de-riberas-y-el-ico/",
+      "date": "2023-03-28",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "elreferente.es",
+      "document": "https://elreferente.es/inversiones/cabify-recibe-91-millones-euros-ampliacion-de-capital/",
+      "date": "2023-04-03",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "eib.org",
+      "document": "https://www.eib.org/en/press/all/2021-179-eib-boosts-the-expansion-of-red-points-with-eur15-million-in-financing",
+      "date": "2021-05-31",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "tech.eu",
+      "document": "https://tech.eu/2021/05/31/barcelona-based-brand-protection-platform-red-points-secures-up-to-e15-million-in-debt-financing-from-the-eib/",
+      "date": "2021-05-31",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     },
+     {
+      "name": "eib.org",
+      "document": "https://www.eib.org/en/press/all/2022-547-cabify-receives-eur-40-million-eib-loan-to-finance-a-zero-emission-fleet-of-electric-vehicles-in-spain",
+      "date": "2022-12-19",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "eib.org",
+      "document": "https://www.eib.org/en/press/all/2025-029-ineratec-s-e-fuel-demo-plant-in-frankfurt-gets-eur70-million-from-eib-eu-commission-and-breakthrough-energy",
+      "date": "2025-01-29",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "eib.org",
+      "document": "https://www.eib.org/en/press/all/2025-119-ineratec-secures-eur70-million-financing-commitment-for-europe-s-largest-e-fuel-production-plant-in-frankfurt",
+      "date": "2025-03-05",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "ineratec.de",
+      "document": "https://www.ineratec.de/en/news/ineratec-secures-eu70-million-financing-commitment-europes-largest-e-fuel-production-plant",
+      "date": "2025-03-05",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "eib.org",
+      "document": "https://www.eib.org/en/press/all/2024-338-the-eib-and-stark-future-sign-a-eur40-million-loan-to-invest-in-innovation-and-new-solutions-for-the-electric-motorcycle-sector",
+      "date": "2024-09-16",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "presse-citron.net",
+      "document": "https://www.presse-citron.net/batteries-verkor-obtient-2-milliards-deuros-pour-sa-gigafactory-francaise/",
+      "date": "2023-09-14",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "description": {
+    "value": "EU-owned multilateral development bank based in Luxembourg, founded in 1958",
+    "sources": [
+     {
+      "name": "Cala AI",
+      "document": "",
+      "date": "2026-08-03"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "INVESTED_IN": [
+     {
+      "id": "0247c487-08b6-4e07-8e92-0969cdfeaa2d",
+      "name": "ICEYE",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "TechCrunch | Startup and Technology News",
+         "document": "https://techcrunch.com/2026/08/11/whats-scaleup-europe-the-5-7b-fund-that-just-backed-satellite-company-iceye",
+         "date": "2026-08-14"
+        }
+       ],
+       "id": "6cd89897-2921-5271-a730-c68a61d62eac"
+      }
+     },
+     {
+      "id": "02a2a281-4d2f-4647-9af3-cae7ac067489",
+      "name": "EIC Fund",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "grantbite.com",
+         "document": "https://www.grantbite.com/en/blog/eic-funding-statistics",
+         "date": "2026-08-27"
+        }
+       ],
+       "id": "5d9ba153-95be-5fbd-a8d1-a17a6eff3db4"
+      }
+     },
+     {
+      "id": "02c4bafd-3ef4-4d5d-b180-c33e0eba215b",
+      "name": "Aiforia Technologies Oyj",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2019/06/spain-is-gaining-ground-barcelona-and-madrid-rank-among-the-top-six-european-cities-for-startup-growth",
+         "date": "2026-08-14"
+        }
+       ],
+       "id": "19ceddca-87c5-569f-a63e-4f9a596f66a5"
+      }
+     },
+     {
+      "id": "06282685-297c-49ce-b51e-ba4f7b9e3728",
+      "name": "DEMANT A/S",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Denmark: EIB boosts development of next generation hearing aids by William Demant",
+         "document": "https://www.eib.org/en/press/all/2015-113-eib-boosts-development-of-next-generation-hearing-aids-by-william-demant",
+         "date": "2015-05-29"
+        }
+       ],
+       "id": "294e607d-adc9-4004-9aa6-666b7be0e8ae"
+      }
+     },
+     {
+      "id": "0c20cd47-9776-4972-ac6a-6566124bb171",
+      "name": "ORANO",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "European Investment Bank and Orano sign a loan agreement for 400 million euros relating to the project to extend the Georges Besse 2 uranium enrichment plant",
+         "document": "https://www.orano.group/en/news/news-group/2025/march/european-investment-bank-and-orano-sign-a-loan-agreement-for-400-million-euros-relating-to-the-project-to-extend-the-georges-besse-2-uranium-enrichment-plant",
+         "date": "2025-10-03"
+        },
+        {
+         "name": "France: EIB and Orano sign a loan agreement for \u20ac400 million relating to the project to extend the Georges Besse 2 uranium enrichment plant",
+         "document": "https://www.eib.org/en/press/all/2025-130-eib-and-orano-sign-a-loan-agreement-for-400-million-euros-relating-to-the-project-to-extend-the-georges-besse-2-uranium-enrichment-plant",
+         "date": "2025-03-10"
+        },
+        {
+         "name": "www.nucnet.org",
+         "document": "https://www.nucnet.org/news/france-s-orano-gets-eur400-million-investment-bank-loan-for-uranium-enrichment-expansion-project-3-1-2025",
+         "date": "2026-07-29"
+        }
+       ],
+       "id": "7270e50f-b846-4a8b-8817-663b681912a4"
+      }
+     },
+     {
+      "id": "21322946-6592-4527-9035-2d3ac692ed87",
+      "name": "Spanish biotech company",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/march-wrap-up-10-women-founded-tech-startups-that-received-funding-in-europe",
+         "date": "2026-08-31"
+        }
+       ],
+       "id": "fe603cce-ac92-5026-9d8b-b35e07d3d3c4"
+      }
+     },
+     {
+      "id": "2b6fbe57-c5cd-49b7-b7bd-ba7587bfd77f",
+      "name": "Sateliot",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "TechStock\u00b2 - Real-time market monitoring",
+         "document": "https://ts2.tech/en/spains-stellar-ascent-inside-the-boom-of-its-space-and-satellite-industry/",
+         "date": "2026-09-03"
+        }
+       ],
+       "id": "7992afa5-ac3c-576f-bbf8-be5d6574c87d"
+      }
+     },
+     {
+      "id": "2d559c4d-20ab-4f5a-8957-785b5fdb94dc",
+      "name": "N3TC",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "CASE STUDY: N3 TOLL CONCESSION (RF) PROPRIETARY LIMITED (N3TC)",
+         "document": "https://aiimafrica.com/media/case-study-detail/case-study-n3-toll-concession-rf-proprietary-limited-n3tc",
+         "date": "2022-01-01"
+        },
+        {
+         "name": "www.nra.co.za",
+         "document": "https://www.nra.co.za/uploads/65/2002-Annual-Report.pdf",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.n3tc.co.za",
+         "document": "https://www.n3tc.co.za/about",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.afdb.org",
+         "document": "https://www.afdb.org/en/documents/document/south-africa-summary-of-the-environmental-impact-assessment-n3-toll-road-project-esia-summary-12902",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "ed1f959f-8ed8-4cfe-807d-de79e7942048"
+      }
+     },
+     {
+      "id": "31603078-5887-480d-a03f-b8f4cb880bff",
+      "name": "Catalyxx",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Technology & Data for Venture Capital, Corp Dev, Investment Banks",
+         "document": "https://tracxn.com/d/companies/catalyxx/__2oZstWfv8c-pcz_i_g-hkwMX6cpwrWqgVmhehnn33u8",
+         "date": "2026-08-15"
+        },
+        {
+         "name": "Tech.eu - European Startup, Funding and Technology News",
+         "document": "https://tech.eu/2025/05/19/catalyxx-fuels-expansion-with-eur3m-round-and-eur37m-eib-backing-for-french-production-site",
+         "date": "2026-08-15"
+        }
+       ],
+       "id": "528c07f7-e10f-5a9f-adb5-564b898ef24a"
+      }
+     },
+     {
+      "id": "323563bf-bcc9-44e0-9807-bf93f50eb428",
+      "name": "INBRAIN Neuroelectronics",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Technology & Data for Venture Capital, Corp Dev, Investment Banks",
+         "document": "https://tracxn.com/d/companies/inbrain-neuroelectronics/__2OhXBPEDzdrNYYIbXg2zPrllVbgVxYTCKFGECcvC5Vg",
+         "date": "2026-08-15"
+        }
+       ],
+       "id": "6389f537-9bd3-567e-bc8e-38d34fe21a0f"
+      }
+     },
+     {
+      "id": "376ef01f-839f-44ec-a506-ce30a1717a9a",
+      "name": "MariaDB Corporation Ab",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "techcrunch.com",
+         "document": "https://techcrunch.com/2017/09/26/mariadb-raises-27-million/",
+         "date": "2026-08-24"
+        }
+       ],
+       "id": "221e783a-22a8-4d8e-bee9-b93ed53e16b9"
+      }
+     },
+     {
+      "id": "391ee7cf-8c76-429b-805b-b40823ca3d3c",
+      "name": "Tensive",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/category/spain-startups/page/4",
+         "date": "2026-09-27"
+        }
+       ],
+       "id": "6d570e6f-865a-5d0e-a5e6-0809abb6f60f"
+      }
+     },
+     {
+      "id": "3cf73231-54ac-44cf-b079-b7ed97cdf6ec",
+      "name": "PACKHELP SP\u00d3\u0141KA AKCYJNA",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Packhelp bags $45.6M to expand its custom packaging biz",
+         "document": "https://techcrunch.com/2021/11/18/packhelp-series-b",
+         "date": "2021-11-18"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/packhelp/__4JZrLloHAr4kVvW8ClB29o3kjRMevGEXO2DTrSMiokI/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "43ba06ab-6930-46f2-8240-f2d8cec4dfbe"
+      }
+     },
+     {
+      "id": "435e21c3-b0dd-48bc-adc6-5e5285c303e3",
+      "name": "BioNTech SE",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "EIB Group Forum: A strong Europe in a changing world",
+         "document": "https://www.eib.org/fr/press/all/2025-380-eib-and-european-commission-join-forces-with-biontech-to-build-a-sustainable-vaccine-ecosystem-in-africa?lang=en",
+         "date": "2026-08-27"
+        },
+        {
+         "name": "Science|Business",
+         "document": "https://sciencebusiness.net/network-updates/eib-and-european-commission-join-forces-biontech-build-sustainable-vaccine",
+         "date": "2026-08-27"
+        },
+        {
+         "name": "trial.medpath.com",
+         "document": "https://trial.medpath.com/news/e1b00f8099008357/eib-and-european-commission-partner-with-biontech-for-africa-s-first-mrna-vaccine-manufacturing-facility-in-rwanda",
+         "date": "2026-08-27"
+        },
+        {
+         "name": "EIB Group Forum: A strong Europe in a changing world",
+         "document": "https://www.eib.org/en/press/all/2025-380-eib-and-european-commission-join-forces-with-biontech-to-build-a-sustainable-vaccine-ecosystem-in-africa",
+         "date": "2026-08-27"
+        }
+       ],
+       "id": "b321d122-31a9-5e47-bc44-7db4f6acd2ab"
+      }
+     },
+     {
+      "id": "45cdd2eb-5cc1-4643-b76d-6287f8976162",
+      "name": "MERIDIAM INFRASTRUCTURE AFRICA FUND",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "campbell-lutyens.com",
+         "document": "https://campbell-lutyens.com/clients/case-studies/all/meridiam-infrastructure-africa-fund",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "Meridiam Infrastructure Africa Fund: Equity investment to finance infrastructure in Africa",
+         "document": "https://www.proparco.fr/en/carte-des-projets/meridiam-africa-2015-2019",
+         "date": "2015-09-30"
+        },
+        {
+         "name": "www.bii.co.uk",
+         "document": "https://www.bii.co.uk/en/our-impact/fund/meridiam-infrastructure-africa-fund-investment-01",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "www.dfc.gov",
+         "document": "https://www.dfc.gov/sites/default/files/2019-08/PublicSummary_MeridiamInfrastructureAfricaFund.pdf",
+         "date": "2026-07-29"
+        }
+       ],
+       "id": "415fcd92-7a1d-42ce-ad81-d4db6d750b31"
+      }
+     },
+     {
+      "id": "4712a5e8-fa2e-4f27-9375-73b8fdbd3faf",
+      "name": "K-Fund",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Tech.eu - European Startup, Funding and Technology News",
+         "document": "https://tech.eu/2016/10/17/k-fund-e50-million",
+         "date": "2026-08-15"
+        }
+       ],
+       "id": "fd300e8c-52e6-530d-89ae-9e7dd4c86b12"
+      }
+     },
+     {
+      "id": "484d6413-d3cf-4209-a23c-19714e5ff182",
+      "name": "BioLamina AB",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/08/australian-born-spanish-grown-prophero-lands-e2-5-million-from-bbva-spark-to-fuel-real-estate-tech-push-in-spain",
+         "date": "2026-07-27"
+        }
+       ],
+       "id": "afe3914e-4d1a-5aec-8287-695273267b73"
+      }
+     },
+     {
+      "id": "4b3dd8c2-a82b-4817-926e-42220e78cc37",
+      "name": "Arkadia Space",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/category/spain-startups/page/3",
+         "date": "2026-08-22"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/tag/very-low-earth-orbit-vleo/feed",
+         "date": "2026-08-22"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/tag/satellites/feed",
+         "date": "2026-08-22"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/tag/deeptech-2030/feed",
+         "date": "2026-08-22"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/tag/expansion/feed",
+         "date": "2026-08-22"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/tag/blast/feed",
+         "date": "2026-08-22"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2026/03/arkadia-space-lands-e14-5-million-eic-boost-for-its-green-propulsion-systems-designed-to-replace-toxic-space-fuels",
+         "date": "2026-08-22"
+        }
+       ],
+       "id": "32ff3473-a023-518c-ab3e-082896e39979"
+      }
+     },
+     {
+      "id": "4c1057b9-0d5e-475f-9899-731ee6793c10",
+      "name": "Quantum-Systems GmbH",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/quantum-systems/__sXYOkm8VaEm5_Ehxyly1geYDZyqVa27MHL-T3Fcky_o/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "7c38d3f4-edcf-46a8-a18d-4e7b7cc04b8c"
+      }
+     },
+     {
+      "id": "4e053889-cc39-4518-ad6d-d314c75b15e4",
+      "name": "PLD Space",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2023/06/madrid-based-trucksters-closes-e33-million-series-b-to-become-europes-first-electric-long-haul-operator",
+         "date": "2026-07-31"
+        }
+       ],
+       "id": "0c62bf6c-366c-5a1a-a6ec-ceab4575a34b"
+      }
+     },
+     {
+      "id": "50f275c2-1f38-432e-bf0c-63e826cad963",
+      "name": "Green Generation Fund",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Munich Startup - Das offizielle Startup Portal f\u00fcr M\u00fcnchen und die Region",
+         "document": "https://www.munich-startup.de/en/86081/green-generation-fund-raises-100-million-euros",
+         "date": "2026-08-16"
+        }
+       ],
+       "id": "adbae10f-2d6e-51f6-ad0c-1f90633d4a84"
+      }
+     },
+     {
+      "id": "537a8f0c-d0a7-4fb0-9cf2-1b67f6d6b1fa",
+      "name": "Spanish biotech company specialising in the treatment of diseases with unmet medical needs",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/march-wrap-up-10-women-founded-tech-startups-that-received-funding-in-europe",
+         "date": "2026-08-27"
+        }
+       ],
+       "id": "9db11ae3-6b90-5ff3-88e7-a2146f9f7680"
+      }
+     },
+     {
+      "id": "5642594a-17f9-4f82-9d58-bc6b0df53d40",
+      "name": "Cold Solutions East Africa Holdings",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "ARCH COLD CHAIN SOLUTIONS EAST AFRICA FUND (SA) PARTNERSHIP",
+         "document": "https://www.eib.org/en/products/equity/funds/arch-cold-chain-solutions-east-africa-fund",
+         "date": "2023-06-22"
+        },
+        {
+         "name": "www.globalprivatecapital.org",
+         "document": "https://www.globalprivatecapital.org/newsroom/eib-commits-usd18m-to-arch-cold-chain-solutions-east-africa-fund",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "fa12e0fe-d073-4194-a0ee-42ab61aecb5e"
+      }
+     },
+     {
+      "id": "5ccbd880-8995-4f38-962c-72d777e323dc",
+      "name": "Kembara",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "bloomberg.com",
+         "document": "https://www.bloomberg.com/news/articles/2024-07-08/european-investment-bank-pledges-350-million-to-largest-spanish-vc-fund",
+         "date": "2026-09-16"
+        }
+       ],
+       "id": "d1736df9-0226-5eee-9dfe-a8e65241d67d"
+      }
+     },
+     {
+      "id": "63421093-61b3-4774-8faf-6a8421de7147",
+      "name": "SOCI\u00c9T\u00c9 G\u00c9N\u00c9RALE MAURITANIE (SGM)",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "SOCIETE GENERALE MAURITANIE",
+         "document": "https://www.eib.org/en/projects/all/20030441",
+         "date": "2006-01-10"
+        },
+        {
+         "name": "EIB takes USD 4.2 million participation in Mauritanian Bank",
+         "document": "https://www.eib.org/en/press/all/2006-040-eib-takes-usd-4-2-million-participation-in-mauritanian-bank",
+         "date": "2006-04-24"
+        },
+        {
+         "name": "www.eib.org",
+         "document": "https://www.eib.org/attachments/country/if_annual_report_2009_en.pdf",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "26d0d56c-9b40-4649-83c0-ce663f8a1aa8"
+      }
+     },
+     {
+      "id": "67b628d4-a6ae-43b2-812c-f4a604bb60a7",
+      "name": "tado GmbH",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Amazon backs German smart heating and AC company Tado in new $50M funding round | TechCrunch",
+         "document": "https://techcrunch.com/2018/10/25/amazon-meet-tado",
+         "date": "2018-10-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/tado/__FGG6rZpdKz3lBlA8YFmfIWKT5yOM9Ork8ytfi74U_u4/funding-and-investors",
+         "date": "2026-07-29"
+        }
+       ],
+       "id": "888232ae-424e-4daf-b890-637a06f2b740"
+      }
+     },
+     {
+      "id": "71acd82e-ce7b-4e23-aa5e-9ab53916c3c8",
+      "name": "Overture Life",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/overturelife/__xfErrixdDnkzBsWU5cUZIj0ICdCXvp58hksCjg9pxWI/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/overture-life/company_financials",
+         "date": "2026-08-24"
+        }
+       ],
+       "id": "1e2ae733-745a-4da1-b1f1-0d3c3d0841a5"
+      }
+     },
+     {
+      "id": "7b2ff52e-b120-4dcd-94bd-1a41af464004",
+      "name": "Drivalia",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2026/07/profitable-serbian-hungarian-insurtech-ominimo-hits-unicorn-status-two-years-after-launch-raises-e20-1-million-at-e1-4-billion-valuation",
+         "date": "2026-07-31"
+        }
+       ],
+       "id": "e3f256a4-3f71-540e-b43b-58c948c75db4"
+      }
+     },
+     {
+      "id": "7cd984e9-3068-4374-9f3f-52a08cee8028",
+      "name": "Flix SE",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/flixbus/__v5M4caX857I4B5QDbKf5bd4-EYVqGrtzdlnwkDcpiIQ/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "FlixMobility extends Series F at $2B+ valuation as it gears up to add cars to its bus and train network | TechCrunch",
+         "document": "https://techcrunch.com/2019/08/08/flixmobility-extends-series-f-at-2b-valuation-as-it-gears-up-to-add-cars-to-its-bus-and-train-network",
+         "date": "2019-08-08"
+        }
+       ],
+       "id": "2867355e-431d-4e92-a1b4-4cc2d26e5685"
+      }
+     },
+     {
+      "id": "84ee2547-98a8-58d5-b2e4-2608beb85e89",
+      "name": "Airbus  Se",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "EIB commits \u20ac3 billion to Airbus to boost Europe\u2019s industrial base and technological edge in aerospace innovation",
+         "document": "https://www.eib.org/en/press/all/2026-228-eib-commits-eur3-billion-to-airbus-to-boost-europe-s-industrial-base-and-technological-edge-in-aerospace-innovation",
+         "date": "2026-06-29"
+        }
+       ],
+       "id": "32084dcc-66d3-5504-981a-ff831af7b548"
+      }
+     },
+     {
+      "id": "8f4bbdcb-1842-4c31-9e05-36284251710a",
+      "name": "Cabify",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "app.dealroom.co",
+         "document": "https://app.dealroom.co/companies/cabify",
+         "date": "2026-08-19"
+        },
+        {
+         "name": "Technology & Data for Venture Capital, Corp Dev, Investment Banks",
+         "document": "https://tracxn.com/d/companies/cabify/__yKUMSUZlfdMp8LWAQI4SYJ22pMwY5uSHaRcUQBTlaXY/funding-and-investors",
+         "date": "2026-08-19"
+        },
+        {
+         "name": "The Company Check | Empowering Businesses with Data Transparency",
+         "document": "https://www.thecompanycheck.com/company/b/cabify/vxam3pjgqntvxh9d9",
+         "date": "2026-08-19"
+        }
+       ],
+       "id": "53637bab-b9dc-5220-adb9-4cf5f9be2dc3"
+      }
+     },
+     {
+      "id": "91c88e7f-87cd-4e3c-998b-b529d48e0a5b",
+      "name": "Zunder",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Tech.eu - European Startup, Funding and Technology News",
+         "document": "https://tech.eu/2023/02/15/zunder",
+         "date": "2026-09-11"
+        }
+       ],
+       "id": "3b59d847-b607-5756-96c4-f42c23099ba9"
+      }
+     },
+     {
+      "id": "9614b7ff-0826-43ef-bc35-d88c61298af1",
+      "name": "Spanish biotech company specialising in the treatment of diseases with unmet medical needs",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/march-wrap-up-10-women-founded-tech-startups-that-received-funding-in-europe",
+         "date": "2026-07-17"
+        }
+       ],
+       "id": "1ce2de68-a771-51ab-8c55-c86e0d03e427"
+      }
+     },
+     {
+      "id": "9629eeff-d3b5-4218-9778-ceb92d9ab21d",
+      "name": "SamanTree Medical",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/directory/holo-light",
+         "date": "2026-08-02"
+        }
+       ],
+       "id": "d568f9c7-9452-538d-b49c-95ae6b8be0b1"
+      }
+     },
+     {
+      "id": "a3ea71f6-deb3-4826-82ad-bb7cbf78b822",
+      "name": "PLD Space",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/2025/08/australian-born-spanish-grown-prophero-lands-e2-5-million-from-bbva-spark-to-fuel-real-estate-tech-push-in-spain",
+         "date": "2026-07-27"
+        }
+       ],
+       "id": "d94d26bb-ae3c-5c41-bb83-0b4fb7dc5a61"
+      }
+     },
+     {
+      "id": "a951af69-ae3f-4873-94d3-3cdfba5e1683",
+      "name": "WANDERCRAFT",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/wandercraft/__gx_83VxHDkEsbamKM11AAMTg9f9EM9lhbVdOhvdfohg/funding-and-investors",
+         "date": "2026-07-29"
+        }
+       ],
+       "id": "25697a00-d311-426d-9aa4-b409676914d5"
+      }
+     },
+     {
+      "id": "ad125e2b-83ec-4abd-b788-950dffca53e9",
+      "name": "MEVP",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "MEVP Launches $150M Middle East Venture Fund IV (\u201cMEVF IV\u201d)",
+         "document": "https://mevp.com/news/mevp-launches-150m-middle-east-venture-fund-iv-mevf-iv",
+         "date": "2023-02-27"
+        },
+        {
+         "name": "EIB backs USD 150 million Middle East venture capital initiative to accelerate digital transformation and create 8,000 tech jobs",
+         "document": "https://www.eib.org/en/press/all/2023-054-eib-backs-usd-150-million-middle-east-venture-capital-initiative-to-accelerate-digital-transformation-and-create-8000-tech-jobs",
+         "date": "2023-02-13"
+        },
+        {
+         "name": "MIDDLE EAST VENTURE FUND IV (MEVF IV)",
+         "document": "https://www.eib.org/en/projects/all/20190454",
+         "date": "2021-11-24"
+        }
+       ],
+       "id": "f1d3b74d-e250-4bf6-9936-789c9f3a3d97"
+      }
+     },
+     {
+      "id": "b92dc742-0abf-4e3d-bf89-0e136f260383",
+      "name": "Northvolt",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Sweden: EIB finances Northvolt\u2019s battery factory with over $1 billion",
+         "document": "https://www.eib.org/en/press/all/2024-011-eib-finances-northvolt-s-battery-factory-with-over-usd1-billion",
+         "date": "2024-01-16"
+        }
+       ],
+       "id": "c63f0602-eb10-5000-b746-5eab3c4a7144"
+      }
+     },
+     {
+      "id": "bf5134cb-80bc-4778-8b74-5090537dfd7f",
+      "name": "NavVis GmbH",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Munich Startup - Das offizielle Startup Portal f\u00fcr M\u00fcnchen und die Region",
+         "document": "https://www.munich-startup.de/en/startups/navvis",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "GLEIF",
+         "document": "https://search.gleif.org/",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "www.zoominfo.com",
+         "document": "https://www.zoominfo.com/",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "NavVis | LinkedIn",
+         "document": "https://www.linkedin.com/",
+         "date": "2026-07-29"
+        }
+       ],
+       "id": "9d6f4a37-b23c-59cb-8df4-02e1b345e295"
+      }
+     },
+     {
+      "id": "bfdf5652-48d6-4510-a1c0-afaec7fb60af",
+      "name": "tcvegypt",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "THE EGYPTIAN-AMERICAN ENTERPRISE FUND ANNOUNCES $50 MILLION COMMITMENT TO TCV FUND II - EAEF - Egyptian-American Enterprise Fund",
+         "document": "https://www.eaefund.org/the-egyptian-american-enterprise-fund-announces-50-million-commitment-to-tcv-fund-ii",
+         "date": "2024-04-16"
+        },
+        {
+         "name": "TCV II",
+         "document": "https://ewsdata.rightsindevelopment.org/projects/48291-tcv-ii",
+         "date": "2024-08-21"
+        },
+        {
+         "name": "Tanmiya Capital Ventures II",
+         "document": "https://www.ebrd.com/home/work-with-us/projects/psd/49874.html",
+         "date": "2023-04-11"
+        },
+        {
+         "name": "EIB Proposes $38 Million Equity Investment in Egypt\u2019s Tanmiya Capital Ventures Fund II - Empower Africa",
+         "document": "https://empowerafrica.com/eib-proposes-38-million-equity-investment-in-egypts-tanmiya-capital-ventures-fund-ii",
+         "date": "2025-10-14"
+        },
+        {
+         "name": "EU-EGYPT TANMIYA GROWTH FUND II",
+         "document": "https://www.eib.org/en/projects/all/20250281",
+         "date": "2025-12-10"
+        },
+        {
+         "name": "In the Press - TCV - Tanmiya Capital Ventures",
+         "document": "https://tcvegypt.com/in-the-press",
+         "date": "2022-06-24"
+        }
+       ],
+       "id": "29b4c44b-38a0-494a-a6da-211c01468e72"
+      }
+     },
+     {
+      "id": "c122acc4-1905-4f03-80fc-fcfaf323dd15",
+      "name": "FAZUA GmbH",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/fazua/__6HtlbNWw5atux2ZI63AhRKseFF7uzyiE1i8q4YC7ZrM",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/61543-99",
+         "date": "2026-08-24"
+        }
+       ],
+       "id": "127cfacd-a4b2-49c2-9768-6f03d599b7bc"
+      }
+     },
+     {
+      "id": "c4e0b9c8-8872-4b40-9c71-fd7b32e3e90b",
+      "name": "North Estonia Medical Centre",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Law Firm - International Recognition - Ellex",
+         "document": "https://ellex.legal/ellex-in-estonia-advised-the-european-investment-bank-eib-on-a-eur-25-million-loan-to-the-north-estonia-medical-centre",
+         "date": "2026-09-11"
+        }
+       ],
+       "id": "24fd48e7-f9fb-5a24-b5e1-2983863cabbe"
+      }
+     },
+     {
+      "id": "ce22acda-0e75-40ad-abaf-ecd08d62993a",
+      "name": "VERKOR",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "French battery maker Verkor scores $2.1B to build gigafactory | TechCrunch",
+         "document": "https://techcrunch.com/2023/09/14/french-battery-maker-verkor-scores-2-1b-to-build-gigafactory",
+         "date": "2023-09-14"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/verkor/__65WMD08xN57PgLIKPfuTJ0ZAoAhVl4OjRTCXV88LoJs",
+         "date": "2026-07-29"
+        }
+       ],
+       "id": "0e908c65-9d02-4600-bd23-e52bc2c97d63"
+      }
+     },
+     {
+      "id": "d00aa8ff-1f21-43c4-8011-7b60ae9c6792",
+      "name": "Deepull Diagnostics S.L.",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/deepull/__FyuZnWWf7buCrfLNCBA2K4zdXgkHKZ-QOjpTF8Rq1ic/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/deepull/__FyuZnWWf7buCrfLNCBA2K4zdXgkHKZ-QOjpTF8Rq1ic",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/deepull/signals_and_news",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/private-equity/merieuxequitypartners/__IxLLOnDfIEkNVsomfU7Fq1tX1citE3FOgejup9t8j_E",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/venture-capital/aliath-bioventures/__qE8k36-s4d7cEO3F3CQMdkp2FfGQVpG-FAIrNRIf9vk",
+         "date": "2026-08-24"
+        }
+       ],
+       "id": "e67e0914-3d71-4f0d-934e-e8c7ef2a5dc3"
+      }
+     },
+     {
+      "id": "d4cf4a2b-f60e-490f-aa61-9700dff0b6a4",
+      "name": "Exein",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Orrick | A Global Law Firm",
+         "document": "https://www.orrick.com/en/News/2026/09/Exein-Becomes-Italian-Unicorn-at-17-Billion-Valuation-After-New-Financing-Round-Led-by-Headline",
+         "date": "2026-09-23"
+        }
+       ],
+       "id": "dcf17951-6357-5619-a783-07ce78c82914"
+      }
+     },
+     {
+      "id": "d79519ef-5e08-4da0-88cf-c82d2646483e",
+      "name": "Red Points",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "app.dealroom.co",
+         "document": "https://app.dealroom.co/companies/red_points_bag",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "bbf575f0-b60a-5944-adb8-2b75f5d26f81"
+      }
+     },
+     {
+      "id": "d9293e6f-9471-4854-886d-b234bc42f172",
+      "name": "Neumann Diagnostics",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Life-saving business - Neumann Diagnostics",
+         "document": "https://bse.hu/Issuers/bet50/bet50-2016/BET50-companies-2016/Life-saving-business-Neumann-Diagnostics",
+         "date": "2026-05-22"
+        },
+        {
+         "name": "www.genomeweb.com",
+         "document": "https://www.genomeweb.com/molecular-diagnostics/hungarys-neumann-diagnostics-readies-hpv-cervical-cancer-risk-test-european",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "NEUMANN Diagnostics' Automated Cervical Cancer Test Achieves Exceptional Accuracy",
+         "document": "https://www.prnewswire.com/news-releases/neumann-diagnostics-automated-cervical-cancer-test-achieves-exceptional-accuracy-300213968.html",
+         "date": "2016-02-03"
+        }
+       ],
+       "id": "1866de27-d2af-4f62-96e8-bdc072deabd6"
+      }
+     },
+     {
+      "id": "d96bd19d-d0d7-44ee-b81e-0db1ac0b5fb5",
+      "name": "Zeotap",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/accelerator-incubator/ioniq/__khmJiURfLhILAV6cyE7iVmquuayT1C8jkPVfTTjTMhY",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Zeotap raises $18.5M for a customer ID platform it says was built with privacy in mind | TechCrunch",
+         "document": "https://techcrunch.com/2020/11/16/zeotap-raises-18-5m-for-a-customer-id-platform-it-says-was-built-with-privacy-in-mind",
+         "date": "2020-11-16"
+        }
+       ],
+       "id": "978061f6-6a8e-429f-afce-6ddd3244c5d8"
+      }
+     },
+     {
+      "id": "ddd4fc8f-e7ef-4136-a895-0ad5262ed38d",
+      "name": "KAYRROS",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "en.wikipedia.org",
+         "document": "https://en.wikipedia.org/wiki/Kayrros",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "Press release - Kayrros",
+         "document": "https://www.kayrros.com/press-release",
+         "date": "2026-01-22"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/kayrros/__cqSgBve9ASoVtknvgdnG_ta29cspvgHgcAeX-ndxMOE/funding-and-investors",
+         "date": "2026-07-29"
+        }
+       ],
+       "id": "fd3d0484-d7a5-4a65-ad9f-5e883662b91a"
+      }
+     },
+     {
+      "id": "eac378aa-88fa-4704-8574-2ae4520ec940",
+      "name": "Vapaus",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/vapaus/__602YawS92kXG9NX5t9Btf876Wml_s9-_Dr9oT51fH0I",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/vapaus/__602YawS92kXG9NX5t9Btf876Wml_s9-_Dr9oT51fH0I/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/trending-business-models/startups-in-fitness-management-system/__iwYOjczEO3aJLrPRHs0XxVJsd97JTp6XEuDRyh9YDxQ",
+         "date": "2026-08-25"
+        }
+       ],
+       "id": "c5922082-e493-44db-a0d4-f59ee0b5ceee"
+      }
+     },
+     {
+      "id": "ec0d52a1-b154-45b1-87bc-ef48289d1385",
+      "name": "GROUPE PETIT FORESTIER",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "EIB supports Petit Forestier Group's electric transition",
+         "document": "https://www.eib.org/en/press/all/2026-064-la-bei-soutient-la-transition-electrique-de-petit-forestier-group",
+         "date": "2026-02-18"
+        },
+        {
+         "name": "www.electrive.com",
+         "document": "https://www.electrive.com/2026/02/19/eib-loan-petit-forestier-to-procure-4000-evs",
+         "date": "2026-07-29"
+        }
+       ],
+       "id": "071f9579-84a1-4eb5-bfce-24d17d31667a"
+      }
+     },
+     {
+      "id": "f8206c9a-7bd6-4f8e-a6e4-dcef597e0fc5",
+      "name": "QUIBIM LIMITED",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Technology & Data for Venture Capital, Corp Dev, Investment Banks",
+         "document": "https://tracxn.com/d/companies/quibim/__KFy8wqeCtaXWdv7Y0nsB0E7O1xMsu7d1r3XiK4Z0PFc",
+         "date": "2026-07-27"
+        }
+       ],
+       "id": "ee92489f-b873-5a28-bde1-8f1b1b16dba3"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "2bfa3f3c-860c-5430-8a30-588e7d5edf68",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "webcapitalriesgo.com",
+         "document": "https://www.webcapitalriesgo.com/cabify-completa-su-ronda-de-e100m-con-la-entrada-de-riberas-y-el-ico/",
+         "date": "2023-03-28",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "elreferente.es",
+         "document": "https://elreferente.es/inversiones/cabify-recibe-91-millones-euros-ampliacion-de-capital/",
+         "date": "2023-04-03",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        },
+        {
+         "name": "eib.org",
+         "document": "https://www.eib.org/en/press/all/2022-547-cabify-receives-eur-40-million-eib-loan-to-finance-a-zero-emission-fleet-of-electric-vehicles-in-spain",
+         "date": "2022-12-19",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "cbfd21eb-1ece-5f44-9f89-c7fae35f4039"
+      }
+     },
+     {
+      "id": "6fbdf853-0c81-553e-8844-476d8bef40f0",
+      "name": "Debt Financing",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "presse-citron.net",
+         "document": "https://www.presse-citron.net/batteries-verkor-obtient-2-milliards-deuros-pour-sa-gigafactory-francaise/",
+         "date": "2023-09-14",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "is_lead": true,
+       "id": "b790110a-cd70-5a9b-95e4-1641a38183ba"
+      }
+     },
+     {
+      "id": "895de830-41a1-5405-bda9-732be28b1554",
+      "name": "Venture Debt",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "eib.org",
+         "document": "https://www.eib.org/en/press/all/2025-029-ineratec-s-e-fuel-demo-plant-in-frankfurt-gets-eur70-million-from-eib-eu-commission-and-breakthrough-energy",
+         "date": "2025-01-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "eib.org",
+         "document": "https://www.eib.org/en/press/all/2025-119-ineratec-secures-eur70-million-financing-commitment-for-europe-s-largest-e-fuel-production-plant-in-frankfurt",
+         "date": "2025-03-05",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "ineratec.de",
+         "document": "https://www.ineratec.de/en/news/ineratec-secures-eu70-million-financing-commitment-europes-largest-e-fuel-production-plant",
+         "date": "2025-03-05",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "10cb46ca-5b80-5131-8856-efd8a0f1eadb"
+      }
+     },
+     {
+      "id": "e1b8783f-ccf8-56a6-b27e-adb271ae5171",
+      "name": "Venture Debt",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "eib.org",
+         "document": "https://www.eib.org/en/press/all/2021-179-eib-boosts-the-expansion-of-red-points-with-eur15-million-in-financing",
+         "date": "2021-05-31",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "tech.eu",
+         "document": "https://tech.eu/2021/05/31/barcelona-based-brand-protection-platform-red-points-secures-up-to-e15-million-in-debt-financing-from-the-eib/",
+         "date": "2021-05-31",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "is_lead": true,
+       "id": "721f61ee-e6a0-57fc-bd38-16affe4e8531"
+      }
+     },
+     {
+      "id": "e2b21cec-7a40-5835-9227-54cded73efe8",
+      "name": "Seed",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "LENDER",
+       "sources": [
+        {
+         "name": "eib.org",
+         "document": "https://www.eib.org/en/press/all/2024-338-the-eib-and-stark-future-sign-a-eur40-million-loan-to-invest-in-innovation-and-new-solutions-for-the-electric-motorcycle-sector",
+         "date": "2024-09-16",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "is_lead": true,
+       "id": "d5486162-f517-57cc-b1fc-49702757ddfb"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_CORPORATE_EVENT": [
+     {
+      "id": "01ee3fc2-7ff1-450e-8ea5-65cc1d2610f0",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Financial close for \u00a32.6bn Beatrice offshore wind farm",
+         "document": "https://www.infrastructureinvestor.com/financial-close-for-2-6bn-beatrice-offshore-wind-farm",
+         "date": "2016-05-24"
+        },
+        {
+         "name": "www.nsenergybusiness.com",
+         "document": "https://www.nsenergybusiness.com/projects/beatrice-offshore-wind-farm-scotland",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Project Beatrice - Project Funding Case Study",
+         "document": "https://www.mufgemea.com/case-studies/project-beatrice",
+         "date": "2026-01-01"
+        },
+        {
+         "name": "Beatrice offshore refi cuts 100bp-plus off original pricing",
+         "document": "https://www.uxolo.com/news/21868/beatrice-offshore-refi-cuts-100bp-plus-off-original-pricing",
+         "date": "2019-07-16"
+        }
+       ],
+       "event_date": "2016-05-01",
+       "id": "f78c7ff6-caf7-4a9a-b5c3-c5ffcca43404"
+      }
+     },
+     {
+      "id": "02458609-b9b0-45c8-918b-ed41737914ff",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "D\u00e4nemark: EIB-Kredit \u00fcber 120 Mio. Euro an Demant f\u00fcr die Entwicklung von H\u00f6rger\u00e4ten",
+         "document": "https://www.eib.org/en/press/all/2024-513-hearing-aid-development-to-get-a-boost-from-eur120-million-eib-loan-to-demant",
+         "date": "2024-12-17"
+        }
+       ],
+       "event_date": "2024-12-17",
+       "id": "d88004e2-3b49-4804-b5c3-ff5b97a3ff4b"
+      }
+     },
+     {
+      "id": "02565950-a087-486f-ab47-fe9279f8826f",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Denmark: EIB renews backing for Copenhagen Airport",
+         "document": "https://www.eib.org/en/press/all/2018-219-eib-renews-backing-for-copenhagen-airport",
+         "date": "2018-08-14"
+        }
+       ],
+       "event_date": "2018-08-14",
+       "id": "5e5779c0-378f-41df-a1f7-1a6f921449c8"
+      }
+     },
+     {
+      "id": "047a7918-b10f-4966-835c-5a1c1abf1317",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "en.wikipedia.org",
+         "document": "https://en.wikipedia.org/wiki/Kayrros",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "Press release - Kayrros",
+         "document": "https://www.kayrros.com/press-release",
+         "date": "2026-01-22"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/kayrros/__cqSgBve9ASoVtknvgdnG_ta29cspvgHgcAeX-ndxMOE/funding-and-investors",
+         "date": "2026-07-29"
+        }
+       ],
+       "event_date": "2022-03-22",
+       "id": "be218d46-9856-4c74-bce3-d78257921884"
+      }
+     },
+     {
+      "id": "056e1b47-3530-4d71-b509-f751cde87697",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Bolt company information, funding & investors",
+         "document": "https://app.dealroom.co/companies/bolt1",
+         "date": "2013-08-01"
+        }
+       ],
+       "event_date": "2020-01-01",
+       "id": "16cffdd7-60f3-4bf0-b57d-81f25bf264a7"
+      }
+     },
+     {
+      "id": "071c0c10-5a96-4b4e-9984-e3304a090f21",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Denmark: EIB boosts development of next generation hearing aids by William Demant",
+         "document": "https://www.eib.org/en/press/all/2015-113-eib-boosts-development-of-next-generation-hearing-aids-by-william-demant",
+         "date": "2015-05-29"
+        }
+       ],
+       "event_date": "2015-05-29",
+       "id": "fa19f55b-1a9a-4ee8-a44b-ee30a17101d9"
+      }
+     },
+     {
+      "id": "0ac55c31-ee50-4fa8-87fb-bdcba04e7b88",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/vapaus/__602YawS92kXG9NX5t9Btf876Wml_s9-_Dr9oT51fH0I",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/vapaus/__602YawS92kXG9NX5t9Btf876Wml_s9-_Dr9oT51fH0I/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/trending-business-models/startups-in-fitness-management-system/__iwYOjczEO3aJLrPRHs0XxVJsd97JTp6XEuDRyh9YDxQ",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2024-08-15",
+       "id": "1abe7671-3304-4152-81dd-d1b0bf737aa1"
+      }
+     },
+     {
+      "id": "0de9588c-de94-43e8-8eca-85185a0e596c",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/wandercraft/__gx_83VxHDkEsbamKM11AAMTg9f9EM9lhbVdOhvdfohg/funding-and-investors",
+         "date": "2026-07-29"
+        }
+       ],
+       "event_date": "2024-04-05",
+       "id": "e5eab543-abdd-4beb-bc14-43db5f38318b"
+      }
+     },
+     {
+      "id": "0f3da1be-968f-417f-b9eb-e46b409a0e93",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "www.windpowermonthly.com",
+         "document": "https://www.windpowermonthly.com/article/1189844/wpd-achieves-financial-close-butendiek",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Marguerite acquires stake in the Butendiek offshore wind farm - Marguerite",
+         "document": "https://www.marguerite.com/marguerite-acquires-stake-in-the-butendiek-offshore-wind-farm",
+         "date": "2013-02-08"
+        },
+        {
+         "name": "www.energymonitor.ai",
+         "document": "https://www.energymonitor.ai/projects/butendiek-offshore-wind-farm-north-sea",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2013-02-08",
+       "id": "3ebae301-f7af-499f-8e76-ec47a9e89193"
+      }
+     },
+     {
+      "id": "0fb5da9e-67ed-4a41-85e2-5f720dc79f85",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Slovenia: EIB provides first direct financing under EFSI and praises the country\u2019s renewed investment activity",
+         "document": "https://www.eib.org/en/press/all/2017-321-eib-provides-first-direct-financing-under-efsi-in-slovenia-and-praises-the-countrys-renewed-investment-activity",
+         "date": "2017-11-16"
+        },
+        {
+         "name": "EIB finances tolling infrastructure in Slovenia",
+         "document": "https://highways.today/2017/11/16/eib-finances-tolling-infrastructure-slovenia",
+         "date": "2017-11-16"
+        },
+        {
+         "name": "DARS - FREE FLOW TOLLING SYSTEM",
+         "document": "https://www.eib.org/en/projects/all/20160945",
+         "date": "2017-06-01"
+        }
+       ],
+       "event_date": "2017-11-16",
+       "id": "a98845b2-35f0-4c4d-9f74-5ac03c22d30d"
+      }
+     },
+     {
+      "id": "104920e9-69d3-4981-9816-9141ff2ba4de",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Denmark: #InvestEU: European support for Copenhagen airport expansion",
+         "document": "https://www.eib.org/en/press/all/2016-261-investeu-european-support-for-copenhagen-airport-expansion",
+         "date": "2016-10-25"
+        },
+        {
+         "name": "www.airport-technology.com",
+         "document": "https://www.airport-technology.com/projects/copenhagen-airport-expansion",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2016-10-25",
+       "id": "0dbf8409-1df6-4515-aa67-9e817de4c3d3"
+      }
+     },
+     {
+      "id": "1235afb0-b280-4dde-bd12-373408c0a287",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/red-points/__jKaw26TNHmKW7-XJ2h8igsDjHjrDL3DpQFuHNPnsk40/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/red-points/__jKaw26TNHmKW7-XJ2h8igsDjHjrDL3DpQFuHNPnsk40",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2021-05-31",
+       "id": "5a893664-1afd-4bd8-a555-effb70a5ace5"
+      }
+     },
+     {
+      "id": "15e8c8e1-9736-416f-8f5b-5f5e59e75283",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Czech Republic: EIB signs a \u20ac70 million loan with MONETA to support SMEs and mid-cap companies",
+         "document": "https://www.eib.org/en/press/all/2020-383-czech-republic-eib-signs-a-eur70-million-loan-with-moneta-to-support-smes-and-mid-cap-companies",
+         "date": "2020-12-18"
+        },
+        {
+         "name": "Czech Republic: EIB provides financing for 'Moneta Covid19 Response for SME & Midcaps' - Global Trade Alert",
+         "document": "https://globaltradealert.org/state-act/55188",
+         "date": "2020-12-10"
+        }
+       ],
+       "event_date": "2020-12-10",
+       "id": "84470c21-8e88-486b-b715-5146362ee24a"
+      }
+     },
+     {
+      "id": "17d0141b-40b3-4585-96f4-63609c565ef5",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/priothera/__g-cE-HUidg4kcjSmF8Wfpj5K5xcRBhPEWs3MRmRb4w0/funding-and-investors",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2022-02-23",
+       "id": "7f85cc8b-4494-4016-b293-6d66f0565e0e"
+      }
+     },
+     {
+      "id": "1a75a5f6-372e-432b-a92f-1d7a11e024a8",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "ZSR DEVINSKA NOVA VES RAIL LINE - GREEN LOAN",
+         "document": "https://www.eib.org/en/projects/all/20210192",
+         "date": "2022-09-28"
+        },
+        {
+         "name": "www.eib.org",
+         "document": "https://www.eib.org/files/documents/board-of-directors-minutes-20221214-en.pdf",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "ewsdata.rightsindevelopment.org",
+         "document": "https://ewsdata.rightsindevelopment.org/projects/EIB-20210192/pdf",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2022-12-14",
+       "id": "9ca46ab2-5513-48ae-aeb6-33e5468be905"
+      }
+     },
+     {
+      "id": "1b1eda8b-da01-4257-93e0-3f015ed35d9f",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/blickfeld/__SuZfBrkB3-hhkR-wH-YhRQI4hf-ZV7TvU4Hy_UzYm5Y/funding-and-investors",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2022-07-15",
+       "id": "0e8142e8-8eb9-4953-956f-bd2669edb043"
+      }
+     },
+     {
+      "id": "1d06e141-5924-4753-82c5-4c3e4ea99ed3",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/biolamina/__Ss42hg56IQRnR1oDQacMx7MqwijR6IQZOLQ2JwUolwU",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/62650-54",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2023-09-12",
+       "id": "3f30866e-0f70-44c9-ba73-1a4db3166087"
+      }
+     },
+     {
+      "id": "1ed42c21-45f3-46c6-8259-d0b5385e3563",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "\u201cAl-Shorouk\u201d upgrades printers, improving product quality",
+         "document": "https://ebrdgeff.com/projects/al-shorouk-upgrades-printers-improving-product-quality",
+         "date": "2017-01-01"
+        },
+        {
+         "name": "GEFF Supports Al-Shorouk in Improving its Products\u2019 Quality",
+         "document": "https://ebrdgeff.com/egypt-bm/projects/geff-supports-al-shorouk-in-improving-its-products-quality",
+         "date": "2017-01-01"
+        }
+       ],
+       "event_date": "2020-06-21",
+       "id": "357cd7c8-1011-4c95-9fd3-812f90efae22"
+      }
+     },
+     {
+      "id": "20d62353-8434-4848-a4e6-079855595b6e",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Netherlands: Royal Schiphol Group enters into a loan agreement with the EIB for infrastructure investments",
+         "document": "https://www.eib.org/en/press/all/2025-026-royal-schiphol-group-enters-into-a-loan-agreement-with-the-eib-for-infrastructure-investments",
+         "date": "2025-01-28"
+        },
+        {
+         "name": "Schiphol to borrow \u20ac400 million from European Investment Bank for investment plans",
+         "document": "https://nltimes.nl/2025/01/29/schiphol-borrow-eu400-million-european-investment-bank-investment-plans",
+         "date": "2025-01-29"
+        },
+        {
+         "name": "Netherlands: Royal Schiphol Group enters into a loan agreement with the EIB for infrastructure investments - The European Sting - Critical News & Insights on European Politics, Economy, Foreign Affairs, Business & Technology - europeansting.com -",
+         "document": "https://europeansting.com/2025/01/29/netherlands-royal-schiphol-group-enters-into-a-loan-agreement-with-the-eib-for-infrastructure-investments",
+         "date": "2025-01-29"
+        }
+       ],
+       "event_date": "2025-01-28",
+       "id": "2343606b-7852-41eb-8710-e6a4b5ab7c25"
+      }
+     },
+     {
+      "id": "212b9949-f58a-4ad3-a82c-55a3da5dca87",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Czech Republic: MONETA increases support to SMEs through partnership with EIB",
+         "document": "https://www.eib.org/en/press/all/2017-284-moneta-increases-support-to-czech-smes-through-partnership-with-eib",
+         "date": "2017-10-23"
+        }
+       ],
+       "event_date": "2017-10-23",
+       "id": "26ab25c5-e8e9-4247-8e72-ae71aacd17a1"
+      }
+     },
+     {
+      "id": "2184e316-1459-4446-99a6-fc77b96815a3",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/overturelife/__xfErrixdDnkzBsWU5cUZIj0ICdCXvp58hksCjg9pxWI/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/overture-life/company_financials",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2025-04-25",
+       "id": "da7574ad-ae97-4db0-a175-9f050ec6a817"
+      }
+     },
+     {
+      "id": "22641934-0394-40d6-8c50-48a26ca7c55a",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Spain: Indra Group to step up research and development of defence and space technologies with \u20ac385 million in EIB financing",
+         "document": "https://www.eib.org/en/press/all/2025-288-spanish-company-indra-group-to-step-up-research-and-development-of-defence-and-space-technologies-with-eur385-million-in-eib-financing",
+         "date": "2025-07-15"
+        },
+        {
+         "name": "INDRA RDI AND TECHNOLOGY CENTER",
+         "document": "https://www.eib.org/en/projects/all/20240383",
+         "date": "2025-06-19"
+        },
+        {
+         "name": "The EIB grants 385 million euros in financing to Indra Group to boost its R&D in defence and space technologies",
+         "document": "https://www.atalayar.com/en/articulo/economy-and-business/the-eib-grants-385-million-euros-in-financing-to-indra-group-to-boost-its-r-d-in-defence-and-space-technologies/20250715134802216833.html",
+         "date": "2025-07-16"
+        }
+       ],
+       "event_date": "2025-07-14",
+       "id": "56b45b3d-4c38-448b-8f51-4cf4fe858a05"
+      }
+     },
+     {
+      "id": "24899be0-9b42-4a9b-a45d-14092eccdc5c",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "ZSR PUCHOV - ZILINA RAIL LINE UPGR (FL20140465)",
+         "document": "https://www.eib.org/en/projects/all/20180419",
+         "date": "2018-04-19"
+        },
+        {
+         "name": "EIB approves a railway project in Slovakia",
+         "document": "https://www.railwaypro.com/wp/eib-approves-a-railway-project-in-slovakia",
+         "date": "2019-01-22"
+        }
+       ],
+       "event_date": "2019-01-01",
+       "id": "3b355a81-4d98-4cd5-b237-8c19a44aeaec"
+      }
+     },
+     {
+      "id": "24fbf4bd-ae43-43d9-875f-915b846fa146",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/quantum-systems/__sXYOkm8VaEm5_Ehxyly1geYDZyqVa27MHL-T3Fcky_o/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2026-02-13",
+       "id": "362e32ca-e151-4377-9c85-97ba57806283"
+      }
+     },
+     {
+      "id": "275dbed8-a15c-47ee-9b0b-148f9f5a7a96",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/forto/__PmX-gjK5qOXutFJSnOH6Az6M10h7oOTP13YPUtUU1Vw/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2020-06-29",
+       "id": "b4a62d1b-29ae-4123-b4a4-6731c019c7d4"
+      }
+     },
+     {
+      "id": "29195f74-6224-4acb-8b67-e54706783490",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "EUR 160 mio to DARS to finance E70 motorway in Slovenia",
+         "document": "https://www.eib.org/en/press/all/1999-115-eur-160-mio-to-dars-to-finance-e70-motorway-in-slovenia",
+         "date": "1999-11-30"
+        },
+        {
+         "name": "HIGHWAYS IV",
+         "document": "https://www.eib.org/en/projects/all/19982218",
+         "date": "2025-01-01"
+        }
+       ],
+       "event_date": "1999-11-30",
+       "id": "7cba805c-f382-40d2-865c-b07b5bc3ce8f"
+      }
+     },
+     {
+      "id": "29f3167d-00c2-4f71-9783-d3ee9179b136",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Rwanda: EUR 8m for small businesses",
+         "document": "https://www.eib.org/en/press/all/2014-015-eur-8m-for-small-businesses-in-rwanda",
+         "date": "2014-01-29"
+        },
+        {
+         "name": "I&M bank signs EU funding deal",
+         "document": "https://goodnewsrwanda.wordpress.com/2014/01/29/im-bank-signs-eu-funding-deal",
+         "date": "2014-01-29"
+        },
+        {
+         "name": "I&M Bank secures Rwf7.6b loan to fund small businesses",
+         "document": "https://www.newtimes.co.rw/article/103182/News/im-bank-secures-rwf76b-loan-to-fund-small-businesses/amp",
+         "date": "2014-01-29"
+        }
+       ],
+       "event_date": "2014-01-28",
+       "id": "bea819aa-3ef8-47a7-85b7-549cad5c07aa"
+      }
+     },
+     {
+      "id": "2d5414a2-2710-4ba9-b34d-8fe9b02c77b5",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "European Investment Bank and Orano sign a loan agreement for 400 million euros relating to the project to extend the Georges Besse 2 uranium enrichment plant",
+         "document": "https://www.orano.group/en/news/news-group/2025/march/european-investment-bank-and-orano-sign-a-loan-agreement-for-400-million-euros-relating-to-the-project-to-extend-the-georges-besse-2-uranium-enrichment-plant",
+         "date": "2025-10-03"
+        },
+        {
+         "name": "France: EIB and Orano sign a loan agreement for \u20ac400 million relating to the project to extend the Georges Besse 2 uranium enrichment plant",
+         "document": "https://www.eib.org/en/press/all/2025-130-eib-and-orano-sign-a-loan-agreement-for-400-million-euros-relating-to-the-project-to-extend-the-georges-besse-2-uranium-enrichment-plant",
+         "date": "2025-03-10"
+        },
+        {
+         "name": "www.nucnet.org",
+         "document": "https://www.nucnet.org/news/france-s-orano-gets-eur400-million-investment-bank-loan-for-uranium-enrichment-expansion-project-3-1-2025",
+         "date": "2026-07-29"
+        }
+       ],
+       "event_date": "2025-03-10",
+       "id": "7459a26b-94b0-4f35-bdac-d0090edc47a2"
+      }
+     },
+     {
+      "id": "2d7c96d6-fc13-4448-a633-2fa06b597245",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Italy: EIB and Terna sign \u20ac400 million loan to upgrade national power grid",
+         "document": "https://www.eib.org/en/press/all/2024-391-eib-and-terna-sign-eur400-million-loan-to-upgrade-national-power-grid",
+         "date": "2024-10-24"
+        }
+       ],
+       "event_date": "2024-01-01",
+       "id": "463a1821-80ca-43ef-9d96-2fdfe9b3d711"
+      }
+     },
+     {
+      "id": "2eca4e6e-821b-405e-91f5-e201922cd47b",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "DEMANT MEDICAL TECHNOLOGY RDI",
+         "document": "https://www.eib.org/en/projects/all/20220389",
+         "date": "2022-10-27"
+        }
+       ],
+       "event_date": "2022-10-27",
+       "id": "fe7231eb-4dd0-48f5-a685-1403992f0f82"
+      }
+     },
+     {
+      "id": "2ecb23e2-cc2a-42f3-8108-8004a0f3289d",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "ARCH COLD CHAIN SOLUTIONS EAST AFRICA FUND (SA) PARTNERSHIP",
+         "document": "https://www.eib.org/en/products/equity/funds/arch-cold-chain-solutions-east-africa-fund",
+         "date": "2023-06-22"
+        },
+        {
+         "name": "www.globalprivatecapital.org",
+         "document": "https://www.globalprivatecapital.org/newsroom/eib-commits-usd18m-to-arch-cold-chain-solutions-east-africa-fund",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2021-01-01",
+       "id": "fb97adc6-c4f5-4241-9632-be4de778dd74"
+      }
+     },
+     {
+      "id": "34eba9da-af81-47cb-9cb6-a0685732b243",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "The European Investment Bank grants Orano a loan of \u20ac125 million to finance Orano Med's innovations and industrial infrastructure | Orano",
+         "document": "https://www.orano.group/en/news/news-group/2026/july/the-european-investment-bank-grants-orano-a-loan-of-125-million-to-finance-orano-med-s-innovations-and-industrial-infrastructure",
+         "date": "2026-01-07"
+        },
+        {
+         "name": "guce",
+         "document": "https://finance.yahoo.com/healthcare/articles/european-investment-bank-grants-orano-131900383.html",
+         "date": "2017-01-01"
+        }
+       ],
+       "event_date": "2026-07-01",
+       "id": "7228f1ba-ba19-43ed-ac2b-69f8bd117a15"
+      }
+     },
+     {
+      "id": "3636e21c-cff2-43cb-be18-9723d77365af",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Terna company information, funding & investors",
+         "document": "https://radar-innovation.dealroom.co/companies/terna_s_p_a",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2023-03-30",
+       "id": "c79b0134-9df1-401a-bf0e-c4137e5cd27f"
+      }
+     },
+     {
+      "id": "38d2c6e2-a1a0-4584-9b36-c39ed46b0c27",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/deepull/__FyuZnWWf7buCrfLNCBA2K4zdXgkHKZ-QOjpTF8Rq1ic/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/deepull/__FyuZnWWf7buCrfLNCBA2K4zdXgkHKZ-QOjpTF8Rq1ic",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/deepull/signals_and_news",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/private-equity/merieuxequitypartners/__IxLLOnDfIEkNVsomfU7Fq1tX1citE3FOgejup9t8j_E",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/venture-capital/aliath-bioventures/__qE8k36-s4d7cEO3F3CQMdkp2FfGQVpG-FAIrNRIf9vk",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2025-04-29",
+       "id": "ca302d25-8617-454b-b3f5-c95617ac9671"
+      }
+     },
+     {
+      "id": "39bb84ff-a2a0-4de2-aa15-22ddf3d10829",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "The Netherlands: EIB to provide EUR 350m for Schiphol\u2019s innovative baggage system programme",
+         "document": "https://www.eib.org/en/press/all/2010-130-eib-to-provide-eur-350m-for-schiphols-innovative-baggage-system-programme",
+         "date": "2010-07-29"
+        },
+        {
+         "name": "www.reuters.com",
+         "document": "https://www.reuters.com/article/business/aerospace-defense/schiphol-airport-gets-european-investment-bank-loan-idUSLDE66R1UM",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2010-07-29",
+       "id": "627b6050-0cdf-4c00-a687-cb760e194017"
+      }
+     },
+     {
+      "id": "3b9eba7e-05c6-4b80-83d7-4134822ddda2",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "MOPANI COPPER PROJECT",
+         "document": "https://www.eib.org/en/projects/all/20040101",
+         "date": "2004-01-01"
+        },
+        {
+         "name": "www.eib.org",
+         "document": "https://www.eib.org/attachments/press/mopani_copper_mines_summary_of_the_main_findings_en.pdf",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "European Investment Bank halts loans to Glencore",
+         "document": "https://www.theguardian.com/business/2011/may/31/eib-halts-loans-to-glencore",
+         "date": "2011-05-31"
+        }
+       ],
+       "event_date": "2005-02-25",
+       "id": "35fccb98-4a9b-4c34-b3f5-fe515e9f0391"
+      }
+     },
+     {
+      "id": "43059de3-33c7-456a-bf58-e8867c629ca6",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "equitygroupholdings.com",
+         "document": "https://equitygroupholdings.com/equity-continues-its-commitment-to-msmes-to-sustain-and-scale-their-operations-with-funds-from-leading-european-institutions",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "Team Europe partners with Equity Bank to support Kenyan business and agriculture amid COVID-19",
+         "document": "https://international-partnerships.ec.europa.eu/news-and-events/news/team-europe-partners-equity-bank-support-kenyan-business-and-agriculture-amid-covid-19-2021-03-03_en",
+         "date": "2021-03-03"
+        }
+       ],
+       "event_date": "2021-03-03",
+       "id": "cb43ee25-1346-4bef-9617-60908e191c48"
+      }
+     },
+     {
+      "id": "45b067a8-f153-4a82-bc24-5c2ed6eb655b",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "HIGHWAYS VI",
+         "document": "https://www.eib.org/en/projects/all/20030093",
+         "date": "2004-06-10"
+        }
+       ],
+       "event_date": "2004-09-27",
+       "id": "c6218b7a-00fc-42bc-9d7a-7fe2692bdf4e"
+      }
+     },
+     {
+      "id": "47b86e66-69db-480c-84da-15b3a9b31c13",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/canatu/__mggktooBBD5XmYzlq3y9djv3Wu-IkGmTn_HLemSYaQM/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2016-09-07",
+       "id": "c3cfd867-cca7-423c-8260-26af12e2e67f"
+      }
+     },
+     {
+      "id": "481a1001-7270-4d2a-87f1-24c47e72c8bd",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/access-bank/__ttgbHiRX30GMgdlNejEVt0T4QZ-7dMfQQ-34HIVsVYI",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2020-08-19",
+       "id": "de0f2d51-8d50-4c37-a80d-a5f23727e00f"
+      }
+     },
+     {
+      "id": "497a854d-244f-4fbb-8025-7e1a38b78885",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Butendiek Owners Seal EUR 950 Million Refinancing Deal",
+         "document": "https://www.offshorewind.biz/2017/03/10/butendiek-owners-seal-eur-950-million-refinancing-deal",
+         "date": "2017-03-10"
+        },
+        {
+         "name": "renewablesnow.com",
+         "document": "https://renewablesnow.com/news/butendiek-offshore-wind-farm-closes-eur-950m-refinancing-561419",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Successful Refinancing of Butendiek Offshore Wind Farm - Marguerite",
+         "document": "https://www.marguerite.com/successful-refinancing-of-butendiek-offshore-wind-farm",
+         "date": "2017-03-10"
+        },
+        {
+         "name": "Noerr advises EIB on \u20ac950 million refinancing of North Sea Butendiek wind farm",
+         "document": "https://www.noerr.com/en/press/noerr-advises-eib-on-eu950-million-refinancing-of-north-sea-butendiek-wind-farm",
+         "date": "2017-03-23"
+        }
+       ],
+       "event_date": "2017-03-10",
+       "id": "f526b2c9-eb0e-4756-bac8-07a64e161ba2"
+      }
+     },
+     {
+      "id": "4a480758-e018-48fd-bcff-faf530cd5e99",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "techcrunch.com",
+         "document": "https://techcrunch.com/2017/09/26/mariadb-raises-27-million/",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2017-09-26",
+       "id": "27f8e668-18ec-4eda-8148-31744395a11e"
+      }
+     },
+     {
+      "id": "4aad5a04-348a-4971-a1bf-fd62108c08a0",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "www.marketscreener.com",
+         "document": "https://www.marketscreener.com/quote/stock/MONETA-MONEY-BANK-28642895/news/MONETA-Money-Bank-EUR-100-million-EIB-loan-to-MONETA-Money-Bank-will-support-small-and-medium-size-46299358",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2024-03-27",
+       "id": "885a7970-2042-4062-a221-0ccfcf588c26"
+      }
+     },
+     {
+      "id": "4fec22e3-4e7d-451f-b6de-0b6bc501a544",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/quantum-systems/__sXYOkm8VaEm5_Ehxyly1geYDZyqVa27MHL-T3Fcky_o/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2022-06-08",
+       "id": "d9db40af-04cd-4da7-8494-e24789f7cda8"
+      }
+     },
+     {
+      "id": "5112d761-a11e-4a96-a051-a609c8b2271f",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/sunfire/__3Ju34MSNiI7ke1Gpmr3O1rkkfc23WikSyuer3Wpoa9E/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2024-03-05",
+       "id": "1ba41e52-0e30-4501-90f6-02dde2dfb950"
+      }
+     },
+     {
+      "id": "53a9bca0-f058-4351-a091-f35445184679",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "NEOENERGIA GREEN ENERGY FL",
+         "document": "https://www.eib.org/en/projects/all/20190576",
+         "date": "2019-10-10"
+        }
+       ],
+       "event_date": "2019-12-04",
+       "id": "72aede35-edf5-43d1-a6c6-4953fd6e9815"
+      }
+     },
+     {
+      "id": "55aeef48-0379-4600-b886-fadb7636e2ec",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Investment Plan for Europe: safer, smoother travel for Europeans as the EIB lends \u20ac90 million for expansion of the Karavanke Tunnel in Slovenia",
+         "document": "https://www.eib.org/en/press/all/2020-052-investment-plan-for-europe-safer-smoother-travel-for-europeans-as-the-eib-lends-eur-90-million-for-expansion-of-the-karavanke-tunnel-in-slovenia",
+         "date": "2020-02-13"
+        },
+        {
+         "name": "EIB lending 90 mln euro to Slovenia for construction of second pipe of Karavanke tunnel",
+         "document": "https://seenews.com/news/eib-lending-90-mln-euro-to-slovenia-for-construction-of-second-pipe-of-karavanke-tunnel-1162888",
+         "date": "2020-02-13"
+        }
+       ],
+       "event_date": "2020-02-13",
+       "id": "d82076a7-5c67-4238-bf45-424baa7cbac7"
+      }
+     },
+     {
+      "id": "5d21f1a1-a905-4a46-935d-04924db166e3",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/packhelp/__4JZrLloHAr4kVvW8ClB29o3kjRMevGEXO2DTrSMiokI/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Packhelp bags $45.6M to expand its custom packaging biz",
+         "document": "https://techcrunch.com/2021/11/18/packhelp-series-b",
+         "date": "2021-11-18"
+        }
+       ],
+       "event_date": "2021-02-05",
+       "id": "38935c3c-c6d4-4442-80cc-da5b7ca0e555"
+      }
+     },
+     {
+      "id": "5e48e222-c137-4355-b422-62836e37796b",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/fazua/__6HtlbNWw5atux2ZI63AhRKseFF7uzyiE1i8q4YC7ZrM",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "pitchbook.com",
+         "document": "https://pitchbook.com/profiles/company/61543-99",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2022-02-10",
+       "id": "3fb65269-b532-43b9-bc67-1503f4958a1f"
+      }
+     },
+     {
+      "id": "66d9a6d0-c011-4c71-98a1-51cc50a326d2",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Terna: EIB provides the last tranche of the \u20ac1.9 billion financing for the Tyrrhenian Link - Terna spa",
+         "document": "https://www.terna.it/en/media/press-releases/detail/eib-last-tranche-financing-tyrrhenian-link",
+         "date": "2020-01-26"
+        }
+       ],
+       "event_date": "2024-02-01",
+       "id": "ed375410-499a-436b-a3d1-064402dadffc"
+      }
+     },
+     {
+      "id": "67a186a0-c5ac-4d53-aff4-95dd24846569",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Gropyus plans to use robots to help rebuild Ukraine better and faster | TechCrunch",
+         "document": "https://techcrunch.com/2024/10/08/gropyus-plans-to-use-robots-to-help-rebuild-ukraine-better-and-faster",
+         "date": "2024-10-08"
+        }
+       ],
+       "event_date": "2024-10-07",
+       "id": "54f4ffba-6add-48ad-9967-544fe28a1c1a"
+      }
+     },
+     {
+      "id": "6860c97f-342e-4cb5-8f8c-baf7f0b7a394",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "European Investment Bank allocation to Cameroon hits 583 billion FCFA",
+         "document": "https://theguardianpostcameroon.com/post/4726/fr/european-investment-bank-allocation-cameroon-hits-583-billion",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2022-05-06",
+       "id": "23491b8f-b47a-43cd-ac25-ec80706a52f1"
+      }
+     },
+     {
+      "id": "6b220bba-7ea6-419b-aedd-751eb2bc6d42",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "EIB signs \u20ac115 million loan to Luminor to support businesses across the Baltics",
+         "document": "https://www.eib.org/en/press/all/2023-473-eib-signs-eur115-million-loan-to-luminor-to-support-businesses-across-the-baltics",
+         "date": "2023-11-27"
+        },
+        {
+         "name": "Estonia, Lithuania and Latvia: EIB provides financing for 'Luminor Loan for SMEs and Midcaps' - Global Trade Alert",
+         "document": "https://globaltradealert.org/state-act/83056-estonia-lithuania-and-latvia-eib-provides-financing-for-luminor-loan-for-smes-and-midcaps",
+         "date": "2023-11-21"
+        }
+       ],
+       "event_date": "2023-11-27",
+       "id": "28341511-5500-4efc-92fe-9856694030be"
+      }
+     },
+     {
+      "id": "6bbdc8b2-4b38-458a-8fe1-99fb3dc8d383",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Slovenia to get expressway upgrade with \u20ac120 million EIB loan to motorway operator DARS",
+         "document": "https://www.eib.org/en/press/all/2025-209-slovenia-to-get-expressway-upgrade-with-eur120-million-eib-loan-to-motorway-operator-dars",
+         "date": "2025-05-15"
+        },
+        {
+         "name": "DARS - NOVO MESTO EASTERN BYPASS",
+         "document": "https://www.eib.org/en/projects/all/20190720",
+         "date": "2024-10-16"
+        },
+        {
+         "name": "EIB lends Slovenia's DARS 120 mln euro for infrastructure project",
+         "document": "https://seenews.com/news/eib-lends-slovenias-dars-120-mln-euro-for-infrastructure-project-1275349",
+         "date": "2025-05-16"
+        }
+       ],
+       "event_date": "2025-04-10",
+       "id": "9c3116b2-58a9-41e4-8a39-76352593672e"
+      }
+     },
+     {
+      "id": "6c1273d4-39ad-404b-a410-4d59aee61806",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "RENAULT TANGER-FINANCEMENT INTERMEDIE",
+         "document": "https://www.eib.org/en/projects/all/20090278",
+         "date": "2009-09-23"
+        }
+       ],
+       "event_date": "2012-09-03",
+       "id": "1e354a99-0bba-42d8-b699-3ee322c9cc79"
+      }
+     },
+     {
+      "id": "6d0c98a4-2269-49fe-b760-b361b072aea3",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "New investments to expand COSUCRA's production capacity",
+         "document": "https://www.cosucra.com/new-investments-to-expand-cosucras-production-capacity",
+         "date": "2021-07-09"
+        },
+        {
+         "name": "Cosucra receives investment to increase production capacity",
+         "document": "https://nutraceuticalbusinessreview.com/cosucra-receives-investment-to-increase-production-capacity-177809",
+         "date": "2000-01-01"
+        }
+       ],
+       "event_date": "2021-07-09",
+       "id": "24c6e774-a743-45f5-9fc8-c0ae184b485c"
+      }
+     },
+     {
+      "id": "6d53fd07-a082-47f7-a887-8e3da197c334",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "French battery maker Verkor scores $2.1B to build gigafactory | TechCrunch",
+         "document": "https://techcrunch.com/2023/09/14/french-battery-maker-verkor-scores-2-1b-to-build-gigafactory",
+         "date": "2023-09-14"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/verkor/__65WMD08xN57PgLIKPfuTJ0ZAoAhVl4OjRTCXV88LoJs",
+         "date": "2026-07-29"
+        }
+       ],
+       "event_date": "2023-09-14",
+       "id": "187f8270-13ce-4500-8a42-44b08efa7cc8"
+      }
+     },
+     {
+      "id": "6dca40af-7dcf-440b-8e55-a7bb2dc607f1",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "EUR 175 mio for motorway construction development in Slovenia",
+         "document": "https://www.eib.org/en/press/all/1999-048-eur-175-mio-for-motorway-construction-development-in-slovenia",
+         "date": "1999-06-07"
+        }
+       ],
+       "event_date": "1998-03-06",
+       "id": "6394b746-ff35-45f5-96fc-9650513e5a30"
+      }
+     },
+     {
+      "id": "6f6195af-1870-4016-a2d4-bd7f6c487f05",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Meridiam announces the closing of the reopening of its Africa fund at \u20ac546 million, 2.5 times its initial size",
+         "document": "https://www.prnewswire.com/news-releases/meridiam-announces-the-closing-of-the-reopening-of-its-africa-fund--at-546-million-2-5-times-its-initial-size-300820084.html",
+         "date": "2019-03-28"
+        },
+        {
+         "name": "campbell-lutyens.com",
+         "document": "https://campbell-lutyens.com/clients/case-studies/all/meridiam-infrastructure-africa-fund",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "Meridiam closes its Africa fund",
+         "document": "https://www.africaglobalfunds.com/news/private-equity/fundraising/meridiam-closes-its-africa-fund",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "Meridiam Closes Additional Funding Round For Its Infrastructure Africa Fund",
+         "document": "https://weetracker.com/2019/04/01/meridiam-closes-additional-funding-round-miaf",
+         "date": "2019-04-01"
+        },
+        {
+         "name": "Meridiam Infrastructure raises \u20ac546m",
+         "document": "https://www.infrastructureinvestor.com/meridiam-infrastructure-raises-e546m",
+         "date": "2019-04-01"
+        },
+        {
+         "name": "Meridiam Infrastructure Africa Fund closes at EUR546 | Infrastructure Finance & Investment",
+         "document": "https://www.infrapppworld.com/update/meridiam-infrastructure-africa-fund-closes-at-eur546",
+         "date": "2019-03-29"
+        }
+       ],
+       "event_date": "2019-03-28",
+       "id": "9a8c3825-a189-40e4-ab13-10e5d27eb542"
+      }
+     },
+     {
+      "id": "73c45bd4-8e13-4ba4-a70c-9d9cab866288",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "HIGHWAYS V",
+         "document": "https://www.eib.org/en/projects/all/20020258",
+         "date": "2002-08-27"
+        }
+       ],
+       "event_date": "2002-12-27",
+       "id": "db53db2f-488e-4477-9776-d9c8457e9cca"
+      }
+     },
+     {
+      "id": "747e743b-cc1e-4e13-85cb-e3d477be95e6",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "NEOENERGIA GREEN RENEWABLE ENERGY GENERATION FL",
+         "document": "https://www.eib.org/en/projects/all/20210506",
+         "date": "2021-05-06"
+        },
+        {
+         "name": "Neoenergia secures US$221m loan from EIB for 715.5MW of renewable projects in Brazil",
+         "document": "https://www.pv-tech.org/neoenergia-secures-us221m-loan-from-eib-for-715-5mw-of-renewable-projects-in-brazil",
+         "date": "2022-03-18"
+        }
+       ],
+       "event_date": "2021-12-22",
+       "id": "724a3249-3706-4c3f-a648-a9839675584c"
+      }
+     },
+     {
+      "id": "771ae428-1d7b-48be-acb9-61bbb24564d6",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "campbell-lutyens.com",
+         "document": "https://campbell-lutyens.com/clients/case-studies/all/meridiam-infrastructure-africa-fund",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "Meridiam Infrastructure Africa Fund: Equity investment to finance infrastructure in Africa",
+         "document": "https://www.proparco.fr/en/carte-des-projets/meridiam-africa-2015-2019",
+         "date": "2015-09-30"
+        },
+        {
+         "name": "www.bii.co.uk",
+         "document": "https://www.bii.co.uk/en/our-impact/fund/meridiam-infrastructure-africa-fund-investment-01",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "www.dfc.gov",
+         "document": "https://www.dfc.gov/sites/default/files/2019-08/PublicSummary_MeridiamInfrastructureAfricaFund.pdf",
+         "date": "2026-07-29"
+        }
+       ],
+       "event_date": "2015-01-01",
+       "id": "412d77ab-86b7-4fd2-9137-701d5a864a3e"
+      }
+     },
+     {
+      "id": "7c2c43e0-90e1-4aad-b63c-2a53cdd9e88a",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/matrixpackgroup/__m87oXZuFuoNgVLKp3OkZ76oNBmswZbtALEqKiIUt96w",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/matrix-pack-group/__m87oXZuFuoNgVLKp3OkZ76oNBmswZbtALEqKiIUt96w",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2022-02-07",
+       "id": "ada78414-1b57-406b-a5f5-f264e8c14050"
+      }
+     },
+     {
+      "id": "7cdeacee-ec5d-468a-9fdc-2d81f0d04f84",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Packhelp bags $45.6M to expand its custom packaging biz",
+         "document": "https://techcrunch.com/2021/11/18/packhelp-series-b",
+         "date": "2021-11-18"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/packhelp/__4JZrLloHAr4kVvW8ClB29o3kjRMevGEXO2DTrSMiokI/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2021-11-18",
+       "id": "a4866a35-a0c6-445f-b181-b0d0dec454b6"
+      }
+     },
+     {
+      "id": "7db5171f-2697-4938-a758-ea5c61025d20",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "www.energymonitor.ai",
+         "document": "https://www.energymonitor.ai/projects/gemini-offshore-wind-farm-north-sea",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "The Netherlands: Dutch renewable energy boosted by EUR 587m EIB backing for world\u2019s largest wind farm",
+         "document": "https://www.eib.org/en/press/all/2014-107-dutch-renewable-energy-boosted-by-eur-587m-eib-backing-for-worlds-largest-wind-farm",
+         "date": "2014-05-15"
+        },
+        {
+         "name": "stateofgreen.com",
+         "document": "https://stateofgreen.com/en/news/climate-financing-offshore-wind-farms-as-attraction-for-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Natixis acts as Mandated Lead Arranger, Bookrunner, Hedging Bank and Market Due Diligence Bank for the EUR 2.8 billion 600MW Gemini offshore wind proj",
+         "document": "https://newsroom-en.groupebpce.fr/news/natixis-acts-as-mandated-lead-arranger-bookrunner-hedging-bank-and-market-due-diligence-bank-for-the-eur-2-8-billion-600mw-gemini-offshore-wind-project-in-the-netherlands-23c6-53927.html",
+         "date": "2014-05-21"
+        }
+       ],
+       "event_date": "2014-05-14",
+       "id": "8f7edfa8-34ef-4f51-8ca2-f83722490697"
+      }
+     },
+     {
+      "id": "7eeecab4-2cc5-44a0-9482-bdcc12e63064",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Denmark: Haldor Tops\u00f8e signs \u20ac45 million funding deal with EIB to drive green energy transition",
+         "document": "https://www.eib.org/en/press/all/2022-006-denmark-haldor-topsoe-signs-eur45-million-funding-deal-with-eib-to-drive-green-energy-transition",
+         "date": "2022-01-10"
+        },
+        {
+         "name": "Tops\u00f8e signs \u20ac45 million funding deal with European Investment Bank to drive green energy transition",
+         "document": "https://ec.europa.eu/commission/presscorner/detail/en/ip_22_281",
+         "date": "2026-06-19"
+        },
+        {
+         "name": "Denmark: EIB provides EUR 45 million loan to Haldor Topsoe Innovative Catalysts Solutions - Global Trade Alert",
+         "document": "https://globaltradealert.org/state-act/66652-denmark-eib-provides-eur-45-million-loan-to-haldor-topsoe-innovative-catalysts-solutions",
+         "date": "2021-12-17"
+        }
+       ],
+       "event_date": "2021-12-17",
+       "id": "1fe8aab5-286d-44eb-a53b-f7b9e925b8ed"
+      }
+     },
+     {
+      "id": "829358e4-6978-4d9d-a9e4-ae0a7f5f5b73",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [],
+       "event_date": "1999-01-01",
+       "id": "d55547a4-3f94-4719-a257-0a86aa691421"
+      }
+     },
+     {
+      "id": "829c6027-1329-474e-aee4-631af4306cd7",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "RENAULT TANGER-FINANCEMENT INTERMEDIE",
+         "document": "https://www.eib.org/en/projects/all/20090278",
+         "date": "2009-09-23"
+        }
+       ],
+       "event_date": "2009-10-22",
+       "id": "f98dfa1b-b496-4120-be0b-103ded05d75c"
+      }
+     },
+     {
+      "id": "82a641ee-c7be-4fc2-9a5b-b49587117503",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "French battery maker Verkor scores $2.1B to build gigafactory | TechCrunch",
+         "document": "https://techcrunch.com/2023/09/14/french-battery-maker-verkor-scores-2-1b-to-build-gigafactory",
+         "date": "2023-09-14"
+        },
+        {
+         "name": "An autoworkers strike trifecta and another speed bump for Cruise and Waymo | TechCrunch",
+         "document": "https://techcrunch.com/2023/09/17/an-autoworkers-strike-trifecta-and-another-speed-bump-for-cruise-and-waymo",
+         "date": "2023-09-17"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/verkor/__65WMD08xN57PgLIKPfuTJ0ZAoAhVl4OjRTCXV88LoJs",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2023-09-14",
+       "id": "2e435e72-a061-48c1-bd6e-62c6b7992191"
+      }
+     },
+     {
+      "id": "877e487b-f376-4fb9-93c7-bb49be60efbd",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "\u00cele-De-France Mobilit\u00e9s successfully priced a new \u20ac500mn Green 15-year Benchmark Transaction under its new Green Financing Framework",
+         "document": "https://presse.iledefrance-mobilites.fr/ile-de-france-mobilites-successfully-priced-a-new-eur500mn-green-15-year-benchmark-transaction-under-its-new-green-financing-framework",
+         "date": "2024-10-01"
+        }
+       ],
+       "event_date": "2024-09-25",
+       "id": "6acf4847-9911-4f42-8b3a-50f29dae30f9"
+      }
+     },
+     {
+      "id": "87d7d21a-8d41-4741-8609-5be0f4902bf6",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "allafrica.com",
+         "document": "https://allafrica.com/stories/201401291543.html",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "Rwanda: EUR 8m for small businesses",
+         "document": "https://www.eib.org/en/press/all/2014-015-eur-8m-for-small-businesses-in-rwanda",
+         "date": "2014-01-29"
+        }
+       ],
+       "event_date": "2006-12-31",
+       "id": "d3dcb8ec-d64f-4d1d-a2a4-4b60b7313910"
+      }
+     },
+     {
+      "id": "8a589433-15fb-42b6-ba92-74ee6b855efd",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Spain: EIB Finances Ono\u2019s Telecoms Network",
+         "document": "https://www.eib.org/en/press/all/2005-146-eib-finances-onos-telecoms-network-in-spain",
+         "date": "2005-12-20"
+        }
+       ],
+       "event_date": "2005-12-20",
+       "id": "7076b3f5-59fa-4771-80c3-0d12eec326b4"
+      }
+     },
+     {
+      "id": "8b24f91c-e30c-4187-8916-82b29cd0f1d4",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "RENAULT TANGER-FINANCEMENT INTERMEDIE",
+         "document": "https://www.eib.org/en/projects/all/20090278",
+         "date": "2009-09-23"
+        }
+       ],
+       "event_date": "2012-02-09",
+       "id": "e6442ed8-ac39-4399-a56f-d38534518190"
+      }
+     },
+     {
+      "id": "8b7f1dd9-7f0b-4c1e-84fa-5c947b0cbb2e",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/fairmat/__rFzwA22Kx1_8o-fR6pHO8Me5SQ3MoqkdIgebyIEhKZQ/funding-and-investors",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "FAIRMAT Newsroom \u2014 Latest Press Releases | FAIRMAT",
+         "document": "https://www.fairmat.tech/newsroom",
+         "date": "2024-10-18"
+        }
+       ],
+       "event_date": "2025-04-02",
+       "id": "5bff5963-52aa-4c79-9300-c8de9756b3f0"
+      }
+     },
+     {
+      "id": "8b8fb597-4f70-44ae-84f3-26721760883f",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/sunfire/__3Ju34MSNiI7ke1Gpmr3O1rkkfc23WikSyuer3Wpoa9E/funding-and-investors",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2024-03-05",
+       "id": "5a7127ab-74fb-420c-9d04-7ba839bfd189"
+      }
+     },
+     {
+      "id": "901149ac-d7d8-4246-b5b7-3df1194e09ab",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Italy: EIB to finance ENI\u2019s renewable energy projects in Italy - Global Trade Alert",
+         "document": "https://globaltradealert.org/state-act/47642-italy-eib-to-finance-enis-renewable-energy-projects-in-italy",
+         "date": "2021-03-11"
+        }
+       ],
+       "event_date": "2021-03-11",
+       "id": "aece6b17-eb2f-4942-be03-6b0241755b82"
+      }
+     },
+     {
+      "id": "902bc04a-b25d-401c-9796-30bde6f1d679",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "EIB lends EUR 10 million to DFCU in Uganda",
+         "document": "https://www.eib.org/en/press/all/2006-100-eib-lends-eur-10-million-to-dfcu-in-uganda-",
+         "date": "2006-10-11"
+        }
+       ],
+       "event_date": "2006-01-01",
+       "id": "f54fdbdf-01b8-4364-aad1-765fd2e78a95"
+      }
+     },
+     {
+      "id": "92b13bb3-c375-4c4d-ac5e-85743a6a60c5",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Life-saving business - Neumann Diagnostics",
+         "document": "https://bse.hu/Issuers/bet50/bet50-2016/BET50-companies-2016/Life-saving-business-Neumann-Diagnostics",
+         "date": "2026-05-22"
+        },
+        {
+         "name": "www.genomeweb.com",
+         "document": "https://www.genomeweb.com/molecular-diagnostics/hungarys-neumann-diagnostics-readies-hpv-cervical-cancer-risk-test-european",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "NEUMANN Diagnostics' Automated Cervical Cancer Test Achieves Exceptional Accuracy",
+         "document": "https://www.prnewswire.com/news-releases/neumann-diagnostics-automated-cervical-cancer-test-achieves-exceptional-accuracy-300213968.html",
+         "date": "2016-02-03"
+        }
+       ],
+       "id": "44b2b89d-f2c1-411e-8010-a63506988eaf"
+      }
+     },
+     {
+      "id": "94cb2750-0c99-434c-8f14-0618166fa496",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "www.fwdstart.me",
+         "document": "https://www.fwdstart.me/p/mevp-annual-letter-discloses-a-number-of-unannounced-funding-rounds-including-for-stake-ziina-and-mealplanet",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Saudi Venture Capital Invests in MEVP Venture Capital Fund",
+         "document": "https://www.spa.gov.sa/en/N2228317",
+         "date": "2019-03-01"
+        },
+        {
+         "name": "SVC pledges investment in MEVP\u2019s $150 million fund",
+         "document": "https://www.wamda.com/2024/12/svc-pledges-investment-mevps-150-million-fund",
+         "date": "2024-12-17"
+        },
+        {
+         "name": "Riyadh Valley Company announces its investment in Middle East Venture Partners\u2019 (MEVP) Fund IV (MEVF IV)",
+         "document": "https://mevp.com/news/riyadh-valley-company-announces-its-investment-in-middle-east-venture-partners-mevp-fund-iv-mevf-iv",
+         "date": "2025-05-22"
+        }
+       ],
+       "event_date": "2025-05-22",
+       "id": "bcd0beac-b958-4ef8-9eb9-0e3ff73a79cc"
+      }
+     },
+     {
+      "id": "964e8a4a-7928-4446-8e21-b4b1b8e4fda4",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Romania: Investment Plan for Europe - EIB supports extension of natural gas transmission infrastructure",
+         "document": "https://www.eib.org/en/press/all/2018-351-investment-plan-for-europe-eib-supports-extension-of-romanias-natural-gas-transmission-infrastructure",
+         "date": "2018-12-17"
+        },
+        {
+         "name": "EIB lends Romania\u2019s Transgaz another EUR 50 mln for pipelines",
+         "document": "https://www.romania-insider.com/eib-lends-transgaz-pipelines-dec-2018",
+         "date": "2018-12-20"
+        },
+        {
+         "name": "Romania: EIB grants investment support for Transgaz S.A.'s construction of a new gas transmission pipeline - Global Trade Alert",
+         "document": "https://globaltradealert.org/intervention/71021-romania-eib-grants-investment-support-for-transgaz-sas-construction-of-a-new-gas-transmission-pipeline",
+         "date": "2024-09-04"
+        }
+       ],
+       "event_date": "2018-12-17",
+       "id": "06f0787b-8653-40ab-b6e5-4a19260058ee"
+      }
+     },
+     {
+      "id": "972f1b2c-92b8-492c-808d-b0798f520cfe",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "ewsdata.rightsindevelopment.org",
+         "document": "https://ewsdata.rightsindevelopment.org/projects/EIB-20180771/pdf",
+         "date": "2026-07-29"
+        },
+        {
+         "name": "Denmark, France and Poland: EIB signs loan agreement to support Demant's development of hearing aid technology and equipment - Global Trade Alert",
+         "document": "https://globaltradealert.org/intervention/78038",
+         "date": "2024-09-04"
+        }
+       ],
+       "event_date": "2019-12-09",
+       "id": "54202a24-7ca5-4328-97c9-4c52caaa4685"
+      }
+     },
+     {
+      "id": "98d9dfcd-25c9-468d-baad-d93c0e1beec5",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/sunfire/__3Ju34MSNiI7ke1Gpmr3O1rkkfc23WikSyuer3Wpoa9E/funding-and-investors",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2024-03-05",
+       "id": "311fa78e-e87e-4f10-8be3-0e766a75a654"
+      }
+     },
+     {
+      "id": "9c807fe5-baa8-43d9-907c-7e24127efcac",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "ROMANIAN POWER GRID NETWORK",
+         "document": "https://www.eib.org/en/projects/all/20100072",
+         "date": "2010-05-12"
+        }
+       ],
+       "event_date": "2010-08-05",
+       "id": "a9488e01-01aa-4aa0-9aad-56feb9decce3"
+      }
+     },
+     {
+      "id": "a125bc47-6104-44c1-b2fd-9d7f1a6222fc",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "European Investment Bank to loan Turkey\u2019s BOTA\u015e $270M for TANAP",
+         "document": "https://www.dailysabah.com/business/energy/european-investment-bank-to-loan-turkeys-botas-270m-for-tanap",
+         "date": "2020-07-28"
+        },
+        {
+         "name": "Botas receives European bank funding for key Tanap gas project",
+         "document": "https://www.upstreamonline.com/finance/botas-receives-european-bank-funding-for-key-tanap-gas-project/2-1-849702",
+         "date": "2020-07-29"
+        },
+        {
+         "name": "azertag.az",
+         "document": "https://azertag.az/en/xeber/european_investment_bank_to_loan_botas_270m_for_tanap-1549587",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2020-07-28",
+       "id": "e216183d-9bc2-4a36-949c-932b4d1d3cc4"
+      }
+     },
+     {
+      "id": "a245902c-da61-453e-a66c-b474b7a874f3",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "EQUITY BANK MBIL",
+         "document": "https://www.eib.org/en/projects/all/20160471",
+         "date": "2016-08-09"
+        },
+        {
+         "name": "equitygroupholdings.com",
+         "document": "https://equitygroupholdings.com/eib-signs-kshs-10-45-billion-support-for-east-african-entrepreneurs-2",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "EIB signs Kshs 10.45 billion support for East African entrepreneurs",
+         "document": "https://www.eeas.europa.eu/node/23687_en",
+         "date": "2017-03-29"
+        }
+       ],
+       "event_date": "2017-03-08",
+       "id": "968b18ab-0f8a-44b0-bfbc-d707bb0be7e9"
+      }
+     },
+     {
+      "id": "a7312d1e-cca0-432e-9734-efbebc1f47a6",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Amazon backs German smart heating and AC company Tado in new $50M funding round | TechCrunch",
+         "document": "https://techcrunch.com/2018/10/25/amazon-meet-tado",
+         "date": "2018-10-25"
+        },
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/tado/__FGG6rZpdKz3lBlA8YFmfIWKT5yOM9Ork8ytfi74U_u4/funding-and-investors",
+         "date": "2026-07-29"
+        }
+       ],
+       "event_date": "2018-10-25",
+       "id": "437747e2-b80b-402d-88dd-e3a8c4979131"
+      }
+     },
+     {
+      "id": "a8f17722-65ee-4c27-813e-50bbdb5d2d37",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "UNICREDIT AND EIB AGREE \u20ac30 MILLION SOCIAL IMPACT FINANCING IN SERBIA",
+         "document": "https://www.unicreditgroup.eu/en/one-unicredit/clients/2020/jun/unicredit-and-eib-agree-30-million-social-impact-financing.html",
+         "date": "2020-06-25"
+        },
+        {
+         "name": "EIB provides \u20ac30 million to UniCredit Bank Serbia to improve social impact of Serbian SMEs",
+         "document": "https://www.eib.org/en/press/all/2020-160-the-eib-provides-eur30-million-to-unicredit-bank-serbia-to-improve-social-impact-of-serbian-smes",
+         "date": "2020-06-24"
+        }
+       ],
+       "event_date": "2020-06-24",
+       "id": "0a6611f1-ffc0-418e-b63e-4f667548231b"
+      }
+     },
+     {
+      "id": "b3ce4a22-3392-4074-ade1-9099e0c431ec",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/accelerator-incubator/ioniq/__khmJiURfLhILAV6cyE7iVmquuayT1C8jkPVfTTjTMhY",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Zeotap raises $18.5M for a customer ID platform it says was built with privacy in mind | TechCrunch",
+         "document": "https://techcrunch.com/2020/11/16/zeotap-raises-18-5m-for-a-customer-id-platform-it-says-was-built-with-privacy-in-mind",
+         "date": "2020-11-16"
+        }
+       ],
+       "event_date": "2020-07-15",
+       "id": "1b830918-d330-463d-97ca-6fc8228e9998"
+      }
+     },
+     {
+      "id": "b6e58b3e-b245-41c7-9852-a7b8fa31057c",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Terna: EIB provides the last tranche of the \u20ac1.9 billion financing for the Tyrrhenian Link - Terna spa",
+         "document": "https://www.terna.it/en/media/press-releases/detail/eib-last-tranche-financing-tyrrhenian-link",
+         "date": "2020-01-26"
+        }
+       ],
+       "event_date": "2022-11-08",
+       "id": "80157a8e-e389-4b0b-b6f0-42ab2039e650"
+      }
+     },
+     {
+      "id": "b8c2be60-fe99-4501-88cf-62539d6c026b",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/quantum-systems/__sXYOkm8VaEm5_Ehxyly1geYDZyqVa27MHL-T3Fcky_o/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2021-07-19",
+       "id": "c5a0e9aa-7573-4e11-b93c-b15871ded155"
+      }
+     },
+     {
+      "id": "b8ef198e-604a-4713-a2f3-8bfa1464569f",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "EIB supports extension of Schiphol Airport",
+         "document": "https://news.schiphol.com/eib-supports-extension-of-schiphol-airport",
+         "date": "2017-03-02"
+        },
+        {
+         "name": "The European Investment Bank loans \u20ac175m for Schiphol Airport extension",
+         "document": "https://highways.today/2017/03/02/european-investment-bank-loans-e175m-schiphol-airport-extension",
+         "date": "2017-03-02"
+        }
+       ],
+       "event_date": "2017-03-02",
+       "id": "cdbc310e-a1d4-457f-b4b0-f64ecf4caf81"
+      }
+     },
+     {
+      "id": "baecba89-b6a0-49d7-baa4-98f483f1ac72",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Slovenia: EIB supports with EUR 145 million extension of motorway network",
+         "document": "https://www.eib.org/en/press/all/2015-133-eib-supports-with-eur-145-million-extension-of-slovenian-motorway-network",
+         "date": "2015-06-12"
+        },
+        {
+         "name": "EIB lends 145 mln euro for extension of Slovenian motorway network",
+         "document": "https://seenews.com/news/eib-lends-145-mln-euro-for-extension-of-slovenian-motorway-network-1074105",
+         "date": "2015-06-12"
+        }
+       ],
+       "event_date": "2015-01-01",
+       "id": "c7a68875-0fc1-4736-ad59-c5a0d0af7604"
+      }
+     },
+     {
+      "id": "c4ca062a-901e-4282-9773-00ac6c42f95d",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Team Europe: EIB to accelerate recovery of SMEs in Western Balkans with new loans signed today with two UniCredit member banks",
+         "document": "https://www.eib.org/en/press/all/2021-230-team-europe-eib-to-accelerate-recovery-of-smes-in-western-balkans-with-new-loans-signed-today-with-two-unicredit-member-banks",
+         "date": "2021-06-28"
+        },
+        {
+         "name": "EIB, UniCredit sign 50 mln euro loan deal for on-lending to Serbian SMEs",
+         "document": "https://seenews.com/news/eib-unicredit-sign-50-mln-euro-loan-deal-for-on-lending-to-serbian-smes-1192085",
+         "date": "2021-06-29"
+        }
+       ],
+       "event_date": "2021-06-28",
+       "id": "c1460657-7445-4439-9045-0f0fa0e1d976"
+      }
+     },
+     {
+      "id": "c8eb49db-4104-456a-8fe7-459fa36aa4d8",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/flixbus/__v5M4caX857I4B5QDbKf5bd4-EYVqGrtzdlnwkDcpiIQ/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "FlixMobility extends Series F at $2B+ valuation as it gears up to add cars to its bus and train network | TechCrunch",
+         "document": "https://techcrunch.com/2019/08/08/flixmobility-extends-series-f-at-2b-valuation-as-it-gears-up-to-add-cars-to-its-bus-and-train-network",
+         "date": "2019-08-08"
+        }
+       ],
+       "event_date": "2019-07-18",
+       "id": "1c75f4d2-8d12-4913-ac8e-115e1f85e838"
+      }
+     },
+     {
+      "id": "cce523a3-beb6-4e21-a11d-66dd20acbcb3",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "mariadb.com",
+         "document": "https://mariadb.com/newsroom/press-releases/mariadb-secures-12-million-from-european-investment-bank/",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2018-10-01",
+       "id": "eeda4f09-481c-4bcd-ae6a-98b2a6ef6f08"
+      }
+     },
+     {
+      "id": "cdac192e-ac23-4398-b1fd-433cfd66d027",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/orbital-systems/__4naENEgg_W4_h8Xg8jgbCr7vbKlt96pFgwE0Qjoz8e8/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2018-11-26",
+       "id": "1250adf8-deee-40e4-8589-6584e4289fa1"
+      }
+     },
+     {
+      "id": "d1da6446-4413-43a4-8b5e-f3c3dbed8e91",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Slovakia: EIB supports D4/R7 PPP with EUR 426 million of financing \u2013 first EIB transaction under EFSI in Slovakia",
+         "document": "https://www.eib.org/en/press/all/2016-157-eib-supports-d4-r7-ppp-in-slovakia-with-eur-426-million-of-financing-first-eib-transaction-under-efsi-in-slovakia",
+         "date": "2016-06-22"
+        }
+       ],
+       "event_date": "2016-06-22",
+       "id": "2f3fd56e-cbcf-4f48-8d09-23f084fbe065"
+      }
+     },
+     {
+      "id": "d2215413-c0b0-4379-9856-dc4978b6bc84",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "THE EGYPTIAN-AMERICAN ENTERPRISE FUND ANNOUNCES $50 MILLION COMMITMENT TO TCV FUND II - EAEF - Egyptian-American Enterprise Fund",
+         "document": "https://www.eaefund.org/the-egyptian-american-enterprise-fund-announces-50-million-commitment-to-tcv-fund-ii",
+         "date": "2024-04-16"
+        },
+        {
+         "name": "TCV II",
+         "document": "https://ewsdata.rightsindevelopment.org/projects/48291-tcv-ii",
+         "date": "2024-08-21"
+        },
+        {
+         "name": "Tanmiya Capital Ventures II",
+         "document": "https://www.ebrd.com/home/work-with-us/projects/psd/49874.html",
+         "date": "2023-04-11"
+        },
+        {
+         "name": "EIB Proposes $38 Million Equity Investment in Egypt\u2019s Tanmiya Capital Ventures Fund II - Empower Africa",
+         "document": "https://empowerafrica.com/eib-proposes-38-million-equity-investment-in-egypts-tanmiya-capital-ventures-fund-ii",
+         "date": "2025-10-14"
+        },
+        {
+         "name": "EU-EGYPT TANMIYA GROWTH FUND II",
+         "document": "https://www.eib.org/en/projects/all/20250281",
+         "date": "2025-12-10"
+        },
+        {
+         "name": "In the Press - TCV - Tanmiya Capital Ventures",
+         "document": "https://tcvegypt.com/in-the-press",
+         "date": "2022-06-24"
+        }
+       ],
+       "event_date": "2024-04-04",
+       "id": "248d6725-912e-48bc-b83e-ac5cbdcb1e0e"
+      }
+     },
+     {
+      "id": "d233f274-9079-400f-85b9-681d11d5b275",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "SOCIETE GENERALE MAURITANIE",
+         "document": "https://www.eib.org/en/projects/all/20030441",
+         "date": "2006-01-10"
+        },
+        {
+         "name": "EIB takes USD 4.2 million participation in Mauritanian Bank",
+         "document": "https://www.eib.org/en/press/all/2006-040-eib-takes-usd-4-2-million-participation-in-mauritanian-bank",
+         "date": "2006-04-24"
+        },
+        {
+         "name": "www.eib.org",
+         "document": "https://www.eib.org/attachments/country/if_annual_report_2009_en.pdf",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2006-03-17",
+       "id": "2beeb2c3-bea3-4f99-8dd5-66fed51b27d6"
+      }
+     },
+     {
+      "id": "d800a81d-d70d-4317-857c-58e4e752e9d0",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "\u20ac1.2 billion to support Italian companies with EIB Group-illimity agreement under European Guarantee Fund (EGF)",
+         "document": "https://www.eif.org/press/all/egf-1-2-billion-to-support-italian-companies",
+         "date": "2021-12-09"
+        },
+        {
+         "name": "Press Releases",
+         "document": "https://www.illimity.com/en/investor-relations/investors-press-releases",
+         "date": "2025-09-23"
+        }
+       ],
+       "event_date": "2021-12-09",
+       "id": "f1612695-102c-4d16-a0fd-95bad424e647"
+      }
+     },
+     {
+      "id": "da5686d2-2a04-4d5d-92b6-d4fb69085686",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "MEVP Launches $150M Middle East Venture Fund IV (\u201cMEVF IV\u201d)",
+         "document": "https://mevp.com/news/mevp-launches-150m-middle-east-venture-fund-iv-mevf-iv",
+         "date": "2023-02-27"
+        },
+        {
+         "name": "EIB backs USD 150 million Middle East venture capital initiative to accelerate digital transformation and create 8,000 tech jobs",
+         "document": "https://www.eib.org/en/press/all/2023-054-eib-backs-usd-150-million-middle-east-venture-capital-initiative-to-accelerate-digital-transformation-and-create-8000-tech-jobs",
+         "date": "2023-02-13"
+        },
+        {
+         "name": "MIDDLE EAST VENTURE FUND IV (MEVF IV)",
+         "document": "https://www.eib.org/en/projects/all/20190454",
+         "date": "2021-11-24"
+        }
+       ],
+       "event_date": "2023-02-19",
+       "id": "a156b438-bae8-4d50-a9a6-d694d3fe8dab"
+      }
+     },
+     {
+      "id": "dc16230d-817a-4ad3-a78d-284afa94bb47",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Germany: EIB co-finances large offshore wind farm in the North Sea with EnBW",
+         "document": "https://www.eib.org/en/press/all/2023-148-germany-eib-co-finances-large-offshore-wind-farm-in-the-north-sea-with-enbw",
+         "date": "2023-03-23"
+        },
+        {
+         "name": "He Dreiht: European Investment Bank co-finances offshore wind farm in the North Sea with EnBW",
+         "document": "https://www.windindustrie-in-deutschland.de/news/he-dreiht-european-investment-bank-co-finances-offshore-wind-farm-in-the-north-sea-with-enbw",
+         "date": "2023-03-24"
+        },
+        {
+         "name": "www.power-technology.com",
+         "document": "https://www.power-technology.com/projects/he-dreiht-offshore-wind-project-germany",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2023-03-01",
+       "id": "e6d6e2f5-63ed-4eae-95ce-b5c859dd6949"
+      }
+     },
+     {
+      "id": "dd3991b4-1e67-4368-8bac-b98765a9ecfe",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "GEOPLIN GAS TRANSMISSION",
+         "document": "https://www.eib.org/en/projects/all/20100071",
+         "date": "2010-03-11"
+        }
+       ],
+       "event_date": "2010-10-28",
+       "id": "707179cf-cb7a-4a3d-a51e-3e530b885ad1"
+      }
+     },
+     {
+      "id": "e187fad9-99e4-4927-9989-f09634fcbdfc",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/deepull/__FyuZnWWf7buCrfLNCBA2K4zdXgkHKZ-QOjpTF8Rq1ic/funding-and-investors",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2022-12-13",
+       "id": "b0a5b437-172c-4751-826c-0cfe241152a5"
+      }
+     },
+     {
+      "id": "e71bcc6c-c9ef-4948-b2be-3fe3271edad3",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Italy: New \u20ac200 million agreement between EIB and illimity to support small businesses",
+         "document": "https://www.eib.org/en/press/all/2023-174-nuovo-accordo-bei-illimity-da-200-milioni-di-euro-per-sostenere-le-pmi",
+         "date": "2023-04-13"
+        },
+        {
+         "name": "Press Releases",
+         "document": "https://www.illimity.com/en/investor-relations/investors-press-releases",
+         "date": "2025-09-23"
+        }
+       ],
+       "event_date": "2023-04-13",
+       "id": "44377fd5-8e5f-4944-9a88-13b840322a27"
+      }
+     },
+     {
+      "id": "ea0aeebc-4d31-4ea7-8a82-878962fb1ec7",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "I&M BANK REGIONAL FINANCING FACILITY",
+         "document": "https://www.eib.org/en/projects/all/20160570",
+         "date": "2016-11-07"
+        },
+        {
+         "name": "Rwanda: EIB confirms new EUR 24 million backing for private sector investment",
+         "document": "https://www.eib.org/en/press/all/2018-040-eib-confirms-new-eur-24-million-backing-for-private-sector-investment-in-rwanda",
+         "date": "2018-02-20"
+        },
+        {
+         "name": "You are being redirected...",
+         "document": "https://www.independent.co.ug/european-bank-extends-us29-6mn-rwandan-smes",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2017-12-13",
+       "id": "e12d5c87-d7cd-45ee-8baa-611f42cf19bd"
+      }
+     },
+     {
+      "id": "ed20387e-b6a3-4a2a-b951-8d62a70b5412",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "EIB supports Petit Forestier Group's electric transition",
+         "document": "https://www.eib.org/en/press/all/2026-064-la-bei-soutient-la-transition-electrique-de-petit-forestier-group",
+         "date": "2026-02-18"
+        },
+        {
+         "name": "www.electrive.com",
+         "document": "https://www.electrive.com/2026/02/19/eib-loan-petit-forestier-to-procure-4000-evs",
+         "date": "2026-07-29"
+        }
+       ],
+       "event_date": "2026-02-19",
+       "id": "c8ac5923-23f8-4a55-b25a-ff0184d8f390"
+      }
+     },
+     {
+      "id": "ed2afeb1-1e2a-47a8-98e1-6fc7785c0db9",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "EUR 200 mio to upgrade Slovak railways",
+         "document": "https://www.eib.org/en/press/all/1999-069-eur-200-mio-to-upgrade-slovak-railways",
+         "date": "1999-07-26"
+        },
+        {
+         "name": "spectator.sme.sk",
+         "document": "https://spectator.sme.sk/business/c/eib-gives-railways-200-million-euros-to-upgrade",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "Slovak loan agreed",
+         "document": "https://www.railwaygazette.com/news/1999/09/01/slovak-loan-agreed",
+         "date": "1999-09-01"
+        }
+       ],
+       "event_date": "1999-07-23",
+       "id": "024ea750-75ad-4f53-90a7-70ff8128bbb4"
+      }
+     },
+     {
+      "id": "edfd0d7a-37f5-4f5f-a82e-7c64854a3381",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/varjo/__ZXnaLpdudX8EHjDfFxn2WvwmaXFkPBfBTDavGQdGyQM/funding-and-investors",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "2021-12-03",
+       "id": "2cf2218b-f20d-4576-926a-362425ae1f3b"
+      }
+     },
+     {
+      "id": "ee35bb8f-1fca-4bd0-8d0b-166647343f3e",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "EUR 175 mio for motorway construction development in Slovenia",
+         "document": "https://www.eib.org/en/press/all/1999-048-eur-175-mio-for-motorway-construction-development-in-slovenia",
+         "date": "1999-06-07"
+        }
+       ],
+       "event_date": "1999-06-07",
+       "id": "c9a86586-e107-44f9-86d6-f591689caee7"
+      }
+     },
+     {
+      "id": "f15a384d-1435-4bd1-ac9e-ac7f09de6782",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "EIB and Eni sign \u20ac500 million in financing for new biorefinery in Sannazzaro de\u2019 Burgondi",
+         "document": "https://www.eni.com/en-IT/media/press-release/2026/04/eib-eni-sign--500-million-financing-for-biorefinery-sannazzaro-burgondi.html",
+         "date": "2026-04-01"
+        }
+       ],
+       "event_date": "2026-04-01",
+       "id": "a876fd91-c68a-4be6-a768-d2ad21e81306"
+      }
+     },
+     {
+      "id": "f568da56-0a01-40f6-a4c9-4b0b5a973b37",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "www.marketscreener.com",
+         "document": "https://www.marketscreener.com/quote/stock/ONE-TECH-HOLDING-S-A-15958398/news/One-Tech-Holding-S-A-announced-that-it-expects-to-receive-21-million-in-funding-from-European-In-34878053",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "TUNISIA, 21 MILLION EUROS EIB LOAN TO ONE TECH HOLDING - Malta News Agency",
+         "document": "https://www.maltanewsagency.com/2017/12/tunisia-21-million-euros-eib-loan-to-one-tech-holding",
+         "date": "2017-12-16"
+        },
+        {
+         "name": "Tunisia: EIB provides EUR 21m loan to Tunisian One Tech group to accelerate development of its innovative products",
+         "document": "https://www.eib.org/en/press/all/2017-365-la-banque-europeenne-dinvestissement-accorde-un-pret-de-21-millions-deur-au-groupe-tunisien-one-tech-pour-accelerer-le-developpement-de-ses-produits-innovants",
+         "date": "2017-12-11"
+        }
+       ],
+       "event_date": "2017-12-11",
+       "id": "63887b35-3c35-4b99-9412-98a66a492f95"
+      }
+     },
+     {
+      "id": "f7a62665-207c-4d4a-8fac-797a1b91fa7f",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "Denmark: EIB boosts Danish R&D investment in catalytic technologies",
+         "document": "https://www.eib.org/en/press/all/2013-240-eib-boosts-danish-r-d-investment-in-catalytic-technologies",
+         "date": "2013-12-18"
+        },
+        {
+         "name": "HALDOR TOPSOE RDI RSFF",
+         "document": "https://www.eib.org/en/projects/all/20120616",
+         "date": "2012-06-16"
+        }
+       ],
+       "event_date": "2013-01-01",
+       "id": "043375f8-125a-4b18-bbae-d5e5061940cd"
+      }
+     },
+     {
+      "id": "f870e139-2c11-4791-a9a3-8e9daccbf00f",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "EIB and Eni sign \u20ac500 million finance agreement to convert Livorno refinery into a biorefinery",
+         "document": "https://www.eni.com/en-IT/media/press-release/2025/07/eib-eni.html",
+         "date": "2025-07-24"
+        },
+        {
+         "name": "ENI BIOREFINERY",
+         "document": "https://www.eib.org/en/projects/all/20240694",
+         "date": "2025-06-24"
+        }
+       ],
+       "event_date": "2025-07-23",
+       "id": "68eef41b-f4f5-4a09-82bd-7476eef705a6"
+      }
+     },
+     {
+      "id": "f8e96b9c-f9f2-42b7-8a84-da4c859862ed",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "EIB provides EUR 200 million backing to Schiphol Airport terminal transformation and ending gate security checks",
+         "document": "https://europa.eu/rapid/press-release_BEI-13-150_en.htm",
+         "date": "2026-06-19"
+        },
+        {
+         "name": "Netherlands : EIB provides EUR 200m to Schiphol Airport terminal transformation and ending gate security checks",
+         "document": "https://www.proquest.com/wire-feeds/netherlands-eib-provides-eur-200m-schiphol/docview/1437389318/se-2",
+         "date": "2013-09-28"
+        }
+       ],
+       "event_date": "2013-01-01",
+       "id": "2fc8a168-75ab-44fa-8c0d-bb90af470462"
+      }
+     },
+     {
+      "id": "f9dd617a-5938-4cd1-bae0-0d9ae72b8179",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "CASE STUDY: N3 TOLL CONCESSION (RF) PROPRIETARY LIMITED (N3TC)",
+         "document": "https://aiimafrica.com/media/case-study-detail/case-study-n3-toll-concession-rf-proprietary-limited-n3tc",
+         "date": "2022-01-01"
+        },
+        {
+         "name": "www.nra.co.za",
+         "document": "https://www.nra.co.za/uploads/65/2002-Annual-Report.pdf",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.n3tc.co.za",
+         "document": "https://www.n3tc.co.za/about",
+         "date": "2026-08-25"
+        },
+        {
+         "name": "www.afdb.org",
+         "document": "https://www.afdb.org/en/documents/document/south-africa-summary-of-the-environmental-impact-assessment-n3-toll-road-project-esia-summary-12902",
+         "date": "2026-08-25"
+        }
+       ],
+       "event_date": "1999-11-02",
+       "id": "17cc383d-f63d-4640-a336-8d14304bd9fc"
+      }
+     },
+     {
+      "id": "fa39ee09-434c-4f15-87c7-d60ef0060ddb",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "tracxn.com",
+         "document": "https://tracxn.com/d/companies/swappie/__OZLXVrwyNaLewJayNH7sE6-Fl6TKs-McQNmY8bKnWyI/funding-and-investors",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "www.crunchbase.com",
+         "document": "https://www.crunchbase.com/organization/swappie/financial_details",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2024-06-03",
+       "id": "80c656ae-1fda-441f-a8a6-b8f8f111daba"
+      }
+     },
+     {
+      "id": "fb8ae63f-3b9a-4963-a45f-cfff2d43314b",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "TUNISIA, 21 MILLION EUROS EIB LOAN TO ONE TECH HOLDING - Malta News Agency",
+         "document": "https://www.maltanewsagency.com/2017/12/tunisia-21-million-euros-eib-loan-to-one-tech-holding",
+         "date": "2017-12-16"
+        },
+        {
+         "name": "decypha.feedgfm.com",
+         "document": "https://decypha.feedgfm.com/EN/news/details/Tunisia--One-Tech-Group-obtains-21-million-euro-funding-from-EIB/20570534",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "tmo-mag.com.tn",
+         "document": "https://tmo-mag.com.tn/eib-lends-21-mn-to-tunisias-one-tech-holding",
+         "date": "2026-08-24"
+        },
+        {
+         "name": "OneTech, a pioneer in the automotive industry, retains talent and stems Tunisia\u2019s brain drain",
+         "document": "https://www.eib.org/en/stories/manufacturing-tunisia",
+         "date": "2019-09-30"
+        }
+       ],
+       "event_date": "2017-12-11",
+       "id": "9b5225ec-070d-4ccd-ad64-a102e7457abb"
+      }
+     },
+     {
+      "id": "fd9ed972-6189-4aee-8fe3-99091653f9c1",
+      "name": "FINANCING_RAISED_OR_FACILITY_ENTERED",
+      "entity_type": "PrivateCompanyFundingRound",
+      "properties": {
+       "role": "INVESTOR",
+       "sources": [
+        {
+         "name": "en.africanmanager.com",
+         "document": "https://en.africanmanager.com/tunisia-one-tech-group-obtains-eur-9-million-in-financing-from-eib",
+         "date": "2026-08-24"
+        }
+       ],
+       "event_date": "2021-12-09",
+       "id": "92522249-8266-44e8-b3da-c76f8cbea171"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "0b1f712f-bc86-4ed5-b34b-3555514484f2",
+      "name": "PLD Space",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "EIB Group Forum: A strong Europe in a changing world",
+         "document": "https://www.eib.org/de/stories/old-space-new-space-europe-startup-revolution",
+         "date": "2026-09-23"
+        }
+       ],
+       "id": "4b64a1fd-817d-598a-a98f-310c23b0b49d"
+      }
+     },
+     {
+      "id": "0d384918-aea2-4832-8a4e-eac00dda6ef9",
+      "name": "ARTHEx Biotech",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/march-wrap-up-10-women-founded-tech-startups-that-received-funding-in-europe",
+         "date": "2026-08-06"
+        }
+       ],
+       "id": "50277620-c809-558f-93c8-5f2990a69daf"
+      }
+     },
+     {
+      "id": "21322946-6592-4527-9035-2d3ac692ed87",
+      "name": "Spanish biotech company",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "techfundingnews.com",
+         "document": "https://techfundingnews.com/march-wrap-up-10-women-founded-tech-startups-that-received-funding-in-europe",
+         "date": "2026-07-16"
+        }
+       ],
+       "id": "5092c812-16fe-525c-b6a3-61728c2c5388"
+      }
+     },
+     {
+      "id": "31603078-5887-480d-a03f-b8f4cb880bff",
+      "name": "Catalyxx",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Startup Rise EU - European Startup News | Funding | Startup Insights",
+         "document": "https://startuprise.co.uk/catalyxx-gets-e37-million-pre-approval-to-build-biobutanol-plant-in-france",
+         "date": "2026-08-08"
+        }
+       ],
+       "id": "9fb19ba7-a5cc-50e6-a9fc-3a82e75392c9"
+      }
+     },
+     {
+      "id": "4e053889-cc39-4518-ad6d-d314c75b15e4",
+      "name": "PLD Space",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "eu-startups.com",
+         "document": "https://www.eu-startups.com/directory/orbital",
+         "date": "2026-08-07"
+        }
+       ],
+       "id": "0fa0c7ba-5287-5c19-94bc-12e5068d0392"
+      }
+     },
+     {
+      "id": "9543aca1-9a72-45f9-86d5-64bb82f15bd0",
+      "name": "Bank of Spain",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "\u00bfQu\u00e9 es el BEI o Banco Europeo de Inversiones? | El Blog de Self Bank",
+         "document": "https://www.selfbank.es/blog/que-es-el-bei-o-banco-europeo-de-inversiones",
+         "date": "2020-02-07"
+        },
+        {
+         "name": "EIB activity in Spain: 1981-2008",
+         "document": "https://www.eib.org/en/publications/actividad-del-bei-en-espana-1981-2008",
+         "date": "2009-03-04"
+        }
+       ],
+       "id": "d31836aa-b6a2-5939-8ac9-fe16faa82ee4",
+       "valid_since": "1986-01-01"
+      }
+     },
+     {
+      "id": "a3ea71f6-deb3-4826-82ad-bb7cbf78b822",
+      "name": "PLD Space",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Startup Rise EU - European Startup News | Funding | Startup Insights",
+         "document": "https://startuprise.co.uk/altan-secures-2-5m-funding-to-build-software-that-runs-itself",
+         "date": "2026-07-30"
+        }
+       ],
+       "id": "143b2fe9-ec8a-5aa5-8afe-9dd35d8efcac"
+      }
+     },
+     {
+      "id": "bf5134cb-80bc-4778-8b74-5090537dfd7f",
+      "name": "NavVis GmbH",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "Munich Startup - Das offizielle Startup Portal f\u00fcr M\u00fcnchen und die Region",
+         "document": "https://www.munich-startup.de/en/startups/navvis",
+         "date": "2026-07-29"
+        }
+       ],
+       "id": "3c072b69-3552-5bf3-b495-68c5973fd188"
+      }
+     },
+     {
+      "id": "d65d9abb-105c-4532-9609-681d69764c8a",
+      "name": "Mediktor",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Failory: 90% of Startups Fail \u2014 Learn How Not To.",
+         "document": "https://www.failory.com/startups/spain-unicorns",
+         "date": "2026-08-29"
+        }
+       ],
+       "id": "198f0af0-d837-59c6-a5e3-f069b4f4a6e7"
+      }
+     },
+     {
+      "id": "f327af47-822b-4f47-87da-10a5727de631",
+      "name": "Multiverse Computing",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "Failory: 90% of Startups Fail \u2014 Learn How Not To.",
+         "document": "https://www.failory.com/startups/spain",
+         "date": "2026-08-31"
+        }
+       ],
+       "id": "3e3aff94-f924-5c52-9731-c2859e38a7a3"
+      }
+     }
+    ],
+    "IS_MEMBER_OF": [
+     {
+      "id": "2f72257b-a23f-46d4-9182-2ae3692d375c",
+      "name": "Sylvain Broyer",
+      "entity_type": "Person",
+      "properties": {
+       "role": "Economic Adviser",
+       "sources": [
+        {
+         "name": "www.interdependence.org",
+         "document": "https://www.interdependence.org/program-speaker/sylvain-broyer",
+         "date": "2026-09-16"
+        }
+       ],
+       "id": "7aa46829-f634-582f-8f0b-8a315da9df59",
+       "valid_since": "2016-01-01"
+      }
+     },
+     {
+      "id": "941759e7-8275-4ddc-a569-a0b8b3e82844",
+      "name": "BBVA SA",
+      "entity_type": "Organization",
+      "properties": {
+       "sources": [
+        {
+         "name": "ESG Today: Week in Review",
+         "document": "https://esg-investing.com/?p=24353",
+         "date": "2026-09-25"
+        },
+        {
+         "name": "ESG Post",
+         "document": "https://esgpost.com/eib-and-bbva-sign-e380m-green-finance-and-advisory-agreements",
+         "date": "2026-09-25"
+        }
+       ],
+       "id": "18d6823d-add9-5a6b-a6c3-240a04db9b6d"
+      }
+     },
+     {
+      "id": "94ec7dc6-a741-49bb-80c9-720deee10973",
+      "name": "Italy",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "EU Commission launches OceanEye, calls to strengthen global ocean protection",
+         "document": "https://ieu-monitoring.com/editorial/eib-approves-e9-2bn-for-eu-businesses-energy-autonomy-and-global-partnerships/1248306",
+         "date": "2026-08-28"
+        }
+       ],
+       "id": "da52471e-6889-5322-afcb-3eec0dfc8c4c"
+      }
+     },
+     {
+      "id": "b6f57d8b-33dd-409a-9fbb-269947c54e23",
+      "name": "France",
+      "entity_type": "Country",
+      "properties": {
+       "sources": [
+        {
+         "name": "EU Commission launches OceanEye, calls to strengthen global ocean protection",
+         "document": "https://ieu-monitoring.com/editorial/eib-approves-e9-2bn-for-eu-businesses-energy-autonomy-and-global-partnerships/1248306",
+         "date": "2026-08-28"
+        }
+       ],
+       "id": "006863b8-3735-557e-8773-90689e15536a"
+      }
+     },
+     {
+      "id": "bd2ccc2a-e134-40ff-a30a-2eac2050c7bb",
+      "name": "Teresa Czerwi\u0144ska",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "International Development News, Breaking News, Opinion and Analysis - Devdiscourse",
+         "document": "https://www.devdiscourse.com/article/business/892424-teresa-czerwinska-is-new-vice-president-of-eib",
+         "date": "2026-09-01"
+        }
+       ],
+       "id": "3c77e924-1a27-5c7b-937b-3087e3831af9"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

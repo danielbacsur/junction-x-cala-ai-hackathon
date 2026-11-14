@@ -1,0 +1,592 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/entities/a6456e9d-1cf1-5148-8315-f0079ce6a3a8",
+  "body": {
+   "properties": [
+    "name",
+    "legal_name",
+    "aliases",
+    "description",
+    "website",
+    "headquarters_address",
+    "founding_date",
+    "employee_count_range",
+    "funding_stage",
+    "total_funding",
+    "total_funding_units",
+    "operational_status"
+   ],
+   "relationships": {
+    "outgoing": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_CORPORATE_EVENT": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_EVENT": {
+      "limit": 200
+     },
+     "OPERATES_IN_INDUSTRY": {
+      "limit": 200
+     },
+     "HAS_HEADQUARTERS_IN": {
+      "limit": 200
+     },
+     "IS_REGISTERED_IN": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "HAS_DOMAIN_NAME": {
+      "limit": 200
+     },
+     "HAS_PRESENCE_IN": {
+      "limit": 200
+     },
+     "TRADED_ON": {
+      "limit": 200
+     },
+     "LISTED_ON": {
+      "limit": 200
+     }
+    },
+    "incoming": {
+     "INVESTED_IN": {
+      "limit": 200
+     },
+     "FOUNDED": {
+      "limit": 200
+     },
+     "WORKS_AT": {
+      "limit": 200
+     },
+     "IS_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_CEO_OF": {
+      "limit": 200
+     },
+     "IS_CTO_OF": {
+      "limit": 200
+     },
+     "IS_CFO_OF": {
+      "limit": 200
+     },
+     "IS_COO_OF": {
+      "limit": 200
+     },
+     "IS_EXECUTIVE_OF": {
+      "limit": 200
+     },
+     "IS_BOARD_MEMBER_OF": {
+      "limit": 200
+     },
+     "IS_VICEPRESIDENT_OF": {
+      "limit": 200
+     },
+     "IS_SUBSIDIARY_OF": {
+      "limit": 200
+     },
+     "IS_DIRECT_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_ULTIMATE_PARENT_OF": {
+      "limit": 200
+     },
+     "IS_BENEFICIARY_OWNER_OF": {
+      "limit": 200
+     },
+     "MANUFACTURED_BY": {
+      "limit": 200
+     },
+     "DESIGNED_BY": {
+      "limit": 200
+     },
+     "OPERATED_BY": {
+      "limit": 200
+     },
+     "CREATED_BY": {
+      "limit": 200
+     },
+     "PUBLISHED_BY": {
+      "limit": 200
+     },
+     "GRANTED_BY": {
+      "limit": 200
+     },
+     "PARTICIPATES_IN_FUNDING_ROUND": {
+      "limit": 200
+     }
+    }
+   }
+  }
+ },
+ "_fetched_at": "2026-11-14T12:24:33+0200",
+ "_seconds": 0.5,
+ "response": {
+  "id": "a6456e9d-1cf1-5148-8315-f0079ce6a3a8",
+  "name": "Assemblr",
+  "entity_type": "Company",
+  "description": "Assemblr lets you enliven your own AR, VR, and immersive experiences easily with its all-around ecosystem. All coding-free, flexible accessibility.",
+  "properties": {
+   "name": {
+    "value": "Assemblr",
+    "sources": [
+     {
+      "name": "assemblrworld.com",
+      "document": "https://assemblrworld.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/assemblrworld/?",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "legal_name": {
+    "value": "Assemblr Pte Ltd",
+    "sources": [
+     {
+      "name": "assemblrworld.com",
+      "document": "https://www.assemblrworld.com/id/about-us",
+      "date": "2026-11-12",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "description": {
+    "value": "Assemblr lets you enliven your own AR, VR, and immersive experiences easily with its all-around ecosystem. All coding-free, flexible accessibility.",
+    "sources": [
+     {
+      "name": "assemblrworld.com",
+      "document": "https://assemblrworld.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "website": {
+    "value": "assemblrworld.com",
+    "sources": [
+     {
+      "name": "assemblrworld.com",
+      "document": "https://assemblrworld.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "dns.google",
+      "document": "https://dns.google/query?name=assemblrworld.com&type=A",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   },
+   "headquarters_address": {
+    "value": "Indonesia, Indonesia",
+    "sources": [
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/assemblrworld/?",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "founding_date": {
+    "value": "2018-01-01",
+    "sources": [
+     {
+      "name": "linkedin.com",
+      "document": "https://www.linkedin.com/company/assemblrworld/?",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     }
+    ]
+   },
+   "total_funding": {
+    "value": 1100000.0,
+    "sources": [
+     {
+      "name": "startupintros.com",
+      "document": "https://startupintros.com/news/2018-02-01-assemblr-seed",
+      "date": "2018-02-01",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     },
+     {
+      "name": "startupintros.com",
+      "document": "https://startupintros.com/news/2021-01-01-assemblr-seed-2",
+      "date": "2021-01-01",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     },
+     {
+      "name": "ficus.vc",
+      "document": "https://ficus.vc/?p=373",
+      "date": "2022-12-07",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "katadata.co.id",
+      "document": "https://katadata.co.id/amp/digital/startup/6392eba4c1765/investor-malaysia-suntik-startup-metaverse-bandung-rp-6-2-miliar",
+      "date": "2022-12-09",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "total_funding_units": {
+    "value": "USD",
+    "sources": [
+     {
+      "name": "startupintros.com",
+      "document": "https://startupintros.com/news/2018-02-01-assemblr-seed",
+      "date": "2018-02-01",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     },
+     {
+      "name": "startupintros.com",
+      "document": "https://startupintros.com/news/2021-01-01-assemblr-seed-2",
+      "date": "2021-01-01",
+      "date_precision": "day",
+      "source_rank": "AGGREGATOR"
+     },
+     {
+      "name": "ficus.vc",
+      "document": "https://ficus.vc/?p=373",
+      "date": "2022-12-07",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     },
+     {
+      "name": "katadata.co.id",
+      "document": "https://katadata.co.id/amp/digital/startup/6392eba4c1765/investor-malaysia-suntik-startup-metaverse-bandung-rp-6-2-miliar",
+      "date": "2022-12-09",
+      "date_precision": "day",
+      "source_rank": "PRESS"
+     }
+    ]
+   },
+   "operational_status": {
+    "value": "ACTIVE",
+    "sources": [
+     {
+      "name": "assemblrworld.com",
+      "document": "https://assemblrworld.com/",
+      "date": "2026-11-02",
+      "date_precision": "day",
+      "source_rank": "PRIMARY"
+     }
+    ]
+   }
+  },
+  "relationships": {
+   "outgoing": {
+    "PARTICIPATES_IN_FUNDING_ROUND": [
+     {
+      "id": "58a6dd21-cfd1-5121-af90-dd589b5d2a30",
+      "name": "Funding round",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "ficus.vc",
+         "document": "https://ficus.vc/?p=373",
+         "date": "2022-12-07",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "katadata.co.id",
+         "document": "https://katadata.co.id/amp/digital/startup/6392eba4c1765/investor-malaysia-suntik-startup-metaverse-bandung-rp-6-2-miliar",
+         "date": "2022-12-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "44dce781-c979-5c08-9474-1a43b177549d"
+      }
+     },
+     {
+      "id": "a9d34198-904b-524d-976c-f05509a2a611",
+      "name": "Funding round",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "startupintros.com",
+         "document": "https://startupintros.com/news/2021-01-01-assemblr-seed-2",
+         "date": "2021-01-01",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "111f52cb-990a-56d5-9155-5a20ed408d3a"
+      }
+     },
+     {
+      "id": "f3177e67-4ca7-56f7-8e29-182dcc629cec",
+      "name": "Funding round",
+      "entity_type": "FundingRound",
+      "properties": {
+       "role": "ISSUER",
+       "sources": [
+        {
+         "name": "startupintros.com",
+         "document": "https://startupintros.com/news/2018-02-01-assemblr-seed",
+         "date": "2018-02-01",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "5989bfcd-eb9e-5a42-a2ce-9fc059b62ac5"
+      }
+     }
+    ],
+    "PARTICIPATES_IN_EVENT": [
+     {
+      "id": "bc844d56-6ab4-452b-96bf-2661e86e592b",
+      "name": "Slush 2026",
+      "entity_type": "Event",
+      "properties": {
+       "role": "ATTENDEE",
+       "sources": [
+        {
+         "name": "Slush",
+         "document": "https://slush.org/",
+         "date": "2026-11-14"
+        }
+       ],
+       "id": "2be0299a-808b-5383-83fe-f86cdca946dd"
+      }
+     }
+    ],
+    "OPERATES_IN_INDUSTRY": [
+     {
+      "id": "e89f6829-3a02-4330-b0c4-7746021a9837",
+      "name": "EDUCATION",
+      "entity_type": "Industry",
+      "properties": {
+       "sources": [
+        {
+         "name": "linkedin.com",
+         "document": "https://www.linkedin.com/company/assemblrworld/?",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "9a0fbbf4-ae65-51a8-a20b-9b6479c7ac95",
+       "original_label": "edu"
+      }
+     }
+    ],
+    "HAS_DOMAIN_NAME": [
+     {
+      "id": "d233f084-bced-5c64-9603-fc26af95e35c",
+      "name": "assemblrworld.com",
+      "entity_type": "DomainName",
+      "properties": {
+       "sources": [
+        {
+         "name": "assemblrworld.com",
+         "document": "https://assemblrworld.com/",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "dns.google",
+         "document": "https://dns.google/query?name=assemblrworld.com&type=A",
+         "date": "2026-11-02",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "dea4a4d6-2862-5495-8b46-0cc3ec4e903b",
+       "status": "ACTIVE"
+      }
+     }
+    ]
+   },
+   "incoming": {
+    "INVESTED_IN": [
+     {
+      "id": "4bd1af9b-4b62-4ed9-b8bc-c1f2fc29037c",
+      "name": "Insignia Ventures Partners",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "startupintros.com",
+         "document": "https://startupintros.com/news/2018-02-01-assemblr-seed",
+         "date": "2018-02-01",
+         "date_precision": "day",
+         "source_rank": "AGGREGATOR"
+        }
+       ],
+       "id": "a878d2dd-c8fd-4719-9349-8a733fc347a1"
+      }
+     },
+     {
+      "id": "6423b9a6-720e-4b02-9ac5-cba7ebb32376",
+      "name": "FICUS CAPITAL AND INVESTMENT MANAGEMENT LTD",
+      "entity_type": "Company",
+      "properties": {
+       "sources": [
+        {
+         "name": "ficus.vc",
+         "document": "https://ficus.vc/?p=373",
+         "date": "2022-12-07",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "katadata.co.id",
+         "document": "https://katadata.co.id/amp/digital/startup/6392eba4c1765/investor-malaysia-suntik-startup-metaverse-bandung-rp-6-2-miliar",
+         "date": "2022-12-09",
+         "date_precision": "day",
+         "source_rank": "PRESS"
+        }
+       ],
+       "id": "ecbf2ce4-581e-4c05-b084-e5455e54ae6b"
+      }
+     }
+    ],
+    "FOUNDED": [
+     {
+      "id": "4b744136-6e36-5b16-929f-89e22df1c5d2",
+      "name": "Risnandar",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "ficus.vc",
+         "document": "https://ficus.vc/?p=373",
+         "date": "2022-12-07",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "d132e258-0534-530d-9c80-3371357f158a"
+      }
+     },
+     {
+      "id": "744d019a-aaf9-59ce-8384-b7422c048177",
+      "name": "Hasbi Asyadiq",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "ficus.vc",
+         "document": "https://ficus.vc/?p=373",
+         "date": "2022-12-07",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "8da19261-baaa-568e-a428-323468bfebd1"
+      }
+     },
+     {
+      "id": "b30b59ea-17d6-5072-93b3-5d9af5bb3cd6",
+      "name": "Anita Yustisia",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "ficus.vc",
+         "document": "https://ficus.vc/?p=373",
+         "date": "2022-12-07",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "8923685b-949b-5870-8eab-21ce95f1e374"
+      }
+     }
+    ],
+    "IS_CEO_OF": [
+     {
+      "id": "744d019a-aaf9-59ce-8384-b7422c048177",
+      "name": "Hasbi Asyadiq",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "ficus.vc",
+         "document": "https://ficus.vc/?p=373",
+         "date": "2022-12-07",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        },
+        {
+         "name": "assemblrworld.com",
+         "document": "https://assemblrworld.com/blog/assemblr-joining-techstars-accelerator",
+         "date": "2021-01-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "5de05124-b352-5f67-8b73-e876eba27a1f"
+      }
+     }
+    ],
+    "IS_CTO_OF": [
+     {
+      "id": "4b744136-6e36-5b16-929f-89e22df1c5d2",
+      "name": "Risnandar",
+      "entity_type": "Person",
+      "properties": {
+       "sources": [
+        {
+         "name": "assemblrworld.com",
+         "document": "https://assemblrworld.com/blog/assemblr-joining-techstars-accelerator",
+         "date": "2021-01-29",
+         "date_precision": "day",
+         "source_rank": "PRIMARY"
+        }
+       ],
+       "id": "3fa01d86-1301-5cd2-a28e-ac6b2576dc77"
+      }
+     }
+    ]
+   }
+  },
+  "numerical_observations": []
+ }
+}

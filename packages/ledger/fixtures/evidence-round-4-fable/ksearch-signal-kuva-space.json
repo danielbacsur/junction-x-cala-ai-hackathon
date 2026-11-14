@@ -1,0 +1,314 @@
+{
+ "_request": {
+  "method": "POST",
+  "path": "/knowledge/search",
+  "body": {
+   "input": "Which government contracts, public grants or public funding agreements, partnerships and customer agreements has Kuva Space (Finnish hyperspectral satellite company) announced since January 2025? For each give the counterparty, date, type and value."
+  }
+ },
+ "_fetched_at": "2026-11-14T12:28:28+0200",
+ "_started_offset_s": 7.0,
+ "_seconds": 43.63,
+ "response": {
+  "content": "## Kuva Space \u2014 Contracts, Partnerships & Agreements Announced Since January 2025\n\nBased on available information, the following agreements have been publicly announced by Kuva Space since January 2025:\n\n---\n\n### 1. NASA Commercial Satellite Data Acquisition (CSDA) Program \u2014 Contract Award\n- **Counterparty:** NASA (via Kuva US Inc., the U.S. subsidiary)\n- **Date:** Announced ~June 2026 (NASA announced latest CSDA On-Ramp 2 awardees on 18 June 2026)\n- **Type:** Government contract \u2014 firm-fixed-price, indefinite-delivery/indefinite-quantity (IDIQ) multiple-award contract under CSDA On-Ramp 2\n- **Value:** The overall CSDA On-Ramp 2 contract has a maximum ceiling of **$476 million** shared across all awardees; the individual task-order value for Kuva Space has not been publicly disclosed. The contract runs through 15 November 2028.\n\n---\n\n### 2. Finnish Environment Institute (Syke) \u2014 Pilot Partnership\n- **Counterparty:** Finnish Environment Institute (Syke), a governmental research institute\n- **Date:** Announced **3 July 2025**\n- **Type:** Public-private partnership / pilot project\n- **Value:** Not publicly disclosed. The pilot is partly funded by Finland's state research institutes' postdoc programme.\n- **Scope:** Testing hyperspectral satellite data and AI-driven insights for monitoring and identifying algae blooms in Finland's lakes and coastal waters.\n\n---\n\n### 3. IHI Corporation (Japan) \u2014 Memorandum of Understanding\n- **Counterparty:** IHI Corporation (Japan; aerospace, space & defence conglomerate)\n- **Date:** Announced mid-2026 (MoU signed following a demonstration phase running since **November 2025**)\n- **Type:** Strategic partnership / MoU for a potential sovereign Japanese hyperspectral satellite constellation\n- **Value:** Not publicly disclosed.\n- **Scope:** Evaluating Kuva Space's constellation capacity, defining requirements for a ~20-satellite Japanese sovereign hyperspectral constellation, and exploring business structures including potential domestic satellite manufacturing. Applications include defence & intelligence, agriculture, aquaculture, maritime monitoring, and environmental observation.\n\n---\n\n### 4. Ch\u00e2teau Puybarbe (Bordeaux) \u2014 Vineyard Monitoring Collaboration\n- **Counterparty:** Ch\u00e2teau Puybarbe (organic wine estate in Bordeaux, France)\n- **Date:** Announced **19 March 2026**\n- **Type:** Commercial pilot / partnership\n- **Value:** Not publicly disclosed.\n- **Scope:** Using hyperspectral satellite imaging to monitor vine health, detect early signs of stress (fungal pressure, insect activity, moisture shifts, nutrient imbalances) \u2014 described as the first vineyard operationally monitored by hyperspectral satellites from space.\n\n---\n\n### Notes\n- The **ESA Civil Security from Space (CSS) contract** (\u20ac1.8 million) and the **European Commission Copernicus contract** (\u20ac5 million) were announced in **2024 and 2023** respectively, i.e. before the January 2025 cut-off.\n- Financial values for most of the post-January 2025 agreements have not been publicly disclosed. Where a contract ceiling is noted (NASA CSDA), it represents the programme-wide maximum rather than Kuva Space's individual allocation.\n",
+  "explainability": [
+   {
+    "content": "The NASA Commercial Satellite Data Acquisition (CSDA) On\u2011Ramp\u202f2 award was announced on 18\u202fJune\u202f2026, is a firm\u2011fixed\u2011price IDIQ contract with a maximum ceiling of $476\u202fmillion and runs through 15\u202fNov\u202f2028, establishing the government contract with NASA for Kuva Space\u2019s U.S. subsidiary.",
+    "references": [
+     "7754502a-b9eb-4b4f-8da9-bedf20087b69",
+     "f1644225-6960-4aee-9a3e-c2618f6befda"
+    ]
+   },
+   {
+    "content": "Kuva Space\u2019s participation in NASA\u2019s CSDA program was confirmed by a press release stating that Kuva US Inc. joined the program, making the company eligible to provide commercial hyperspectral data to NASA and public agencies.",
+    "references": [
+     "f1644225-6960-4aee-9a3e-c2618f6befda"
+    ]
+   },
+   {
+    "content": "The partnership with the Finnish Environment Institute (Syke) was announced on 3\u202fJuly\u202f2025, describing a public\u2011private pilot to test hyperspectral data and AI for algae\u2011bloom monitoring in Finland\u2019s lakes and coastal waters.",
+    "references": [
+     "706a3096-0397-4610-8f41-ce6afbdc1fc4"
+    ]
+   },
+   {
+    "content": "The Syke\u2011Kuva pilot is funded in part by Finland\u2019s state research institutes\u2019 post\u2011doc programme, and no monetary value was disclosed publicly.",
+    "references": [
+     "451236f6-6137-472d-9408-32b475c4a8d8"
+    ]
+   },
+   {
+    "content": "The memorandum of understanding with Japan\u2019s IHI Corporation was signed in mid\u20112026 after a demonstration phase that began in November\u202f2025, outlining a strategic partnership to evaluate a potential 20\u2011satellite Japanese hyperspectral constellation.",
+    "references": [
+     "d6d36132-1b38-4e89-84dd-659ba0171b22",
+     "ef16f443-ad2c-4ac4-a46b-cd1921f242ce"
+    ]
+   },
+   {
+    "content": "The IHI\u2011Kuva MoU does not disclose a financial amount, focusing instead on technical evaluation and potential domestic satellite manufacturing.",
+    "references": [
+     "d6d36132-1b38-4e89-84dd-659ba0171b22"
+    ]
+   },
+   {
+    "content": "The collaboration with Ch\u00e2teau\u202fPuybarbe was announced on 19\u202fMarch\u202f2026, describing a commercial pilot where the vineyard will be monitored using Kuva Space\u2019s hyperspectral satellite imagery.",
+    "references": [
+     "682f45c5-2f55-4f6e-aad0-92b4b8e33c81"
+    ]
+   }
+  ],
+  "context": [
+   {
+    "id": "7754502a-b9eb-4b4f-8da9-bedf20087b69",
+    "content": "and public safety. The CSDA On-Ramp 2 contract is a firm-fixed-price, indefinite-delivery/indefinite-quantity multiple-award contract with an original maximum contract value of $476 million. The contract runs through November 15, 2028. NASA announced the latest awardees on June 18, 2026. [...] June 25, 2026\n\nThe AI halves the time for creating value \u2013 FTI Consulting Private Equity Value Creation Index 2026\n\n### The AI halves the time for creating value \u2013 FTI Consulting Private Equity Value Creation Index 2026\n\nJune 10, 2026\n\nNext Post\n\n[](\n\n### Schneider Electric to acquire industrial AI business Cognite for $3.1bn\n\n[](\n\n### Valmet has completed the acquisition of Severn Group, accelerating the growth of the Process Performance Solutions segment\n\nEdiBeez srl [...] Kuva Space is a space technology company developing hyperspectral Earth observation satellites and software for analyzing planetary data. Founded in 2016 and based in Espoo, it builds microsatellites equipped with hyperspectral imaging systems that capture narrow-band spectral data across the Earth\u2019s surface. The company combines this satellite infrastructure with AI-based analytics to interpret material properties and environmental conditions for applications such as agriculture, climate",
+    "origins": [
+     {
+      "source": {
+       "name": "EYE NEWSFLASH: Bruce brothers back in the game with surprise Purplebricks return",
+       "url": "https://bebeez.eu/2026/07/01/kuva-space-scores-nasa-contract-accelerates-hyperspectral-constellation-ambitions"
+      },
+      "document": {
+       "name": "Kuva Space scores NASA contract, accelerates hyperspectral constellation ambitions \u2013 BeBeez International",
+       "url": "https://bebeez.eu/2026/07/01/kuva-space-scores-nasa-contract-accelerates-hyperspectral-constellation-ambitions"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "f1644225-6960-4aee-9a3e-c2618f6befda",
+    "content": "response, and other public-sector applications. As hyperspectral technology matures, commercial operators are beginning to deploy the sensors more broadly, expanding access beyond government-funded research missions. NASA said partnerships through the CSDA program expand scientific capabilities while accelerating access to commercial satellite data for researchers and public agencies. For companies such as Kuva Space, participation also provides an opportunity to demonstrate their technologies [...] enabling precise material identification and environmental assessments beyond traditional imagery.  Participation in NASA's program allows Kuva to demonstrate commercial hyperspectral technology within a major Earth science initiative. FAIRFAX, Va. \u2013 Kuva US Inc., the U.S. subsidiary of Finland-based Kuva Space, has joined NASA's Commercial Satellite Data Acquisition (CSDA) program. This move makes the company eligible to provide commercial hyperspectral satellite data under future NASA Earth [...] NASA selects Kuva Space for commercial hyperspectral satellite data program | Military Aerospace",
+    "origins": [
+     {
+      "source": {
+       "name": "Home",
+       "url": "https://www.militaryaerospace.com/commercial-aerospace/news/55388073/nasa-selects-kuva-space-for-commercial-hyperspectral-satellite-data-program"
+      },
+      "document": {
+       "name": "NASA selects Kuva Space for commercial hyperspectral satellite data program | Military Aerospace",
+       "url": "https://www.militaryaerospace.com/commercial-aerospace/news/55388073/nasa-selects-kuva-space-for-commercial-hyperspectral-satellite-data-program"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "e4c9ff51-aae9-43ad-a62d-9816b39f1b13",
+    "content": "may be half the battle for nascent hyperspectral sector. ## Kuva to offer maritime-domain insights with growing constellation. ## SpaceX launches Transporter-11 smallsat rideshare mission. ## Kuva Space wins ESA hyperspectral contract. ## Kuva Space raises 16.6 million euros. ## Kuva Space Aawarded \u20ac5M Commercial Contract To Be Sole Provider Of Hyperspectral Data Services For The Copernicus Program. ## Kuva Space wins 5 million euro award for hyperspectral data. ## Field testing from space: [...] Covering the business and politics of space. # Tag: Kuva Space. An illustration of a satellite communications network. ## NASA adds three European firms to the commercial data program. MILAN \u2014 NASA\u2019s Commercial Satellite Data Acquisition program (CSDA) announced June 23 contract awards with eight new commercial satellite data providers, three of which are European: Kuva Space (Finland), OroraTech [\u2026]. ## European imaging companies step in to fill warzone gap. ## Educating customers may be half [...] Kuva Space Archives - SpaceNews",
+    "origins": [
+     {
+      "source": {
+       "name": "spacenews.com",
+       "url": "https://spacenews.com/tag/kuva-space"
+      },
+      "document": {
+       "name": "Kuva Space Archives - SpaceNews",
+       "url": "https://spacenews.com/tag/kuva-space"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "706a3096-0397-4610-8f41-ce6afbdc1fc4",
+    "content": "Published Time: 2025-07-03T15:38:06+00:00 \ud83c\uddeb\ud83c\uddee Finnish Environment Institute and Kuva Space partner to enhance Finland\u2019s inland and coastal water quality monitoring - ArcticToday Home\ud83c\uddeb\ud83c\uddee Finnish Environment Institute and Kuva Space partner to enhance Finland\u2019s inland and coastal water quality monitoring \ud83c\uddeb\ud83c\uddee Finnish Environment Institute and Kuva Space partner to enhance Finland\u2019s inland and coastal water quality monitoring Helsinki, Finland(July 3rd, 2025) Finnish hyperspectral satellite and [...] occurrence and distribution. _\u201cThis public-private collaboration is a notable advancement in environmental monitoring capabilities, particularly for inland water quality, where large-scale, high-frequency coverage remains scarce,\u201d_ saysJarkko Antila, CEO of Kuva Space._\u201cBy 2027, Kuva Space\u2019s hyperspectral monitoring with daily revisit rates will provide commercial and public sector stakeholders in aquaculture and water resource management with continuous, actionable insights, enhancing [...] satellite and AI-powered insights company Kuva Space is launching a pilot with the Finnish Environment Institute (Syke) to test the use of hyperspectral satellite data and AI-driven insights in improving the monitoring and identification of algae blooms in Finland\u2019s lakes and coastal waters. This collaboration builds on Syke\u2019s existing use of public satellite data and manual field testing, adding more detailed spectral information to help target environmental measures and recovery actions where",
+    "origins": [
+     {
+      "source": {
+       "name": "arctictoday.com",
+       "url": "https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-finnish-environment-institute-and-kuva-space-partner-to-enhance-finlands-inland-and-coastal-water-quality-monitoring"
+      },
+      "document": {
+       "name": "Finnish Environment Institute and Kuva Space partner to enhance ...",
+       "url": "https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-finnish-environment-institute-and-kuva-space-partner-to-enhance-finlands-inland-and-coastal-water-quality-monitoring"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "88c15ef5-49d0-48ab-94e3-3fa23e49e223",
+    "content": "Home \ud83c\uddeb\ud83c\uddee Finnish Environment Institute and Kuva Space partner to enhance Finland\u2019s inland and coastal water quality monitoring. # \ud83c\uddeb\ud83c\uddee Finnish Environment Institute and Kuva Space partner to enhance Finland\u2019s inland and coastal water quality monitoring. Helsinki, Finland(July 3rd, 2025) Finnish hyperspectral satellite and AI-powered insights company Kuva Space is launching a pilot with the Finnish Environment Institute (Syke) to test the use of hyperspectral satellite data and AI-driven insights [...] AI-driven insights in improving the monitoring and identification of algae blooms in Finland\u2019s lakes and coastal waters. This collaboration builds on Syke\u2019s existing use of public satellite data and manual field testing, adding more detailed spectral information to help target environmental measures and recovery actions where they are needed most. Syke aims to monitor the entire country\u2019s inland and coastal waters to detect harmful algae blooms and their associated species more quickly and [...] more quickly and accurately. To address this, Syke and Kuva Space are collaborating to develop advanced machine learning and AI models that leverage hyperspectral data, sample measurements, and insights from biochemical and genetic research. Syke\u2019s extensive water sample data will enhance model training and reliability, advancing Earth observation into a validated and scalable tool for monitoring cyanobacteria and understanding the environmental drivers behind their occurrence and distribution.",
+    "origins": [
+     {
+      "source": {
+       "name": "arctictoday.com",
+       "url": "https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-finnish-environment-institute-and-kuva-space-partner-to-enhance-finlands-inland-and-coastal-water-quality-monitoring"
+      },
+      "document": {
+       "name": "\ud83c\uddeb\ud83c\uddee Finnish Environment Institute and Kuva Space partner to enhance Finland\u2019s inland and coastal water quality monitoring - ArcticToday",
+       "url": "https://www.arctictoday.com/%F0%9F%87%AB%F0%9F%87%AE-finnish-environment-institute-and-kuva-space-partner-to-enhance-finlands-inland-and-coastal-water-quality-monitoring"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "e169bfe1-214f-47df-beea-9655d22cf033",
+    "content": "Finland\u2019s Willo secures \u20ac2.9... Finland\u2019s Willo secures \u20ac2.9... Finland\u2019s Willo secures \u20ac2.9... Finland\u2019s Willo secures \u20ac2.9... # Kuva Space-Syke collaboration aims to transform national water monitoring using AI and hyperspectral data. Helsinki-based Kuva Space is partnering with the Finnish Environment Institute (Syke) on a pilot project aimed at improving the detection of harmful algae blooms in Finland\u2019s inland and coastal waters. The initiative will test the applicability of Kuva Space\u2019s [...] CEO of Kuva Space. \u201cBy 2027, Kuva Space\u2019s hyperspectral monitoring with daily revisit rates will provide commercial and public sector stakeholders in aquaculture and water resource management with continuous, actionable insights, enhancing operational planning, regulatory compliance, and sustainability outcomes at an unprecedented scale,\u201d he continues. Kuva Space successfully launched its Hyperfield-1A satellite in August 2024, marking the initial stage of Kuva Space\u2019s large hyperspectral [...] of Kuva Space\u2019s hyperspectral satellite data and AI-driven analysis in complementing Syke\u2019s existing monitoring methods, which rely on public satellite data and manual sampling. By contributing high-resolution spectral data, Kuva Space will support efforts to distinguish between different algae types and track changes in water quality more precisely. Syke aims to monitor the entire country\u2019s inland and coastal waters to detect harmful algae blooms and their associated species more quickly and",
+    "origins": [
+     {
+      "source": {
+       "name": "arcticstartup.com",
+       "url": "https://arcticstartup.com/kuva-space-partners-with-syke"
+      },
+      "document": {
+       "name": "Kuva Space-Syke collaboration aims to transform national water monitoring using AI and hyperspectral data - ArcticStartup",
+       "url": "https://arcticstartup.com/kuva-space-partners-with-syke"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "451236f6-6137-472d-9408-32b475c4a8d8",
+    "content": "# Finnish Environment Institute and Kuva Space partner to enhance water quality monitoring. The Finnish Environment Institute (Syke) and the Finnish company Kuva Space\ufeff, specializing in hyperspectral satellites and artificial intelligence, are starting a collaboration aimed at improving environmental monitoring. The goal of the collaboration is to gain more information about the algae species in Finnish lakes and coastal waters using new satellite data and artificial intelligence. Syke has long [...] regulatory oversight, and operational sustainability. The research conducted in the pilot project by Syke and Kuva Space is partly funded by the state research institutes' postdoc program, which started this year and aims to strengthen research, development, and innovation activities in areas crucial to society and the economy. Salla Ahonen, working at Syke, focuses her research on utilizing hyperspectral satellite observations to determine algae species. Finland is one of the leading countries [...] Leading Researcher, Group Leader, PhD Finnish Environment Institute (Syke). The Finnish Environment Institute (Syke) contributes to building a sustainable society through research, information and services.",
+    "origins": [
+     {
+      "source": {
+       "name": "Kauppalehti",
+       "url": "https://www.kauppalehti.fi/lehdistotiedotteet/a/b1a9c073-2304-568d-ac3c-4be314007738"
+      },
+      "document": {
+       "name": "Finnish Environment Institute and Kuva Space partner to enhance water quality monitoring | Kauppalehti",
+       "url": "https://www.kauppalehti.fi/lehdistotiedotteet/a/b1a9c073-2304-568d-ac3c-4be314007738"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "d6d36132-1b38-4e89-84dd-659ba0171b22",
+    "content": "the agreement, the companies will evaluate the use of Kuva Space\u2019s hyperspectral satellite constellation, define technical requirements for a potential Japanese constellation, and examine options for building and operating the system, including domestic satellite manufacturing. The companies estimate that a constellation of around 20 satellites could provide daily coverage across Japan and surrounding regions, with the evaluation expected to continue through 2026.. Kuva Space is a Finnish space [...] is a Finnish space technology company developing hyperspectral Earth observation satellites and AI-powered geospatial analytics. Under the agreement, the companies will evaluate Kuva Space\u2019s constellation capacity, define requirements for a Japanese sovereign hyperspectral constellation, and explore business structures to build and operate that capability in Japan, including potential domestic satellite manufacturing. The MoU builds on a demonstration phase running since November 2025, during [...] 2025, during which IHI has evaluated data and analytics from Kuva Space\u2019s first-generation Hyperfield-1 satellites across defense and intelligence, agriculture, aquaculture and environmental monitoring. Under Kuva Space\u2019s satellite capacity-sharing model, IHI would receive coverage in proportion to the number of satellites it procures while benefiting from the revisit performance of the wider constellation. The cookie is used to store the user consent for the cookies in the category",
+    "origins": [
+     {
+      "source": {
+       "name": "arcticstartup.com",
+       "url": "https://arcticstartup.com/kuva-space-partners-with-ihi"
+      },
+      "document": {
+       "name": "Finnish Kuva Space partners with Japan's IHI to assess sovereign hyperspectral satellite constellation - ArcticStartup",
+       "url": "https://arcticstartup.com/kuva-space-partners-with-ihi"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ef16f443-ad2c-4ac4-a46b-cd1921f242ce",
+    "content": "is intended to strengthen Japan's national security and intelligence capabilities, support the development of Japan's space industry, and deepen cooperation with Finland in Earth observation, the company said. A joint statement issued by the leaders of Japan and Finland in June 2025 called for stronger cooperation in defense and economic security, while another joint statement signed in February 2026 agreed to deepen cooperation in dual-use advanced technology fields including space and [...] including space and satellite data. IHI launched its small hyperspectral satellite IHI-SAT2 in November 2025 and has been working to improve hyperspectral image analysis and acquire satellite operations capabilities. [...] # IHI partners Finland\u2019s Kuva Space on hyperspectral satellite constellation.  IHI signs MoU with Finland's Kuva Space on a hyperspectral satellite constellation for Japan security markets.  Partnership covers dual-use satellite data, constellation requirements and business schemes including potential domestic satellite manufacturing.  Kuva Space operates two hyperspectral satellites and plans a next-generation launch in 2027. Representatives from IHI and Kuva Space sign a memorandum of",
+    "origins": [
+     {
+      "source": {
+       "name": "jp.ibtimes.com",
+       "url": "https://jp.ibtimes.com/ihi-partners-finlands-kuva-space-hyperspectral-satellite-constellation-102837"
+      },
+      "document": {
+       "name": "IHI partners Finland's Kuva Space on hyperspectral satellite constellation | IBTimes JP",
+       "url": "https://jp.ibtimes.com/ihi-partners-finlands-kuva-space-hyperspectral-satellite-constellation-102837"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "aac06874-92f7-4e49-ac64-4727acff4502",
+    "content": "companies estimate that a constellation of around 20 satellites could provide daily coverage across Japan and surrounding regions, with the evaluation expected to continue through 2026.. Kuva Space is a Finnish space technology company developing hyperspectral Earth observation satellites and AI-powered geospatial analytics. Founded in 2016 and headquartered in Espoo, the company is building a microsatellite constellation designed to provide data for applications including environmental [...] and operate that capability in Japan, including potential domestic satellite manufacturing. For IHI, the MoU will assess how hyperspectral sensing could be integrated at constellation scale into the sovereign Earth-observation system it is building for Japan, alongside optical, radar, infrared, radio-frequency and VDES (next generation of AIS) capabilities. The MoU builds on a demonstration phase running since November 2025, during which IHI has evaluated data and analytics from Kuva Space\u2019s [...] constellation, and examine options for building and operating the system, including domestic satellite manufacturing. Kuva Space develops hyperspectral Earth observation satellites and geospatial analytics, while IHI operates across aerospace, space and defense, among other industrial sectors. The partnership builds on a demonstration project launched in 2025 and focuses on applications such as maritime monitoring, environmental observation, agriculture, and security. The companies estimate",
+    "origins": [
+     {
+      "source": {
+       "name": "EYE NEWSFLASH: Bruce brothers back in the game with surprise Purplebricks return",
+       "url": "https://bebeez.eu/2026/07/27/finnish-kuva-space-partners-with-japans-ihi-to-assess-sovereign-hyperspectral-satellite-constellation"
+      },
+      "document": {
+       "name": "Finnish Kuva Space partners with Japan\u2019s IHI to assess sovereign hyperspectral satellite constellation \u2013 BeBeez International",
+       "url": "https://bebeez.eu/2026/07/27/finnish-kuva-space-partners-with-japans-ihi-to-assess-sovereign-hyperspectral-satellite-constellation"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   },
+   {
+    "id": "682f45c5-2f55-4f6e-aad0-92b4b8e33c81",
+    "content": "# The first vineyard operationally monitored by hyperspectral satellites from space. Bordeaux / Helsinki 19 March 2026 \u2013 Ch\u00e2teau Puybarbe, an organic wine estate in Bordeaux owned and operated by Finnish winemakers Riku V\u00e4\u00e4n\u00e4nen and Anna V\u00e4\u00e4n\u00e4nen, has begun a collaboration with Finnish satellite analytics company Kuva Space to explore how hyperspectral satellite technology can support the future of sustainable agriculture and vineyard management. Kuva Space and Ch\u00e2teau Puybarbe are now [...] Puybarbe are now exploring how a new generation of more affordable satellites can be used operationally in vineyards as an everyday tool. The partnership will use Ch\u00e2teau Puybarbe as a real-world pilot environment to test how space-based Earth observation data can help detect subtle changes in vineyard ecosystems. Kuva Space is bringing the power of spaceborne hyperspectral imaging to the wine industry, enabling vineyard managers and winemakers to monitor vine health, detect early signs of [...] the world\u2019s first extensive microsatellite constellation with patented hyperspectral camera technology to collect gapless data aimed at solving the world\u2019s most pressing issues, such as climate change, food security, safety, and security. Combined with its AI-driven analytics platform, Kuva Space delivers reliable and timely global insights and foresights that transform rich spaceborne data into actionable insights users can use for efficient resource management, optimizing operations, and",
+    "origins": [
+     {
+      "source": {
+       "name": "kuvaspace.com",
+       "url": "https://kuvaspace.com/en/resources/the-first-vineyard-operationally-monitored-by-hyperspectral-satellites-from-space"
+      },
+      "document": {
+       "name": "Bordeaux vineyard Ch\u00e2teau Puybarbe partners with a Finnish satellite company Kuva Space to explore vineyard monitoring and AI-based intelligence from orbit.",
+       "url": "https://kuvaspace.com/en/resources/the-first-vineyard-operationally-monitored-by-hyperspectral-satellites-from-space"
+      },
+      "breadcrumb": [
+       ""
+      ]
+     }
+    ]
+   }
+  ],
+  "entities": [
+   {
+    "id": "903f54b0-1bb2-406c-8bcc-9b80df792a75",
+    "name": "NASA",
+    "entity_type": "Organization",
+    "mentions": [
+     "NASA"
+    ]
+   },
+   {
+    "id": "6d909137-a0a9-414c-bc93-40cbf5f6acd8",
+    "name": "IHI Corporation",
+    "entity_type": "Company",
+    "mentions": [
+     "IHI Corporation"
+    ]
+   },
+   {
+    "id": "8a37b7fa-e810-5656-aa41-9251ba8ffd94",
+    "name": "CHATEAU PUYBARBE",
+    "entity_type": "Company",
+    "mentions": [
+     "Ch\u00e2teau Puybarbe"
+    ]
+   },
+   {
+    "id": "9bfb7eb4-0dab-415b-ac4c-861b03eb3aec",
+    "name": "ESA",
+    "entity_type": "Organization",
+    "mentions": [
+     "ESA"
+    ]
+   },
+   {
+    "id": "cc0d7437-ffbd-4981-9711-4c26ba4cccdb",
+    "name": "European Commission",
+    "entity_type": "Organization",
+    "mentions": [
+     "European Commission"
+    ]
+   }
+  ]
+ }
+}

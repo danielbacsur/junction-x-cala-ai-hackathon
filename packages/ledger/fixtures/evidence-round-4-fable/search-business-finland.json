@@ -1,0 +1,43 @@
+{
+ "_request": {
+  "method": "GET",
+  "path": "/entities?name=Business%20Finland&limit=5",
+  "body": null
+ },
+ "_fetched_at": "2026-11-14T12:20:18+0200",
+ "_seconds": 0.41,
+ "response": {
+  "entities": [
+   {
+    "id": "3b0499bc-3c7e-4d50-aee5-42de34a5f8d0",
+    "name": "Business Finland Oy",
+    "entity_type": "Company",
+    "description": "Finnish government agency headquartered in Helsinki that promotes trade, investment and innovation for Finnish companies, founded in 2015."
+   },
+   {
+    "id": "d5b41639-eb27-43df-a6ee-a4f03807fbca",
+    "name": "Business Finland",
+    "entity_type": "Organization",
+    "description": "Finnish government agency that funds and promotes innovation and export activities."
+   },
+   {
+    "id": "41c754b1-029c-4087-b456-920d3c67ae0e",
+    "name": "Business Finland Venture Capital",
+    "entity_type": "Company",
+    "description": "Finnish government agency's venture capital arm investing in early-stage VC funds."
+   },
+   {
+    "id": "9a3f5209-7446-413d-858b-950864a95ec4",
+    "name": "Our Business Finland Oy",
+    "entity_type": "Company",
+    "description": "Finnish company incorporated in 2016 and headquartered in Turku."
+   },
+   {
+    "id": "a52c8954-692c-4abe-8ea6-75271a178959",
+    "name": "English for Business (Finland) Oy",
+    "entity_type": "Company",
+    "description": "Finnish company headquartered in Degerby, founded in 1988."
+   }
+  ]
+ }
+}
