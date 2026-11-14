@@ -367,7 +367,10 @@ async function rebuildSignals(db: Db, now: Date): Promise<void> {
     // The same participation is often seen on two reads; one party per entity and role.
     const parties = uniqueBy(round.participants ?? [], (party) => `${party.entity_id}|${party.role}`);
     const recipients = parties.filter((party) => recipientRoles.includes(party.role));
-    const financiers = parties.filter((party) => financierRoles.includes(party.role));
+    // Registry bodies first, so a label that names only three financiers names the public one.
+    const financiers = parties
+      .filter((party) => financierRoles.includes(party.role))
+      .sort((a, b) => Number(funders.has(b.entity_id)) - Number(funders.has(a.entity_id)));
     const publicFunder = financiers.map((party) => funders.get(party.entity_id)).find(Boolean);
 
     for (const recipient of recipients) {

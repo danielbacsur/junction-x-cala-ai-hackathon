@@ -422,6 +422,39 @@ describe("a cold subject, with Cala answering", () => {
     await w.db.close();
   }, 60_000);
 
+  test("a trail action spends at most five requests around one entity", async () => {
+    const cala = await liveCala();
+    const w = await world({ fixtures: "roster", cala: () => cala, extract: async () => [] });
+    const mandate = await w.mandates.create("founder", ids.redpine, { includePublicFunding: true });
+
+    // A pass too small to reach the siblings: Redpine and its investors' hubs only.
+    await w.research.workMandate(mandate.id, mandate.ownerId, { budget: 7 });
+
+    const before = await w.research.getTrails(mandate.id, mandate.ownerId, ids.luminar);
+
+    expect(before.some((trail) => trail.pattern === "T2")).toBe(false);
+
+    // Reading a page never fetches.
+    const sent = cala.sent.length;
+
+    await w.research.readBook(mandate.id, mandate.ownerId);
+    await w.research.getTrails(mandate.id, mandate.ownerId, ids.photoncycle);
+    expect(cala.sent.length).toBe(sent);
+
+    // The action reads Photoncycle and its grant rounds, and the grant trail appears.
+    const result = await w.research.readAround(mandate.id, mandate.ownerId, ids.photoncycle);
+
+    expect(result.requestsUsed).toBeLessThanOrEqual(5);
+    expect(cala.sent.length - sent).toBe(result.requestsUsed);
+    expect(result.trailsFound).toBeGreaterThan(0);
+
+    const after = await w.research.getTrails(mandate.id, mandate.ownerId, ids.luminar);
+
+    expect(after.find((trail) => trail.pattern === "T2")!.signal).toMatchObject({ label: "Grant from ENOVA SF", date: "2025-03-13" });
+
+    await w.db.close();
+  }, 60_000);
+
   test("a subject nobody can read returns a gap and an empty Book", async () => {
     const w = await world({ fixtures: "roster" });
     // Zynap is on the Slush roster and nothing else is stored about it.

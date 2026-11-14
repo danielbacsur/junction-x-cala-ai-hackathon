@@ -7,6 +7,7 @@ import {
   type Ledger,
   type Mandate,
   NotFoundError,
+  type WorkResult,
 } from "../contract";
 import type { Db } from "../db";
 import { bookRows, rankMandate } from "./book";
@@ -44,6 +45,12 @@ export type Research = Pick<
   ingest(response: RawResponse): Promise<void>;
   /** For the statement of work: the trails logged for the mandate and the documents they cite. */
   evidenceCounts(mandateId: string): Promise<{ trails: number; sources: number }>;
+  /**
+   * A trail action: at most five new requests around one entity of the mandate, then a rerank
+   * from the store. getTrails itself never fetches, so a page can call it freely; this is the
+   * part of the `get_trails` tool that may spend requests.
+   */
+  readAround(mandateId: string, ownerId: string, entityId: string): Promise<WorkResult>;
 };
 
 export function createResearch(deps: {
@@ -168,6 +175,7 @@ export function createResearch(deps: {
     workMandate: worker.workMandate,
     proposeProbes: worker.proposeProbes,
     checkSignals: worker.checkSignals,
+    readAround: worker.readAround,
 
     async readBook(mandateId, ownerId): Promise<Book> {
       const mandate = await mandates.getMandate(mandateId, ownerId);

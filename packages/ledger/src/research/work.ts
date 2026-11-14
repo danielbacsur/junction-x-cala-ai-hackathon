@@ -19,7 +19,7 @@ import { entityRow, refOf } from "./read";
 import { financierRoles, recipientRoles } from "./relations";
 import { narrowStarBody, probeQuestion, probeRequest, roundRequest, SLUSH_EVENT_ID, starRequest } from "./requests";
 import { ensureDerived, windowStart } from "./rules";
-import { iso, json } from "./sql";
+import { insertRows, iso, json } from "./sql";
 import { entityRefs, signalsOf, type StoredTrail, storedTrails } from "./trails";
 
 /** Ceilings inside one pass (consensus points 11 and 16.8). They share the pass's total budget. */
@@ -29,6 +29,7 @@ const ANCHOR_READS = 8;
 const ROUND_READS = 6;
 const SIBLING_READS = 4;
 const PROBES = 6;
+const TRAIL_ACTION = 5;
 
 const idList = "select jsonb_array_elements_text($1::jsonb)";
 const quoted = (values: string[]) => values.map((value) => `'${value}'`).join(", ");
@@ -54,7 +55,20 @@ type Pass = {
   unmade: string[];
   /** Requests held back for the probes that run at the end of the pass. */
   reserved: number;
+  /** When each entity looked up so far was read, or null when it is not stored. */
+  stored: Map<string, string | null>;
 };
+
+const newPass = (mandate: Mandate, limit: number, rest: Partial<Pass> = {}): Pass => ({
+  mandate,
+  budget: { limit, used: 0 },
+  stop: null,
+  gaps: [],
+  unmade: [],
+  reserved: 0,
+  stored: new Map(),
+  ...rest,
+});
 
 function isAbort(error: unknown): boolean {
   return error instanceof Error && error.name === "AbortError";
@@ -62,6 +76,9 @@ function isAbort(error: unknown): boolean {
 
 export function createWorker(context: WorkContext) {
   const { db, cala, mandates } = context;
+
+  /** The last ranking of the mandates worked most recently, and the store state each was made from. */
+  const rankings = new Map<string, { state: string; result: Awaited<ReturnType<typeof rankMandate>> }>();
 
   const log = (mandateId: string, event: Partial<Omit<WorkEvent, "id" | "mandateId" | "at">> & Pick<WorkEvent, "kind" | "message">) =>
     mandates.logWork(mandateId, { seconds: null, entity: null, fromStore: false, ...event });
@@ -93,7 +110,23 @@ export function createWorker(context: WorkContext) {
 
     await ingestResponse(db, { ...response, ...extra });
 
+    // A stored error is still a failed read: nothing was normalized from it.
+    if (response.status < 200 || response.status >= 300) throw new Error(`Cala answered HTTP ${response.status}`);
+
     return response;
+  }
+
+  /** Finds out in one query which of these records are stored, so a list is not checked row by row. */
+  async function lookUp(pass: Pass, entityIds: string[], kind: "star" | "round"): Promise<void> {
+    const rows = await db.query<{ id: string; at: unknown }>(
+      kind === "star"
+        ? `select id, read_at as at from entities where read_kind in ('star', 'person') and id in (${idList})`
+        : `select id, read_at as at from rounds where read_at is not null and id in (${idList})`,
+      [json(entityIds)],
+    );
+    const found = new Map(rows.map((row) => [row.id, iso(row.at)]));
+
+    for (const id of entityIds) pass.stored.set(id, found.get(id) ?? null);
   }
 
   /**
@@ -101,24 +134,22 @@ export function createWorker(context: WorkContext) {
    * and the step's ceiling still allows a request. Returns true when the record is there afterwards.
    */
   async function read(pass: Pass, entity: EntityRef, kind: "star" | "round", mayAsk = true): Promise<boolean> {
-    const [stored] =
-      kind === "star"
-        ? await db.query<{ at: unknown }>(
-            "select read_at as at from entities where id = $1 and read_kind in ('star', 'person')",
-            [entity.id],
-          )
-        : await db.query<{ at: unknown }>("select read_at as at from rounds where id = $1 and read_at is not null", [entity.id]);
+    if (!pass.stored.has(entity.id)) await lookUp(pass, [entity.id], kind);
+
+    const stored = pass.stored.get(entity.id);
 
     if (stored) {
       await log(pass.mandate.id, {
         kind: "read",
-        message: `Read ${entity.name} from the store (fetched ${iso(stored.at)}).`,
+        message: `Read ${entity.name} from the store (fetched ${stored}).`,
         entity,
         fromStore: true,
       });
 
       return true;
     }
+
+    if (pass.signal?.aborted && !pass.stop) await halt(pass, null);
 
     if (pass.stop || !mayAsk) {
       pass.unmade.push(entity.name);
@@ -138,6 +169,7 @@ export function createWorker(context: WorkContext) {
       try {
         const response = await send(pass, request);
 
+        pass.stored.set(entity.id, response.fetchedAt);
         await log(pass.mandate.id, {
           kind: "read",
           message: `Read ${entity.name}${response.fromStore ? " from the store" : ""}.`,
@@ -279,34 +311,50 @@ export function createWorker(context: WorkContext) {
   }
 
   /**
-   * Ranks from the store and writes one work event per trail behind a Book row that was not
-   * logged for this mandate before. Trails that reach no row stay in the store unannounced.
+   * Ranks from the store and writes one work event per trail the mandate shows (those behind a
+   * Book row, and counterparty and ownership trails) that was not logged for it before. A second
+   * pass therefore never counts a trail twice.
    */
   async function rankAndLog(mandate: Mandate): Promise<{ trails: StoredTrail[]; rows: number; gaps: string[]; found: number }> {
+    // Nothing ingested since this mandate was last ranked under these constraints: the Book stands.
+    const [seq] = await db.query<{ value: string }>("select value #>> '{}' as value from store_meta where key = 'ingest_seq'");
+    const state = `${seq?.value}|${mandate.revision}|${json(mandate.constraints)}|${windowStart(context.now())}`;
+    const last = rankings.get(mandate.id);
+
+    if (last?.state === state) return { ...last.result, found: 0 };
+
     const result = await rankMandate(db, mandate, context.now());
     const logged = new Set(
       (await db.query<{ trail_id: string }>("select trail_id from mandate_trails where mandate_id = $1", [mandate.id])).map(
         (row) => row.trail_id,
       ),
     );
-    let found = 0;
+    const fresh = result.shown.filter((trail) => !logged.has(trail.id));
 
-    for (const trail of result.shown) {
-      if (logged.has(trail.id)) continue;
+    await insertRows(
+      db,
+      fresh.map((trail) => ({ trail_id: trail.id })),
+      `insert into mandate_trails (mandate_id, trail_id)
+       select $2, x.trail_id from jsonb_to_recordset($1::jsonb) as x(trail_id text)
+       on conflict do nothing`,
+      [mandate.id],
+    );
 
-      await db.query("insert into mandate_trails (mandate_id, trail_id) values ($1, $2) on conflict do nothing", [
-        mandate.id,
-        trail.id,
-      ]);
+    for (const trail of fresh) {
       await log(mandate.id, {
         kind: "trail",
         message: `Trail ${trail.pattern}: ${describeTrail(trail)}.`,
         entity: trail.end,
       });
-      found += 1;
     }
 
-    return { ...result, found };
+    rankings.delete(mandate.id);
+    rankings.set(mandate.id, { state, result });
+
+    // A handful is enough to spare one pass its repeats; the Book itself lives in the store.
+    if (rankings.size > 16) rankings.delete(rankings.keys().next().value!);
+
+    return { ...result, found: fresh.length };
   }
 
   /** The subject's backers as stored, institutions before individuals, then by stored ties. */
@@ -365,7 +413,11 @@ export function createWorker(context: WorkContext) {
     // Hubs: the company's investors, whose portfolios hold its siblings.
     let live = pass.budget.used;
 
-    for (const backer of await backersOf(subject.id)) await read(pass, backer, "star", pass.budget.used - live < HUB_READS);
+    const hubs = await backersOf(subject.id);
+
+    await lookUp(pass, hubs.map((hub) => hub.id), "star");
+
+    for (const hub of hubs) await read(pass, hub, "star", pass.budget.used - live < HUB_READS);
 
     await rankAndLog(pass.mandate);
 
@@ -443,6 +495,8 @@ export function createWorker(context: WorkContext) {
     let live = pass.budget.used;
     const read_ = new Set<string>();
 
+    await lookUp(pass, anchors.map((anchor) => anchor.id), "star");
+
     for (const anchor of anchors) {
       if (await read(pass, refOf(anchor), "star", pass.budget.used - live < ANCHOR_READS)) read_.add(anchor.id);
     }
@@ -462,6 +516,7 @@ export function createWorker(context: WorkContext) {
     );
 
     live = pass.budget.used;
+    await lookUp(pass, backers.map((backer) => backer.id), "star");
 
     for (const backer of backers) await read(pass, refOf(backer), "star", pass.budget.used - live < HUB_READS);
   }
@@ -497,15 +552,7 @@ export function createWorker(context: WorkContext) {
     const probed = [
       ...new Set([...(mandate.role === "founder" ? [mandate.subject.id] : []), ...(options.probeEntityIds ?? [])]),
     ].slice(0, PROBES);
-    const pass: Pass = {
-      mandate,
-      budget: { limit: options.budget ?? PASS_BUDGET, used: 0 },
-      signal: options.signal,
-      stop: null,
-      gaps: [],
-      unmade: [],
-      reserved: probed.length,
-    };
+    const pass = newPass(mandate, options.budget ?? PASS_BUDGET, { signal: options.signal, reserved: probed.length });
 
     mandate = await mandates.setStage(mandateId, ownerId, "researching");
     pass.mandate = mandate;
@@ -660,7 +707,7 @@ export function createWorker(context: WorkContext) {
     const mandate = await mandates.getMandate(mandateId, ownerId);
     const ids = [...new Set(entityIds)].slice(0, PROBES);
     const refs = await entityRefs(db, ids);
-    const pass: Pass = { mandate, budget: { limit: ids.length, used: 0 }, stop: null, gaps: [], unmade: [], reserved: 0 };
+    const pass = newPass(mandate, ids.length);
 
     await Promise.all(ids.map((id) => probe(pass, refs.get(id)!)));
 
@@ -675,5 +722,39 @@ export function createWorker(context: WorkContext) {
     return signalsOf(db, ids);
   }
 
-  return { workMandate, proposeProbes, checkSignals, rankAndLog };
+  /**
+   * One trail action (consensus point 11): at most five new requests around one entity of the
+   * mandate. Its own record first, then its unread rounds, grants before the rest, since a round
+   * is where a grantor is named and where roles settle a direction. The Book is ranked again.
+   */
+  async function readAround(mandateId: string, ownerId: string, entityId: string): Promise<WorkResult> {
+    const mandate = await mandates.getMandate(mandateId, ownerId);
+    const pass = newPass(mandate, TRAIL_ACTION);
+    const entity = (await entityRefs(db, [entityId])).get(entityId)!;
+
+    await read(pass, entity, "star");
+    await ensureDerived(db, context.now());
+
+    const rounds = new Map([...(await ownRounds(entityId, true)), ...(await ownRounds(entityId))].map((round) => [round.id, round]));
+
+    for (const round of rounds.values()) {
+      // Past the five, a round is left for another action; it was not promised.
+      if (pass.stop || pass.budget.used >= pass.budget.limit) break;
+
+      await read(pass, round, "round");
+    }
+
+    const ranked = await rankAndLog(mandate);
+
+    return {
+      mandate,
+      requestsUsed: pass.budget.used,
+      trailsFound: ranked.found,
+      rows: ranked.rows,
+      partial: pass.stop !== null || pass.unmade.length > 0,
+      gaps: [...new Set([...pass.gaps, ...ranked.gaps])],
+    };
+  }
+
+  return { workMandate, proposeProbes, checkSignals, readAround };
 }

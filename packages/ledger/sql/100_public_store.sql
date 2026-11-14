@@ -226,7 +226,7 @@ create table probe_claims (
   claim_index integer not null,
   text text not null,
   passages jsonb not null default '[]',
-  -- The agreement fields read out of this claim, kept with the claim they came from.
+  -- The agreements read out of this claim, as a list, kept with the claim they came from.
   extraction jsonb,
   -- reported, edge or unresolved.
   status text not null default 'reported',

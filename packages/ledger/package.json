@@ -10,7 +10,10 @@
   },
 
   "scripts": {
+    "crawl:import": "jiti scripts/import-crawl.ts",
+    "fixtures": "jiti scripts/import-fixtures.ts",
     "test": "vitest run",
+    "try": "jiti scripts/try-mandate.ts",
     "typecheck": "tsc"
   },
 
@@ -24,6 +27,7 @@
     "@electric-sql/pglite": "^0.5",
     "@types/node": "^24",
     "@types/pg": "^8",
+    "jiti": "^2",
     "typescript": "^5",
     "vitest": "^5"
   }

@@ -430,12 +430,12 @@ describe("9. the Kuva US claim", () => {
     expect(dossier.signals.some((signal) => signal.parties.some((party) => party.entity.id === ids.nasa))).toBe(false);
     expect(dossier.unresolvedClaims.some((claim) => claim.claim.includes("maximum ceiling of $476"))).toBe(true);
 
-    const [claim] = await w.db.query<{ status: string; reason: string; extraction: ExtractedAgreement }>(
+    const [claim] = await w.db.query<{ status: string; reason: string; extraction: ExtractedAgreement[] }>(
       "select status, reason, extraction from probe_claims where subject_id = $1 and claim_index = 0",
       [ids.kuva],
     );
 
-    expect(claim).toMatchObject({ status: "unresolved", extraction: { valueIsProgrammeCeiling: true, partyAId: null } });
+    expect(claim).toMatchObject({ status: "unresolved", extraction: [{ valueIsProgrammeCeiling: true, partyAId: null }] });
     expect(claim!.reason).toContain("Kuva US Inc. has no Cala ID");
 
     // The Syke partnership has no Cala ID for its counterparty, so it stays unresolved as well.

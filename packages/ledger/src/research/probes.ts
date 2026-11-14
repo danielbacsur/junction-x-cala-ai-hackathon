@@ -188,17 +188,29 @@ export async function readAgreements(db: Db, responseId: string, extract: Agreem
       [responseId],
     );
 
+    // One claim may hold several agreements; each reading is judged alone.
+    const byClaim = new Map<number, ExtractedAgreement[]>();
+
+    for (const agreement of agreements) {
+      byClaim.set(agreement.claimIndex, [...(byClaim.get(agreement.claimIndex) ?? []), agreement]);
+    }
+
+    for (const [claimIndex, readings] of byClaim) {
+      const verdicts = readings.map((reading) => judgeAgreement(reading, answer, names));
+      const refused = verdicts.flatMap((verdict) => (verdict.edge ? [] : [verdict.reason]));
+
+      await tx.query("update probe_claims set extraction = $2::jsonb, status = $3, reason = $4 where id = $1", [
+        `${responseId}:${claimIndex}`,
+        json(readings),
+        verdicts.some((verdict) => verdict.edge) ? "edge" : "unresolved",
+        refused.length > 0 ? refused.join(" ") : null,
+      ]);
+    }
+
     for (const agreement of agreements) {
       const claim = answer.claims.find((one) => one.index === agreement.claimIndex);
       const verdict = judgeAgreement(agreement, answer, names);
       const claimId = `${responseId}:${agreement.claimIndex}`;
-
-      await tx.query("update probe_claims set extraction = $2::jsonb, status = $3, reason = $4 where id = $1", [
-        claimId,
-        json(agreement),
-        verdict.edge ? "edge" : "unresolved",
-        verdict.edge ? null : verdict.reason,
-      ]);
 
       if (!verdict.edge || !claim) continue;
 
@@ -210,7 +222,7 @@ export async function readAgreements(db: Db, responseId: string, extract: Agreem
          on conflict (id) do update set
            properties = excluded.properties, claim = excluded.claim, sources = excluded.sources`,
         [
-          hashId("claim", claimId),
+          hashId("claim", claimId, verdict.fromId, verdict.toId, agreement.type),
           verdict.fromId,
           verdict.toId,
           agreement.type,

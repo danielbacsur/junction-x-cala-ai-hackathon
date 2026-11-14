@@ -466,18 +466,20 @@ function reasonFor(candidate: Candidate, profile: Profile, best: StoredTrail | n
   const signal = best.signal ? ` ${best.end.name} carries: ${describeSignal(best.signal)}.` : "";
 
   if (mandate.role === "founder") {
-    if (candidate.category === "lead" && third) {
+    const basis = profile.registry?.ours ? " by our classification" : "";
+
+    // Three hops end at the candidate itself: a backer of a company beside the founder.
+    if (third && best.end.id === candidate.id) {
       const tie =
         third.direction === "to_funds_from"
           ? `backs ${second!.to.name} (roles in the same round)`
           : `has an investment tie with ${second!.to.name} (direction not settled)`;
+      const who = candidate.category === "non_dilutive" ? `${name}, a public funder${basis},` : name;
 
-      return `${name} ${tie}, a company beside you through ${first!.to.name}; ${first!.to.name} is the route to ask about.`;
+      return `${who} ${tie}, a company beside you through ${first!.to.name}; ${first!.to.name} is the route to ask about.`;
     }
 
     if (candidate.category === "non_dilutive" && best.signal && best.end.id !== candidate.id) {
-      const basis = profile.registry?.ours ? " by our classification" : "";
-
       return `${name} is a public funder${basis} active beside you: ${describeSignal(best.signal)} for ${best.end.name}, which you reach through ${first!.to.name}. Ask ${first!.to.name} how ${best.end.name} obtained it.`;
     }
 

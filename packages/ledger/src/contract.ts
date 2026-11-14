@@ -444,6 +444,11 @@ export interface Ledger {
 
   /** One bounded research pass. Writes trails, Book rows and work events as it goes. */
   workMandate(mandateId: string, ownerId: string, options?: WorkOptions): Promise<WorkResult>;
+  /**
+   * A trail action: at most five new requests around one entity of the mandate, then a rerank
+   * from the store. getTrails itself never fetches, so pages can call it freely.
+   */
+  readAround(mandateId: string, ownerId: string, entityId: string): Promise<WorkResult>;
   proposeProbes(mandateId: string, ownerId: string): Promise<ProbeProposal[]>;
   /** Runs signal probes for the named entities, inside the mandate's probe budget. */
   checkSignals(mandateId: string, ownerId: string, entityIds: string[]): Promise<Signal[]>;
