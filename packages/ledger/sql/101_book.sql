@@ -66,3 +66,11 @@ create table mandate_gaps (
   partial boolean not null default false,
   noted_at timestamptz not null default now()
 );
+
+-- Trails already written to a mandate's work log, so a second pass does not count them again.
+create table mandate_trails (
+  mandate_id text not null,
+  trail_id text not null,
+  logged_at timestamptz not null default now(),
+  primary key (mandate_id, trail_id)
+);
