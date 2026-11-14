@@ -2,6 +2,7 @@ import { defineTool } from "eve/tools";
 import { z } from "zod";
 
 import { getLedger } from "@/agent/lib/ledger";
+import { ownerOf } from "@/agent/lib/owner";
 
 export default defineTool({
   description:
@@ -16,7 +17,13 @@ export default defineTool({
       .describe("Cala entity types to keep, such as Company, Organization or Person."),
   }),
 
-  async execute({ name, types }) {
+  availableInSubagents: false,
+
+  label: { start: ({ name }) => `Look up ${name}` },
+
+  async execute({ name, types }, ctx) {
+    ownerOf(ctx.session);
+
     return { matches: await getLedger().findEntity(name, { types, limit: 8 }) };
   },
 });
