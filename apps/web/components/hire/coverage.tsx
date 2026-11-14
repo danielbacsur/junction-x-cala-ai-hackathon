@@ -1,16 +1,14 @@
 import { connection } from "next/server";
 
 import { formatClock, formatDate, formatStamp, plural } from "@/lib/format";
-import { getLedger } from "@/lib/ledger";
+import { attempt } from "@/lib/ledger";
 import { ago, isStale } from "@/lib/wording";
 
 /** One read of the store's coverage at request time, with the clock it was read by. */
 async function readCoverage() {
   await connection();
 
-  const coverage = await getLedger()
-    .getCoverage()
-    .catch(() => null);
+  const coverage = await attempt((ledger) => ledger.getCoverage());
 
   return { coverage, now: Date.now() };
 }

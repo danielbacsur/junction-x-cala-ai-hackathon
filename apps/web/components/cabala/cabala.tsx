@@ -27,7 +27,7 @@ const ARM = {
   hipKnuckles: "M56 134C60 136 61 141 58 146M63 130C68 133 69 139 66 144",
 
   // The forearm stands under the chin, elbow low inside the body, so nothing pokes out of the blob.
-  chin: "M112 90C112 116 106 140 94 152C88 158 80 156 74 150L40 100C30 100 21 92 21 81C21 70 30 62 40 63C50 64 57 71 57 80L84 122C90 112 94 100 96 88",
+  chin: "M106 88C107 114 103 139 93 152C88 158 80 156 74 150L40 100C30 100 21 92 21 81C21 70 30 62 40 63C50 64 57 71 57 80L84 122C88 112 90 100 90 88",
   chinKnuckles: "M29 76C33 78 34 83 32 88M36 72C40 75 41 80 39 85",
 
   // The open hand that asks for the customer: a thumb and three fingers, palm out.
@@ -67,8 +67,8 @@ function Eyes({ closed = false, gaze = [0, 0] }: { closed?: boolean; gaze?: read
     <g className="eyes">
       <g transform={`translate(${gaze[0]} ${gaze[1]})`}>
         <g className="pupils">
-          <ellipse className="ink" cx="-11.5" cy="37" rx="3" ry="7" />
-          <ellipse className="ink" cx="11" cy="36.5" rx="3" ry="7" />
+          <ellipse className="ink" cx="-11.5" cy="37.5" rx="3.3" ry="7.6" />
+          <ellipse className="ink" cx="11" cy="37" rx="3.3" ry="7.6" />
         </g>
       </g>
     </g>
@@ -174,8 +174,9 @@ function usePausedWhenHidden() {
 
     const apply = () => svg.toggleAttribute("data-paused", !onScreen || document.hidden);
 
-    const observer = new IntersectionObserver(([entry]) => {
-      onScreen = entry.isIntersecting;
+    // Several changes can arrive at once; the last one is where the figure is now.
+    const observer = new IntersectionObserver((entries) => {
+      onScreen = entries.at(-1)?.isIntersecting ?? onScreen;
       apply();
     });
 

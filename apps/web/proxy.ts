@@ -37,12 +37,21 @@ export async function proxy(request: NextRequest) {
   const mandateId = /^\/m\/([^/]+)/.exec(request.nextUrl.pathname)?.[1];
 
   // A guest issued a moment ago owns nothing yet.
-  const response =
-    mandateId && (issued || (await missing(mandateId, guestId)))
-      ? NextResponse.rewrite(new URL("/not-found", request.url), { status: 404, request: { headers: request.headers } })
-      : NextResponse.next({ request: { headers: request.headers } });
+  if (mandateId && (issued || (await missing(mandateId, guestId)))) {
+    const response = NextResponse.rewrite(new URL("/not-found", request.url), { status: 404 });
 
-  if (issued) response.cookies.set(GUEST_COOKIE, issued, GUEST_COOKIE_OPTIONS);
+    if (issued) response.cookies.set(GUEST_COOKIE, issued, GUEST_COOKIE_OPTIONS);
+
+    return response;
+  }
+
+  // Every other request passes through untouched. Handing the request headers back would drop the
+  // ones Next.js hides from this file, and a client navigation would then be answered with a page.
+  if (!issued) return NextResponse.next();
+
+  const response = NextResponse.next({ request: { headers: request.headers } });
+
+  response.cookies.set(GUEST_COOKIE, issued, GUEST_COOKIE_OPTIONS);
 
   return response;
 }

@@ -2,18 +2,14 @@ import Link from "next/link";
 
 import { formatStamp } from "@/lib/format";
 import { currentGuest } from "@/lib/guest";
-import { getLedger } from "@/lib/ledger";
+import { attempt } from "@/lib/ledger";
 import { MANDATE_LABEL, STAGE_LABEL } from "@/lib/wording";
 
 /** The mandates this browser has opened. They are tied to its guest cookie and to nothing else. */
 export async function YourMandates() {
   const guest = await currentGuest();
 
-  const mandates = guest
-    ? await getLedger()
-        .listMandates(guest)
-        .catch(() => null)
-    : [];
+  const mandates = guest ? await attempt((ledger) => ledger.listMandates(guest)) : [];
 
   return (
     <section aria-labelledby="mandates-title" className="mt-16">

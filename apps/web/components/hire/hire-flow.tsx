@@ -112,9 +112,10 @@ export function HireFlow() {
     try {
       const response = await fetch(`/api/dossiers/${match.id}`);
 
-      if (!response.ok) throw new Error(String(response.status));
+      // A 404 is an entity nothing is stored about yet: there is nothing to fill in, and no failure.
+      if (!response.ok && response.status !== 404) throw new Error(String(response.status));
 
-      const found = observedFrom((await response.json()) as Dossier);
+      const found = response.ok ? observedFrom((await response.json()) as Dossier) : {};
 
       setObserved(found);
       setValues({

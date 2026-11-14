@@ -18,9 +18,10 @@ const nextConfig: NextConfig = {
         as: "*.css",
       },
 
-      // See the loader: the ledger's migrations folder is not something Turbopack can bundle.
-      "**/packages/ledger/src/db.ts": {
-        loaders: ["./lib/loaders/ledger-sql-path.cjs"],
+      // See the loader: the ledger points at its own folders in a way Turbopack cannot bundle.
+      "*.ts": {
+        condition: { path: /packages\/ledger\/src\//, content: /import\.meta\.url/ },
+        loaders: ["./lib/loaders/ledger-folders.cjs"],
       },
     },
   },

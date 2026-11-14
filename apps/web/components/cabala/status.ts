@@ -8,7 +8,8 @@ export type Stream =
   | { kind: "offline" }
   | { kind: "idle" }
   | { kind: "thinking" }
-  | { kind: "calling"; names: readonly string[] }
+  /** Tools running now, by their own names, and when the first of them started. */
+  | { kind: "calling"; names: readonly string[]; started?: string | null }
   | { kind: "writing" }
   | { kind: "needs-you" }
   | { kind: "finished"; at: number }
@@ -22,10 +23,36 @@ export type CabalaStatus = {
   since: string | null;
 };
 
-type LogLine = Pick<WorkEvent, "kind" | "at" | "seconds" | "fromStore">;
+type LogLine = Pick<WorkEvent, "kind" | "at" | "seconds" | "fromStore"> & { entity?: { id: string } | null };
 
 /** Tools whose names start with a read verb show as reading; every other tool is work. */
 const READS = /(^|_)(get|list|search|read|find|fetch|query|lookup|check|retrieve)(_|$)/;
+
+/** The tool that puts signal probes to Cala, the one read that takes half a minute or more. */
+const PROBE_TOOL = "check_signals";
+
+/** A probe is given 120 seconds; a line older than this is no longer waiting on anything. */
+const IN_FLIGHT_FOR = 150_000;
+
+/**
+ * The probe the work log shows as sent and not yet answered: a probe line without a duration,
+ * not from the store, recent enough to be running, and with no finished probe of the same entity
+ * logged after it.
+ */
+export function probeInFlight<Line extends LogLine>(events: readonly Line[], now: number): Line | null {
+  const at = events.findLastIndex(
+    (event, index) =>
+      event.kind === "probe" &&
+      event.seconds === null &&
+      !event.fromStore &&
+      now - new Date(event.at).getTime() < IN_FLIGHT_FOR &&
+      !events
+        .slice(index + 1)
+        .some((later) => later.kind === "probe" && later.seconds !== null && (later.entity?.id ?? null) === (event.entity?.id ?? null)),
+  );
+
+  return at < 0 ? null : events[at];
+}
 
 /** How long the done pose is held before the figure goes back to idle. */
 export const DONE_FOR = 1600;
@@ -60,15 +87,23 @@ export function cabalaStatus({
   const latest = events.at(-1) ?? null;
 
   if (turning || researching) {
-    const probe = events.findLast((event) => event.kind === "probe" && event.seconds === null && !event.fromStore);
+    const probe = probeInFlight(events, now);
 
     if (probe) return { state: "reading", label: "Asking Cala", since: probe.at };
 
-    if (latest?.kind === "outage" || (cala === "latched" && latest?.kind === "queued")) {
-      return { state: "asleep", label: "Paused: Cala is not answering", since: latest.at };
+    if (stream.kind === "calling" && stream.names.includes(PROBE_TOOL)) {
+      return { state: "reading", label: "Asking Cala", since: stream.started ?? null };
     }
 
-    if (latest?.kind === "queued") return { state: "asleep", label: "Queued for Cala", since: latest.at };
+    // Work that waits on Cala keeps waiting until something else is logged: a gap report or a
+    // note written after it does not mean Cabala has moved on.
+    const held = events.findLast((event) => event.kind !== "gap" && event.kind !== "note") ?? null;
+
+    if (held?.kind === "outage" || (cala === "latched" && held?.kind === "queued")) {
+      return { state: "asleep", label: "Paused: Cala is not answering", since: held.at };
+    }
+
+    if (held?.kind === "queued") return { state: "asleep", label: "Queued for Cala", since: held.at };
 
     if (stream.kind === "writing") return { state: "working", label: "Writing", since: null };
 

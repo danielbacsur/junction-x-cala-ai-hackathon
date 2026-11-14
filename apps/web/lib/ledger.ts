@@ -21,3 +21,17 @@ export function getLedger(): Ledger {
 
   return ledger;
 }
+
+/**
+ * One ledger read whose failure the page can say in words. Any failure, a ledger that cannot be
+ * created included, comes back as null, and is logged for whoever runs the server.
+ */
+export async function attempt<Result>(read: (ledger: Ledger) => Promise<Result>): Promise<Result | null> {
+  try {
+    return await read(getLedger());
+  } catch (error) {
+    console.error(error);
+
+    return null;
+  }
+}

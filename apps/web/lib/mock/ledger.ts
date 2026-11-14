@@ -21,6 +21,7 @@ import {
   type Statement,
   type Trail,
   type WorkEvent,
+  type WorkResult,
 } from "@fundraising/package-ledger";
 
 import { CATALOGUE, DOSSIER, E, FETCHED, STORE, emptyDossier } from "@/lib/mock/evidence";
@@ -297,6 +298,20 @@ function statementOf(entry: Entry): Statement {
   };
 }
 
+/** What a research pass reports, read off the replay as it stands. No request is ever sent. */
+function passOf(entry: Entry): WorkResult {
+  const rows = rowsOf(entry);
+
+  return {
+    mandate: mandateOf(entry),
+    requestsUsed: 0,
+    trailsFound: new Set(rows.flatMap((row) => row.trailIds)).size,
+    rows: rows.length,
+    partial: rows.some((row) => row.enrichment === "queued"),
+    gaps: entry.script.gaps.filter((gap) => gap.at <= elapsed(entry)).map((gap) => gap.text),
+  };
+}
+
 function note(entry: Entry, kind: WorkEvent["kind"], message: string) {
   entry.extras.push({ at: iso(Date.now()), kind, message, seconds: null, entity: null, fromStore: false });
 }
@@ -356,6 +371,7 @@ export const SCENARIOS = [
   "founder-ready",
   "founder-revised",
   "founder-delivered",
+  "founder-stale",
   "investor-researching",
   "investor-outage",
   "investor-stale",
@@ -474,17 +490,12 @@ export function createMockLedger(): Ledger {
     },
 
     async workMandate(mandateId, ownerId) {
-      const entry = owned(mandateId, ownerId);
-      const rows = rowsOf(entry);
+      return passOf(owned(mandateId, ownerId));
+    },
 
-      return {
-        mandate: mandateOf(entry),
-        requestsUsed: 0,
-        trailsFound: new Set(rows.flatMap((row) => row.trailIds)).size,
-        rows: rows.length,
-        partial: rows.some((row) => row.enrichment === "queued"),
-        gaps: entry.script.gaps.filter((gap) => gap.at <= elapsed(entry)).map((gap) => gap.text),
-      };
+    // The mock sends nothing to Cala, so reading around an entity finds what the replay already holds.
+    async readAround(mandateId, ownerId) {
+      return passOf(owned(mandateId, ownerId));
     },
 
     async proposeProbes(mandateId, ownerId) {
