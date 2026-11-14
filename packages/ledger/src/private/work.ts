@@ -130,7 +130,7 @@ export function createWorkLog(db: Db, research: Research) {
       const [log] = await db.query<{ reads: number; probes: number; store: number; withheld: number }>(
         `select
            (count(*) filter (where kind = 'read' and not from_store))::int as reads,
-           (count(*) filter (where kind = 'probe' and not from_store))::int as probes,
+           (count(*) filter (where kind = 'probe' and not from_store and seconds is not null))::int as probes,
            (count(*) filter (where kind in ('read', 'probe') and from_store))::int as store,
            (count(*) filter (where kind = 'withheld' and packet_version is null))::int as withheld
          from work_events

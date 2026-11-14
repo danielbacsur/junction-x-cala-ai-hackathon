@@ -23,7 +23,15 @@ export function connect(databaseUrl: string): Db {
       pg.types.setTypeParser(pg.types.builtins.DATE, String);
       pg.types.setTypeParser(pg.types.builtins.TIMESTAMPTZ, (value) => new Date(value).toISOString());
 
-      pool = new pg.Pool({ connectionString: databaseUrl, max: 5 });
+      // The driver already verifies the certificate under sslmode=require and warns on every
+      // start that this will change; naming the mode it applies keeps the behaviour and the log.
+      const connectionString = databaseUrl.replace(/([?&])sslmode=require\b/, "$1sslmode=verify-full");
+
+      pool = new pg.Pool({ connectionString, max: 5 });
+
+      // An idle connection the network dropped is replaced on the next query. Without a
+      // listener the error is unhandled and ends the process.
+      pool.on("error", () => {});
     }
 
     return pool;
