@@ -93,11 +93,12 @@ export function hopLabel(hop: Hop): string {
   if (hop.family === "ownership") return "ownership";
   if (hop.family === "person") return "person";
   if (hop.direction === "undirected") return "investment tie, undirected";
+  if (hop.role === "GRANTOR") return "granted to";
+  if (hop.role === "LENDER") return "lent to";
 
   return "invested in";
 }
 
-/** One sentence for a hop, in the direction the evidence supports and no further. */
 /** What the financier did, from its role in the round: a grantor granted and a lender lent. */
 function funded(role: string | null): string {
   if (role === "GRANTOR") return "made a grant to";
@@ -106,6 +107,7 @@ function funded(role: string | null): string {
   return "invested in";
 }
 
+/** One sentence for a hop, in the direction the evidence supports and no further. */
 export function hopSentence(hop: Hop): string {
   const { from, to } = hop;
 

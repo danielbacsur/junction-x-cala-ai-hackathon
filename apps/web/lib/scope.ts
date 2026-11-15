@@ -13,12 +13,16 @@ export const SCOPE_LABELS: Record<Role, Record<ScopeField, { label: string; shor
   founder: {
     stages: { label: "Round you are raising", short: "Round", hint: "Cala knows your last round, not your next. Correct it." },
     sectors: { label: "Your sector", short: "Sector", hint: "As investors would name it." },
-    geographies: { label: "Where you are based", short: "Based", hint: "Add where you want investors from, if it matters." },
+    geographies: {
+      label: "Where you want investors from",
+      short: "Geography",
+      hint: "Filled in with where Cala places you. Change it to where you want capital from.",
+    },
   },
   investor: {
     stages: { label: "Stages you invest in", short: "Stages", hint: "Separate several with commas." },
     sectors: { label: "Sectors you invest in", short: "Sectors", hint: "Separate several with commas." },
-    geographies: { label: "Where you invest", short: "Where", hint: "Separate several with commas." },
+    geographies: { label: "Where you invest", short: "Geography", hint: "Separate several with commas." },
   },
 };
 

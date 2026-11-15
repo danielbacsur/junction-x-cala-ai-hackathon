@@ -29,8 +29,11 @@ const quoted = (values: string[]) => values.map((value) => `'${value}'`).join(",
 /** How one hop may be worded. An undirected tie is a tie; only roles in one round make it funding. */
 export function describeHop(hop: Hop): string {
   if (hop.family === "investment") {
-    if (hop.direction === "from_funds_to") return `${hop.from.name} backs ${hop.to.name} (roles in the same round)`;
-    if (hop.direction === "to_funds_from") return `${hop.to.name} backs ${hop.from.name} (roles in the same round)`;
+    // A grantor granted and a lender lent; only an investor backs.
+    const did = hop.role === "GRANTOR" ? "made a grant to" : hop.role === "LENDER" ? "made a loan to" : "backs";
+
+    if (hop.direction === "from_funds_to") return `${hop.from.name} ${did} ${hop.to.name} (roles in the same round)`;
+    if (hop.direction === "to_funds_from") return `${hop.to.name} ${did} ${hop.from.name} (roles in the same round)`;
 
     return `${hop.from.name} and ${hop.to.name} have an investment tie (direction not settled)`;
   }
@@ -171,7 +174,7 @@ async function loadProfiles(db: Db, ids: string[], withPortfolio: boolean): Prom
     `select edges.source_id, edges.relationship, target.name, edges.properties ->> 'original_label' as original_label, edges.sources
      from edges left join entities target on target.id = edges.target_id
      where edges.source_id in (${idList})
-       and edges.relationship in ('OPERATES_IN_INDUSTRY', 'HAS_HEADQUARTERS_IN', 'IS_REGISTERED_IN')`,
+       and edges.relationship in ('OPERATES_IN_INDUSTRY', 'HAS_HEADQUARTERS_IN', 'IS_REGISTERED_IN', 'HAS_PRESENCE_IN')`,
     param,
   )) {
     const profile = profiles.get(row.source_id)!;
@@ -180,6 +183,8 @@ async function loadProfiles(db: Db, ids: string[], withPortfolio: boolean): Prom
       if (row.name) profile.industries.push({ label: row.name, sources: row.sources });
       if (row.original_label) profile.industries.push({ label: row.original_label, sources: row.sources });
     } else if (row.name) {
+      // A presence is a place Cala puts the entity in, like a headquarters or a registration. It
+      // is matched against a stated geography and never worded as a headquarters.
       profile.places.push({ label: row.name, sources: row.sources });
     }
   }
