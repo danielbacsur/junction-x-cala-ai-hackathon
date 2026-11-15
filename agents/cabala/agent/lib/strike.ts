@@ -2,7 +2,7 @@ import type { PacketSections, WithheldClaim } from "@fundraising/package-ledger"
 
 import type { SecondRead } from "./schemas";
 
-type Finding = SecondRead["unsupported"][number];
+type Finding = Omit<SecondRead["unsupported"][number], "sentenceId"> & { sentenceId?: number };
 
 const TEXT_SECTIONS = ["whyMeet", "trail", "whyHesitate", "outreachDraft"] as const;
 const LIST_SECTIONS = ["questions", "agenda"] as const;
@@ -97,4 +97,23 @@ export function strike(sections: PacketSections, findings: Finding[]) {
     unlocated,
     emptied: [...TEXT_SECTIONS, ...LIST_SECTIONS].filter((key) => sections[key].length > 0 && next[key].length === 0),
   };
+}
+
+/** Stable IDs refer to the exact draft presented to the second read. */
+export function numberDraft(sections: Omit<PacketSections, "privateNotes">) {
+  return [...TEXT_SECTIONS, ...LIST_SECTIONS].flatMap((section) =>
+    (typeof sections[section] === "string" ? sentencesOf(sections[section] as string) : sections[section] as string[])
+      .map((sentence) => ({ section, sentence })))
+    .map((entry, index) => ({ id: index + 1, ...entry }));
+}
+export function strikeNumbered(sections: PacketSections, findings: SecondRead["unsupported"]) {
+  const numbered = numberDraft(sections);
+  const resolved = findings.map((finding) => {
+    const entry = numbered.find((entry) => entry.id === finding.sentenceId);
+    if (!entry || entry.section !== finding.section) throw new Error("Second read named a sentence outside the draft; nothing saved.");
+    return { ...finding, sentence: entry.sentence };
+  });
+  const result = strike(sections, resolved);
+  if (result.unlocated.length) throw new Error("Unresolved second-read finding; nothing saved.");
+  return result;
 }

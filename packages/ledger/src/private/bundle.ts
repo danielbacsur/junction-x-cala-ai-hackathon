@@ -1,3 +1,4 @@
+import { isSourcedTrail } from "../research/trails";
 import type { Brief, EvidenceBundle, EvidenceKind, Mandate, Signal, SourceRef, Trail } from "../contract";
 import { hopWords, sentence, signalWords, uniqueSources } from "./words";
 
@@ -15,7 +16,7 @@ function selfReported(mandate: Mandate): string[] {
     statements.push(
       constraints.includeExistingBackers
         ? "Existing backers are wanted as follow-up targets."
-        : "Existing backers are not wanted in the Book.",
+        : "Existing backers are not wanted in the list.",
     );
   }
 
@@ -23,7 +24,7 @@ function selfReported(mandate: Mandate): string[] {
     statements.push(
       constraints.includePublicFunding
         ? "Public funders are wanted as a separate non-dilutive category."
-        : "Public funders are not wanted in the Book.",
+        : "Public funders are not wanted in the list.",
     );
   }
 
@@ -42,6 +43,7 @@ function trailSources(trail: Trail): SourceRef[] {
  * is Inferred, its limits are Still unknown, and the customer's criteria are Self-reported.
  */
 export function buildBundle(mandate: Mandate, brief: Brief): EvidenceBundle {
+  if (!brief.trails.length || !brief.trails.every(isSourcedTrail)) throw new Error("A packet requires a linked source for every trail hop and signal.");
   const supportedFacts: EvidenceBundle["supportedFacts"] = [];
   const seen = new Set<string>();
 

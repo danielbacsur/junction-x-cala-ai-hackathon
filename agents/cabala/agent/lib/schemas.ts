@@ -2,7 +2,7 @@ import { z } from "zod";
 
 export const mandateId = z.string().min(1).describe("The mandate's ID, as given in the customer's first message.");
 
-export const candidateId = z.string().min(1).describe("The candidate's Cala entity ID, from the Book.");
+export const candidateId = z.string().min(1).describe("The candidate's Cala entity ID, from the list.");
 
 const list = z.array(z.string().min(1)).nullable();
 
@@ -54,6 +54,7 @@ export const secondRead = z.object({
     .array(
       z.object({
         section,
+        sentenceId: z.number().int().positive().describe("The sentence ID from numberedDraft."),
         sentence: z.string().describe("The sentence or list item, copied exactly from the draft."),
         reason: z.string().describe("What the evidence does and does not say, in one sentence."),
       }),

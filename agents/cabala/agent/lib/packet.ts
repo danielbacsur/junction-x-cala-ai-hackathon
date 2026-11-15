@@ -5,7 +5,7 @@ import { FatalError } from "eve/workflow";
 import { compactPacket } from "./compact";
 import { type DraftSections, draftSections, type SecondRead, secondRead } from "./schemas";
 import { loadDossiers, logPacket, savePacketVersion, validateDraft } from "./steps";
-import { strike } from "./strike";
+import { numberDraft, strikeNumbered } from "./strike";
 
 /** The second read may ask for this many stored dossiers per packet (consensus point 4). */
 const EXTRA_READS = 3;
@@ -75,7 +75,7 @@ async function readAgain(ctx: WorkflowToolContext, bundle: EvidenceBundle, draft
     return data;
   };
 
-  const first = await ask({ bundle: forModel(bundle), trails: bundle.brief.trails, draft });
+  const first = await ask({ bundle: forModel(bundle), trails: bundle.brief.trails, draft, numberedDraft: numberDraft(draft) });
   const known = entitiesIn(bundle);
   const wanted = [...new Set(first.reads.map((read) => read.entityId))].filter((id) => known.has(id)).slice(0, EXTRA_READS);
 
@@ -99,7 +99,7 @@ export async function checkAndSave(
   // The owner's private notes are not part of what the second read sees.
   const { privateNotes: _privateNotes, ...draft } = validated.sections;
   const reading = await readAgain(ctx, bundle, draft);
-  const struck = strike(validated.sections, reading.unsupported);
+  const struck = strikeNumbered(validated.sections, reading.unsupported);
   const withheld = [...validated.withheld, ...struck.withheld];
   const packet = await savePacketVersion({
     mandateId,

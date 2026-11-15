@@ -59,3 +59,15 @@ test("a section left empty is named, and private notes are never touched", () =>
   assert.deepEqual(result.emptied, ["whyHesitate"]);
   assert.equal(result.sections.privateNotes, "Ask about the round.");
 });
+
+test("numbered review rejects invalid IDs and removes the numbered sentence even when the quote differs", async () => {
+  const { numberDraft, strikeNumbered } = await import("./strike.ts");
+  const numbered = numberDraft(sections);
+  const first = numbered[0]!;
+  const finding = { section: first.section, sentenceId: first.id, sentence: "A paraphrase", reason: "Unsupported." };
+  const result = strikeNumbered(sections, [finding]);
+  assert.equal(result.sections.whyMeet.includes(first.sentence), false);
+  assert.equal(result.withheld[0]!.sentence, first.sentence);
+  assert.throws(() => strikeNumbered(sections, [{ ...finding, sentenceId: 999 }]));
+  assert.throws(() => strikeNumbered(sections, [{ ...finding, section: "agenda" }]));
+});

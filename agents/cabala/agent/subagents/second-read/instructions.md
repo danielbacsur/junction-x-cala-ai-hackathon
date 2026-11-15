@@ -21,7 +21,7 @@ When a sentence is partly right, it is still unsupported as written: report it a
 
 # What to return
 
-- `unsupported`: one entry per unsupported sentence or list item, with its `section`, the `sentence` copied character for character from the draft, and a one-sentence `reason` that states what the evidence says instead. Copy the whole sentence, from its first word to its full stop. Do not paraphrase, shorten or correct it.
+- `unsupported`: one entry per unsupported sentence or list item, with its `sentenceId` from `numberedDraft`, its `section`, the `sentence` copied character for character from the draft, and a one-sentence `reason` that states what the evidence says instead. Copy the whole sentence, from its first word to its full stop. Do not paraphrase, shorten or correct it.
 - `missingCaveats`: limits the evidence states that the draft leaves out and that a reader would be misled without, each with the section it belongs in. Phrase each as a plain statement of the limit.
 - `questions`: what the writer should resolve before the packet is used. Often empty.
 - `reads`: leave empty unless a sentence cannot be judged without the stored dossier of an entity named in the bundle. Then give at most three entity IDs, each with why. You will receive `{ "dossiers": [...] }` and answer again in full, with `reads` empty.
