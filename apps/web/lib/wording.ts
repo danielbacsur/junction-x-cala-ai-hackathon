@@ -98,6 +98,14 @@ export function hopLabel(hop: Hop): string {
 }
 
 /** One sentence for a hop, in the direction the evidence supports and no further. */
+/** What the financier did, from its role in the round: a grantor granted and a lender lent. */
+function funded(role: string | null): string {
+  if (role === "GRANTOR") return "made a grant to";
+  if (role === "LENDER") return "made a loan to";
+
+  return "invested in";
+}
+
 export function hopSentence(hop: Hop): string {
   const { from, to } = hop;
 
@@ -108,8 +116,8 @@ export function hopSentence(hop: Hop): string {
   if (hop.family === "ownership") return `${from.name} ${OWNERSHIP[hop.relationship] ?? "is tied by ownership to"} ${to.name}.`;
   if (hop.family === "person") return `${from.name} ${PERSON[hop.relationship] ?? "is connected to"} ${to.name}.`;
 
-  if (hop.direction === "from_funds_to") return `${from.name} invested in ${to.name}.`;
-  if (hop.direction === "to_funds_from") return `${to.name} invested in ${from.name}.`;
+  if (hop.direction === "from_funds_to") return `${from.name} ${funded(hop.role)} ${to.name}.`;
+  if (hop.direction === "to_funds_from") return `${to.name} ${funded(hop.role)} ${from.name}.`;
 
   return `${from.name} and ${to.name} share an investment tie. The stored evidence does not settle who funded whom.`;
 }

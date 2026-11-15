@@ -65,7 +65,7 @@ export function ScopePanel({ mandate, observed, onRevised }: { mandate: Mandate;
             <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
               <dt className="text-ink-3">Also listed</dt>
               <dd className="font-medium">
-                {[constraints.includeExistingBackers !== false && "existing backers, as follow-ups", constraints.includePublicFunding !== false && "public funders"]
+                {[constraints.includeExistingBackers !== false && "existing backers, as follow-ups", constraints.includePublicFunding === true && "public funders"]
                   .filter(Boolean)
                   .join(" and ") || "new investors only"}
               </dd>

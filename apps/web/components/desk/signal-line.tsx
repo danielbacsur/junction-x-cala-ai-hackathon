@@ -13,8 +13,11 @@ export function SignalLine({ signal, now, onOpen }: { signal: Signal; now: numbe
         <span aria-hidden="true" className="size-2 shrink-0 rounded-full bg-yellow" />
         <span className="font-medium">{signal.label}</span>
         <span className="rounded-full bg-card px-1.5 py-0.5 text-[0.6875rem] font-medium text-ink-2 shadow-hairline">{SIGNAL_LABEL[signal.type]}</span>
-        {signal.instrument && signal.type !== "public_money" && (
-          <span className="text-[0.6875rem] text-ink-3">instrument {signal.instrument}; funder not classed as public</span>
+        {signal.instrument && (
+          <span className="text-[0.6875rem] text-ink-3">
+            instrument {signal.instrument}
+            {signal.type !== "public_money" && "; funder not classed as public"}
+          </span>
         )}
       </div>
       <p className="mt-1 text-ink-2">

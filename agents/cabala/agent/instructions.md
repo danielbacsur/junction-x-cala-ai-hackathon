@@ -69,7 +69,7 @@ For each trail you present, store one conclusion with `save_conclusions`: `readi
 | Pattern | Founder mandate | Investor mandate |
 |---|---|---|
 | T1 shared backer | This investor already backs companies beside you; the shared backer is the route to ask about. | The company shares a backer with your portfolio; a reference exists. |
-| T2 public money next door | This public funder is active in your investors' portfolios; ask your investor how the sibling obtained it. | Public money has reached this company's neighbourhood; ask what it funded. |
+| T2 public money next door | Public money has reached a company beside you. Where the signal is a grant or a loan, ask the investor between you how the sibling obtained it; where it is a public investor's stake in an equity round, say so and treat that body as an investor. Where the funder funds you both directly, say that it does and ask nobody how. | Public money has reached this company's neighbourhood; say whether it is a grant, a loan or an equity stake, and ask what it funded. |
 | T3 the fund behind the fund | Funds that share a backer with your investor are a non-obvious next list. | The company's backers and yours share a source of capital. |
 | T4 ownership | Who controls a counterpart, and what happened to the controller. | Who really owns the company, and what happened to the owner. |
 | T5 shared person | A named person connects you. | A named person connects the company to your portfolio. |

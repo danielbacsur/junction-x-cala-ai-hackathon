@@ -22,9 +22,17 @@ export const SCOPE_LABELS: Record<Role, Record<ScopeField, { label: string; shor
   },
 };
 
-/** "SERIES_A" as people write it. Cala's own label stays visible beside the field. */
+/**
+ * "SERIES_A" as people write it, also inside a list such as "FINTECH, VENTURE_CAPITAL". Cala's
+ * own label stays visible beside the field.
+ */
 export const readable = (value: string) =>
-  /^[A-Z_]+$/.test(value) ? value.toLowerCase().replace(/_/g, " ").replace(/^./, (first) => first.toUpperCase()) : value;
+  value
+    .split(", ")
+    .map((part) =>
+      /^[A-Z_]+$/.test(part) ? part.toLowerCase().replace(/_/g, " ").replace(/^./, (first) => first.toUpperCase()) : part,
+    )
+    .join(", ");
 
 /** What Cala holds for each scope field: the value as shown, as stored, and its sources. */
 export type Observed = Partial<Record<ScopeField, { value: string; raw: string; sources: SourceRef[] }>>;
