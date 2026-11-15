@@ -62,9 +62,15 @@
   --radius-panel: 28px;
 
   /* A 1px ring in place of a border, with two soft drops. */
-  --shadow-hairline: 0 0 0 1px rgb(46 39 35 / 0.08), 0 1px 2px -1px rgb(46 39 35 / 0.08), 0 2px 4px rgb(46 39 35 / 0.04);
-  --shadow-lift: 0 0 0 1px rgb(46 39 35 / 0.1), 0 1px 2px -1px rgb(46 39 35 / 0.08), 0 10px 30px rgb(46 39 35 / 0.07);
-  --shadow-float: 0 0 0 1px rgb(46 39 35 / 0.1), 0 4px 10px rgb(46 39 35 / 0.06), 0 18px 48px rgb(46 39 35 / 0.14);
+  --shadow-hairline:
+    0 0 0 1px rgb(46 39 35 / 0.08), 0 1px 2px -1px rgb(46 39 35 / 0.08),
+    0 2px 4px rgb(46 39 35 / 0.04);
+  --shadow-lift:
+    0 0 0 1px rgb(46 39 35 / 0.1), 0 1px 2px -1px rgb(46 39 35 / 0.08),
+    0 10px 30px rgb(46 39 35 / 0.07);
+  --shadow-float:
+    0 0 0 1px rgb(46 39 35 / 0.1), 0 4px 10px rgb(46 39 35 / 0.06),
+    0 18px 48px rgb(46 39 35 / 0.14);
 
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-balanced: cubic-bezier(0.45, 0, 0.55, 1);
@@ -123,10 +129,24 @@ body {
   color: var(--color-ink);
 }
 
-/* One focus ring everywhere: ink on paper, cards and the yellow buttons alike. */
+/* Keyboard focus for controls; text fields use a soft fill rather than an outline. */
 :focus-visible {
   outline: 2px solid var(--color-ink);
   outline-offset: 2px;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  background-color: var(--color-yellow-tint);
+}
+
+.quiet-input,
+.quiet-input:focus,
+.quiet-input:focus-visible {
+  border: 0;
+  outline: none;
+  box-shadow: none;
 }
 
 button,
@@ -150,9 +170,106 @@ li {
   text-wrap: pretty;
 }
 
+/* Chat typography stays compact inside both light and dark message bubbles. */
+.chat-markdown > * + * {
+  margin-top: 0.75rem;
+}
+
+.chat-markdown :is(h1, h2, h3, h4, h5, h6) {
+  font-size: 1em;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.chat-markdown :is(strong, th) {
+  font-weight: 650;
+}
+
+.chat-markdown :is(ul, ol) {
+  padding-left: 1.3rem;
+}
+
+.chat-markdown ul {
+  list-style: disc;
+}
+
+.chat-markdown ol {
+  list-style: decimal;
+}
+
+.chat-markdown :is(li + li, li > p + p, li > ul, li > ol) {
+  margin-top: 0.4rem;
+}
+
+.chat-markdown a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.chat-markdown blockquote {
+  border-left: 2px solid currentColor;
+  padding-left: 0.85rem;
+  opacity: 0.85;
+}
+
+.chat-markdown code {
+  border-radius: 0.3rem;
+  background: color-mix(in srgb, currentColor 9%, transparent);
+  padding: 0.1rem 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+}
+
+.chat-markdown pre {
+  max-width: 100%;
+  overflow-x: auto;
+  border-radius: 0.65rem;
+  background: color-mix(in srgb, currentColor 7%, transparent);
+  padding: 0.8rem;
+  white-space: pre;
+  overflow-wrap: normal;
+}
+
+.chat-markdown pre code {
+  background: none;
+  padding: 0;
+}
+
+.chat-markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+.chat-markdown :is(th, td) {
+  border-bottom: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+  padding: 0.5rem;
+  text-align: start;
+  vertical-align: top;
+}
+
+.chat-markdown hr {
+  border-color: color-mix(in srgb, currentColor 20%, transparent);
+}
+
+.chat-markdown .contains-task-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.chat-markdown input[type="checkbox"] {
+  margin-right: 0.4rem;
+}
+
 /* A status that is still running: the text shimmers in steps, like the film's drawings. */
 .running-text {
-  background: linear-gradient(90deg, var(--color-ink-2) 40%, var(--color-ink-3) 50%, var(--color-ink-2) 60%) 0 0 / 200% 100%;
+  background: linear-gradient(
+      90deg,
+      var(--color-ink-2) 40%,
+      var(--color-ink-3) 50%,
+      var(--color-ink-2) 60%
+    )
+    0 0 / 200% 100%;
   background-clip: text;
   color: transparent;
   animation: var(--animate-shimmer);

@@ -2,7 +2,6 @@
   "name": "@fundraising/app-web",
   "version": "0.0.0",
   "private": true,
-
   "scripts": {
     "build": "next build",
     "dev": "next dev --port 3000",
@@ -11,15 +10,15 @@
     "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test \"components/**/*.test.mts\"",
     "typecheck": "next typegen && tsc"
   },
-
   "dependencies": {
     "@fundraising/package-ledger": "0.0.0",
     "eve": "1.0.0-rc.17",
     "next": "16.4.6",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
   },
-
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
