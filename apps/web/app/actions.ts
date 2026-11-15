@@ -18,7 +18,8 @@ export async function hire(_previous: HireState, form: FormData): Promise<HireSt
 
   if (!ownerId) return { error: "Your browser is not accepting the cookie that keeps a mandate yours. Allow cookies for this site and try again." };
 
-  const role: Role = form.get("role") === "investor" ? "investor" : "founder";
+  if (!["investor", "founder"].includes(String(form.get("role")))) return { error: "Choose whether you are raising or investing." };
+  const role = form.get("role") as Role;
   const subjectId = String(form.get("subjectId") ?? "");
 
   if (!subjectId) return { error: "Choose your company or fund first." };

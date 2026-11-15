@@ -1,6 +1,6 @@
 "use server";
 
-import { NotFoundError } from "@fundraising/package-ledger";
+import { connect, NotFoundError } from "@fundraising/package-ledger";
 
 import { currentGuest } from "@/lib/guest";
 import { getLedger } from "@/lib/ledger";
@@ -32,7 +32,7 @@ export async function attachSession(mandateId: string, sessionId: string): Promi
 export type ReviseState = { error: string | null; revision: number | null };
 
 /**
- * Changes the criteria and reranks the Book from the store, with no new reads. The revision goes
+ * Changes the criteria and reranks the list from the store, with no new reads. The revision goes
  * up by one, and packets built before it say that they rest on older criteria.
  */
 export async function reviseScope(mandateId: string, _previous: ReviseState, form: FormData): Promise<ReviseState> {
@@ -51,6 +51,19 @@ export async function reviseScope(mandateId: string, _previous: ReviseState, for
 
     console.error(error);
 
-    return { error: "The criteria were not saved: the ledger did not answer. The Book is unchanged. Try again.", revision: null };
+    return { error: "The criteria were not saved: the ledger did not answer. The list is unchanged. Try again.", revision: null };
   }
+}
+
+/** Stop subsequent scheduled passes; an in-flight bounded pass may finish. */
+export async function closeResearch(mandateId: string) {
+  const owner = await currentGuest();
+  if (!owner) throw new Error("Mandate not found.");
+  const databaseUrl = process.env.DATABASE_URL;
+  if (!databaseUrl) throw new Error("The ledger is not available.");
+  const db = connect(databaseUrl);
+  try {
+    const rows = await db.query("update mandates set open = false where id = $1 and owner_id = $2 returning id", [mandateId, owner]);
+    if (!rows.length) throw new NotFoundError("Mandate not found.");
+  } finally { await db.close(); }
 }

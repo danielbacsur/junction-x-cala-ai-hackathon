@@ -85,8 +85,8 @@ export function constraintsFrom(form: FormData, role: Role): Constraints {
     sectors: listOf(form.get("sectors")),
     geographies: listOf(form.get("geographies")),
     exclusions: listOf(form.get("exclusions")),
-    includeExistingBackers: role === "founder" ? form.get("includeExistingBackers") === "on" : null,
-    includePublicFunding: role === "founder" ? form.get("includePublicFunding") === "on" : null,
+    includeExistingBackers: role === "founder" ? form.has("includeExistingBackers") ? form.get("includeExistingBackers") === "on" : null : null,
+    includePublicFunding: role === "founder" ? form.has("includePublicFunding") ? form.get("includePublicFunding") === "on" : null : null,
     notes: String(form.get("notes") ?? "").trim() || null,
   };
 }
