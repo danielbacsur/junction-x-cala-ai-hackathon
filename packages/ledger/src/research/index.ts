@@ -37,6 +37,7 @@ export type Research = Pick<
   | "getBrief"
   | "saveConclusions"
 > & {
+  continueMandate(mandateId: string, ownerId: string, budget: number): Promise<WorkResult>;
   /** Reranks the mandate's stored candidates under its current constraints and revision. */
   rank(mandate: Mandate): Promise<void>;
   entityRef(entityId: string): Promise<EntityRef>;
@@ -172,6 +173,7 @@ export function createResearch(deps: {
     },
 
     workMandate: worker.workMandate,
+    continueMandate: worker.continueMandate,
     proposeProbes: worker.proposeProbes,
     checkSignals: worker.checkSignals,
     readAround: worker.readAround,

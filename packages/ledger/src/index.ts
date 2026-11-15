@@ -1,3 +1,4 @@
+import { createContinuation } from "./continuation";
 import { createCalaClient } from "./cala/client";
 import type { CalaClient } from "./cala/contract";
 import { createAgreementExtractor } from "./cala/extract";
@@ -57,11 +58,12 @@ export function createLedgerParts(options: LedgerOptions) {
 
   store = createPrivateStore({ db, research });
 
+  const continuation = createContinuation(db, research);
   const ledger: Ledger = {
     findEntity: research.findEntity,
     getDossier: research.getDossier,
     getCoverage: research.getCoverage,
-    workMandate: research.workMandate,
+    workMandate: continuation.workMandate,
     readAround: research.readAround,
     proposeProbes: research.proposeProbes,
     checkSignals: research.checkSignals,
@@ -73,7 +75,7 @@ export function createLedgerParts(options: LedgerOptions) {
     ...store,
   };
 
-  return { ledger, research, store, cala, db };
+  return { ledger, research, store, cala, db, continueMandates: continuation.continueMandates };
 }
 
 export function createLedger(options: LedgerOptions): Ledger {

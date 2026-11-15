@@ -373,7 +373,7 @@ export function createWorker(context: WorkContext) {
    * pass therefore never counts a trail twice.
    */
   async function rankAndLog(mandate: Mandate): Promise<{ trails: StoredTrail[]; rows: number; gaps: string[]; found: number }> {
-    // Nothing ingested since this mandate was last ranked under these constraints: the Book stands.
+    // Nothing ingested since this mandate was last ranked under these constraints: the list stands.
     const [seq] = await db.query<{ value: string }>("select value #>> '{}' as value from store_meta where key = 'ingest_seq'");
     const state = `${seq?.value}|${mandate.revision}|${json(mandate.constraints)}|${windowStart(context.now())}`;
     const last = rankings.get(mandate.id);
@@ -408,7 +408,7 @@ export function createWorker(context: WorkContext) {
     rankings.delete(mandate.id);
     rankings.set(mandate.id, { state, result });
 
-    // A handful is enough to spare one pass its repeats; the Book itself lives in the store.
+    // A handful is enough to spare one pass its repeats; the list itself lives in the store.
     if (rankings.size > 16) rankings.delete(rankings.keys().next().value!);
 
     return { ...result, found: fresh.length };
@@ -602,18 +602,20 @@ export function createWorker(context: WorkContext) {
     for (const round of wanted.values()) await read(pass, round, "round", pass.budget.used - live < ROUND_READS);
   }
 
-  async function workMandate(mandateId: string, ownerId: string, options: WorkOptions = {}): Promise<WorkResult> {
+  async function workMandate(mandateId: string, ownerId: string, options: WorkOptions = {}, continuing = false): Promise<WorkResult> {
     let mandate = await mandates.getMandate(mandateId, ownerId);
 
     // A founder's own company is asked about by default; the rest are the neighbours Cabala picked.
     const probed = [
-      ...new Set([...(mandate.role === "founder" ? [mandate.subject.id] : []), ...(options.probeEntityIds ?? [])]),
+      ...new Set([...(!continuing && mandate.role === "founder" ? [mandate.subject.id] : []), ...(options.probeEntityIds ?? [])]),
     ].slice(0, PROBES);
     const pass = newPass(mandate, options.budget ?? PASS_BUDGET, { signal: options.signal, reserved: probed.length });
 
-    mandate = await mandates.setStage(mandateId, ownerId, "researching");
-    pass.mandate = mandate;
-    await log(mandateId, { kind: "stage", message: "Researching." });
+    if (!continuing) {
+      mandate = await mandates.setStage(mandateId, ownerId, "researching");
+      pass.mandate = mandate;
+      await log(mandateId, { kind: "stage", message: "Researching." });
+    }
 
     // What is already stored is shown first: trails and a Book before any request is made.
     let found = (await rankAndLog(mandate)).found;
@@ -664,11 +666,13 @@ export function createWorker(context: WorkContext) {
 
     await log(mandateId, {
       kind: "book",
-      message: `Book ranked: ${ranked.rows} row${ranked.rows === 1 ? "" : "s"}; ${ranked.trails.length} trail${ranked.trails.length === 1 ? "" : "s"} in the store for ${mandate.subject.name}${partial ? "; the pass is partial" : ""}.`,
+      message: `List ranked: ${ranked.rows} row${ranked.rows === 1 ? "" : "s"}; ${ranked.trails.length} trail${ranked.trails.length === 1 ? "" : "s"} in the store for ${mandate.subject.name}${partial ? "; the pass is partial" : ""}.`,
     });
 
-    mandate = await mandates.setStage(mandateId, ownerId, "challenging");
-    await log(mandateId, { kind: "stage", message: "Challenging." });
+    if (!continuing) {
+      mandate = await mandates.setStage(mandateId, ownerId, "challenging");
+      await log(mandateId, { kind: "stage", message: "Challenging." });
+    }
 
     return { mandate, requestsUsed: pass.budget.used, trailsFound: found, rows: ranked.rows, partial, gaps };
   }
@@ -772,7 +776,7 @@ export function createWorker(context: WorkContext) {
       await log(mandateId, { kind: "queued", message: `Not asked: ${pass.unmade.join(", ")}.` });
     }
 
-    // New agreement edges can open trails, so the Book is ranked again from the store.
+    // New agreement edges can open trails, so the list is ranked again from the store.
     await ensureDerived(db, context.now());
     await rankAndLog(mandate);
 
@@ -782,7 +786,7 @@ export function createWorker(context: WorkContext) {
   /**
    * One trail action (consensus point 11): at most five new requests around one entity of the
    * mandate. Its own record first, then its unread rounds, grants before the rest, since a round
-   * is where a grantor is named and where roles settle a direction. The Book is ranked again.
+   * is where a grantor is named and where roles settle a direction. The list is ranked again.
    */
   async function readAround(mandateId: string, ownerId: string, entityId: string): Promise<WorkResult> {
     const mandate = await mandates.getMandate(mandateId, ownerId);
@@ -813,5 +817,5 @@ export function createWorker(context: WorkContext) {
     };
   }
 
-  return { workMandate, proposeProbes, checkSignals, readAround };
+  return { workMandate, continueMandate: (id: string, owner: string, budget: number) => workMandate(id, owner, { budget }, true), proposeProbes, checkSignals, readAround };
 }
