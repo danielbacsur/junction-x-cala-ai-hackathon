@@ -305,7 +305,7 @@ export function HireFlow() {
                       autoComplete="off"
                       className="mt-1.5 block h-11 w-full rounded-full bg-paper/70 px-4 text-base shadow-hairline placeholder:text-ink-3"
                     />
-                    <p className="mt-1.5 text-meta text-ink-3">Cabala leaves these out of the Book. Nothing is excluded unless you say so.</p>
+                    <p className="mt-1.5 text-meta text-ink-3">Cabala leaves these out of the list. Nothing is excluded unless you say so.</p>
                   </div>
 
                   {role === "founder" && (

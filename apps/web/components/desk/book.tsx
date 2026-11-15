@@ -31,14 +31,14 @@ function Enrichment({ status }: { status: BookRow["enrichment"] }) {
   );
 }
 
-/** What stands in the Book's place while it has no rows, in the words that fit the stage. */
+/** What stands in the list's place while it has no rows, in the words that fit the stage. */
 function Empty({ book }: { book: Book }) {
   const { stage, subject } = book.mandate;
   const queued = book.coverage.cala === "latched";
 
   return (
     <div className="rounded-card bg-card px-5 py-8 text-center shadow-hairline">
-      <p className="font-demi tracking-tight">Nothing in the Book yet.</p>
+      <p className="font-demi tracking-tight">Nothing in the list yet.</p>
       <p className="mx-auto mt-1.5 max-w-[42ch] text-sm text-ink-2">
         {stage === "brief_received" && "Cabala starts once the scope is confirmed. Rows appear here as trails are found."}
         {stage !== "brief_received" &&
@@ -71,7 +71,7 @@ export function BookPanel({ book, selectedId, onSelect }: { book: Book; selected
     <section aria-labelledby="book-title">
       <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
         <h2 id="book-title" className="text-heading">
-          The Book
+          The list
         </h2>
         <p className="text-meta text-ink-3">
           {plural(rows.length, "row")}, revision {book.mandate.revision}

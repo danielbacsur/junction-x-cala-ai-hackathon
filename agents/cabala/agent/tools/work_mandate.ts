@@ -15,7 +15,7 @@ const PROGRESS_EVERY_MS = 4_000;
 export default defineWorkflowTool({
   description:
     "Work a confirmed mandate: one bounded research pass by the ledger, which reads Cala within the request " +
-    "budget, finds the trails and ranks the Book. It runs as a task, so you can keep talking while it works. " +
+    "budget, finds the trails and ranks the list. It runs as a task, so you can keep talking while it works. " +
     "Call it first with the mandate ID alone to get the neighbours the ledger proposes for a signal probe. Then " +
     "call it again with your choice of at most six, each with the reason it matters for this mandate, or with an " +
     "empty list to run without probes. The result is an account of what was reached and what was not.",
@@ -107,8 +107,8 @@ export default defineWorkflowTool({
       gaps: result.unavailable ? [result.unavailable, ...result.gaps] : result.gaps,
       ...closing,
       next: hasTrails
-        ? "Read the Book, read the trails of the candidates you will present, and store a conclusion for each trail."
-        : "The Book holds no trail. Read it and tell the customer plainly what is missing; do not fill the gap.",
+        ? "Read the list, read the trails of the candidates you will present, and store a conclusion for each trail."
+        : "The list holds no trail. Read it and tell the customer plainly what is missing; do not fill the gap.",
     };
   },
 });

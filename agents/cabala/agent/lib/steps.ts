@@ -100,8 +100,8 @@ export async function latestWork(mandateId: string, ownerId: string, afterId: st
 }
 
 /**
- * After a pass: with trails in the Book the ledger has left the mandate at Challenging, where the
- * conclusions are drawn; with none, the gaps are the result and the Book is ready as it is. Also
+ * After a pass: with trails in the list the ledger has left the mandate at Challenging, where the
+ * conclusions are drawn; with none, the gaps are the result and the list is ready as it is. Also
  * reads which of the chosen probes did not run and what is left to probe.
  */
 export async function endPass(

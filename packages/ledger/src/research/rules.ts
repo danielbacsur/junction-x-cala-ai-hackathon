@@ -5,7 +5,7 @@ import { agreementLabel } from "./probes";
 import { FINANCING_EVENT, filedEvents, financierRoles, recipientRoles, relations } from "./relations";
 import { hashId, insertRows, mergeSources, uniqueBy } from "./sql";
 
-/** Signals older than this many months are history, not news. Shown on screen with the Book. */
+/** Signals older than this many months are history, not news. Shown on screen with the list. */
 export const WINDOW_MONTHS = 24;
 
 export function windowStart(now: Date, months = WINDOW_MONTHS): string {

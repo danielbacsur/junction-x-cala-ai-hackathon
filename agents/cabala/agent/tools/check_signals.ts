@@ -15,7 +15,7 @@ export default defineTool({
 
   inputSchema: z.object({
     mandateId,
-    entityIds: z.array(z.string().min(1)).min(1).max(6).describe("Cala entity IDs from the Book or a trail."),
+    entityIds: z.array(z.string().min(1)).min(1).max(6).describe("Cala entity IDs from the list or a trail."),
   }),
 
   availableInSubagents: false,

@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: { default: "Bookrunner", template: "%s · Bookrunner" },
+  title: { default: "Cabala", template: "%s · Cabala" },
   description:
     "Cabala reads two to three connections out from your company or fund in Cala's graph and returns the meetings worth taking, each with the sourced trail behind it.",
   robots: { index: false, follow: false },

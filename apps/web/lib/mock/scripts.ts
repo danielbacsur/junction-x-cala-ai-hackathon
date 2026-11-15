@@ -1,5 +1,5 @@
 /**
- * What the mock ledger replays for a mandate: the work log of one research pass, the Book rows
+ * What the mock ledger replays for a mandate: the work log of one research pass, the list rows
  * as they appear, the trails behind them, the briefs and a first packet draft. Each script is a
  * timeline in seconds, so the Desk can be watched filling in, or pinned at any moment.
  */
@@ -29,7 +29,7 @@ type EventSeed = Pick<WorkEvent, "kind" | "message" | "entity" | "fromStore"> & 
 export type Step = { at: number } & ({ stage: MandateStage } | { event: EventSeed });
 
 export type RowSeed = Omit<BookRow, "id" | "mandateId" | "revision" | "rank" | "hasBrief"> & {
-  /** When the row enters the Book, and when its brief is written. */
+  /** When the row enters the list, and when its brief is written. */
   at: number;
   briefAt?: number;
 };
@@ -1021,7 +1021,7 @@ const INVESTOR: Script = {
 
 // ---------------------------------------------------------------------------
 // Cold: a subject with no stored neighbourhood. Nothing is invented; the read
-// is queued and the Book says so.
+// is queued and the list says so.
 // ---------------------------------------------------------------------------
 
 export function coldScript(role: Role, subject: EntityRef, stored: boolean): Script {
@@ -1045,7 +1045,7 @@ export function coldScript(role: Role, subject: EntityRef, stored: boolean): Scr
     gaps: [
       {
         at: 8,
-        text: `The store holds ${stored ? "one read of" : "no read of"} ${subject.name} and nothing around it. The Book stays empty until the queued reads are answered.`,
+        text: `The store holds ${stored ? "one read of" : "no read of"} ${subject.name} and nothing around it. The list stays empty until the queued reads are answered.`,
       },
     ],
     packet: null,

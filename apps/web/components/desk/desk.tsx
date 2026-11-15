@@ -151,7 +151,7 @@ export function Desk({
   function select(candidateId: string) {
     setSelectedId(candidateId);
 
-    // On a phone and a narrow desk the trail sits below the Book; bring it to the reader.
+    // On a phone and a narrow desk the trail sits below the list; bring it to the reader.
     requestAnimationFrame(() => {
       const panel = trail.current;
 

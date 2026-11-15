@@ -14,7 +14,7 @@ export default [
       t.calledTool("open_mandate", { status: "failed", output: /No owner/ });
       t.notCalledTool("work_mandate");
       t.notEvent("interaction.opened");
-      turn.messageIncludes(/Bookrunner/);
+      turn.messageIncludes(/Cabala/);
     },
   }),
 

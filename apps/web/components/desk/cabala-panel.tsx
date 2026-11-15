@@ -174,7 +174,7 @@ export function CabalaPanel({
 }: {
   status: CabalaStatus;
   session: CabalaSession;
-  /** True when the full figure should stand: the brief just in, a question, the Book delivered. */
+  /** True when the full figure should stand: the brief just in, a question, the list delivered. */
   moment: boolean;
   now: number;
 }) {
@@ -211,7 +211,7 @@ export function CabalaPanel({
           {!full && <Cabala state={status.state} variant="bust" size={44} />}
           <div className="min-w-0">
             <h2 id="cabala-title" className="font-demi tracking-tight">
-              Cabala <span className="font-normal text-ink-2">· Associate</span>
+              Cabala <span className="font-normal text-ink-2">· Fundraising agent</span>
             </h2>
             <p role="status" aria-live="polite" className="text-sm">
               <span className={running ? "running-text" : "text-ink-2"}>{status.label}</span>
@@ -222,7 +222,7 @@ export function CabalaPanel({
 
         {session.failure && (
           <p role="alert" className="mt-4 rounded-2xl bg-orange-tint px-4 py-3 text-sm">
-            That turn stopped with an error, and nothing in the Book was changed by it. Tell me to try again.
+            That turn stopped with an error, and nothing in the list was changed by it. Tell me to try again.
             <span className="mt-1 block font-mono text-[0.6875rem] break-words text-ink-2">{session.failure}</span>
           </p>
         )}
@@ -247,7 +247,7 @@ export function CabalaPanel({
         {said && (
           <div className="mt-4">
             <p className="max-h-48 overflow-y-auto rounded-2xl rounded-tl-md bg-paper/70 px-4 py-3 text-sm [overflow-wrap:anywhere] whitespace-pre-line">{said}</p>
-            <p className="mt-1.5 text-[0.6875rem] text-ink-3">Cabala&rsquo;s words are commentary. The record is the Book, the trails and the work log.</p>
+            <p className="mt-1.5 text-[0.6875rem] text-ink-3">Cabala&rsquo;s words are commentary. The record is the list, the trails and the work log.</p>
           </div>
         )}
 

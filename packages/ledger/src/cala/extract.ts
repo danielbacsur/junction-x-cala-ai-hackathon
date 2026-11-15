@@ -26,7 +26,7 @@ const reading = z.object({ agreements: z.array(agreement) });
 
 const instructions = `You read one answer from Cala's knowledge search and list the agreements its claims state.
 
-Bookrunner, a research tool for fundraising meetings, turns your rows into candidate connections between organisations, such as "Company A signed a memorandum of understanding with Company B on 3 March 2025". Deterministic checks decide afterwards which rows become connections, and people repeat them to investors. A missing row costs little; a wrong one costs trust. So report only what a claim and the passages it cites state, and leave a field null when it is not stated. Do not infer, complete or correct anything from what you know about these organisations.
+Cabala, a research tool for fundraising meetings, turns your rows into candidate connections between organisations, such as "Company A signed a memorandum of understanding with Company B on 3 March 2025". Deterministic checks decide afterwards which rows become connections, and people repeat them to investors. A missing row costs little; a wrong one costs trust. So report only what a claim and the passages it cites state, and leave a field null when it is not stated. Do not infer, complete or correct anything from what you know about these organisations.
 
 The input is JSON with four parts:
 - probedEntity: the organisation the question was asked about, with its Cala ID.

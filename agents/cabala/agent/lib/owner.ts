@@ -9,7 +9,7 @@ export class NoOwnerError extends Error {
   constructor() {
     super(
       "No owner: this session carries no verified guest identity, so nothing can be read or changed. " +
-        "The customer has to open the mandate from the Bookrunner web app.",
+        "The customer has to open the mandate from the Cabala web app.",
     );
   }
 }

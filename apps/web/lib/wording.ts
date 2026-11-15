@@ -27,7 +27,7 @@ export const STAGE_LABEL: Record<MandateStage, string> = {
   delivered: "Delivered",
 };
 
-/** True while Cabala may still be adding to the Book, so the Desk keeps asking for news. */
+/** True while Cabala may still be adding to the list, so the Desk keeps asking for news. */
 export const beingWorked = (stage: MandateStage) => stage === "brief_received" || stage === "researching" || stage === "challenging";
 
 export const MANDATE_LABEL: Record<Role, string> = { founder: "Raise Mandate", investor: "Sourcing Mandate" };

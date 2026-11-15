@@ -260,7 +260,7 @@ function markdown(mandate: Mandate, packet: Packet): string {
 
   return [
     `# Meeting packet: ${packet.candidate.name}`,
-    `Prepared for ${mandate.subject.name} by Cabala, Bookrunner. Version ${packet.version}, ${packet.status}${packet.approvedAt ? `, approved ${packet.approvedAt.slice(0, 10)}` : ""}.`,
+    `Prepared for ${mandate.subject.name} by Cabala, Cabala. Version ${packet.version}, ${packet.status}${packet.approvedAt ? `, approved ${packet.approvedAt.slice(0, 10)}` : ""}.`,
     `## Why meet\n\n${packet.sections.whyMeet}`,
     `## The trail behind it\n\n${packet.sections.trail}`,
     `## Why hesitate\n\n${packet.sections.whyHesitate}`,
@@ -484,7 +484,7 @@ export function createMockLedger(): Ledger {
       const entry = owned(mandateId, ownerId);
 
       entry.mandate = { ...entry.mandate, constraints, revision: entry.mandate.revision + 1 };
-      note(entry, "book", `Criteria revised: the Book was reranked from the store, with no new reads (revision ${entry.mandate.revision})`);
+      note(entry, "book", `Criteria revised: the list was reranked from the store, with no new reads (revision ${entry.mandate.revision})`);
 
       return this.readBook(mandateId, ownerId);
     },

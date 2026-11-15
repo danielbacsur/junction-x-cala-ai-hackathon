@@ -480,7 +480,7 @@ export function createFakeLedger(): Ledger {
         }
       }
 
-      await step({ kind: "book", message: `Book ranked: ${rows.length} rows`, seconds: 0, entity: null, fromStore: true });
+      await step({ kind: "book", message: `List ranked: ${rows.length} rows`, seconds: 0, entity: null, fromStore: true });
 
       entry.mandate = { ...entry.mandate, stage: "challenging", updatedAt: now() };
       await step({ kind: "stage", message: "Challenging.", seconds: null, entity: null, fromStore: false });

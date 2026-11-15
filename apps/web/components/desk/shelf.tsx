@@ -6,7 +6,7 @@ import { formatStamp, plural } from "@/lib/format";
 
 const STATUS: Record<PacketSummary["status"], string> = { draft: "Draft", approved: "Approved", superseded: "Superseded" };
 
-/** The deliverable shelf: the Book, the briefs and every packet version, with where each stands. */
+/** The deliverable shelf: the list, the briefs and every packet version, with where each stands. */
 export function Shelf({ book, packets }: { book: Book; packets: PacketSummary[] }) {
   const { id, revision } = book.mandate;
   const briefs = book.rows.filter((row) => row.hasBrief).length;
@@ -19,7 +19,7 @@ export function Shelf({ book, packets }: { book: Book; packets: PacketSummary[] 
 
       <ul className="mt-3 grid gap-2.5 text-sm">
         <li className="flex items-baseline justify-between gap-3">
-          <span>The Book</span>
+          <span>The list</span>
           <span className="text-ink-2">
             {plural(book.rows.length, "row")}, revision {revision}
           </span>

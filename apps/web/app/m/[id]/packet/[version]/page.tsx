@@ -99,7 +99,7 @@ async function PacketLoader({ params, searchParams }: PageProps<"/m/[id]/packet/
           <h1 className="mt-1 text-title [overflow-wrap:anywhere]">{packet.candidate.name}</h1>
           <p className="mt-1 text-sm text-ink-2">
             {packet.approvedAt ? `Approved ${formatStamp(packet.approvedAt)}.` : `Saved ${formatStamp(packet.createdAt)}.`} Prepared by Cabala,
-            Bookrunner. Built with Cala.
+            Cabala. Built with Cala.
           </p>
         </div>
 

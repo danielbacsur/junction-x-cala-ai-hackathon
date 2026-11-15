@@ -9,7 +9,7 @@ import { line } from "@/agent/lib/worklog";
 
 export default defineTool({
   description:
-    "Store your conclusion for each trail to one candidate, so the Book shows it beside the trail. A conclusion " +
+    "Store your conclusion for each trail to one candidate, so the list shows it beside the trail. A conclusion " +
     "is always Inferred: one reading, the hops it rests on, what it does not prove, and what to ask. One that " +
     "promises an introduction, asserts appetite, claims causation, gives a programme ceiling as a contract value " +
     "or words an undirected tie as funding is sent back with the rule it broke; rewrite it and store it again.",
@@ -21,7 +21,7 @@ export default defineTool({
     bookReady: z
       .boolean()
       .optional()
-      .describe("True on the last call, when every trail you will show has its conclusion. Marks the Book ready."),
+      .describe("True on the last call, when every trail you will show has its conclusion. Marks the list ready."),
   }),
 
   availableInSubagents: false,
@@ -61,7 +61,7 @@ export default defineTool({
       sentBack,
       unknownTrails,
       ...(ready && { stage: "ready" }),
-      ...(bookReady === true && !ready && { note: "The Book is not marked ready: fix what was sent back first." }),
+      ...(bookReady === true && !ready && { note: "The list is not marked ready: fix what was sent back first." }),
     };
   },
 });

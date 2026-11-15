@@ -10,7 +10,7 @@ import { SCOPE_FIELDS, SCOPE_LABELS, joined, scopeKind, type Observed } from "@/
 
 /**
  * The criteria the mandate runs on, each marked by how it is known, and the form that revises
- * them. A revision reranks the Book from the store: it reads nothing new and discovers nobody new.
+ * them. A revision reranks the list from the store: it reads nothing new and discovers nobody new.
  */
 export function ScopePanel({ mandate, observed, onRevised }: { mandate: Mandate; observed: Observed; onRevised: () => void }) {
   const [editing, setEditing] = useState(false);
@@ -135,7 +135,7 @@ export function ScopePanel({ mandate, observed, onRevised }: { mandate: Mandate;
 
           <div className="flex flex-wrap items-center gap-3 sm:col-span-2">
             <Button type="submit" size="small" disabled={pending}>
-              {pending ? "Reranking" : "Rerank the Book"}
+              {pending ? "Reranking" : "Rerank the list"}
             </Button>
             <p className="text-[0.6875rem] text-ink-3">
               Reranks what is stored, with no new reads. Packets built before this will say they rest on older criteria.

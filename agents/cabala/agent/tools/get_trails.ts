@@ -12,7 +12,7 @@ export default defineTool({
     "says for each hop what may be said about it and from which sources, carries the dated signal at its end, " +
     "and shows your stored conclusion if there is one. Reading stored trails costs nothing. Set readMore only " +
     "when the customer asks to dig into this candidate: the ledger then spends up to five requests to Cala on " +
-    "the candidate and its rounds, which can settle an undirected tie, and reranks the Book.",
+    "the candidate and its rounds, which can settle an undirected tie, and reranks the list.",
 
   inputSchema: z.object({
     mandateId,

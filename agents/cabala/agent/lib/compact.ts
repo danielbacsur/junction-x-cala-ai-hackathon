@@ -214,7 +214,7 @@ export function describeScope(mandate: Mandate, constraints: Constraints) {
   if (constraints.notes) lines.push(`Your notes: ${constraints.notes}`);
 
   lines.push(
-    "You get a ranked Book within what I can read, up to three briefs where the evidence carries them, and one " +
+    "You get a ranked list within what I can read, up to three briefs where the evidence carries them, and one " +
       "meeting packet with one revision. I prepare meetings; I do not arrange them.",
   );
 

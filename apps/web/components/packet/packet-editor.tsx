@@ -119,7 +119,7 @@ export function PacketEditor({ packet, latest, trail }: { packet: Packet; latest
               </ol>
             </Section>
 
-            <Section title="Outreach draft" note="A draft for you to send yourself. Bookrunner sends nothing.">
+            <Section title="Outreach draft" note="A draft for you to send yourself. Cabala sends nothing.">
               <p className="rounded-2xl bg-paper/60 px-4 py-3 whitespace-pre-line" data-print="plain">
                 {sections.outreachDraft || "Nothing written."}
               </p>

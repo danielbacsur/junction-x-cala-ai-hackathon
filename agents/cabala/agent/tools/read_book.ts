@@ -10,7 +10,7 @@ export default defineTool({
   description:
     "Read the mandate's Book as the ledger holds it now: the ranked candidates with the reason to meet each, " +
     "their category, best trail, fit lines and unknowns; coverage; gaps; the packet versions; and the statement " +
-    "of work with actual counts. Read it before you say anything about the Book.",
+    "of work with actual counts. Read it before you say anything about the list.",
 
   inputSchema: z.object({
     mandateId,
@@ -19,7 +19,7 @@ export default defineTool({
 
   availableInSubagents: false,
 
-  label: { start: () => "Read the Book" },
+  label: { start: () => "Read the list" },
 
   async execute({ mandateId, limit = 12 }, ctx) {
     const ownerId = ownerOf(ctx.session);
