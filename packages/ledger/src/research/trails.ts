@@ -14,7 +14,7 @@ const PER_SUBJECT = 400;
 /** One typed path: its nodes from the subject outwards and the family of each hop. */
 type Path = { nodes: string[]; families: RelationFamily[]; shape: Shape };
 
-type Shape = "shared_backer" | "backer_of_sibling" | "shared_counterparty" | "ownership" | "anchor_backer" | "anchor_counterparty";
+type Shape = "owner_investment" | "owner_agreement" | "shared_backer" | "backer_of_sibling" | "shared_counterparty" | "ownership" | "anchor_backer" | "anchor_counterparty";
 
 type TieRow = {
   from_id: string;
@@ -172,6 +172,24 @@ async function findPaths(db: Db, subjectId: string, mode: Role): Promise<Path[]>
     paths.push({ nodes: [subjectId, row.o!], families: ["ownership"], shape: "ownership" });
   }
 
+  // S -> backer -> its owner -> another investment or agreement party.
+  for (const family of ["investment", "agreement"] as const) {
+    for (const row of await rows(
+      `select t1.to_id as i, t2.to_id as o, t3.to_id as c
+       from ties t1
+       join ties t2 on t2.from_id = t1.to_id and t2.family = 'ownership'
+         and t2.relationship in ('IS_SUBSIDIARY_OF', 'HAS_DIRECT_PARENT', 'HAS_ULTIMATE_PARENT', 'HAS_BENEFICIARY_OWNER')
+       join ties t3 on t3.from_id = t2.to_id and t3.family = '${family}'
+       where t1.from_id = $1 and t1.family = 'investment' and ${backs("t1")}
+         and (${family == "investment" ? backedBy("t3") : "true"})
+         and ($2 = 'investor' or (
+           not exists (select 1 from ties own where own.from_id = $1 and own.to_id = t3.to_id and own.family = 'investment')
+           and exists (select 1 from ties inv where inv.from_id = t3.to_id and inv.family = 'investment' and ${backedBy("inv")})))
+       order by t1.to_id, t2.to_id, t3.to_id limit 5000`, [subjectId, mode])) {
+      paths.push({ nodes: [subjectId, row.i!, row.o!, row.c!],
+        families: ["investment", "ownership", family], shape: family === "investment" ? "owner_investment" : "owner_agreement" });
+    }
+  }
   return paths;
 }
 
@@ -230,6 +248,18 @@ export async function signalsOf(db: Db, entityIds: string[]): Promise<Signal[]> 
   const refs = await entityRefs(db, rows.flatMap((row) => [row.entity_id, ...row.parties.map((party) => party.entity_id)]));
 
   return rows.map((row) => toSignal(row, refs));
+}
+
+/** A source is usable only when the reader can open an HTTP(S) URL. */
+export function hasLinkedSource(sources: SourceRef[]): boolean {
+  return sources.some((source) => {
+    try { return ["http:", "https:"].includes(new URL(source.url ?? "").protocol); }
+    catch { return false; }
+  });
+}
+export function isSourcedTrail(trail: Pick<Trail, "hops" | "signal">): boolean {
+  return trail.hops.length > 0 && trail.hops.every((hop) => hasLinkedSource(hop.sources)) &&
+    (!trail.signal || hasLinkedSource(trail.signal.sources));
 }
 
 /** A signal counts as dated when its date is the event's own and nothing flags the record. */
@@ -324,7 +354,7 @@ export async function computeTrails(
       `select ties.* from ties
        join jsonb_to_recordset($1::jsonb) as x(f text, t text, fam text)
          on x.f = ties.from_id and x.t = ties.to_id and x.fam = ties.family
-       order by ties.relationship`,
+       order by case when ties.relationship in ('IS_SUBSIDIARY_OF', 'HAS_DIRECT_PARENT', 'HAS_ULTIMATE_PARENT', 'HAS_BENEFICIARY_OWNER') then 0 else 1 end, ties.relationship`,
       [json(wantedHops.slice(start, start + 500))],
     )) {
       // Two ownership edges between one pair make one hop; the first by name stands for both.
@@ -368,7 +398,7 @@ export async function computeTrails(
     }
   }
 
-  const ends = [...new Set(paths.map((path) => path.nodes[path.nodes.length - 1]!))];
+  const ends = [...new Set(paths.flatMap((path) => [path.nodes[path.nodes.length - 1]!, ...(path.shape === "owner_agreement" ? [path.nodes[2]!] : [])]))];
   const endSignals = new Map<string, SignalRow[]>();
 
   for (let start = 0; start < ends.length; start += 2000) {
@@ -536,6 +566,15 @@ export async function computeTrails(
         break;
       }
 
+      case "owner_investment":
+        add(path, complete, "T4", null);
+        break;
+      case "owner_agreement":
+        for (const row of endSignals.get(path.nodes[2]!) ?? []) {
+          const signal = toSignal(row, refs);
+          if (signal.type === "public_money" && inWindow(signal, start)) add(path, complete, "T4", signal);
+        }
+        break;
       case "ownership": {
         for (const signal of signals.slice(0, 3)) add(path, complete, "T4", signal);
 
@@ -655,5 +694,6 @@ export async function storedTrails(db: Db, subject: EntityRef, mode: Role): Prom
       weight: row.weight,
       pathKey: row.path_key,
     }))
+    .filter(isSourcedTrail)
     .sort(compareTrails);
 }

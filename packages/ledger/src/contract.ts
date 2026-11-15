@@ -183,6 +183,8 @@ export type FitLine = {
 };
 
 export type BookRow = {
+  /** Cala roster membership; absence never establishes non-attendance. */
+  attendee?: boolean;
   id: string;
   mandateId: string;
   revision: number;

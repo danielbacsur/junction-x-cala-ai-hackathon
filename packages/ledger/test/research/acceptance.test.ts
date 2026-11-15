@@ -483,20 +483,14 @@ describe("9. the Kuva US claim", () => {
 });
 
 describe("11. rows without a connection, and existing backers", () => {
-  test("a candidate with no demonstrated connection says direct fit only", async () => {
+  test("a candidate with no demonstrated sourced connection is withheld", async () => {
     const mandate = await w.mandates.create("investor", ids.luminar, { sectors: ["software"] });
 
     await w.research.workMandate(mandate.id, mandate.ownerId);
 
     const book = await w.research.readBook(mandate.id, mandate.ownerId);
 
-    expect(book.rows.length).toBeGreaterThan(0);
-
-    for (const row of book.rows) {
-      expect(row).toMatchObject({ category: "direct_fit", directFitOnly: true, trailIds: [], bestTrail: null });
-      expect(row.reason).toContain("direct fit only");
-      expect(row.fit.some((line) => line.criterion === "Sector" && line.sources.length > 0)).toBe(true);
-    }
+    expect(book.rows).toEqual([]);
 
     // Luminar's own portfolio companies at Slush are named as such and never offered as new.
     expect(book.rows.some((row) => row.candidate.id === ids.redpine || row.candidate.id === ids.photoncycle)).toBe(false);

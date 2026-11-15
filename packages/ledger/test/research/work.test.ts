@@ -138,17 +138,10 @@ describe("from the store, with Cala latched off", () => {
     await expect(w.research.getBrief(mandate.id, mandate.ownerId, ids.kuva)).rejects.toThrow(NotFoundError);
   });
 
-  test("ownership already in a stored read is shown beside the candidate", async () => {
+  test("ownership context alone does not make an unsourced candidate eligible", async () => {
     const mandate = await w.mandates.create("investor", ids.luminar, { sectors: ["software"] });
-
     await w.research.workMandate(mandate.id, mandate.ownerId);
-
-    const brief = await w.research.getBrief(mandate.id, mandate.ownerId, ids.calaAi);
-
-    expect(brief.ownership).toEqual([
-      expect.objectContaining({ relation: "HAS_SUBSIDIARY", entity: expect.objectContaining({ name: "KOSMOVERA, S.L." }) }),
-    ]);
-    expect(brief.ownership[0]!.sources.length).toBeGreaterThan(0);
+    await expect(w.research.getBrief(mandate.id, mandate.ownerId, ids.calaAi)).rejects.toThrow(NotFoundError);
   });
 
   test("a constraint change reranks from the store under the next revision", async () => {

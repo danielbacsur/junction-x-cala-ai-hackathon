@@ -6,6 +6,10 @@ import type { Hop, Signal, SourceRef, TrailPattern } from "../contract";
  */
 
 const RELATIONSHIPS: Record<string, string> = {
+  HAS_SUBSIDIARY: "has subsidiary",
+  HAS_DIRECT_PARENT: "has direct parent",
+  HAS_ULTIMATE_PARENT: "has ultimate parent",
+  HAS_BENEFICIARY_OWNER: "has beneficial owner",
   IS_SUBSIDIARY_OF: "is a subsidiary of",
   IS_DIRECT_PARENT_OF: "is the direct parent of",
   IS_ULTIMATE_PARENT_OF: "is the ultimate parent of",

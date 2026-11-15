@@ -1,3 +1,5 @@
+import { storedTrails } from "./trails";
+import { isSourcedTrail } from "./trails";
 import type {
   BookRow,
   CandidateCategory,
@@ -17,7 +19,7 @@ import { ensureDerived } from "./rules";
 import { hashId, insertRows, json, mergeSources, nameKey, rankValue, textKey, toSources, uniqueBy } from "./sql";
 import { compareTrails, computeTrails, entityRefs, isDated, type StoredTrail } from "./trails";
 
-/** The Book holds at most this many rows; the gap report says how many more were found. */
+/** The list holds at most this many rows; the gap report says how many more were found. */
 const BOOK_LIMIT = 60;
 
 /** A row shows its strongest trails; the rest stay in the store. */
@@ -558,6 +560,9 @@ function reasonFor(
       : `${name} has an investment tie with ${mandate.subject.name} in Cala's graph.`;
   }
 
+  if (best.pattern === "T4" && best.hops.length === 3) {
+    return `${name} is connected through ${best.hops[0]!.to.name} and its stated owner ${best.hops[1]!.to.name}; ${best.signal ? describeSignal(best.signal) : "the final step is a stored investment tie"}. This connection does not establish access or investment appetite.`;
+  }
   const [first, second, third] = best.hops;
   const signal = best.signal ? ` ${best.end.name} carries: ${describeSignal(best.signal)}.` : "";
 
@@ -721,7 +726,7 @@ function compareRanked(a: Ranked, b: Ranked, wanted: Wanted): number {
 
 /**
  * Rebuilds the mandate's trails from the store and writes its Book for the current revision.
- * Nothing is fetched. Returns every trail found, the ones the Book's rows show, and what the
+ * Nothing is fetched. Returns every trail found, the ones the list's rows show, and what the
  * stored evidence could not establish.
  */
 export async function rankMandate(
@@ -731,10 +736,12 @@ export async function rankMandate(
 ): Promise<{ trails: StoredTrail[]; shown: StoredTrail[]; rows: number; gaps: string[] }> {
   await ensureDerived(db, now);
 
-  const trails = await computeTrails(db, mandate.subject, mandate.role, now);
+  const allTrails = await computeTrails(db, mandate.subject, mandate.role, now);
+  const trails = allTrails.filter(isSourcedTrail);
   const subjectId = mandate.subject.id;
   const candidates = new Map<string, Candidate>();
   const gaps: string[] = [];
+  if (allTrails.length > trails.length) gaps.push(`${allTrails.length - trails.length} trails left out: a hop or signal has no HTTP(S) source link.`);
 
   // A candidate may be reached on evidence of more than one kind, so offers are kept by category.
   const offers = new Map<string, { category: CandidateCategory; role: string; trails: StoredTrail[] }[]>();
@@ -811,7 +818,7 @@ export async function rankMandate(
     for (const trail of trails) {
       const first = trail.hops[0]!.to.id;
 
-      if (trail.pattern === "T4") continue;
+      if (trail.pattern === "T4" && trail.hops.length < 3) continue;
 
       if (trail.hops.length === 3) {
         place(trail.end.id, trail, "lead", "has an investment tie with a company beside you");
@@ -866,7 +873,7 @@ export async function rankMandate(
     const anchors = new Set(ties.filter((tie) => tie.direction !== "to_funds_from").map((tie) => tie.to_id));
 
     for (const trail of trails) {
-      if (trail.pattern === "T4") continue;
+      if (trail.pattern === "T4" && trail.hops.length < 3) continue;
 
       offer(trail.end.id, "lead", trail.hops.length === 3 ? "connected through your portfolio" : "connected to your fund", trail);
     }
@@ -952,6 +959,7 @@ export async function rankMandate(
       continue;
     }
 
+    if (candidate.trails.length === 0) continue;
     candidate.trails.sort(compareTrails);
     candidate.trails.splice(ROW_TRAILS);
 
@@ -1019,7 +1027,7 @@ export async function rankMandate(
 
   const rows = listed.map((one, index) => {
     // The three strongest rows with a sourced trail get a brief.
-    const hasBrief = briefs < 3 && one.best !== null && one.best.hops.every((hop) => hop.sources.length > 0);
+    const hasBrief = briefs < 3 && one.best !== null && isSourcedTrail(one.best);
 
     if (hasBrief) briefs += 1;
 
@@ -1109,8 +1117,11 @@ export async function bookRows(db: Db, mandate: Mandate, candidateId?: string): 
     candidateId ? [mandate.id, mandate.revision, candidateId] : [mandate.id, mandate.revision],
   );
   const refs = await entityRefs(db, records.map((record) => record.candidate_id));
+  const attending = new Set((await db.query<{ entity_id: string }>(
+    "select entity_id from roster where event_id = $1 and role = 'ATTENDEE'", [SLUSH_EVENT_ID])).map((row) => row.entity_id));
 
-  return records.map((record) => ({
+  const validTrails = new Set((await storedTrails(db, mandate.subject, mandate.role)).map((trail) => trail.id));
+  return records.filter((record) => record.trail_ids.length > 0 && record.trail_ids.every((id) => validTrails.has(id))).map((record) => ({
     id: record.id,
     mandateId: record.mandate_id,
     revision: record.revision,
@@ -1125,5 +1136,6 @@ export async function bookRows(db: Db, mandate: Mandate, candidateId?: string): 
     enrichment: record.enrichment,
     unknowns: record.unknowns,
     hasBrief: record.has_brief,
+    attendee: attending.has(record.candidate_id),
   }));
 }
