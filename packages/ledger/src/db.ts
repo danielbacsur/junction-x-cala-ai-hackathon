@@ -27,7 +27,14 @@ export function connect(databaseUrl: string): Db {
       // start that this will change; naming the mode it applies keeps the behaviour and the log.
       const connectionString = databaseUrl.replace(/([?&])sslmode=require\b/, "$1sslmode=verify-full");
 
-      pool = new pg.Pool({ connectionString, max: 5 });
+      pool = new pg.Pool({
+        connectionString,
+        max: 5,
+        // A connection the network drops without a word would otherwise hold its query for ever.
+        keepAlive: true,
+        connectionTimeoutMillis: 15_000,
+        query_timeout: 120_000,
+      });
 
       // An idle connection the network dropped is replaced on the next query. Without a
       // listener the error is unhandled and ends the process.
